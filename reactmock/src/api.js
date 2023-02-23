@@ -15,7 +15,7 @@ data will be available at: https://mockend.com/rjeantet/react-mock/symptoms
 
 import axios from "axios";
 
-const searchContent = async (term) => {
+const SearchContent = async (term) => {
   const response = await axios.get(
     "https://mockend.com/rjeantet/react-mock/remedies",
     {
@@ -31,4 +31,4 @@ const searchContent = async (term) => {
   return response.data;
 };
 
-export default searchContent;
+export default SearchContent;
