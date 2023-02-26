@@ -1,11 +1,12 @@
 function ResultShow({ remedy }) {
   return (
-    <div>
+    <>
       <p>
         <b>Remedy: Id {remedy.id}</b>
+        <br />
+        Description: {remedy.body}
       </p>
-      <p> Description: {remedy.body}</p>
-    </div>
+    </>
   );
 }
 

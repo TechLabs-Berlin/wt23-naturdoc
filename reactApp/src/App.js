@@ -1,7 +1,16 @@
 import { useState } from "react";
-import SearchBar from "./components/results/SearchBar";
+// Components
+import Header from "components/layouts/Header";
+import StickyFooter from "components/layouts/Footer";
+import SearchBar from "components/results/SearchBar";
+import ResultList from "components/results/ResultList";
+// Data
 import SearchContent from "data/api";
-import ResultList from "./components/results/ResultList";
+// Styles
+import "assets/App.css";
+import theme from "assets/theme";
+import { ThemeProvider } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
 
 function App() {
   const [remedies, setRemedies] = useState([]);
@@ -11,10 +20,27 @@ function App() {
     setRemedies(result);
   };
   return (
-    <div>
-      <SearchBar onSubmit={handleSubmit} />
-      <ResultList remedies={remedies} />
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+
+        <Header />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "80vh",
+          }}
+          component="main"
+        >
+          <CssBaseline />
+          <SearchBar onSubmit={handleSubmit} />
+          <ResultList remedies={remedies} />
+        </Box>
+
+        <StickyFooter />
+      </ThemeProvider>
+    </>
   );
 }
 

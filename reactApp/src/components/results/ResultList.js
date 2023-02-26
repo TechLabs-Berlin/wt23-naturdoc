@@ -1,4 +1,5 @@
 import ResultShow from "./ResultShow";
+import { Container, Paper } from "@mui/material";
 
 function ResultList({ remedies }) {
   const renderedRemedies = remedies.map((remedy) => {
@@ -6,9 +7,11 @@ function ResultList({ remedies }) {
   });
 
   return (
-    <div>
-      {renderedRemedies} Number of matching remedies: {remedies.length}
-    </div>
+    <Container sx={{ mt: 1 }} component="section" maxWidth="sm">
+      <Paper>
+        {renderedRemedies} Number of matching remedies: {remedies.length}
+      </Paper>
+    </Container>
   );
 }
 
