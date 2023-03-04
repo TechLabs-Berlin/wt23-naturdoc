@@ -8,9 +8,8 @@ function ResultList({ remedies }) {
 
   return (
     <Container sx={{ mt: 1 }} component="section" maxWidth="sm">
-      <Paper>
-        {renderedRemedies} Number of matching remedies: {remedies.length}
-      </Paper>
+      {remedies.length} matching remedies
+      <Paper>{renderedRemedies}</Paper>
     </Container>
   );
 }

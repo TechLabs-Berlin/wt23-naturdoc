@@ -1,31 +1,67 @@
-import { Paper, Container, Typography } from "@mui/material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Paper, Container } from "@mui/material";
+import { TextField, Autocomplete } from "@mui/material";
+import parse from "autosuggest-highlight/parse";
+import match from "autosuggest-highlight/match";
 
-function SearchBar({ onSubmit }) {
-  const [term, setTerm] = useState("");
+import GetSymptoms from "data/GetSymptoms";
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    onSubmit(term);
-    setTerm("");
+function SearchBar({ onChange }) {
+  const [options, setOptions] = useState([]);
+
+  // get the complete list of symptoms from the API
+  useEffect(() => {
+    GetSymptoms()
+      .then((response) => {
+        setOptions(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  // update the selected value to pass it back to App via onChange
+  const handleChange = (event, value) => {
+    onChange(value.title);
+    console.log("(onchange) user picked symptom:", value.title);
   };
 
-  const handleChange = (event) => {
-    setTerm(event.target.value);
-  };
   return (
     <Container sx={{ m: "auto", mb: 1 }} component="section" maxWidth="sm">
       <Paper component="article" sx={{ textAlign: "center" }}>
-        <Typography variant="h5" component="h1" sx={{ mb: 2 }}>
-          What are your symptoms?
-        </Typography>
-        <form onSubmit={handleFormSubmit}>
-          <input
-            value={term}
-            onChange={handleChange}
-            placeholder="type something here"
-          />
-        </form>
+        <Autocomplete
+          // multiple
+          options={options}
+          getOptionLabel={(option) => option.title}
+          filterSelectedOptions
+          autoComplete
+          clearOnBlur
+          onChange={handleChange}
+          renderOption={(props, option, { inputValue, selected }) => {
+            const matches = match(option.title, inputValue, {
+              insideWords: true,
+            });
+            const parts = parse(option.title, matches);
+
+            return (
+              <li {...props} key={option.id}>
+                <div>
+                  {parts.map((part, index) => (
+                    <span
+                      key={index}
+                      style={{ fontWeight: part.highlight ? 700 : 400 }}
+                    >
+                      {part.text}
+                    </span>
+                  ))}
+                </div>
+              </li>
+            );
+          }}
+          renderInput={(params) => (
+            <TextField {...params} label="Pick your symptoms" />
+          )}
+        />
       </Paper>
     </Container>
   );
