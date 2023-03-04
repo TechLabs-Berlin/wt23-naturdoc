@@ -22,6 +22,7 @@ function SearchBar({ onChange }) {
 
   // update the selected value to pass it back to App via onChange
   const handleChange = (event, value) => {
+    //*[TODO] change value.title so we can retrieve multiple symptoms
     onChange(value.title);
     console.log("(onchange) user picked symptom:", value.title);
   };
