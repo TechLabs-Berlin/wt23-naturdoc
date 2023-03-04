@@ -2,7 +2,6 @@ import ResultShow from "./ResultShow";
 import { Container, Paper } from "@mui/material";
 
 function ResultList({ remedies }) {
-  //*[TODO] change remedies.map so we can retrieve multiple remedies
   const renderedRemedies = remedies.map((remedy) => {
     return <ResultShow key={remedy.id} remedy={remedy} />;
   });

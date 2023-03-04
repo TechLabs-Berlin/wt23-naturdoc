@@ -15,10 +15,16 @@ import { Box, CssBaseline } from "@mui/material";
 function App() {
   const [remedies, setRemedies] = useState([]);
 
-  const handleChange = async (term) => {
-    const result = await GetRemedies(term);
-    console.log("(onchange) Do a search with", term);
-    setRemedies(result);
+  const handleChange = async (terms) => {
+    const result = await GetRemedies(terms);
+    console.log("(onchange) Do a search with", terms);
+    if (!terms.length) {
+      setRemedies([]);
+      console.log("no data found");
+    } else {
+      setRemedies(result);
+    }
+    // setRemedies(result);
     console.log("Search Result:", result);
   };
 

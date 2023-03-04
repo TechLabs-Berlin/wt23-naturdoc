@@ -22,16 +22,17 @@ function SearchBar({ onChange }) {
 
   // update the selected value to pass it back to App via onChange
   const handleChange = (event, value) => {
-    //*[TODO] change value.title so we can retrieve multiple symptoms
-    onChange(value.title);
-    console.log("(onchange) user picked symptom:", value.title);
+    const titles = value.map((item) => item.title);
+    onChange(titles);
+
+    console.log("(onchange) user picked symptom:", value);
   };
 
   return (
     <Container sx={{ m: "auto", mb: 1 }} component="section" maxWidth="sm">
       <Paper component="article" sx={{ textAlign: "center" }}>
         <Autocomplete
-          // multiple
+          multiple
           options={options}
           getOptionLabel={(option) => option.title}
           filterSelectedOptions
