@@ -37,6 +37,8 @@ function SearchBar({ onChange }) {
           getOptionLabel={(option) => option.title}
           filterSelectedOptions
           autoComplete
+          autoSelect
+          autoHighlight
           clearOnBlur
           onChange={handleChange}
           renderOption={(props, option, { inputValue, selected }) => {
