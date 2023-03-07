@@ -1,13 +1,14 @@
-import { Box, Typography, Link, Container } from "@mui/material";
+import { Box, Typography, Container } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Copyright() {
   return (
     <Typography variant="body2" align="center">
       <small>
-        {"Copyright © "}
-        <Link href="https://github.com/TechLabs-Berlin/wt23-naturdoc">
+        <Link to={"/about"}>About Us</Link> {"Copyright © "}
+        <a href="https://github.com/TechLabs-Berlin/wt23-naturdoc">
           Techlabs Naturdoc Team
-        </Link>{" "}
+        </a>{" "}
         {new Date().getFullYear()}
         {"."}
       </small>
