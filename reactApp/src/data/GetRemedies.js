@@ -1,0 +1,31 @@
+import axios from "axios";
+
+const GetRemedies = async (term) => {
+  try {
+    const response = await axios.get(
+      "https://my-json-server.typicode.com/rjeantet/server-mock/remedies",
+      {
+        headers: {
+          // cf API documentation
+        },
+        params: {
+          matching_symptoms: term,
+        },
+      }
+    );
+
+    console.log("Filtered remedies JSON response:", response.data);
+    return response.data;
+
+    /* const randomNum = Math.floor(Math.random() * response.data.length);
+    const randomRemedies = response.data
+      .sort(() => Math.random() - 0.5)
+      .slice(0, randomNum);
+
+    return randomRemedies; */
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export default GetRemedies;

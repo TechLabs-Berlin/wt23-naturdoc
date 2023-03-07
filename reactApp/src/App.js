@@ -5,7 +5,7 @@ import StickyFooter from "components/layouts/Footer";
 import SearchBar from "components/results/SearchBar";
 import ResultList from "components/results/ResultList";
 // Data
-import SearchContent from "data/api";
+import GetRemedies from "data/GetRemedies";
 // Styles
 import "assets/App.css";
 import theme from "assets/theme";
@@ -14,11 +14,20 @@ import { Box, CssBaseline } from "@mui/material";
 
 function App() {
   const [remedies, setRemedies] = useState([]);
-  const handleSubmit = async (term) => {
-    const result = await SearchContent(term);
 
-    setRemedies(result);
+  const handleChange = async (terms) => {
+    const result = await GetRemedies(terms);
+    console.log("(onchange) Do a search with", terms);
+    if (!terms.length) {
+      setRemedies([]);
+      console.log("no data found");
+    } else {
+      setRemedies(result);
+    }
+    // setRemedies(result);
+    console.log("Search Result:", result);
   };
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -34,7 +43,7 @@ function App() {
           component="main"
         >
           <CssBaseline />
-          <SearchBar onSubmit={handleSubmit} />
+          <SearchBar onChange={handleChange} />
           <ResultList remedies={remedies} />
         </Box>
 

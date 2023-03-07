@@ -2,9 +2,11 @@ function ResultShow({ remedy }) {
   return (
     <>
       <p>
-        <b>Remedy: Id {remedy.id}</b>
+        <b>{remedy.title}</b>
         <br />
-        Description: {remedy.body}
+        Rating: 4
+        <br />
+        Recommended used for: <b>{remedy.matching_symptoms}</b>
       </p>
     </>
   );
