@@ -6,7 +6,7 @@ import StickyFooter from "components/layouts/Footer";
 import SearchBar from "components/results/SearchBar";
 import ResultList from "components/results/ResultList";
 // Data
-import GetRemedies from "data/GetRemedies";
+import getRemedyRecommendation from "data/getRemedyRecommendation";
 // Styles
 import "assets/App.css";
 import { Box, CssBaseline } from "@mui/material";
@@ -15,7 +15,7 @@ function Home() {
   const [remedies, setRemedies] = useState([]);
 
   const handleChange = async (terms) => {
-    const result = await GetRemedies(terms);
+    const result = await getRemedyRecommendation(terms);
     console.log("(onchange) Do a search with", terms);
     if (!terms.length) {
       setRemedies([]);
