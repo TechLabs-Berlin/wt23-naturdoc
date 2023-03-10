@@ -15,6 +15,8 @@ function SignUp() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      firstName: data.get("firstName"),
+      lastName: data.get("lastName"),
       email: data.get("email"),
       password: data.get("password"),
     });
@@ -46,13 +48,13 @@ function SignUp() {
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
-                  autoComplete="given-name"
-                  name="firstName"
                   required
                   fullWidth
                   id="firstName"
                   label="First Name"
                   autoFocus
+                  name="firstName"
+                  autoComplete="given-name"
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
