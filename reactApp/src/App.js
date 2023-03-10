@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import About from "pages/About";
 import Login from "components/authentication/Login";
+import SignUp from "components/authentication/SignUp";
 
 // Styles
 import "assets/App.css";
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/login" element={<Login />}></Route>
+          <Route exact path="/signup" element={<SignUp />}></Route>
         </Routes>
         <CssBaseline />
       </ThemeProvider>
