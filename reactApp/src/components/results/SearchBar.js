@@ -29,7 +29,7 @@ function SearchBar({ onChange }) {
   };
 
   return (
-    <Container sx={{ m: "auto", mb: 1 }} component="section" maxWidth="sm">
+    <Container sx={{ m: "0 auto" }} component="section" maxWidth="sm">
       <Paper component="article" sx={{ textAlign: "center" }}>
         <Autocomplete
           multiple
