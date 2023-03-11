@@ -1,5 +1,5 @@
 import ResultShow from "./ResultShow";
-import { Container, Paper } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 function ResultList({ remedies }) {
   const renderedRemedies = remedies.slice(0, 10).map((remedy) => {
@@ -7,9 +7,9 @@ function ResultList({ remedies }) {
   });
 
   return (
-    <Container sx={{ mt: 1 }} component="section" maxWidth="sm">
+    <Container sx={{ mt: 5 }} component="section" maxWidth="sm">
       {remedies.length} matching remedies
-      <Paper>{renderedRemedies}</Paper>
+      <Box>{renderedRemedies}</Box>
     </Container>
   );
 }

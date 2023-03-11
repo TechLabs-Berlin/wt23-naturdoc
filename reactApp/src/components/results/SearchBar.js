@@ -4,14 +4,14 @@ import { TextField, Autocomplete } from "@mui/material";
 import parse from "autosuggest-highlight/parse";
 import match from "autosuggest-highlight/match";
 
-import GetSymptoms from "data/GetSymptoms";
+import getSymptoms from "data/getSymptoms";
 
 function SearchBar({ onChange }) {
   const [options, setOptions] = useState([]);
 
   // get the complete list of symptoms from the API
   useEffect(() => {
-    GetSymptoms()
+    getSymptoms()
       .then((response) => {
         setOptions(response);
       })

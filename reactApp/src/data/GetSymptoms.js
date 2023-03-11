@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const GetSymptoms = async (term) => {
+const getSymptoms = async (term) => {
   try {
     const response = await axios.get(
       "https://my-json-server.typicode.com/rjeantet/server-mock/symptoms",
@@ -20,4 +20,4 @@ const GetSymptoms = async (term) => {
   }
 };
 
-export default GetSymptoms;
+export default getSymptoms;
