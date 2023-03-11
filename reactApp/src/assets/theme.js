@@ -40,7 +40,17 @@ const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          padding: "25px",
+          // padding: "25px",
+        },
+      },
+    },
+    MuiCardHeader: {
+      styleOverrides: {
+        subheader: {
+          display: "-webkit-box",
+          WebkitLineClamp: "3",
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
         },
       },
     },
