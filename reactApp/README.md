@@ -1,10 +1,13 @@
-# App demo - current W3
+# App demo - 11/03/2023
 
-![04FE - global layouts](src/assets/04FE.gif) / !
+![04FE - global layouts](src/assets/RemedyListDemo.gif) / !
 
-Getting Started with Create React App
+## Prerequisites:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Basic understanding of React.
+
+Project bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+UI Framework: [Material UI](https://mui.com/material-ui/).
 
 ## Available Scripts
 
