@@ -16,14 +16,14 @@ function Home() {
 
   const handleChange = async (terms) => {
     const result = await getRemedyRecommendation(terms);
-    console.log("(onchange) Do a search with", terms);
+    console.log("Do a search with selected symptom(s)", terms);
     if (!terms.length) {
       setRemedies([]);
       console.log("no data found");
     } else {
       setRemedies(result);
     }
-    console.log("Search Result:", result);
+    console.log("Display remedy recommendations:", result);
   };
   return (
     <>

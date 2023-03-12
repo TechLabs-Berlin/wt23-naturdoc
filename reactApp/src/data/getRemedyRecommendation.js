@@ -14,7 +14,7 @@ const getRemedyRecommendation = async (term) => {
       }
     );
 
-    console.log("Filtered remedies JSON response:", response.data);
+    console.log("getRemedyRecommendation response:", response.data);
     return response.data;
 
     /* const randomNum = Math.floor(Math.random() * response.data.length);

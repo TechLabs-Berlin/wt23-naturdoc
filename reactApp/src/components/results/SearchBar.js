@@ -25,7 +25,7 @@ function SearchBar({ onChange }) {
     const titles = value.map((item) => item.title);
     onChange(titles);
 
-    console.log("(onchange) user picked symptom:", value);
+    console.log("User selected symptom(s):", value);
   };
 
   return (
