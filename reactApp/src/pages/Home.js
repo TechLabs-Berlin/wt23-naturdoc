@@ -1,17 +1,15 @@
 import { useState } from "react";
 
 // Components
-import Header from "components/layouts/Header";
-import StickyFooter from "components/layouts/Footer";
+import LayoutHOC from "components/layouts/LayoutHOC";
 import SearchBar from "components/results/SearchBar";
 import ResultList from "components/results/ResultList";
 // Data
 import getRemedyRecommendation from "data/getRemedyRecommendation";
 // Styles
 import "assets/App.css";
-import { Box, CssBaseline } from "@mui/material";
 
-function Home() {
+const Home = () => {
   const [remedies, setRemedies] = useState([]);
 
   const handleChange = async (terms) => {
@@ -27,23 +25,10 @@ function Home() {
   };
   return (
     <>
-      <Header />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "80vh",
-        }}
-        component="main"
-      >
-        <CssBaseline />
-        <SearchBar onChange={handleChange} />
-        <ResultList remedies={remedies} />
-      </Box>
-
-      <StickyFooter />
+      <SearchBar onChange={handleChange} />
+      <ResultList remedies={remedies} />
     </>
   );
-}
+};
 
-export default Home;
+export default LayoutHOC(Home);
