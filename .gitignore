@@ -1,0 +1,12 @@
+# DS:
+
+# wip files:
+./ds/notebooks/data_exploration-copy.ipynb
+./ds/data.ipynb
+./ds/kew.ipynb
+
+# files too big for Github:
+
+./ds/data/DWCA/wcvp_taxon.csv
+./ds/data/WCVP/wcvp_distribution.csv
+./ds/data/WCVP/wcvp_names.csv
