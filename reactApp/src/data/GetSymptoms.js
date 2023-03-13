@@ -13,7 +13,7 @@ const getSymptoms = async (term) => {
         },
       }
     );
-    console.log("Full symptoms list JSON response:", response.data);
+    console.log("Get full list of symptoms:", response.data);
     return response.data;
   } catch (error) {
     console.log(error);

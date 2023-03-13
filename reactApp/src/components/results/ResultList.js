@@ -2,7 +2,7 @@ import ResultShow from "./ResultShow";
 import { Container, Box } from "@mui/material";
 
 function ResultList({ remedies }) {
-  const renderedRemedies = remedies.slice(0, 10).map((remedy) => {
+  const renderedRemedies = remedies.map((remedy) => {
     return <ResultShow key={remedy.id} remedy={remedy} />;
   });
 

@@ -1,24 +1,11 @@
-import StickyFooter from "components/layouts/Footer";
-import Header from "components/layouts/Header";
-import { Box } from "@mui/material";
+import LayoutHOC from "components/layouts/LayoutHOC";
 
-function About() {
+const About = () => {
   return (
-    <div>
-      <Header />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "80vh",
-        }}
-        component="main"
-      >
-        <h1>ABOUT PAGE</h1>
-      </Box>
-      <StickyFooter />
-    </div>
+    <>
+      <h1>ABOUT PAGE</h1>
+    </>
   );
-}
+};
 
-export default About;
+export default LayoutHOC(About);
