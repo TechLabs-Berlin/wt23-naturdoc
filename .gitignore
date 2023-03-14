@@ -13,6 +13,7 @@
 
 # misc
 .DS_Store
+.env 
 .env.local
 .env.development.local
 .env.test.local
@@ -21,3 +22,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# hidden files and folders in the DS folder:
+
+ds/.* 
+ds/data/DWCA/.* 
+ds/data/WCVP/.* 
+ds/notebooks/.* 
+ds/src/.* 
