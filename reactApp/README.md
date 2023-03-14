@@ -1,7 +1,3 @@
-# App demo - 11/03/2023
-
-![04FE - global layouts](src/assets/RemedyListDemo.gif) / !
-
 ## Prerequisites:
 
 Basic understanding of React.

@@ -4,6 +4,7 @@ import Home from "pages/Home";
 import About from "pages/About";
 import Login from "components/authentication/Login";
 import SignUp from "components/authentication/SignUp";
+import RemedyDetails from "pages/RemedyDetails";
 
 // Styles
 import "assets/App.css";
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/signup" element={<SignUp />}></Route>
+          <Route exact path="/remedies/:id" element={<RemedyDetails />}></Route>
         </Routes>
         <CssBaseline />
       </ThemeProvider>

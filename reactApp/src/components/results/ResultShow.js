@@ -7,12 +7,17 @@ import {
   Typography,
 } from "@mui/material";
 import RemedyIcon from "../remedy/RemedyIcon";
+import { Link } from "react-router-dom";
 
 function ResultShow({ remedy }) {
   return (
     <>
       <Card sx={{ mb: 2 }}>
-        <CardActionArea>
+        <CardActionArea
+          component={Link}
+          to={`/remedies/${remedy.id}`}
+          key={remedy.id}
+        >
           <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
             <RemedyIcon icon={remedy?.icon} sx={{ width: 180 }} />
             <Box sx={{ display: "flex", flexDirection: "column", pl: 2 }}>
