@@ -12,14 +12,36 @@ load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 
 client = pymongo.MongoClient(MONGO_URI)
-db = client.naturdoc
-collection = db.remedies
-requesting = []
 
-with open(r"../output/remedies.json") as f:
+def upload_remedies():
+    print("Connecting to remedies collection...")
 
-    file_data = json.load(f)
+    db = client.naturdoc
+    collection = db.remedies
+    requesting = []
 
-collection.insert_many(file_data)
+    with open(r"../output/remedies.json") as f:
+
+        file_data = json.load(f)
+
+    collection.insert_many(file_data)
+
+
+def upload_symptoms():
+    print("Connecting to symptoms collection...")
+
+    db = client.naturdoc
+    collection = db.symptoms
+    requesting = []
+
+    with open(r"../output/symptoms.json") as f:
+
+        file_data = json.load(f)
+
+    collection.insert_many(file_data)
+
+# upload_remedies()
+
+# upload_symptoms()
 
 client.close()
