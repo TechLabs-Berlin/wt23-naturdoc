@@ -62,23 +62,51 @@ app.get('/', (req, res) => {
 //})
 
 
-//query field -> DS? 
-app.get('/search', async (req, res) => {
-    //
-    res.render('form', { medicals })
-});
+//query field to get remedy recommendation
+app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
+    const { symptom } = req.query;
+    if (symptom) {
+        const remedies = await Medicals.find({ symptom }) //await get request from DS endpoint 
+        res.send('medical found!') //if no result, then send an error message, render JSON info
+    } else {
+        const remedies = await Medicals.find({})
+        res.send('all medicals')
+    }
+
+}));
+
+//result list per user !!
+//app.get('/remedies', catchAsynch(async (req, res) => {
+//    const { symptom, remedy } = req.body;
+//    const results = await Medicals.find(req.body.symptom);
+//    // res.send(results)
+//    //res.render('form', { results })
+//}));
+
+// list all medicals
+//app.get('/remedies', catchAsynch(async (req, res) => {
+//    const remedies = await Medicals.find({});
+//    res.render('form', { remedies })
+//}));
 
 //medicals page 
-app.get('/medicals/:id', async (req, res) => {
+app.get('/remedies/:id', catchAsynch(async (req, res) => {
     const medical = await Medicals.findById(req.params.id);
-    res.render('form')
-});
+    //    res.render('form')
+}));
 
-app.put('/medicals/:id', async (req, res) => {
-    const { id } = req.params;
-    const rating = await Ratings.findByIdAndUpdate(id, { ...req.body.rating });
-    res.redirect(`/medicals/${Medicals._id}`);
-})
+//add the rating 
+app.put('/remedies/:id/rating', catchAsynch(async (req, res) => {
+    const medical = await Medicals.findById(req.params.id);
+    //    res.render('form')
+}));
+
+
+//app.put('/medicals/:id', async (req, res) => {
+//    const { id } = req.params;
+//    const rating = await Ratings.findByIdAndUpdate(id, { ...req.body.rating });
+//    res.redirect(`/medicals/${Medicals._id}`);
+//})
 
 //users endpoints: 
 
