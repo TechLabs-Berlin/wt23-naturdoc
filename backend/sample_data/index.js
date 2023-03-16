@@ -13,7 +13,7 @@ db.once("open", () => {
 
 
 const seedDB = async () => {
-    //await Medical.deleteMany({})
+    await Medical.deleteMany({})
     for (let i = 1; i <= 10; i++) {
         const med = new Medical({
             symptom: `${sample[i].symptom}`,

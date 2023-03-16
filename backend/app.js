@@ -3,13 +3,15 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const session = require('express-session');
-const Medicals = require('./models/medicals');
+const Medicals = require('./models/remedies');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const flash = require('connect-flash');
-const User = require('./models/ratings');
+const User = require('./models/user');
+const Ratings = require('./models/ratings');
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
+//const pages = require('./reactApp/src/pages/Home.js');
 
 mongoose.connect('mongodb://localhost:27017/naturdoc');
 
@@ -24,6 +26,12 @@ db.once("open", () => {
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
+
+//app.set('views', '../reactApp/src/data/pages');
+//app.get("/", (req, res) => {
+//    res.sendFile(path.join(__dirname, "pages", "Home.js"))
+//})
 
 const sessionConfig = {
     secret: 'testing',
@@ -55,19 +63,14 @@ app.get('/', (req, res) => {
     res.render('form')
 });
 
-//app.get('/test', async (req, res) => {
-//    const user = new User({ email: 'cristy@gmail.com', username: 'cristy' });
-//    const newUser = await User.register(user, 'cats');
-//    res.send(newUser);
-//})
-
-
 //query field to get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const { symptom } = req.query;
     if (symptom) {
         const remedies = await Medicals.find({ symptom }) //await get request from DS endpoint 
-        res.send('medical found!') //if no result, then send an error message, render JSON info
+        return res.status(200).send({
+            data: remedies,
+        });
     } else {
         const remedies = await Medicals.find({})
         res.send('all medicals')
@@ -76,12 +79,6 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 }));
 
 //result list per user !!
-//app.get('/remedies', catchAsynch(async (req, res) => {
-//    const { symptom, remedy } = req.body;
-//    const results = await Medicals.find(req.body.symptom);
-//    // res.send(results)
-//    //res.render('form', { results })
-//}));
 
 // list all medicals
 //app.get('/remedies', catchAsynch(async (req, res) => {
@@ -97,16 +94,11 @@ app.get('/remedies/:id', catchAsynch(async (req, res) => {
 
 //add the rating 
 app.put('/remedies/:id/rating', catchAsynch(async (req, res) => {
-    const medical = await Medicals.findById(req.params.id);
+    const { id } = req.params;
+    const medical = await Medicals.findByIdAndUpdate(id, { ...req.body.rating });
     //    res.render('form')
+    //    res.redirect(`/medicals/${Medicals._id}`);
 }));
-
-
-//app.put('/medicals/:id', async (req, res) => {
-//    const { id } = req.params;
-//    const rating = await Ratings.findByIdAndUpdate(id, { ...req.body.rating });
-//    res.redirect(`/medicals/${Medicals._id}`);
-//})
 
 //users endpoints: 
 

@@ -21,6 +21,27 @@ module.exports = [
     MODIFIED: ""
   },
   {
+    ETHNO: "1",
+    symptom: "Knee pain",
+    remedy: "Achillea",
+    SPECIES: "millefolium",
+    SPAUT: "",
+    SPRANK: "",
+    SPXNAM: "",
+    SPXAUT: "",
+    FAMILY: "Asteraceae",
+    CNAME: "",
+    COUNTRY: "",
+    REFERENCE: "Uphof",
+    LONGREF: "",
+    EFFECTIVE: "",
+    TAXON: "Achillea millefolium",
+    TAXAUTHOR: "",
+    USERID: "DUKE",
+    CREATED: "02-FEB-98",
+    MODIFIED: ""
+  },
+  {
     ETHNO: "2",
     symptom: "Abcess",
     remedy: "Castilla",
