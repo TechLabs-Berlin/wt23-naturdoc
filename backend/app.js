@@ -7,6 +7,7 @@ const Medicals = require('./models/remedies');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const flash = require('connect-flash');
+const cors = require('cors');
 const User = require('./models/user');
 const Ratings = require('./models/ratings');
 const catchAsynch = require('./utilities/catchAsynch');
@@ -43,6 +44,15 @@ const sessionConfig = {
         httpOnly: true
     }
 }
+
+app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'PUT', 'POST', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 200,
+}));
+
+
 app.use(express.json());
 app.use(session(sessionConfig));
 app.use(flash());
@@ -67,10 +77,14 @@ app.get('/', (req, res) => {
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const { symptom } = req.query;
     if (symptom) {
-        const remedies = await Medicals.find({ symptom }) //await get request from DS endpoint 
-        return res.status(200).send({
-            data: remedies,
-        });
+        const remedies = await Medicals.find({ symptom }) //await get request from DS endpoint
+        const response = remedies.map(remedyItem => {
+            return {
+                symptom: remedyItem.symptom,
+                remedy: remedyItem.remedy
+            }
+        })
+        return res.status(200).send(response);
     } else {
         const remedies = await Medicals.find({})
         res.send('all medicals')
