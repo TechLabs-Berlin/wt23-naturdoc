@@ -30,3 +30,7 @@ ds/data/DWCA/.*
 ds/data/WCVP/.* 
 ds/notebooks/.* 
 ds/src/.* 
+
+# python:
+
+__pycache__

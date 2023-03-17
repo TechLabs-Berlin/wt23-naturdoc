@@ -13,6 +13,9 @@ const getSymptoms = async (term) => {
         },
       }
     );
+
+
+
     console.log("Get full list of symptoms:", response.data);
     return response.data;
   } catch (error) {
