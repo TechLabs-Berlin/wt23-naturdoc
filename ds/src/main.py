@@ -68,7 +68,6 @@ async def query_remedies(q: Query): # declaring it as a required parameter
     print("symptoms received")
     remedies = get_remedy_recommendation(symptoms, 10)
     print("recs received")
-    print(remedies)
     return remedies
 
 
