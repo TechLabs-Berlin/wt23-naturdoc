@@ -1,11 +1,12 @@
-from typing import List, Union
-import pymongo
-from dotenv import load_dotenv
-import os 
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import List, Union
+
+from recommender import get_remedy_recommendation
 
 app = FastAPI()
+
+# information about FastAPI setup: 
 
 # https://fastapi.tiangolo.com/tutorial/body/
 class Item(BaseModel):
@@ -62,38 +63,14 @@ class Query(BaseModel):
 # }
 
 @app.post("/remedies/query")
-async def query_remedies(symptoms: Query): # declaring it as a required parameter
-    print(symptoms)
-    client = get_client()
-    remedies = await get_remedy(client, symptoms)
+async def query_remedies(q: Query): # declaring it as a required parameter
+    symptoms = q.symptoms
+    print("symptoms received")
+    remedies = get_remedy_recommendation(symptoms, 10)
+    print("recs received")
     print(remedies)
-    return symptoms
-
-# connecting to MongoDB Atlas:
-
-load_dotenv()
-
-MONGO_URI = os.getenv("MONGO_URI")
-
-# client = pymongo.MongoClient(MONGO_URI)
-# db = client.naturdoc
-# collection = db.remedies
-
-def get_client():
-    client = pymongo.MongoClient(MONGO_URI)
-    return client
-
-async def get_remedy(client: pymongo.MongoClient, symptoms: list):
-    db = client.naturdoc
-    collection = db.remedies
-    remedies = list()
-    for symptom in symptoms:
-        remedy = collection.find_one({ "ACTIVITY": { "$in": [ f"/{symptom}/i" ] } })
-        remedies.append(remedy)
-        print(remedy)
     return remedies
 
-# client.close()
 
 # run the server in bash with:
 # uvicorn main:app --reload
