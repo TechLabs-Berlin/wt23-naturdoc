@@ -1,1 +1,0 @@
-# wt23-naturdoc
