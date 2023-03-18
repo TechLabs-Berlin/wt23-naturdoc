@@ -31,7 +31,7 @@ export default function SimpleBottomNavigation() {
           />
           <BottomNavigationAction
             component={Link}
-            to={"/"}
+            to={"/search"}
             label="search"
             icon={<SearchIcon />}
           />

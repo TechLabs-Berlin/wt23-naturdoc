@@ -7,7 +7,7 @@ function ResultList({ remedies }) {
   });
 
   return (
-    <Container sx={{ mt: 5 }} component="section" maxWidth="sm">
+    <Container sx={{ mt: 1 }} component="section" maxWidth="sm">
       {remedies.length} matching remedies
       <Box>{renderedRemedies}</Box>
     </Container>

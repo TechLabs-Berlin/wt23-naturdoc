@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import LayoutHOC from "components/layouts/LayoutHOC";
 
 function Login() {
   const handleSubmit = (event) => {
@@ -22,8 +23,6 @@ function Login() {
 
   return (
     <>
-      <h1>(MODAL) Login with your Naturdoc Account </h1>
-
       <Container component="main" maxWidth="xs">
         <Box
           sx={{
@@ -96,4 +95,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LayoutHOC(Login);

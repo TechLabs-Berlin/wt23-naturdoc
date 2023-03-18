@@ -9,6 +9,7 @@ import RemedyIcon from "components/remedy/RemedyIcon";
 import RemedyAccordion from "components/remedy/RemedyAccordion";
 /* import RemedyTabs from "components/remedy/RemedyTabs"; */
 import RatingList from "components/ratings/RatingList";
+import LayoutHOC from "components/layouts/LayoutHOC";
 // material-ui
 import { CardMedia, Box, Container, IconButton, Paper } from "@mui/material";
 import Typography from "@mui/material/Typography";
@@ -86,4 +87,4 @@ function RemedyDetails() {
   );
 }
 
-export default RemedyDetails;
+export default LayoutHOC(RemedyDetails);
