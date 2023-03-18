@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import RemedyIcon from "../remedy/RemedyIcon";
+import RemedyRating from "components/remedy/RemedyRating";
 import { Link } from "react-router-dom";
 
 function ResultShow({ remedy }) {
@@ -27,20 +28,7 @@ function ResultShow({ remedy }) {
                 </Typography>
               </Box>
               <Box sx={{ flex: "1 0 auto" }}>
-                <Box sx={{ display: "flex", alignItems: "center" }}>
-                  <Rating
-                    name="read-only"
-                    size="small"
-                    defaultValue={1}
-                    max={1}
-                    readOnly
-                    sx={{ mr: 0.5 }}
-                  />
-                  <Box component="span">
-                    <b>{remedy?.ratingAverage}</b> (
-                    {remedy?.totalNumberofRatings})
-                  </Box>
-                </Box>
+                <RemedyRating remedy={remedy} summary />
                 <Typography variant="body2" color="text.secondary">
                   {remedy?.matching_symptoms}
                 </Typography>
