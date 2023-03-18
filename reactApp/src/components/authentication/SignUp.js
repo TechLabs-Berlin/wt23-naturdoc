@@ -46,33 +46,12 @@ function SignUp() {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="First Name"
-                  autoFocus
-                  name="firstName"
-                  autoComplete="given-name"
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  autoComplete="family-name"
-                />
-              </Grid>
               <Grid item xs={12}>
                 <TextField
                   required
                   fullWidth
                   id="email"
-                  label="Email Address"
+                  label="Your Email Address"
                   name="email"
                   autoComplete="email"
                 />
@@ -81,8 +60,19 @@ function SignUp() {
                 <TextField
                   required
                   fullWidth
+                  id="username"
+                  label="Your Username"
+                  autoFocus
+                  name="username"
+                  autoComplete="username"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
                   name="password"
-                  label="Password"
+                  label="Your Password"
                   type="password"
                   id="password"
                   autoComplete="new-password"
@@ -93,7 +83,7 @@ function SignUp() {
                   control={
                     <Checkbox value="allowExtraEmails" color="primary" />
                   }
-                  label="I want to receive inspiration, marketing promotions and updates via email."
+                  label="I accept the data privacy conditions."
                 />
               </Grid>
             </Grid>
@@ -103,7 +93,7 @@ function SignUp() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign Up
+              Create Account
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>

@@ -49,7 +49,7 @@ function Login() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="Your Email Address"
               name="email"
               autoComplete="email"
               autoFocus
@@ -59,7 +59,7 @@ function Login() {
               required
               fullWidth
               name="password"
-              label="Password"
+              label="Your Password"
               type="password"
               id="password"
               autoComplete="current-password"
