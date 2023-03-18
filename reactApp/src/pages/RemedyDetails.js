@@ -3,11 +3,12 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 // data
 import getRemedy from "data/getRemedy";
+import getUserRatings from "data/getUserRatings";
 // components
 import RemedyIcon from "components/remedy/RemedyIcon";
 import RemedyAccordion from "components/remedy/RemedyAccordion";
 /* import RemedyTabs from "components/remedy/RemedyTabs"; */
-
+import RatingList from "components/ratings/RatingList";
 // material-ui
 import { CardMedia, Box, Container, IconButton, Paper } from "@mui/material";
 import Typography from "@mui/material/Typography";
@@ -17,12 +18,20 @@ import RemedyRating from "components/remedy/RemedyRating";
 function RemedyDetails() {
   const { id } = useParams();
   const [remedy, setRemedy] = useState({});
+  const [ratings, setRatings] = useState([]);
   let navigate = useNavigate();
 
   useEffect(() => {
     console.log("useEffect", id);
     getRemedy(id).then((response) => {
       setRemedy(response);
+    });
+  }, [id]);
+
+  useEffect(() => {
+    console.log("useEffect", id);
+    getUserRatings(id).then((response) => {
+      setRatings(response);
     });
   }, [id]);
 
@@ -69,6 +78,7 @@ function RemedyDetails() {
             </Box>
             {/* <RemedyTabs remedy={remedy} /> */}
             <RemedyAccordion remedy={remedy} />
+            <RatingList ratings={ratings} />
           </Paper>{" "}
         </Container>
       </Box>
