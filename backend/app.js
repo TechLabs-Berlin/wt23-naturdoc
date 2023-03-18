@@ -12,7 +12,6 @@ const User = require('./models/user');
 const Ratings = require('./models/ratings');
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
-//const pages = require('./reactApp/src/pages/Home.js');
 
 mongoose.connect('mongodb://localhost:27017/naturdoc');
 
@@ -25,14 +24,6 @@ db.once("open", () => {
     console.log("Database connected");
 });
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
-
-//app.set('views', '../reactApp/src/data/pages');
-//app.get("/", (req, res) => {
-//    res.sendFile(path.join(__dirname, "pages", "Home.js"))
-//})
 
 const sessionConfig = {
     secret: 'testing',
@@ -68,10 +59,6 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// homepage
-app.get('/', (req, res) => {
-    res.render('form')
-});
 
 //query field to get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
@@ -87,40 +74,45 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
         return res.status(200).send(response);
     } else {
         const remedies = await Medicals.find({})
-        res.send('all medicals')
+        return res.status(200).send(response);
     }
 
 }));
 
 //result list per user !!
 
-// list all medicals
-//app.get('/remedies', catchAsynch(async (req, res) => {
-//    const remedies = await Medicals.find({});
-//    res.render('form', { remedies })
-//}));
+//list all symptoms
+app.get('/getSymptoms', catchAsynch(async (req, res) => {
+    const { symptom } = req.params;
+    const symptoms = await Medicals.find({})
+    const response = symptoms.map(remedyItem => {
+        return {
+            symptom: remedyItem.symptom,
+        }
+    })
+    return res.status(200).send(response);
+}));
 
 //medicals page 
 app.get('/remedies/:id', catchAsynch(async (req, res) => {
-    const medical = await Medicals.findById(req.params.id);
-    //    res.render('form')
+    const remedies = await Medicals.findById(req.params.id);
+    return res.status(200).send(remedies);
 }));
 
 //add the rating 
-app.put('/remedies/:id/rating', catchAsynch(async (req, res) => {
+app.put('/remedies/:id', async (req, res) => {
     const { id } = req.params;
-    const medical = await Medicals.findByIdAndUpdate(id, { ...req.body.rating });
-    //    res.render('form')
-    //    res.redirect(`/medicals/${Medicals._id}`);
-}));
+    console.log(req.body.rating);
+    const medical = await Medicals.findByIdAndUpdate(
+        { _id: id },
+        { rating: req.body.rating }
+    );
+    return res.status(200).send(medical);
+});
 
 //users endpoints: 
 
-app.get('/register', (req, res) => {
-    res.render('user')
-})
-
-app.post('/register', catchAsynch(async (req, res) => {
+app.post('/signup', catchAsynch(async (req, res) => {
     try {
         console.log(req);
         const { email, username, password } = req.body;
@@ -129,23 +121,19 @@ app.post('/register', catchAsynch(async (req, res) => {
         req.login(registeredUser, err => {
             if (err) return next(err);
             req.flash('success', 'Successfully logged in');
-            res.redirect('/');
+            res.send('Successfully signed up');
         })
 
     }
     catch (e) {
         req.flash('error', e.message);
-        res.redirect('register');
+        res.send(e.message);
     }
 }));
 
-app.get('/login', (req, res) => {
-    res.render('login')
-});
-
 app.post('/login', passport.authenticate('local', { failureFlash: true, failureRedirect: '/login' }), (req, res) => {
     req.flash('success', 'welcome back');
-    res.redirect('form')
+    res.send('Welcome back')
 });
 
 app.get('/logout', function (req, res, next) {
@@ -154,7 +142,7 @@ app.get('/logout', function (req, res, next) {
             return next(err);
         }
         req.flash('success', "Successfully logged out!");
-        res.redirect('/');
+        res.send('Successfully logged out');
     });
 });
 

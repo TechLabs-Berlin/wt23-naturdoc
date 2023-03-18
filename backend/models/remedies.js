@@ -6,7 +6,8 @@ const Schema = mongoose.Schema;
 const MedicalSchema = new Schema({
     remedy: String,
     symptom: String,
-    description: String
+    description: String,
+    rating: Number
 });
 
 module.exports = mongoose.model('Medical', MedicalSchema);
@@ -14,7 +15,7 @@ module.exports = mongoose.model('Medical', MedicalSchema);
 
 
 //const RemediesSchema = new Schema({
-//    remedyName: String,  
+//    remedyName: String,
 //    symptoms: Array,
 //    ratings: [
 //        {
@@ -22,9 +23,9 @@ module.exports = mongoose.model('Medical', MedicalSchema);
 //            ref: 'Ratings'
 //        }
 //    ],
-//    ratingAverage: Number,               
+//    ratingAverage: Number,
 //    totalNumberofRatings: Number
 //})
-//module.exports = mongoose.model('Remedies', RemediesSchema);
+//module.exports = mongoose.model('Remedy', RemediesSchema);
 
 
