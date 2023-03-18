@@ -6,7 +6,6 @@ import Search from "pages/Search";
 import Login from "components/authentication/Login";
 import SignUp from "components/authentication/SignUp";
 import RemedyDetails from "pages/RemedyDetails";
-import BarNavBottom from "components/layouts/BarNavBottom";
 // Styles
 import "assets/App.css";
 import theme from "assets/theme";
