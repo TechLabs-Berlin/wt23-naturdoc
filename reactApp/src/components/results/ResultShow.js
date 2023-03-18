@@ -19,7 +19,7 @@ function ResultShow({ remedy }) {
           key={remedy.id}
         >
           <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
-            <RemedyIcon icon={remedy?.icon} sx={{ width: 180 }} />
+            <RemedyIcon icon={remedy?.icon} sx={{ width: 180 }} smallIcon />
             <Box sx={{ display: "flex", flexDirection: "column", pl: 2 }}>
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Typography component="div" sx={{ fontWeight: 500, ml: 0.25 }}>
