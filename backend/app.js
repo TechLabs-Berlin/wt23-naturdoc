@@ -13,6 +13,7 @@ const Ratings = require('./models/ratings');
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 
+
 mongoose.connect('mongodb://localhost:27017/naturdoc');
 
 //mongoose.connect('mongodb+srv://naturdoc:WhYJmBoDdO3tZ89Z@naturdoc.aj9zhtw.mongodb.net/?retryWrites=true&w=majority');
@@ -100,12 +101,30 @@ app.get('/remedies/:id', catchAsynch(async (req, res) => {
 }));
 
 //add the rating 
+//app.put('/remedies/:id', async (req, res) => {
+//    const { id } = req.params;
+//    console.log(req.body.rating);
+//    const medical = await Medicals.findByIdAndUpdate(
+//        { _id: id },
+//        { rating: req.body.rating }
+//    );
+//    return res.status(200).send(medical);
+//});
+
+//add the rating 
 app.put('/remedies/:id', async (req, res) => {
-    const { id } = req.params;
-    console.log(req.body.rating);
+    const commentId = new mongoose.Schema.Types.ObjectId;
+    const { id } = req.params //req.params;
+    console.log(req.params);
     const medical = await Medicals.findByIdAndUpdate(
         { _id: id },
-        { rating: req.body.rating }
+        {
+            $push:
+            {
+                ratings: req.body.ratings,
+                _id: commentId
+            }
+        }
     );
     return res.status(200).send(medical);
 });
