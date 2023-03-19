@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 // data
 import getRemedy from "data/getRemedy";
 import getUserRatings from "data/getUserRatings";
@@ -70,7 +71,16 @@ function RemedyDetails() {
               <Typography sx={{ fontSize: 20, fontWeight: 500 }} component="h1">
                 {remedy?.title}
               </Typography>
-              <RemedyRating remedy={remedy} />
+              {!remedy.ratingAverage ? (
+                <Box component={"div"}>
+                  <Typography>
+                    No ratings yet.{" "}
+                    <Link to={"/ratingform"}> Be the first to add one.</Link>
+                  </Typography>
+                </Box>
+              ) : (
+                <RemedyRating remedy={remedy} />
+              )}
 
               <Typography variant="body" color="text.secondary">
                 <b>Best use for: </b>

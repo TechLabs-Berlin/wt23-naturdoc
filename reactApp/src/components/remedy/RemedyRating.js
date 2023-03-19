@@ -14,7 +14,7 @@ const RemedyRating = ({ remedy, summary }) => {
             sx={{ mr: 0.5 }}
           />
           <Box component="span">
-            <b>{remedy?.ratingAverage}</b> ({remedy?.totalNumberofRatings})
+            <b>{remedy.ratingAverage}</b> ({remedy.totalNumberofRatings})
           </Box>
         </Box>
       </>
@@ -49,7 +49,7 @@ const RemedyRating = ({ remedy, summary }) => {
                 readOnly
               />
               <Box component={"div"} sx={{ fontSize: 14 }}>
-                ({remedy?.totalNumberofRatings} reviews)
+                ({remedy.totalNumberofRatings} reviews)
               </Box>
             </Box>
           </Box>

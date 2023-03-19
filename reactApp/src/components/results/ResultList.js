@@ -8,7 +8,8 @@ function ResultList({ remedies }) {
 
   return (
     <Container sx={{ mt: 1 }} component="section" maxWidth="sm">
-      {remedies.length} matching remedies
+      {!remedies.length ? "No" : remedies.length}
+      {remedies.length === 1 ? " matching remedy" : " matching remedies"}
       <Box>{renderedRemedies}</Box>
     </Container>
   );
