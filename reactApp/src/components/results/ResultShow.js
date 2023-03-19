@@ -1,7 +1,6 @@
 import {
   Card,
   Box,
-  Rating,
   CardActionArea,
   CardContent,
   Typography,

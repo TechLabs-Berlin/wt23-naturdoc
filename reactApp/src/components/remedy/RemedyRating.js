@@ -45,8 +45,8 @@ const RemedyRating = ({ remedy, summary }) => {
               <Rating
                 max={5}
                 precision={0.5}
-                value={Math.floor(remedy.ratingAverage)}
                 readOnly
+                value={remedy.ratingAverage ? remedy.ratingAverage : "0"}
               />
               <Box component={"div"} sx={{ fontSize: 14 }}>
                 ({remedy.totalNumberofRatings} reviews)
