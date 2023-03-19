@@ -34,3 +34,6 @@ npm install @mui/material @emotion/react @emotion/styled
 
 5. API Endpoints
    API Endpoints are located in the folder /data
+
+6. In case of difficulties connecting to the backend, you can still render the App by using a "fake testing API".
+   To do so, go into the .js file under /data, comment the code pointing to "localhost/7000..." and uncomment the code pointing to "https://my-json-server.typicode.com/rjeantet/server-mock/..."
