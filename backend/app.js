@@ -12,18 +12,25 @@ const User = require('./models/user');
 const Ratings = require('./models/ratings');
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
+const { connect } = require('./database/database');
+const request = require('request');
 
 
-mongoose.connect('mongodb://localhost:27017/naturdoc');
+connect().then(async function seed() {
+    console.log('Successfully connected to Database');
+});
+
+
+//mongoose.connect('mongodb://localhost:27017/naturdoc');
 
 //mongoose.connect('mongodb+srv://naturdoc:WhYJmBoDdO3tZ89Z@naturdoc.aj9zhtw.mongodb.net/?retryWrites=true&w=majority');
 
 
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection.error:"))
-db.once("open", () => {
-    console.log("Database connected");
-});
+//const db = mongoose.connection;
+//db.on("error", console.error.bind(console, "connection.error:"))
+//db.once("open", () => {
+//    console.log("Database connected");
+//});
 
 
 const sessionConfig = {
@@ -62,21 +69,51 @@ passport.deserializeUser(User.deserializeUser());
 
 
 //query field to get remedy recommendation
+//app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
+//    const { symptom } = req.query;
+//    const remedies = await Medicals.find({ ACTIVITY: req.query.symptom }) //await get request from DS endpoint
+//    console.log(remedies)
+//    const response = remedies.map(remedyItem => {
+//        return {
+//            symptom: remedyItem.ACTIVITY,
+//            remedy: remedyItem.TAXON
+//        }
+//    })
+//    return res.status(200).send(response);
+//    //} else {
+//    //    const remedies = await Medicals.find({})
+//    //    return res.status(200).send(response);
+//    //}
+
+//}));
+
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const { symptom } = req.query;
-    if (symptom) {
-        const remedies = await Medicals.find({ symptom }) //await get request from DS endpoint
-        const response = remedies.map(remedyItem => {
-            return {
-                symptom: remedyItem.symptom,
-                remedy: remedyItem.remedy
-            }
-        })
-        return res.status(200).send(response);
-    } else {
-        const remedies = await Medicals.find({})
-        return res.status(200).send(response);
-    }
+    request({
+        method: "GET",
+        url: "http://localhost:7000/remedies/query",
+        header: {
+
+        },
+        body: {
+            "ACTIVITY": symptom
+        },
+        json: true
+    }).pipe(res)
+
+
+    console.log(res)
+    //const response = res.map(remedyItem => {
+    //    return {
+    //        symptom: remedyItem.ACTIVITY,
+    //        remedy: remedyItem.TAXON
+    //    }
+    //})
+    //return res.status(200).send(response);
+    //} else {
+    //    const remedies = await Medicals.find({})
+    //    return res.status(200).send(response);
+    //}
 
 }));
 
