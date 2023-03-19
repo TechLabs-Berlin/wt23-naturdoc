@@ -14,6 +14,7 @@ const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
 const request = require('request');
+const axios = require('axios');
 
 
 connect().then(async function seed() {
@@ -89,17 +90,22 @@ passport.deserializeUser(User.deserializeUser());
 
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const { symptom } = req.query;
-    request({
-        method: "GET",
-        url: "http://localhost:7000/remedies/query",
-        header: {
 
+    const response = await axios({
+        method: 'GET',
+        url: 'http://localhost:7000/remedies/query',
+
+        headers: {
         },
         body: {
             "ACTIVITY": symptom
         },
         json: true
-    }).pipe(res)
+    }
+    )
+
+    console.log("getRemedyRecommendation response:", response.data);
+    return response.data;
 
 
     console.log(res)
@@ -202,6 +208,6 @@ app.get('/logout', function (req, res, next) {
     });
 });
 
-app.listen(7000, () => {
-    console.log("serving on port 7000")
+app.listen(7001, () => {
+    console.log("serving on port 7001")
 })
