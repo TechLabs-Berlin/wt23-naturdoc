@@ -8,7 +8,7 @@ import getUserRatings from "data/getUserRatings";
 // components
 import RemedyIcon from "components/remedy/RemedyIcon";
 import RemedyAccordion from "components/remedy/RemedyAccordion";
-/* import RemedyTabs from "components/remedy/RemedyTabs"; */
+import RatingForm from "components/ratings/RatingForm";
 import RatingList from "components/ratings/RatingList";
 import LayoutHOC from "components/layouts/LayoutHOC";
 // material-ui
@@ -36,6 +36,15 @@ function RemedyDetails() {
       setRatings(response);
     });
   }, [id]);
+
+  const [open, setOpen] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <>
@@ -75,7 +84,9 @@ function RemedyDetails() {
                 <Box component={"div"}>
                   <Typography>
                     No ratings yet.{" "}
-                    <Link to={"/ratingform"}> Be the first to add one.</Link>
+                    <Link onClick={handleClickOpen}>
+                      Be the first to add one.
+                    </Link>
                   </Typography>
                 </Box>
               ) : (
@@ -87,12 +98,12 @@ function RemedyDetails() {
                 {remedy.matching_symptoms}
               </Typography>
             </Box>
-            {/* <RemedyTabs remedy={remedy} /> */}
             <RemedyAccordion remedy={remedy} />
             <RatingList ratings={ratings} />
           </Paper>{" "}
         </Container>
       </Box>
+      <RatingForm remedy={remedy} open={open} handleClose={handleClose} />
     </>
   );
 }
