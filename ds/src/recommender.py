@@ -109,7 +109,10 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
             json_response["mongoId"] = f"{remedy['_id']}"
             json_response["rating"] = None
             json_response["taxonomicName"] = remedy["TAXON"]
-            json_response["commonNames"] = remedy["CNAME"].split(",")
+            if remedy["CNAME"]:
+                json_response["commonNames"] = remedy["CNAME"].split(",")
+            else:
+                json_response["commonNames"] = remedy["CNAME"]
             json_response["medicinalUses"] = remedy["ACTIVITY"].split(",")
             json_response["treatmentClinical"] = remedy["CLINICAL"]
             json_response["treatmentTraditional"] = remedy["TRADITIONAL"]

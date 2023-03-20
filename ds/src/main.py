@@ -2,9 +2,20 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List, Union
 
+from fastapi.middleware.cors import CORSMiddleware
 from recommender import get_remedy_recommendation
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # information about FastAPI setup: 
 
