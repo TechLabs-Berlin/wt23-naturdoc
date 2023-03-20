@@ -68,69 +68,45 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
-//query field to get remedy recommendation
-//app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
-//    const { symptom } = req.query;
-//    const remedies = await Medicals.find({ ACTIVITY: req.query.symptom }) //await get request from DS endpoint
-//    console.log(remedies)
-//    const response = remedies.map(remedyItem => {
-//        return {
-//            symptom: remedyItem.ACTIVITY,
-//            remedy: remedyItem.TAXON
-//        }
-//    })
-//    return res.status(200).send(response);
-//    //} else {
-//    //    const remedies = await Medicals.find({})
-//    //    return res.status(200).send(response);
-//    //}
-
-//}));
-
+//get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
-    const { symptom } = req.query;
-
+    const body = req.query.symptom;
+    console.log(req.query)
     const response = await axios({
         method: 'POST',
         url: 'http://localhost:8000/remedies/query',
-
         headers: {
-            "Content-Type": "application/json"
+            'Content-Type': 'application/json'
         },
-        body:
-        // "symptoms": symptom
+        data:
         {
-            "symptoms": [
-                "Cough",
-                "Fever",
-                "Ache(Tooth)",
-                "Cancer",
-                "Ache(Head)"
-            ]
-        },
-        //json: true
+            "symptoms": body
+        }
+        //{
+        //    "symptoms": [
+        //        "Cough",
+        //        "Fever",
+        //        "Ache(Tooth)",
+        //        "Cancer",
+        //        "Ache(Head)"
+        //    ]
+        //}
     }
     )
 
     console.log("getRemedyRecommendation response:", response.data);
-    return response.data;
 
-
-    console.log(res)
-    //const response = res.map(remedyItem => {
-    //    return {
-    //        symptom: remedyItem.ACTIVITY,
-    //        remedy: remedyItem.TAXON
-    //    }
-    //})
-    //return res.status(200).send(response);
-    //} else {
-    //    const remedies = await Medicals.find({})
-    //    return res.status(200).send(response);
-    //}
-
+    const mappedData = response.data.map(remedyItem => {
+        return {
+            symptom: remedyItem.medicinalUses,
+            remedy: remedyItem.commonNames,
+            rating: remedyItem.rating
+        }
+    })
+    return res.status(200).send(mappedData);
 }));
+
+
 
 //result list per user !!
 
@@ -217,6 +193,6 @@ app.get('/logout', function (req, res, next) {
     });
 });
 
-app.listen(7001, () => {
+app.listen(7000, () => {
     console.log("serving on port 7001")
 })
