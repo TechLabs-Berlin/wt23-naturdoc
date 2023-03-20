@@ -12,7 +12,14 @@ import RatingForm from "components/ratings/RatingForm";
 import RatingList from "components/ratings/RatingList";
 import LayoutHOC from "components/layouts/LayoutHOC";
 // material-ui
-import { CardMedia, Box, Container, IconButton, Paper } from "@mui/material";
+import {
+  CardMedia,
+  Box,
+  Container,
+  IconButton,
+  Paper,
+  Button,
+} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import RemedyRating from "components/remedy/RemedyRating";
@@ -84,7 +91,7 @@ function RemedyDetails() {
                 <Box component={"div"}>
                   <Typography>
                     No ratings yet.{" "}
-                    <Link onClick={handleClickOpen}>
+                    <Link remedy={remedy} onClick={handleClickOpen}>
                       Be the first to add one.
                     </Link>
                   </Typography>
@@ -99,11 +106,23 @@ function RemedyDetails() {
               </Typography>
             </Box>
             <RemedyAccordion remedy={remedy} />
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleClickOpen}
+            >
+              Write a Review
+            </Button>
             <RatingList ratings={ratings} />
           </Paper>{" "}
         </Container>
       </Box>
-      <RatingForm remedy={remedy} open={open} handleClose={handleClose} />
+      <RatingForm
+        key={remedy.id}
+        remedy={remedy}
+        open={open}
+        handleClose={handleClose}
+      />
     </>
   );
 }
