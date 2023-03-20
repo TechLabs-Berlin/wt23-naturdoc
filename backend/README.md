@@ -13,7 +13,7 @@ connect via 'mongodb+srv://<username>:<password>@naturdoc.aj9zhtw.mongodb.net/<d
 # setup environmental variables
 
 create a .env file with variables:
-- MONGO_URI=mongodb+srv://naturdoc:WhYJmBoDdO3tZ89Z@naturdoc.aj9zhtw.mongodb.net/?retryWrites=true&w=majority
+- MONGO_URI=mongodb+srv://<username>:<password>Z@naturdoc.aj9zhtw.mongodb.net/?retryWrites=true&w=majority
 - MONGO_USER=<username>
 - MONGO_PASSWORD=<password>
 
