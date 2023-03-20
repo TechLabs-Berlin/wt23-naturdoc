@@ -92,15 +92,24 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const { symptom } = req.query;
 
     const response = await axios({
-        method: 'GET',
-        url: 'http://localhost:7000/remedies/query',
+        method: 'POST',
+        url: 'http://localhost:8000/remedies/query',
 
         headers: {
+            "Content-Type": "application/json"
         },
-        body: {
-            "ACTIVITY": symptom
+        body:
+        // "symptoms": symptom
+        {
+            "symptoms": [
+                "Cough",
+                "Fever",
+                "Ache(Tooth)",
+                "Cancer",
+                "Ache(Head)"
+            ]
         },
-        json: true
+        //json: true
     }
     )
 
