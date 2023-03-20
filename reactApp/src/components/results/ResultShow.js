@@ -19,11 +19,11 @@ function ResultShow({ remedy }) {
           key={remedy.id}
         >
           <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
-            <RemedyIcon icon={remedy?.icon} sx={{ width: 180 }} smallIcon />
+            <RemedyIcon icon={remedy.icon} sx={{ width: 180 }} smallIcon />
             <Box sx={{ display: "flex", flexDirection: "column", pl: 2 }}>
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Typography component="div" sx={{ fontWeight: 500, ml: 0.25 }}>
-                  {remedy?.title}{" "}
+                  {remedy.title}{" "}
                 </Typography>
               </Box>
               <Box sx={{ flex: "1 0 auto" }}>
@@ -33,7 +33,7 @@ function ResultShow({ remedy }) {
                   <RemedyRating remedy={remedy} summary />
                 )}
                 <Typography variant="body2" color="text.secondary">
-                  {remedy?.matching_symptoms}
+                  {remedy.matching_symptoms}
                 </Typography>
               </Box>
             </Box>

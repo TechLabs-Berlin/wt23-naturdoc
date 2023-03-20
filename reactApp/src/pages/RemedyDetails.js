@@ -69,7 +69,7 @@ function RemedyDetails() {
 
             <Box sx={{ p: 2, pb: 4, pt: -2 }}>
               <Typography sx={{ fontSize: 20, fontWeight: 500 }} component="h1">
-                {remedy?.title}
+                {remedy.title}
               </Typography>
               {!remedy.ratingAverage ? (
                 <Box component={"div"}>
@@ -84,7 +84,7 @@ function RemedyDetails() {
 
               <Typography variant="body" color="text.secondary">
                 <b>Best use for: </b>
-                {remedy?.matching_symptoms}
+                {remedy.matching_symptoms}
               </Typography>
             </Box>
             {/* <RemedyTabs remedy={remedy} /> */}

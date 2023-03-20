@@ -31,7 +31,7 @@ const RemedyRating = ({ remedy, summary }) => {
         >
           <Typography sx={{ fontSize: 52 }}>
             {" "}
-            <b>{remedy?.ratingAverage}</b>
+            <b>{remedy.ratingAverage}</b>
           </Typography>
           <Box
             sx={{
