@@ -4,27 +4,38 @@ const Schema = mongoose.Schema;
 
 
 const MedicalSchema = new Schema({
-    remedy: String,
-    symptom: String,
-    description: String
+    TAXON: String,
+    ACTIVTIY: String,
+    CNAME: String,
+    FAMILY: String,
+    GENUS: String,
+    SPECIES: String,
+    VERNAC: String,
+    CLINICAL: String,
+    TRADITIONAL: String,
+    FOLK: String,
+    CONTRAINDICATION: String,
+    WARNING: String,
+    ADVERSE: String,
+    POSOLOGY: String
 });
 
-module.exports = mongoose.model('Medical', MedicalSchema);
+module.exports = mongoose.model('Remedy', MedicalSchema);
 
 
 
 //const RemediesSchema = new Schema({
-//    remedyName: String,  
+//    remedyName: String,
 //    symptoms: Array,
 //    ratings: [
 //        {
-//            type: Schema.Types.ObjectId,
+//            type: mongoose.Schema.Types.ObjectId,
 //            ref: 'Ratings'
 //        }
 //    ],
-//    ratingAverage: Number,               
+//    ratingAverage: Number,
 //    totalNumberofRatings: Number
 //})
-//module.exports = mongoose.model('Remedies', RemediesSchema);
+//module.exports = mongoose.model('Remedy', RemediesSchema);
 
 
