@@ -1,23 +1,23 @@
 const express = require('express');
-const app = express();
-const path = require('path');
-const mongoose = require('mongoose');
 const session = require('express-session');
-const Medicals = require('./models/remedies');
-const remedyRating = require('./models/ratings');
+const mongoose = require('mongoose');
+const axios = require('axios');
+const cors = require('cors');
+const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
-const flash = require('connect-flash');
-const cors = require('cors');
+
+const Medicals = require('./models/remedies');
+const remedyRating = require('./models/ratings');
 const User = require('./models/user');
-const Ratings = require('./models/ratings');
+
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
-const request = require('request');
-const axios = require('axios');
 
+const app = express();
 
+//connect to DB
 connect().then(async function seed() {
     console.log('Successfully connected to Database');
 });
