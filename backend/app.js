@@ -71,7 +71,7 @@ passport.deserializeUser(User.deserializeUser());
 
 //get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
-    const body = req.query.symptom;
+    const body = req.query.symptomsMatched;
     console.log(req.query)
     const response = await axios({
         method: 'POST',
@@ -81,7 +81,7 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
         },
         data:
         {
-            "symptoms": body
+            "symptomsMatched": body
         }
         //{
         //    "symptoms": [
@@ -99,9 +99,9 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 
     const mappedData = response.data.map(remedyItem => {
         return {
-            symptom: remedyItem.medicinalUses,
-            remedy: remedyItem.commonNames,
-            rating: remedyItem.rating
+            medicinalUses: remedyItem.medicinalUses,
+            commonNames: remedyItem.commonNames,
+            ratingAverage: remedyItem.ratingAverage
         }
     })
     return res.status(200).send(mappedData);
@@ -114,10 +114,10 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 //list all symptoms
 app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const { symptom } = req.params;
-    const symptoms = await Medicals.find({})
-    const response = symptoms.map(remedyItem => {
+    const medicinalUses = await Medicals.find({})
+    const response = medicinalUses.map(remedyItem => {
         return {
-            symptom: remedyItem.symptom,
+            medicinalUses: remedyItem.symptom,
         }
     })
     return res.status(200).send(response);
