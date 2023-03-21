@@ -102,7 +102,7 @@ function RemedyDetails() {
 
               <Typography variant="body" color="text.secondary">
                 <b>Best use for: </b>
-                {remedy.matching_symptoms}
+                {remedy.symptomsMatched}
               </Typography>
             </Box>
             <RemedyAccordion remedy={remedy} />

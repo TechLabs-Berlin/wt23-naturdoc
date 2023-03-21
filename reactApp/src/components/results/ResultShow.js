@@ -33,7 +33,7 @@ function ResultShow({ remedy }) {
                   <RemedyRating remedy={remedy} summary />
                 )}
                 <Typography variant="body2" color="text.secondary">
-                  {remedy.matching_symptoms}
+                  {remedy.symptomsMatched}
                 </Typography>
               </Box>
             </Box>
