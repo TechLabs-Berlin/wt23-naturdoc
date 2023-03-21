@@ -59,7 +59,7 @@ function RatingForm({ remedy, open, handleClose }) {
         ...formValues,
         userId: "[USER.ID]",
         remedyId: remedy.id,
-        remedyName: remedy.title,
+        remedyName: remedy.remedyName,
         createdAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
         updatedAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
       }),
@@ -72,7 +72,7 @@ function RatingForm({ remedy, open, handleClose }) {
         " " +
         remedy.id +
         " " +
-        remedy.title
+        remedy.remedyName
     );
   };
 
@@ -81,7 +81,7 @@ function RatingForm({ remedy, open, handleClose }) {
       <Dialog open={open} onClose={handleClose}>
         <form>
           <DialogTitle>
-            Share your experience with using {remedy.title}{" "}
+            Share your experience with using {remedy.remedyName}{" "}
           </DialogTitle>
           <DialogContent>
             <DialogContentText>

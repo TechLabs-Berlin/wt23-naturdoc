@@ -12,7 +12,7 @@ const postRating = async (remedy, formValues) => {
           ...formValues,
           userId: "[USER.ID]",
           remedyId: remedy.id,
-          remedyName: remedy.title,
+          remedyName: remedy.remedyName,
           createdAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
           updatedAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
         },

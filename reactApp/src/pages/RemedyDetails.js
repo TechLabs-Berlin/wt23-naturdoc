@@ -85,7 +85,7 @@ function RemedyDetails() {
 
             <Box sx={{ p: 2, pb: 4, pt: -2 }}>
               <Typography sx={{ fontSize: 20, fontWeight: 500 }} component="h1">
-                {remedy.title}
+                {remedy.remedyName}
               </Typography>
               {!remedy.ratingAverage ? (
                 <Box component={"div"}>
