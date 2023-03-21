@@ -13,23 +13,27 @@ UI Framework [Material UI](https://mui.com/material-ui/).
 
 ### `cd reactApp`
 
-2. In the frontend project directory, you can run:
+2. Intall dependencies, run:
+
+### `npm install`
+
+2. Still in the frontend project directory (reactApp), you can run:
 
 ### `npm start`
 
-3. Runs the app in the development mode.\
+3. This will run the app in development mode.
    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-4. In case of errors. make sure all your dependencies are installed. You can see a list of all dependencies installed for this project in: package.json
+4. In case of errors. make sure all your dependencies are installed. You can see a list of all dependencies installed as well as their version in: package.json
 
 For example, if terminal indicates that material UI is missing, your can run:
 
 ```
 // npm
-npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material
 ```
 
 5. API Endpoints
