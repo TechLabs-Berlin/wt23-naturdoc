@@ -22,19 +22,6 @@ connect().then(async function seed() {
     console.log('Successfully connected to Database');
 });
 
-
-//mongoose.connect('mongodb://localhost:27017/naturdoc');
-
-//mongoose.connect('mongodb+srv://naturdoc:WhYJmBoDdO3tZ89Z@naturdoc.aj9zhtw.mongodb.net/?retryWrites=true&w=majority');
-
-
-//const db = mongoose.connection;
-//db.on("error", console.error.bind(console, "connection.error:"))
-//db.once("open", () => {
-//    console.log("Database connected");
-//});
-
-
 const sessionConfig = {
     secret: 'testing',
     resave: false,
