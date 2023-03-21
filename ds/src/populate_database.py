@@ -23,3 +23,16 @@ with open(r"../output/remedies.json") as f:
 collection.insert_many(file_data)
 
 client.close()
+
+client = pymongo.MongoClient(MONGO_URI)
+db = client.naturdoc
+collection = db.symptoms
+requesting = []
+
+with open(r"../output/symptoms.json") as f:
+
+    file_data = json.load(f)
+
+collection.insert_many(file_data)
+
+client.close()
