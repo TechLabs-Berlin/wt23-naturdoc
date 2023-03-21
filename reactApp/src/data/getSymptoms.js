@@ -9,7 +9,7 @@ const getSymptoms = async (term) => {
           // cf API documentation
         },
         params: {
-          title: term,
+          symptomName: term,
         },
       }
     );
