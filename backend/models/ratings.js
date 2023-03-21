@@ -1,23 +1,24 @@
 const mongoose = require('mongoose');
-const passportLocalMongoose = require('passport-local-mongoose')
 const Schema = mongoose.Schema;
+const Remedies = require('./remedies');
 
 
 const RatingsSchema = new Schema({
-    userId: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    },
+    // _id: mongoose.Types.ObjectId,
+    //userId: {
+    //    type: Schema.Types.ObjectId,
+    //    ref: 'User'
+    //},
     remedyId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Remedies'
     },
-    remedyName: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    },
-    rating: Number
+    //remedyName: {
+    //    type: Schema.Types.ObjectId,
+    //    ref: 'User'
+    //},
+    ratings: Number
 });
 
-module.exports = mongoose.model('Ratings', RatingsSchema);
+module.exports = mongoose.model('Rating', RatingsSchema);
 
