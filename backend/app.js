@@ -72,7 +72,7 @@ passport.deserializeUser(User.deserializeUser());
 //get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const body = req.query.symptomsMatched;
-    console.log(req.query)
+    console.log(req.query.symptomsMatched)
     const response = await axios({
         method: 'POST',
         url: 'http://localhost:8000/remedies/query',
