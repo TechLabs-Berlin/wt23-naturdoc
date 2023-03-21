@@ -1,24 +1,24 @@
 import axios from "axios";
 
-const getSymptoms = async (term) => {
+const getRemedy = async (term) => {
   try {
     const response = await axios.get(
-      "https://my-json-server.typicode.com/rjeantet/server-mock/symptoms",
+      `https://my-json-server.typicode.com/rjeantet/server-mock/remedies/${term}`,
       {
         headers: {
           // cf API documentation
         },
         params: {
-          symptomName: term,
+          id: term,
         },
       }
     );
 
-    console.log("Get full list of symptoms:", response.data);
+    console.log("getRemedy response:", response.data);
     return response.data;
   } catch (error) {
     console.log(error);
   }
 };
 
-export default getSymptoms;
+export default getRemedy;
