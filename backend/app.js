@@ -156,13 +156,23 @@ app.put('/remedies/:id/rating', catchAsynch(async (req, res) => {
     const { ratings } = req.body;
     // const userId = req.user;
 
-    const newRating = await remedyRating.create(
+    //const newRating = await remedyRating.create(
+    //    {
+    //        ratings: req.body.ratings,
+    //        remedyId: id
+    //    }
+    //);
+
+    const newRating = await remedyRating.findOneAndUpdate(
+        { remedyId: id },
+        { ratings: req.body.ratings },
         {
-            ratings: req.body.ratings,
-            remedyId: id
+            new: true,
+            upsert: true
         }
     );
-    // const newRating = new remedyRating({ ratings: req.body.ratings, remedyId: id })
+
+    console.log(newRating);
     const updateRemedy = await Medicals.findByIdAndUpdate(id,
         {
             $push:
@@ -241,5 +251,5 @@ app.get('/logout', function (req, res, next) {
 });
 
 app.listen(7000, () => {
-    console.log("serving on port 7001")
+    console.log("serving on port 7000")
 })
