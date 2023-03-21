@@ -6,6 +6,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
+import postRating from "data/postRating";
 
 const labels = {
   0.5: "Useless",
@@ -20,24 +21,16 @@ const labels = {
   5: "Excellent+",
 };
 
-const reviewName = "review";
+const ratingValue = "ratingValue";
 
 function getLabelText(value) {
   return `${value} Star${value !== 1 ? "s" : ""}, ${labels[value]}`;
 }
 
-function RatingForm({ open, handleClose, remedy }) {
-  const [value, setValue] = useState(0);
+function RatingForm({ remedy, open, handleClose }) {
   const [hover, setHover] = useState(-1);
 
   const [formValues, setFormValues] = useState({});
-  const handleTextFieldChange = (event) => {
-    const { name, value } = event.target;
-    setFormValues({
-      ...formValues,
-      [name]: value,
-    });
-  };
 
   const handleRatingChange = (value, name) => {
     setFormValues({
@@ -46,17 +39,40 @@ function RatingForm({ open, handleClose, remedy }) {
     });
   };
 
+  const handleTextFieldChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
   const handleSubmit = () => {
-    fetch("https://my-json-server.typicode.com/rjeantet/server-mock/ratings/", {
+    const result = postRating(remedy, formValues);
+    console.log("result", result);
+    /* fetch("https://my-json-server.typicode.com/rjeantet/server-mock/ratings/", {
       method: "POST",
-      body: JSON.stringify(formValues),
       headers: {
         "Content-Type": "application/json",
       },
-    });
+      body: JSON.stringify({
+        ...formValues,
+        userId: "[USER.ID]",
+        remedyId: remedy.id,
+        remedyName: remedy.title,
+        createdAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
+        updatedAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
+      }),
+    }); */
+
+    handleClose();
     console.log(
-      "formValues",
-      formValues + " " + remedy.id + " " + remedy.title
+      "Formvalues:" +
+        JSON.stringify(formValues) +
+        " " +
+        remedy.id +
+        " " +
+        remedy.title
     );
   };
 
@@ -76,20 +92,19 @@ function RatingForm({ open, handleClose, remedy }) {
               <Rating
                 max={5}
                 precision={0.5}
-                value={value}
-                name={reviewName}
+                // value={value}
+                name={ratingValue}
                 getLabelText={getLabelText}
-                onChange={(event, newValue) => {
-                  setValue(newValue);
-                  handleRatingChange(value, reviewName);
-                }}
+                onChange={(event, value) =>
+                  handleRatingChange(value, ratingValue)
+                }
                 onChangeActive={(event, newHover) => {
                   setHover(newHover);
                 }}
               />
-              {value !== null && (
+              {ratingValue !== null && (
                 <Box sx={{ ml: 2, display: "inline-flex" }}>
-                  {labels[hover !== -1 ? hover : value]}
+                  {labels[hover !== -1 ? hover : ratingValue]}
                 </Box>
               )}
             </Box>
@@ -98,7 +113,7 @@ function RatingForm({ open, handleClose, remedy }) {
               margin="dense"
               label="Title"
               type="text"
-              name="title"
+              name="reviewName"
               onChange={handleTextFieldChange}
               fullWidth
             />
@@ -108,16 +123,14 @@ function RatingForm({ open, handleClose, remedy }) {
               type="text"
               fullWidth
               multiline
-              name="description"
+              name="reviewDescription"
               onChange={handleTextFieldChange}
               rows={3}
             />
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose}>Cancel</Button>
-            <Button variant="" onClick={(handleClose, handleSubmit)}>
-              Submit
-            </Button>
+            <Button onClick={handleSubmit}>Submit</Button>
           </DialogActions>
         </form>
       </Dialog>
