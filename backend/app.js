@@ -16,26 +16,19 @@ const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
 
 const remedies = require('./routes/remedies');
+const auth = require('./routes/auth');
 
 const app = express();
 
 app.use('/remedies', remedies);
+app.use('', auth);
 
 //connect to DB
 connect().then(async function seed() {
     console.log('Successfully connected to Database');
 });
 
-const sessionConfig = {
-    secret: 'testing',
-    resave: false,
-    saveUninitialized: true,
-    cookie: {
-        expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-        maxAge: 1000 * 60 * 60 * 24 * 7,
-        httpOnly: true
-    }
-}
+
 
 app.use(cors({
     origin: 'http://localhost:3000',
@@ -45,20 +38,20 @@ app.use(cors({
 }));
 
 
-app.use(express.json());
-app.use(session(sessionConfig));
-app.use(flash());
-app.use((req, res, next) => {
-    res.locals.success = req.flash('success');
-    res.locals.error = req.flash('error');
-    next();
-})
-app.use(passport.initialize())
-app.use(passport.session())
-passport.use(new LocalStrategy(User.authenticate()));
+//app.use(express.json());
+//app.use(session(sessionConfig));
+//app.use(flash());
+//app.use((req, res, next) => {
+//    res.locals.success = req.flash('success');
+//    res.locals.error = req.flash('error');
+//    next();
+//})
+//app.use(passport.initialize())
+//app.use(passport.session())
+//passport.use(new LocalStrategy(User.authenticate()));
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+//passport.serializeUser(User.serializeUser());
+//passport.deserializeUser(User.deserializeUser());
 
 //get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
@@ -115,41 +108,7 @@ app.get('/getSymptoms', catchAsynch(async (req, res) => {
 }));
 
 
-//users endpoints: 
 
-app.post('/signup', catchAsynch(async (req, res) => {
-    try {
-        console.log(req);
-        const { email, username, password } = req.body;
-        const user = new User({ email, username })
-        const registeredUser = await User.register(user, password);
-        req.login(registeredUser, err => {
-            if (err) return next(err);
-            req.flash('success', 'Successfully logged in');
-            res.send('Successfully signed up');
-        })
-
-    }
-    catch (e) {
-        req.flash('error', e.message);
-        res.send(e.message);
-    }
-}));
-
-app.post('/login', passport.authenticate('local', { failureFlash: true, failureRedirect: '/login' }), (req, res) => {
-    req.flash('success', 'welcome back');
-    res.send('Welcome back')
-});
-
-app.get('/logout', function (req, res, next) {
-    req.logout(function (err) {
-        if (err) {
-            return next(err);
-        }
-        req.flash('success', "Successfully logged out!");
-        res.send('Successfully logged out');
-    });
-});
 
 app.listen(7000, () => {
     console.log("serving on port 7000")
