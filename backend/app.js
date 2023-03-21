@@ -15,7 +15,11 @@ const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
 
+const remedies = require('./routes/remedies');
+
 const app = express();
+
+app.use('/remedies', remedies);
 
 //connect to DB
 connect().then(async function seed() {
@@ -110,62 +114,6 @@ app.get('/getSymptoms', catchAsynch(async (req, res) => {
     return res.status(200).send(response);
 }));
 
-//get remedies
-app.get('/remedies', catchAsynch(async (req, res) => {
-    const remedies = await Medicals.find({});
-    return res.status(200).send(remedies);
-}));
-
-//medicals page 
-app.get('/remedies/:id', catchAsynch(async (req, res) => {
-    const remedies = await Medicals.findById(req.params.id);
-    return res.status(200).send(remedies);
-}));
-
-//add the rating
-app.put('/remedies/:id', catchAsynch(async (req, res) => {
-    const ratingId = new mongoose.Types.ObjectId;
-    console.log('*******');
-    console.log(req.body);
-
-    const { id } = req.params //req.params;
-    const { rating } = req.body;
-    const userId = "64151b5e70662285f3b36c0e";
-
-    const newRating = await remedyRating.findOneAndUpdate(
-        { remedyId: id, userId: userId },
-        { ratingValue: rating },
-        {
-            new: true,
-            upsert: true
-        }
-    );
-
-    const addRatingToUser = await User.findByIdAndUpdate(newRating.userId,
-        { ratings: { remedyId: id, ratingValue: rating } },
-        {
-            new: true,
-            upsert: true
-        }
-    );
-
-    console.log(addRatingToUser);
-
-    const updateRemedy = await Medicals.findByIdAndUpdate(id,
-        { ratings: { ratingValue: rating, userId: userId } },
-        {
-            //new: true,
-            // upsert: true
-        }
-        //{
-        //    $push:
-        //    {
-        //        ratings: { ratingValue: rating, userId: userId }
-        //    }
-        //},
-    );
-    return res.status(200).send(newRating);
-}));
 
 //users endpoints: 
 
