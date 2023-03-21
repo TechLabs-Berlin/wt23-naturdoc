@@ -24,7 +24,7 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
         print("Querying collection for...", symptom)
         results = list()
         try:
-            curs = collection.find({ "ACTIVITY": { '$regex' : symptom, '$options' : 'i' }  })
+            curs = collection.find({ "medicinalUses": { '$regex' : symptom, '$options' : 'i' }  })
             for remedy in curs:
                 results.append(remedy)
         except Exception as e:
@@ -35,20 +35,26 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     client.close()
 
     has_medical = dict()
+    has_no_medical = dict()
 
     for key, herbs in remedies.items():
         top_results = list()
+        incomplete_results = list()
         print("Symptom:", key)
         print("Number of remedies found:", len(herbs))
         for herb in herbs:
             symptom_matches = list()
             for symptom in symptoms:
-                if symptom in herb["ACTIVITY"]:
+                if symptom in herb["medicinalUses"]:
                     symptom_matches.append(symptom)
-            if herb["CLINICAL"] or herb["TRADITIONAL"] or herb["FOLK"]:
+            if herb["treatmentClinical"] or herb["treatmentTraditional"] or herb["treatmentFolk"]:
                 herb["symptom_matches"] = symptom_matches
                 top_results.append(herb)
+            else:
+                herb["symptom_matches"] = symptom_matches
+                incomplete_results.append(herb)
         has_medical[key] = top_results
+        has_no_medical[key] = incomplete_results
 
     match_all = list()
     match_partial = list()
@@ -66,7 +72,24 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
             elif len(matches) == 1 and herb not in match_one:
                 match_one.append(herb)
 
+    incomplete_match_all = list()
+    incomplete_match_partial = list()
+    incomplete_match_one = list()
+
+    for key, herbs in has_no_medical.items():
+        print("Other results for symptom:", key)
+        print("Number of remedies without instructions found:", len(herbs))
+        for herb in herbs:
+            matches = herb["symptom_matches"]
+            if matches == symptoms and herb not in incomplete_match_all:
+                incomplete_match_all.append(herb)
+            elif len(matches) > 1 and len(matches) < len(symptoms) and herb not in incomplete_match_partial:
+                incomplete_match_partial.append(herb)
+            elif len(matches) == 1 and herb not in incomplete_match_one:
+                incomplete_match_one.append(herb)
+
     match_partial.sort(key = lambda x: len(x['symptom_matches']), reverse=True)
+    incomplete_match_partial.sort(key = lambda x: len(x['symptom_matches']), reverse=True)
 
     print("match_all:", len(match_all))
     print("match_partial:", len(match_partial))
@@ -76,6 +99,9 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     i_all = 0
     i_partial = 0
     i_one = 0
+    incomplete_i_all = 0
+    incomplete_i_partial = 0
+    incomplete_i_one = 0
 
     response = dict()
 
@@ -99,28 +125,47 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
             else:
                 response["match_one"] = [*response.get("match_one"), match_one[i_one]]
             i_one += 1
+
+        elif incomplete_i_all < len(incomplete_match_all):
+            if "incomplete_match_all" not in response.keys():
+                response["incomplete_match_all"] = [incomplete_match_all[incomplete_i_all]]
+            else:
+                response["incomplete_match_all"] = [*response.get("incomplete_match_all"), incomplete_match_all[incomplete_i_all]]
+            incomplete_i_all += 1
+        elif incomplete_i_partial < len(incomplete_match_partial):
+            if "incomplete_match_partial" not in response.keys():
+                response["incomplete_match_partial"] = [incomplete_match_partial[incomplete_i_partial]]
+            else:
+                response["incomplete_match_partial"] = [*response.get("incomplete_match_partial"), incomplete_match_partial[incomplete_i_partial]]
+            incomplete_i_partial += 1
+        elif incomplete_i_one < len(incomplete_match_one):
+            if "incomplete_match_one" not in response.keys():
+                response["incomplete_match_one"] = [incomplete_match_one[incomplete_i_one]]
+            else:
+                response["incomplete_match_one"] = [*response.get("incomplete_match_one"), incomplete_match_one[incomplete_i_one]]
+            incomplete_i_one += 1  
     
-    actual_response = list() # final.finalfinalname
-    severe_symptoms = ["Cancer", "Malaria", "Abortive", "Abortifacient", "Antidote(Black Widow)", "Antidote(Scorpion)", "Bite(Snake)"]
+    response_with_warnings = list() 
+    severe_symptoms = ["Cancer", "Malaria", "Abortive", "Tumor", "Abortifacient", "Antidote(Black Widow)", "Antidote(Scorpion)", "Bite(Snake)"]
 
     for key, remedies in response.items():
         for remedy in remedies:
             json_response = dict()
-            json_response["mongoId"] = f"{remedy['_id']}"
-            json_response["rating"] = None
-            json_response["taxonomicName"] = remedy["TAXON"]
-            if remedy["CNAME"]:
-                json_response["commonNames"] = remedy["CNAME"].split(",")
+            json_response["id"] = f"{remedy['_id']}"
+            json_response["ratingAverage"] = remedy["ratingAverage"]
+            json_response["remedyName"] = remedy["remedyName"]
+            if remedy["commonNames"]:
+                json_response["commonNames"] = remedy["commonNames"].split(",")
             else:
-                json_response["commonNames"] = remedy["CNAME"]
-            json_response["medicinalUses"] = remedy["ACTIVITY"].split(",")
-            json_response["treatmentClinical"] = remedy["CLINICAL"]
-            json_response["treatmentTraditional"] = remedy["TRADITIONAL"]
-            json_response["treatmentFolk"] = remedy["FOLK"]
-            json_response["contraindication"] = remedy["CONTRAINDICATION"]
-            json_response["warnings"] = remedy["WARNING"]
-            json_response["adverseEffects"] = remedy["ADVERSE"]
-            json_response["posology"] = remedy["POSOLOGY"]
+                json_response["commonNames"] = remedy["commonNames"]
+            json_response["medicinalUses"] = remedy["medicinalUses"].split(",")
+            json_response["treatmentClinical"] = remedy["treatmentClinical"]
+            json_response["treatmentTraditional"] = remedy["treatmentTraditional"]
+            json_response["treatmentFolk"] = remedy["treatmentFolk"]
+            json_response["contraindication"] = remedy["contraindication"]
+            json_response["warnings"] = remedy["warnings"]
+            json_response["adverseEffects"] = remedy["adverseEffects"]
+            json_response["posology"] = remedy["posology"]
             if key == "match_all":
                 json_response["fullMatch"] = True
             else:
@@ -131,16 +176,17 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
                 if symptom in severe_symptoms:
                     json_response["doctorAlert"] = True
             json_response["iconReference"] = None
-            actual_response.append(json_response)
-    final_actual_response = json.loads(json_util.dumps(actual_response))
-    return final_actual_response
+            response_with_warnings.append(json_response)
+
+    output_json = json.loads(json_util.dumps(response_with_warnings))
+    return output_json
 
 # example response:
 # [
 #   {
 #     "_id": ObjectId('412fl3b0q38f9327cab7a85db'),
 #     "rating": float,
-#     "taxonomicName": "Scientific name",
+#     "remedyName": "Scientific name",
 #     "commonNames": [ # could also just be a comma-separated string
 #         "A",
 #         "list",
@@ -194,7 +240,7 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
 #     "remedy": {
 #         "_uid": ObjectId('412fl3b0q38f9327cab7a85db'),
 #         "rating": float,
-#         "taxonomicName": "Scientific name",
+#         "remedyName": "Scientific name",
 #         "commonNames": [ # could also just be a comma-separated string
 #             "A",
 #             "list",
