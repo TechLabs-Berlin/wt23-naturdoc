@@ -4,6 +4,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const Medicals = require('./models/remedies');
+const remedyRating = require('./models/ratings');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const flash = require('connect-flash');
@@ -122,6 +123,12 @@ app.get('/getSymptoms', catchAsynch(async (req, res) => {
     return res.status(200).send(response);
 }));
 
+//get remedies
+app.get('/remedies', catchAsynch(async (req, res) => {
+    const remedies = await Medicals.find({});
+    return res.status(200).send(remedies);
+}));
+
 //medicals page 
 app.get('/remedies/:id', catchAsynch(async (req, res) => {
     const remedies = await Medicals.findById(req.params.id);
@@ -139,23 +146,63 @@ app.get('/remedies/:id', catchAsynch(async (req, res) => {
 //    return res.status(200).send(medical);
 //});
 
-//add the rating 
-app.put('/remedies/:id', async (req, res) => {
-    const commentId = new mongoose.Schema.Types.ObjectId;
-    const { id } = req.params //req.params;
+//add the rating
+app.put('/remedies/:id/rating', catchAsynch(async (req, res) => {
+    const ratingId = new mongoose.Types.ObjectId;
+    console.log('*******');
     console.log(req.params);
-    const medical = await Medicals.findByIdAndUpdate(
-        { _id: id },
+
+    const { id } = req.params //req.params;
+    const { ratings } = req.body;
+    // const userId = req.user;
+
+    const newRating = await remedyRating.create(
+        {
+            ratings: req.body.ratings,
+            remedyId: id
+        }
+    );
+    // const newRating = new remedyRating({ ratings: req.body.ratings, remedyId: id })
+    const updateRemedy = await Medicals.findByIdAndUpdate(id,
         {
             $push:
             {
                 ratings: req.body.ratings,
-                _id: commentId
+                remedyId: id,
+                ratingId: ratingId
             }
-        }
+        },
     );
-    return res.status(200).send(medical);
-});
+    return res.status(200).send(updateRemedy);
+}));
+
+//app.put('/remedies/:id', catchAsynch(async (req, res) => {
+//    const ratingId = new mongoose.Types.ObjectId;
+//    console.log('*******');
+//    console.log(req.params);
+
+//    const { id } = req.params //req.params;
+//    const { ratings } = req.body;
+//    // const userId = await getUserByAuthToken(req.headers);
+//    console.log(ratings);
+
+//    const newRating = await Medicals.findByIdAndUpdate(id,
+//        {
+//            $push:
+//            {
+//                ratings: req.body.ratings,
+//                remedyId: id,
+//                ratingId: ratingId
+//            }
+//        },
+//        { ratingAverage: { $avg: "$ratings" } }
+
+//    );
+
+//    // const ratingAverage = Medicals.aggregate([{ ratingAverage: { $avg: "$ratings" } }])
+
+//    return res.status(200).send(newRating);
+//}));
 
 //users endpoints: 
 
