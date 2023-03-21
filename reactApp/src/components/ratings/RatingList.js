@@ -1,5 +1,5 @@
 import RatingShow from "./RatingShow";
-import { Container, Box, Button } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 function RatingList({ ratings }) {
   const renderedRatings = ratings.map((rating) => {
@@ -8,10 +8,6 @@ function RatingList({ ratings }) {
 
   return (
     <>
-      <Button variant="contained" color="primary" href="">
-        Write a Review
-      </Button>
-
       <Container sx={{ mt: 5 }} component="section" maxWidth="sm">
         {ratings.length} matching reviews
         <Box>{renderedRatings}</Box>

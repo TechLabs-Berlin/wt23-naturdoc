@@ -22,19 +22,19 @@ function SearchBar({ onChange }) {
 
   // update the selected value to pass it back to App via onChange
   const handleChange = (event, value) => {
-    const titles = value.map((item) => item.title);
-    onChange(titles);
+    const symptomNames = value.map((item) => item.symptomName);
+    onChange(symptomNames);
 
     console.log("User selected symptom(s):", value);
   };
 
   return (
-    <Container sx={{ m: "0 auto" }} component="section" maxWidth="sm">
+    <Container sx={{ m: "16px auto" }} component="section" maxWidth="sm">
       <Paper component="article" sx={{ textAlign: "center" }}>
         <Autocomplete
           multiple
           options={options}
-          getOptionLabel={(option) => option.title}
+          getOptionLabel={(option) => option.symptomName}
           filterSelectedOptions
           autoComplete
           autoSelect
@@ -42,10 +42,10 @@ function SearchBar({ onChange }) {
           clearOnBlur
           onChange={handleChange}
           renderOption={(props, option, { inputValue, selected }) => {
-            const matches = match(option.title, inputValue, {
+            const matches = match(option.symptomName, inputValue, {
               insideWords: true,
             });
-            const parts = parse(option.title, matches);
+            const parts = parse(option.symptomName, matches);
 
             return (
               <li {...props} key={option.id}>

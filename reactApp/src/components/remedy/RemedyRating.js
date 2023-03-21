@@ -1,4 +1,5 @@
 import { Box, Rating, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const RemedyRating = ({ remedy, summary }) => {
   if (summary) {
@@ -14,7 +15,7 @@ const RemedyRating = ({ remedy, summary }) => {
             sx={{ mr: 0.5 }}
           />
           <Box component="span">
-            <b>{remedy?.ratingAverage}</b> ({remedy?.totalNumberofRatings})
+            <b>{remedy.ratingAverage}</b> ({remedy.totalNumberofRatings})
           </Box>
         </Box>
       </>
@@ -31,7 +32,7 @@ const RemedyRating = ({ remedy, summary }) => {
         >
           <Typography sx={{ fontSize: 52 }}>
             {" "}
-            <b>{remedy?.ratingAverage}</b>
+            <b>{remedy.ratingAverage}</b>
           </Typography>
           <Box
             sx={{
@@ -45,11 +46,15 @@ const RemedyRating = ({ remedy, summary }) => {
               <Rating
                 max={5}
                 precision={0.5}
-                value={Math.floor(remedy.ratingAverage)}
                 readOnly
+                value={remedy.ratingAverage ? remedy.ratingAverage : "0"}
               />
               <Box component={"div"} sx={{ fontSize: 14 }}>
-                ({remedy?.totalNumberofRatings} reviews)
+                {/* [BUG] Ask Soma: how to anchor link dynamic URL?] */}
+                <Link component={Link} to="/remedy/:{remedy.id}">
+                  {" "}
+                  ({remedy.totalNumberofRatings} reviews)
+                </Link>
               </Box>
             </Box>
           </Box>

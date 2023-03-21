@@ -1,16 +1,25 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 // data
 import getRemedy from "data/getRemedy";
 import getUserRatings from "data/getUserRatings";
 // components
 import RemedyIcon from "components/remedy/RemedyIcon";
 import RemedyAccordion from "components/remedy/RemedyAccordion";
-/* import RemedyTabs from "components/remedy/RemedyTabs"; */
+import RatingForm from "components/ratings/RatingForm";
 import RatingList from "components/ratings/RatingList";
+import LayoutHOC from "components/layouts/LayoutHOC";
 // material-ui
-import { CardMedia, Box, Container, IconButton, Paper } from "@mui/material";
+import {
+  CardMedia,
+  Box,
+  Container,
+  IconButton,
+  Paper,
+  Button,
+} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import RemedyRating from "components/remedy/RemedyRating";
@@ -34,6 +43,15 @@ function RemedyDetails() {
       setRatings(response);
     });
   }, [id]);
+
+  const [open, setOpen] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <>
@@ -67,23 +85,46 @@ function RemedyDetails() {
 
             <Box sx={{ p: 2, pb: 4, pt: -2 }}>
               <Typography sx={{ fontSize: 20, fontWeight: 500 }} component="h1">
-                {remedy?.title}
+                {remedy.remedyName}
               </Typography>
-              <RemedyRating remedy={remedy} />
+              {!remedy.ratingAverage ? (
+                <Box component={"div"}>
+                  <Typography>
+                    No ratings yet.{" "}
+                    <Link remedy={remedy} onClick={handleClickOpen}>
+                      Be the first to add one.
+                    </Link>
+                  </Typography>
+                </Box>
+              ) : (
+                <RemedyRating remedy={remedy} />
+              )}
 
               <Typography variant="body" color="text.secondary">
                 <b>Best use for: </b>
-                {remedy?.matching_symptoms}
+                {remedy.symptomsMatched}
               </Typography>
             </Box>
-            {/* <RemedyTabs remedy={remedy} /> */}
             <RemedyAccordion remedy={remedy} />
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleClickOpen}
+            >
+              Write a Review
+            </Button>
             <RatingList ratings={ratings} />
           </Paper>{" "}
         </Container>
       </Box>
+      <RatingForm
+        key={remedy.id}
+        remedy={remedy}
+        open={open}
+        handleClose={handleClose}
+      />
     </>
   );
 }
 
-export default RemedyDetails;
+export default LayoutHOC(RemedyDetails);
