@@ -3,7 +3,7 @@ import { Container, Box } from "@mui/material";
 
 function ResultList({ remedies }) {
   const renderedRemedies = remedies.map((remedy) => {
-    return <ResultShow key={remedy.id} remedy={remedy} />;
+    return <ResultShow key={remedy._id} remedy={remedy} />;
   });
 
   return (
