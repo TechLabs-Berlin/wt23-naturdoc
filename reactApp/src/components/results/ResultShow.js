@@ -15,8 +15,8 @@ function ResultShow({ remedy }) {
       <Card sx={{ mb: 2 }}>
         <CardActionArea
           component={Link}
-          to={`/remedies/${remedy.id}`}
-          key={remedy.id}
+          to={`/remedies/${remedy._id}`}
+          key={remedy._id}
         >
           <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
             <RemedyIcon icon={remedy.icon} sx={{ width: 180 }} smallIcon />
