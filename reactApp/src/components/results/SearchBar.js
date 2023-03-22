@@ -63,7 +63,7 @@ function SearchBar({ onChange }) {
             );
           }}
           renderInput={(params) => (
-            <TextField {...params} label="Pick your symptoms" />
+            <TextField autoFocus {...params} label="Pick your symptoms" />
           )}
         />
       </Paper>
