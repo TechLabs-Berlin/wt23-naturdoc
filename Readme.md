@@ -1,0 +1,2 @@
+#Summary
+Naturedoc is an application designed to help you finding symptom-based treatments for your ailments. For this purpose, we propose possible treatment-options from different medical traditions. 
