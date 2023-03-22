@@ -14,14 +14,7 @@ const getRemedy = async (term) => {
       }
     ); */
 
-    const response = await axios.get(`http://localhost:7000/remedies/${term}`, {
-      headers: {
-        // cf API documentation
-      },
-      params: {
-        //  _id: term,
-      },
-    });
+    const response = await axios.get(`http://localhost:7000/remedies/${term}`);
 
     console.log("getRemedy response:", response.data);
     return response.data;
