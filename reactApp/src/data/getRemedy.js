@@ -2,7 +2,7 @@ import axios from "axios";
 
 const getRemedy = async (term) => {
   try {
-    const response = await axios.get(
+    /*  const response = await axios.get(
       `https://my-json-server.typicode.com/rjeantet/server-mock/remedies/${term}`,
       {
         headers: {
@@ -12,7 +12,16 @@ const getRemedy = async (term) => {
           id: term,
         },
       }
-    );
+    ); */
+
+    const response = await axios.get(`http://localhost:7000/remedies/${term}`, {
+      headers: {
+        // cf API documentation
+      },
+      params: {
+        //  _id: term,
+      },
+    });
 
     console.log("getRemedy response:", response.data);
     return response.data;
