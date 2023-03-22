@@ -105,7 +105,52 @@ function RemedyDetails() {
                 {remedy.symptomsMatched}
               </Typography>
             </Box>
-            <RemedyAccordion remedy={remedy} />
+
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Other common names"}
+              accordionDetails={remedy.commonNames}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Activities"}
+              accordionDetails={remedy.medicinalUses}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Uses in Clinical Medicine"}
+              accordionDetails={remedy.treatmentClinical}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Uses in Traditional Medicine"}
+              accordionDetails={remedy.treatmentTraditional}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Uses in Folk Medicine"}
+              accordionDetails={remedy.treatmentFolk}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Contraindications"}
+              accordionDetails={remedy.contraindication}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Warnings"}
+              accordionDetails={remedy.warnings}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Adverse Effects"}
+              accordionDetails={remedy.adverseEffects}
+            />
+            <RemedyAccordion
+              remedy={remedy}
+              accordionSummary={"Posology / Dosage"}
+              accordionDetails={remedy.posology}
+            />
             <Button
               variant="contained"
               color="primary"
