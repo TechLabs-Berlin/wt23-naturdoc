@@ -40,7 +40,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     const { id } = req.params //req.params;
     const { rating } = req.body;
-    const userId = "64151b5e70662285f3b36c0e";
+    const userId = "64151a880022f6c93207f2b9";
 
     const newRating = await remedyRating.findOneAndUpdate(
         { remedyId: id, userId: userId },
@@ -60,22 +60,42 @@ router.put('/:id', catchAsynch(async (req, res) => {
     );
 
     console.log(addRatingToUser);
+    const test = await Medicals.findById(id)
+    const ratingsTest = test.ratings
+    const userAlreadyReviewedFlagTest = ratingsTest.find(rating => rating.userId === userId)
+    if (userAlreadyReviewedFlagTest) {
+        const updateRating = await Medicals.updateOne({ id: id, "ratings.userId": userId },
+//find product by id
+//find rating
+    } else {
+        const noRatingYet = await Medicals.findByIdAndUpdate(id: id), {
 
-    const updateRemedy = await Medicals.findByIdAndUpdate(id,
-        { ratings: { ratingValue: rating, userId: userId } },
-        {
-            //new: true,
-            // upsert: true
-        }
-        //{
-        //    $push:
-        //    {
-        //        ratings: { ratingValue: rating, userId: userId }
-        //    }
-        //},
-    );
-    return res.status(200).send(newRating);
+        //find the product
+        //add the rating
+            { "ratings.userId": userId },
+        )
+    }
+    const updateRemedy = await Medicals.updateOne({ id: id, "ratings.userId": userId }, // 
+            {
+                $addToSet:
+                {
+                    ratings: { ratingValue: rating, userId: userId },
+                    new: true,
+                    upsert: true
+                }
+            }
+        );
+return res.status(200).send(updateRemedy);
 }));
 
+//delete a rating for a remedy
+router.delete('/:id', catchAsynch(async (req, res) => {
+    const { id } = req.params;
+    console.log(req.body);
+    const userId = "64151a880022f6c93207f2b9";
+    const deletedRating = await remedyRating.deleteOne(
+        { remedyId: id, userId: userId });
+    return res.status(200).send(deletedRating);
+}));
 
 module.exports = router;
