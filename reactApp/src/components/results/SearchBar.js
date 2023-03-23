@@ -39,7 +39,7 @@ function SearchBar({ onChange }) {
           autoComplete
           autoSelect
           autoHighlight
-          tagSizeSmall
+          // tagSizeSmall
           clearOnBlur
           onChange={handleChange}
           renderOption={(props, option, { inputValue, selected }) => {
