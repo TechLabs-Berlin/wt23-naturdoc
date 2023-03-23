@@ -55,8 +55,8 @@ app.use(cors({
 
 //get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
-    const body = req.query.symptomsMatched;
-    console.log(req.query.symptomsMatched)
+    const body = req.query.symptomsUser;
+    console.log(req.query.symptomsUser)
     const response = await axios({
         method: 'POST',
         url: 'http://localhost:8000/remedies/query',
@@ -83,9 +83,10 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 
     const mappedData = response.data.map(remedyItem => {
         return {
-            medicinalUses: remedyItem.medicinalUses,
-            commonNames: remedyItem.commonNames,
-            ratingAverage: remedyItem.ratingAverage
+            remedyName: remedyItem.remedyName,
+            symptomsMatched: remedyItem.symptomsMatched,
+            ratingAverage: remedyItem.ratingAverage,
+            _id: remedyItem.id
         }
     })
     return res.status(200).send(mappedData);

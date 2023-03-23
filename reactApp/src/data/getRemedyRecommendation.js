@@ -2,30 +2,29 @@ import axios from "axios";
 
 const getRemedyRecommendation = async (term) => {
   try {
-    //  const response = await axios.get(
-    //    "https://my-json-server.typicode.com/rjeantet/server-mock/remedies",
-    //    {
-    //      headers: {
-    //        // cf API documentation
-    //      },
-    //      params: {
-    //        matching_symptoms: term,
-    //      },
-    //    }
-    //  );
+    /*  const response = await axios.get(
+      "https://my-json-server.typicode.com/rjeantet/server-mock/remedies",
+      {
+        headers: {
+          // cf API documentation
+        },
+        params: {
+          symptomsMatched: term,
+        },
+      }
+    ); */
 
     const response = await axios({
-      method: 'GET',
-      url: 'http://localhost:7000/getRemedyRecommendation',
+      method: "GET",
+      url: "http://localhost:7000/getRemedyRecommendation",
 
       headers: {
         // cf API documentation
       },
       params: {
-        symptom: term,
-      }
-    }
-    )
+        symptomsUser: term,
+      },
+    });
 
     console.log("getRemedyRecommendation response:", response.data);
     return response.data;

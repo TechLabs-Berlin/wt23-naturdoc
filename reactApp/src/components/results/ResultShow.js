@@ -1,53 +1,45 @@
 import {
   Card,
-  CardHeader,
-  Rating,
+  Box,
   CardActionArea,
   CardContent,
-  Avatar,
+  Typography,
 } from "@mui/material";
-import MedicationLiquidRoundedIcon from "@mui/icons-material/MedicationLiquidRounded";
+import RemedyIcon from "../remedy/RemedyIcon";
+import RemedyRating from "components/remedy/RemedyRating";
+import { Link } from "react-router-dom";
 
 function ResultShow({ remedy }) {
   return (
     <>
-      <CardActionArea>
-        <Card
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            mb: 2,
-          }}
+      <Card sx={{ mb: 2 }}>
+        <CardActionArea
+          component={Link}
+          to={`/remedies/${remedy._id}`}
+          key={remedy._id}
         >
-          <CardHeader
-            sx={{
-              alignItems: "flex-start",
-            }}
-            avatar={
-              <Avatar
-                variant="rounded"
-                sx={{ width: 56, height: 56, bgcolor: "#61876E" }}
-                aria-label="remedy"
-              >
-                <MedicationLiquidRoundedIcon />
-              </Avatar>
-            }
-            // action={<IconButton aria-label="settings">ICON</IconButton>}
-            title={remedy.title}
-            titleTypographyProps={{ variant: "h5" }}
-            subheader={remedy.matching_symptoms}
-            subheaderTypographyProps={{
-              variant: "subtitle1",
-              color: "text.secondary",
-              component: "div",
-            }}
-          />
-          <CardContent sx={{ textAlign: "right" }}>
-            <Rating name="read-only" size="small" value={4} readOnly />
-            <br />4 (413)
+          <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
+            <RemedyIcon icon={remedy.icon} sx={{ width: 180 }} smallIcon />
+            <Box sx={{ display: "flex", flexDirection: "column", pl: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                <Typography component="div" sx={{ fontWeight: 500, ml: 0.25 }}>
+                  {remedy.remedyName}{" "}
+                </Typography>
+              </Box>
+              <Box sx={{ flex: "1 0 auto" }}>
+                {!remedy.ratingAverage ? (
+                  " "
+                ) : (
+                  <RemedyRating remedy={remedy} summary />
+                )}
+                <Typography variant="body2" color="text.secondary">
+                  {remedy.symptomsMatched}
+                </Typography>
+              </Box>
+            </Box>
           </CardContent>
-        </Card>
-      </CardActionArea>
+        </CardActionArea>
+      </Card>
     </>
   );
 }

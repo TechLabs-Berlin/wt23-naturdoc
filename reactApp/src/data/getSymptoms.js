@@ -9,12 +9,10 @@ const getSymptoms = async (term) => {
           // cf API documentation
         },
         params: {
-          title: term,
+          symptomName: term,
         },
       }
     );
-
-
 
     console.log("Get full list of symptoms:", response.data);
     return response.data;
