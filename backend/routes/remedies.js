@@ -59,34 +59,66 @@ router.put('/:id', catchAsynch(async (req, res) => {
         }
     );
 
-    console.log(addRatingToUser);
-    const test = await Medicals.findById(id)
-    const ratingsTest = test.ratings
-    const userAlreadyReviewedFlagTest = ratingsTest.find(rating => rating.userId === userId)
-    if (userAlreadyReviewedFlagTest) {
-        const updateRating = await Medicals.updateOne({ id: id, "ratings.userId": userId },
-//find product by id
-//find rating
-    } else {
-        const noRatingYet = await Medicals.findByIdAndUpdate(id: id), {
-
-        //find the product
-        //add the rating
-            { "ratings.userId": userId },
-        )
-    }
-    const updateRemedy = await Medicals.updateOne({ id: id, "ratings.userId": userId }, // 
-            {
-                $addToSet:
-                {
-                    ratings: { ratingValue: rating, userId: userId },
-                    new: true,
-                    upsert: true
-                }
-            }
+    // console.log(addRatingToUser);
+    try {
+        const product = await Medicals.findById(id);
+        //   const ratingsTest = product.ratings;
+        const alreadyRated = product.ratings.find(
+            rating => rating.userId === "64151a880022f6c93207f2b9"
         );
-return res.status(200).send(updateRemedy);
+
+        console.log(alreadyRated);
+        if (alreadyRated) {
+            const updateRating = await Medicals.updateOne(
+                {
+                    ratings: { $elemMatch: alreadyRated }
+                },
+                {
+                    $set: { "ratings.$.ratingValue": rating }
+                },
+                {
+                    new: true
+                }
+
+            );
+            res.json(updateRating);
+            //find product by id
+            //find rating
+        } else {
+            //find product and add rating
+            const rateProduct = await Medicals.findByIdAndUpdate(id, {
+                $push: {
+                    ratings: {
+                        ratingValue: rating,
+                        userId: userId
+                    }
+                }
+            },
+                {
+                    new: true
+                }
+            );
+            return res.status(200).send(rateProduct);
+        }
+    } catch (error) {
+        throw new Error(error);
+    }
 }));
+
+
+
+//    const updateRemedy = await Medicals.updateOne({ id: id, "ratings.userId": userId }, // 
+//            {
+//                $addToSet:
+//                {
+//                    ratings: { ratingValue: rating, userId: userId },
+//                    new: true,
+//                    upsert: true
+//                }
+//            }
+//        );
+//return res.status(200).send(updateRemedy);
+//}));
 
 //delete a rating for a remedy
 router.delete('/:id', catchAsynch(async (req, res) => {
