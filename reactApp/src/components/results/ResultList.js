@@ -1,5 +1,5 @@
 import ResultShow from "./ResultShow";
-import { Container, Box } from "@mui/material";
+import { Container, Box, Typography } from "@mui/material";
 import ResultShowSkeleton from "./ResultShowSkeleton";
 
 function ResultList({ remedies, loading }) {
@@ -14,9 +14,11 @@ function ResultList({ remedies, loading }) {
   return (
     <>
       <Container sx={{ mt: 1 }} component="section" maxWidth="sm">
-        <Box>
-          {!remedies.length ? "No" : remedies.length}
-          {remedies.length === 1 ? " matching remedy" : " matching remedies"}
+        <Box component="div" sx={{ mb: 4 }}>
+          <Typography variant="resultCount">
+            {!remedies.length ? "No" : remedies.length}
+            {remedies.length === 1 ? " result" : " results"}
+          </Typography>
           {loading ? renderedLoading : renderedRemedies}
         </Box>
       </Container>

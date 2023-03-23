@@ -6,7 +6,7 @@ function ResultShowSkeleton() {
     <>
       <Card sx={{ mb: 2 }}>
         <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
-          <Skeleton variant="rectangular" width={40} height={40} />
+          {/* <Skeleton variant="rectangular" width={40} height={40} /> */}
           <Box
             sx={{
               display: "flex",
