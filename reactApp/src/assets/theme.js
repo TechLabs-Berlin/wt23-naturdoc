@@ -3,6 +3,7 @@ import { createTheme } from "@mui/material";
 const primaryColor = "#1d7147";
 const primaryColorLight = "rgba(105,179,154,0.9)";
 const secondaryColor = "#deedde";
+const secondaryColorLight = "#EAE6B4";
 const primaryFont = ['"Poppins"', '"Helvetica"', "Arial", "sans-serif"].join(
   ","
 );
@@ -25,7 +26,7 @@ const theme = createTheme({
     secondary: {
       main: secondaryColor,
       contrastText: primaryTextColor,
-      light: "#eae6b4",
+      light: secondaryColorLight,
     },
     error: {
       main: "#ff1744",
@@ -108,6 +109,17 @@ const theme = createTheme({
         root: {
           width: "25%",
           margin: "16px 0",
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          backgroundColor: secondaryColorLight,
+          // color: "#ffffff",
+          "&.Mui-expanded": {
+            // backgroundColor: primaryColor,
+          },
         },
       },
     },

@@ -6,26 +6,26 @@ const RemedyRating = ({ remedy, summary }) => {
   if (summary) {
     return (
       <>
-        {remedy.ratingAverage ? (
-          <Box sx={{ display: "flex", alignItems: "center" }}>
-            <Rating
-              name="read-only"
-              size="small"
-              readOnly
-              sx={{ mr: 0.5 }}
-              icon={<CircleIcon fontSize="inherit" />}
-              emptyIcon={<CircleIcon fontSize="inherit" />}
-              value={remedy.ratingAverage}
-            />
-            <Box component="span">
-              <b>{remedy.ratingAverage}</b> ({remedy.totalNumberofRatings})
-            </Box>
-          </Box>
-        ) : (
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box sx={{ display: "flex", alignItems: "center", my: 2 }}>
+          {remedy.ratingAverage ? (
+            <>
+              <Rating
+                name="read-only"
+                size="small"
+                readOnly
+                sx={{ mr: 0.5 }}
+                icon={<CircleIcon fontSize="inherit" />}
+                emptyIcon={<CircleIcon fontSize="inherit" />}
+                value={remedy.ratingAverage}
+              />
+              <Box component="span">
+                <b>{remedy.ratingAverage}</b> ({remedy.totalNumberofRatings})
+              </Box>
+            </>
+          ) : (
             "No ratings yet"
-          </Box>
-        )}
+          )}
+        </Box>
       </>
     );
   } else {
@@ -36,6 +36,7 @@ const RemedyRating = ({ remedy, summary }) => {
             display: "flex",
             justifyContent: "flex-start",
             alignItems: "center",
+            my: 2,
           }}
         >
           <Typography sx={{ fontSize: 52 }}>
