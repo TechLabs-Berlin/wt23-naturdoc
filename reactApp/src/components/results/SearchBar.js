@@ -49,7 +49,7 @@ function SearchBar({ onChange }) {
             const parts = parse(option.symptomName, matches);
 
             return (
-              <li {...props} key={option.id}>
+              <li {...props} key={option._id}>
                 <div>
                   {parts.map((part, index) => (
                     <span
