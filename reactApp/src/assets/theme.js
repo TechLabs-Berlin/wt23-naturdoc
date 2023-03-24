@@ -80,11 +80,26 @@ const theme = createTheme({
         },
       },
     },
+    MuiBottomNavigation: {
+      styleOverrides: {
+        root: {
+          backgroundColor: primaryColorLight,
+          height: "68px",
+        },
+      },
+    },
+    MuiBottomNavigationAction: {
+      styleOverrides: {
+        root: {
+          color: primaryTextColor,
+          "&.Mui-selected": { color: "#ffffff" },
+        },
+      },
+    },
     MuiPaper: {
       styleOverrides: {
         resultCard: {
           backgroundColor: secondaryColor,
-          // padding: "25px",
         },
       },
     },
