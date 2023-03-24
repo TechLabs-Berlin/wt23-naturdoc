@@ -60,7 +60,7 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     console.log(req.query.symptomsUser)
     const response = await axios({
         method: 'POST',
-        url: 'http://localhost:8000/remedies/query',
+        url: 'http://127.0.0.1:8000/remedies/query',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -100,9 +100,9 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 //list all symptoms
 app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const { symptom } = req.params;
-    const medicinalUses = await Symptoms.find({})
-    console.log(medicinalUses)
-    const response = medicinalUses.map(symptomItem => {
+    const symptomName = await Symptoms.find({})
+    console.log(symptomName)
+    const response = symptomName.map(symptomItem => {
         return {
             symptomName: symptomItem.symptomName,
             _id: symptomItem.id
