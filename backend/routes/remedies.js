@@ -40,11 +40,11 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     const { id } = req.params //req.params;
     const { rating } = req.body;
-    const userId = "64151b8670662285f3b36c13";
-    //  const userIds = "64151b8670662285f3b36c13";
+    //const userId = "64151b8670662285f3b36c13";
+    const userTest = "64151b8670662285f3b36c13";
 
     const newRating = await remedyRating.findOneAndUpdate(
-        { remedyId: id, userId: userId },
+        { remedyId: id, userId: userTest },
         { ratingValue: rating },
         {
             new: true,
@@ -65,7 +65,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
         const product = await Medicals.findById(id);
         console.log(product.ratings)
         const alreadyRated = product.ratings.find(
-            rating => rating.userId.toString() === userId.toString()
+            rating => rating.userId.toString() === userTest.toString()
         );
 
         console.log(alreadyRated);
@@ -91,7 +91,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 $push: {
                     ratings: {
                         ratingValue: rating,
-                        userId: userIds
+                        userId: userTest
                     }
                 }
             },
@@ -105,21 +105,6 @@ router.put('/:id', catchAsynch(async (req, res) => {
         throw new Error(error);
     }
 }));
-
-
-
-//    const updateRemedy = await Medicals.updateOne({ id: id, "ratings.userId": userId }, // 
-//            {
-//                $addToSet:
-//                {
-//                    ratings: { ratingValue: rating, userId: userId },
-//                    new: true,
-//                    upsert: true
-//                }
-//            }
-//        );
-//return res.status(200).send(updateRemedy);
-//}));
 
 //delete a rating for a remedy
 router.delete('/:id', catchAsynch(async (req, res) => {
