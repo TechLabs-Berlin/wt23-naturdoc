@@ -11,6 +11,7 @@ const flash = require('connect-flash');
 const cors = require('cors');
 const User = require('./models/user');
 const Ratings = require('./models/ratings');
+const Symptoms = require('./models/symptoms');
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
@@ -119,6 +120,7 @@ app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const response = medicinalUses.map(symptomItem => {
         return {
             medicinalUses: symptomItem.symptomName,
+            _id: symptomItem.id,
         }
     })
     return res.status(200).send(response);
