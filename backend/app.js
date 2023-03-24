@@ -101,9 +101,10 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const { symptom } = req.params;
     const medicinalUses = await Symptoms.find({})
+    console.log(medicinalUses)
     const response = medicinalUses.map(symptomItem => {
         return {
-            symptomName: symptomItem.symptom,
+            symptomName: symptomItem.symptomName,
             _id: symptomItem.id
         }
     })
