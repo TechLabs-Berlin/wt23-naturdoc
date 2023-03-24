@@ -28,7 +28,7 @@ router.get('/', catchAsynch(async (req, res) => {
 //get a single remedy by id
 router.get('/:id', catchAsynch(async (req, res) => {
     const remedies = await Medicals.findById(req.params.id);
-    return res.status(200).send(remedies);
+    return res.status(200).send(remedies)
 }));
 
 
@@ -40,7 +40,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     const { id } = req.params //req.params;
     const { rating } = req.body;
-    const userId = "64151a880022f6c93207f2b9";
+    const userId = "64151b8670662285f3b36c13";
+    //  const userIds = "64151b8670662285f3b36c13";
 
     const newRating = await remedyRating.findOneAndUpdate(
         { remedyId: id, userId: userId },
@@ -62,9 +63,9 @@ router.put('/:id', catchAsynch(async (req, res) => {
     // console.log(addRatingToUser);
     try {
         const product = await Medicals.findById(id);
-        //   const ratingsTest = product.ratings;
+        console.log(product.ratings)
         const alreadyRated = product.ratings.find(
-            rating => rating.userId === "64151a880022f6c93207f2b9"
+            rating => rating.userId.toString() === userId.toString()
         );
 
         console.log(alreadyRated);
@@ -90,7 +91,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 $push: {
                     ratings: {
                         ratingValue: rating,
-                        userId: userId
+                        userId: userIds
                     }
                 }
             },
