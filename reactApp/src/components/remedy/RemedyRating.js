@@ -1,22 +1,30 @@
 import { Box, Rating, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import CircleIcon from "@mui/icons-material/Circle";
 
 const RemedyRating = ({ remedy, summary }) => {
   if (summary) {
     return (
       <>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Rating
-            name="read-only"
-            size="small"
-            defaultValue={1}
-            max={1}
-            readOnly
-            sx={{ mr: 0.5 }}
-          />
-          <Box component="span">
-            <b>{remedy.ratingAverage}</b> ({remedy.totalNumberofRatings})
-          </Box>
+        <Box sx={{ display: "flex", alignItems: "center", my: 2 }}>
+          {remedy.ratingAverage ? (
+            <>
+              <Rating
+                name="read-only"
+                size="small"
+                readOnly
+                sx={{ mr: 0.5 }}
+                icon={<CircleIcon fontSize="inherit" />}
+                emptyIcon={<CircleIcon fontSize="inherit" />}
+                value={remedy.ratingAverage}
+              />
+              <Box component="span">
+                <b>{remedy.ratingAverage}</b> ({remedy.totalNumberofRatings})
+              </Box>
+            </>
+          ) : (
+            "No ratings yet"
+          )}
         </Box>
       </>
     );
@@ -28,6 +36,7 @@ const RemedyRating = ({ remedy, summary }) => {
             display: "flex",
             justifyContent: "flex-start",
             alignItems: "center",
+            my: 2,
           }}
         >
           <Typography sx={{ fontSize: 52 }}>
@@ -47,7 +56,7 @@ const RemedyRating = ({ remedy, summary }) => {
                 max={5}
                 precision={0.5}
                 readOnly
-                value={remedy.ratingAverage ? remedy.ratingAverage : "0"}
+                value={remedy.ratingAverage}
               />
               <Box component={"div"} sx={{ fontSize: 14 }}>
                 {/* [BUG] Ask Soma: how to anchor link dynamic URL?] */}

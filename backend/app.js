@@ -10,8 +10,8 @@ const LocalStrategy = require('passport-local');
 const Medicals = require('./models/remedies');
 const remedyRating = require('./models/ratings');
 const User = require('./models/user');
+const Ratings = require('./models/ratings');
 const Symptoms = require('./models/symptoms');
-
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
@@ -103,7 +103,8 @@ app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const medicinalUses = await Symptoms.find({})
     const response = medicinalUses.map(symptomItem => {
         return {
-            medicinalUses: symptomItem.symptomName,
+            medicinalUses: symptomItem.symptom,
+            _id: symptomItem.id
         }
     })
     return res.status(200).send(response);

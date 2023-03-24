@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import HomeIcon from "@mui/icons-material/Home";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
-import PersonIcon from "@mui/icons-material/Person";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = useState(0);
@@ -13,7 +13,13 @@ export default function SimpleBottomNavigation() {
   return (
     <>
       <Paper
-        sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+        sx={{
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          backgroundColor: "primaryColorLight",
+        }}
         elevation={3}
       >
         <BottomNavigation
@@ -27,7 +33,7 @@ export default function SimpleBottomNavigation() {
             component={Link}
             to={"/"}
             label="home"
-            icon={<HomeIcon />}
+            icon={<HomeOutlinedIcon />}
           />
           <BottomNavigationAction
             component={Link}
@@ -39,7 +45,7 @@ export default function SimpleBottomNavigation() {
             component={Link}
             to={"/login"}
             label="Login"
-            icon={<PersonIcon />}
+            icon={<PersonOutlineOutlinedIcon />}
           />
         </BottomNavigation>
       </Paper>

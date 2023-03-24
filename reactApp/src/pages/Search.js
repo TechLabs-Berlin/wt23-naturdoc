@@ -11,6 +11,7 @@ import "assets/App.css";
 
 const Search = () => {
   const [remedies, setRemedies] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const handleChange = async (terms) => {
     const result = await getRemedyRecommendation(terms);
@@ -21,13 +22,14 @@ const Search = () => {
       console.log("no data found");
     } else {
       setRemedies(remediesToShow);
+      setLoading(false);
     }
     console.log("Display remedy recommendations:", remediesToShow);
   };
   return (
     <>
       <SearchBar onChange={handleChange} />
-      <ResultList remedies={remedies} />
+      {remedies ? <ResultList remedies={remedies} loading={loading} /> : null}
     </>
   );
 };
