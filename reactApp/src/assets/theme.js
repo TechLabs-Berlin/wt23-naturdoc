@@ -56,6 +56,23 @@ const theme = createTheme({
         },
       },
     },
+    MuiSvgIcon: {
+      styleOverrides: {
+        fontSizeLarge: {
+          fontSize: "2rem",
+        },
+      },
+    },
+    MuiRating: {
+      styleOverrides: {
+        iconEmpty: {
+          color: "#ffffff",
+        },
+        iconFilled: {
+          color: "#1d7147",
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {

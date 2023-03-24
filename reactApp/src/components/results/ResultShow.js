@@ -5,7 +5,7 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-/* import RemedyIcon from "../remedy/RemedyIcon"; */
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import RemedyRating from "components/remedy/RemedyRating";
 import { Link } from "react-router-dom";
 
@@ -20,7 +20,14 @@ function ResultShow({ remedy }) {
         >
           <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
             {/* <RemedyIcon icon={remedy.icon} sx={{ width: 180 }} smallIcon /> */}
-            <Box sx={{ display: "flex", flexDirection: "column", pl: 2 }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                flexGrow: "1",
+                pl: 2,
+              }}
+            >
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Typography
                   component="div"
@@ -31,15 +38,18 @@ function ResultShow({ remedy }) {
                 </Typography>
               </Box>
               <Box sx={{ flex: "1 0 auto" }}>
-                {!remedy.ratingAverage ? (
-                  " "
-                ) : (
-                  <RemedyRating remedy={remedy} summary />
-                )}
-                <Typography variant="body2" color="text.secondary">
-                  {remedy.symptomsMatched}
+                <RemedyRating remedy={remedy} summary />
+
+                <Typography sx={{ fontSize: "0.81rem" }}>
+                  Recommended use for:
+                </Typography>
+                <Typography variant="body2" sx={{ fontWeight: "600" }}>
+                  {remedy.symptomsMatched.join(", ")}
                 </Typography>
               </Box>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <ArrowForwardIosIcon sx={{}} fontSize="large" />
             </Box>
           </CardContent>
         </CardActionArea>
