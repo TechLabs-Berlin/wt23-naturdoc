@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import getRemedy from "data/getRemedy";
 import getUserRatings from "data/getUserRatings";
 // components
-import RemedyIcon from "components/remedy/RemedyIcon";
+// import RemedyIcon from "components/remedy/RemedyIcon";
 import RemedyAccordion from "components/remedy/RemedyAccordion";
 import RatingForm from "components/ratings/RatingForm";
 import RatingList from "components/ratings/RatingList";
@@ -53,6 +53,10 @@ function RemedyDetails() {
     setOpen(false);
   };
 
+  /* function joinContent(contentMatched) {
+     return <>{contentMatched ? contentMatched.join(", ") : " "}</>;
+  } */
+
   return (
     <>
       <Box
@@ -70,7 +74,7 @@ function RemedyDetails() {
                 <ChevronLeftIcon fontSize="large" />
               </IconButton>
             </Box>
-            <Box sx={{ position: "relative", height: "215px" }}>
+            <Box sx={{ position: "relative", height: "194px" }}>
               <CardMedia
                 component="img"
                 height="194"
@@ -78,17 +82,17 @@ function RemedyDetails() {
                 alt="Remedy image"
                 sx={{ position: "absolute" }}
               />
-              <Box sx={{ position: "absolute", top: "156px", left: "16px" }}>
+              {/* <Box sx={{ position: "absolute", top: "156px", left: "16px" }}>
                 <RemedyIcon remedy={remedy} smallIcon={false} />
-              </Box>
+              </Box> */}
             </Box>
 
-            <Box sx={{ p: 2, pb: 4, pt: -2 }}>
-              <Typography sx={{ fontSize: 20, fontWeight: 500 }} component="h1">
+            <Box sx={{ p: 2, pt: -2 }}>
+              <Typography variant="remedyTitle" component="h1">
                 {remedy.remedyName}
               </Typography>
               {!remedy.ratingAverage ? (
-                <Box component={"div"}>
+                <Box component={"div"} sx={{ my: 2 }}>
                   <Typography>
                     No ratings yet.{" "}
                     <Link remedy={remedy} onClick={handleClickOpen}>
@@ -99,11 +103,18 @@ function RemedyDetails() {
               ) : (
                 <RemedyRating remedy={remedy} />
               )}
-
-              <Typography variant="body" color="text.secondary">
-                <b>Best use for: </b>
-                {remedy.symptomsMatched}
-              </Typography>
+              {!remedy.symptomsMatched ? (
+                " "
+              ) : (
+                <>
+                  <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
+                    Recommended use for:
+                  </Typography>
+                  <Typography variant="body2" sx={{ fontWeight: "600" }}>
+                    {remedy.symptomsMatched.join(", ")}
+                  </Typography>
+                </>
+              )}
             </Box>
 
             <RemedyAccordion
