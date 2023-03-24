@@ -29,13 +29,13 @@ router.get('/', catchAsynch(async (req, res) => {
 router.get('/:id', catchAsynch(async (req, res) => {
     const remedies = await Medicals.findById(req.params.id);
     console.log(remedies);
-    const result = {
+    const response = {
         remedyName: remedies.remedyName,
         symptoms: remedies.symptoms,
         ratingAverage: remedies.ratingAverage,
         _id: remedies._id
     }
-    return res.status(200).send(result);
+    return res.status(200).send(response);
 }));
 
 
