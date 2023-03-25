@@ -31,7 +31,6 @@ router.get('/:id', catchAsynch(async (req, res) => {
     console.log(remedies);
     const response = {
         remedyName: remedies.remedyName,
-        symptoms: remedies.symptoms,
         symptomsMatched: remedies.symptomsMatched,
         ratingAverage: remedies.ratingAverage,
         totalNumberofRatings: remedies.totalNumberofRatings,

@@ -16,6 +16,18 @@ const RemediesSchema = new Schema({
         }
     ],
     ratingAverage: Number,
-    totalNumberofRatings: Number
+    totalNumberofRatings: Number,
+    symptomsMatched: Array,
+    medicinalUses: Array,
+    iconReference: String,
+    commonNames: String,
+    treatmentClinical: String,
+    treatmentTraditional: String,
+    treatmentFolk: String,
+    contraindication: String,
+    warnings: String,
+    adverseEffects: String,
+    posology: String,
+    doctorAlert: String,
 })
 module.exports = mongoose.model('Remedy', RemediesSchema);
