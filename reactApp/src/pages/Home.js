@@ -133,7 +133,6 @@ const Home = () => {
           </Box>
         </Box>
       </Container>
-      <Footer />
     </>
   );
 };
