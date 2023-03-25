@@ -15,7 +15,7 @@ const Search = () => {
 
   const handleChange = async (terms) => {
     const result = await getRemedyRecommendation(terms);
-    const remediesToShow = result.slice(0, 10);
+    const remediesToShow = result ? result.slice(0, 10) : [];
     console.log("Do a search with selected symptom(s)", terms);
     if (!terms.length) {
       setRemedies([]);
