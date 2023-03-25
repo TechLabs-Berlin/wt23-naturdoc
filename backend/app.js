@@ -89,6 +89,7 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
             symptomsMatched: remedies.symptomsMatched,
             ratingAverage: remedies.ratingAverage,
             totalNumberofRatings: remedies.totalNumberofRatings,
+            iconReference: remedies.iconReference,
             _id: remedyItem._id
         }
     })

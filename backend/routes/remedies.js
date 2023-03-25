@@ -36,6 +36,7 @@ router.get('/:id', catchAsynch(async (req, res) => {
         ratingAverage: remedies.ratingAverage,
         totalNumberofRatings: remedies.totalNumberofRatings,
         commonNames: remedies.commonNames,
+        iconReference: remedies.iconReference,
         medicinalUses: remedies.medicinalUses,
         treatmentClinical: remedies.treatmentClinical,
         treatmentTraditional: remedies.treatmentTraditional,
