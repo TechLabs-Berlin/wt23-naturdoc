@@ -84,9 +84,12 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 
     const mappedData = response.data.map(remedyItem => {
         return {
-            remedyName: remedyItem.remedyName,
-            symptomsMatched: remedyItem.symptomsMatched,
-            ratingAverage: remedyItem.ratingAverage,
+            remedyName: remedies.remedyName,
+            symptoms: remedies.symptoms,
+            symptomsMatched: remedies.symptomsMatched,
+            ratingAverage: remedies.ratingAverage,
+            totalNumberofRatings: remedies.totalNumberofRatings,
+            iconReference: remedies.iconReference,
             _id: remedyItem._id
         }
     })
