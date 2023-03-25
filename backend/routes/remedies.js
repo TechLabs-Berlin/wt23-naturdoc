@@ -68,13 +68,13 @@ router.put('/:id', catchAsynch(async (req, res) => {
     //console.log(req.body);
 
     const { id } = req.params //req.params;
-    const { rating } = req.body;
+    const { ratingValue } = req.body;
     const userTest = "64151b8670662285f3b36c13";
 
     //UPDATE RATING MODEL: 
     const newRating = await remedyRating.findOneAndUpdate(
         { remedyId: id, userId: userTest },
-        { ratingValue: rating },
+        { ratingValue: ratingValue },
         {
             new: true,
             upsert: true
@@ -94,7 +94,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                     ratings: { $elemMatch: alreadyRatedRemedy }
                 },
                 {
-                    $set: { "ratings.$.ratingValue": rating }
+                    $set: { "ratings.$.ratingValue": ratingValue }
                 },
                 {
                     new: true
@@ -107,7 +107,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
             const rateRemedy = await User.findByIdAndUpdate(userTest, {
                 $push: {
                     ratings: {
-                        ratingValue: rating,
+                        ratingValue: ratingValue,
                         userId: userTest,
                         remedyId: id
                     }
@@ -145,7 +145,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 },
                 {
                     $set: {
-                        "ratings.$.ratingValue": rating,
+                        "ratings.$.ratingValue": ratingValue,
                         ratingAverage: average
                     }
                 },
@@ -163,7 +163,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
             const rateProduct = await Medicals.findByIdAndUpdate(id, {
                 $push: {
                     ratings: {
-                        ratingValue: rating,
+                        ratingValue: ratingValue,
                         userId: userTest
                     }
                 },
