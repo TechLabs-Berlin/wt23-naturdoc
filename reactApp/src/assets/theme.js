@@ -141,6 +141,13 @@ const theme = createTheme({
         },
       },
     },
+    MuiCardActionArea: {
+      styleOverrides: {
+        focusHighlight: {
+          backgroundColor: "transparent",
+        },
+      },
+    },
     MuiCardHeader: {
       styleOverrides: {
         subheader: {
