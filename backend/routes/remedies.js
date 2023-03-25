@@ -35,6 +35,8 @@ router.get('/:id', catchAsynch(async (req, res) => {
         ratingAverage: remedies.ratingAverage,
         _id: remedies._id
     }
+    console.log(response)
+
     return res.status(200).send(response);
 }));
 
@@ -47,9 +49,9 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     const { id } = req.params //req.params;
     const { rating } = req.body;
-    //const userId = "64151b8670662285f3b36c13";
     const userTest = "64151b8670662285f3b36c13";
 
+    //UPDATE RATING MODEL: 
     const newRating = await remedyRating.findOneAndUpdate(
         { remedyId: id, userId: userTest },
         { ratingValue: rating },
@@ -59,27 +61,20 @@ router.put('/:id', catchAsynch(async (req, res) => {
         }
     );
 
-    const addRatingToUser = await User.findByIdAndUpdate(newRating.userId,
-        { ratings: { remedyId: id, ratingValue: rating } },
-        {
-            new: true,
-            upsert: true
-        }
-    );
 
-    // console.log(addRatingToUser);
+    //UPDATE USER MODEL:
     try {
-        const product = await Medicals.findById(id);
-        console.log(product.ratings)
-        const alreadyRated = product.ratings.find(
-            rating => rating.userId.toString() === userTest.toString()
+        const user = await User.findById(userTest);
+        console.log(user)
+        const alreadyRatedRemedy = user.ratings.find(
+            rating => rating.remedyId.toString() === id.toString()
         );
 
-        console.log(alreadyRated);
-        if (alreadyRated) {
-            const updateRating = await Medicals.updateOne(
+        console.log(alreadyRatedRemedy);
+        if (alreadyRatedRemedy) {
+            const updateUser = await User.updateOne(
                 {
-                    ratings: { $elemMatch: alreadyRated }
+                    ratings: { $elemMatch: alreadyRatedRemedy }
                 },
                 {
                     $set: { "ratings.$.ratingValue": rating }
@@ -89,9 +84,64 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 }
 
             );
+            res.json(updateUser);
+        } else {
+            //find product and add rating
+            const rateRemedy = await User.findByIdAndUpdate(userTest, {
+                $push: {
+                    ratings: {
+                        ratingValue: rating,
+                        userId: userTest,
+                        remedyId: id
+                    }
+                }
+            },
+                {
+                    new: true
+                }
+            );
+        }
+    } catch (error) {
+        throw new Error(error);
+    }
+
+    //UPDATE REMEDY MODEL:
+    try {
+        //find remedy by id:
+        const product = await Medicals.findById(id);
+        console.log(product.ratings)
+
+        //calculate new rating average
+        const ratingAverage = product.ratings
+        const average = ratingAverage.reduce((total, next) => total + next.ratingValue, 0) / ratingAverage.length;
+        console.log(average);
+
+        //check if remedy is already rated by current user
+        const alreadyRated = product.ratings.find(
+            rating => rating.userId.toString() === userTest.toString()
+        );
+
+        //if user already rated the product, update the rating value
+        if (alreadyRated) {
+            const updateRating = await Medicals.updateOne(
+                {
+                    ratings: { $elemMatch: alreadyRated }
+                },
+                {
+                    $set: {
+                        "ratings.$.ratingValue": rating,
+                        ratingAverage: average
+                    }
+                },
+                {
+                    new: true
+                }
+
+            );
             res.json(updateRating);
-            //find product by id
-            //find rating
+
+
+            //if user did not rate the product yet, add a new rating value
         } else {
             //find product and add rating
             const rateProduct = await Medicals.findByIdAndUpdate(id, {
@@ -100,7 +150,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
                         ratingValue: rating,
                         userId: userTest
                     }
-                }
+                },
+                ratingAverage: average,
             },
                 {
                     new: true
