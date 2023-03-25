@@ -27,7 +27,7 @@ function getLabelText(value) {
   return `${value} Star${value !== 1 ? "s" : ""}, ${labels[value]}`;
 }
 
-function RatingForm({ remedy, open, handleClose }) {
+function RatingForm({ remedy, open, handleClose, fullScreen }) {
   const [hover, setHover] = useState(-1);
 
   const [formValues, setFormValues] = useState({});
@@ -50,20 +50,6 @@ function RatingForm({ remedy, open, handleClose }) {
   const handleSubmit = () => {
     const result = postRating(remedy, formValues);
     console.log("result", result);
-    /* fetch("https://my-json-server.typicode.com/rjeantet/server-mock/ratings/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        ...formValues,
-        userId: "[USER.ID]",
-        remedyId: remedy.id,
-        remedyName: remedy.remedyName,
-        createdAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
-        updatedAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
-      }),
-    }); */
 
     handleClose();
     console.log(
@@ -78,7 +64,7 @@ function RatingForm({ remedy, open, handleClose }) {
 
   return (
     <>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} fullScreen={fullScreen}>
         <form>
           <DialogTitle>
             Share your experience with using {remedy.remedyName}{" "}

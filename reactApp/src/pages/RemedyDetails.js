@@ -23,6 +23,8 @@ import {
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import RemedyRating from "components/remedy/RemedyRating";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 function RemedyDetails() {
   const { id } = useParams();
@@ -45,6 +47,9 @@ function RemedyDetails() {
   }, [id]);
 
   const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -178,6 +183,7 @@ function RemedyDetails() {
         remedy={remedy}
         open={open}
         handleClose={handleClose}
+        fullScreen={fullScreen}
       />
     </>
   );
