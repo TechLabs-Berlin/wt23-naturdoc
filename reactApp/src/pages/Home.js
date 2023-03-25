@@ -12,7 +12,7 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import logo from "assets/logoNaturdoc.svg";
-import Footer from "components/layouts/Footer";
+// import Footer from "components/layouts/Footer";
 import { ChevronRight } from "@mui/icons-material";
 
 const Home = () => {
