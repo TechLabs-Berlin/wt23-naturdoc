@@ -35,6 +35,8 @@ router.get('/:id', catchAsynch(async (req, res) => {
         ratingAverage: remedies.ratingAverage,
         _id: remedies._id
     }
+    console.log(response)
+
     return res.status(200).send(response);
 }));
 
