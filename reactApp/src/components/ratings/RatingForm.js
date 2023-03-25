@@ -7,6 +7,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
 import postRating from "data/postRating";
+import CircleIcon from "@mui/icons-material/Circle";
 
 const labels = {
   0.5: "Useless",
@@ -81,6 +82,10 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
                 // value={value}
                 name={ratingValue}
                 getLabelText={getLabelText}
+                icon={<CircleIcon fontSize="inherit" />}
+                emptyIcon={
+                  <CircleIcon fontSize="inherit" sx={{ color: "#eee" }} />
+                }
                 onChange={(event, value) =>
                   handleRatingChange(value, ratingValue)
                 }
