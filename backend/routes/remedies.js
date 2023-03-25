@@ -32,7 +32,19 @@ router.get('/:id', catchAsynch(async (req, res) => {
     const response = {
         remedyName: remedies.remedyName,
         symptoms: remedies.symptoms,
+        symptomsMatched: remedies.symptomsMatched,
         ratingAverage: remedies.ratingAverage,
+        totalNumberofRatings: remedies.totalNumberofRatings,
+        commonNames: remedies.commonNames,
+        medicinalUses: remedies.medicinalUses,
+        treatmentClinical: remedies.treatmentClinical,
+        treatmentTraditional: remedies.treatmentTraditional,
+        treatmentFolk: remedies.treatmentFolk,
+        contraindication: remedies.contraindication,
+        warnings: remedies.warnings,
+        adverseEffects: remedies.adverseEffects,
+        posology: remedies.posology,
+        doctorAlert: remedies.doctorAlert,
         _id: remedies._id
     }
     console.log(response)
@@ -45,7 +57,7 @@ router.get('/:id', catchAsynch(async (req, res) => {
 router.put('/:id', catchAsynch(async (req, res) => {
     const ratingId = new mongoose.Types.ObjectId;
     console.log('*******');
-    console.log(req.body);
+    //console.log(req.body);
 
     const { id } = req.params //req.params;
     const { rating } = req.body;
@@ -65,12 +77,9 @@ router.put('/:id', catchAsynch(async (req, res) => {
     //UPDATE USER MODEL:
     try {
         const user = await User.findById(userTest);
-        console.log(user)
         const alreadyRatedRemedy = user.ratings.find(
             rating => rating.remedyId.toString() === id.toString()
         );
-
-        console.log(alreadyRatedRemedy);
         if (alreadyRatedRemedy) {
             const updateUser = await User.updateOne(
                 {
@@ -109,12 +118,11 @@ router.put('/:id', catchAsynch(async (req, res) => {
     try {
         //find remedy by id:
         const product = await Medicals.findById(id);
-        console.log(product.ratings)
-
         //calculate new rating average
-        const ratingAverage = product.ratings
-        const average = ratingAverage.reduce((total, next) => total + next.ratingValue, 0) / ratingAverage.length;
-        console.log(average);
+        const remedyRatings = product.ratings
+        const average = remedyRatings.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
+
+        const newTotalNumberOfRatings = remedyRatings.length + 1;
 
         //check if remedy is already rated by current user
         const alreadyRated = product.ratings.find(
@@ -152,12 +160,15 @@ router.put('/:id', catchAsynch(async (req, res) => {
                     }
                 },
                 ratingAverage: average,
+                totalNumberOfRatings: newTotalNumberOfRatings
             },
                 {
                     new: true
                 }
             );
-            return res.status(200).send(rateProduct);
+            //res.json(rateProduct);
+            console.log(newTotalNumberOfRatings)
+
         }
     } catch (error) {
         throw new Error(error);
