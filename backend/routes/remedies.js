@@ -172,4 +172,24 @@ router.delete('/:id', catchAsynch(async (req, res) => {
     return res.status(200).send(deletedRating);
 }));
 
+
+//save remedy as favorite:
+router.put('/:id/save', catchAsynch(async (req, res) => {
+    const { id } = req.params;
+    //const product = await Medicals.findById(id);
+    const userTest = "64151b8670662285f3b36c13";
+    const saveFavorite = await User.findByIdAndUpdate(userTest, {
+        $push: {
+            favorites: {
+                remedyId: id
+            }
+        }
+    },
+        {
+            new: true
+        }
+    )
+    return res.status(200).send(saveFavorite);
+}));
+
 module.exports = router;

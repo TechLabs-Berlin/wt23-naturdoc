@@ -18,11 +18,13 @@ const { connect } = require('./database/database');
 
 const remedies = require('./routes/remedies');
 const auth = require('./routes/auth');
+const user = require('./routes/user');
 
 const app = express();
 
 app.use('/remedies', remedies);
 app.use('', auth);
+app.use('/user', user);
 
 //connect to DB
 connect().then(async function seed() {
