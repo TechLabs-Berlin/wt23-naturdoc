@@ -1,6 +1,6 @@
 // Components
 import LayoutHOC from "components/layouts/LayoutHOC";
-import SearchBar from "components/results/SearchBar";
+
 import { Box, CardActionArea, Divider } from "@mui/material";
 import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
@@ -18,6 +18,7 @@ import rosemary from "assets/remedies/rosemary.jpg";
 import stingingNettle from "assets/remedies/stinging-nettle.jpg";
 import garlic from "assets/remedies/garlic.png";
 import turmeric from "assets/remedies/turmeric.png";
+import searchButton from "assets/searchButton.png";
 
 const springRemedies = [
   {
@@ -85,7 +86,7 @@ const Home = () => {
           </Typography>
 
           <CardActionArea component={Link} to={`/search`}>
-            <SearchBar />
+            <img src={searchButton} alt="Search for a remedy" />
           </CardActionArea>
         </Container>
       </Box>
