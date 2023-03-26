@@ -7,6 +7,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
 import putRating from "data/putRating";
+import CircleIcon from "@mui/icons-material/Circle";
 
 const labels = {
   0.5: "Useless",
@@ -27,7 +28,7 @@ function getLabelText(value) {
   return `${value} Star${value !== 1 ? "s" : ""}, ${labels[value]}`;
 }
 
-function RatingForm({ remedy, open, handleClose }) {
+function RatingForm({ remedy, open, handleClose, fullScreen }) {
   const [hover, setHover] = useState(-1);
 
   const [formValues, setFormValues] = useState({});
@@ -64,7 +65,7 @@ function RatingForm({ remedy, open, handleClose }) {
 
   return (
     <>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} fullScreen={fullScreen}>
         <form>
           <DialogTitle>
             Share your experience with using {remedy.remedyName}{" "}
@@ -81,6 +82,10 @@ function RatingForm({ remedy, open, handleClose }) {
                 // value={value}
                 name={ratingValue}
                 getLabelText={getLabelText}
+                icon={<CircleIcon fontSize="inherit" />}
+                emptyIcon={
+                  <CircleIcon fontSize="inherit" sx={{ color: "#eee" }} />
+                }
                 onChange={(event, value) =>
                   handleRatingChange(value, ratingValue)
                 }

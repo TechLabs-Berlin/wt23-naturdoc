@@ -12,12 +12,37 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import logo from "assets/logoNaturdoc.svg";
-import Footer from "components/layouts/Footer";
+// import Footer from "components/layouts/Footer";
 import { ChevronRight } from "@mui/icons-material";
+import rosemary from "assets/remedies/rosemary.jpg";
+import stingingNettle from "assets/remedies/stinging-nettle.jpg";
+import garlic from "assets/remedies/garlic.png";
+import turmeric from "assets/remedies/turmeric.png";
+
+const springRemedies = [
+  {
+    src: rosemary,
+    title: "Rosemary",
+    id: "641f60b3e7523a06fc0c0a20",
+  },
+  {
+    src: stingingNettle,
+    title: "Stinging Nettle",
+    id: "641f60b3e7523a06fc0c2382",
+  },
+  {
+    src: garlic,
+    title: "Garlic",
+    id: "641f60b3e7523a06fc0bf4af",
+  },
+  {
+    src: turmeric,
+    title: "Turmeric",
+    id: "641f60b3e7523a06fc0c0085",
+  },
+];
 
 const Home = () => {
-  const cards = [1, 2, 3, 4];
-
   return (
     <>
       {/* Hero unit */}
@@ -66,46 +91,56 @@ const Home = () => {
       </Box>
       {/* End hero unit */}
       <Container sx={{ pt: 2, pb: 4 }} maxWidth="md">
-        {/* End hero unit */}
         <Typography component="h2" variant="h2" color="text.primary" paragraph>
           Remedies that help with springtime Allergies
         </Typography>
         <Divider />
         <Grid container spacing={3} sx={{ py: 2 }}>
-          {cards.map((card) => (
-            <Grid item key={card} xs={12} sm={6} md={6}>
-              <Card
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
+          {springRemedies.map((item, index) => (
+            <Grid item key={index} xs={12} sm={6} md={6}>
+              <Card sx={{ display: "flex" }} variant="homeCard">
                 <CardMedia
                   component="img"
                   sx={{
-                    height: "200px",
+                    //TODO: theme this
+                    width: "170px",
+                    // height: "142px",
+                    border: "1px solid #1d7147",
+                    borderRadius: "5px",
                   }}
-                  image="https://placehold.co/500x200"
-                  alt="placeholder"
+                  image={item.src}
+                  alt={item.title}
                 />
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography gutterBottom variant="remedyTitle" component="h2">
-                    Honey
-                  </Typography>
-                  <Typography>
-                    Cold, sore throots, coughs, immune system
-                  </Typography>
-                </CardContent>
-                <CardActions sx={{ justifyContent: "end" }}>
-                  <Button
-                    size="medium"
-                    variant="outlined"
-                    endIcon={<ChevronRight />}
-                  >
-                    Learn more
-                  </Button>
-                </CardActions>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    alignItems: "center",
+                    alignContent: "flex-end",
+                    pl: 1,
+                  }}
+                >
+                  <CardContent sx={{ display: "flex", p: 1 }}>
+                    <Typography
+                      gutterBottom
+                      variant="remedyTitle"
+                      component="h2"
+                    >
+                      {item.title}
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{ p: 0, justifyContent: "end" }}>
+                    <Button
+                      size="medium"
+                      variant="outlined"
+                      endIcon={<ChevronRight />}
+                      component={Link}
+                      to={`/remedies/${item.id}`}
+                    >
+                      Learn more
+                    </Button>
+                  </CardActions>
+                </Box>
               </Card>
             </Grid>
           ))}
@@ -133,7 +168,6 @@ const Home = () => {
           </Box>
         </Box>
       </Container>
-      <Footer />
     </>
   );
 };

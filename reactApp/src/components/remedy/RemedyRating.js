@@ -56,6 +56,8 @@ const RemedyRating = ({ remedy, summary }) => {
                 max={5}
                 precision={0.5}
                 readOnly
+                icon={<CircleIcon fontSize="inherit" />}
+                emptyIcon={<CircleIcon fontSize="inherit" />}
                 value={remedy.ratingAverage}
               />
               <Box component={"div"} sx={{ fontSize: 14 }}>

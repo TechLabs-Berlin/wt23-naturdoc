@@ -23,6 +23,8 @@ import {
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import RemedyRating from "components/remedy/RemedyRating";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 function RemedyDetails() {
   const { id } = useParams();
@@ -45,6 +47,9 @@ function RemedyDetails() {
   }, [id]);
 
   const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -59,64 +64,55 @@ function RemedyDetails() {
 
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "80vh",
-        }}
-        component="main"
-      >
-        <Container sx={{ pl: 0, pr: 0 }} component="section" maxWidth="sm">
-          <Paper>
-            <Box>
-              <IconButton variant="outlined" onClick={() => navigate(-1)}>
-                <ChevronLeftIcon fontSize="large" />
-              </IconButton>
-            </Box>
-            <Box sx={{ position: "relative", height: "194px" }}>
-              <CardMedia
-                component="img"
-                height="194"
-                image="https://placehold.co/600x194"
-                alt="Remedy image"
-                sx={{ position: "absolute" }}
-              />
-              {/* <Box sx={{ position: "absolute", top: "156px", left: "16px" }}>
+      <Container sx={{ pl: 0, pr: 0 }} component="section" maxWidth="sm">
+        <Paper>
+          <Box>
+            <IconButton variant="outlined" onClick={() => navigate(-1)}>
+              <ChevronLeftIcon fontSize="large" />
+            </IconButton>
+          </Box>
+          <Box sx={{ position: "relative", height: "194px" }}>
+            <CardMedia
+              component="img"
+              height="194"
+              image="https://placehold.co/600x194"
+              alt="Remedy image"
+              sx={{ position: "absolute" }}
+            />
+            {/* <Box sx={{ position: "absolute", top: "156px", left: "16px" }}>
                 <RemedyIcon remedy={remedy} smallIcon={false} />
               </Box> */}
-            </Box>
-
-            <Box sx={{ p: 2, pt: -2 }}>
-              <Typography variant="remedyTitle" component="h1">
-                {remedy.remedyName}
-              </Typography>
-              {!remedy.ratingAverage ? (
-                <Box component={"div"} sx={{ my: 2 }}>
-                  <Typography>
-                    No ratings yet.{" "}
-                    <Link remedy={remedy} onClick={handleClickOpen}>
-                      Be the first to add one.
-                    </Link>
-                  </Typography>
-                </Box>
-              ) : (
-                <RemedyRating remedy={remedy} />
-              )}
-              {!remedy.symptomsMatched ? (
-                " "
-              ) : (
-                <>
-                  <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
-                    Recommended use for:
-                  </Typography>
-                  <Typography variant="body2" sx={{ fontWeight: "600" }}>
-                    {remedy.symptomsMatched.join(", ")}
-                  </Typography>
-                </>
-              )}
-            </Box>
-
+          </Box>
+          <Box sx={{ p: 2, pt: -2 }}>
+            <Typography variant="remedyTitle" component="h1">
+              {remedy.remedyName}
+            </Typography>
+            {!remedy.ratingAverage ? (
+              <Box component={"div"} sx={{ my: 2 }}>
+                <Typography>
+                  No ratings yet.{" "}
+                  <Link remedy={remedy} onClick={handleClickOpen}>
+                    Be the first to add one.
+                  </Link>
+                </Typography>
+              </Box>
+            ) : (
+              <RemedyRating remedy={remedy} />
+            )}
+            {!remedy.symptomsMatched ? (
+              " "
+            ) : (
+              <>
+                <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
+                  Recommended use for:
+                </Typography>
+                <Typography variant="body2" sx={{ fontWeight: "600" }}>
+                  {remedy.symptomsMatched.join(", ")}
+                </Typography>
+              </>
+            )}
+          </Box>
+          <Box sx={{ mx: 2 }}>
             <RemedyAccordion
               remedy={remedy}
               accordionSummary={"Other common names"}
@@ -170,14 +166,16 @@ function RemedyDetails() {
               Write a Review
             </Button>
             <RatingList ratings={ratings} />
-          </Paper>{" "}
-        </Container>
-      </Box>
+          </Box>{" "}
+        </Paper>{" "}
+      </Container>
+
       <RatingForm
         key={remedy.id}
         remedy={remedy}
         open={open}
         handleClose={handleClose}
+        fullScreen={fullScreen}
       />
     </>
   );

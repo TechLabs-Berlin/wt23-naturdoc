@@ -102,6 +102,9 @@ const theme = createTheme({
         resultCard: {
           backgroundColor: secondaryColor,
         },
+        homeCard: {
+          backgroundColor: "white",
+        },
       },
     },
     MuiDivider: {
@@ -138,6 +141,13 @@ const theme = createTheme({
             color: "#ffffff",
             backgroundColor: "#000000",
           },
+        },
+      },
+    },
+    MuiCardActionArea: {
+      styleOverrides: {
+        focusHighlight: {
+          backgroundColor: "transparent",
         },
       },
     },
