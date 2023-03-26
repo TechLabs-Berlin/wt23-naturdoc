@@ -99,6 +99,7 @@ const theme = createTheme({
     },
     MuiPaper: {
       styleOverrides: {
+        root: { marginBottom: "16px" },
         resultCard: {
           backgroundColor: secondaryColor,
         },
