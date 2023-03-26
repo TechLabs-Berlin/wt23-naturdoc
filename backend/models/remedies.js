@@ -20,7 +20,7 @@ const RemediesSchema = new Schema({
     symptomsMatched: Array,
     medicinalUses: Array,
     iconReference: String,
-    commonNames: String,
+    commonNames: Array,
     treatmentClinical: String,
     treatmentTraditional: String,
     treatmentFolk: String,
@@ -28,6 +28,6 @@ const RemediesSchema = new Schema({
     warnings: String,
     adverseEffects: String,
     posology: String,
-    doctorAlert: String,
+    doctorAlert: Boolean,
 })
 module.exports = mongoose.model('Remedy', RemediesSchema);
