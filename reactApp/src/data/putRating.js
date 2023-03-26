@@ -5,7 +5,7 @@ const putRating = async (term, remedy, formValues) => {
     const response = await axios.put(`http://localhost:7000/remedies/${term}`, {
       ...formValues,
       userId: "[USER.ID]",
-      remedyId: remedy._id,
+      //remedyId: remedy.id,
       remedyName: remedy.remedyName,
     });
 
