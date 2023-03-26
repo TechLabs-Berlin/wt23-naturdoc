@@ -69,7 +69,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     const { id } = req.params //req.params;
     const { ratingValue } = req.body.data;
-    const userTest = "641ef1eb3d85553bdc360392";
+    //const userTest = "641ed2ecf7892783bdacbeb9";
+    const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
     const newRating = await remedyRating.findOneAndUpdate(
@@ -122,25 +123,18 @@ router.put('/:id', catchAsynch(async (req, res) => {
         throw new Error(error);
     };
 
+
+
+
     //UPDATE REMEDY MODEL:
     try {
         //find remedy by id:
         const product = await Medicals.findById(id);
         //calculate new rating average
         const remedyRatings = product.ratings;
-        const currentAverage = product.ratingAverage;
-        console.log(currentAverage);
-        let average = ratingValue;
-        if (remedyRatings.length > 0) {
-            let average = remedyRatings.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
-        }
-        console.log(remedyRatings.length);
 
-        console.log(average);
-        //  const newTotalNumberOfRatings = remedyRatings.length + 1;
-        // console.log(newTotalNumberOfRatings);
-
-
+        console.log("-------");
+        const newRatingAverage = ((remedyRatings.length === 0) ? ratingValue : (remedyRatings.reduce((total, next) => total + next.ratingValue, 0) + ratingValue) / (remedyRatings.length + 1)).toFixed(2);
         //check if remedy is already rated by current user
         const alreadyRated = product.ratings.find(
             rating => rating.userId.toString() === userTest.toString()
@@ -155,7 +149,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 {
                     $set: {
                         "ratings.$.ratingValue": ratingValue,
-                        ratingAverage: average
+                        ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2)
                     }
                 },
                 {
@@ -176,7 +170,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                         userId: userTest
                     }
                 },
-                ratingAverage: average,
+                ratingAverage: newRatingAverage,
                 totalNumberofRatings: remedyRatings.length + 1
             },
                 {

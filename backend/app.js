@@ -70,30 +70,11 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
         {
             "symptomsUser": body
         }
-        //{
-        //    "symptoms": [
-        //        "Cough",
-        //        "Fever",
-        //        "Ache(Tooth)",
-        //        "Cancer",
-        //        "Ache(Head)"
-        //    ]
-        //}
     }
     )
 
-    //console.log("getRemedyRecommendation response:", responseDS.data[i].commonNames);
 
-    //var printArray = function (arr) {
-    //    for (var i = 0; i < arr.length; i++) {
-    //        for (var j = 0; j < arr[i].length; j++) {
 
-    //            console.log(arr[i][j]);
-    //        }
-    //    }
-    //}
-
-    //printArray(responseDS);
 
     const response = responseDS.data.map(remedyItem => {
         return {
