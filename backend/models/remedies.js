@@ -28,6 +28,6 @@ const RemediesSchema = new Schema({
     warnings: String,
     adverseEffects: String,
     posology: String,
-    doctorAlert: String,
+    doctorAlert: Boolean,
 })
 module.exports = mongoose.model('Remedy', RemediesSchema);
