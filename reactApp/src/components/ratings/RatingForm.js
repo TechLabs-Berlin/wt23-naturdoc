@@ -6,7 +6,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
-import postRating from "data/postRating";
+import putRating from "data/putRating";
 import CircleIcon from "@mui/icons-material/Circle";
 
 const labels = {
@@ -49,7 +49,7 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
   };
 
   const handleSubmit = () => {
-    const result = postRating(remedy, formValues);
+    const result = putRating(remedy, formValues);
     console.log("result", result);
 
     handleClose();
