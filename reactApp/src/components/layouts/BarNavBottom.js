@@ -18,6 +18,7 @@ export default function SimpleBottomNavigation() {
           bottom: 0,
           left: 0,
           right: 0,
+          mb: 0,
           backgroundColor: "primaryColorLight",
         }}
         elevation={3}
