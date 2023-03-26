@@ -102,6 +102,9 @@ const theme = createTheme({
         resultCard: {
           backgroundColor: secondaryColor,
         },
+        homeCard: {
+          backgroundColor: "white",
+        },
       },
     },
     MuiDivider: {
