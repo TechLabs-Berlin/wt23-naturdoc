@@ -36,7 +36,7 @@ router.get('/', catchAsynch(async (req, res) => {
 //get a single remedy by id
 router.get('/:id', catchAsynch(async (req, res) => {
     const remedies = await Medicals.findById(req.params.id);
-    console.log(remedies);
+    //console.log(remedies);
     const response = {
         remedyName: remedies.remedyName,
         symptomsMatched: remedies.symptomsMatched,
@@ -68,13 +68,13 @@ router.put('/:id', catchAsynch(async (req, res) => {
     //console.log(req.body);
 
     const { id } = req.params //req.params;
-    const { rating } = req.body;
-    const userTest = "64151b8670662285f3b36c13";
+    const { ratingValue } = req.body;
+    const userTest = "641ed2ecf7892783bdacbeb9";
 
     //UPDATE RATING MODEL: 
     const newRating = await remedyRating.findOneAndUpdate(
         { remedyId: id, userId: userTest },
-        { ratingValue: rating },
+        { ratingValue: ratingValue },
         {
             new: true,
             upsert: true
@@ -94,7 +94,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                     ratings: { $elemMatch: alreadyRatedRemedy }
                 },
                 {
-                    $set: { "ratings.$.ratingValue": rating }
+                    $set: { "ratings.$.ratingValue": ratingValue }
                 },
                 {
                     new: true
@@ -107,7 +107,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
             const rateRemedy = await User.findByIdAndUpdate(userTest, {
                 $push: {
                     ratings: {
-                        ratingValue: rating,
+                        ratingValue: ratingValue,
                         userId: userTest,
                         remedyId: id
                     }
@@ -120,7 +120,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
         }
     } catch (error) {
         throw new Error(error);
-    }
+    };
 
     //UPDATE REMEDY MODEL:
     try {
@@ -128,8 +128,9 @@ router.put('/:id', catchAsynch(async (req, res) => {
         const product = await Medicals.findById(id);
         //calculate new rating average
         const remedyRatings = product.ratings
+        console.log(remedyRatings);
         const average = remedyRatings.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
-
+        console.log(average);
         const newTotalNumberOfRatings = remedyRatings.length + 1;
 
         //check if remedy is already rated by current user
@@ -145,8 +146,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 },
                 {
                     $set: {
-                        "ratings.$.ratingValue": rating,
-                        ratingAverage: average
+                        "ratings.$.ratingValue": ratingValue,
+                        //ratingAverage: average
                     }
                 },
                 {
@@ -163,19 +164,18 @@ router.put('/:id', catchAsynch(async (req, res) => {
             const rateProduct = await Medicals.findByIdAndUpdate(id, {
                 $push: {
                     ratings: {
-                        ratingValue: rating,
+                        ratingValue: ratingValue,
                         userId: userTest
                     }
                 },
-                ratingAverage: average,
-                totalNumberOfRatings: newTotalNumberOfRatings
+                // ratingAverage: average,
+                // totalNumberOfRatings: newTotalNumberOfRatings
             },
                 {
                     new: true
                 }
             );
-            //res.json(rateProduct);
-            console.log(newTotalNumberOfRatings)
+            res.json(rateProduct);
 
         }
     } catch (error) {
@@ -211,6 +211,25 @@ router.put('/:id/save', catchAsynch(async (req, res) => {
         }
     )
     return res.status(200).send(saveFavorite);
+}));
+
+//save remedy as favorite:
+router.delete('/:id/save', catchAsynch(async (req, res) => {
+    const { id } = req.params;
+    //const product = await Medicals.findById(id);
+    const userTest = "64151b8670662285f3b36c13";
+    const deleteFavorite = await User.findByIdAndUpdate(userTest, {
+        $pull: {
+            favorites: {
+                remedyId: id
+            }
+        }
+    },
+        {
+            new: true
+        }
+    )
+    return res.status(200).send(deleteFavorite);
 }));
 
 module.exports = router;
