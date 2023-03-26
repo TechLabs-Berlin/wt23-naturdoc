@@ -117,7 +117,7 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const { symptom } = req.params;
     const symptomName = await Symptoms.find({})
-    console.log(symptomName)
+    // console.log(symptomName)
     const response = symptomName.map(symptomItem => {
         return {
             symptomName: symptomItem.symptomName,
