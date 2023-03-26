@@ -65,10 +65,10 @@ router.get('/:id', catchAsynch(async (req, res) => {
 router.put('/:id', catchAsynch(async (req, res) => {
     const ratingId = new mongoose.Types.ObjectId;
     console.log('*******');
-    //  console.log(req.body);
+    console.log(req.body);
 
     const { id } = req.params //req.params;
-    const { ratingValue } = req.body;
+    const { ratingValue } = req.body.data;
     const userTest = "641ef1eb3d85553bdc360392";
 
     //UPDATE RATING MODEL: 
@@ -132,7 +132,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
         console.log(currentAverage);
         let average = ratingValue;
         if (remedyRatings.length > 0) {
-            let average = ratingAverage.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
+            let average = remedyRatings.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
         }
         console.log(remedyRatings.length);
 
