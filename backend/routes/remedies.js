@@ -65,7 +65,7 @@ router.get('/:id', catchAsynch(async (req, res) => {
 router.put('/:id', catchAsynch(async (req, res) => {
     const ratingId = new mongoose.Types.ObjectId;
     console.log('*******');
-    //console.log(req.body);
+    console.log(req.body);
 
     const { id } = req.params //req.params;
     const { ratingValue } = req.body;
