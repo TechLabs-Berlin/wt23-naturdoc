@@ -6,6 +6,7 @@ const cors = require('cors');
 const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
+const { config } = require('dotenv');
 
 const Medicals = require('./models/remedies');
 const remedyRating = require('./models/ratings');
@@ -21,6 +22,8 @@ const auth = require('./routes/auth');
 const user = require('./routes/user');
 
 const app = express();
+config();
+
 
 app.use('/remedies', remedies);
 app.use('', auth);

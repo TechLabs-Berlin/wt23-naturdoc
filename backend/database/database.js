@@ -1,7 +1,10 @@
 const mongoose = require("mongoose");
+const { config } = require('dotenv');
+config();
 
-const mongourl = 'mongodb+srv://naturdoc:WhYJmBoDdO3tZ89Z@naturdoc.aj9zhtw.mongodb.net/naturdoc?retryWrites=true&w=majority';
 
+//const mongourl = 'mongodb+srv://naturdoc:WhYJmBoDdO3tZ89Z@naturdoc.aj9zhtw.mongodb.net/naturdoc?retryWrites=true&w=majority';
+const mongourl = process.env.MONGO_URI;
 //const mongourl = 'mongodb://localhost:27017/naturdoc';
 
 // db connection
