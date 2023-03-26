@@ -18,6 +18,14 @@ const { connect } = require('../database/database');
 
 router.use(express.json());
 
+router.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'PUT', 'POST', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 200,
+}));
+
+
 //get all remedies
 router.get('/', catchAsynch(async (req, res) => {
     const remedies = await Medicals.find({});
@@ -31,7 +39,6 @@ router.get('/:id', catchAsynch(async (req, res) => {
     console.log(remedies);
     const response = {
         remedyName: remedies.remedyName,
-        symptoms: remedies.symptoms,
         symptomsMatched: remedies.symptomsMatched,
         ratingAverage: remedies.ratingAverage,
         totalNumberofRatings: remedies.totalNumberofRatings,

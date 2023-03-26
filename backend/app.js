@@ -60,7 +60,7 @@ app.use(cors({
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const body = req.query.symptomsUser;
     console.log(req.query.symptomsUser)
-    const response = await axios({
+    const responseDS = await axios({
         method: 'POST',
         url: 'http://127.0.0.1:8000/remedies/query',
         headers: {
@@ -82,20 +82,31 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     }
     )
 
-    console.log("getRemedyRecommendation response:", response.data);
+    //console.log("getRemedyRecommendation response:", responseDS.data[i].commonNames);
 
-    const mappedData = response.data.map(remedyItem => {
+    //var printArray = function (arr) {
+    //    for (var i = 0; i < arr.length; i++) {
+    //        for (var j = 0; j < arr[i].length; j++) {
+
+    //            console.log(arr[i][j]);
+    //        }
+    //    }
+    //}
+
+    //printArray(responseDS);
+
+    const response = responseDS.data.map(remedyItem => {
         return {
-            remedyName: remedies.remedyName,
-            symptoms: remedies.symptoms,
-            symptomsMatched: remedies.symptomsMatched,
-            ratingAverage: remedies.ratingAverage,
-            totalNumberofRatings: remedies.totalNumberofRatings,
-            iconReference: remedies.iconReference,
-            _id: remedyItem._id
+            remedyName: remedyItem.remedyName,
+            symptomsMatched: remedyItem.symptomsMatched,
+            ratingAverage: remedyItem.ratingAverage,
+            _id: remedyItem._id,
+            medicinalUses: remedyItem.medicinalUses,
+            totalNumberofRatings: remedyItem.totalNumberofRatings,
+            iconReference: remedyItem.iconReference
         }
     })
-    return res.status(200).send(mappedData);
+    return res.status(200).send(response);
 }));
 
 
