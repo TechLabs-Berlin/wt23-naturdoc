@@ -16,6 +16,14 @@ const catchAsynch = require('../utilities/catchAsynch');
 const { checkLogin } = require('../middleware');
 const { connect } = require('../database/database');
 
+router.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'PUT', 'POST', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 200,
+}));
+
+
 router.use(express.json());
 
 //get all remedies
