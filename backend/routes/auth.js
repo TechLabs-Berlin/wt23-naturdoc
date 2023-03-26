@@ -8,9 +8,7 @@ const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local')
 
-const Medicals = require('../models/remedies');
-const remedyRating = require('../models/ratings');
-const User = require('../models/user');
+const { userModel } = require('../models');
 
 const catchAsynch = require('../utilities/catchAsynch');
 const { checkLogin } = require('../middleware');
@@ -39,18 +37,18 @@ router.use((req, res, next) => {
 });
 router.use(passport.initialize())
 router.use(passport.session())
-passport.use(new LocalStrategy(User.authenticate()));
+passport.use(new LocalStrategy(userModel.authenticate()));
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+passport.serializeUser(userModel.serializeUser());
+passport.deserializeUser(userModel.deserializeUser());
 
 //signup 
 router.post('/signup', catchAsynch(async (req, res) => {
     try {
         console.log(req);
         const { email, username, password } = req.body;
-        const user = new User({ email, username })
-        const registeredUser = await User.register(user, password);
+        const user = new userModel({ email, username })
+        const registeredUser = await userModel.register(user, password);
         req.login(registeredUser, err => {
             if (err) return next(err);
             req.flash('success', 'Successfully logged in');

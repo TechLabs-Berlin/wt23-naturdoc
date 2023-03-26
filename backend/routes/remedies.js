@@ -10,10 +10,6 @@ const LocalStrategy = require('passport-local')
 
 const { ratingsModel, remediesModel, userModel } = require('../models');
 
-//const Medicals = require('../models/remedies');
-//const remedyRating = require('../models/ratings');
-//const User = require('../models/user');
-
 const catchAsynch = require('../utilities/catchAsynch');
 const { checkLogin } = require('../middleware');
 const { connect } = require('../database/database');
