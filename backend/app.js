@@ -6,7 +6,7 @@ const cors = require('cors');
 const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
-const { config } = require('dotenv');
+const dotenv = require('dotenv');
 
 const Medicals = require('./models/remedies');
 const remedyRating = require('./models/ratings');
@@ -21,8 +21,9 @@ const remedies = require('./routes/remedies');
 const auth = require('./routes/auth');
 const user = require('./routes/user');
 
+const PORT = 7000;
 const app = express();
-config();
+dotenv.config();
 
 
 app.use('/remedies', remedies);
@@ -114,6 +115,6 @@ app.get('/getSymptoms', catchAsynch(async (req, res) => {
 
 
 
-app.listen(7000, () => {
+app.listen(PORT, () => {
     console.log("serving on port 7000")
 })
