@@ -20,7 +20,7 @@ const RemediesSchema = new Schema({
     symptomsMatched: Array,
     medicinalUses: Array,
     iconReference: String,
-    commonNames: String,
+    commonNames: Array,
     treatmentClinical: String,
     treatmentTraditional: String,
     treatmentFolk: String,
