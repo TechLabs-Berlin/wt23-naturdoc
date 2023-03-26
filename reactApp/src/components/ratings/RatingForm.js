@@ -6,7 +6,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
-import postRating from "data/postRating";
+import putRating from "data/putRating";
 
 const labels = {
   0.5: "Useless",
@@ -48,22 +48,8 @@ function RatingForm({ remedy, open, handleClose }) {
   };
 
   const handleSubmit = () => {
-    const result = postRating(remedy, formValues);
+    const result = putRating(remedy, formValues);
     console.log("result", result);
-    /* fetch("https://my-json-server.typicode.com/rjeantet/server-mock/ratings/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        ...formValues,
-        userId: "[USER.ID]",
-        remedyId: remedy.id,
-        remedyName: remedy.remedyName,
-        createdAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
-        updatedAt: "[MONTH.DAY.YEAR] [HOUR:MINUTE]",
-      }),
-    }); */
 
     handleClose();
     console.log(
