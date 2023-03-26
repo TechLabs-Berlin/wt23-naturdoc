@@ -56,7 +56,7 @@ function RatingForm({ remedy, open, handleClose }) {
       "Formvalues:" +
         JSON.stringify(formValues) +
         " " +
-        remedy.id +
+        remedy._id +
         " " +
         remedy.remedyName
     );
