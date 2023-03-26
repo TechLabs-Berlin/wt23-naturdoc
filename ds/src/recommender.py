@@ -151,7 +151,7 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     for key, remedies in response.items():
         for remedy in remedies:
             json_response = dict()
-            json_response["id"] = f"{remedy['_id']}"
+            json_response["_id"] = f"{remedy['_id']}"
             json_response["ratingAverage"] = remedy["ratingAverage"]
             json_response["remedyName"] = remedy["remedyName"]
             if remedy["commonNames"]:

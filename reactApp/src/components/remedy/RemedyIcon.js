@@ -6,7 +6,7 @@ const RemedyIcon = ({ smallIcon }) => {
     <Avatar
       variant="rounded"
       sx={{
-        bgcolor: "#61876E",
+        bgcolor: "primary.main",
         mt: 0.7,
         width: smallIcon ? "default" : 60,
         height: smallIcon ? "default" : 60,

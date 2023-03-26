@@ -9,7 +9,6 @@ function RatingList({ ratings }) {
   return (
     <>
       <Container sx={{ mt: 5 }} component="section" maxWidth="sm">
-        {ratings.length} matching reviews
         <Box>{renderedRatings}</Box>
       </Container>
     </>

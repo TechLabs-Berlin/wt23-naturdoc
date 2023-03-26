@@ -1,0 +1,47 @@
+GET https://my-json-server.typicode.com/rjeantet/server-mock/symptoms HTTP/1.1 
+Content-Type: application/json
+
+###
+
+GET https://my-json-server.typicode.com/rjeantet/server-mock/ratings/ HTTP/1.1
+Content-Type: application/json
+
+###
+
+// Get full list of symptoms
+GET http://127.0.0.1:7000/symptoms HTTP/1.1
+Content-Type: application/json
+
+// URL To be provided by BE team
+
+###
+
+GET http://127.0.0.1:3000/symptoms.json HTTP/1.1
+Content-Type: application/json
+
+
+### 
+
+// Send list of selected symptoms to DS server
+POST http://127.0.0.1:8000/remedies/query HTTP/1.1
+Content-Type: application/json
+    
+    {
+        "symptoms": [ "Cough", "Fever", "Ache(Head)"]
+    }
+
+// Current vs. expected ouput (23.03.2023):
+// missing totalNumberofRatings in output but OK in symptoms.json
+
+
+###
+
+// Get list of all remedies
+GET http://127.0.0.1:7000/remedies HTTP/1.1
+// Content-Type: application/json
+
+// expected output:
+
+
+
+
