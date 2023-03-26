@@ -65,11 +65,11 @@ router.get('/:id', catchAsynch(async (req, res) => {
 router.put('/:id', catchAsynch(async (req, res) => {
     const ratingId = new mongoose.Types.ObjectId;
     console.log('*******');
-    console.log(req.body);
+    //  console.log(req.body);
 
     const { id } = req.params //req.params;
     const { ratingValue } = req.body;
-    const userTest = "641ed2ecf7892783bdacbeb9";
+    const userTest = "641ef1eb3d85553bdc360392";
 
     //UPDATE RATING MODEL: 
     const newRating = await remedyRating.findOneAndUpdate(
@@ -127,11 +127,19 @@ router.put('/:id', catchAsynch(async (req, res) => {
         //find remedy by id:
         const product = await Medicals.findById(id);
         //calculate new rating average
-        const remedyRatings = product.ratings
-        console.log(remedyRatings);
-        const average = remedyRatings.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
+        const remedyRatings = product.ratings;
+        const currentAverage = product.ratingAverage;
+        console.log(currentAverage);
+        let average = ratingValue;
+        if (remedyRatings.length > 0) {
+            let average = ratingAverage.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
+        }
+        console.log(remedyRatings.length);
+
         console.log(average);
-        const newTotalNumberOfRatings = remedyRatings.length + 1;
+        //  const newTotalNumberOfRatings = remedyRatings.length + 1;
+        // console.log(newTotalNumberOfRatings);
+
 
         //check if remedy is already rated by current user
         const alreadyRated = product.ratings.find(
@@ -147,7 +155,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 {
                     $set: {
                         "ratings.$.ratingValue": ratingValue,
-                        //ratingAverage: average
+                        ratingAverage: average
                     }
                 },
                 {
@@ -168,8 +176,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
                         userId: userTest
                     }
                 },
-                // ratingAverage: average,
-                // totalNumberOfRatings: newTotalNumberOfRatings
+                ratingAverage: average,
+                totalNumberofRatings: remedyRatings.length + 1
             },
                 {
                     new: true
