@@ -85,10 +85,45 @@ router.get('/:id', catchAsynch(async (req, res) => {
 
 
 //get all ratings for a remmedy
+//router.get('/:id/ratings', catchAsynch(async (req, res) => {
+
+//    const ratings = await remediesModel.findById(req.params.id);
+//    const response = {
+//        ratings: ratings.ratings,
+//        remedyName: ratings.remedyName,
+//        _id: ratings._id
+//    }
+//    console.log(response)
+
+//    return res.status(200).send(response);
+//}));
+
+
+//get all ratings for a remmedy
 router.get('/:id/ratings', catchAsynch(async (req, res) => {
-    const ratings = await remediesModel.findById(req.params.id);
+
+    const ratings = await ratingsModel.find({ remedyId: req.params.id });
+    return res.status(200).send(ratings);
+}));
+
+
+
+//get the rating of a certain user for a remedy
+router.get('/:id/ratingsPerUser', catchAsynch(async (req, res) => {
+    const userTest = "6420450b3d25951c719ec768";
+    const { id } = req.params;
+    const remedyName = await remediesModel.findById(id);
+    console.log(remedyName.remedyName);
+    const ratings = await ratingsModel.findOne({ remedyId: id, userId: userTest });
+    console.log(ratings.ratingValue);
     const response = {
-        ratings: ratings.ratings
+        ratingValue: ratings.ratingValue,
+        remedyName: remedyName.remedyName,
+        _id: ratings.remedyId,
+        reviewDescription: ratings.reviewDescription,
+        reviewName: ratings.reviewName,
+        userId: ratings.userId,
+        ratingId: ratings._id
     }
     console.log(response)
 
@@ -97,27 +132,31 @@ router.get('/:id/ratings', catchAsynch(async (req, res) => {
 
 
 
+
 //add the rating for a single remedy
 router.put('/:id', catchAsynch(async (req, res) => {
-    const ratingId = new mongoose.Types.ObjectId;
+    //const ratingId = new mongoose.Types.ObjectId;
     console.log('*******');
     console.log(req.body);
     console.log(req.user);
 
     const { id } = req.params //req.params;
     const { ratingValue, reviewName, reviewDescription } = req.body.data;
-    //const userTest = "641ed2ecf7892783bdacbeb9";
-    const userTest = "6420450b3d25951c719ec768";
+    const userTest = "641ed2ecf7892783bdacbeb9";
+    // const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
+    const product = await remediesModel.findById(id);
     const newRating = await ratingsModel.findOneAndUpdate(
         { remedyId: id, userId: userTest },
-        { ratingValue: ratingValue, reviewName: reviewName, reviewDescription: reviewDescription },
+        { ratingValue: ratingValue, reviewName: reviewName, reviewDescription: reviewDescription, remedyName: product.remedyName },
         {
             new: true,
             upsert: true
         }
     );
+    console.log("RATINGID");
+    console.log(newRating.id);
 
 
     //UPDATE USER MODEL:
@@ -190,7 +229,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
                         "ratings.$.ratingValue": ratingValue,
                         ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2),
                         reviewName: reviewName,
-                        reviewDescription: reviewDescription
+                        reviewDescription: reviewDescription,
+                        ratingId: newRating.id
                     }
                 },
                 {
@@ -210,7 +250,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
                         ratingValue: ratingValue,
                         userId: userTest,
                         reviewName: reviewName,
-                        reviewDescription: reviewDescription
+                        reviewDescription: reviewDescription,
+                        ratingId: newRating.id
                     }
                 },
                 ratingAverage: newRatingAverage,
