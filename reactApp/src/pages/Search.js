@@ -11,23 +11,26 @@ import "assets/App.css";
 
 const Search = () => {
   const [remedies, setRemedies] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = async (terms) => {
+    terms.length ? setLoading(true) : setLoading(false);
     const result = await getRemedyRecommendation(terms);
-    const remediesToShow = result.slice(0, 10);
+    const remediesToShow = result ? result.slice(0, 10) : [];
     console.log("Do a search with selected symptom(s)", terms);
     if (!terms.length) {
       setRemedies([]);
       console.log("no data found");
     } else {
       setRemedies(remediesToShow);
+      setLoading(false);
     }
     console.log("Display remedy recommendations:", remediesToShow);
   };
   return (
     <>
       <SearchBar onChange={handleChange} />
-      <ResultList remedies={remedies} />
+      {remedies ? <ResultList remedies={remedies} loading={loading} /> : null}
     </>
   );
 };

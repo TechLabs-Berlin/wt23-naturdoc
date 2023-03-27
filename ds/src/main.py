@@ -44,11 +44,11 @@ async def create_item(item: Item): # declaring it as a required parameter
 
 # approach A:
 
-class Symptom(BaseModel):
-    name: str
+# class Symptom(BaseModel):
+#     name: str
 
-class Query(BaseModel):
-    symptoms: List[Symptom]
+# class Query(BaseModel):
+#     symptoms: List[Symptom]
 
 # ex. request body to /remedies/query:
 
@@ -62,7 +62,7 @@ class Query(BaseModel):
 # approach B:
 
 class Query(BaseModel):
-    symptoms: List[str]
+    symptomsUser: List[str]
 
 # ex. request body to /remedies/query:
 
@@ -75,9 +75,9 @@ class Query(BaseModel):
 
 @app.post("/remedies/query")
 async def query_remedies(q: Query): # declaring it as a required parameter
-    symptoms = q.symptoms
+    symptoms_user = q.symptomsUser
     print("symptoms received")
-    remedies = get_remedy_recommendation(symptoms, 10)
+    remedies = get_remedy_recommendation(symptoms_user, 10)
     print("recs received")
     return remedies
 

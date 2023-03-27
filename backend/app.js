@@ -1,50 +1,41 @@
 const express = require('express');
-const app = express();
-const path = require('path');
-const mongoose = require('mongoose');
 const session = require('express-session');
-const Medicals = require('./models/remedies');
-const remedyRating = require('./models/ratings');
+const mongoose = require('mongoose');
+const axios = require('axios');
+const cors = require('cors');
+const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
-const flash = require('connect-flash');
-const cors = require('cors');
-const User = require('./models/user');
-const Ratings = require('./models/ratings');
+
+const { symptomsModel } = require('./models');
+//const Medicals = require('./models/remedies');
+//const remedyRating = require('./models/ratings');
+//const User = require('./models/user');
+//const Ratings = require('./models/ratings');
+//const Symptoms = require('./models/symptoms');
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
-const request = require('request');
-const axios = require('axios');
+
+const { remedies, auth, user } = require('./routes');
+//const remedies = require('./routes/remedies');
+//const auth = require('./routes/auth');
+//const user = require('./routes/user');
 
 
+
+const app = express();
+
+app.use('/remedies', remedies);
+app.use('', auth);
+app.use('/user', user);
+
+//connect to DB
 connect().then(async function seed() {
     console.log('Successfully connected to Database');
 });
 
 
-//mongoose.connect('mongodb://localhost:27017/naturdoc');
-
-//mongoose.connect('mongodb+srv://naturdoc:WhYJmBoDdO3tZ89Z@naturdoc.aj9zhtw.mongodb.net/?retryWrites=true&w=majority');
-
-
-//const db = mongoose.connection;
-//db.on("error", console.error.bind(console, "connection.error:"))
-//db.once("open", () => {
-//    console.log("Database connected");
-//});
-
-
-const sessionConfig = {
-    secret: 'testing',
-    resave: false,
-    saveUninitialized: true,
-    cookie: {
-        expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-        maxAge: 1000 * 60 * 60 * 24 * 7,
-        httpOnly: true
-    }
-}
 
 app.use(cors({
     origin: 'http://localhost:3000',
@@ -54,57 +45,53 @@ app.use(cors({
 }));
 
 
-app.use(express.json());
-app.use(session(sessionConfig));
-app.use(flash());
-app.use((req, res, next) => {
-    res.locals.success = req.flash('success');
-    res.locals.error = req.flash('error');
-    next();
-})
-app.use(passport.initialize())
-app.use(passport.session())
-passport.use(new LocalStrategy(User.authenticate()));
+//app.use(express.json());
+//app.use(session(sessionConfig));
+//app.use(flash());
+//app.use((req, res, next) => {
+//    res.locals.success = req.flash('success');
+//    res.locals.error = req.flash('error');
+//    next();
+//})
+//app.use(passport.initialize())
+//app.use(passport.session())
+//passport.use(new LocalStrategy(User.authenticate()));
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+//passport.serializeUser(User.serializeUser());
+//passport.deserializeUser(User.deserializeUser());
 
 //get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
-    const body = req.query.symptomsMatched;
-    console.log(req.query.symptomsMatched)
-    const response = await axios({
+    const body = req.query.symptomsUser;
+    console.log(req.query.symptomsUser)
+    const responseDS = await axios({
         method: 'POST',
-        url: 'http://localhost:8000/remedies/query',
+        url: 'http://127.0.0.1:8000/remedies/query',
         headers: {
             'Content-Type': 'application/json'
         },
         data:
         {
-            "symptomsMatched": body
+            "symptomsUser": body
         }
-        //{
-        //    "symptoms": [
-        //        "Cough",
-        //        "Fever",
-        //        "Ache(Tooth)",
-        //        "Cancer",
-        //        "Ache(Head)"
-        //    ]
-        //}
     }
     )
 
-    console.log("getRemedyRecommendation response:", response.data);
 
-    const mappedData = response.data.map(remedyItem => {
+
+
+    const response = responseDS.data.map(remedyItem => {
         return {
+            remedyName: remedyItem.remedyName,
+            symptomsMatched: remedyItem.symptomsMatched,
+            ratingAverage: remedyItem.ratingAverage,
+            _id: remedyItem._id,
             medicinalUses: remedyItem.medicinalUses,
-            commonNames: remedyItem.commonNames,
-            ratingAverage: remedyItem.ratingAverage
+            totalNumberofRatings: remedyItem.totalNumberofRatings,
+            iconReference: remedyItem.iconReference
         }
     })
-    return res.status(200).send(mappedData);
+    return res.status(200).send(response);
 }));
 
 
@@ -114,141 +101,19 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 //list all symptoms
 app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const { symptom } = req.params;
-    const medicinalUses = await Medicals.find({})
-    const response = medicinalUses.map(remedyItem => {
+    const symptomName = await symptomsModel.find({})
+    // console.log(symptomName)
+    const response = symptomName.map(symptomItem => {
         return {
-            medicinalUses: remedyItem.symptom,
+            symptomName: symptomItem.symptomName,
+            _id: symptomItem.id
         }
     })
     return res.status(200).send(response);
 }));
 
-//get remedies
-app.get('/remedies', catchAsynch(async (req, res) => {
-    const remedies = await Medicals.find({});
-    return res.status(200).send(remedies);
-}));
 
-//medicals page 
-app.get('/remedies/:id', catchAsynch(async (req, res) => {
-    const remedies = await Medicals.findById(req.params.id);
-    return res.status(200).send(remedies);
-}));
 
-//add the rating 
-//app.put('/remedies/:id', async (req, res) => {
-//    const { id } = req.params;
-//    console.log(req.body.rating);
-//    const medical = await Medicals.findByIdAndUpdate(
-//        { _id: id },
-//        { rating: req.body.rating }
-//    );
-//    return res.status(200).send(medical);
-//});
-
-//add the rating
-app.put('/remedies/:id/rating', catchAsynch(async (req, res) => {
-    const ratingId = new mongoose.Types.ObjectId;
-    console.log('*******');
-    console.log(req.params);
-
-    const { id } = req.params //req.params;
-    const { ratings } = req.body;
-    // const userId = req.user;
-
-    //const newRating = await remedyRating.create(
-    //    {
-    //        ratings: req.body.ratings,
-    //        remedyId: id
-    //    }
-    //);
-
-    const newRating = await remedyRating.findOneAndUpdate(
-        { remedyId: id },
-        { ratings: req.body.ratings },
-        {
-            new: true,
-            upsert: true
-        }
-    );
-
-    console.log(newRating);
-    const updateRemedy = await Medicals.findByIdAndUpdate(id,
-        {
-            $push:
-            {
-                ratings: req.body.ratings,
-                remedyId: id,
-                ratingId: ratingId
-            }
-        },
-    );
-    return res.status(200).send(updateRemedy);
-}));
-
-//app.put('/remedies/:id', catchAsynch(async (req, res) => {
-//    const ratingId = new mongoose.Types.ObjectId;
-//    console.log('*******');
-//    console.log(req.params);
-
-//    const { id } = req.params //req.params;
-//    const { ratings } = req.body;
-//    // const userId = await getUserByAuthToken(req.headers);
-//    console.log(ratings);
-
-//    const newRating = await Medicals.findByIdAndUpdate(id,
-//        {
-//            $push:
-//            {
-//                ratings: req.body.ratings,
-//                remedyId: id,
-//                ratingId: ratingId
-//            }
-//        },
-//        { ratingAverage: { $avg: "$ratings" } }
-
-//    );
-
-//    // const ratingAverage = Medicals.aggregate([{ ratingAverage: { $avg: "$ratings" } }])
-
-//    return res.status(200).send(newRating);
-//}));
-
-//users endpoints: 
-
-app.post('/signup', catchAsynch(async (req, res) => {
-    try {
-        console.log(req);
-        const { email, username, password } = req.body;
-        const user = new User({ email, username })
-        const registeredUser = await User.register(user, password);
-        req.login(registeredUser, err => {
-            if (err) return next(err);
-            req.flash('success', 'Successfully logged in');
-            res.send('Successfully signed up');
-        })
-
-    }
-    catch (e) {
-        req.flash('error', e.message);
-        res.send(e.message);
-    }
-}));
-
-app.post('/login', passport.authenticate('local', { failureFlash: true, failureRedirect: '/login' }), (req, res) => {
-    req.flash('success', 'welcome back');
-    res.send('Welcome back')
-});
-
-app.get('/logout', function (req, res, next) {
-    req.logout(function (err) {
-        if (err) {
-            return next(err);
-        }
-        req.flash('success', "Successfully logged out!");
-        res.send('Successfully logged out');
-    });
-});
 
 app.listen(7000, () => {
     console.log("serving on port 7000")

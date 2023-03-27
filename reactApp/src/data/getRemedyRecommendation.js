@@ -16,13 +16,13 @@ const getRemedyRecommendation = async (term) => {
 
     const response = await axios({
       method: "GET",
-      url: "http://localhost:7000/remedies/",
+      url: "http://localhost:7000/getRemedyRecommendation",
 
       headers: {
         // cf API documentation
       },
       params: {
-        symptomsMatched: term,
+        symptomsUser: term,
       },
     });
 
