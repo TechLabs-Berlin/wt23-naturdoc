@@ -106,6 +106,13 @@ const theme = createTheme({
         homeCard: {
           backgroundColor: "white",
         },
+        reviewCard: {
+          marginTop: 32,
+          padding: "32px 16px",
+          border: "1px solid",
+          borderColor: primaryColor,
+          borderRadius: "4px",
+        },
       },
     },
     MuiDivider: {
