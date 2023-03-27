@@ -3,7 +3,7 @@ import { Container, Box } from "@mui/material";
 
 function RatingList({ ratings }) {
   const renderedRatings = ratings.map((rating) => {
-    return <RatingShow key={rating.id} rating={rating} />;
+    return <RatingShow key={rating._id} rating={rating} />;
   });
 
   return (

@@ -2,8 +2,11 @@ function RatingShow({ rating }) {
   return (
     <>
       <h1>user: {rating.userId}</h1>
-      <p>rating: {rating.rating}</p>
-      <p>created: {rating.createdAt}</p>
+      <p>remedyId: {rating.remedyId}</p>
+      <p>_id: {rating._id}</p>
+      <p>value: {rating.ratingValue}</p>
+      <p>review name: {rating.reviewName}</p>
+      <p>description: {rating.reviewDescription}</p>
     </>
   );
 }
