@@ -13,7 +13,7 @@ function LayoutHOC(WrappedComponent) {
             display: "flex",
             flexDirection: "column",
             minHeight: "80vh",
-            marginBottom: "64px",
+            marginBottom: 14,
           }}
           component="main"
         >

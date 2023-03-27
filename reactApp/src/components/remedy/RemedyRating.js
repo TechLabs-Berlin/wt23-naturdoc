@@ -57,14 +57,17 @@ const RemedyRating = ({ remedy, summary }) => {
                 precision={0.5}
                 readOnly
                 icon={<CircleIcon fontSize="inherit" />}
-                emptyIcon={<CircleIcon fontSize="inherit" />}
+                emptyIcon={
+                  <CircleIcon fontSize="inherit" sx={{ color: "#cccccc" }} />
+                }
                 value={remedy.ratingAverage}
               />
               <Box component={"div"} sx={{ fontSize: 14 }}>
                 {/* [BUG] Ask Soma: how to anchor link dynamic URL?] */}
                 <Link component={Link} to="/remedy/:{remedy.id}">
                   {" "}
-                  ({remedy.totalNumberofRatings} reviews)
+                  {remedy.totalNumberofRatings}
+                  {remedy.totalNumberofRatings === 1 ? " review" : " reviews"}
                 </Link>
               </Box>
             </Box>
