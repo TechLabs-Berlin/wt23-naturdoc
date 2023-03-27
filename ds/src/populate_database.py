@@ -11,28 +11,43 @@ load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
 
-client = pymongo.MongoClient(MONGO_URI)
-db = client.naturdoc
-collection = db.remedies
-requesting = []
+def update_remedies_collection():
+    client = pymongo.MongoClient(MONGO_URI)
+    db = client.naturdoc
+    collection = db.remedies
 
-with open(r"../output/remedies.json") as f:
+    with open(r"../output/remedies.json") as f:
+        file_data = json.load(f)
 
-    file_data = json.load(f)
+    collection.insert_many(file_data)
+    print("Updated remedies collection.")
 
-collection.insert_many(file_data)
+    client.close()
 
-client.close()
+def update_symptoms_collection():
+    client = pymongo.MongoClient(MONGO_URI)
+    db = client.naturdoc
+    collection = db.symptoms
 
-client = pymongo.MongoClient(MONGO_URI)
-db = client.naturdoc
-collection = db.symptoms
-requesting = []
+    with open(r"../output/symptoms.json") as f:
+        file_data = json.load(f)
 
-with open(r"../output/symptoms.json") as f:
+    collection.insert_many(file_data)
+    print("Updated symptoms collection.")
 
-    file_data = json.load(f)
+    client.close()
 
-collection.insert_many(file_data)
-
-client.close()
+while True:
+    print("Update remedies (1) or symptoms (2)? Exit with q:")
+    choice = input()
+    if choice == "1":
+        update_remedies_collection()
+        break
+    elif choice == "2":
+        update_symptoms_collection()
+        break
+    elif choice == "q":
+        break
+    else:
+        print("Invalid input")
+        continue
