@@ -58,9 +58,14 @@ function RemedyDetails() {
     setOpen(false);
   };
 
-  /* function joinContent(contentMatched) {
-     return <>{contentMatched ? contentMatched.join(", ") : " "}</>;
-  } */
+  function formatString(contentMatched) {
+    return (
+      <>
+        {" "}
+        {contentMatched ? contentMatched.toString().replace(/,/g, ", ") : null}
+      </>
+    );
+  }
 
   return (
     <>
@@ -99,29 +104,24 @@ function RemedyDetails() {
             ) : (
               <RemedyRating remedy={remedy} />
             )}
-            {!remedy.symptomsMatched ? (
-              " "
-            ) : (
-              <>
-                <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
-                  Recommended use for:
-                </Typography>
-                <Typography variant="body2" sx={{ fontWeight: "600" }}>
-                  {remedy.symptomsMatched.join(", ")}
-                </Typography>
-              </>
-            )}
+
+            <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
+              {remedy.medicinalUses ? "Recommended use for:" : " "}
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "600" }}>
+              {formatString(remedy.medicinalUses)}
+            </Typography>
           </Box>
           <Box sx={{ mx: 2 }}>
             <RemedyAccordion
               remedy={remedy}
               accordionSummary={"Other common names"}
-              accordionDetails={remedy.commonNames}
+              accordionDetails={formatString(remedy.commonNames)}
             />
             <RemedyAccordion
               remedy={remedy}
               accordionSummary={"Activities"}
-              accordionDetails={remedy.medicinalUses}
+              accordionDetails={formatString(remedy.medicinalUses)}
             />
             <RemedyAccordion
               remedy={remedy}
