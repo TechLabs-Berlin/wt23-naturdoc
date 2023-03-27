@@ -85,18 +85,27 @@ router.get('/:id', catchAsynch(async (req, res) => {
 
 
 //get all ratings for a remmedy
+//router.get('/:id/ratings', catchAsynch(async (req, res) => {
+
+//    const ratings = await remediesModel.findById(req.params.id);
+//    const response = {
+//        ratings: ratings.ratings,
+//        remedyName: ratings.remedyName,
+//        _id: ratings._id
+//    }
+//    console.log(response)
+
+//    return res.status(200).send(response);
+//}));
+
+
+//get all ratings for a remmedy
 router.get('/:id/ratings', catchAsynch(async (req, res) => {
 
-    const ratings = await remediesModel.findById(req.params.id);
-    const response = {
-        ratings: ratings.ratings,
-        remedyName: ratings.remedyName,
-        _id: ratings._id
-    }
-    console.log(response)
-
-    return res.status(200).send(response);
+    const ratings = await ratingsModel.find({ remedyId: req.params.id });
+    return res.status(200).send(ratings);
 }));
+
 
 
 //get the rating of a certain user for a remedy
@@ -133,8 +142,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     const { id } = req.params //req.params;
     const { ratingValue, reviewName, reviewDescription } = req.body.data;
-    //const userTest = "641ed2ecf7892783bdacbeb9";
-    const userTest = "6420450b3d25951c719ec768";
+    const userTest = "641ed2ecf7892783bdacbeb9";
+    // const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
     const product = await remediesModel.findById(id);
