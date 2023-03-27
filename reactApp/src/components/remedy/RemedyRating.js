@@ -64,7 +64,8 @@ const RemedyRating = ({ remedy, summary }) => {
                 {/* [BUG] Ask Soma: how to anchor link dynamic URL?] */}
                 <Link component={Link} to="/remedy/:{remedy.id}">
                   {" "}
-                  ({remedy.totalNumberofRatings} reviews)
+                  {remedy.totalNumberofRatings}
+                  {remedy.totalNumberofRatings === 1 ? " review" : " reviews"}
                 </Link>
               </Box>
             </Box>
