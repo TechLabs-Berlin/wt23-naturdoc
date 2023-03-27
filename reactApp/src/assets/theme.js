@@ -99,11 +99,19 @@ const theme = createTheme({
     },
     MuiPaper: {
       styleOverrides: {
+        root: { marginBottom: "16px" },
         resultCard: {
           backgroundColor: secondaryColor,
         },
         homeCard: {
           backgroundColor: "white",
+        },
+        reviewCard: {
+          marginTop: 32,
+          padding: "32px 16px",
+          border: "1px solid",
+          borderColor: primaryColor,
+          borderRadius: "4px",
         },
       },
     },

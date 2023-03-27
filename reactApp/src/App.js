@@ -6,7 +6,6 @@ import Search from "pages/Search";
 import Login from "components/authentication/Login";
 import SignUp from "components/authentication/SignUp";
 import RemedyDetails from "pages/RemedyDetails";
-import DesignSystem from "pages/DesignSystem";
 // Styles
 import "assets/App.css";
 import theme from "assets/theme";
@@ -19,7 +18,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/about" element={<About />}></Route>
-          <Route exact path="/design-system" element={<DesignSystem />}></Route>
           <Route exact path="/search" element={<Search />}></Route>
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/signup" element={<SignUp />}></Route>
