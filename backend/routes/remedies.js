@@ -8,9 +8,7 @@ const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local')
 
-const Medicals = require('../models/remedies');
-const remedyRating = require('../models/ratings');
-const User = require('../models/user');
+const { ratingsModel, remediesModel, userModel } = require('../models');
 
 const catchAsynch = require('../utilities/catchAsynch');
 const { checkLogin } = require('../middleware');
@@ -25,17 +23,42 @@ router.use(cors({
     optionsSuccessStatus: 200,
 }));
 
+const sessionConfig = {
+    secret: 'testing',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {
+        expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 60 * 60 * 24 * 7,
+        httpOnly: true
+    }
+}
+
+router.use(session(sessionConfig));
+router.use(flash());
+router.use((req, res, next) => {
+    res.locals.success = req.flash('success');
+    res.locals.error = req.flash('error');
+    next();
+});
+router.use(passport.initialize())
+router.use(passport.session())
+passport.use(new LocalStrategy(userModel.authenticate()));
+
+passport.serializeUser(userModel.serializeUser());
+passport.deserializeUser(userModel.deserializeUser());
+
 
 //get all remedies
 router.get('/', catchAsynch(async (req, res) => {
-    const remedies = await Medicals.find({});
+    const remedies = await remediesModel.find({});
     return res.status(200).send(remedies);
 }));
 
 
 //get a single remedy by id
 router.get('/:id', catchAsynch(async (req, res) => {
-    const remedies = await Medicals.findById(req.params.id);
+    const remedies = await remediesModel.findById(req.params.id);
     //console.log(remedies);
     const response = {
         remedyName: remedies.remedyName,
@@ -66,13 +89,15 @@ router.put('/:id', catchAsynch(async (req, res) => {
     const ratingId = new mongoose.Types.ObjectId;
     console.log('*******');
     console.log(req.body);
+    console.log(req.user);
 
     const { id } = req.params //req.params;
     const { ratingValue } = req.body.data;
-    const userTest = "641ef1eb3d85553bdc360392";
+    //const userTest = "641ed2ecf7892783bdacbeb9";
+    const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
-    const newRating = await remedyRating.findOneAndUpdate(
+    const newRating = await ratingsModel.findOneAndUpdate(
         { remedyId: id, userId: userTest },
         { ratingValue: ratingValue },
         {
@@ -84,12 +109,12 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     //UPDATE USER MODEL:
     try {
-        const user = await User.findById(userTest);
+        const user = await userModel.findById(userTest);
         const alreadyRatedRemedy = user.ratings.find(
             rating => rating.remedyId.toString() === id.toString()
         );
         if (alreadyRatedRemedy) {
-            const updateUser = await User.updateOne(
+            const updateUser = await userModel.updateOne(
                 {
                     ratings: { $elemMatch: alreadyRatedRemedy }
                 },
@@ -104,7 +129,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
             res.json(updateUser);
         } else {
             //find product and add rating
-            const rateRemedy = await User.findByIdAndUpdate(userTest, {
+            const rateRemedy = await userModel.findByIdAndUpdate(userTest, {
                 $push: {
                     ratings: {
                         ratingValue: ratingValue,
@@ -122,25 +147,18 @@ router.put('/:id', catchAsynch(async (req, res) => {
         throw new Error(error);
     };
 
+
+
+
     //UPDATE REMEDY MODEL:
     try {
         //find remedy by id:
-        const product = await Medicals.findById(id);
+        const product = await remediesModel.findById(id);
         //calculate new rating average
         const remedyRatings = product.ratings;
-        const currentAverage = product.ratingAverage;
-        console.log(currentAverage);
-        let average = ratingValue;
-        if (remedyRatings.length > 0) {
-            let average = remedyRatings.reduce((total, next) => total + next.ratingValue, 0) / remedyRatings.length;
-        }
-        console.log(remedyRatings.length);
 
-        console.log(average);
-        //  const newTotalNumberOfRatings = remedyRatings.length + 1;
-        // console.log(newTotalNumberOfRatings);
-
-
+        console.log("-------");
+        const newRatingAverage = ((remedyRatings.length === 0) ? ratingValue : (remedyRatings.reduce((total, next) => total + next.ratingValue, 0) + ratingValue) / (remedyRatings.length + 1)).toFixed(2);
         //check if remedy is already rated by current user
         const alreadyRated = product.ratings.find(
             rating => rating.userId.toString() === userTest.toString()
@@ -148,14 +166,14 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
         //if user already rated the product, update the rating value
         if (alreadyRated) {
-            const updateRating = await Medicals.updateOne(
+            const updateRating = await remediesModel.updateOne(
                 {
                     ratings: { $elemMatch: alreadyRated }
                 },
                 {
                     $set: {
                         "ratings.$.ratingValue": ratingValue,
-                        ratingAverage: average
+                        ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2)
                     }
                 },
                 {
@@ -169,14 +187,14 @@ router.put('/:id', catchAsynch(async (req, res) => {
             //if user did not rate the product yet, add a new rating value
         } else {
             //find product and add rating
-            const rateProduct = await Medicals.findByIdAndUpdate(id, {
+            const rateProduct = await remediesModel.findByIdAndUpdate(id, {
                 $push: {
                     ratings: {
                         ratingValue: ratingValue,
                         userId: userTest
                     }
                 },
-                ratingAverage: average,
+                ratingAverage: newRatingAverage,
                 totalNumberofRatings: remedyRatings.length + 1
             },
                 {
@@ -196,7 +214,7 @@ router.delete('/:id', catchAsynch(async (req, res) => {
     const { id } = req.params;
     console.log(req.body);
     const userId = "64151a880022f6c93207f2b9";
-    const deletedRating = await remedyRating.deleteOne(
+    const deletedRating = await ratingsModel.deleteOne(
         { remedyId: id, userId: userId });
     return res.status(200).send(deletedRating);
 }));
@@ -205,9 +223,9 @@ router.delete('/:id', catchAsynch(async (req, res) => {
 //save remedy as favorite:
 router.put('/:id/save', catchAsynch(async (req, res) => {
     const { id } = req.params;
-    //const product = await Medicals.findById(id);
+    //const product = await remediesModel.findById(id);
     const userTest = "64151b8670662285f3b36c13";
-    const saveFavorite = await User.findByIdAndUpdate(userTest, {
+    const saveFavorite = await userModel.findByIdAndUpdate(userTest, {
         $push: {
             favorites: {
                 remedyId: id
@@ -224,9 +242,9 @@ router.put('/:id/save', catchAsynch(async (req, res) => {
 //save remedy as favorite:
 router.delete('/:id/save', catchAsynch(async (req, res) => {
     const { id } = req.params;
-    //const product = await Medicals.findById(id);
+    //const product = await remediesModel.findById(id);
     const userTest = "64151b8670662285f3b36c13";
-    const deleteFavorite = await User.findByIdAndUpdate(userTest, {
+    const deleteFavorite = await userModel.findByIdAndUpdate(userTest, {
         $pull: {
             favorites: {
                 remedyId: id
