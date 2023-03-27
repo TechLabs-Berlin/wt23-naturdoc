@@ -12,7 +12,9 @@ const RemediesSchema = new Schema({
                 type: Schema.Types.ObjectId,
                 ref: 'User'
             },
-            ratingValue: Number
+            ratingValue: Number,
+            reviewDescription: String,
+            reviewName: String
         }
     ],
     ratingAverage: Number,

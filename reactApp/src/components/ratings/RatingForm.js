@@ -84,7 +84,7 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
                 getLabelText={getLabelText}
                 icon={<CircleIcon fontSize="inherit" />}
                 emptyIcon={
-                  <CircleIcon fontSize="inherit" sx={{ color: "#eee" }} />
+                  <CircleIcon fontSize="inherit" sx={{ color: "#cccccc" }} />
                 }
                 onChange={(event, value) =>
                   handleRatingChange(value, ratingValue)
