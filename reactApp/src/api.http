@@ -26,9 +26,9 @@ Content-Type: application/json
 GET http://localhost:7000/remedies/641f60b3e7523a06fc0c0a20 HTTP/1.1
 Content-Type: application/json
 
-
-// [TODO PRIO 1] Get all ratings for a specific remedy (backend)
-GET TBD HTTP/1.1
+###
+// Get all ratings for a specific remedy (backend)
+GET GET http://localhost:7000/remedies/641f60b3e7523a06fc0c0a20/ratings  HTTP/1.1
 Content-Type: application/json
 
 ###
