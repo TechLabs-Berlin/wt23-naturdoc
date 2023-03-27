@@ -1,26 +1,41 @@
 import { Typography } from "@mui/material";
 import { Card, Box, Button } from "@mui/material/";
 import ChevronRight from "@mui/icons-material/ChevronRight";
+import RatingForm from "components/ratings/RatingForm";
+import { useState } from "react";
+import { useTheme } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
-function AddRating(
-  remedy,
-  ratings,
-  notRatedByUser,
-  notRatingsYet,
-  handleClickOpen
-) {
+function AddRating(remedy, user) {
+  const noRatingsYet = remedy.totalNumberofRatings
+    ? ""
+    : "Be the first to add a review.";
+
+  const notRatedByUser = user.ratings
+    ? ""
+    : "You have not shared your opinion yet. What do you think of this remedy?";
+
+  const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
-      {ratings.length} matching reviews
-      {/* Case 1a: No reviews yet */}
-      <Typography variant="remedyTitle"></Typography>
-      {/* Case 1B: No reviews from user  yet */}
-      <Typography variant="remedyTitle"></Typography>
       <Card variant="reviewCard">
+        {remedy.totalNumberofRatings} reviews
         <Typography variant="body1" sx={{ textAlign: "center" }} paragraph>
-          {remedy.ratingAverage
-            ? "You have not shared your opinion yet. What do you think of this remedy?"
-            : "Be the first to add a review."}
+          {/* Case 1: No ratings yet */}
+          {noRatingsYet}
+          {/* Case 2: No ratings from user yet */}
+          {notRatedByUser}
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Button
@@ -34,6 +49,13 @@ function AddRating(
           </Button>
         </Box>
       </Card>
+      <RatingForm
+        key={remedy.id}
+        remedy={remedy}
+        open={open}
+        handleClose={handleClose}
+        fullScreen={fullScreen}
+      />
     </>
   );
 }

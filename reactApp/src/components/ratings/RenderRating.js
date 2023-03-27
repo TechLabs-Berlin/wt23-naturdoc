@@ -1,17 +1,35 @@
+import { useEffect, useState } from "react";
+import getUserRatings from "data/getUserRatings";
 import AddRating from "./AddRating";
 import RatingList from "./RatingList";
 
-function renderRating(remedy, ratings, userRating) {
+function RenderRating({ remedy }) {
+  const [ratings, setRatings] = useState([]);
+
+  // get the remedy ratings from the API
+  useEffect(() => {
+    getUserRatings()
+      .then((response) => {
+        setRatings(response);
+        console.log("user ratings", response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   if (remedy.totalNumberOfRatings > 0) {
     return (
       <>
-        !userRating ? <AddRating notRatedByUser /> : "";
+        Logic: if not rated by user display bloctest: !userRating ? AddRating :
+        ""
+        <AddRating remedy={remedy} notRatedByUser />
         <RatingList ratings={ratings} />;
       </>
     );
   } else {
-    <AddRating notRatingsYet />;
+    <AddRating noRatingsYet />;
   }
 }
 
-export default renderRating;
+export default RenderRating;
