@@ -146,6 +146,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
             upsert: true
         }
     );
+    console.log("RATINGID");
+    console.log(newRating.id);
 
 
     //UPDATE USER MODEL:
@@ -218,7 +220,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
                         "ratings.$.ratingValue": ratingValue,
                         ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2),
                         reviewName: reviewName,
-                        reviewDescription: reviewDescription
+                        reviewDescription: reviewDescription,
+                        ratingId: newRating.id
                     }
                 },
                 {
@@ -238,7 +241,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
                         ratingValue: ratingValue,
                         userId: userTest,
                         reviewName: reviewName,
-                        reviewDescription: reviewDescription
+                        reviewDescription: reviewDescription,
+                        ratingId: newRating.id
                     }
                 },
                 ratingAverage: newRatingAverage,
