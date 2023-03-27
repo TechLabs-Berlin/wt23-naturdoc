@@ -84,6 +84,19 @@ router.get('/:id', catchAsynch(async (req, res) => {
 }));
 
 
+//get all ratings for a remmedy
+router.get('/:id/ratings', catchAsynch(async (req, res) => {
+    const ratings = await remediesModel.findById(req.params.id);
+    const response = {
+        ratings: ratings.ratings
+    }
+    console.log(response)
+
+    return res.status(200).send(response);
+}));
+
+
+
 //add the rating for a single remedy
 router.put('/:id', catchAsynch(async (req, res) => {
     const ratingId = new mongoose.Types.ObjectId;
@@ -92,14 +105,14 @@ router.put('/:id', catchAsynch(async (req, res) => {
     console.log(req.user);
 
     const { id } = req.params //req.params;
-    const { ratingValue } = req.body.data;
+    const { ratingValue, reviewName, reviewDescription } = req.body.data;
     //const userTest = "641ed2ecf7892783bdacbeb9";
     const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
     const newRating = await ratingsModel.findOneAndUpdate(
         { remedyId: id, userId: userTest },
-        { ratingValue: ratingValue },
+        { ratingValue: ratingValue, reviewName: reviewName, reviewDescription: reviewDescription },
         {
             new: true,
             upsert: true
@@ -134,7 +147,9 @@ router.put('/:id', catchAsynch(async (req, res) => {
                     ratings: {
                         ratingValue: ratingValue,
                         userId: userTest,
-                        remedyId: id
+                        remedyId: id,
+                        reviewName: reviewName,
+                        reviewDescription: reviewDescription
                     }
                 }
             },
@@ -173,7 +188,9 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 {
                     $set: {
                         "ratings.$.ratingValue": ratingValue,
-                        ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2)
+                        ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2),
+                        reviewName: reviewName,
+                        reviewDescription: reviewDescription
                     }
                 },
                 {
@@ -191,7 +208,9 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 $push: {
                     ratings: {
                         ratingValue: ratingValue,
-                        userId: userTest
+                        userId: userTest,
+                        reviewName: reviewName,
+                        reviewDescription: reviewDescription
                     }
                 },
                 ratingAverage: newRatingAverage,
