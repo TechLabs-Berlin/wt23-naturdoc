@@ -6,9 +6,20 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import { useEffect } from "react";
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      setValue(0);
+    } else if (window.location.pathname === "/search") {
+      setValue(1);
+    } else if (window.location.pathname === "/login") {
+      setValue(2);
+    }
+  }, []);
 
   return (
     <>
