@@ -42,6 +42,13 @@ const theme = createTheme({
         divider: primaryTextColor,
     },
     components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: {
+                    backgroundColor: '#deedde75',
+                },
+            },
+        },
         MuiAppBar: {
             styleOverrides: {
                 colorPrimary: {
@@ -54,6 +61,10 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     margin: 'auto',
+                    paddingLeft: 0, 
+                    paddingRight: 0,
+                    paddingBottom: 8,
+                    backgroundColor:"#ffffff"
                 },
             },
         },

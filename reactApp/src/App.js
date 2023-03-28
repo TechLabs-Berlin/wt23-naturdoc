@@ -9,7 +9,7 @@ import RemedyDetails from "pages/RemedyDetails";
 // Styles
 import "assets/App.css";
 import theme from "assets/theme";
-import { ThemeProvider, CssBaseline } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 
 function App() {
   return (
@@ -23,7 +23,6 @@ function App() {
           <Route exact path="/signup" element={<SignUp />}></Route>
           <Route exact path="/remedies/:id" element={<RemedyDetails />}></Route>
         </Routes>
-        <CssBaseline />
       </ThemeProvider>
     </>
   );

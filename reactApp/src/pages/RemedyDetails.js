@@ -11,7 +11,7 @@ import RatingList from "components/ratings/RatingList";
 import LayoutHOC from "components/layouts/LayoutHOC";
 import AddRating from "components/ratings/AddRating";
 // material-ui
-import { useMediaQuery, useTheme, CardMedia, Box, Container, IconButton, Typography } from "@mui/material";
+import { useMediaQuery, useTheme, CardMedia, Box, IconButton, Typography } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
 function RemedyDetails() {
@@ -52,7 +52,6 @@ function RemedyDetails() {
 
   return (
     <>
-      <Container sx={{ pl: 0, pr: 0, pb: 8 }} component="section" maxWidth="sm">
         <Box>
           <IconButton variant="outlined" onClick={() => navigate(-1)}>
             <ChevronLeftIcon fontSize="large" />
@@ -148,7 +147,6 @@ function RemedyDetails() {
           </Box>
           <RatingList ratings={ratings} />
         </Box>
-      </Container>
 
       <RatingForm
         key={remedy.id}
