@@ -1,0 +1,2405 @@
+,symptomName,is_symptom,is_activity
+0,Abcess,0,1
+1,Abdomen,0,1
+2,Abortifacient,0,1
+3,Abortive,0,1
+4,Abrasion,0,1
+5,Abscess,0,1
+6,Abscess(Breast),0,1
+7,Absorbent,0,1
+8,Acaricide,0,1
+9,Ache,0,1
+10,Ache(Arm),0,1
+11,Ache(Back),0,1
+12,Ache(Body),0,1
+13,Ache(Ear),0,1
+14,Ache(Foot),0,1
+15,Ache(Head),0,1
+16,Ache(Leg),0,1
+17,Ache(Limb),0,1
+18,Ache(Loin),0,1
+19,Ache(Rib),0,1
+20,Ache(Side),0,1
+21,Ache(Stomach),0,1
+22,Achlorhydria,0,1
+23,Acne,1,1
+24,Acrid,0,1
+25,Actinomycosis,0,1
+26,Addison's-Disease,0,1
+27,Adenopathy,0,1
+28,Adrenocortical,0,1
+29,Adulterant,0,1
+30,Aerophagia,0,1
+31,Afterbirth,0,1
+32,Aftosa,0,1
+33,Agility,0,1
+34,Ague,0,1
+35,Airwick,0,1
+36,Alactia,0,1
+37,Albuminuria,0,1
+38,Alcoholism,1,1
+39,Alexipharmic,0,1
+40,Alexiteric,0,1
+41,Algicide,0,1
+42,Allergenic,0,1
+43,Allergy,1,1
+44,Alopecia,0,1
+45,Alterative,0,1
+46,Amaurosis,0,1
+47,Amblyopia,1,1
+48,Amebiasis,0,1
+49,Amenorrhea,1,1
+50,Amnesia,1,1
+51,Amygdalitis,0,1
+52,Amygdalosis,0,1
+53,Anal-Eversion,0,1
+54,Analeptic,0,1
+55,Analgesic,0,1
+56,Anaphrodisiac,0,1
+57,Anaphrodisiac (Female),0,1
+58,Anasarca,0,1
+59,Ancylostomiasis,0,1
+60,Androgenic,0,1
+61,Anecbolic,0,1
+62,Anemia,1,1
+63,Anesthesia,0,1
+64,Anesthetic,0,1
+65,Angina,0,1
+66,Angina Pectoris,0,1
+67,Angina-Catarrhalis,0,1
+68,Angina?,0,1
+69,Anhydrosis,0,1
+70,Anhydrotic,0,1
+71,Bite(Animal),0,1
+72,Ankle,0,1
+73,Anodyne,0,1
+74,Anorectic,0,1
+75,Anorexia,0,1
+76,Anorexiac,0,1
+77,Anorexic,0,1
+78,Antacid,0,1
+79,Antemetic,0,1
+80,Anthelminthic,0,1
+81,Anthrax,0,1
+82,Antiabortifacient,0,1
+83,Antibilious,0,1
+84,Antibiotic,0,1
+85,Anticathartic,0,1
+86,Anticholinergic,0,1
+87,Anticoagulant,0,1
+88,Anticonception,0,1
+89,Antidiarrheic,0,1
+90,Antidote,0,1
+91,Antidote(Antiaris),0,1
+92,Antidote(Arrow poison),0,1
+93,Antidote(Crab),0,1
+94,Antidote(Datura),0,1
+95,Antidote(Fish poison),0,1
+96,Antidote(Fish),0,1
+97,Antidote(Fish sting),0,1
+98,Antidote(Ipoh),0,1
+99,Antidote(Opium),0,1
+100,Antidote(Pithecellobium),0,1
+101,Antidote(Poison arrow),0,1
+102,Antidote(Poison),0,1
+103,Antidote(Aconite),0,1
+104,Antidote(Alcohol),0,1
+105,Antidote(Alkaloid),0,1
+106,Antidote(Arrow),0,1
+107,Antidote(Arsenic),0,1
+108,Antidote(Atropine),0,1
+109,Antidote(Bee sting),0,1
+110,Antidote(Belladonna),0,1
+111,Antidote(Black Widow),0,1
+112,Antidote(Brassica),0,1
+113,Antidote(Cantharid),0,1
+114,Antidote(Capsicum),0,1
+115,Antidote(Caterpillar),0,1
+116,Antidote(Centipede),0,1
+117,Antidote(Chameleon),0,1
+118,Antidote(Cicuta),0,1
+119,Antidote(Cinnabar),0,1
+120,Antidote(Comocladia),0,1
+121,Antidote(Crocodile),0,1
+122,Antidote(Croton),0,1
+123,Antidote(Cyanide),0,1
+124,Antidote(Dioscorea),0,1
+125,Antidote(Drowning),0,1
+126,Antidote(Drug),0,1
+127,Antidote(Euphorbiaceae),0,1
+128,Antidote(Hanging),0,1
+129,Antidote(Hemlock),0,1
+130,Antidote(Hippomane),0,1
+131,Antidote(Hura),0,1
+132,Antidote(Insect),0,1
+133,Antidote(Iodine),0,1
+134,Antidote(Jatropha),0,1
+135,Antidote(Latex),0,1
+136,Antidote(Litchi),0,1
+137,Antidote(Lizard),0,1
+138,Antidote(Manihot),0,1
+139,Antidote(Mercury),0,1
+140,Antidote(Metal),0,1
+141,Antidote(Mineral),0,1
+142,Antidote(Momordica),0,1
+143,Antidote(Mushroom),0,1
+144,Antidote(Nettle),0,1
+145,Antidote(Philodendron),0,1
+146,Antidote(Plant poisons),0,1
+147,Antidote(Reptile),0,1
+148,Antidote(Rhus),0,1
+149,Antidote(Scolopendrid),0,1
+150,Antidote(Scorpion),0,1
+151,Antidote(Seafood),0,1
+152,Antidote(Semecarpus),0,1
+153,Antidote(Shellfish),0,1
+154,Antidote(Shrimp),0,1
+155,Antidote(Snake),0,1
+156,Antidote(Spider),0,1
+157,Antidote(Stingray),0,1
+158,Antidote(Strophanthus),0,1
+159,Antidote(Sulfur),0,1
+160,Antidote(Sumach),0,1
+161,Antidote(Urtica),0,1
+162,Antidote(Urticaria),0,1
+163,Antidote(Varnish),0,1
+164,Antidote(Vermillion),0,1
+165,Antidote(Wine),0,1
+166,Antidote(Wood oil),0,1
+167,Antidote(Worms),0,1
+168,Antidysentery,0,1
+169,Antiecbolic,0,1
+170,Antiemetic,0,1
+171,Antiemmenagogue,0,1
+172,Antifertility,0,1
+173,Antigalactogogue,0,1
+174,Antigonadotrophic,0,1
+175,Antigonorrheic,0,1
+176,Antihistamine,0,1
+177,Antihydriotic,0,1
+178,Antihydrotic,0,1
+179,Antilactogogue,0,1
+180,Antilithic,0,1
+181,Antimalaria,0,1
+182,Antiopiate,0,1
+183,Antiopium,0,1
+184,Antioxidant,0,1
+185,Antioxytoxic,0,1
+186,Antiperiodic,0,1
+187,Antiperspirant,0,1
+188,Antiphlogistic,0,1
+189,Antiphtalmic,0,1
+190,Antiprogestational,0,1
+191,Antipyretic,0,1
+192,Antirheumatic,0,1
+193,Antiscorbutic,0,1
+194,Antiscrophulosum,0,1
+195,Antiseptic,0,1
+196,Antiseptic(Urethra),0,1
+197,Antismoking,0,1
+198,Antispasmodic,0,1
+199,Antisudorific,0,1
+200,Antitussive,0,1
+201,Antivenom,0,1
+202,Antivinous,0,1
+203,Repellant(Ant),0,1
+204,Anuria,0,1
+205,Anus,0,1
+206,Anxiety,1,1
+207,Anydrotic,0,1
+208,Aperient,0,1
+209,Apertif,0,1
+210,Aphicide,0,1
+211,Aphrodisiac,0,1
+212,Aphrodisiac(Female),0,1
+213,Aphrodisiac(Male),0,1
+214,Aphtha,0,1
+215,Aphthae,0,1
+216,Aphthaee,0,1
+217,Aphthagenic,0,1
+218,Aphtosa,0,1
+219,Apoplexy,0,1
+220,Aposteme,0,1
+221,Appendicitis,0,1
+222,Appetizer,0,1
+223,Apprehension,0,1
+224,Aptha,0,1
+225,Apthae,0,1
+226,Ardor,0,1
+227,Aromatic,0,1
+228,Arrow-poison,0,1
+229,Arrhythmia,0,1
+230,Arrow,0,1
+231,Artemicide,0,1
+232,Arteriosclerosis,0,1
+233,Arteriosedative,0,1
+234,Arteritis,0,1
+235,Arthralgia,1,1
+236,Arthritis,1,1
+237,Arthritis?,0,1
+238,Arthrodynia,0,1
+239,Ascariasis,0,1
+240,Ascaricide,0,1
+241,Ascites,1,1
+242,Asthenia,0,1
+243,Asthma,1,1
+244,Astringent,0,1
+245,Ataxia,1,1
+246,Ataxia(Locomotor),0,1
+247,Atheroma,1,1
+248,Atheromasia,0,1
+249,Atherosclerosis,0,1
+250,Athlete's-Foot,0,1
+251,Athrepsy,0,1
+252,Atony,0,1
+253,Atrophy,0,1
+254,Ausculation,0,1
+255,Avicide,0,1
+256,Back,0,1
+257,Bactericide,0,1
+258,Bacteriostat,0,1
+259,Baldness,0,1
+260,Balsamic,0,1
+261,Bandage,0,1
+262,Barrenness,0,1
+263,Basketry,0,1
+264,Bath,0,1
+265,Beauty,0,1
+266,Bechic,0,1
+267,Bedbug,0,1
+268,Bedridden,0,1
+269,Bedsore,0,1
+270,Beer,0,1
+271,Beri-Beri,0,1
+272,Beriberi,0,1
+273,Beverage,0,1
+274,Bil,0,1
+275,Bile,0,1
+276,Bilharzia,0,1
+277,Bilious,0,1
+278,Birdlime,0,1
+279,Bite,0,1
+280,Bite(Bat),0,1
+281,Bite(Bear),0,1
+282,Bite(Bug),0,1
+283,Bite(Dog),0,1
+284,Bite(Horse),0,1
+285,Bite(Insect),0,1
+286,Bite(Leech),0,1
+287,Bite(Lizard),0,1
+288,Bite(Mosquito),0,1
+289,Bite(Rat),0,1
+290,Bite(Scorpion),0,1
+291,Bite(Snake),0,1
+292,Bite(Spider),0,1
+293,Bite(Tick),0,1
+294,Bite(Tiger),0,1
+295,Bitter-Aromatic,0,1
+296,Bitter-Principle,0,1
+297,Black-Eye,0,1
+298,Black-Fever,0,1
+299,Blackwater-Fever,0,1
+300,Bladder,0,1
+301,Bladder stone,0,1
+302,Bleach,0,1
+303,Blemish,0,1
+304,Blennorhea,0,1
+305,Blennorrhagia,0,1
+306,Blennorrhea,0,1
+307,Blenorrhagia,0,1
+308,Blepharitis,0,1
+309,Blindness,0,1
+310,Blister,0,1
+311,Bloat,0,1
+312,Blood,0,1
+313,Blood-Vessel,0,1
+314,Bloodshot,0,1
+315,Bloody stool,0,1
+316,Boil,1,1
+317,Bones,0,1
+318,Ache(Bones),0,1
+319,Bot,0,1
+320,Bowel,0,1
+321,Brachycardia,0,1
+322,Brain,0,1
+323,Brain-Tonic,0,1
+324,Breast,0,1
+325,Breath,0,1
+326,Breathing,0,1
+327,Breathlessness,0,1
+328,Bright's Disease,0,1
+329,Broken-Limb,0,1
+330,Bronchial,0,1
+331,Bronchial-Asthma,0,1
+332,Bronchiectasis,0,1
+333,Bronchitis,1,1
+334,Bronchodilator,0,1
+335,Bronchosis,0,1
+336,Broom,0,1
+337,Bruise,1,1
+338,Bubo,0,1
+339,Buboes,0,1
+340,Bugbite,0,1
+341,Bulla,0,1
+342,Bunion,1,1
+343,Burn,1,1
+344,Burn(Radiation),0,1
+345,Burns,0,1
+346,Bursitis,0,1
+347,Cachexia,0,1
+348,Cacoethes,0,1
+349,Breast (Caked),0,1
+350,Calculus,0,1
+351,Caligo,0,1
+352,Callosity,0,1
+353,Callus,0,1
+354,Calmative,0,1
+355,Camphor,0,1
+356,Cancer,0,1
+357,Cancer(Abdomen),0,1
+358,Cancer(Armpit),0,1
+359,Cancer(Bones),0,1
+360,Cancer(Brain),0,1
+361,Cancer(Breast),0,1
+362,Cancer(Cervix),0,1
+363,Cancer(Digestive),0,1
+364,Cancer(Epithelium),0,1
+365,Cancer(Esophagus),0,1
+366,Cancer(Eye),0,1
+367,Cancer(Face),0,1
+368,Cancer(Gastric),0,1
+369,Cancer(Glands),0,1
+370,Cancer(Gum),0,1
+371,Cancer(Gynecologic),0,1
+372,Cancer(Intestine),0,1
+373,Cancer(Kidney),0,1
+374,Cancer(Larynx),0,1
+375,Cancer(Lip),0,1
+376,Cancer(Liver),0,1
+377,Cancer(Lung),0,1
+378,Cancer(Lymph),0,1
+379,Cancer(Medullary),0,1
+380,Cancer(Mouth),0,1
+381,Cancer(Nose),0,1
+382,Cancer(Penis),0,1
+383,Cancer(Pharynx),0,1
+384,Cancer(Prostate),0,1
+385,Cancer(Pylorus),0,1
+386,Cancer(Rectum),0,1
+387,Cancer(Skin),0,1
+388,Cancer(Stomach),0,1
+389,Cancer(Testicle),0,1
+390,Cancer(Throat),0,1
+391,Cancer(Thyroid),0,1
+392,Cancer(Tongue),0,1
+393,Cancer(Toothh),0,1
+394,Cancer(Uterus),0,1
+395,Cancre,0,1
+396,Cancrum Oris,0,1
+397,Candida,0,1
+398,Candle,0,1
+399,Candlenut,0,1
+400,Canicide,0,1
+401,Canker,0,1
+402,Carbuncle,0,1
+403,Carcinogenic,0,1
+404,Carcinoma,0,1
+405,Carcinoma(Gum),0,1
+406,Cardiac,0,1
+407,Cardial-Disease,0,1
+408,Cardialgia,0,1
+409,Cardiodepressant,0,1
+410,Cardiodynia,0,1
+411,Cardiopathy,0,1
+412,Cardiosedative,0,1
+413,Cardiotonic,0,1
+414,Carditis,0,1
+415,Caries,0,1
+416,Carminative,0,1
+417,Castration,0,1
+418,Catamenia,0,1
+419,Cataplasm,0,1
+420,Cataract,1,1
+421,Catarrh,0,1
+422,Sting(Caterpillar),0,1
+423,Cathartic,0,1
+424,Caustic,0,1
+425,Cauterizant,0,1
+426,Ceguera,0,1
+427,Celiac,0,1
+428,Celialgia,0,1
+429,Cellulitis,0,1
+430,Cement,0,1
+431,Centipede,0,1
+432,Bite(Centipede),0,1
+433,Cephalgia,0,1
+434,Cephalic,0,1
+435,Cephalitis,0,1
+436,Cerebral,0,1
+437,Cerebrosis,0,1
+438,Cervix,0,1
+439,Chafe,0,1
+440,Chafing,0,1
+441,Chancre,1,1
+442,Chaplet,0,1
+443,Charcoal,0,1
+444,Charley-Horse,0,1
+445,Charm,0,1
+446,Chest,0,1
+447,Chest-Cold,0,1
+448,Ache(Chest),0,1
+449,Pain(Chest),0,1
+450,Chewstick,0,1
+451,Chickenpox,0,1
+452,Chilblain,0,1
+453,Childbirth,0,1
+454,Chill,0,1
+455,Chills,1,1
+456,Chirony,0,1
+457,Chlorosis,0,1
+458,Choking,0,1
+459,Cholagogue,0,1
+460,Cholagogueue,0,1
+461,Cholecystitis,0,1
+462,Cholecystosis,0,1
+463,Cholera,0,1
+464,Choleretic,0,1
+465,Cholinergic,0,1
+466,Cholorosis,0,1
+467,Chorea,1,1
+468,Chyluria,0,1
+469,Cicatrizant,0,1
+470,Ciguatera,0,1
+471,Ciguatero,0,1
+472,Circulation,0,1
+473,Circulation-Tonic,0,1
+474,Circumcision,0,1
+475,Circumscission,0,1
+476,Cirrhosis,1,1
+477,CNS,0,1
+478,CNS depressant,0,1
+479,CNS sedative,0,1
+480,CNS stimulant,0,1
+481,CNS tonic,0,1
+482,Coagulant,0,1
+483,Coffee,0,1
+484,Cold,0,1
+485,Colic,0,1
+486,Colic Diarrhea,0,1
+487,Colitis,1,1
+488,Collapse,0,1
+489,Collyrium,0,1
+490,Coloring,0,1
+491,Coma,1,1
+492,Complexion,0,1
+493,Conception,0,1
+494,Condyloma,0,1
+495,Condyloma(Anus),0,1
+496,Condyloma(Uterus),0,1
+497,Congestion,0,1
+498,Conjunctivitis,1,1
+499,Constipation,1,1
+500,Construction,0,1
+501,Tuberculosis,0,1
+502,Contraceptive,0,1
+503,Contraceptive(Male),0,1
+504,Contraceptive(Post),0,1
+505,Contraceptive?,0,1
+506,Contusion,0,1
+507,Convalescence,0,1
+508,Convulsant,0,1
+509,Convulsion,1,1
+510,Convulsion(Infant),0,1
+511,Copremia,0,1
+512,Cut(Coral),0,1
+513,Cordial,0,1
+514,Corn,0,1
+515,Cornea,0,1
+516,Corneosis,0,1
+517,Coryza,0,1
+518,Cosmetic,0,1
+519,Cosmetic (Grey hair),0,1
+520,Cough,1,1
+521,Cough(Pediatric),0,1
+522,Counterirritant,0,1
+523,Courbature,0,1
+524,Cowitch,0,1
+525,Cracked feet,0,1
+526,Cracked lips,0,1
+527,Cracked skin,0,1
+528,Cramp,1,1
+529,Cramps,0,1
+530,Craw-Craw,0,1
+531,Croup,1,1
+532,Culifuge,0,1
+533,Cut,0,1
+534,Cutamenia,0,1
+535,Cyanache,0,1
+536,Cyanidiferous,0,1
+537,Cyanogenetic,0,1
+538,Cycloplegic,0,1
+539,Cynanche,0,1
+540,Cyst,0,1
+541,Cystitis,0,1
+542,Cystitis?,0,1
+543,Dandruff,1,1
+544,Deafness,0,1
+545,Death,0,1
+546,Debility,0,1
+547,Decoagulant,0,1
+548,Decoction,0,1
+549,Decongestant,0,1
+550,Deliriant,0,1
+551,Delirium,0,1
+552,Dementia,1,1
+553,Demulcent,0,1
+554,Dengue,0,1
+555,Dengue?,0,1
+556,Dentifrice,0,1
+557,Dentifuge,0,1
+558,Dentistry,0,1
+559,Dentition,0,1
+560,Denture,0,1
+561,Deobstruent,0,1
+562,Deodorant,0,1
+563,Depilatory,0,1
+564,Depressant,0,1
+565,Depression,1,1
+566,Depurative,0,1
+567,Dermatitigenic,0,1
+568,Dermatitis,1,1
+569,Dermatophytosis,0,1
+570,Dermatosis,0,1
+571,Detergent,0,1
+572,Detersive,0,1
+573,Detoxicant,0,1
+574,Dhobi Itch,0,1
+575,Diabetes,1,1
+576,Diabetes Mellitis,0,1
+577,Diaper-Rash,0,1
+578,Diaphoretic,0,1
+579,Diarrhea,1,1
+580,Digestion,0,1
+581,Digestive,0,1
+582,Digestive disease,0,1
+583,Diphtheria,0,1
+584,Discutient,0,1
+585,Disinfectant,0,1
+586,Dislocation,0,1
+587,Distemper,0,1
+588,Diuretic,0,1
+589,Divination,0,1
+590,Dizziness,1,1
+591,Douche,0,1
+592,Drainage,0,1
+593,Drastic,0,1
+594,Drooling,0,1
+595,Dropsy,0,1
+596,Drowning,0,1
+597,Drug,0,1
+598,Drunkenness,0,1
+599,Dry-Lip,0,1
+600,Dubdubia,0,1
+601,Dugout,0,1
+602,Dullness,0,1
+603,Duodenum,0,1
+604,Dye,0,1
+605,Dypsnoea,0,1
+606,Dyschezia,0,1
+607,Dyscrasia,0,1
+608,Dysentery,0,1
+609,Dyslactation,0,1
+610,Dysmenorrhea,1,1
+611,Dyspareunia,1,1
+612,Dyspepsia,0,1
+613,Dysphagia,1,1
+614,Dyspnea,0,1
+615,Dysuria,1,1
+616,Ear,0,1
+617,Ear drop,0,1
+618,Earache,0,1
+619,Earring,0,1
+620,Earwig,0,1
+621,Ecbolic,0,1
+622,Ecchymosis,0,1
+623,Eccoprotic,0,1
+624,Eclampsia,0,1
+625,Ecthyma,0,1
+626,Ectoparasite,0,1
+627,Eczema,1,1
+628,Edema,1,1
+629,Egilops,0,1
+630,Ejaculation,0,1
+631,Elephantiasis,0,1
+632,Emaciation,0,1
+633,Embalming,0,1
+634,Embolism,0,1
+635,Emetic,0,1
+636,Emission,0,1
+637,Emission(Nocturnal),0,1
+638,Emmenagogue,0,1
+639,Emmenagogue?,0,1
+640,Emollient,0,1
+641,Empacho,0,1
+642,Emphysema,0,1
+643,Empyema,0,1
+644,Empyreumatic,0,1
+645,Encephalitis,1,1
+646,Endocarditis,0,1
+647,Endometritis,0,1
+648,Enema,0,1
+649,Energy,0,1
+650,Enorrhagia,0,1
+651,Enteritis,0,1
+652,Enteromegaly,0,1
+653,Enterorrhagia,0,1
+654,Enterosis,0,1
+655,Enterrhagia,0,1
+656,Entropion,0,1
+657,Enuresis,0,1
+658,Epidemic,0,1
+659,Epididymitis,0,1
+660,Epilepsy,1,1
+661,Epiphora,1,1
+662,Epispastic,0,1
+663,Epistaxis,0,1
+664,Epithelioma,0,1
+665,Errhine,0,1
+666,Eruption,0,1
+667,Erysipelas,0,1
+668,Erythema,1,1
+669,Escharotic,0,1
+670,Escrescence,0,1
+671,Esophagus,0,1
+672,Est,0,1
+673,Estrogenic,0,1
+674,Evil,0,1
+675,Evil eye,0,1
+676,Excipient,0,1
+677,Excitant,0,1
+678,Excoriation,0,1
+679,Excrescence,0,1
+680,Excrescence(Anus),0,1
+681,Excrescence(Womb),0,1
+682,Exhaustion,0,1
+683,Expectorant,0,1
+684,Extrasystole,0,1
+685,Extravasation,0,1
+686,Extrophy,0,1
+687,Eye,0,1
+688,Eye drop,0,1
+689,Eyesight,0,1
+690,Eyeball,0,1
+691,Eyelid,0,1
+692,Face,0,1
+693,Fainting,0,1
+694,Fatal,0,1
+695,Fatality,0,1
+696,Fatigue,1,1
+697,Fattening,0,1
+698,Favus,0,1
+699,Fear,0,1
+700,Febrifuge,0,1
+701,Feet,0,1
+702,Felicide,0,1
+703,Felon,0,1
+704,Female,0,1
+705,Fence,0,1
+706,Fertility,0,1
+707,Fertility(Female),0,1
+708,Fetus,0,1
+709,Fever,1,1
+710,Fever(Remittent),0,1
+711,Fever(Malarial),0,1
+712,Blister(Fever),0,1
+713,Fiber,0,1
+714,Fibroma,0,1
+715,Fibroma(Cervix),0,1
+716,Fibroma(Uterus),0,1
+717,Fibromiomatosis,0,1
+718,Fibrositis,0,1
+719,Filariasis,0,1
+720,Filaricide,0,1
+721,Filler,0,1
+722,Finger,0,1
+723,Firewood,0,1
+724,Fish-Bones,0,1
+725,Sting(Fish),0,1
+726,Fistula,0,1
+727,Fit,0,1
+728,Fits,0,1
+729,Flatulence,1,1
+730,Flavor,0,1
+731,Flu,0,1
+732,Flushing,0,1
+733,Flux,0,1
+734,Fodder,0,1
+735,Fomentation,0,1
+736,Fontanelle,0,1
+737,Food,0,1
+738,Food poisoning,0,1
+739,Food-Dye,0,1
+740,Food-Poison,0,1
+741,Foot,0,1
+742,Forgetfulness,0,1
+743,Formicicide,0,1
+744,Fracture,0,1
+745,Frambesia,0,1
+746,Freckle,0,1
+747,Frenzy,0,1
+748,Fright,0,1
+749,Frigidity,0,1
+750,Frigidity?,0,1
+751,Frostbite,0,1
+752,Fruit,0,1
+753,Frunculosis,0,1
+754,Fuel,0,1
+755,Fumigant,0,1
+756,Fumitory,0,1
+757,Funeral,0,1
+758,Funereal,0,1
+759,Fungicide,0,1
+760,Fungicide(Skin),0,1
+761,Fungistatic,0,1
+762,Fungoid,0,1
+763,Fungus,0,1
+764,Furuncle,0,1
+765,Furunculosis,0,1
+766,Fwvwe,0,1
+767,Galactogogue,0,1
+768,Gall Bladder,0,1
+769,Gall,0,1
+770,Gall-Bladder,0,1
+771,Gall-Stone,0,1
+772,Gallbladder,0,1
+773,Gallstone,0,1
+774,Gallstones,0,1
+775,Gangrene,0,1
+776,Gargle,0,1
+777,Gas,0,1
+778,Gasatromegaly,0,1
+779,Gastralgia,0,1
+780,Gastric-Juice,0,1
+781,Gastritis,0,1
+782,Gastrodynia,0,1
+783,Gastrointestinal,0,1
+784,Gastromegaly,0,1
+785,Gastrorrhagia,0,1
+786,Gastrosis,0,1
+787,Gastrospasm,0,1
+788,Gastrotonic,0,1
+789,Genital,0,1
+790,Germicide,0,1
+791,Gestation,0,1
+792,Giddiness,0,1
+793,Gingirrhagia,0,1
+794,Gingivitis,1,1
+795,Gingivosis,0,1
+796,Glactogogue,0,1
+797,Glands,0,1
+798,Glaucoma,0,1
+799,Gleet,0,1
+800,Glossitis,0,1
+801,Glue,0,1
+802,Gluttony,0,1
+803,Glycosuria,0,1
+804,Goiter,0,1
+805,Gonadotrophic,0,1
+806,Gonorrhea,0,1
+807,Gout,1,1
+808,Grain,0,1
+809,Gravel,0,1
+810,Grayhair,0,1
+811,Grey Hair,0,1
+812,Grip,0,1
+813,Gripes,0,1
+814,Groin,0,1
+815,Guineaworms,0,1
+816,Gum,0,1
+817,Gunshot,0,1
+818,Gynecology,0,1
+819,Gynecopathy,0,1
+820,Hail,0,1
+821,Hair,0,1
+822,Hair-Dye,0,1
+823,Hair-Oil,0,1
+824,Hair-Set,0,1
+825,Hair-Tonic,0,1
+826,Hair-Wash,0,1
+827,Hairblack,0,1
+828,Hairwhite,0,1
+829,Halitosis,1,1
+830,Hallucination,0,1
+831,Hallucinogen,0,1
+832,Hand,0,1
+833,Hand Water,0,1
+834,Hangover,0,1
+835,Hat,0,1
+836,Hayfever,0,1
+837,Head,0,1
+838,Cold(Head),0,1
+839,Sore(Head),0,1
+840,Hearing,0,1
+841,Heart,0,1
+842,Heart attack,0,1
+843,Heartburn,1,1
+844,Heat,0,1
+845,Heat rash,0,1
+846,Heatstroke,0,1
+847,Hedge,0,1
+848,Helminthiasis,0,1
+849,Hemagglutinant,0,1
+850,Hemaptysis,0,1
+851,Hematachezia,0,1
+852,Hematafeces,0,1
+853,Hematemesis,0,1
+854,Hematinic,0,1
+855,Hematochezia,1,1
+856,Hematofeces,0,1
+857,Hematogenic,0,1
+858,Hematoma,1,1
+859,Hematoptysis,0,1
+860,Hematuria,1,1
+861,Hemicrania,0,1
+862,Hemiplegia,0,1
+863,Hemoglobinuria,0,1
+864,Hemolytic,0,1
+865,Hemophilia,0,1
+866,Hemoptysis,1,1
+867,Hemorisis,0,1
+868,Hemorrhage,0,1
+869,Hemorrhagia,0,1
+870,Hemorrhoids,1,1
+871,Hemostat,0,1
+872,Hemostatic,0,1
+873,Hepatic,0,1
+874,Hepatic-Obstruction,0,1
+875,Hepatitis,1,1
+876,Hepatogegaly,0,1
+877,Hepatoma,0,1
+878,Hepatomegaly,0,1
+879,Hepatosis,0,1
+880,Hepatotonic,0,1
+881,Herbicide,0,1
+882,Hernia,0,1
+883,Herpes,0,1
+884,Herpes zoster,0,1
+885,Heumatism,0,1
+886,Hiccup,1,1
+887,Hidrosis,0,1
+888,Hirudicide,0,1
+889,Hives,1,1
+890,Hivess,0,1
+891,Hoarseness,0,1
+892,Hodgkin's Disease,0,1
+893,Homeopathy,0,1
+894,Homicide,0,1
+895,Homocide,0,1
+896,Honey,0,1
+897,Hoof,0,1
+898,Hookworms,0,1
+899,Hunger,0,1
+900,Hydragogue,0,1
+901,Hydrocoele,0,1
+902,Hydrogogue,0,1
+903,Hydrophobia,0,1
+904,Hydropsy,0,1
+905,Hydrothorax,0,1
+906,Hymen,0,1
+907,Hyperacidity,0,1
+908,Hyperchlorhydria,0,1
+909,Hypercholesterolemia,1,1
+910,Hyperemia,0,1
+911,Hyperglycemia,1,1
+912,Hypertension,1,1
+913,Hypertensive,0,1
+914,Hyperthyreosis,0,1
+915,Hyperuricemia,0,1
+916,Hypnotic,0,1
+917,Hypochondria,0,1
+918,Hypogonadism,1,1
+919,Hypotension,1,1
+920,Hypotensive,0,1
+921,Hypotherbia,0,1
+922,Hysteria,0,1
+923,Ichthyosarcotoxin,0,1
+924,Ichthyosarcotoxism,0,1
+925,Icterus,0,1
+926,Idiocy,0,1
+927,Immortality,0,1
+928,Impetigo,1,1
+929,Impostume,0,1
+930,Impotence,0,1
+931,Impotency,0,1
+932,Inappetence,0,1
+933,Incense,0,1
+934,Incisive,0,1
+935,Incontinence,0,1
+936,Indigestion,1,1
+937,Inebrity,0,1
+938,Inertia,0,1
+939,Infanticide,0,1
+940,Infarct,0,1
+941,Infection,1,1
+942,Infertility,0,1
+943,Inflammation,1,1
+944,Influenza,0,1
+945,Inhalant,0,1
+946,Insanity,0,1
+947,Insecticide,0,1
+948,Insectifuge,0,1
+949,Repellant(Insect),0,1
+950,Insemination,0,1
+951,Insomnia,1,1
+952,Intellect,0,1
+953,Internal,0,1
+954,Internulcer,0,1
+955,Intertrigo,0,1
+956,Intestinal,0,1
+957,Intestinal-Ailments,0,1
+958,Intestinal-Catarrh,0,1
+959,Intestinal tonic,0,1
+960,Intestinal-Troubles,0,1
+961,Intestine,0,1
+962,Intoxicant,0,1
+963,Intoxication,0,1
+964,Iodine,0,1
+965,Ipecac,0,1
+966,Irritability,0,1
+967,Irritant,0,1
+968,Ischias,0,1
+969,Ischury,0,1
+970,Itch,1,1
+971,Ive(Caries),0,1
+972,Asthma (Ivy),0,1
+973,Ivy Poisoning,0,1
+974,Jaundice,1,1
+975,Jaw,0,1
+976,Jealousy,0,1
+977,Jellyfish-sting,0,1
+978,Joint,0,1
+979,Keratitis,0,1
+980,Kidney,0,1
+981,Kidney stones,0,1
+982,Kindling,0,1
+983,Knee,0,1
+984,Kneecap,0,1
+985,Labor,0,1
+986,Lacrimatory,0,1
+987,Lacrimitis,0,1
+988,Lactafuge,0,1
+989,Lactagogue,0,1
+990,Lactation,0,1
+991,Lactifuge,0,1
+992,Lactogogue,0,1
+993,Lactorrhea,0,1
+994,Ladentifrice,0,1
+995,Lameness,0,1
+996,Larvicide,0,1
+997,Laryngalgia,0,1
+998,Laryngeal,0,1
+999,Laryngitis,1,1
+1000,Lash,0,1
+1001,Lassitude,0,1
+1002,Laxative,0,1
+1003,Leech,0,1
+1004,Leech-Repellant,0,1
+1005,Leech-repellant,0,1
+1006,Leg,0,1
+1007,Lenitive,0,1
+1008,Leprosy,0,1
+1009,Leptospirosis,0,1
+1010,Lequeur,0,1
+1011,Lethargy,0,1
+1012,Leucoderma,0,1
+1013,Leucoma,0,1
+1014,Leucorrhea,0,1
+1015,Leukemia,0,1
+1016,Leukoma,0,1
+1017,Leukopenic,0,1
+1018,Leukorrhea,1,1
+1019,Lice,0,1
+1020,Ligament,0,1
+1021,Ligature,0,1
+1022,Lightning,0,1
+1023,Limb,0,1
+1024,Liniment,0,1
+1025,Lip,0,1
+1026,Liqueur,0,1
+1027,Listlessness,0,1
+1028,Lithiasis,0,1
+1029,Litholytic,0,1
+1030,Lithontriptic,0,1
+1031,Liver,0,1
+1032,Lizardbite,0,1
+1033,Lochia,0,1
+1034,Lockjaw,0,1
+1035,Loin,0,1
+1036,Longevity,0,1
+1037,Loose Teeth,0,1
+1038,Loose-Toothh,0,1
+1039,Lotion,0,1
+1040,Lower,0,1
+1041,Lower Pulse,0,1
+1042,Lubricative,0,1
+1043,Lumbago,0,1
+1044,Lump,0,1
+1045,Lunacy,0,1
+1046,Lung,0,1
+1047,Lupus,0,1
+1048,Lye,0,1
+1049,Lymphadenitis,0,1
+1050,Lymphadenopathy,0,1
+1051,Lymphatic-Disease,0,1
+1052,Lymphoadenitis,0,1
+1053,Lymphoma,0,1
+1054,Lymphoma(Neck),0,1
+1055,Maculitis,0,1
+1056,Madness,0,1
+1057,Maggot,0,1
+1058,Magic,0,1
+1059,Malacia,0,1
+1060,Malaise,0,1
+1061,Malaria,0,1
+1062,Malignancy,0,1
+1063,Malnutrition,0,1
+1064,Mammary,0,1
+1065,Manchineel,0,1
+1066,Mange,0,1
+1067,Mania,0,1
+1068,Marasmus,0,1
+1069,Marrow,0,1
+1070,Massage,0,1
+1071,Mastalgia,0,1
+1072,Masticatory,0,1
+1073,Mastitis,0,1
+1074,Masturbation,0,1
+1075,Mat,0,1
+1076,Mattress,0,1
+1077,Measles,0,1
+1078,Medical,0,1
+1079,Medicine,0,1
+1080,Medicine (Vet),0,1
+1081,Medicinel,0,1
+1082,Megalohepaty,0,1
+1083,Megalospleny,0,1
+1084,Meibomian Secretion,0,1
+1085,Melancholy,0,1
+1086,Melanoma,0,1
+1087,Melena,1,1
+1088,Memory,0,1
+1089,Meningitis,1,1
+1090,Menopause,0,1
+1091,Menorrhagia,1,1
+1092,Menoxenia,0,1
+1093,Menses,0,1
+1094,Menstruation,0,1
+1095,Menstruationimia,0,1
+1096,Mental,0,1
+1097,Meonrrhagia,0,1
+1098,Meteorism,0,1
+1099,Metritis,0,1
+1100,Metrorrhagia,0,1
+1101,Metrorrhea,0,1
+1102,Metroxenia,0,1
+1103,Miasma,0,1
+1104,Micturition,0,1
+1105,Migraine,1,1
+1106,Millipede,0,1
+1107,Miotic,0,1
+1108,Miscarriage,0,1
+1109,Mitogen,0,1
+1110,Mitogenic,0,1
+1111,Mole,0,1
+1112,Molluscicide,0,1
+1113,Mononucleosis,0,1
+1114,Morphea,0,1
+1115,Morphinism,0,1
+1116,Morphinism (Opiumism),0,1
+1117,Motion-Sickness,0,1
+1118,Mountain Sickness,0,1
+1119,Mountain-Sickness,0,1
+1120,Mouth,0,1
+1121,Mouthwash,0,1
+1122,Moxa,0,1
+1123,Mucositis,0,1
+1124,Mucous,0,1
+1125,Mucous Membrane,0,1
+1126,Mucus,0,1
+1127,Mucusitis,0,1
+1128,Mump,0,1
+1129,Mumps,0,1
+1130,Muscle,0,1
+1131,Muscle(Bladder),0,1
+1132,Mustard-Plaster,0,1
+1133,Mutagenic,0,1
+1134,Myalgia,1,1
+1135,Mycosis,0,1
+1136,Mydriatic,0,1
+1137,Myocarditis,0,1
+1138,Myoneuralgia,0,1
+1139,Myopathy,0,1
+1140,Myosis,0,1
+1141,Myospasm,0,1
+1142,Myotic,0,1
+1143,Narcosis,0,1
+1144,Narcotic,0,1
+1145,Narcotic (Pollen),0,1
+1146,Nausea,1,1
+1147,Navel,0,1
+1148,Neck,0,1
+1149,Necklace,0,1
+1150,Necklet,0,1
+1151,Necrosis,0,1
+1152,Nectar,0,1
+1153,Nematicide,0,1
+1154,Neophasia,0,1
+1155,Neoplasm,0,1
+1156,Nephritis,0,1
+1157,Nephrosis,0,1
+1158,Nerves,0,1
+1159,Nervine,0,1
+1160,Nervousness,0,1
+1161,Nettle,0,1
+1162,Neuralgia,1,1
+1163,Neurasthenia,0,1
+1164,Neuritis,0,1
+1165,Neuroblastoma,0,1
+1166,Neuroparalysis,0,1
+1167,Neurosis,0,1
+1168,Newborn,0,1
+1169,Nicotinism,0,1
+1170,Night-Blindness,0,1
+1171,Night-Fever,0,1
+1172,Night-Sweat,0,1
+1173,Nightmare,0,1
+1174,Nightsweats,0,1
+1175,Nipple,0,1
+1176,Node,0,1
+1177,Nose,0,1
+1178,Nosebleed,1,1
+1179,Nosedrop,0,1
+1180,Notalgia,0,1
+1181,Numbness,0,1
+1182,Nutrient,0,1
+1183,Nutritive,0,1
+1184,Nyctalopia,0,1
+1185,Nystagmus,1,1
+1186,Obesity,1,1
+1187,Obstipation,0,1
+1188,Odontalgia,0,1
+1189,Odontalgic,0,1
+1190,Odontectomy,0,1
+1191,Odontitis,0,1
+1192,Odontorrhagia,0,1
+1193,Odontosis,0,1
+1194,Oil,0,1
+1195,Ointment,0,1
+1196,Ointment-Base,0,1
+1197,Oligospermy,0,1
+1198,Oliguria,0,1
+1199,Oncolytic,0,1
+1200,Onychosis,0,1
+1201,Onychyosis,0,1
+1202,Opacity,0,1
+1203,Ophthalmia,0,1
+1204,Opiate,0,1
+1205,Opium Substitute,0,1
+1206,Opium substitute,0,1
+1207,Opium-Addiction,0,1
+1208,Orchitis,0,1
+1209,Ordeal,0,1
+1210,Ordeal-Poison,0,1
+1211,Orexigenic,0,1
+1212,Ornament,0,1
+1213,Osmotic,0,1
+1214,Ostealgia,0,1
+1215,Osteomyelitis,0,1
+1216,Osteosis,0,1
+1217,Otalgia,0,1
+1218,Otitis,1,1
+1219,Otorrhea,0,1
+1220,Otosis,0,1
+1221,Ovary,0,1
+1222,Oxytoxic,0,1
+1223,Oxyuriasic,0,1
+1224,Oxyuriasis,0,1
+1225,Ozaema,0,1
+1226,Ozoena,0,1
+1227,Pacifier,0,1
+1228,Pain,1,1
+1229,Palate,0,1
+1230,Palpitation,0,1
+1231,Palpitations,1,1
+1232,Palsy,0,1
+1233,Panacea,0,1
+1234,Pancreas,0,1
+1235,Paper,0,1
+1236,Parageusia,0,1
+1237,Paralysis,0,1
+1238,Paralyzant,0,1
+1239,Paraplegia,0,1
+1240,Parasite,0,1
+1241,Parasiticide,0,1
+1242,Parasympatholytic,0,1
+1243,Paresis,0,1
+1244,Parkinsonianism,0,1
+1245,Parkinsonism,0,1
+1246,Parotiditis,0,1
+1247,Parotitis,0,1
+1248,Paroxysm,0,1
+1249,Parturition,0,1
+1250,Paste,0,1
+1251,Pectoral,0,1
+1252,Pediculicide,0,1
+1253,Pediculifuge,0,1
+1254,Pediculosis,0,1
+1255,Pellagra,0,1
+1256,Pelvis,0,1
+1257,Pemphigus,0,1
+1258,Penis,0,1
+1259,Peptic,0,1
+1260,Perfume,0,1
+1261,Perfumery,0,1
+1262,Perguessia,0,1
+1263,Pericarditis,1,1
+1264,Peritonitis,0,1
+1265,Perspiration,1,1
+1266,Perturition,0,1
+1267,Pertussis,0,1
+1268,Pesticide(Leech),0,1
+1269,Pharyngalgia,0,1
+1270,Pharyngitis,0,1
+1271,Philter,0,1
+1272,Philtre,0,1
+1273,Phlegm,1,1
+1274,Phlegmon,0,1
+1275,Phosphaturia,0,1
+1276,Photophobia,1,1
+1277,Phthiriasis,0,1
+1278,Phthisis,0,1
+1279,Phymata,0,1
+1280,Physic,0,1
+1281,Pilatory,0,1
+1282,Piles,0,1
+1283,Pill,0,1
+1284,Pimple,0,1
+1285,Pinkeye,0,1
+1286,Pinworms,0,1
+1287,Piscicide,0,1
+1288,Piscifuge,0,1
+1289,Placenta,0,1
+1290,Plague,0,1
+1291,Plethora,0,1
+1292,Pleurisy,1,1
+1293,Pleuritis,0,1
+1294,Pneumonia,1,1
+1295,Pocks,0,1
+1296,Poison,0,1
+1297,Poison (Fatality),0,1
+1298,Poison(Arrow),0,1
+1299,Poison(Chicken),0,1
+1300,Poison(Crab),0,1
+1301,Poison(Criminal),0,1
+1302,Poison(Snake),0,1
+1303,Poison-Ivy,0,1
+1304,Pole,0,1
+1305,Polio,0,1
+1306,Polyneuritis,0,1
+1307,Polyp,0,1
+1308,Polyp(Abdomen),0,1
+1309,Polyp(Bladder),0,1
+1310,Polyp(Intestine),0,1
+1311,Polyp(Nose),0,1
+1312,Polyp(Stomach),0,1
+1313,Polyp(Uterus),0,1
+1314,Polypus,0,1
+1315,Polyuria,1,1
+1316,Popison,0,1
+1317,Porridge,0,1
+1318,Porrigo,0,1
+1319,Post-Natal,0,1
+1320,Post-Partum,0,1
+1321,Potherb,0,1
+1322,Poultice,0,1
+1323,Pox,0,1
+1324,Pregnancy,0,1
+1325,Preservative,0,1
+1326,Pressor,0,1
+1327,Preventitive,0,1
+1328,Preventitive(Abortifacient),0,1
+1329,Preventitive(Abscess),0,1
+1330,Preventitive(Aging),0,1
+1331,Preventitive(Alopecia),0,1
+1332,Preventitive(Bite(Snake)),0,1
+1333,Preventitive(Boil),0,1
+1334,Preventitive(Cancer),0,1
+1335,Preventitive(Chafe),0,1
+1336,Preventitive(Cold),0,1
+1337,Preventitive(Convulsion),0,1
+1338,Preventitive(Death),0,1
+1339,Preventitive(Disease),0,1
+1340,Preventitive(Dyspepsia),0,1
+1341,Preventitive(Elephantiasis),0,1
+1342,Preventitive(Epidemic),0,1
+1343,Preventitive(Famine),0,1
+1344,Preventitive(Fever),0,1
+1345,Preventitive(Goiter),0,1
+1346,Preventitive(Gray-Hair),0,1
+1347,Preventitive(Heat-Rash),0,1
+1348,Preventitive(Hippomane),0,1
+1349,Preventitive(Hunger),0,1
+1350,Preventitive(Malaria),0,1
+1351,Preventitive(Miasm),0,1
+1352,Preventitive(Miscarriage),0,1
+1353,Preventitive(Nausea),0,1
+1354,Preventitive(Parotitis),0,1
+1355,Preventitive(Pile),0,1
+1356,Preventitive(Poison),0,1
+1357,Preventitive(Rheumatism),0,1
+1358,Preventitive(Sting(Bee)),0,1
+1359,Preventitive(Sunstroke),0,1
+1360,Preventitive(Syphilis),0,1
+1361,Prickly heat,0,1
+1362,Prickly-Heat,0,1
+1363,Prickly-heat,0,1
+1364,Proctitis,0,1
+1365,Proctosis,0,1
+1366,Prolapse,0,1
+1367,Prolapse(Anus),0,1
+1368,Prolapse(Uterus),0,1
+1369,Prophylaxis,0,1
+1370,Prostate,0,1
+1371,Prostatitis,0,1
+1372,Prostration,0,1
+1373,Proteolytic,0,1
+1374,Protisticide,0,1
+1375,Prurigo,0,1
+1376,Prurigo Senilis,0,1
+1377,Pruritis,0,1
+1378,Psiatica,0,1
+1379,Psoriasis,0,1
+1380,Psychedelic,0,1
+1381,Psychiatry,0,1
+1382,Psychomimetic,0,1
+1383,Psychosis,1,1
+1384,Psychotherapy,0,1
+1385,Psychotropic,0,1
+1386,Pterygium,0,1
+1387,Ptomaine,0,1
+1388,Ptyalism,0,1
+1389,Puberty,0,1
+1390,Puerperia,0,1
+1391,Puerperium,0,1
+1392,Pulicide,0,1
+1393,Pulmonary,0,1
+1394,Pulmonary-Tuberculosis,0,1
+1395,Pulmonosis,0,1
+1396,Pungency,0,1
+1397,Purgative,0,1
+1398,Purgative(Horse),0,1
+1399,Pustule,0,1
+1400,Pustules,0,1
+1401,Pyelitis,0,1
+1402,Pyelonephritis,1,1
+1403,Pyorrhea,0,1
+1404,Pyrorrhea,0,1
+1405,Pyrorrhea?,0,1
+1406,Pyrosis,0,1
+1407,Pyuria,0,1
+1408,Quackery,0,1
+1409,Quinsy,0,1
+1410,Rabies,0,1
+1411,Radiculagia,0,1
+1412,Rain-Making,0,1
+1413,Ranicide,0,1
+1414,Ranula,0,1
+1415,Rash,0,1
+1416,Raticide,0,1
+1417,Reconstructive,0,1
+1418,Rectitis,0,1
+1419,Rectocele,0,1
+1420,Rectum,0,1
+1421,Refrigerant,0,1
+1422,Regeneration,0,1
+1423,Regenerative,0,1
+1424,Rejuvenation,0,1
+1425,Relaxant,0,1
+1426,Religion,0,1
+1427,Renal,0,1
+1428,Renitis,0,1
+1429,Rennet,0,1
+1430,Renosis,0,1
+1431,Repellant,0,1
+1432,Repellant(Bat),0,1
+1433,Repellant(Flea),0,1
+1434,Repellant(Leech),0,1
+1435,Repellant(Mole),0,1
+1436,Repellant(Moth),0,1
+1437,Repellant(Rat),0,1
+1438,Repellant(Shark),0,1
+1439,Repellant(Snake),0,1
+1440,Repellant(Tick),0,1
+1441,Repellant(Witch),0,1
+1442,Resolvent,0,1
+1443,Respiration,0,1
+1444,Respiratory,0,1
+1445,Respiratory Depressant,0,1
+1446,Restlessness,0,1
+1447,Restorative,0,1
+1448,Retinitis,0,1
+1449,Revulsive,0,1
+1450,Rhachitis,0,1
+1451,Rhagades,0,1
+1452,Rhematism,0,1
+1453,Rheum,1,1
+1454,Rheumatic,0,1
+1455,Rheumatism,0,1
+1456,Rheumatitis,0,1
+1457,Rhinitis,1,1
+1458,Rhinosis,0,1
+1459,Rib,0,1
+1460,Rickets,0,1
+1461,Rigerant,0,1
+1462,Rinderpest,0,1
+1463,Ringworm,0,1
+1464,Rodent-Ulcer,0,1
+1465,Rodenticide,0,1
+1466,Root,0,1
+1467,Rootcanal,0,1
+1468,Rope,0,1
+1469,Roundworms,0,1
+1470,Rubefacient,0,1
+1471,Ruise,0,1
+1472,Rupture,0,1
+1473,Saccharomycose,0,1
+1474,Saddle-Sore,0,1
+1475,Salad,0,1
+1476,Salivation,0,1
+1477,Salt,0,1
+1478,Salve,0,1
+1479,Sapraemia,0,1
+1480,Satyriasis,0,1
+1481,Sauna,0,1
+1482,Scabies,0,1
+1483,Scald,0,1
+1484,Scalp,0,1
+1485,Scarlatina,0,1
+1486,Scarlet-Fever,0,1
+1487,Schistosomiasis,0,1
+1488,Schizonticide,0,1
+1489,Sciatica,1,1
+1490,Sclerosis,0,1
+1491,Sclerosis(Abdomen),0,1
+1492,Sclerosis(Belly),0,1
+1493,Sclerosis(Breast),0,1
+1494,Sclerosis(Cervix),0,1
+1495,Sclerosis(Cornea),0,1
+1496,Sclerosis(Eyelid),0,1
+1497,Sclerosis(Glands),0,1
+1498,Sclerosis(Heel),0,1
+1499,Sclerosis(Limb),0,1
+1500,Sclerosis(Liver),0,1
+1501,Sclerosis(Prostate),0,1
+1502,Sclerosis(Pylorus),0,1
+1503,Sclerosis(Skin),0,1
+1504,Sclerosis(Spleen),0,1
+1505,Sclerosis(Stomach),0,1
+1506,Sclerosis(Testicle),0,1
+1507,Sclerosis(Uterus),0,1
+1508,Scorpion,0,1
+1509,Repellant(Scorpion),0,1
+1510,Sting(Scorpion),0,1
+1511,Scratch,0,1
+1512,Scrofula,0,1
+1513,Scrotosis,0,1
+1514,Scrotum,0,1
+1515,Scurf,0,1
+1516,Scurfiness,0,1
+1517,Scurvy,0,1
+1518,Seasickness,0,1
+1519,Seborrhea,0,1
+1520,Sedative,0,1
+1521,Semen,0,1
+1522,Senescence,0,1
+1523,Senility,0,1
+1524,Septicemia,0,1
+1525,Sex,0,1
+1526,Shampoo,0,1
+1527,Shigellosis,0,1
+1528,Shingles,0,1
+1529,Shock,0,1
+1530,Shortwindedness,0,1
+1531,Shoulder,0,1
+1532,Sialogogue,0,1
+1533,Side,0,1
+1534,Sight,0,1
+1535,Sinew,0,1
+1536,Sinus,0,1
+1537,Sinusitis,1,1
+1538,Skin,0,1
+1539,Skin(Pig),0,1
+1540,Skin diseases,0,1
+1541,Skin lotion,0,1
+1542,Skin stimulant,0,1
+1543,Sleeping sickness,0,1
+1544,Slow-Pulse,0,1
+1545,Smallpox,0,1
+1546,Smudge,0,1
+1547,Snuff,0,1
+1548,Soap,0,1
+1549,Solvent,0,1
+1550,Stomachic,0,1
+1551,Soporific,0,1
+1552,Sore,0,1
+1553,Sore(Throat),0,1
+1554,Sore(Eye),0,1
+1555,Sore(Foot),0,1
+1556,Sore(Lip),0,1
+1557,Sore(Neck),0,1
+1558,Soreness,0,1
+1559,Sorethroat?,0,1
+1560,Spasm,0,1
+1561,Spasmogenic,0,1
+1562,Spasmolytic,0,1
+1563,Splenomegaly,1,1
+1564,Spermatopoietic,0,1
+1565,Spermatorrhea,0,1
+1566,Spice,0,1
+1567,Spiderlick,0,1
+1568,Spine,0,1
+1569,Spleen,0,1
+1570,Splenitis,0,1
+1571,Splenosis,0,1
+1572,Splinter,0,1
+1573,Spot,0,1
+1574,Sprain,0,1
+1575,Sprue,0,1
+1576,Stasis,0,1
+1577,Steam-Bath,0,1
+1578,Sterilizant,0,1
+1579,Sterility,0,1
+1580,Sterility(Female),0,1
+1581,Sterilizant(Male),0,1
+1582,Sternutatory,0,1
+1583,Stiff-Neck,0,1
+1584,Stiffness,0,1
+1585,Stimulant,0,1
+1586,Stimulant(Cardio),0,1
+1587,Stimulant(Hepatic),0,1
+1588,Sting,0,1
+1589,Sting(Bee),0,1
+1590,Sting(Insect),0,1
+1591,Sting(Wasp),0,1
+1592,Stingray,0,1
+1593,Stitch,0,1
+1594,Stomach,0,1
+1595,Stomatitis,0,1
+1596,Stomatosis,0,1
+1597,Stone,0,1
+1598,Strabismus,1,1
+1599,Strain,0,1
+1600,Strangury,0,1
+1601,Strength,0,1
+1602,Stress,0,1
+1603,Stricture,0,1
+1604,Stroke,1,1
+1605,Stroke(Heat),0,1
+1606,Struma,0,1
+1607,Stupefacient,0,1
+1608,Stupefaction,0,1
+1609,Sty,0,1
+1610,Styptic,0,1
+1611,Sudamina,0,1
+1612,Sudorific,0,1
+1613,Sugar,0,1
+1614,Suicide,0,1
+1615,Sulfanilimide,0,1
+1616,Sunburn,0,1
+1617,Sunstroke,0,1
+1618,Suppository,0,1
+1619,Suppuration,0,1
+1620,Suppurative,0,1
+1621,Surgical-Dressing,0,1
+1622,Suriculture,0,1
+1623,Sweat,0,1
+1624,Sweating,0,1
+1625,Sweetener,0,1
+1626,Swelling,1,1
+1627,Swelling(Mammary),0,1
+1628,Sympathomimetic,0,1
+1629,Syncope,1,1
+1630,Synergist,0,1
+1631,Synergist (Narcotic),0,1
+1632,Syphilis,0,1
+1633,Syphilis(1),0,1
+1634,Syphilis(2),0,1
+1635,Syphilis(3),0,1
+1636,Syphilis(Secondary),0,1
+1637,Tabes,0,1
+1638,Tabes-Mesenterica,0,1
+1639,Tachycardia,1,1
+1640,Taenicide,0,1
+1641,Taenifuge,0,1
+1642,Tanning,0,1
+1643,Tapeworm,0,1
+1644,Tattoo,0,1
+1645,Tea,0,1
+1646,Teat,0,1
+1647,Teeth,0,1
+1648,Teething,0,1
+1649,Telangiectasia,1,1
+1650,Tenderizer,0,1
+1651,Tendon,0,1
+1652,Tendonitis,0,1
+1653,Tenesmus,0,1
+1654,Tenifuge,0,1
+1655,Tension,0,1
+1656,Teredicide,0,1
+1657,Termiticide,0,1
+1658,Tes,0,1
+1659,Testicle,0,1
+1660,Tetanus,0,1
+1661,Tetters,0,1
+1662,Thatch,0,1
+1663,Thigh,0,1
+1664,Thirst,0,1
+1665,Thorax,0,1
+1666,Thorn,0,1
+1667,Throat,0,1
+1668,Thrombosis,0,1
+1669,Thrush,0,1
+1670,Thyroid,0,1
+1671,Thyroiditis,0,1
+1672,Repellant(Tiger),0,1
+1673,Tincture,0,1
+1674,Tinder,0,1
+1675,Tinea,0,1
+1676,Tinea Capitis,0,1
+1677,Tinnitus,1,1
+1678,Tinnitus?,0,1
+1679,Tobacco,0,1
+1680,Toilet-Paper,0,1
+1681,Tongue,0,1
+1682,Tonic,0,1
+1683,Tonsillitis,1,1
+1684,Tonsillitis?,0,1
+1685,Tooth,0,1
+1686,Ache(Tooth),0,1
+1687,Toothblack,0,1
+1688,Toothhpaste,0,1
+1689,Toothstick,0,1
+1690,Toothwhitener,0,1
+1691,Toxemia,0,1
+1692,Toxic,0,1
+1693,Trachalgia,0,1
+1694,Trachea,0,1
+1695,Trachitis,0,1
+1696,Trachoma,0,1
+1697,Tranquilizer,0,1
+1698,Trauma,0,1
+1699,Tremor,1,1
+1700,Tremors,0,1
+1701,Trichomoniasis,0,1
+1702,Trypanosomiasis,0,1
+1703,Tubercle,0,1
+1704,Tumor,1,1
+1705,Tumor(Breast),0,1
+1706,Tumor(Abdomen),0,1
+1707,Tumor(Anus),0,1
+1708,Tumor(Arm),0,1
+1709,Tumor(Armpit),0,1
+1710,Tumor(Bladder),0,1
+1711,Tumor(Diaphragm),0,1
+1712,Tumor(Ear),0,1
+1713,Tumor(Eye),0,1
+1714,Tumor(Eyelid),0,1
+1715,Tumor(Fauces),0,1
+1716,Tumor(Feet),0,1
+1717,Tumor(Finger),0,1
+1718,Tumor(Foot),0,1
+1719,Tumor(Ganglia),0,1
+1720,Tumor(Genital),0,1
+1721,Tumor(Glands),0,1
+1722,Tumor(Groin),0,1
+1723,Tumor(Gum),0,1
+1724,Tumor(Heart),0,1
+1725,Tumor(Intestine),0,1
+1726,Tumor(Joint),0,1
+1727,Tumor(Lachrymae),0,1
+1728,Tumor(Larynx),0,1
+1729,Tumor(Leg),0,1
+1730,Tumor(Limb),0,1
+1731,Tumor(Liver),0,1
+1732,Tumor(Lung),0,1
+1733,Tumor(Lymphatic),0,1
+1734,Tumor(Neck),0,1
+1735,Tumor(Nose),0,1
+1736,Tumor(Parotid),0,1
+1737,Tumor(Penis),0,1
+1738,Tumor(Pituitary),0,1
+1739,Tumor(Prostate),0,1
+1740,Tumor(Rectum),0,1
+1741,Tumor(Scrotum),0,1
+1742,Tumor(Sinew),0,1
+1743,Tumor(Skin),0,1
+1744,Tumor(Spleen),0,1
+1745,Tumor(Stomach),0,1
+1746,Tumor(Testicle),0,1
+1747,Tumor(Thigh),0,1
+1748,Tumor(Throat),0,1
+1749,Tumor(Thyroid),0,1
+1750,Tumor(Tonsil),0,1
+1751,Tumor(Umbilicus),0,1
+1752,Tumor(Uterus),0,1
+1753,Tumor(Uvula),0,1
+1754,Tumor(Vagina),0,1
+1755,Tumor(Viscera),0,1
+1756,Tumor(Womb),0,1
+1757,Twine,0,1
+1758,Tympanitis,0,1
+1759,Typhoid,0,1
+1760,Typhus,0,1
+1761,Typhus (Typhoid),0,1
+1762,Udorific,0,1
+1763,Ugh,0,1
+1764,Ulcer,0,1
+1765,Ulcer?,0,1
+1766,Ulnerary,0,1
+1767,Umbilicus,0,1
+1768,Unconsciousness,1,1
+1769,Underweight,1,1
+1770,Uneasiness,0,1
+1771,Unguent,0,1
+1772,Uremia,0,1
+1773,Urethra,0,1
+1774,Urethritis,1,1
+1775,Urinary,0,1
+1776,Urinary-antiseptic,0,1
+1777,Urogenital,0,1
+1778,Urticaria,0,1
+1779,Urtication,0,1
+1780,Uterine,0,1
+1781,Uterine Organs,0,1
+1782,Uterotonic,0,1
+1783,Uteritis,0,1
+1784,Uteromegaly,0,1
+1785,Uterorrhagia,0,1
+1786,Uterosedative,0,1
+1787,Uterosis,0,1
+1788,Uterus,0,1
+1789,Uvulitis,0,1
+1790,Uzarin,0,1
+1791,Vagina,0,1
+1792,Vaginamegaly,0,1
+1793,Vaginismus,0,1
+1794,Vaginitis,1,1
+1795,Varices,0,1
+1796,Varicosity,0,1
+1797,Varicose Veins,0,1
+1798,Variola,0,1
+1799,Vasoconstrictor,0,1
+1800,Vasodilator,0,1
+1801,Vegetable,0,1
+1802,Vein,0,1
+1803,Venereal,0,1
+1804,Vermicide,0,1
+1805,Vermifuge,0,1
+1806,Vermifuge(Cattle),0,1
+1807,Vermifuge?,0,1
+1808,Vermin,0,1
+1809,Vertigo,1,1
+1810,Vesicant,0,1
+1811,Vinegar,0,1
+1812,Viricide,0,1
+1813,Virility,0,1
+1814,Viristat,0,1
+1815,Viscera,0,1
+1816,Vision,0,1
+1817,Vitality,0,1
+1818,Vitiligo,0,1
+1819,Voice,0,1
+1820,Vulnerary,0,1
+1821,Vulneric,0,1
+1822,Vulvitis,0,1
+1823,Waist,0,1
+1824,Walking-Stick,0,1
+1825,Wart,1,1
+1826,Wart(Eyelid),0,1
+1827,Wart(Uterus),0,1
+1828,Waspsting,0,1
+1829,Water,0,1
+1830,Water vine,0,1
+1831,Watervine,0,1
+1832,Weak-Knee,0,1
+1833,Weakness,1,1
+1834,Weaning,0,1
+1835,Wen,0,1
+1836,Wet-Dream,0,1
+1837,Wheeze,1,1
+1838,Whitlow,0,1
+1839,Whooping-Cough,0,1
+1840,Wine-Nose,0,1
+1841,Witchcraft,0,1
+1842,Witchhazel,0,1
+1843,Womb,0,1
+1844,Worms,0,1
+1845,Worry,0,1
+1846,Wound,0,1
+1847,Wrist,0,1
+1848,Xlbuminuria,0,1
+1849,Yaws,0,1
+1850,Yaws (Preventive),0,1
+1851,Yellow Fever,0,1
+1852,Iran,0,1
+1853,Ankylostomiasis,0,1
+1854,Sarcoma,0,1
+1855,Carcinoma(Mouth),0,1
+1856,Stupor,0,1
+1857,Gastric,0,1
+1858,Fissure,0,1
+1859,Scofula,0,1
+1860,Nostril,0,1
+1861,Collynum,0,1
+1862,Cardiostimulant,0,1
+1863,Dermatitogenic,0,1
+1864,Pyogenes,0,1
+1865,Phototoxic,0,1
+1866,Fluoralbus,0,1
+1867,Tuberculosia,0,1
+1868,Astigmia,0,1
+1869,Melaena,0,1
+1870,Wood,0,1
+1871,Polypus(Nose),0,1
+1872,Calefacient,0,1
+1873,Tourniquet,0,1
+1874,Nephrocirrhosis,0,1
+1875,Musculotropic,0,1
+1876,Faver,0,1
+1877,Orechtites,0,1
+1878,Antidote(Strychnine),0,1
+1879,Cancer(Vagina),0,1
+1880,Carcinoma(Breast),0,1
+1881,Antidote(Brimstone),0,1
+1882,Leishmanniasis,0,1
+1883,Nursing,0,1
+1884,Wart(Vagina),0,1
+1885,Preventitive(Ptomaine),0,1
+1886,Urethrum,0,1
+1887,Pthisis,0,1
+1888,Hypermicturition,0,1
+1889,Kidneystone?,0,1
+1890,Preventative(Gray-Hair),0,1
+1891,Tumor(Mouth),0,1
+1892,Exorcism,0,1
+1893,Lymphangitis,0,1
+1894,Endorrhagia,0,1
+1895,Opium-substitute,0,1
+1896,Tera,0,1
+1897,Pharynx,0,1
+1898,Polyps,0,1
+1899,Diathesis,0,1
+1900,Preventitive(Measless),0,1
+1901,Suppository-Base,0,1
+1902,Tumor(Digestive),0,1
+1903,Pockmark,0,1
+1904,Bee-sting,0,1
+1905,Cholengitis,0,1
+1906,Meloncholia,0,1
+1907,Preventitive(Rhus),0,1
+1908,Antidote(Bromine),0,1
+1909,Tumor(Hand),0,1
+1910,Fever(Tertian),0,1
+1911,Antidote(Copper),0,1
+1912,Hemopoietic,0,1
+1913,Emulsion,0,1
+1914,Dental,0,1
+1915,Coronary Pectoris,0,1
+1916,Addiction (Opium),0,1
+1917,/,0,1
+1918,Asthma (Hay),0,1
+1919,Cold Feet,0,1
+1920,Myasthenia Gravis,0,1
+1921,Preventative (Gray Hair),0,1
+1922,Dreams,0,1
+1923,Generative Organs,0,1
+1924,Tooth Preservative,0,1
+1925,Boiler Water,0,1
+1926,Threadworm,0,1
+1927,Onychiosis,0,1
+1928,Ache(Neck),0,1
+1929,Alopecia(Female),0,1
+1930,Anodyne?,0,1
+1931,Antiasthmatic,0,1
+1932,Antiblennorhagic,0,1
+1933,Anticonvulsive,0,1
+1934,Antidote(Laportea),0,1
+1935,Antidote(Lobster),0,1
+1936,Antidote(Metopium),0,1
+1937,Antidote(Narcotic),0,1
+1938,Antidote(Stonefish),0,1
+1939,Antidote(Tarantula),0,1
+1940,Antiscrofulous,0,1
+1941,Antisiphylitic,0,1
+1942,Antisuperofic,0,1
+1943,Aparturation,0,1
+1944,Aphrodisiac(Chinese),0,1
+1945,Apicide,0,1
+1946,Arthrosis,0,1
+1947,Ascarifuge,0,1
+1948,Attenuant,0,1
+1949,Broken-Bones,0,1
+1950,Bronchorrhea,0,1
+1951,Camphor Ingredient,0,1
+1952,Cancer(Skin)?,0,1
+1953,Cancer(Bowel),0,1
+1954,Cancer(Genital),0,1
+1955,Cancer(Lymphatic),0,1
+1956,Cancer(Spleen),0,1
+1957,Cancer(Womb),0,1
+1958,Cancer?,0,1
+1959,Capillary-Tonic,0,1
+1960,Cardioactive,0,1
+1961,Chancroid,0,1
+1962,Cheloid,0,1
+1963,Chickenpox?,0,1
+1964,Cleansing,0,1
+1965,Convulsion(Pediatric),0,1
+1966,Dildoe,0,1
+1967,Dyslactea,0,1
+1968,Dysourmilk,0,1
+1969,Eel lure,0,1
+1970,Encephalomyelitis,0,1
+1971,Erection,0,1
+1972,Euthanasia,0,1
+1973,Exudation,0,1
+1974,Sore(Festered),0,1
+1975,Fever(Preventive),0,1
+1976,Filariasissis,0,1
+1977,Fish(Bait),0,1
+1978,Flabbiness,0,1
+1979,Fontanelleles,0,1
+1980,Fortifcant,0,1
+1981,Framboesia,0,1
+1982,Freckles,0,1
+1983,Fumigation,0,1
+1984,Fumitory (Opium substitute),0,1
+1985,Gastric-Irritation,0,1
+1986,Gastric-Ulcer,0,1
+1987,Genito-Urinary,0,1
+1988,Granulation,0,1
+1989,Gray hair,0,1
+1990,Hair-Growth,0,1
+1991,Heavy legs,0,1
+1992,Hematocoele,0,1
+1993,Herbistat,0,1
+1994,Hide,0,1
+1995,Home-Remedy,0,1
+1996,Hypertrophy,1,1
+1997,Hypoglycemia,1,1
+1998,Illness,0,1
+1999,Indicator,0,1
+2000,Intermittent Fever,0,1
+2001,Invalidity,0,1
+2002,Leprome,0,1
+2003,Leukopenia,0,1
+2004,Levitation,0,1
+2005,Love-Charm,0,1
+2006,Maturant,0,1
+2007,Meconium,0,1
+2008,Melanosis,0,1
+2009,Mesenteritis,0,1
+2010,Monoplegia,0,1
+2011,Mucus-Mover,0,1
+2012,Music,0,1
+2013,Nalaria,0,1
+2014,Nematode,0,1
+2015,Neurodermatitis,0,1
+2016,Nypnotic,0,1
+2017,Oilseed,0,1
+2018,Onic,0,1
+2019,Ornamental,0,1
+2020,Overindulgence,0,1
+2021,Oxyuris,0,1
+2022,Papillary-Dilatation,0,1
+2023,Pian,0,1
+2024,Pill-Coating,0,1
+2025,Pityriasis,0,1
+2026,Poison(Dog),0,1
+2027,Poison?,0,1
+2028,Preserve,0,1
+2029,Preventitive(Mephitis),0,1
+2030,Preventitive(Migraine),0,1
+2031,Preventitive(Mumps),0,1
+2032,Preventitive(Pestilence),0,1
+2033,Preventitive(Scar),0,1
+2034,Pulmonary-Catarrh,0,1
+2035,Purpura,1,1
+2036,Rachitis,0,1
+2037,Repellant(Crocodile),0,1
+2038,Restoration,0,1
+2039,Rhinosinusitis,0,1
+2040,Rubella,0,1
+2041,Scleroderma,0,1
+2042,Sclerosis(Anus),0,1
+2043,Sclerosis(Viscera),0,1
+2044,Scrufy,0,1
+2045,Silicosis,0,1
+2046,Singultus,0,1
+2047,Slurring,0,1
+2048,Smell,0,1
+2049,Somnolency,0,1
+2050,Spermatogenic,0,1
+2051,Spermicide,0,1
+2052,Sponge,0,1
+2053,Stammering,0,1
+2054,Sterility(Male),0,1
+2055,Swamp-Fever,0,1
+2056,Sweat-Bath,0,1
+2057,Tantrum,0,1
+2058,Termitifuge,0,1
+2059,Thrombosis(Venous),0,1
+2060,Thunder,0,1
+2061,Tick,0,1
+2062,Toe,0,1
+2063,Tonic (for pubic girls),0,1
+2064,Toothbrush,0,1
+2065,Tuberculosic Ulcer,0,1
+2066,Tumor(Belly),0,1
+2067,Tumor(Face),0,1
+2068,Tumor(Head),0,1
+2069,Tumor(India),0,1
+2070,Umigant,0,1
+2071,Urethrorrhagia,0,1
+2072,Urticant,0,1
+2073,Uteralgia,0,1
+2074,Uterine-Colic,0,1
+2075,Uteroconstriction,0,1
+2076,Vitus,0,1
+2077,Vomiting,1,1
+2078,Wasting,0,1
+2079,Weak-Pulse,0,1
+2080,Weariness,0,1
+2081,Myofibroma,0,1
+2082,Ache(Eye),0,1
+2083,Scalp-Tonic,0,1
+2084,Ma,0,1
+2085,Washing,0,1
+2086,Intestinal worms,0,1
+2087,Black-Leg,0,1
+2088,Burning-feet,0,1
+2089,Posthume,0,1
+2090,Cold sore,0,1
+2091,Menthol,0,1
+2092,Ovocide,0,1
+2093,Adenocarcinoma,0,1
+2094,Preventitive(Hiccup),0,1
+2095,Antidiuretic,0,1
+2096,Decubitus,0,1
+2097,Abortive?,0,1
+2098,Ochititis,0,1
+2099,Lymphitis,0,1
+2100,Ketonuria,0,1
+2101,Hallucinogenic,0,1
+2102,Enterostenosis,0,1
+2103,Fontanellele,0,1
+2104,Weight-Loss,0,1
+2105,Muscle(Uterus),0,1
+2106,Asthenopia,0,1
+2107,Fishbait,0,1
+2108,Intoxicant(Bee),0,1
+2109,Abdominal obesity,1,0
+2110,Abdominal pain,1,0
+2111,Actinic keratosis,1,0
+2112,Acute bronchitis,1,0
+2113,Adrenal crisis,1,0
+2114,Ageusia,1,0
+2115,Allergic conjunctivitis,1,0
+2116,Anal fissure,1,0
+2117,Anaphylaxis,1,0
+2118,Angina pectoris,1,0
+2119,Angioedema,1,0
+2120,Angular cheilitis,1,0
+2121,Anosmia,1,0
+2122,Aphasia,1,0
+2123,Aphonia,1,0
+2124,Apnea,1,0
+2125,Asperger syndrome,1,0
+2126,Asphyxia,1,0
+2127,Astigmatism,1,0
+2128,Attention deficit hyperactivity disorder,1,0
+2129,Auditory hallucination,1,0
+2130,Autoimmune disease,1,0
+2131,Avoidant personality disorder,1,0
+2132,Back pain,1,0
+2133,Bacterial vaginosis,1,0
+2134,Balance disorder,1,0
+2135,Beau's lines,1,0
+2136,Bell's palsy,1,0
+2137,Biliary colic,1,0
+2138,Binge eating,1,0
+2139,Bleeding,1,0
+2140,Bleeding on probing,1,0
+2141,Blepharospasm,1,0
+2142,Bloating,1,0
+2143,Blood in stool,1,0
+2144,Blurred vision,1,0
+2145,Blushing,1,0
+2146,Bone fracture,1,0
+2147,Bone tumor,1,0
+2148,Bowel obstruction,1,0
+2149,Bradycardia,1,0
+2150,Braxton hicks contractions,1,0
+2151,Breakthrough bleeding,1,0
+2152,Breast pain,1,0
+2153,Bruxism,1,0
+2154,Burning chest pain,1,0
+2155,Burning mouth syndrome,1,0
+2156,Candidiasis,1,0
+2157,Canker sore,1,0
+2158,Cardiac arrest,1,0
+2159,Carpal tunnel syndrome,1,0
+2160,Cataplexy,1,0
+2161,Cheilitis,1,0
+2162,Chest pain,1,0
+2163,Chronic pain,1,0
+2164,Cleft lip and cleft palate,1,0
+2165,Clouding of consciousness,1,0
+2166,Cluster headache,1,0
+2167,Common cold,1,0
+2168,Compulsive behavior,1,0
+2169,Compulsive hoarding,1,0
+2170,Confusion,1,0
+2171,Congenital heart defect,1,0
+2172,Crackles,1,0
+2173,Crepitus,1,0
+2174,Cyanosis,1,0
+2175,Delayed onset muscle soreness,1,0
+2176,Dentin hypersensitivity,1,0
+2177,Depersonalization,1,0
+2178,Desquamation,1,0
+2179,Developmental disability,1,0
+2180,Diabetic ketoacidosis,1,0
+2181,Dry eye syndrome,1,0
+2182,Dysautonomia,1,0
+2183,Dysgeusia,1,0
+2184,Dysphoria,1,0
+2185,Dystonia,1,0
+2186,Ear pain,1,0
+2187,Encephalopathy,1,0
+2188,Epidermoid cyst,1,0
+2189,Erectile dysfunction,1,0
+2190,Erythema chronicum migrans,1,0
+2191,Esophagitis,1,0
+2192,Excessive daytime sleepiness,1,0
+2193,Eye pain,1,0
+2194,Eye strain,1,0
+2195,Facial nerve paralysis,1,0
+2196,Facial swelling,1,0
+2197,Fasciculation,1,0
+2198,Fatty liver disease,1,0
+2199,Fecal incontinence,1,0
+2200,Fibrillation,1,0
+2201,Fibrocystic breast changes,1,0
+2202,Fibromyalgia,1,0
+2203,Floater,1,0
+2204,Focal seizure,1,0
+2205,Folate deficiency,1,0
+2206,Food craving,1,0
+2207,Food intolerance,1,0
+2208,Frequent urination,1,0
+2209,Gastroesophageal reflux disease,1,0
+2210,Gastroparesis,1,0
+2211,Generalized anxiety disorder,1,0
+2212,Generalized tonic–clonic seizure,1,0
+2213,Genital wart,1,0
+2214,Gingival recession,1,0
+2215,Globus pharyngis,1,0
+2216,Goitre,1,0
+2217,Grandiosity,1,0
+2218,Granuloma,1,0
+2219,Guilt,1,0
+2220,Hair loss,1,0
+2221,Hay fever,1,0
+2222,Headache,1,0
+2223,Heart arrhythmia,1,0
+2224,Heart murmur,1,0
+2225,Hemolysis,1,0
+2226,Hepatic encephalopathy,1,0
+2227,Hepatotoxicity,1,0
+2228,Hip pain,1,0
+2229,Hot flash,1,0
+2230,Hydrocephalus,1,0
+2231,Hypercalcaemia,1,0
+2232,Hypercapnia,1,0
+2233,Hyperemesis gravidarum,1,0
+2234,Hyperkalemia,1,0
+2235,Hyperlipidemia,1,0
+2236,Hypermobility,1,0
+2237,Hyperpigmentation,1,0
+2238,Hypersomnia,1,0
+2239,Hyperthermia,1,0
+2240,Hyperthyroidism,1,0
+2241,Hypertriglyceridemia,1,0
+2242,Hyperventilation,1,0
+2243,Hypocalcaemia,1,0
+2244,Hypochondriasis,1,0
+2245,Hypokalemia,1,0
+2246,Hypomania,1,0
+2247,Hyponatremia,1,0
+2248,Hypothyroidism,1,0
+2249,Hypoxemia,1,0
+2250,Hypoxia,1,0
+2251,Implantation bleeding,1,0
+2252,Impulsivity,1,0
+2253,Inflammatory bowel disease,1,0
+2254,Ingrown hair,1,0
+2255,Insulin resistance,1,0
+2256,Intermenstrual bleeding,1,0
+2257,Intracranial pressure,1,0
+2258,Iron deficiency,1,0
+2259,Irregular menstruation,1,0
+2260,Kidney failure,1,0
+2261,Kidney stone,1,0
+2262,Knee pain,1,0
+2263,Kyphosis,1,0
+2264,Lactose intolerance,1,0
+2265,Leg cramps,1,0
+2266,Lesion,1,0
+2267,Lightheadedness,1,0
+2268,Low back pain,1,0
+2269,Low-grade fever,1,0
+2270,Lymphedema,1,0
+2271,Major depressive disorder,1,0
+2272,Malabsorption,1,0
+2273,Male infertility,1,0
+2274,Manic disorder,1,0
+2275,Melasma,1,0
+2276,Middle back pain,1,0
+2277,Milium,1,0
+2278,Mitral insufficiency,1,0
+2279,Mood disorder,1,0
+2280,Mood swing,1,0
+2281,Morning sickness,1,0
+2282,Motion sickness,1,0
+2283,Mouth ulcer,1,0
+2284,Muscle atrophy,1,0
+2285,Muscle weakness,1,0
+2286,Mydriasis,1,0
+2287,Myocardial infarction,1,0
+2288,Myoclonus,1,0
+2289,Nasal congestion,1,0
+2290,Nasal polyp,1,0
+2291,Neck mass,1,0
+2292,Neck pain,1,0
+2293,Neonatal jaundice,1,0
+2294,Nerve injury,1,0
+2295,Neutropenia,1,0
+2296,Night sweats,1,0
+2297,Night terror,1,0
+2298,Nocturnal enuresis,1,0
+2299,Nodule,1,0
+2300,Onychorrhexis,1,0
+2301,Oral candidiasis,1,0
+2302,Orthostatic hypotension,1,0
+2303,Osteopenia,1,0
+2304,Osteophyte,1,0
+2305,Osteoporosis,1,0
+2306,Otitis externa,1,0
+2307,Otitis media,1,0
+2308,Panic attack,1,0
+2309,Papule,1,0
+2310,Paranoia,1,0
+2311,Paresthesia,1,0
+2312,Pelvic inflammatory disease,1,0
+2313,Periodontal disease,1,0
+2314,Periorbital puffiness,1,0
+2315,Peripheral neuropathy,1,0
+2316,Petechia,1,0
+2317,Photodermatitis,1,0
+2318,Photopsia,1,0
+2319,Pleural effusion,1,0
+2320,Podalgia,1,0
+2321,Polycythemia,1,0
+2322,Polydipsia,1,0
+2323,Polyneuropathy,1,0
+2324,Poor posture,1,0
+2325,Post-nasal drip,1,0
+2326,Postural orthostatic tachycardia syndrome,1,0
+2327,Prediabetes,1,0
+2328,Proteinuria,1,0
+2329,Pruritus ani,1,0
+2330,Ptosis,1,0
+2331,Pulmonary edema,1,0
+2332,Pulmonary hypertension,1,0
+2333,Pus,1,0
+2334,Radiculopathy,1,0
+2335,Rectal pain,1,0
+2336,Rectal prolapse,1,0
+2337,Red eye,1,0
+2338,Renal colic,1,0
+2339,Restless legs syndrome,1,0
+2340,Rhinorrhea,1,0
+2341,Rosacea,1,0
+2342,Round ligament pain,1,0
+2343,Rumination,1,0
+2344,Scar,1,0
+2345,Scoliosis,1,0
+2346,Seborrheic dermatitis,1,0
+2347,Self-harm,1,0
+2348,Sensitivity to sound,1,0
+2349,Sexual dysfunction,1,0
+2350,Shallow breathing,1,0
+2351,Sharp pain,1,0
+2352,Shivering,1,0
+2353,Shortness of breath,1,0
+2354,Shyness,1,0
+2355,Skin condition,1,0
+2356,Skin rash,1,0
+2357,Skin tag,1,0
+2358,Skin ulcer,1,0
+2359,Sleep apnea,1,0
+2360,Sleep deprivation,1,0
+2361,Sleep disorder,1,0
+2362,Snoring,1,0
+2363,Sore throat,1,0
+2364,Spasticity,1,0
+2365,Sputum,1,0
+2366,Stomach rumble,1,0
+2367,Stretch marks,1,0
+2368,Stridor,1,0
+2369,Stuttering,1,0
+2370,Subdural hematoma,1,0
+2371,Suicidal ideation,1,0
+2372,Swollen feet,1,0
+2373,Swollen lymph nodes,1,0
+2374,Tachypnea,1,0
+2375,Tenderness,1,0
+2376,Testicular pain,1,0
+2377,Throat irritation,1,0
+2378,Thrombocytopenia,1,0
+2379,Thyroid nodule,1,0
+2380,Tic,1,0
+2381,Toothache,1,0
+2382,Trichoptilosis,1,0
+2383,Type 2 diabetes,1,0
+2384,Upper respiratory tract infection,1,0
+2385,Urinary incontinence,1,0
+2386,Urinary tract infection,1,0
+2387,Urinary urgency,1,0
+2388,Uterine contraction,1,0
+2389,Vaginal bleeding,1,0
+2390,Vaginal discharge,1,0
+2391,Varicose veins,1,0
+2392,Vasculitis,1,0
+2393,Ventricular fibrillation,1,0
+2394,Ventricular tachycardia,1,0
+2395,Viral pneumonia,1,0
+2396,Visual acuity,1,0
+2397,Water retention,1,0
+2398,Weight gain,1,0
+2399,Xeroderma,1,0
+2400,Xerostomia,1,0
+2401,Yawn,1,0
+2402,Hyperhidrosis,1,0
+2403,Pancreatitis,1,0
