@@ -31,6 +31,10 @@ ds/data/WCVP/.*
 ds/notebooks/.* 
 ds/src/.* 
 
+# python venv:
+
+ds/venv
+
 # python:
 
 __pycache__

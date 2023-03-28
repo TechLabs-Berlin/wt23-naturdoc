@@ -11,37 +11,43 @@ load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
 
-client = pymongo.MongoClient(MONGO_URI)
-
-def upload_remedies():
-    print("Connecting to remedies collection...")
-
+def update_remedies_collection():
+    client = pymongo.MongoClient(MONGO_URI)
     db = client.naturdoc
     collection = db.remedies
-    requesting = []
 
     with open(r"../output/remedies.json") as f:
-
         file_data = json.load(f)
 
     collection.insert_many(file_data)
+    print("Updated remedies collection.")
 
+    client.close()
 
-def upload_symptoms():
-    print("Connecting to symptoms collection...")
-
+def update_symptoms_collection():
+    client = pymongo.MongoClient(MONGO_URI)
     db = client.naturdoc
     collection = db.symptoms
-    requesting = []
 
     with open(r"../output/symptoms.json") as f:
-
         file_data = json.load(f)
 
     collection.insert_many(file_data)
+    print("Updated symptoms collection.")
 
-# upload_remedies()
+    client.close()
 
-# upload_symptoms()
-
-client.close()
+while True:
+    print("Update remedies (1) or symptoms (2)? Exit with q:")
+    choice = input()
+    if choice == "1":
+        update_remedies_collection()
+        break
+    elif choice == "2":
+        update_symptoms_collection()
+        break
+    elif choice == "q":
+        break
+    else:
+        print("Invalid input")
+        continue

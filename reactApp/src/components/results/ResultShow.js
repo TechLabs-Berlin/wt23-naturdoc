@@ -1,55 +1,66 @@
+import { Link } from 'react-router-dom';
+import RemedyRating from 'components/remedy/RemedyRating';
 import {
-  Card,
-  CardHeader,
-  Rating,
-  CardActionArea,
-  CardContent,
-  Avatar,
-} from "@mui/material";
-import MedicationLiquidRoundedIcon from "@mui/icons-material/MedicationLiquidRounded";
+    Card,
+    Box,
+    CardActionArea,
+    CardContent,
+    Typography,
+} from '@mui/material';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function ResultShow({ remedy }) {
-  return (
-    <>
-      <CardActionArea>
-        <Card
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            mb: 2,
-          }}
-        >
-          <CardHeader
-            sx={{
-              alignItems: "flex-start",
-            }}
-            avatar={
-              <Avatar
-                variant="rounded"
-                sx={{ width: 56, height: 56, bgcolor: "#61876E" }}
-                aria-label="remedy"
-              >
-                <MedicationLiquidRoundedIcon />
-              </Avatar>
-            }
-            // action={<IconButton aria-label="settings">ICON</IconButton>}
-            title={remedy.title}
-            titleTypographyProps={{ variant: "h5" }}
-            subheader={remedy.matching_symptoms}
-            subheaderTypographyProps={{
-              variant: "subtitle1",
-              color: "text.secondary",
-              component: "div",
-            }}
-          />
-          <CardContent sx={{ textAlign: "right" }}>
-            <Rating name="read-only" size="small" value={4} readOnly />
-            <br />4 (413)
-          </CardContent>
-        </Card>
-      </CardActionArea>
-    </>
-  );
+    return (
+        <>
+            <Card sx={{ my: 2 }} variant="resultCard">
+                <CardActionArea
+                    component={Link}
+                    to={`/remedies/${remedy._id}`}
+                    key={remedy._id}
+                >
+                    <CardContent
+                        sx={{ display: 'flex', justifyContent: 'flex-start' }}
+                    >
+                        {/* <RemedyIcon icon={remedy.icon} sx={{ width: 180 }} smallIcon /> */}
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                flexGrow: '1',
+                                pl: 2,
+                            }}
+                        >
+                            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                <Typography
+                                    component="div"
+                                    variant="remedyTitle"
+                                    sx={{ fontSize: '1rem' }}
+                                >
+                                    {remedy.remedyName}{' '}
+                                </Typography>
+                            </Box>
+                            <Box sx={{ flex: '1 0 auto' }}>
+                                <RemedyRating remedy={remedy} summary />
+
+                                <Typography sx={{ fontSize: '0.81rem' }}>
+                                    Recommended use for:
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    sx={{ fontWeight: '600' }}
+                                >
+                                    {remedy.symptomsMatched.join(', ')}
+                                </Typography>
+                            </Box>
+                        </Box>
+                        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                            <ArrowForwardIosIcon sx={{}} fontSize="large" />
+                        </Box>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+        </>
+    );
 }
 
 export default ResultShow;

@@ -1,30 +1,39 @@
 const mongoose = require('mongoose');
-const passportLocalMongoose = require('passport-local-mongoose')
 const Schema = mongoose.Schema;
 
-
-const MedicalSchema = new Schema({
-    remedy: String,
-    symptom: String,
-    description: String
-});
-
-module.exports = mongoose.model('Medical', MedicalSchema);
-
-
-
-//const RemediesSchema = new Schema({
-//    remedyName: String,  
-//    symptoms: Array,
-//    ratings: [
-//        {
-//            type: Schema.Types.ObjectId,
-//            ref: 'Ratings'
-//        }
-//    ],
-//    ratingAverage: Number,               
-//    totalNumberofRatings: Number
-//})
-//module.exports = mongoose.model('Remedies', RemediesSchema);
-
-
+const RemediesSchema = new Schema({
+    remedyId: mongoose.Schema.Types.ObjectId,
+    remedyName: String,
+    symptoms: Array,
+    ratings: [
+        {
+            _id: false,
+            userId: {
+                type: Schema.Types.ObjectId,
+                ref: 'User'
+            },
+            ratingValue: Number,
+            reviewDescription: String,
+            reviewName: String,
+            ratingId: {
+                type: Schema.Types.ObjectId,
+                ref: 'Rating'
+            },
+        }
+    ],
+    ratingAverage: Number,
+    totalNumberofRatings: Number,
+    symptomsMatched: Array,
+    medicinalUses: Array,
+    iconReference: String,
+    commonNames: Array,
+    treatmentClinical: String,
+    treatmentTraditional: String,
+    treatmentFolk: String,
+    contraindication: String,
+    warnings: String,
+    adverseEffects: String,
+    posology: String,
+    doctorAlert: Boolean,
+})
+module.exports = mongoose.model('Remedy', RemediesSchema);

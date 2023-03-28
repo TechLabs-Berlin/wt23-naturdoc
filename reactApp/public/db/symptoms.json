@@ -1,0 +1,8438 @@
+[
+  {
+    "symptomName": "Abcess",
+    "_id": 0
+  },
+  {
+    "symptomName": "Abdomen",
+    "_id": 1
+  },
+  {
+    "symptomName": "Abortifacient",
+    "_id": 2
+  },
+  {
+    "symptomName": "Abortive",
+    "_id": 4
+  },
+  {
+    "symptomName": "Abrasion",
+    "_id": 5
+  },
+  {
+    "symptomName": "Abscess",
+    "_id": 6
+  },
+  {
+    "symptomName": "Abscess(Breast)",
+    "_id": 7
+  },
+  {
+    "symptomName": "Absorbent",
+    "_id": 8
+  },
+  {
+    "symptomName": "Acaricide",
+    "_id": 9
+  },
+  {
+    "symptomName": "Ache",
+    "_id": 10
+  },
+  {
+    "symptomName": "Ache(Arm)",
+    "_id": 11
+  },
+  {
+    "symptomName": "Ache(Back)",
+    "_id": 12
+  },
+  {
+    "symptomName": "Ache(Body)",
+    "_id": 13
+  },
+  {
+    "symptomName": "Ache(Ear)",
+    "_id": 14
+  },
+  {
+    "symptomName": "Ache(Foot)",
+    "_id": 15
+  },
+  {
+    "symptomName": "Ache(Head)",
+    "_id": 16
+  },
+  {
+    "symptomName": "Ache(Leg)",
+    "_id": 17
+  },
+  {
+    "symptomName": "Ache(Limb)",
+    "_id": 18
+  },
+  {
+    "symptomName": "Ache(Loin)",
+    "_id": 19
+  },
+  {
+    "symptomName": "Ache(Rib)",
+    "_id": 20
+  },
+  {
+    "symptomName": "Ache(Side)",
+    "_id": 21
+  },
+  {
+    "symptomName": "Ache(Stomach)",
+    "_id": 22
+  },
+  {
+    "symptomName": "Achlorhydria",
+    "_id": 24
+  },
+  {
+    "symptomName": "Acne",
+    "_id": 25
+  },
+  {
+    "symptomName": "Acrid",
+    "_id": 26
+  },
+  {
+    "symptomName": "Actinomycosis",
+    "_id": 27
+  },
+  {
+    "symptomName": "Addison's-Disease",
+    "_id": 28
+  },
+  {
+    "symptomName": "Adenopathy",
+    "_id": 29
+  },
+  {
+    "symptomName": "Adrenocortical",
+    "_id": 30
+  },
+  {
+    "symptomName": "Adulterant",
+    "_id": 31
+  },
+  {
+    "symptomName": "Aerophagia",
+    "_id": 32
+  },
+  {
+    "symptomName": "Afterbirth",
+    "_id": 33
+  },
+  {
+    "symptomName": "Aftosa",
+    "_id": 34
+  },
+  {
+    "symptomName": "Agility",
+    "_id": 35
+  },
+  {
+    "symptomName": "Ague",
+    "_id": 36
+  },
+  {
+    "symptomName": "Airwick",
+    "_id": 37
+  },
+  {
+    "symptomName": "Alactia",
+    "_id": 38
+  },
+  {
+    "symptomName": "Albuminuria",
+    "_id": 39
+  },
+  {
+    "symptomName": "Alcoholism",
+    "_id": 40
+  },
+  {
+    "symptomName": "Alexipharmic",
+    "_id": 41
+  },
+  {
+    "symptomName": "Alexiteric",
+    "_id": 42
+  },
+  {
+    "symptomName": "Algicide",
+    "_id": 43
+  },
+  {
+    "symptomName": "Allergenic",
+    "_id": 44
+  },
+  {
+    "symptomName": "Allergy",
+    "_id": 45
+  },
+  {
+    "symptomName": "Alopecia",
+    "_id": 46
+  },
+  {
+    "symptomName": "Alterative",
+    "_id": 47
+  },
+  {
+    "symptomName": "Amaurosis",
+    "_id": 48
+  },
+  {
+    "symptomName": "Amblyopia",
+    "_id": 49
+  },
+  {
+    "symptomName": "Amebiasis",
+    "_id": 50
+  },
+  {
+    "symptomName": "Amenorrhea",
+    "_id": 51
+  },
+  {
+    "symptomName": "Amnesia",
+    "_id": 52
+  },
+  {
+    "symptomName": "Amygdalitis",
+    "_id": 53
+  },
+  {
+    "symptomName": "Amygdalosis",
+    "_id": 54
+  },
+  {
+    "symptomName": "Anal-Eversion",
+    "_id": 55
+  },
+  {
+    "symptomName": "Analeptic",
+    "_id": 56
+  },
+  {
+    "symptomName": "Analgesic",
+    "_id": 57
+  },
+  {
+    "symptomName": "Anaphrodisiac",
+    "_id": 58
+  },
+  {
+    "symptomName": "Anaphrodisiac (Female)",
+    "_id": 59
+  },
+  {
+    "symptomName": "Anasarca",
+    "_id": 60
+  },
+  {
+    "symptomName": "Ancylostomiasis",
+    "_id": 61
+  },
+  {
+    "symptomName": "Androgenic",
+    "_id": 62
+  },
+  {
+    "symptomName": "Anecbolic",
+    "_id": 63
+  },
+  {
+    "symptomName": "Anemia",
+    "_id": 64
+  },
+  {
+    "symptomName": "Anesthesia",
+    "_id": 65
+  },
+  {
+    "symptomName": "Anesthetic",
+    "_id": 66
+  },
+  {
+    "symptomName": "Angina",
+    "_id": 67
+  },
+  {
+    "symptomName": "Angina Pectoris",
+    "_id": 68
+  },
+  {
+    "symptomName": "Angina-Catarrhalis",
+    "_id": 69
+  },
+  {
+    "symptomName": "Angina?",
+    "_id": 70
+  },
+  {
+    "symptomName": "Anhydrosis",
+    "_id": 71
+  },
+  {
+    "symptomName": "Anhydrotic",
+    "_id": 72
+  },
+  {
+    "symptomName": "Bite(Animal)",
+    "_id": 73
+  },
+  {
+    "symptomName": "Ankle",
+    "_id": 74
+  },
+  {
+    "symptomName": "Anodyne",
+    "_id": 75
+  },
+  {
+    "symptomName": "Anorectic",
+    "_id": 76
+  },
+  {
+    "symptomName": "Anorexia",
+    "_id": 77
+  },
+  {
+    "symptomName": "Anorexiac",
+    "_id": 78
+  },
+  {
+    "symptomName": "Anorexic",
+    "_id": 79
+  },
+  {
+    "symptomName": "Antacid",
+    "_id": 80
+  },
+  {
+    "symptomName": "Antemetic",
+    "_id": 81
+  },
+  {
+    "symptomName": "Anthelminthic",
+    "_id": 82
+  },
+  {
+    "symptomName": "Anthrax",
+    "_id": 83
+  },
+  {
+    "symptomName": "Antiabortifacient",
+    "_id": 84
+  },
+  {
+    "symptomName": "Antibilious",
+    "_id": 85
+  },
+  {
+    "symptomName": "Antibiotic",
+    "_id": 86
+  },
+  {
+    "symptomName": "Anticathartic",
+    "_id": 87
+  },
+  {
+    "symptomName": "Anticholinergic",
+    "_id": 88
+  },
+  {
+    "symptomName": "Anticoagulant",
+    "_id": 89
+  },
+  {
+    "symptomName": "Anticonception",
+    "_id": 90
+  },
+  {
+    "symptomName": "Antidiarrheic",
+    "_id": 91
+  },
+  {
+    "symptomName": "Antidote",
+    "_id": 92
+  },
+  {
+    "symptomName": "Antidote(Antiaris)",
+    "_id": 93
+  },
+  {
+    "symptomName": "Antidote(Arrow poison)",
+    "_id": 94
+  },
+  {
+    "symptomName": "Antidote(Crab)",
+    "_id": 95
+  },
+  {
+    "symptomName": "Antidote(Datura)",
+    "_id": 96
+  },
+  {
+    "symptomName": "Antidote(Fish poison)",
+    "_id": 97
+  },
+  {
+    "symptomName": "Antidote(Fish)",
+    "_id": 98
+  },
+  {
+    "symptomName": "Antidote(Fish sting)",
+    "_id": 99
+  },
+  {
+    "symptomName": "Antidote(Ipoh)",
+    "_id": 100
+  },
+  {
+    "symptomName": "Antidote(Opium)",
+    "_id": 101
+  },
+  {
+    "symptomName": "Antidote(Pithecellobium)",
+    "_id": 102
+  },
+  {
+    "symptomName": "Antidote(Poison arrow)",
+    "_id": 103
+  },
+  {
+    "symptomName": "Antidote(Poison)",
+    "_id": 104
+  },
+  {
+    "symptomName": "Antidote(Aconite)",
+    "_id": 105
+  },
+  {
+    "symptomName": "Antidote(Alcohol)",
+    "_id": 106
+  },
+  {
+    "symptomName": "Antidote(Alkaloid)",
+    "_id": 107
+  },
+  {
+    "symptomName": "Antidote(Arrow)",
+    "_id": 108
+  },
+  {
+    "symptomName": "Antidote(Arsenic)",
+    "_id": 109
+  },
+  {
+    "symptomName": "Antidote(Atropine)",
+    "_id": 110
+  },
+  {
+    "symptomName": "Antidote(Bee sting)",
+    "_id": 111
+  },
+  {
+    "symptomName": "Antidote(Belladonna)",
+    "_id": 112
+  },
+  {
+    "symptomName": "Antidote(Black Widow)",
+    "_id": 113
+  },
+  {
+    "symptomName": "Antidote(Brassica)",
+    "_id": 114
+  },
+  {
+    "symptomName": "Antidote(Cantharid)",
+    "_id": 115
+  },
+  {
+    "symptomName": "Antidote(Capsicum)",
+    "_id": 116
+  },
+  {
+    "symptomName": "Antidote(Caterpillar)",
+    "_id": 117
+  },
+  {
+    "symptomName": "Antidote(Centipede)",
+    "_id": 118
+  },
+  {
+    "symptomName": "Antidote(Chameleon)",
+    "_id": 119
+  },
+  {
+    "symptomName": "Antidote(Cicuta)",
+    "_id": 120
+  },
+  {
+    "symptomName": "Antidote(Cinnabar)",
+    "_id": 121
+  },
+  {
+    "symptomName": "Antidote(Comocladia)",
+    "_id": 122
+  },
+  {
+    "symptomName": "Antidote(Crocodile)",
+    "_id": 123
+  },
+  {
+    "symptomName": "Antidote(Croton)",
+    "_id": 124
+  },
+  {
+    "symptomName": "Antidote(Cyanide)",
+    "_id": 125
+  },
+  {
+    "symptomName": "Antidote(Dioscorea)",
+    "_id": 126
+  },
+  {
+    "symptomName": "Antidote(Drowning)",
+    "_id": 127
+  },
+  {
+    "symptomName": "Antidote(Drug)",
+    "_id": 128
+  },
+  {
+    "symptomName": "Antidote(Euphorbiaceae)",
+    "_id": 129
+  },
+  {
+    "symptomName": "Antidote(Hanging)",
+    "_id": 130
+  },
+  {
+    "symptomName": "Antidote(Hemlock)",
+    "_id": 131
+  },
+  {
+    "symptomName": "Antidote(Hippomane)",
+    "_id": 132
+  },
+  {
+    "symptomName": "Antidote(Hura)",
+    "_id": 133
+  },
+  {
+    "symptomName": "Antidote(Insect)",
+    "_id": 134
+  },
+  {
+    "symptomName": "Antidote(Iodine)",
+    "_id": 135
+  },
+  {
+    "symptomName": "Antidote(Jatropha)",
+    "_id": 136
+  },
+  {
+    "symptomName": "Antidote(Latex)",
+    "_id": 137
+  },
+  {
+    "symptomName": "Antidote(Litchi)",
+    "_id": 138
+  },
+  {
+    "symptomName": "Antidote(Lizard)",
+    "_id": 139
+  },
+  {
+    "symptomName": "Antidote(Manihot)",
+    "_id": 140
+  },
+  {
+    "symptomName": "Antidote(Mercury)",
+    "_id": 141
+  },
+  {
+    "symptomName": "Antidote(Metal)",
+    "_id": 142
+  },
+  {
+    "symptomName": "Antidote(Mineral)",
+    "_id": 143
+  },
+  {
+    "symptomName": "Antidote(Momordica)",
+    "_id": 144
+  },
+  {
+    "symptomName": "Antidote(Mushroom)",
+    "_id": 145
+  },
+  {
+    "symptomName": "Antidote(Nettle)",
+    "_id": 146
+  },
+  {
+    "symptomName": "Antidote(Philodendron)",
+    "_id": 147
+  },
+  {
+    "symptomName": "Antidote(Plant poisons)",
+    "_id": 148
+  },
+  {
+    "symptomName": "Antidote(Reptile)",
+    "_id": 149
+  },
+  {
+    "symptomName": "Antidote(Rhus)",
+    "_id": 150
+  },
+  {
+    "symptomName": "Antidote(Scolopendrid)",
+    "_id": 151
+  },
+  {
+    "symptomName": "Antidote(Scorpion)",
+    "_id": 152
+  },
+  {
+    "symptomName": "Antidote(Seafood)",
+    "_id": 154
+  },
+  {
+    "symptomName": "Antidote(Semecarpus)",
+    "_id": 155
+  },
+  {
+    "symptomName": "Antidote(Shellfish)",
+    "_id": 156
+  },
+  {
+    "symptomName": "Antidote(Shrimp)",
+    "_id": 157
+  },
+  {
+    "symptomName": "Antidote(Snake)",
+    "_id": 158
+  },
+  {
+    "symptomName": "Antidote(Spider)",
+    "_id": 159
+  },
+  {
+    "symptomName": "Antidote(Stingray)",
+    "_id": 160
+  },
+  {
+    "symptomName": "Antidote(Strophanthus)",
+    "_id": 161
+  },
+  {
+    "symptomName": "Antidote(Sulfur)",
+    "_id": 162
+  },
+  {
+    "symptomName": "Antidote(Sumach)",
+    "_id": 163
+  },
+  {
+    "symptomName": "Antidote(Urtica)",
+    "_id": 164
+  },
+  {
+    "symptomName": "Antidote(Urticaria)",
+    "_id": 165
+  },
+  {
+    "symptomName": "Antidote(Varnish)",
+    "_id": 166
+  },
+  {
+    "symptomName": "Antidote(Vermillion)",
+    "_id": 167
+  },
+  {
+    "symptomName": "Antidote(Wine)",
+    "_id": 168
+  },
+  {
+    "symptomName": "Antidote(Wood oil)",
+    "_id": 169
+  },
+  {
+    "symptomName": "Antidote(Worms)",
+    "_id": 170
+  },
+  {
+    "symptomName": "Antidysentery",
+    "_id": 171
+  },
+  {
+    "symptomName": "Antiecbolic",
+    "_id": 172
+  },
+  {
+    "symptomName": "Antiemetic",
+    "_id": 173
+  },
+  {
+    "symptomName": "Antiemmenagogue",
+    "_id": 174
+  },
+  {
+    "symptomName": "Antifertility",
+    "_id": 175
+  },
+  {
+    "symptomName": "Antigalactogogue",
+    "_id": 176
+  },
+  {
+    "symptomName": "Antigonadotrophic",
+    "_id": 177
+  },
+  {
+    "symptomName": "Antigonorrheic",
+    "_id": 178
+  },
+  {
+    "symptomName": "Antihistamine",
+    "_id": 179
+  },
+  {
+    "symptomName": "Antihydriotic",
+    "_id": 180
+  },
+  {
+    "symptomName": "Antihydrotic",
+    "_id": 181
+  },
+  {
+    "symptomName": "Antilactogogue",
+    "_id": 182
+  },
+  {
+    "symptomName": "Antilithic",
+    "_id": 183
+  },
+  {
+    "symptomName": "Antimalaria",
+    "_id": 184
+  },
+  {
+    "symptomName": "Antiopiate",
+    "_id": 185
+  },
+  {
+    "symptomName": "Antiopium",
+    "_id": 186
+  },
+  {
+    "symptomName": "Antioxidant",
+    "_id": 187
+  },
+  {
+    "symptomName": "Antioxytoxic",
+    "_id": 188
+  },
+  {
+    "symptomName": "Antiperiodic",
+    "_id": 189
+  },
+  {
+    "symptomName": "Antiperspirant",
+    "_id": 190
+  },
+  {
+    "symptomName": "Antiphlogistic",
+    "_id": 191
+  },
+  {
+    "symptomName": "Antiphtalmic",
+    "_id": 192
+  },
+  {
+    "symptomName": "Antiprogestational",
+    "_id": 193
+  },
+  {
+    "symptomName": "Antipyretic",
+    "_id": 194
+  },
+  {
+    "symptomName": "Antirheumatic",
+    "_id": 195
+  },
+  {
+    "symptomName": "Antiscorbutic",
+    "_id": 196
+  },
+  {
+    "symptomName": "Antiscrophulosum",
+    "_id": 197
+  },
+  {
+    "symptomName": "Antiseptic",
+    "_id": 198
+  },
+  {
+    "symptomName": "Antiseptic(Urethra)",
+    "_id": 199
+  },
+  {
+    "symptomName": "Antismoking",
+    "_id": 200
+  },
+  {
+    "symptomName": "Antispasmodic",
+    "_id": 201
+  },
+  {
+    "symptomName": "Antisudorific",
+    "_id": 202
+  },
+  {
+    "symptomName": "Antitussive",
+    "_id": 203
+  },
+  {
+    "symptomName": "Antivenom",
+    "_id": 204
+  },
+  {
+    "symptomName": "Antivinous",
+    "_id": 205
+  },
+  {
+    "symptomName": "Repellant(Ant)",
+    "_id": 206
+  },
+  {
+    "symptomName": "Anuria",
+    "_id": 207
+  },
+  {
+    "symptomName": "Anus",
+    "_id": 208
+  },
+  {
+    "symptomName": "Anxiety",
+    "_id": 209
+  },
+  {
+    "symptomName": "Anydrotic",
+    "_id": 210
+  },
+  {
+    "symptomName": "Aperient",
+    "_id": 211
+  },
+  {
+    "symptomName": "Apertif",
+    "_id": 212
+  },
+  {
+    "symptomName": "Aphicide",
+    "_id": 213
+  },
+  {
+    "symptomName": "Aphrodisiac",
+    "_id": 214
+  },
+  {
+    "symptomName": "Aphrodisiac(Female)",
+    "_id": 215
+  },
+  {
+    "symptomName": "Aphrodisiac(Male)",
+    "_id": 216
+  },
+  {
+    "symptomName": "Aphtha",
+    "_id": 218
+  },
+  {
+    "symptomName": "Aphthae",
+    "_id": 219
+  },
+  {
+    "symptomName": "Aphthaee",
+    "_id": 220
+  },
+  {
+    "symptomName": "Aphthagenic",
+    "_id": 221
+  },
+  {
+    "symptomName": "Aphtosa",
+    "_id": 222
+  },
+  {
+    "symptomName": "Apoplexy",
+    "_id": 223
+  },
+  {
+    "symptomName": "Aposteme",
+    "_id": 224
+  },
+  {
+    "symptomName": "Appendicitis",
+    "_id": 225
+  },
+  {
+    "symptomName": "Appetizer",
+    "_id": 226
+  },
+  {
+    "symptomName": "Apprehension",
+    "_id": 227
+  },
+  {
+    "symptomName": "Aptha",
+    "_id": 228
+  },
+  {
+    "symptomName": "Apthae",
+    "_id": 229
+  },
+  {
+    "symptomName": "Ardor",
+    "_id": 230
+  },
+  {
+    "symptomName": "Aromatic",
+    "_id": 231
+  },
+  {
+    "symptomName": "Arrow-poison",
+    "_id": 232
+  },
+  {
+    "symptomName": "Arrhythmia",
+    "_id": 233
+  },
+  {
+    "symptomName": "Arrow",
+    "_id": 234
+  },
+  {
+    "symptomName": "Artemicide",
+    "_id": 235
+  },
+  {
+    "symptomName": "Arteriosclerosis",
+    "_id": 236
+  },
+  {
+    "symptomName": "Arteriosedative",
+    "_id": 237
+  },
+  {
+    "symptomName": "Arteritis",
+    "_id": 238
+  },
+  {
+    "symptomName": "Arthralgia",
+    "_id": 239
+  },
+  {
+    "symptomName": "Arthritis",
+    "_id": 240
+  },
+  {
+    "symptomName": "Arthritis?",
+    "_id": 241
+  },
+  {
+    "symptomName": "Arthrodynia",
+    "_id": 242
+  },
+  {
+    "symptomName": "Ascariasis",
+    "_id": 243
+  },
+  {
+    "symptomName": "Ascaricide",
+    "_id": 244
+  },
+  {
+    "symptomName": "Ascites",
+    "_id": 245
+  },
+  {
+    "symptomName": "Asthenia",
+    "_id": 246
+  },
+  {
+    "symptomName": "Asthma",
+    "_id": 247
+  },
+  {
+    "symptomName": "Astringent",
+    "_id": 248
+  },
+  {
+    "symptomName": "Ataxia",
+    "_id": 249
+  },
+  {
+    "symptomName": "Ataxia(Locomotor)",
+    "_id": 250
+  },
+  {
+    "symptomName": "Atheroma",
+    "_id": 251
+  },
+  {
+    "symptomName": "Atheromasia",
+    "_id": 252
+  },
+  {
+    "symptomName": "Atherosclerosis",
+    "_id": 253
+  },
+  {
+    "symptomName": "Athlete's-Foot",
+    "_id": 254
+  },
+  {
+    "symptomName": "Athrepsy",
+    "_id": 255
+  },
+  {
+    "symptomName": "Atony",
+    "_id": 256
+  },
+  {
+    "symptomName": "Atrophy",
+    "_id": 257
+  },
+  {
+    "symptomName": "Ausculation",
+    "_id": 258
+  },
+  {
+    "symptomName": "Avicide",
+    "_id": 259
+  },
+  {
+    "symptomName": "Back",
+    "_id": 260
+  },
+  {
+    "symptomName": "Bactericide",
+    "_id": 261
+  },
+  {
+    "symptomName": "Bacteriostat",
+    "_id": 262
+  },
+  {
+    "symptomName": "Baldness",
+    "_id": 263
+  },
+  {
+    "symptomName": "Balsamic",
+    "_id": 264
+  },
+  {
+    "symptomName": "Bandage",
+    "_id": 265
+  },
+  {
+    "symptomName": "Barrenness",
+    "_id": 266
+  },
+  {
+    "symptomName": "Basketry",
+    "_id": 267
+  },
+  {
+    "symptomName": "Bath",
+    "_id": 268
+  },
+  {
+    "symptomName": "Beauty",
+    "_id": 269
+  },
+  {
+    "symptomName": "Bechic",
+    "_id": 270
+  },
+  {
+    "symptomName": "Bedbug",
+    "_id": 271
+  },
+  {
+    "symptomName": "Bedridden",
+    "_id": 272
+  },
+  {
+    "symptomName": "Bedsore",
+    "_id": 273
+  },
+  {
+    "symptomName": "Beer",
+    "_id": 274
+  },
+  {
+    "symptomName": "Beri-Beri",
+    "_id": 275
+  },
+  {
+    "symptomName": "Beriberi",
+    "_id": 276
+  },
+  {
+    "symptomName": "Beverage",
+    "_id": 277
+  },
+  {
+    "symptomName": "Bil",
+    "_id": 278
+  },
+  {
+    "symptomName": "Bile",
+    "_id": 279
+  },
+  {
+    "symptomName": "Bilharzia",
+    "_id": 280
+  },
+  {
+    "symptomName": "Bilious",
+    "_id": 281
+  },
+  {
+    "symptomName": "Birdlime",
+    "_id": 282
+  },
+  {
+    "symptomName": "Bite",
+    "_id": 283
+  },
+  {
+    "symptomName": "Bite(Bat)",
+    "_id": 284
+  },
+  {
+    "symptomName": "Bite(Bear)",
+    "_id": 285
+  },
+  {
+    "symptomName": "Bite(Bug)",
+    "_id": 286
+  },
+  {
+    "symptomName": "Bite(Dog)",
+    "_id": 287
+  },
+  {
+    "symptomName": "Bite(Horse)",
+    "_id": 288
+  },
+  {
+    "symptomName": "Bite(Insect)",
+    "_id": 289
+  },
+  {
+    "symptomName": "Bite(Leech)",
+    "_id": 290
+  },
+  {
+    "symptomName": "Bite(Lizard)",
+    "_id": 291
+  },
+  {
+    "symptomName": "Bite(Mosquito)",
+    "_id": 292
+  },
+  {
+    "symptomName": "Bite(Rat)",
+    "_id": 293
+  },
+  {
+    "symptomName": "Bite(Scorpion)",
+    "_id": 294
+  },
+  {
+    "symptomName": "Bite(Snake)",
+    "_id": 295
+  },
+  {
+    "symptomName": "Bite(Spider)",
+    "_id": 297
+  },
+  {
+    "symptomName": "Bite(Tick)",
+    "_id": 298
+  },
+  {
+    "symptomName": "Bite(Tiger)",
+    "_id": 299
+  },
+  {
+    "symptomName": "Bitter-Aromatic",
+    "_id": 300
+  },
+  {
+    "symptomName": "Bitter-Principle",
+    "_id": 301
+  },
+  {
+    "symptomName": "Black-Eye",
+    "_id": 302
+  },
+  {
+    "symptomName": "Black-Fever",
+    "_id": 303
+  },
+  {
+    "symptomName": "Blackwater-Fever",
+    "_id": 304
+  },
+  {
+    "symptomName": "Bladder",
+    "_id": 305
+  },
+  {
+    "symptomName": "Bladder stone",
+    "_id": 306
+  },
+  {
+    "symptomName": "Bleach",
+    "_id": 307
+  },
+  {
+    "symptomName": "Blemish",
+    "_id": 308
+  },
+  {
+    "symptomName": "Blennorhea",
+    "_id": 309
+  },
+  {
+    "symptomName": "Blennorrhagia",
+    "_id": 310
+  },
+  {
+    "symptomName": "Blennorrhea",
+    "_id": 311
+  },
+  {
+    "symptomName": "Blenorrhagia",
+    "_id": 312
+  },
+  {
+    "symptomName": "Blepharitis",
+    "_id": 313
+  },
+  {
+    "symptomName": "Blindness",
+    "_id": 314
+  },
+  {
+    "symptomName": "Blister",
+    "_id": 316
+  },
+  {
+    "symptomName": "Bloat",
+    "_id": 317
+  },
+  {
+    "symptomName": "Blood",
+    "_id": 318
+  },
+  {
+    "symptomName": "Blood-Vessel",
+    "_id": 319
+  },
+  {
+    "symptomName": "Bloodshot",
+    "_id": 320
+  },
+  {
+    "symptomName": "Bloody stool",
+    "_id": 321
+  },
+  {
+    "symptomName": "Boil",
+    "_id": 322
+  },
+  {
+    "symptomName": "Bones",
+    "_id": 324
+  },
+  {
+    "symptomName": "Ache(Bones)",
+    "_id": 325
+  },
+  {
+    "symptomName": "Bot",
+    "_id": 326
+  },
+  {
+    "symptomName": "Bowel",
+    "_id": 327
+  },
+  {
+    "symptomName": "Brachycardia",
+    "_id": 328
+  },
+  {
+    "symptomName": "Brain",
+    "_id": 329
+  },
+  {
+    "symptomName": "Brain-Tonic",
+    "_id": 330
+  },
+  {
+    "symptomName": "Breast",
+    "_id": 331
+  },
+  {
+    "symptomName": "Breath",
+    "_id": 332
+  },
+  {
+    "symptomName": "Breathing",
+    "_id": 333
+  },
+  {
+    "symptomName": "Breathlessness",
+    "_id": 334
+  },
+  {
+    "symptomName": "Bright's Disease",
+    "_id": 335
+  },
+  {
+    "symptomName": "Broken-Limb",
+    "_id": 336
+  },
+  {
+    "symptomName": "Bronchial",
+    "_id": 337
+  },
+  {
+    "symptomName": "Bronchial-Asthma",
+    "_id": 338
+  },
+  {
+    "symptomName": "Bronchiectasis",
+    "_id": 339
+  },
+  {
+    "symptomName": "Bronchitis",
+    "_id": 340
+  },
+  {
+    "symptomName": "Bronchodilator",
+    "_id": 341
+  },
+  {
+    "symptomName": "Bronchosis",
+    "_id": 342
+  },
+  {
+    "symptomName": "Broom",
+    "_id": 343
+  },
+  {
+    "symptomName": "Bruise",
+    "_id": 344
+  },
+  {
+    "symptomName": "Bubo",
+    "_id": 346
+  },
+  {
+    "symptomName": "Buboes",
+    "_id": 347
+  },
+  {
+    "symptomName": "Bugbite",
+    "_id": 348
+  },
+  {
+    "symptomName": "Bulla",
+    "_id": 349
+  },
+  {
+    "symptomName": "Bunion",
+    "_id": 350
+  },
+  {
+    "symptomName": "Burn",
+    "_id": 351
+  },
+  {
+    "symptomName": "Burn(Radiation)",
+    "_id": 352
+  },
+  {
+    "symptomName": "Burns",
+    "_id": 354
+  },
+  {
+    "symptomName": "Bursitis",
+    "_id": 355
+  },
+  {
+    "symptomName": "Cachexia",
+    "_id": 356
+  },
+  {
+    "symptomName": "Cacoethes",
+    "_id": 357
+  },
+  {
+    "symptomName": "Breast (Caked)",
+    "_id": 358
+  },
+  {
+    "symptomName": "Calculus",
+    "_id": 359
+  },
+  {
+    "symptomName": "Caligo",
+    "_id": 360
+  },
+  {
+    "symptomName": "Callosity",
+    "_id": 361
+  },
+  {
+    "symptomName": "Callus",
+    "_id": 362
+  },
+  {
+    "symptomName": "Calmative",
+    "_id": 363
+  },
+  {
+    "symptomName": "Camphor",
+    "_id": 364
+  },
+  {
+    "symptomName": "Cancer",
+    "_id": 365
+  },
+  {
+    "symptomName": "Cancer(Abdomen)",
+    "_id": 366
+  },
+  {
+    "symptomName": "Cancer(Armpit)",
+    "_id": 367
+  },
+  {
+    "symptomName": "Cancer(Bones)",
+    "_id": 368
+  },
+  {
+    "symptomName": "Cancer(Brain)",
+    "_id": 369
+  },
+  {
+    "symptomName": "Cancer(Breast)",
+    "_id": 370
+  },
+  {
+    "symptomName": "Cancer(Cervix)",
+    "_id": 371
+  },
+  {
+    "symptomName": "Cancer(Digestive)",
+    "_id": 372
+  },
+  {
+    "symptomName": "Cancer(Epithelium)",
+    "_id": 373
+  },
+  {
+    "symptomName": "Cancer(Esophagus)",
+    "_id": 374
+  },
+  {
+    "symptomName": "Cancer(Eye)",
+    "_id": 375
+  },
+  {
+    "symptomName": "Cancer(Face)",
+    "_id": 376
+  },
+  {
+    "symptomName": "Cancer(Gastric)",
+    "_id": 377
+  },
+  {
+    "symptomName": "Cancer(Glands)",
+    "_id": 378
+  },
+  {
+    "symptomName": "Cancer(Gum)",
+    "_id": 379
+  },
+  {
+    "symptomName": "Cancer(Gynecologic)",
+    "_id": 380
+  },
+  {
+    "symptomName": "Cancer(Intestine)",
+    "_id": 381
+  },
+  {
+    "symptomName": "Cancer(Kidney)",
+    "_id": 382
+  },
+  {
+    "symptomName": "Cancer(Larynx)",
+    "_id": 383
+  },
+  {
+    "symptomName": "Cancer(Lip)",
+    "_id": 384
+  },
+  {
+    "symptomName": "Cancer(Liver)",
+    "_id": 385
+  },
+  {
+    "symptomName": "Cancer(Lung)",
+    "_id": 386
+  },
+  {
+    "symptomName": "Cancer(Lymph)",
+    "_id": 387
+  },
+  {
+    "symptomName": "Cancer(Medullary)",
+    "_id": 388
+  },
+  {
+    "symptomName": "Cancer(Mouth)",
+    "_id": 389
+  },
+  {
+    "symptomName": "Cancer(Nose)",
+    "_id": 390
+  },
+  {
+    "symptomName": "Cancer(Penis)",
+    "_id": 391
+  },
+  {
+    "symptomName": "Cancer(Pharynx)",
+    "_id": 392
+  },
+  {
+    "symptomName": "Cancer(Prostate)",
+    "_id": 393
+  },
+  {
+    "symptomName": "Cancer(Pylorus)",
+    "_id": 394
+  },
+  {
+    "symptomName": "Cancer(Rectum)",
+    "_id": 395
+  },
+  {
+    "symptomName": "Cancer(Skin)",
+    "_id": 396
+  },
+  {
+    "symptomName": "Cancer(Stomach)",
+    "_id": 397
+  },
+  {
+    "symptomName": "Cancer(Testicle)",
+    "_id": 398
+  },
+  {
+    "symptomName": "Cancer(Throat)",
+    "_id": 399
+  },
+  {
+    "symptomName": "Cancer(Thyroid)",
+    "_id": 400
+  },
+  {
+    "symptomName": "Cancer(Tongue)",
+    "_id": 401
+  },
+  {
+    "symptomName": "Cancer(Toothh)",
+    "_id": 402
+  },
+  {
+    "symptomName": "Cancer(Uterus)",
+    "_id": 403
+  },
+  {
+    "symptomName": "Cancre",
+    "_id": 404
+  },
+  {
+    "symptomName": "Cancrum Oris",
+    "_id": 405
+  },
+  {
+    "symptomName": "Candida",
+    "_id": 406
+  },
+  {
+    "symptomName": "Candle",
+    "_id": 407
+  },
+  {
+    "symptomName": "Candlenut",
+    "_id": 408
+  },
+  {
+    "symptomName": "Canicide",
+    "_id": 409
+  },
+  {
+    "symptomName": "Canker",
+    "_id": 410
+  },
+  {
+    "symptomName": "Carbuncle",
+    "_id": 411
+  },
+  {
+    "symptomName": "Carcinogenic",
+    "_id": 412
+  },
+  {
+    "symptomName": "Carcinoma",
+    "_id": 413
+  },
+  {
+    "symptomName": "Carcinoma(Gum)",
+    "_id": 414
+  },
+  {
+    "symptomName": "Cardiac",
+    "_id": 415
+  },
+  {
+    "symptomName": "Cardial-Disease",
+    "_id": 416
+  },
+  {
+    "symptomName": "Cardialgia",
+    "_id": 417
+  },
+  {
+    "symptomName": "Cardiodepressant",
+    "_id": 418
+  },
+  {
+    "symptomName": "Cardiodynia",
+    "_id": 419
+  },
+  {
+    "symptomName": "Cardiopathy",
+    "_id": 420
+  },
+  {
+    "symptomName": "Cardiosedative",
+    "_id": 421
+  },
+  {
+    "symptomName": "Cardiotonic",
+    "_id": 422
+  },
+  {
+    "symptomName": "Carditis",
+    "_id": 424
+  },
+  {
+    "symptomName": "Caries",
+    "_id": 425
+  },
+  {
+    "symptomName": "Carminative",
+    "_id": 426
+  },
+  {
+    "symptomName": "Castration",
+    "_id": 428
+  },
+  {
+    "symptomName": "Catamenia",
+    "_id": 429
+  },
+  {
+    "symptomName": "Cataplasm",
+    "_id": 430
+  },
+  {
+    "symptomName": "Cataract",
+    "_id": 431
+  },
+  {
+    "symptomName": "Catarrh",
+    "_id": 432
+  },
+  {
+    "symptomName": "Sting(Caterpillar)",
+    "_id": 433
+  },
+  {
+    "symptomName": "Cathartic",
+    "_id": 434
+  },
+  {
+    "symptomName": "Caustic",
+    "_id": 436
+  },
+  {
+    "symptomName": "Cauterizant",
+    "_id": 437
+  },
+  {
+    "symptomName": "Ceguera",
+    "_id": 438
+  },
+  {
+    "symptomName": "Celiac",
+    "_id": 439
+  },
+  {
+    "symptomName": "Celialgia",
+    "_id": 440
+  },
+  {
+    "symptomName": "Cellulitis",
+    "_id": 441
+  },
+  {
+    "symptomName": "Cement",
+    "_id": 442
+  },
+  {
+    "symptomName": "Centipede",
+    "_id": 443
+  },
+  {
+    "symptomName": "Bite(Centipede)",
+    "_id": 444
+  },
+  {
+    "symptomName": "Cephalgia",
+    "_id": 445
+  },
+  {
+    "symptomName": "Cephalic",
+    "_id": 446
+  },
+  {
+    "symptomName": "Cephalitis",
+    "_id": 447
+  },
+  {
+    "symptomName": "Cerebral",
+    "_id": 448
+  },
+  {
+    "symptomName": "Cerebrosis",
+    "_id": 449
+  },
+  {
+    "symptomName": "Cervix",
+    "_id": 450
+  },
+  {
+    "symptomName": "Chafe",
+    "_id": 451
+  },
+  {
+    "symptomName": "Chafing",
+    "_id": 452
+  },
+  {
+    "symptomName": "Chancre",
+    "_id": 453
+  },
+  {
+    "symptomName": "Chaplet",
+    "_id": 454
+  },
+  {
+    "symptomName": "Charcoal",
+    "_id": 455
+  },
+  {
+    "symptomName": "Charley-Horse",
+    "_id": 456
+  },
+  {
+    "symptomName": "Charm",
+    "_id": 457
+  },
+  {
+    "symptomName": "Chest",
+    "_id": 458
+  },
+  {
+    "symptomName": "Chest-Cold",
+    "_id": 459
+  },
+  {
+    "symptomName": "Ache(Chest)",
+    "_id": 460
+  },
+  {
+    "symptomName": "Pain(Chest)",
+    "_id": 461
+  },
+  {
+    "symptomName": "Chewstick",
+    "_id": 462
+  },
+  {
+    "symptomName": "Chickenpox",
+    "_id": 463
+  },
+  {
+    "symptomName": "Chilblain",
+    "_id": 464
+  },
+  {
+    "symptomName": "Childbirth",
+    "_id": 465
+  },
+  {
+    "symptomName": "Chill",
+    "_id": 466
+  },
+  {
+    "symptomName": "Chills",
+    "_id": 467
+  },
+  {
+    "symptomName": "Chirony",
+    "_id": 468
+  },
+  {
+    "symptomName": "Chlorosis",
+    "_id": 469
+  },
+  {
+    "symptomName": "Choking",
+    "_id": 470
+  },
+  {
+    "symptomName": "Cholagogue",
+    "_id": 471
+  },
+  {
+    "symptomName": "Cholagogueue",
+    "_id": 472
+  },
+  {
+    "symptomName": "Cholecystitis",
+    "_id": 473
+  },
+  {
+    "symptomName": "Cholecystosis",
+    "_id": 474
+  },
+  {
+    "symptomName": "Cholera",
+    "_id": 475
+  },
+  {
+    "symptomName": "Choleretic",
+    "_id": 476
+  },
+  {
+    "symptomName": "Cholinergic",
+    "_id": 477
+  },
+  {
+    "symptomName": "Cholorosis",
+    "_id": 478
+  },
+  {
+    "symptomName": "Chorea",
+    "_id": 479
+  },
+  {
+    "symptomName": "Chyluria",
+    "_id": 480
+  },
+  {
+    "symptomName": "Cicatrizant",
+    "_id": 481
+  },
+  {
+    "symptomName": "Ciguatera",
+    "_id": 482
+  },
+  {
+    "symptomName": "Ciguatero",
+    "_id": 483
+  },
+  {
+    "symptomName": "Circulation",
+    "_id": 484
+  },
+  {
+    "symptomName": "Circulation-Tonic",
+    "_id": 485
+  },
+  {
+    "symptomName": "Circumcision",
+    "_id": 486
+  },
+  {
+    "symptomName": "Circumscission",
+    "_id": 487
+  },
+  {
+    "symptomName": "Cirrhosis",
+    "_id": 488
+  },
+  {
+    "symptomName": "CNS",
+    "_id": 489
+  },
+  {
+    "symptomName": "CNS depressant",
+    "_id": 490
+  },
+  {
+    "symptomName": "CNS sedative",
+    "_id": 491
+  },
+  {
+    "symptomName": "CNS stimulant",
+    "_id": 492
+  },
+  {
+    "symptomName": "CNS tonic",
+    "_id": 493
+  },
+  {
+    "symptomName": "Coagulant",
+    "_id": 494
+  },
+  {
+    "symptomName": "Coffee",
+    "_id": 495
+  },
+  {
+    "symptomName": "Cold",
+    "_id": 496
+  },
+  {
+    "symptomName": "Colic",
+    "_id": 498
+  },
+  {
+    "symptomName": "Colic Diarrhea",
+    "_id": 499
+  },
+  {
+    "symptomName": "Colitis",
+    "_id": 501
+  },
+  {
+    "symptomName": "Collapse",
+    "_id": 502
+  },
+  {
+    "symptomName": "Collyrium",
+    "_id": 503
+  },
+  {
+    "symptomName": "Coloring",
+    "_id": 504
+  },
+  {
+    "symptomName": "Coma",
+    "_id": 505
+  },
+  {
+    "symptomName": "Complexion",
+    "_id": 506
+  },
+  {
+    "symptomName": "Conception",
+    "_id": 507
+  },
+  {
+    "symptomName": "Condyloma",
+    "_id": 508
+  },
+  {
+    "symptomName": "Condyloma(Anus)",
+    "_id": 509
+  },
+  {
+    "symptomName": "Condyloma(Uterus)",
+    "_id": 510
+  },
+  {
+    "symptomName": "Congestion",
+    "_id": 511
+  },
+  {
+    "symptomName": "Conjunctivitis",
+    "_id": 512
+  },
+  {
+    "symptomName": "Constipation",
+    "_id": 513
+  },
+  {
+    "symptomName": "Construction",
+    "_id": 514
+  },
+  {
+    "symptomName": "Tuberculosis",
+    "_id": 515
+  },
+  {
+    "symptomName": "Contraceptive",
+    "_id": 516
+  },
+  {
+    "symptomName": "Contraceptive(Male)",
+    "_id": 517
+  },
+  {
+    "symptomName": "Contraceptive(Post)",
+    "_id": 518
+  },
+  {
+    "symptomName": "Contraceptive?",
+    "_id": 519
+  },
+  {
+    "symptomName": "Contusion",
+    "_id": 520
+  },
+  {
+    "symptomName": "Convalescence",
+    "_id": 521
+  },
+  {
+    "symptomName": "Convulsant",
+    "_id": 522
+  },
+  {
+    "symptomName": "Convulsion",
+    "_id": 523
+  },
+  {
+    "symptomName": "Convulsion(Infant)",
+    "_id": 524
+  },
+  {
+    "symptomName": "Copremia",
+    "_id": 525
+  },
+  {
+    "symptomName": "Cut(Coral)",
+    "_id": 526
+  },
+  {
+    "symptomName": "Cordial",
+    "_id": 527
+  },
+  {
+    "symptomName": "Corn",
+    "_id": 528
+  },
+  {
+    "symptomName": "Cornea",
+    "_id": 529
+  },
+  {
+    "symptomName": "Corneosis",
+    "_id": 530
+  },
+  {
+    "symptomName": "Coryza",
+    "_id": 531
+  },
+  {
+    "symptomName": "Cosmetic",
+    "_id": 532
+  },
+  {
+    "symptomName": "Cosmetic (Grey hair)",
+    "_id": 533
+  },
+  {
+    "symptomName": "Cough",
+    "_id": 534
+  },
+  {
+    "symptomName": "Cough(Pediatric)",
+    "_id": 535
+  },
+  {
+    "symptomName": "Counterirritant",
+    "_id": 537
+  },
+  {
+    "symptomName": "Courbature",
+    "_id": 538
+  },
+  {
+    "symptomName": "Cowitch",
+    "_id": 539
+  },
+  {
+    "symptomName": "Cracked feet",
+    "_id": 540
+  },
+  {
+    "symptomName": "Cracked lips",
+    "_id": 541
+  },
+  {
+    "symptomName": "Cracked skin",
+    "_id": 542
+  },
+  {
+    "symptomName": "Cramp",
+    "_id": 543
+  },
+  {
+    "symptomName": "Cramps",
+    "_id": 544
+  },
+  {
+    "symptomName": "Craw-Craw",
+    "_id": 545
+  },
+  {
+    "symptomName": "Croup",
+    "_id": 546
+  },
+  {
+    "symptomName": "Culifuge",
+    "_id": 547
+  },
+  {
+    "symptomName": "Cut",
+    "_id": 548
+  },
+  {
+    "symptomName": "Cutamenia",
+    "_id": 549
+  },
+  {
+    "symptomName": "Cyanache",
+    "_id": 550
+  },
+  {
+    "symptomName": "Cyanidiferous",
+    "_id": 551
+  },
+  {
+    "symptomName": "Cyanogenetic",
+    "_id": 552
+  },
+  {
+    "symptomName": "Cycloplegic",
+    "_id": 553
+  },
+  {
+    "symptomName": "Cynanche",
+    "_id": 554
+  },
+  {
+    "symptomName": "Cyst",
+    "_id": 555
+  },
+  {
+    "symptomName": "Cystitis",
+    "_id": 556
+  },
+  {
+    "symptomName": "Cystitis?",
+    "_id": 557
+  },
+  {
+    "symptomName": "Dandruff",
+    "_id": 558
+  },
+  {
+    "symptomName": "Deafness",
+    "_id": 559
+  },
+  {
+    "symptomName": "Death",
+    "_id": 560
+  },
+  {
+    "symptomName": "Debility",
+    "_id": 561
+  },
+  {
+    "symptomName": "Decoagulant",
+    "_id": 562
+  },
+  {
+    "symptomName": "Decoction",
+    "_id": 563
+  },
+  {
+    "symptomName": "Decongestant",
+    "_id": 564
+  },
+  {
+    "symptomName": "Deliriant",
+    "_id": 565
+  },
+  {
+    "symptomName": "Delirium",
+    "_id": 566
+  },
+  {
+    "symptomName": "Dementia",
+    "_id": 567
+  },
+  {
+    "symptomName": "Demulcent",
+    "_id": 568
+  },
+  {
+    "symptomName": "Dengue",
+    "_id": 570
+  },
+  {
+    "symptomName": "Dengue?",
+    "_id": 571
+  },
+  {
+    "symptomName": "Dentifrice",
+    "_id": 572
+  },
+  {
+    "symptomName": "Dentifuge",
+    "_id": 573
+  },
+  {
+    "symptomName": "Dentistry",
+    "_id": 574
+  },
+  {
+    "symptomName": "Dentition",
+    "_id": 575
+  },
+  {
+    "symptomName": "Denture",
+    "_id": 576
+  },
+  {
+    "symptomName": "Deobstruent",
+    "_id": 577
+  },
+  {
+    "symptomName": "Deodorant",
+    "_id": 578
+  },
+  {
+    "symptomName": "Depilatory",
+    "_id": 579
+  },
+  {
+    "symptomName": "Depressant",
+    "_id": 580
+  },
+  {
+    "symptomName": "Depression",
+    "_id": 581
+  },
+  {
+    "symptomName": "Depurative",
+    "_id": 582
+  },
+  {
+    "symptomName": "Dermatitigenic",
+    "_id": 583
+  },
+  {
+    "symptomName": "Dermatitis",
+    "_id": 584
+  },
+  {
+    "symptomName": "Dermatophytosis",
+    "_id": 585
+  },
+  {
+    "symptomName": "Dermatosis",
+    "_id": 586
+  },
+  {
+    "symptomName": "Detergent",
+    "_id": 587
+  },
+  {
+    "symptomName": "Detersive",
+    "_id": 588
+  },
+  {
+    "symptomName": "Detoxicant",
+    "_id": 589
+  },
+  {
+    "symptomName": "Dhobi Itch",
+    "_id": 590
+  },
+  {
+    "symptomName": "Diabetes",
+    "_id": 591
+  },
+  {
+    "symptomName": "Diabetes Mellitis",
+    "_id": 592
+  },
+  {
+    "symptomName": "Diaper-Rash",
+    "_id": 593
+  },
+  {
+    "symptomName": "Diaphoretic",
+    "_id": 594
+  },
+  {
+    "symptomName": "Diarrhea",
+    "_id": 596
+  },
+  {
+    "symptomName": "Digestion",
+    "_id": 598
+  },
+  {
+    "symptomName": "Digestive",
+    "_id": 599
+  },
+  {
+    "symptomName": "Digestive disease",
+    "_id": 600
+  },
+  {
+    "symptomName": "Diphtheria",
+    "_id": 601
+  },
+  {
+    "symptomName": "Discutient",
+    "_id": 602
+  },
+  {
+    "symptomName": "Disinfectant",
+    "_id": 603
+  },
+  {
+    "symptomName": "Dislocation",
+    "_id": 604
+  },
+  {
+    "symptomName": "Distemper",
+    "_id": 605
+  },
+  {
+    "symptomName": "Diuretic",
+    "_id": 607
+  },
+  {
+    "symptomName": "Divination",
+    "_id": 609
+  },
+  {
+    "symptomName": "Dizziness",
+    "_id": 610
+  },
+  {
+    "symptomName": "Douche",
+    "_id": 611
+  },
+  {
+    "symptomName": "Drainage",
+    "_id": 612
+  },
+  {
+    "symptomName": "Drastic",
+    "_id": 613
+  },
+  {
+    "symptomName": "Drooling",
+    "_id": 614
+  },
+  {
+    "symptomName": "Dropsy",
+    "_id": 615
+  },
+  {
+    "symptomName": "Drowning",
+    "_id": 617
+  },
+  {
+    "symptomName": "Drug",
+    "_id": 618
+  },
+  {
+    "symptomName": "Drunkenness",
+    "_id": 619
+  },
+  {
+    "symptomName": "Dry-Lip",
+    "_id": 620
+  },
+  {
+    "symptomName": "Dubdubia",
+    "_id": 621
+  },
+  {
+    "symptomName": "Dugout",
+    "_id": 622
+  },
+  {
+    "symptomName": "Dullness",
+    "_id": 623
+  },
+  {
+    "symptomName": "Duodenum",
+    "_id": 624
+  },
+  {
+    "symptomName": "Dye",
+    "_id": 625
+  },
+  {
+    "symptomName": "Dypsnoea",
+    "_id": 626
+  },
+  {
+    "symptomName": "Dyschezia",
+    "_id": 627
+  },
+  {
+    "symptomName": "Dyscrasia",
+    "_id": 628
+  },
+  {
+    "symptomName": "Dysentery",
+    "_id": 629
+  },
+  {
+    "symptomName": "Dyslactation",
+    "_id": 630
+  },
+  {
+    "symptomName": "Dysmenorrhea",
+    "_id": 631
+  },
+  {
+    "symptomName": "Dyspareunia",
+    "_id": 632
+  },
+  {
+    "symptomName": "Dyspepsia",
+    "_id": 633
+  },
+  {
+    "symptomName": "Dysphagia",
+    "_id": 634
+  },
+  {
+    "symptomName": "Dyspnea",
+    "_id": 635
+  },
+  {
+    "symptomName": "Dysuria",
+    "_id": 636
+  },
+  {
+    "symptomName": "Ear",
+    "_id": 637
+  },
+  {
+    "symptomName": "Ear drop",
+    "_id": 638
+  },
+  {
+    "symptomName": "Earache",
+    "_id": 639
+  },
+  {
+    "symptomName": "Earring",
+    "_id": 640
+  },
+  {
+    "symptomName": "Earwig",
+    "_id": 641
+  },
+  {
+    "symptomName": "Ecbolic",
+    "_id": 642
+  },
+  {
+    "symptomName": "Ecchymosis",
+    "_id": 643
+  },
+  {
+    "symptomName": "Eccoprotic",
+    "_id": 644
+  },
+  {
+    "symptomName": "Eclampsia",
+    "_id": 645
+  },
+  {
+    "symptomName": "Ecthyma",
+    "_id": 646
+  },
+  {
+    "symptomName": "Ectoparasite",
+    "_id": 647
+  },
+  {
+    "symptomName": "Eczema",
+    "_id": 648
+  },
+  {
+    "symptomName": "Edema",
+    "_id": 649
+  },
+  {
+    "symptomName": "Egilops",
+    "_id": 650
+  },
+  {
+    "symptomName": "Ejaculation",
+    "_id": 651
+  },
+  {
+    "symptomName": "Elephantiasis",
+    "_id": 652
+  },
+  {
+    "symptomName": "Emaciation",
+    "_id": 653
+  },
+  {
+    "symptomName": "Embalming",
+    "_id": 654
+  },
+  {
+    "symptomName": "Embolism",
+    "_id": 655
+  },
+  {
+    "symptomName": "Emetic",
+    "_id": 656
+  },
+  {
+    "symptomName": "Emission",
+    "_id": 658
+  },
+  {
+    "symptomName": "Emission(Nocturnal)",
+    "_id": 659
+  },
+  {
+    "symptomName": "Emmenagogue",
+    "_id": 660
+  },
+  {
+    "symptomName": "Emmenagogue?",
+    "_id": 661
+  },
+  {
+    "symptomName": "Emollient",
+    "_id": 663
+  },
+  {
+    "symptomName": "Empacho",
+    "_id": 664
+  },
+  {
+    "symptomName": "Emphysema",
+    "_id": 665
+  },
+  {
+    "symptomName": "Empyema",
+    "_id": 666
+  },
+  {
+    "symptomName": "Empyreumatic",
+    "_id": 667
+  },
+  {
+    "symptomName": "Encephalitis",
+    "_id": 668
+  },
+  {
+    "symptomName": "Endocarditis",
+    "_id": 669
+  },
+  {
+    "symptomName": "Endometritis",
+    "_id": 670
+  },
+  {
+    "symptomName": "Enema",
+    "_id": 671
+  },
+  {
+    "symptomName": "Energy",
+    "_id": 672
+  },
+  {
+    "symptomName": "Enorrhagia",
+    "_id": 673
+  },
+  {
+    "symptomName": "Enteritis",
+    "_id": 674
+  },
+  {
+    "symptomName": "Enteromegaly",
+    "_id": 675
+  },
+  {
+    "symptomName": "Enterorrhagia",
+    "_id": 676
+  },
+  {
+    "symptomName": "Enterosis",
+    "_id": 677
+  },
+  {
+    "symptomName": "Enterrhagia",
+    "_id": 678
+  },
+  {
+    "symptomName": "Entropion",
+    "_id": 679
+  },
+  {
+    "symptomName": "Enuresis",
+    "_id": 680
+  },
+  {
+    "symptomName": "Epidemic",
+    "_id": 681
+  },
+  {
+    "symptomName": "Epididymitis",
+    "_id": 682
+  },
+  {
+    "symptomName": "Epilepsy",
+    "_id": 683
+  },
+  {
+    "symptomName": "Epiphora",
+    "_id": 684
+  },
+  {
+    "symptomName": "Epispastic",
+    "_id": 685
+  },
+  {
+    "symptomName": "Epistaxis",
+    "_id": 686
+  },
+  {
+    "symptomName": "Epithelioma",
+    "_id": 687
+  },
+  {
+    "symptomName": "Errhine",
+    "_id": 688
+  },
+  {
+    "symptomName": "Eruption",
+    "_id": 689
+  },
+  {
+    "symptomName": "Erysipelas",
+    "_id": 690
+  },
+  {
+    "symptomName": "Erythema",
+    "_id": 691
+  },
+  {
+    "symptomName": "Escharotic",
+    "_id": 692
+  },
+  {
+    "symptomName": "Escrescence",
+    "_id": 693
+  },
+  {
+    "symptomName": "Esophagus",
+    "_id": 694
+  },
+  {
+    "symptomName": "Est",
+    "_id": 695
+  },
+  {
+    "symptomName": "Estrogenic",
+    "_id": 696
+  },
+  {
+    "symptomName": "Evil",
+    "_id": 697
+  },
+  {
+    "symptomName": "Evil eye",
+    "_id": 698
+  },
+  {
+    "symptomName": "Excipient",
+    "_id": 699
+  },
+  {
+    "symptomName": "Excitant",
+    "_id": 700
+  },
+  {
+    "symptomName": "Excoriation",
+    "_id": 701
+  },
+  {
+    "symptomName": "Excrescence",
+    "_id": 702
+  },
+  {
+    "symptomName": "Excrescence(Anus)",
+    "_id": 703
+  },
+  {
+    "symptomName": "Excrescence(Womb)",
+    "_id": 704
+  },
+  {
+    "symptomName": "Exhaustion",
+    "_id": 705
+  },
+  {
+    "symptomName": "Expectorant",
+    "_id": 706
+  },
+  {
+    "symptomName": "Extrasystole",
+    "_id": 708
+  },
+  {
+    "symptomName": "Extravasation",
+    "_id": 709
+  },
+  {
+    "symptomName": "Extrophy",
+    "_id": 710
+  },
+  {
+    "symptomName": "Eye",
+    "_id": 711
+  },
+  {
+    "symptomName": "Eye drop",
+    "_id": 713
+  },
+  {
+    "symptomName": "Eyesight",
+    "_id": 714
+  },
+  {
+    "symptomName": "Eyeball",
+    "_id": 715
+  },
+  {
+    "symptomName": "Eyelid",
+    "_id": 716
+  },
+  {
+    "symptomName": "Face",
+    "_id": 717
+  },
+  {
+    "symptomName": "Fainting",
+    "_id": 718
+  },
+  {
+    "symptomName": "Fatal",
+    "_id": 719
+  },
+  {
+    "symptomName": "Fatality",
+    "_id": 720
+  },
+  {
+    "symptomName": "Fatigue",
+    "_id": 721
+  },
+  {
+    "symptomName": "Fattening",
+    "_id": 722
+  },
+  {
+    "symptomName": "Favus",
+    "_id": 724
+  },
+  {
+    "symptomName": "Fear",
+    "_id": 725
+  },
+  {
+    "symptomName": "Febrifuge",
+    "_id": 726
+  },
+  {
+    "symptomName": "Feet",
+    "_id": 727
+  },
+  {
+    "symptomName": "Felicide",
+    "_id": 728
+  },
+  {
+    "symptomName": "Felon",
+    "_id": 729
+  },
+  {
+    "symptomName": "Female",
+    "_id": 730
+  },
+  {
+    "symptomName": "Fence",
+    "_id": 731
+  },
+  {
+    "symptomName": "Fertility",
+    "_id": 732
+  },
+  {
+    "symptomName": "Fertility(Female)",
+    "_id": 733
+  },
+  {
+    "symptomName": "Fetus",
+    "_id": 735
+  },
+  {
+    "symptomName": "Fever",
+    "_id": 736
+  },
+  {
+    "symptomName": "Fever(Remittent)",
+    "_id": 737
+  },
+  {
+    "symptomName": "Fever(Malarial)",
+    "_id": 738
+  },
+  {
+    "symptomName": "Blister(Fever)",
+    "_id": 740
+  },
+  {
+    "symptomName": "Fiber",
+    "_id": 741
+  },
+  {
+    "symptomName": "Fibroma",
+    "_id": 742
+  },
+  {
+    "symptomName": "Fibroma(Cervix)",
+    "_id": 743
+  },
+  {
+    "symptomName": "Fibroma(Uterus)",
+    "_id": 744
+  },
+  {
+    "symptomName": "Fibromiomatosis",
+    "_id": 745
+  },
+  {
+    "symptomName": "Fibrositis",
+    "_id": 746
+  },
+  {
+    "symptomName": "Filariasis",
+    "_id": 747
+  },
+  {
+    "symptomName": "Filaricide",
+    "_id": 748
+  },
+  {
+    "symptomName": "Filler",
+    "_id": 749
+  },
+  {
+    "symptomName": "Finger",
+    "_id": 750
+  },
+  {
+    "symptomName": "Firewood",
+    "_id": 751
+  },
+  {
+    "symptomName": "Fish-Bones",
+    "_id": 752
+  },
+  {
+    "symptomName": "Sting(Fish)",
+    "_id": 753
+  },
+  {
+    "symptomName": "Fistula",
+    "_id": 754
+  },
+  {
+    "symptomName": "Fit",
+    "_id": 755
+  },
+  {
+    "symptomName": "Fits",
+    "_id": 756
+  },
+  {
+    "symptomName": "Flatulence",
+    "_id": 757
+  },
+  {
+    "symptomName": "Flavor",
+    "_id": 759
+  },
+  {
+    "symptomName": "Flu",
+    "_id": 760
+  },
+  {
+    "symptomName": "Flushing",
+    "_id": 761
+  },
+  {
+    "symptomName": "Flux",
+    "_id": 762
+  },
+  {
+    "symptomName": "Fodder",
+    "_id": 763
+  },
+  {
+    "symptomName": "Fomentation",
+    "_id": 764
+  },
+  {
+    "symptomName": "Fontanelle",
+    "_id": 765
+  },
+  {
+    "symptomName": "Food",
+    "_id": 766
+  },
+  {
+    "symptomName": "Food poisoning",
+    "_id": 767
+  },
+  {
+    "symptomName": "Food-Dye",
+    "_id": 768
+  },
+  {
+    "symptomName": "Food-Poison",
+    "_id": 769
+  },
+  {
+    "symptomName": "Foot",
+    "_id": 770
+  },
+  {
+    "symptomName": "Forgetfulness",
+    "_id": 771
+  },
+  {
+    "symptomName": "Formicicide",
+    "_id": 772
+  },
+  {
+    "symptomName": "Fracture",
+    "_id": 774
+  },
+  {
+    "symptomName": "Frambesia",
+    "_id": 776
+  },
+  {
+    "symptomName": "Freckle",
+    "_id": 777
+  },
+  {
+    "symptomName": "Frenzy",
+    "_id": 778
+  },
+  {
+    "symptomName": "Fright",
+    "_id": 779
+  },
+  {
+    "symptomName": "Frigidity",
+    "_id": 780
+  },
+  {
+    "symptomName": "Frigidity?",
+    "_id": 781
+  },
+  {
+    "symptomName": "Frostbite",
+    "_id": 782
+  },
+  {
+    "symptomName": "Fruit",
+    "_id": 783
+  },
+  {
+    "symptomName": "Frunculosis",
+    "_id": 784
+  },
+  {
+    "symptomName": "Fuel",
+    "_id": 785
+  },
+  {
+    "symptomName": "Fumigant",
+    "_id": 786
+  },
+  {
+    "symptomName": "Fumitory",
+    "_id": 787
+  },
+  {
+    "symptomName": "Funeral",
+    "_id": 789
+  },
+  {
+    "symptomName": "Funereal",
+    "_id": 790
+  },
+  {
+    "symptomName": "Fungicide",
+    "_id": 791
+  },
+  {
+    "symptomName": "Fungicide(Skin)",
+    "_id": 792
+  },
+  {
+    "symptomName": "Fungistatic",
+    "_id": 793
+  },
+  {
+    "symptomName": "Fungoid",
+    "_id": 794
+  },
+  {
+    "symptomName": "Fungus",
+    "_id": 795
+  },
+  {
+    "symptomName": "Furuncle",
+    "_id": 796
+  },
+  {
+    "symptomName": "Furunculosis",
+    "_id": 797
+  },
+  {
+    "symptomName": "Fwvwe",
+    "_id": 798
+  },
+  {
+    "symptomName": "Galactogogue",
+    "_id": 799
+  },
+  {
+    "symptomName": "Gall Bladder",
+    "_id": 800
+  },
+  {
+    "symptomName": "Gall",
+    "_id": 801
+  },
+  {
+    "symptomName": "Gall-Bladder",
+    "_id": 803
+  },
+  {
+    "symptomName": "Gall-Stone",
+    "_id": 804
+  },
+  {
+    "symptomName": "Gallbladder",
+    "_id": 805
+  },
+  {
+    "symptomName": "Gallstone",
+    "_id": 806
+  },
+  {
+    "symptomName": "Gallstones",
+    "_id": 807
+  },
+  {
+    "symptomName": "Gangrene",
+    "_id": 808
+  },
+  {
+    "symptomName": "Gargle",
+    "_id": 809
+  },
+  {
+    "symptomName": "Gas",
+    "_id": 810
+  },
+  {
+    "symptomName": "Gasatromegaly",
+    "_id": 811
+  },
+  {
+    "symptomName": "Gastralgia",
+    "_id": 812
+  },
+  {
+    "symptomName": "Gastric-Juice",
+    "_id": 813
+  },
+  {
+    "symptomName": "Gastritis",
+    "_id": 814
+  },
+  {
+    "symptomName": "Gastrodynia",
+    "_id": 815
+  },
+  {
+    "symptomName": "Gastrointestinal",
+    "_id": 816
+  },
+  {
+    "symptomName": "Gastromegaly",
+    "_id": 817
+  },
+  {
+    "symptomName": "Gastrorrhagia",
+    "_id": 818
+  },
+  {
+    "symptomName": "Gastrosis",
+    "_id": 819
+  },
+  {
+    "symptomName": "Gastrospasm",
+    "_id": 820
+  },
+  {
+    "symptomName": "Gastrotonic",
+    "_id": 821
+  },
+  {
+    "symptomName": "Genital",
+    "_id": 822
+  },
+  {
+    "symptomName": "Germicide",
+    "_id": 823
+  },
+  {
+    "symptomName": "Gestation",
+    "_id": 824
+  },
+  {
+    "symptomName": "Giddiness",
+    "_id": 825
+  },
+  {
+    "symptomName": "Gingirrhagia",
+    "_id": 826
+  },
+  {
+    "symptomName": "Gingivitis",
+    "_id": 827
+  },
+  {
+    "symptomName": "Gingivosis",
+    "_id": 828
+  },
+  {
+    "symptomName": "Glactogogue",
+    "_id": 829
+  },
+  {
+    "symptomName": "Glands",
+    "_id": 830
+  },
+  {
+    "symptomName": "Glaucoma",
+    "_id": 831
+  },
+  {
+    "symptomName": "Gleet",
+    "_id": 832
+  },
+  {
+    "symptomName": "Glossitis",
+    "_id": 833
+  },
+  {
+    "symptomName": "Glue",
+    "_id": 834
+  },
+  {
+    "symptomName": "Gluttony",
+    "_id": 835
+  },
+  {
+    "symptomName": "Glycosuria",
+    "_id": 836
+  },
+  {
+    "symptomName": "Goiter",
+    "_id": 837
+  },
+  {
+    "symptomName": "Gonadotrophic",
+    "_id": 838
+  },
+  {
+    "symptomName": "Gonorrhea",
+    "_id": 839
+  },
+  {
+    "symptomName": "Gout",
+    "_id": 840
+  },
+  {
+    "symptomName": "Grain",
+    "_id": 841
+  },
+  {
+    "symptomName": "Gravel",
+    "_id": 842
+  },
+  {
+    "symptomName": "Grayhair",
+    "_id": 843
+  },
+  {
+    "symptomName": "Grey Hair",
+    "_id": 844
+  },
+  {
+    "symptomName": "Grip",
+    "_id": 845
+  },
+  {
+    "symptomName": "Gripes",
+    "_id": 846
+  },
+  {
+    "symptomName": "Groin",
+    "_id": 847
+  },
+  {
+    "symptomName": "Guineaworms",
+    "_id": 848
+  },
+  {
+    "symptomName": "Gum",
+    "_id": 849
+  },
+  {
+    "symptomName": "Gunshot",
+    "_id": 850
+  },
+  {
+    "symptomName": "Gynecology",
+    "_id": 851
+  },
+  {
+    "symptomName": "Gynecopathy",
+    "_id": 852
+  },
+  {
+    "symptomName": "Hail",
+    "_id": 853
+  },
+  {
+    "symptomName": "Hair",
+    "_id": 854
+  },
+  {
+    "symptomName": "Hair-Dye",
+    "_id": 855
+  },
+  {
+    "symptomName": "Hair-Oil",
+    "_id": 856
+  },
+  {
+    "symptomName": "Hair-Set",
+    "_id": 857
+  },
+  {
+    "symptomName": "Hair-Tonic",
+    "_id": 858
+  },
+  {
+    "symptomName": "Hair-Wash",
+    "_id": 859
+  },
+  {
+    "symptomName": "Hairblack",
+    "_id": 860
+  },
+  {
+    "symptomName": "Hairwhite",
+    "_id": 861
+  },
+  {
+    "symptomName": "Halitosis",
+    "_id": 862
+  },
+  {
+    "symptomName": "Hallucination",
+    "_id": 863
+  },
+  {
+    "symptomName": "Hallucinogen",
+    "_id": 864
+  },
+  {
+    "symptomName": "Hand",
+    "_id": 865
+  },
+  {
+    "symptomName": "Hand Water",
+    "_id": 866
+  },
+  {
+    "symptomName": "Hangover",
+    "_id": 867
+  },
+  {
+    "symptomName": "Hat",
+    "_id": 868
+  },
+  {
+    "symptomName": "Hayfever",
+    "_id": 869
+  },
+  {
+    "symptomName": "Head",
+    "_id": 870
+  },
+  {
+    "symptomName": "Cold(Head)",
+    "_id": 872
+  },
+  {
+    "symptomName": "Sore(Head)",
+    "_id": 873
+  },
+  {
+    "symptomName": "Hearing",
+    "_id": 874
+  },
+  {
+    "symptomName": "Heart",
+    "_id": 875
+  },
+  {
+    "symptomName": "Heart attack",
+    "_id": 877
+  },
+  {
+    "symptomName": "Heartburn",
+    "_id": 878
+  },
+  {
+    "symptomName": "Heat",
+    "_id": 879
+  },
+  {
+    "symptomName": "Heat rash",
+    "_id": 880
+  },
+  {
+    "symptomName": "Heatstroke",
+    "_id": 881
+  },
+  {
+    "symptomName": "Hedge",
+    "_id": 882
+  },
+  {
+    "symptomName": "Helminthiasis",
+    "_id": 883
+  },
+  {
+    "symptomName": "Hemagglutinant",
+    "_id": 884
+  },
+  {
+    "symptomName": "Hemaptysis",
+    "_id": 885
+  },
+  {
+    "symptomName": "Hematachezia",
+    "_id": 886
+  },
+  {
+    "symptomName": "Hematafeces",
+    "_id": 887
+  },
+  {
+    "symptomName": "Hematemesis",
+    "_id": 888
+  },
+  {
+    "symptomName": "Hematinic",
+    "_id": 889
+  },
+  {
+    "symptomName": "Hematochezia",
+    "_id": 890
+  },
+  {
+    "symptomName": "Hematofeces",
+    "_id": 891
+  },
+  {
+    "symptomName": "Hematogenic",
+    "_id": 892
+  },
+  {
+    "symptomName": "Hematoma",
+    "_id": 893
+  },
+  {
+    "symptomName": "Hematoptysis",
+    "_id": 894
+  },
+  {
+    "symptomName": "Hematuria",
+    "_id": 895
+  },
+  {
+    "symptomName": "Hemicrania",
+    "_id": 897
+  },
+  {
+    "symptomName": "Hemiplegia",
+    "_id": 898
+  },
+  {
+    "symptomName": "Hemoglobinuria",
+    "_id": 899
+  },
+  {
+    "symptomName": "Hemolytic",
+    "_id": 900
+  },
+  {
+    "symptomName": "Hemophilia",
+    "_id": 901
+  },
+  {
+    "symptomName": "Hemoptysis",
+    "_id": 902
+  },
+  {
+    "symptomName": "Hemorisis",
+    "_id": 903
+  },
+  {
+    "symptomName": "Hemorrhage",
+    "_id": 904
+  },
+  {
+    "symptomName": "Hemorrhagia",
+    "_id": 905
+  },
+  {
+    "symptomName": "Hemorrhoids",
+    "_id": 906
+  },
+  {
+    "symptomName": "Hemostat",
+    "_id": 907
+  },
+  {
+    "symptomName": "Hemostatic",
+    "_id": 908
+  },
+  {
+    "symptomName": "Hepatic",
+    "_id": 909
+  },
+  {
+    "symptomName": "Hepatic-Obstruction",
+    "_id": 910
+  },
+  {
+    "symptomName": "Hepatitis",
+    "_id": 911
+  },
+  {
+    "symptomName": "Hepatogegaly",
+    "_id": 913
+  },
+  {
+    "symptomName": "Hepatoma",
+    "_id": 914
+  },
+  {
+    "symptomName": "Hepatomegaly",
+    "_id": 915
+  },
+  {
+    "symptomName": "Hepatosis",
+    "_id": 916
+  },
+  {
+    "symptomName": "Hepatotonic",
+    "_id": 917
+  },
+  {
+    "symptomName": "Herbicide",
+    "_id": 918
+  },
+  {
+    "symptomName": "Hernia",
+    "_id": 919
+  },
+  {
+    "symptomName": "Herpes",
+    "_id": 920
+  },
+  {
+    "symptomName": "Herpes zoster",
+    "_id": 921
+  },
+  {
+    "symptomName": "Heumatism",
+    "_id": 922
+  },
+  {
+    "symptomName": "Hiccup",
+    "_id": 923
+  },
+  {
+    "symptomName": "Hidrosis",
+    "_id": 924
+  },
+  {
+    "symptomName": "Hirudicide",
+    "_id": 925
+  },
+  {
+    "symptomName": "Hives",
+    "_id": 926
+  },
+  {
+    "symptomName": "Hivess",
+    "_id": 927
+  },
+  {
+    "symptomName": "Hoarseness",
+    "_id": 928
+  },
+  {
+    "symptomName": "Hodgkin's Disease",
+    "_id": 929
+  },
+  {
+    "symptomName": "Homeopathy",
+    "_id": 930
+  },
+  {
+    "symptomName": "Homicide",
+    "_id": 931
+  },
+  {
+    "symptomName": "Homocide",
+    "_id": 932
+  },
+  {
+    "symptomName": "Honey",
+    "_id": 933
+  },
+  {
+    "symptomName": "Hoof",
+    "_id": 934
+  },
+  {
+    "symptomName": "Hookworms",
+    "_id": 936
+  },
+  {
+    "symptomName": "Hunger",
+    "_id": 937
+  },
+  {
+    "symptomName": "Hydragogue",
+    "_id": 938
+  },
+  {
+    "symptomName": "Hydrocoele",
+    "_id": 939
+  },
+  {
+    "symptomName": "Hydrogogue",
+    "_id": 940
+  },
+  {
+    "symptomName": "Hydrophobia",
+    "_id": 941
+  },
+  {
+    "symptomName": "Hydropsy",
+    "_id": 942
+  },
+  {
+    "symptomName": "Hydrothorax",
+    "_id": 943
+  },
+  {
+    "symptomName": "Hymen",
+    "_id": 944
+  },
+  {
+    "symptomName": "Hyperacidity",
+    "_id": 945
+  },
+  {
+    "symptomName": "Hyperchlorhydria",
+    "_id": 946
+  },
+  {
+    "symptomName": "Hypercholesterolemia",
+    "_id": 947
+  },
+  {
+    "symptomName": "Hyperemia",
+    "_id": 948
+  },
+  {
+    "symptomName": "Hyperglycemia",
+    "_id": 949
+  },
+  {
+    "symptomName": "Hypertension",
+    "_id": 950
+  },
+  {
+    "symptomName": "Hypertensive",
+    "_id": 952
+  },
+  {
+    "symptomName": "Hyperthyreosis",
+    "_id": 953
+  },
+  {
+    "symptomName": "Hyperuricemia",
+    "_id": 954
+  },
+  {
+    "symptomName": "Hypnotic",
+    "_id": 955
+  },
+  {
+    "symptomName": "Hypochondria",
+    "_id": 956
+  },
+  {
+    "symptomName": "Hypogonadism",
+    "_id": 957
+  },
+  {
+    "symptomName": "Hypotension",
+    "_id": 958
+  },
+  {
+    "symptomName": "Hypotensive",
+    "_id": 959
+  },
+  {
+    "symptomName": "Hypotherbia",
+    "_id": 960
+  },
+  {
+    "symptomName": "Hysteria",
+    "_id": 961
+  },
+  {
+    "symptomName": "Ichthyosarcotoxin",
+    "_id": 962
+  },
+  {
+    "symptomName": "Ichthyosarcotoxism",
+    "_id": 963
+  },
+  {
+    "symptomName": "Icterus",
+    "_id": 964
+  },
+  {
+    "symptomName": "Idiocy",
+    "_id": 965
+  },
+  {
+    "symptomName": "Immortality",
+    "_id": 966
+  },
+  {
+    "symptomName": "Impetigo",
+    "_id": 967
+  },
+  {
+    "symptomName": "Impostume",
+    "_id": 968
+  },
+  {
+    "symptomName": "Impotence",
+    "_id": 969
+  },
+  {
+    "symptomName": "Impotency",
+    "_id": 970
+  },
+  {
+    "symptomName": "Inappetence",
+    "_id": 971
+  },
+  {
+    "symptomName": "Incense",
+    "_id": 972
+  },
+  {
+    "symptomName": "Incisive",
+    "_id": 973
+  },
+  {
+    "symptomName": "Incontinence",
+    "_id": 974
+  },
+  {
+    "symptomName": "Indigestion",
+    "_id": 975
+  },
+  {
+    "symptomName": "Inebrity",
+    "_id": 976
+  },
+  {
+    "symptomName": "Inertia",
+    "_id": 977
+  },
+  {
+    "symptomName": "Infanticide",
+    "_id": 978
+  },
+  {
+    "symptomName": "Infarct",
+    "_id": 979
+  },
+  {
+    "symptomName": "Infection",
+    "_id": 980
+  },
+  {
+    "symptomName": "Infertility",
+    "_id": 981
+  },
+  {
+    "symptomName": "Inflammation",
+    "_id": 982
+  },
+  {
+    "symptomName": "Influenza",
+    "_id": 983
+  },
+  {
+    "symptomName": "Inhalant",
+    "_id": 984
+  },
+  {
+    "symptomName": "Insanity",
+    "_id": 985
+  },
+  {
+    "symptomName": "Insecticide",
+    "_id": 986
+  },
+  {
+    "symptomName": "Insectifuge",
+    "_id": 988
+  },
+  {
+    "symptomName": "Repellant(Insect)",
+    "_id": 989
+  },
+  {
+    "symptomName": "Insemination",
+    "_id": 990
+  },
+  {
+    "symptomName": "Insomnia",
+    "_id": 991
+  },
+  {
+    "symptomName": "Intellect",
+    "_id": 992
+  },
+  {
+    "symptomName": "Internal",
+    "_id": 993
+  },
+  {
+    "symptomName": "Internulcer",
+    "_id": 994
+  },
+  {
+    "symptomName": "Intertrigo",
+    "_id": 995
+  },
+  {
+    "symptomName": "Intestinal",
+    "_id": 996
+  },
+  {
+    "symptomName": "Intestinal-Ailments",
+    "_id": 997
+  },
+  {
+    "symptomName": "Intestinal-Catarrh",
+    "_id": 998
+  },
+  {
+    "symptomName": "Intestinal tonic",
+    "_id": 999
+  },
+  {
+    "symptomName": "Intestinal-Troubles",
+    "_id": 1000
+  },
+  {
+    "symptomName": "Intestine",
+    "_id": 1001
+  },
+  {
+    "symptomName": "Intoxicant",
+    "_id": 1002
+  },
+  {
+    "symptomName": "Intoxication",
+    "_id": 1003
+  },
+  {
+    "symptomName": "Iodine",
+    "_id": 1004
+  },
+  {
+    "symptomName": "Ipecac",
+    "_id": 1005
+  },
+  {
+    "symptomName": "Irritability",
+    "_id": 1006
+  },
+  {
+    "symptomName": "Irritant",
+    "_id": 1007
+  },
+  {
+    "symptomName": "Ischias",
+    "_id": 1008
+  },
+  {
+    "symptomName": "Ischury",
+    "_id": 1009
+  },
+  {
+    "symptomName": "Itch",
+    "_id": 1010
+  },
+  {
+    "symptomName": "Ive(Caries)",
+    "_id": 1012
+  },
+  {
+    "symptomName": "Asthma (Ivy)",
+    "_id": 1013
+  },
+  {
+    "symptomName": "Ivy Poisoning",
+    "_id": 1014
+  },
+  {
+    "symptomName": "Jaundice",
+    "_id": 1015
+  },
+  {
+    "symptomName": "Jaw",
+    "_id": 1016
+  },
+  {
+    "symptomName": "Jealousy",
+    "_id": 1017
+  },
+  {
+    "symptomName": "Jellyfish-sting",
+    "_id": 1018
+  },
+  {
+    "symptomName": "Joint",
+    "_id": 1019
+  },
+  {
+    "symptomName": "Keratitis",
+    "_id": 1020
+  },
+  {
+    "symptomName": "Kidney",
+    "_id": 1021
+  },
+  {
+    "symptomName": "Kidney stones",
+    "_id": 1022
+  },
+  {
+    "symptomName": "Kindling",
+    "_id": 1023
+  },
+  {
+    "symptomName": "Knee",
+    "_id": 1024
+  },
+  {
+    "symptomName": "Kneecap",
+    "_id": 1025
+  },
+  {
+    "symptomName": "Labor",
+    "_id": 1026
+  },
+  {
+    "symptomName": "Lacrimatory",
+    "_id": 1027
+  },
+  {
+    "symptomName": "Lacrimitis",
+    "_id": 1028
+  },
+  {
+    "symptomName": "Lactafuge",
+    "_id": 1029
+  },
+  {
+    "symptomName": "Lactagogue",
+    "_id": 1030
+  },
+  {
+    "symptomName": "Lactation",
+    "_id": 1031
+  },
+  {
+    "symptomName": "Lactifuge",
+    "_id": 1032
+  },
+  {
+    "symptomName": "Lactogogue",
+    "_id": 1033
+  },
+  {
+    "symptomName": "Lactorrhea",
+    "_id": 1035
+  },
+  {
+    "symptomName": "Ladentifrice",
+    "_id": 1036
+  },
+  {
+    "symptomName": "Lameness",
+    "_id": 1037
+  },
+  {
+    "symptomName": "Larvicide",
+    "_id": 1039
+  },
+  {
+    "symptomName": "Laryngalgia",
+    "_id": 1041
+  },
+  {
+    "symptomName": "Laryngeal",
+    "_id": 1042
+  },
+  {
+    "symptomName": "Laryngitis",
+    "_id": 1043
+  },
+  {
+    "symptomName": "Lash",
+    "_id": 1044
+  },
+  {
+    "symptomName": "Lassitude",
+    "_id": 1045
+  },
+  {
+    "symptomName": "Laxative",
+    "_id": 1046
+  },
+  {
+    "symptomName": "Leech",
+    "_id": 1047
+  },
+  {
+    "symptomName": "Leech-Repellant",
+    "_id": 1048
+  },
+  {
+    "symptomName": "Leech-repellant",
+    "_id": 1049
+  },
+  {
+    "symptomName": "Leg",
+    "_id": 1050
+  },
+  {
+    "symptomName": "Lenitive",
+    "_id": 1051
+  },
+  {
+    "symptomName": "Leprosy",
+    "_id": 1052
+  },
+  {
+    "symptomName": "Leptospirosis",
+    "_id": 1053
+  },
+  {
+    "symptomName": "Lequeur",
+    "_id": 1054
+  },
+  {
+    "symptomName": "Lethargy",
+    "_id": 1055
+  },
+  {
+    "symptomName": "Leucoderma",
+    "_id": 1056
+  },
+  {
+    "symptomName": "Leucoma",
+    "_id": 1057
+  },
+  {
+    "symptomName": "Leucorrhea",
+    "_id": 1058
+  },
+  {
+    "symptomName": "Leukemia",
+    "_id": 1059
+  },
+  {
+    "symptomName": "Leukoma",
+    "_id": 1060
+  },
+  {
+    "symptomName": "Leukopenic",
+    "_id": 1061
+  },
+  {
+    "symptomName": "Leukorrhea",
+    "_id": 1062
+  },
+  {
+    "symptomName": "Lice",
+    "_id": 1063
+  },
+  {
+    "symptomName": "Ligament",
+    "_id": 1064
+  },
+  {
+    "symptomName": "Ligature",
+    "_id": 1065
+  },
+  {
+    "symptomName": "Lightning",
+    "_id": 1066
+  },
+  {
+    "symptomName": "Limb",
+    "_id": 1067
+  },
+  {
+    "symptomName": "Liniment",
+    "_id": 1068
+  },
+  {
+    "symptomName": "Lip",
+    "_id": 1069
+  },
+  {
+    "symptomName": "Liqueur",
+    "_id": 1070
+  },
+  {
+    "symptomName": "Listlessness",
+    "_id": 1071
+  },
+  {
+    "symptomName": "Lithiasis",
+    "_id": 1072
+  },
+  {
+    "symptomName": "Litholytic",
+    "_id": 1073
+  },
+  {
+    "symptomName": "Lithontriptic",
+    "_id": 1074
+  },
+  {
+    "symptomName": "Liver",
+    "_id": 1075
+  },
+  {
+    "symptomName": "Lizardbite",
+    "_id": 1076
+  },
+  {
+    "symptomName": "Lochia",
+    "_id": 1077
+  },
+  {
+    "symptomName": "Lockjaw",
+    "_id": 1078
+  },
+  {
+    "symptomName": "Loin",
+    "_id": 1079
+  },
+  {
+    "symptomName": "Longevity",
+    "_id": 1080
+  },
+  {
+    "symptomName": "Loose Teeth",
+    "_id": 1081
+  },
+  {
+    "symptomName": "Loose-Toothh",
+    "_id": 1082
+  },
+  {
+    "symptomName": "Lotion",
+    "_id": 1083
+  },
+  {
+    "symptomName": "Lower",
+    "_id": 1084
+  },
+  {
+    "symptomName": "Lower Pulse",
+    "_id": 1085
+  },
+  {
+    "symptomName": "Lubricative",
+    "_id": 1086
+  },
+  {
+    "symptomName": "Lumbago",
+    "_id": 1087
+  },
+  {
+    "symptomName": "Lump",
+    "_id": 1088
+  },
+  {
+    "symptomName": "Lunacy",
+    "_id": 1089
+  },
+  {
+    "symptomName": "Lung",
+    "_id": 1090
+  },
+  {
+    "symptomName": "Lupus",
+    "_id": 1091
+  },
+  {
+    "symptomName": "Lye",
+    "_id": 1092
+  },
+  {
+    "symptomName": "Lymphadenitis",
+    "_id": 1093
+  },
+  {
+    "symptomName": "Lymphadenopathy",
+    "_id": 1094
+  },
+  {
+    "symptomName": "Lymphatic-Disease",
+    "_id": 1095
+  },
+  {
+    "symptomName": "Lymphoadenitis",
+    "_id": 1096
+  },
+  {
+    "symptomName": "Lymphoma",
+    "_id": 1097
+  },
+  {
+    "symptomName": "Lymphoma(Neck)",
+    "_id": 1098
+  },
+  {
+    "symptomName": "Maculitis",
+    "_id": 1099
+  },
+  {
+    "symptomName": "Madness",
+    "_id": 1100
+  },
+  {
+    "symptomName": "Maggot",
+    "_id": 1101
+  },
+  {
+    "symptomName": "Magic",
+    "_id": 1103
+  },
+  {
+    "symptomName": "Malacia",
+    "_id": 1104
+  },
+  {
+    "symptomName": "Malaise",
+    "_id": 1105
+  },
+  {
+    "symptomName": "Malaria",
+    "_id": 1106
+  },
+  {
+    "symptomName": "Malignancy",
+    "_id": 1108
+  },
+  {
+    "symptomName": "Malnutrition",
+    "_id": 1109
+  },
+  {
+    "symptomName": "Mammary",
+    "_id": 1110
+  },
+  {
+    "symptomName": "Manchineel",
+    "_id": 1111
+  },
+  {
+    "symptomName": "Mange",
+    "_id": 1112
+  },
+  {
+    "symptomName": "Mania",
+    "_id": 1114
+  },
+  {
+    "symptomName": "Marasmus",
+    "_id": 1115
+  },
+  {
+    "symptomName": "Marrow",
+    "_id": 1116
+  },
+  {
+    "symptomName": "Massage",
+    "_id": 1117
+  },
+  {
+    "symptomName": "Mastalgia",
+    "_id": 1118
+  },
+  {
+    "symptomName": "Masticatory",
+    "_id": 1119
+  },
+  {
+    "symptomName": "Mastitis",
+    "_id": 1120
+  },
+  {
+    "symptomName": "Masturbation",
+    "_id": 1121
+  },
+  {
+    "symptomName": "Mat",
+    "_id": 1122
+  },
+  {
+    "symptomName": "Mattress",
+    "_id": 1123
+  },
+  {
+    "symptomName": "Measles",
+    "_id": 1124
+  },
+  {
+    "symptomName": "Medical",
+    "_id": 1125
+  },
+  {
+    "symptomName": "Medicine",
+    "_id": 1126
+  },
+  {
+    "symptomName": "Medicine (Vet)",
+    "_id": 1127
+  },
+  {
+    "symptomName": "Medicinel",
+    "_id": 1129
+  },
+  {
+    "symptomName": "Megalohepaty",
+    "_id": 1130
+  },
+  {
+    "symptomName": "Megalospleny",
+    "_id": 1131
+  },
+  {
+    "symptomName": "Meibomian Secretion",
+    "_id": 1132
+  },
+  {
+    "symptomName": "Melancholy",
+    "_id": 1133
+  },
+  {
+    "symptomName": "Melanoma",
+    "_id": 1134
+  },
+  {
+    "symptomName": "Melena",
+    "_id": 1135
+  },
+  {
+    "symptomName": "Memory",
+    "_id": 1136
+  },
+  {
+    "symptomName": "Meningitis",
+    "_id": 1137
+  },
+  {
+    "symptomName": "Menopause",
+    "_id": 1138
+  },
+  {
+    "symptomName": "Menorrhagia",
+    "_id": 1139
+  },
+  {
+    "symptomName": "Menoxenia",
+    "_id": 1140
+  },
+  {
+    "symptomName": "Menses",
+    "_id": 1141
+  },
+  {
+    "symptomName": "Menstruation",
+    "_id": 1142
+  },
+  {
+    "symptomName": "Menstruationimia",
+    "_id": 1143
+  },
+  {
+    "symptomName": "Mental",
+    "_id": 1144
+  },
+  {
+    "symptomName": "Meonrrhagia",
+    "_id": 1145
+  },
+  {
+    "symptomName": "Meteorism",
+    "_id": 1146
+  },
+  {
+    "symptomName": "Metritis",
+    "_id": 1147
+  },
+  {
+    "symptomName": "Metrorrhagia",
+    "_id": 1148
+  },
+  {
+    "symptomName": "Metrorrhea",
+    "_id": 1149
+  },
+  {
+    "symptomName": "Metroxenia",
+    "_id": 1150
+  },
+  {
+    "symptomName": "Miasma",
+    "_id": 1151
+  },
+  {
+    "symptomName": "Micturition",
+    "_id": 1152
+  },
+  {
+    "symptomName": "Migraine",
+    "_id": 1153
+  },
+  {
+    "symptomName": "Millipede",
+    "_id": 1154
+  },
+  {
+    "symptomName": "Miotic",
+    "_id": 1155
+  },
+  {
+    "symptomName": "Miscarriage",
+    "_id": 1156
+  },
+  {
+    "symptomName": "Mitogen",
+    "_id": 1157
+  },
+  {
+    "symptomName": "Mitogenic",
+    "_id": 1158
+  },
+  {
+    "symptomName": "Mole",
+    "_id": 1159
+  },
+  {
+    "symptomName": "Molluscicide",
+    "_id": 1160
+  },
+  {
+    "symptomName": "Mononucleosis",
+    "_id": 1161
+  },
+  {
+    "symptomName": "Morphea",
+    "_id": 1162
+  },
+  {
+    "symptomName": "Morphinism",
+    "_id": 1163
+  },
+  {
+    "symptomName": "Morphinism (Opiumism)",
+    "_id": 1164
+  },
+  {
+    "symptomName": "Motion-Sickness",
+    "_id": 1165
+  },
+  {
+    "symptomName": "Mountain Sickness",
+    "_id": 1166
+  },
+  {
+    "symptomName": "Mountain-Sickness",
+    "_id": 1167
+  },
+  {
+    "symptomName": "Mouth",
+    "_id": 1168
+  },
+  {
+    "symptomName": "Mouthwash",
+    "_id": 1170
+  },
+  {
+    "symptomName": "Moxa",
+    "_id": 1171
+  },
+  {
+    "symptomName": "Mucositis",
+    "_id": 1172
+  },
+  {
+    "symptomName": "Mucous",
+    "_id": 1173
+  },
+  {
+    "symptomName": "Mucous Membrane",
+    "_id": 1174
+  },
+  {
+    "symptomName": "Mucus",
+    "_id": 1175
+  },
+  {
+    "symptomName": "Mucusitis",
+    "_id": 1176
+  },
+  {
+    "symptomName": "Mump",
+    "_id": 1177
+  },
+  {
+    "symptomName": "Mumps",
+    "_id": 1178
+  },
+  {
+    "symptomName": "Muscle",
+    "_id": 1179
+  },
+  {
+    "symptomName": "Muscle(Bladder)",
+    "_id": 1180
+  },
+  {
+    "symptomName": "Mustard-Plaster",
+    "_id": 1181
+  },
+  {
+    "symptomName": "Mutagenic",
+    "_id": 1182
+  },
+  {
+    "symptomName": "Myalgia",
+    "_id": 1183
+  },
+  {
+    "symptomName": "Mycosis",
+    "_id": 1184
+  },
+  {
+    "symptomName": "Mydriatic",
+    "_id": 1186
+  },
+  {
+    "symptomName": "Myocarditis",
+    "_id": 1187
+  },
+  {
+    "symptomName": "Myoneuralgia",
+    "_id": 1188
+  },
+  {
+    "symptomName": "Myopathy",
+    "_id": 1189
+  },
+  {
+    "symptomName": "Myosis",
+    "_id": 1190
+  },
+  {
+    "symptomName": "Myospasm",
+    "_id": 1191
+  },
+  {
+    "symptomName": "Myotic",
+    "_id": 1192
+  },
+  {
+    "symptomName": "Narcosis",
+    "_id": 1193
+  },
+  {
+    "symptomName": "Narcotic",
+    "_id": 1194
+  },
+  {
+    "symptomName": "Narcotic (Pollen)",
+    "_id": 1195
+  },
+  {
+    "symptomName": "Nausea",
+    "_id": 1196
+  },
+  {
+    "symptomName": "Navel",
+    "_id": 1198
+  },
+  {
+    "symptomName": "Neck",
+    "_id": 1199
+  },
+  {
+    "symptomName": "Necklace",
+    "_id": 1200
+  },
+  {
+    "symptomName": "Necklet",
+    "_id": 1201
+  },
+  {
+    "symptomName": "Necrosis",
+    "_id": 1202
+  },
+  {
+    "symptomName": "Nectar",
+    "_id": 1203
+  },
+  {
+    "symptomName": "Nematicide",
+    "_id": 1204
+  },
+  {
+    "symptomName": "Neophasia",
+    "_id": 1205
+  },
+  {
+    "symptomName": "Neoplasm",
+    "_id": 1206
+  },
+  {
+    "symptomName": "Nephritis",
+    "_id": 1207
+  },
+  {
+    "symptomName": "Nephrosis",
+    "_id": 1208
+  },
+  {
+    "symptomName": "Nerves",
+    "_id": 1209
+  },
+  {
+    "symptomName": "Nervine",
+    "_id": 1210
+  },
+  {
+    "symptomName": "Nervousness",
+    "_id": 1211
+  },
+  {
+    "symptomName": "Nettle",
+    "_id": 1212
+  },
+  {
+    "symptomName": "Neuralgia",
+    "_id": 1213
+  },
+  {
+    "symptomName": "Neurasthenia",
+    "_id": 1214
+  },
+  {
+    "symptomName": "Neuritis",
+    "_id": 1215
+  },
+  {
+    "symptomName": "Neuroblastoma",
+    "_id": 1216
+  },
+  {
+    "symptomName": "Neuroparalysis",
+    "_id": 1217
+  },
+  {
+    "symptomName": "Neurosis",
+    "_id": 1218
+  },
+  {
+    "symptomName": "Newborn",
+    "_id": 1219
+  },
+  {
+    "symptomName": "Nicotinism",
+    "_id": 1220
+  },
+  {
+    "symptomName": "Night-Blindness",
+    "_id": 1221
+  },
+  {
+    "symptomName": "Night-Fever",
+    "_id": 1222
+  },
+  {
+    "symptomName": "Night-Sweat",
+    "_id": 1223
+  },
+  {
+    "symptomName": "Nightmare",
+    "_id": 1224
+  },
+  {
+    "symptomName": "Nightsweats",
+    "_id": 1225
+  },
+  {
+    "symptomName": "Nipple",
+    "_id": 1226
+  },
+  {
+    "symptomName": "Node",
+    "_id": 1227
+  },
+  {
+    "symptomName": "Nose",
+    "_id": 1228
+  },
+  {
+    "symptomName": "Nosebleed",
+    "_id": 1229
+  },
+  {
+    "symptomName": "Nosedrop",
+    "_id": 1230
+  },
+  {
+    "symptomName": "Notalgia",
+    "_id": 1231
+  },
+  {
+    "symptomName": "Numbness",
+    "_id": 1232
+  },
+  {
+    "symptomName": "Nutrient",
+    "_id": 1233
+  },
+  {
+    "symptomName": "Nutritive",
+    "_id": 1234
+  },
+  {
+    "symptomName": "Nyctalopia",
+    "_id": 1235
+  },
+  {
+    "symptomName": "Nystagmus",
+    "_id": 1236
+  },
+  {
+    "symptomName": "Obesity",
+    "_id": 1237
+  },
+  {
+    "symptomName": "Obstipation",
+    "_id": 1238
+  },
+  {
+    "symptomName": "Odontalgia",
+    "_id": 1239
+  },
+  {
+    "symptomName": "Odontalgic",
+    "_id": 1240
+  },
+  {
+    "symptomName": "Odontectomy",
+    "_id": 1241
+  },
+  {
+    "symptomName": "Odontitis",
+    "_id": 1242
+  },
+  {
+    "symptomName": "Odontorrhagia",
+    "_id": 1243
+  },
+  {
+    "symptomName": "Odontosis",
+    "_id": 1244
+  },
+  {
+    "symptomName": "Oil",
+    "_id": 1245
+  },
+  {
+    "symptomName": "Ointment",
+    "_id": 1246
+  },
+  {
+    "symptomName": "Ointment-Base",
+    "_id": 1247
+  },
+  {
+    "symptomName": "Oligospermy",
+    "_id": 1248
+  },
+  {
+    "symptomName": "Oliguria",
+    "_id": 1249
+  },
+  {
+    "symptomName": "Oncolytic",
+    "_id": 1250
+  },
+  {
+    "symptomName": "Onychosis",
+    "_id": 1251
+  },
+  {
+    "symptomName": "Onychyosis",
+    "_id": 1252
+  },
+  {
+    "symptomName": "Opacity",
+    "_id": 1253
+  },
+  {
+    "symptomName": "Ophthalmia",
+    "_id": 1254
+  },
+  {
+    "symptomName": "Opiate",
+    "_id": 1255
+  },
+  {
+    "symptomName": "Opium Substitute",
+    "_id": 1256
+  },
+  {
+    "symptomName": "Opium substitute",
+    "_id": 1257
+  },
+  {
+    "symptomName": "Opium-Addiction",
+    "_id": 1258
+  },
+  {
+    "symptomName": "Orchitis",
+    "_id": 1259
+  },
+  {
+    "symptomName": "Ordeal",
+    "_id": 1260
+  },
+  {
+    "symptomName": "Ordeal-Poison",
+    "_id": 1261
+  },
+  {
+    "symptomName": "Orexigenic",
+    "_id": 1262
+  },
+  {
+    "symptomName": "Ornament",
+    "_id": 1263
+  },
+  {
+    "symptomName": "Osmotic",
+    "_id": 1264
+  },
+  {
+    "symptomName": "Ostealgia",
+    "_id": 1265
+  },
+  {
+    "symptomName": "Osteomyelitis",
+    "_id": 1266
+  },
+  {
+    "symptomName": "Osteosis",
+    "_id": 1267
+  },
+  {
+    "symptomName": "Otalgia",
+    "_id": 1268
+  },
+  {
+    "symptomName": "Otitis",
+    "_id": 1269
+  },
+  {
+    "symptomName": "Otorrhea",
+    "_id": 1270
+  },
+  {
+    "symptomName": "Otosis",
+    "_id": 1271
+  },
+  {
+    "symptomName": "Ovary",
+    "_id": 1272
+  },
+  {
+    "symptomName": "Oxytoxic",
+    "_id": 1273
+  },
+  {
+    "symptomName": "Oxyuriasic",
+    "_id": 1274
+  },
+  {
+    "symptomName": "Oxyuriasis",
+    "_id": 1275
+  },
+  {
+    "symptomName": "Ozaema",
+    "_id": 1276
+  },
+  {
+    "symptomName": "Ozoena",
+    "_id": 1277
+  },
+  {
+    "symptomName": "Pacifier",
+    "_id": 1278
+  },
+  {
+    "symptomName": "Pain",
+    "_id": 1279
+  },
+  {
+    "symptomName": "Palate",
+    "_id": 1280
+  },
+  {
+    "symptomName": "Palpitation",
+    "_id": 1281
+  },
+  {
+    "symptomName": "Palpitations",
+    "_id": 1282
+  },
+  {
+    "symptomName": "Palsy",
+    "_id": 1283
+  },
+  {
+    "symptomName": "Panacea",
+    "_id": 1284
+  },
+  {
+    "symptomName": "Pancreas",
+    "_id": 1285
+  },
+  {
+    "symptomName": "Paper",
+    "_id": 1286
+  },
+  {
+    "symptomName": "Parageusia",
+    "_id": 1287
+  },
+  {
+    "symptomName": "Paralysis",
+    "_id": 1288
+  },
+  {
+    "symptomName": "Paralyzant",
+    "_id": 1289
+  },
+  {
+    "symptomName": "Paraplegia",
+    "_id": 1290
+  },
+  {
+    "symptomName": "Parasite",
+    "_id": 1291
+  },
+  {
+    "symptomName": "Parasiticide",
+    "_id": 1292
+  },
+  {
+    "symptomName": "Parasympatholytic",
+    "_id": 1294
+  },
+  {
+    "symptomName": "Paresis",
+    "_id": 1295
+  },
+  {
+    "symptomName": "Parkinsonianism",
+    "_id": 1296
+  },
+  {
+    "symptomName": "Parkinsonism",
+    "_id": 1297
+  },
+  {
+    "symptomName": "Parotiditis",
+    "_id": 1298
+  },
+  {
+    "symptomName": "Parotitis",
+    "_id": 1299
+  },
+  {
+    "symptomName": "Paroxysm",
+    "_id": 1300
+  },
+  {
+    "symptomName": "Parturition",
+    "_id": 1301
+  },
+  {
+    "symptomName": "Paste",
+    "_id": 1302
+  },
+  {
+    "symptomName": "Pectoral",
+    "_id": 1303
+  },
+  {
+    "symptomName": "Pediculicide",
+    "_id": 1304
+  },
+  {
+    "symptomName": "Pediculifuge",
+    "_id": 1305
+  },
+  {
+    "symptomName": "Pediculosis",
+    "_id": 1306
+  },
+  {
+    "symptomName": "Pellagra",
+    "_id": 1307
+  },
+  {
+    "symptomName": "Pelvis",
+    "_id": 1308
+  },
+  {
+    "symptomName": "Pemphigus",
+    "_id": 1309
+  },
+  {
+    "symptomName": "Penis",
+    "_id": 1310
+  },
+  {
+    "symptomName": "Peptic",
+    "_id": 1311
+  },
+  {
+    "symptomName": "Perfume",
+    "_id": 1312
+  },
+  {
+    "symptomName": "Perfumery",
+    "_id": 1314
+  },
+  {
+    "symptomName": "Perguessia",
+    "_id": 1315
+  },
+  {
+    "symptomName": "Pericarditis",
+    "_id": 1316
+  },
+  {
+    "symptomName": "Peritonitis",
+    "_id": 1317
+  },
+  {
+    "symptomName": "Perspiration",
+    "_id": 1318
+  },
+  {
+    "symptomName": "Perturition",
+    "_id": 1319
+  },
+  {
+    "symptomName": "Pertussis",
+    "_id": 1320
+  },
+  {
+    "symptomName": "Pesticide(Leech)",
+    "_id": 1321
+  },
+  {
+    "symptomName": "Pharyngalgia",
+    "_id": 1322
+  },
+  {
+    "symptomName": "Pharyngitis",
+    "_id": 1323
+  },
+  {
+    "symptomName": "Philter",
+    "_id": 1324
+  },
+  {
+    "symptomName": "Philtre",
+    "_id": 1325
+  },
+  {
+    "symptomName": "Phlegm",
+    "_id": 1326
+  },
+  {
+    "symptomName": "Phlegmon",
+    "_id": 1327
+  },
+  {
+    "symptomName": "Phosphaturia",
+    "_id": 1328
+  },
+  {
+    "symptomName": "Photophobia",
+    "_id": 1329
+  },
+  {
+    "symptomName": "Phthiriasis",
+    "_id": 1330
+  },
+  {
+    "symptomName": "Phthisis",
+    "_id": 1331
+  },
+  {
+    "symptomName": "Phymata",
+    "_id": 1332
+  },
+  {
+    "symptomName": "Physic",
+    "_id": 1333
+  },
+  {
+    "symptomName": "Pilatory",
+    "_id": 1334
+  },
+  {
+    "symptomName": "Piles",
+    "_id": 1335
+  },
+  {
+    "symptomName": "Pill",
+    "_id": 1337
+  },
+  {
+    "symptomName": "Pimple",
+    "_id": 1338
+  },
+  {
+    "symptomName": "Pinkeye",
+    "_id": 1340
+  },
+  {
+    "symptomName": "Pinworms",
+    "_id": 1341
+  },
+  {
+    "symptomName": "Piscicide",
+    "_id": 1342
+  },
+  {
+    "symptomName": "Piscifuge",
+    "_id": 1343
+  },
+  {
+    "symptomName": "Placenta",
+    "_id": 1344
+  },
+  {
+    "symptomName": "Plague",
+    "_id": 1345
+  },
+  {
+    "symptomName": "Plethora",
+    "_id": 1346
+  },
+  {
+    "symptomName": "Pleurisy",
+    "_id": 1347
+  },
+  {
+    "symptomName": "Pleuritis",
+    "_id": 1349
+  },
+  {
+    "symptomName": "Pneumonia",
+    "_id": 1350
+  },
+  {
+    "symptomName": "Pocks",
+    "_id": 1352
+  },
+  {
+    "symptomName": "Poison",
+    "_id": 1353
+  },
+  {
+    "symptomName": "Poison (Fatality)",
+    "_id": 1354
+  },
+  {
+    "symptomName": "Poison(Arrow)",
+    "_id": 1355
+  },
+  {
+    "symptomName": "Poison(Chicken)",
+    "_id": 1356
+  },
+  {
+    "symptomName": "Poison(Crab)",
+    "_id": 1357
+  },
+  {
+    "symptomName": "Poison(Criminal)",
+    "_id": 1358
+  },
+  {
+    "symptomName": "Poison(Snake)",
+    "_id": 1359
+  },
+  {
+    "symptomName": "Poison-Ivy",
+    "_id": 1361
+  },
+  {
+    "symptomName": "Pole",
+    "_id": 1362
+  },
+  {
+    "symptomName": "Polio",
+    "_id": 1363
+  },
+  {
+    "symptomName": "Polyneuritis",
+    "_id": 1364
+  },
+  {
+    "symptomName": "Polyp",
+    "_id": 1365
+  },
+  {
+    "symptomName": "Polyp(Abdomen)",
+    "_id": 1366
+  },
+  {
+    "symptomName": "Polyp(Bladder)",
+    "_id": 1367
+  },
+  {
+    "symptomName": "Polyp(Intestine)",
+    "_id": 1368
+  },
+  {
+    "symptomName": "Polyp(Nose)",
+    "_id": 1369
+  },
+  {
+    "symptomName": "Polyp(Stomach)",
+    "_id": 1370
+  },
+  {
+    "symptomName": "Polyp(Uterus)",
+    "_id": 1371
+  },
+  {
+    "symptomName": "Polypus",
+    "_id": 1372
+  },
+  {
+    "symptomName": "Polyuria",
+    "_id": 1373
+  },
+  {
+    "symptomName": "Popison",
+    "_id": 1374
+  },
+  {
+    "symptomName": "Porridge",
+    "_id": 1375
+  },
+  {
+    "symptomName": "Porrigo",
+    "_id": 1376
+  },
+  {
+    "symptomName": "Post-Natal",
+    "_id": 1377
+  },
+  {
+    "symptomName": "Post-Partum",
+    "_id": 1378
+  },
+  {
+    "symptomName": "Potherb",
+    "_id": 1379
+  },
+  {
+    "symptomName": "Poultice",
+    "_id": 1380
+  },
+  {
+    "symptomName": "Pox",
+    "_id": 1382
+  },
+  {
+    "symptomName": "Pregnancy",
+    "_id": 1384
+  },
+  {
+    "symptomName": "Preservative",
+    "_id": 1386
+  },
+  {
+    "symptomName": "Pressor",
+    "_id": 1387
+  },
+  {
+    "symptomName": "Preventitive",
+    "_id": 1388
+  },
+  {
+    "symptomName": "Preventitive(Abortifacient)",
+    "_id": 1389
+  },
+  {
+    "symptomName": "Preventitive(Abscess)",
+    "_id": 1390
+  },
+  {
+    "symptomName": "Preventitive(Aging)",
+    "_id": 1391
+  },
+  {
+    "symptomName": "Preventitive(Alopecia)",
+    "_id": 1392
+  },
+  {
+    "symptomName": "Preventitive(Bite(Snake))",
+    "_id": 1393
+  },
+  {
+    "symptomName": "Preventitive(Boil)",
+    "_id": 1394
+  },
+  {
+    "symptomName": "Preventitive(Cancer)",
+    "_id": 1395
+  },
+  {
+    "symptomName": "Preventitive(Chafe)",
+    "_id": 1396
+  },
+  {
+    "symptomName": "Preventitive(Cold)",
+    "_id": 1397
+  },
+  {
+    "symptomName": "Preventitive(Convulsion)",
+    "_id": 1398
+  },
+  {
+    "symptomName": "Preventitive(Death)",
+    "_id": 1399
+  },
+  {
+    "symptomName": "Preventitive(Disease)",
+    "_id": 1400
+  },
+  {
+    "symptomName": "Preventitive(Dyspepsia)",
+    "_id": 1401
+  },
+  {
+    "symptomName": "Preventitive(Elephantiasis)",
+    "_id": 1402
+  },
+  {
+    "symptomName": "Preventitive(Epidemic)",
+    "_id": 1403
+  },
+  {
+    "symptomName": "Preventitive(Famine)",
+    "_id": 1404
+  },
+  {
+    "symptomName": "Preventitive(Fever)",
+    "_id": 1405
+  },
+  {
+    "symptomName": "Preventitive(Goiter)",
+    "_id": 1406
+  },
+  {
+    "symptomName": "Preventitive(Gray-Hair)",
+    "_id": 1407
+  },
+  {
+    "symptomName": "Preventitive(Heat-Rash)",
+    "_id": 1408
+  },
+  {
+    "symptomName": "Preventitive(Hippomane)",
+    "_id": 1409
+  },
+  {
+    "symptomName": "Preventitive(Hunger)",
+    "_id": 1410
+  },
+  {
+    "symptomName": "Preventitive(Malaria)",
+    "_id": 1411
+  },
+  {
+    "symptomName": "Preventitive(Miasm)",
+    "_id": 1412
+  },
+  {
+    "symptomName": "Preventitive(Miscarriage)",
+    "_id": 1413
+  },
+  {
+    "symptomName": "Preventitive(Nausea)",
+    "_id": 1414
+  },
+  {
+    "symptomName": "Preventitive(Parotitis)",
+    "_id": 1415
+  },
+  {
+    "symptomName": "Preventitive(Pile)",
+    "_id": 1416
+  },
+  {
+    "symptomName": "Preventitive(Poison)",
+    "_id": 1417
+  },
+  {
+    "symptomName": "Preventitive(Rheumatism)",
+    "_id": 1418
+  },
+  {
+    "symptomName": "Preventitive(Sting(Bee))",
+    "_id": 1419
+  },
+  {
+    "symptomName": "Preventitive(Sunstroke)",
+    "_id": 1420
+  },
+  {
+    "symptomName": "Preventitive(Syphilis)",
+    "_id": 1421
+  },
+  {
+    "symptomName": "Prickly heat",
+    "_id": 1422
+  },
+  {
+    "symptomName": "Prickly-Heat",
+    "_id": 1423
+  },
+  {
+    "symptomName": "Prickly-heat",
+    "_id": 1424
+  },
+  {
+    "symptomName": "Proctitis",
+    "_id": 1425
+  },
+  {
+    "symptomName": "Proctosis",
+    "_id": 1426
+  },
+  {
+    "symptomName": "Prolapse",
+    "_id": 1427
+  },
+  {
+    "symptomName": "Prolapse(Anus)",
+    "_id": 1428
+  },
+  {
+    "symptomName": "Prolapse(Uterus)",
+    "_id": 1429
+  },
+  {
+    "symptomName": "Prophylaxis",
+    "_id": 1430
+  },
+  {
+    "symptomName": "Prostate",
+    "_id": 1431
+  },
+  {
+    "symptomName": "Prostatitis",
+    "_id": 1432
+  },
+  {
+    "symptomName": "Prostration",
+    "_id": 1433
+  },
+  {
+    "symptomName": "Proteolytic",
+    "_id": 1434
+  },
+  {
+    "symptomName": "Protisticide",
+    "_id": 1435
+  },
+  {
+    "symptomName": "Prurigo",
+    "_id": 1436
+  },
+  {
+    "symptomName": "Prurigo Senilis",
+    "_id": 1437
+  },
+  {
+    "symptomName": "Pruritis",
+    "_id": 1438
+  },
+  {
+    "symptomName": "Psiatica",
+    "_id": 1439
+  },
+  {
+    "symptomName": "Psoriasis",
+    "_id": 1440
+  },
+  {
+    "symptomName": "Psychedelic",
+    "_id": 1441
+  },
+  {
+    "symptomName": "Psychiatry",
+    "_id": 1442
+  },
+  {
+    "symptomName": "Psychomimetic",
+    "_id": 1443
+  },
+  {
+    "symptomName": "Psychosis",
+    "_id": 1444
+  },
+  {
+    "symptomName": "Psychotherapy",
+    "_id": 1445
+  },
+  {
+    "symptomName": "Psychotropic",
+    "_id": 1446
+  },
+  {
+    "symptomName": "Pterygium",
+    "_id": 1447
+  },
+  {
+    "symptomName": "Ptomaine",
+    "_id": 1448
+  },
+  {
+    "symptomName": "Ptyalism",
+    "_id": 1449
+  },
+  {
+    "symptomName": "Puberty",
+    "_id": 1450
+  },
+  {
+    "symptomName": "Puerperia",
+    "_id": 1451
+  },
+  {
+    "symptomName": "Puerperium",
+    "_id": 1452
+  },
+  {
+    "symptomName": "Pulicide",
+    "_id": 1453
+  },
+  {
+    "symptomName": "Pulmonary",
+    "_id": 1454
+  },
+  {
+    "symptomName": "Pulmonary-Tuberculosis",
+    "_id": 1455
+  },
+  {
+    "symptomName": "Pulmonosis",
+    "_id": 1456
+  },
+  {
+    "symptomName": "Pungency",
+    "_id": 1457
+  },
+  {
+    "symptomName": "Purgative",
+    "_id": 1458
+  },
+  {
+    "symptomName": "Purgative(Horse)",
+    "_id": 1459
+  },
+  {
+    "symptomName": "Pustule",
+    "_id": 1461
+  },
+  {
+    "symptomName": "Pustules",
+    "_id": 1462
+  },
+  {
+    "symptomName": "Pyelitis",
+    "_id": 1463
+  },
+  {
+    "symptomName": "Pyelonephritis",
+    "_id": 1464
+  },
+  {
+    "symptomName": "Pyorrhea",
+    "_id": 1465
+  },
+  {
+    "symptomName": "Pyrorrhea",
+    "_id": 1466
+  },
+  {
+    "symptomName": "Pyrorrhea?",
+    "_id": 1467
+  },
+  {
+    "symptomName": "Pyrosis",
+    "_id": 1468
+  },
+  {
+    "symptomName": "Pyuria",
+    "_id": 1469
+  },
+  {
+    "symptomName": "Quackery",
+    "_id": 1470
+  },
+  {
+    "symptomName": "Quinsy",
+    "_id": 1471
+  },
+  {
+    "symptomName": "Rabies",
+    "_id": 1472
+  },
+  {
+    "symptomName": "Radiculagia",
+    "_id": 1474
+  },
+  {
+    "symptomName": "Rain-Making",
+    "_id": 1475
+  },
+  {
+    "symptomName": "Ranicide",
+    "_id": 1476
+  },
+  {
+    "symptomName": "Ranula",
+    "_id": 1477
+  },
+  {
+    "symptomName": "Rash",
+    "_id": 1478
+  },
+  {
+    "symptomName": "Raticide",
+    "_id": 1479
+  },
+  {
+    "symptomName": "Reconstructive",
+    "_id": 1480
+  },
+  {
+    "symptomName": "Rectitis",
+    "_id": 1481
+  },
+  {
+    "symptomName": "Rectocele",
+    "_id": 1482
+  },
+  {
+    "symptomName": "Rectum",
+    "_id": 1483
+  },
+  {
+    "symptomName": "Refrigerant",
+    "_id": 1484
+  },
+  {
+    "symptomName": "Regeneration",
+    "_id": 1486
+  },
+  {
+    "symptomName": "Regenerative",
+    "_id": 1487
+  },
+  {
+    "symptomName": "Rejuvenation",
+    "_id": 1488
+  },
+  {
+    "symptomName": "Relaxant",
+    "_id": 1489
+  },
+  {
+    "symptomName": "Religion",
+    "_id": 1490
+  },
+  {
+    "symptomName": "Renal",
+    "_id": 1491
+  },
+  {
+    "symptomName": "Renitis",
+    "_id": 1492
+  },
+  {
+    "symptomName": "Rennet",
+    "_id": 1493
+  },
+  {
+    "symptomName": "Renosis",
+    "_id": 1494
+  },
+  {
+    "symptomName": "Repellant",
+    "_id": 1495
+  },
+  {
+    "symptomName": "Repellant(Bat)",
+    "_id": 1496
+  },
+  {
+    "symptomName": "Repellant(Flea)",
+    "_id": 1497
+  },
+  {
+    "symptomName": "Repellant(Leech)",
+    "_id": 1498
+  },
+  {
+    "symptomName": "Repellant(Mole)",
+    "_id": 1499
+  },
+  {
+    "symptomName": "Repellant(Moth)",
+    "_id": 1500
+  },
+  {
+    "symptomName": "Repellant(Rat)",
+    "_id": 1501
+  },
+  {
+    "symptomName": "Repellant(Shark)",
+    "_id": 1502
+  },
+  {
+    "symptomName": "Repellant(Snake)",
+    "_id": 1503
+  },
+  {
+    "symptomName": "Repellant(Tick)",
+    "_id": 1504
+  },
+  {
+    "symptomName": "Repellant(Witch)",
+    "_id": 1505
+  },
+  {
+    "symptomName": "Resolvent",
+    "_id": 1506
+  },
+  {
+    "symptomName": "Respiration",
+    "_id": 1507
+  },
+  {
+    "symptomName": "Respiratory",
+    "_id": 1508
+  },
+  {
+    "symptomName": "Respiratory Depressant",
+    "_id": 1509
+  },
+  {
+    "symptomName": "Restlessness",
+    "_id": 1510
+  },
+  {
+    "symptomName": "Restorative",
+    "_id": 1511
+  },
+  {
+    "symptomName": "Retinitis",
+    "_id": 1512
+  },
+  {
+    "symptomName": "Revulsive",
+    "_id": 1513
+  },
+  {
+    "symptomName": "Rhachitis",
+    "_id": 1514
+  },
+  {
+    "symptomName": "Rhagades",
+    "_id": 1515
+  },
+  {
+    "symptomName": "Rhematism",
+    "_id": 1516
+  },
+  {
+    "symptomName": "Rheum",
+    "_id": 1517
+  },
+  {
+    "symptomName": "Rheumatic",
+    "_id": 1518
+  },
+  {
+    "symptomName": "Rheumatism",
+    "_id": 1519
+  },
+  {
+    "symptomName": "Rheumatitis",
+    "_id": 1521
+  },
+  {
+    "symptomName": "Rhinitis",
+    "_id": 1522
+  },
+  {
+    "symptomName": "Rhinosis",
+    "_id": 1524
+  },
+  {
+    "symptomName": "Rib",
+    "_id": 1525
+  },
+  {
+    "symptomName": "Rickets",
+    "_id": 1526
+  },
+  {
+    "symptomName": "Rigerant",
+    "_id": 1527
+  },
+  {
+    "symptomName": "Rinderpest",
+    "_id": 1528
+  },
+  {
+    "symptomName": "Ringworm",
+    "_id": 1530
+  },
+  {
+    "symptomName": "Rodent-Ulcer",
+    "_id": 1531
+  },
+  {
+    "symptomName": "Rodenticide",
+    "_id": 1532
+  },
+  {
+    "symptomName": "Root",
+    "_id": 1533
+  },
+  {
+    "symptomName": "Rootcanal",
+    "_id": 1534
+  },
+  {
+    "symptomName": "Rope",
+    "_id": 1535
+  },
+  {
+    "symptomName": "Roundworms",
+    "_id": 1536
+  },
+  {
+    "symptomName": "Rubefacient",
+    "_id": 1537
+  },
+  {
+    "symptomName": "Ruise",
+    "_id": 1538
+  },
+  {
+    "symptomName": "Rupture",
+    "_id": 1539
+  },
+  {
+    "symptomName": "Saccharomycose",
+    "_id": 1540
+  },
+  {
+    "symptomName": "Saddle-Sore",
+    "_id": 1541
+  },
+  {
+    "symptomName": "Salad",
+    "_id": 1543
+  },
+  {
+    "symptomName": "Salivation",
+    "_id": 1544
+  },
+  {
+    "symptomName": "Salt",
+    "_id": 1545
+  },
+  {
+    "symptomName": "Salve",
+    "_id": 1546
+  },
+  {
+    "symptomName": "Sapraemia",
+    "_id": 1547
+  },
+  {
+    "symptomName": "Satyriasis",
+    "_id": 1548
+  },
+  {
+    "symptomName": "Sauna",
+    "_id": 1549
+  },
+  {
+    "symptomName": "Scabies",
+    "_id": 1551
+  },
+  {
+    "symptomName": "Scald",
+    "_id": 1552
+  },
+  {
+    "symptomName": "Scalp",
+    "_id": 1553
+  },
+  {
+    "symptomName": "Scarlatina",
+    "_id": 1554
+  },
+  {
+    "symptomName": "Scarlet-Fever",
+    "_id": 1555
+  },
+  {
+    "symptomName": "Schistosomiasis",
+    "_id": 1556
+  },
+  {
+    "symptomName": "Schizonticide",
+    "_id": 1557
+  },
+  {
+    "symptomName": "Sciatica",
+    "_id": 1558
+  },
+  {
+    "symptomName": "Sclerosis",
+    "_id": 1559
+  },
+  {
+    "symptomName": "Sclerosis(Abdomen)",
+    "_id": 1560
+  },
+  {
+    "symptomName": "Sclerosis(Belly)",
+    "_id": 1561
+  },
+  {
+    "symptomName": "Sclerosis(Breast)",
+    "_id": 1562
+  },
+  {
+    "symptomName": "Sclerosis(Cervix)",
+    "_id": 1563
+  },
+  {
+    "symptomName": "Sclerosis(Cornea)",
+    "_id": 1564
+  },
+  {
+    "symptomName": "Sclerosis(Eyelid)",
+    "_id": 1565
+  },
+  {
+    "symptomName": "Sclerosis(Glands)",
+    "_id": 1566
+  },
+  {
+    "symptomName": "Sclerosis(Heel)",
+    "_id": 1567
+  },
+  {
+    "symptomName": "Sclerosis(Limb)",
+    "_id": 1568
+  },
+  {
+    "symptomName": "Sclerosis(Liver)",
+    "_id": 1569
+  },
+  {
+    "symptomName": "Sclerosis(Prostate)",
+    "_id": 1570
+  },
+  {
+    "symptomName": "Sclerosis(Pylorus)",
+    "_id": 1571
+  },
+  {
+    "symptomName": "Sclerosis(Skin)",
+    "_id": 1572
+  },
+  {
+    "symptomName": "Sclerosis(Spleen)",
+    "_id": 1573
+  },
+  {
+    "symptomName": "Sclerosis(Stomach)",
+    "_id": 1574
+  },
+  {
+    "symptomName": "Sclerosis(Testicle)",
+    "_id": 1575
+  },
+  {
+    "symptomName": "Sclerosis(Uterus)",
+    "_id": 1576
+  },
+  {
+    "symptomName": "Scorpion",
+    "_id": 1577
+  },
+  {
+    "symptomName": "Repellant(Scorpion)",
+    "_id": 1578
+  },
+  {
+    "symptomName": "Sting(Scorpion)",
+    "_id": 1579
+  },
+  {
+    "symptomName": "Scratch",
+    "_id": 1580
+  },
+  {
+    "symptomName": "Scrofula",
+    "_id": 1581
+  },
+  {
+    "symptomName": "Scrotosis",
+    "_id": 1582
+  },
+  {
+    "symptomName": "Scrotum",
+    "_id": 1583
+  },
+  {
+    "symptomName": "Scurf",
+    "_id": 1584
+  },
+  {
+    "symptomName": "Scurfiness",
+    "_id": 1586
+  },
+  {
+    "symptomName": "Scurvy",
+    "_id": 1587
+  },
+  {
+    "symptomName": "Seasickness",
+    "_id": 1588
+  },
+  {
+    "symptomName": "Seborrhea",
+    "_id": 1589
+  },
+  {
+    "symptomName": "Sedative",
+    "_id": 1590
+  },
+  {
+    "symptomName": "Semen",
+    "_id": 1591
+  },
+  {
+    "symptomName": "Senescence",
+    "_id": 1592
+  },
+  {
+    "symptomName": "Senility",
+    "_id": 1593
+  },
+  {
+    "symptomName": "Septicemia",
+    "_id": 1594
+  },
+  {
+    "symptomName": "Sex",
+    "_id": 1595
+  },
+  {
+    "symptomName": "Shampoo",
+    "_id": 1596
+  },
+  {
+    "symptomName": "Shigellosis",
+    "_id": 1597
+  },
+  {
+    "symptomName": "Shingles",
+    "_id": 1598
+  },
+  {
+    "symptomName": "Shock",
+    "_id": 1599
+  },
+  {
+    "symptomName": "Shortwindedness",
+    "_id": 1600
+  },
+  {
+    "symptomName": "Shoulder",
+    "_id": 1601
+  },
+  {
+    "symptomName": "Sialogogue",
+    "_id": 1602
+  },
+  {
+    "symptomName": "Side",
+    "_id": 1603
+  },
+  {
+    "symptomName": "Sight",
+    "_id": 1604
+  },
+  {
+    "symptomName": "Sinew",
+    "_id": 1605
+  },
+  {
+    "symptomName": "Sinus",
+    "_id": 1606
+  },
+  {
+    "symptomName": "Sinusitis",
+    "_id": 1607
+  },
+  {
+    "symptomName": "Skin",
+    "_id": 1608
+  },
+  {
+    "symptomName": "Skin(Pig)",
+    "_id": 1609
+  },
+  {
+    "symptomName": "Skin diseases",
+    "_id": 1611
+  },
+  {
+    "symptomName": "Skin lotion",
+    "_id": 1612
+  },
+  {
+    "symptomName": "Skin stimulant",
+    "_id": 1613
+  },
+  {
+    "symptomName": "Sleeping sickness",
+    "_id": 1614
+  },
+  {
+    "symptomName": "Slow-Pulse",
+    "_id": 1615
+  },
+  {
+    "symptomName": "Smallpox",
+    "_id": 1616
+  },
+  {
+    "symptomName": "Smudge",
+    "_id": 1617
+  },
+  {
+    "symptomName": "Snuff",
+    "_id": 1618
+  },
+  {
+    "symptomName": "Soap",
+    "_id": 1619
+  },
+  {
+    "symptomName": "Solvent",
+    "_id": 1620
+  },
+  {
+    "symptomName": "Stomachic",
+    "_id": 1621
+  },
+  {
+    "symptomName": "Soporific",
+    "_id": 1622
+  },
+  {
+    "symptomName": "Sore",
+    "_id": 1623
+  },
+  {
+    "symptomName": "Sore(Throat)",
+    "_id": 1624
+  },
+  {
+    "symptomName": "Sore(Eye)",
+    "_id": 1625
+  },
+  {
+    "symptomName": "Sore(Foot)",
+    "_id": 1626
+  },
+  {
+    "symptomName": "Sore(Lip)",
+    "_id": 1627
+  },
+  {
+    "symptomName": "Sore(Neck)",
+    "_id": 1628
+  },
+  {
+    "symptomName": "Soreness",
+    "_id": 1630
+  },
+  {
+    "symptomName": "Sorethroat?",
+    "_id": 1631
+  },
+  {
+    "symptomName": "Spasm",
+    "_id": 1632
+  },
+  {
+    "symptomName": "Spasmogenic",
+    "_id": 1634
+  },
+  {
+    "symptomName": "Spasmolytic",
+    "_id": 1635
+  },
+  {
+    "symptomName": "Splenomegaly",
+    "_id": 1636
+  },
+  {
+    "symptomName": "Spermatopoietic",
+    "_id": 1637
+  },
+  {
+    "symptomName": "Spermatorrhea",
+    "_id": 1638
+  },
+  {
+    "symptomName": "Spice",
+    "_id": 1639
+  },
+  {
+    "symptomName": "Spiderlick",
+    "_id": 1640
+  },
+  {
+    "symptomName": "Spine",
+    "_id": 1641
+  },
+  {
+    "symptomName": "Spleen",
+    "_id": 1642
+  },
+  {
+    "symptomName": "Splenitis",
+    "_id": 1643
+  },
+  {
+    "symptomName": "Splenosis",
+    "_id": 1644
+  },
+  {
+    "symptomName": "Splinter",
+    "_id": 1645
+  },
+  {
+    "symptomName": "Spot",
+    "_id": 1646
+  },
+  {
+    "symptomName": "Sprain",
+    "_id": 1647
+  },
+  {
+    "symptomName": "Sprue",
+    "_id": 1649
+  },
+  {
+    "symptomName": "Stasis",
+    "_id": 1650
+  },
+  {
+    "symptomName": "Steam-Bath",
+    "_id": 1651
+  },
+  {
+    "symptomName": "Sterilizant",
+    "_id": 1652
+  },
+  {
+    "symptomName": "Sterility",
+    "_id": 1653
+  },
+  {
+    "symptomName": "Sterility(Female)",
+    "_id": 1654
+  },
+  {
+    "symptomName": "Sterilizant(Male)",
+    "_id": 1655
+  },
+  {
+    "symptomName": "Sternutatory",
+    "_id": 1656
+  },
+  {
+    "symptomName": "Stiff-Neck",
+    "_id": 1657
+  },
+  {
+    "symptomName": "Stiffness",
+    "_id": 1658
+  },
+  {
+    "symptomName": "Stimulant",
+    "_id": 1659
+  },
+  {
+    "symptomName": "Stimulant(Cardio)",
+    "_id": 1660
+  },
+  {
+    "symptomName": "Stimulant(Hepatic)",
+    "_id": 1661
+  },
+  {
+    "symptomName": "Sting",
+    "_id": 1663
+  },
+  {
+    "symptomName": "Sting(Bee)",
+    "_id": 1664
+  },
+  {
+    "symptomName": "Sting(Insect)",
+    "_id": 1665
+  },
+  {
+    "symptomName": "Sting(Wasp)",
+    "_id": 1666
+  },
+  {
+    "symptomName": "Stingray",
+    "_id": 1667
+  },
+  {
+    "symptomName": "Stitch",
+    "_id": 1668
+  },
+  {
+    "symptomName": "Stomach",
+    "_id": 1669
+  },
+  {
+    "symptomName": "Stomatitis",
+    "_id": 1672
+  },
+  {
+    "symptomName": "Stomatosis",
+    "_id": 1674
+  },
+  {
+    "symptomName": "Stone",
+    "_id": 1675
+  },
+  {
+    "symptomName": "Strabismus",
+    "_id": 1676
+  },
+  {
+    "symptomName": "Strain",
+    "_id": 1677
+  },
+  {
+    "symptomName": "Strangury",
+    "_id": 1678
+  },
+  {
+    "symptomName": "Strength",
+    "_id": 1679
+  },
+  {
+    "symptomName": "Stress",
+    "_id": 1680
+  },
+  {
+    "symptomName": "Stricture",
+    "_id": 1681
+  },
+  {
+    "symptomName": "Stroke",
+    "_id": 1682
+  },
+  {
+    "symptomName": "Stroke(Heat)",
+    "_id": 1683
+  },
+  {
+    "symptomName": "Struma",
+    "_id": 1684
+  },
+  {
+    "symptomName": "Stupefacient",
+    "_id": 1685
+  },
+  {
+    "symptomName": "Stupefaction",
+    "_id": 1686
+  },
+  {
+    "symptomName": "Sty",
+    "_id": 1687
+  },
+  {
+    "symptomName": "Styptic",
+    "_id": 1688
+  },
+  {
+    "symptomName": "Sudamina",
+    "_id": 1689
+  },
+  {
+    "symptomName": "Sudorific",
+    "_id": 1690
+  },
+  {
+    "symptomName": "Sugar",
+    "_id": 1692
+  },
+  {
+    "symptomName": "Suicide",
+    "_id": 1693
+  },
+  {
+    "symptomName": "Sulfanilimide",
+    "_id": 1694
+  },
+  {
+    "symptomName": "Sunburn",
+    "_id": 1695
+  },
+  {
+    "symptomName": "Sunstroke",
+    "_id": 1696
+  },
+  {
+    "symptomName": "Suppository",
+    "_id": 1697
+  },
+  {
+    "symptomName": "Suppuration",
+    "_id": 1698
+  },
+  {
+    "symptomName": "Suppurative",
+    "_id": 1699
+  },
+  {
+    "symptomName": "Surgical-Dressing",
+    "_id": 1700
+  },
+  {
+    "symptomName": "Suriculture",
+    "_id": 1701
+  },
+  {
+    "symptomName": "Sweat",
+    "_id": 1702
+  },
+  {
+    "symptomName": "Sweating",
+    "_id": 1703
+  },
+  {
+    "symptomName": "Sweetener",
+    "_id": 1704
+  },
+  {
+    "symptomName": "Swelling",
+    "_id": 1705
+  },
+  {
+    "symptomName": "Swelling(Mammary)",
+    "_id": 1707
+  },
+  {
+    "symptomName": "Sympathomimetic",
+    "_id": 1708
+  },
+  {
+    "symptomName": "Syncope",
+    "_id": 1709
+  },
+  {
+    "symptomName": "Synergist",
+    "_id": 1710
+  },
+  {
+    "symptomName": "Synergist (Narcotic)",
+    "_id": 1711
+  },
+  {
+    "symptomName": "Syphilis",
+    "_id": 1712
+  },
+  {
+    "symptomName": "Syphilis(1)",
+    "_id": 1713
+  },
+  {
+    "symptomName": "Syphilis(2)",
+    "_id": 1714
+  },
+  {
+    "symptomName": "Syphilis(3)",
+    "_id": 1715
+  },
+  {
+    "symptomName": "Syphilis(Secondary)",
+    "_id": 1716
+  },
+  {
+    "symptomName": "Tabes",
+    "_id": 1717
+  },
+  {
+    "symptomName": "Tabes-Mesenterica",
+    "_id": 1718
+  },
+  {
+    "symptomName": "Tachycardia",
+    "_id": 1719
+  },
+  {
+    "symptomName": "Taenicide",
+    "_id": 1721
+  },
+  {
+    "symptomName": "Taenifuge",
+    "_id": 1722
+  },
+  {
+    "symptomName": "Tanning",
+    "_id": 1723
+  },
+  {
+    "symptomName": "Tapeworm",
+    "_id": 1724
+  },
+  {
+    "symptomName": "Tattoo",
+    "_id": 1725
+  },
+  {
+    "symptomName": "Tea",
+    "_id": 1726
+  },
+  {
+    "symptomName": "Teat",
+    "_id": 1727
+  },
+  {
+    "symptomName": "Teeth",
+    "_id": 1728
+  },
+  {
+    "symptomName": "Teething",
+    "_id": 1729
+  },
+  {
+    "symptomName": "Telangiectasia",
+    "_id": 1730
+  },
+  {
+    "symptomName": "Tenderizer",
+    "_id": 1731
+  },
+  {
+    "symptomName": "Tendon",
+    "_id": 1732
+  },
+  {
+    "symptomName": "Tendonitis",
+    "_id": 1733
+  },
+  {
+    "symptomName": "Tenesmus",
+    "_id": 1734
+  },
+  {
+    "symptomName": "Tenifuge",
+    "_id": 1735
+  },
+  {
+    "symptomName": "Tension",
+    "_id": 1736
+  },
+  {
+    "symptomName": "Teredicide",
+    "_id": 1737
+  },
+  {
+    "symptomName": "Termiticide",
+    "_id": 1738
+  },
+  {
+    "symptomName": "Tes",
+    "_id": 1739
+  },
+  {
+    "symptomName": "Testicle",
+    "_id": 1740
+  },
+  {
+    "symptomName": "Tetanus",
+    "_id": 1741
+  },
+  {
+    "symptomName": "Tetters",
+    "_id": 1742
+  },
+  {
+    "symptomName": "Thatch",
+    "_id": 1743
+  },
+  {
+    "symptomName": "Thigh",
+    "_id": 1744
+  },
+  {
+    "symptomName": "Thirst",
+    "_id": 1745
+  },
+  {
+    "symptomName": "Thorax",
+    "_id": 1746
+  },
+  {
+    "symptomName": "Thorn",
+    "_id": 1747
+  },
+  {
+    "symptomName": "Throat",
+    "_id": 1748
+  },
+  {
+    "symptomName": "Thrombosis",
+    "_id": 1750
+  },
+  {
+    "symptomName": "Thrush",
+    "_id": 1751
+  },
+  {
+    "symptomName": "Thyroid",
+    "_id": 1752
+  },
+  {
+    "symptomName": "Thyroiditis",
+    "_id": 1753
+  },
+  {
+    "symptomName": "Repellant(Tiger)",
+    "_id": 1754
+  },
+  {
+    "symptomName": "Tincture",
+    "_id": 1755
+  },
+  {
+    "symptomName": "Tinder",
+    "_id": 1756
+  },
+  {
+    "symptomName": "Tinea",
+    "_id": 1757
+  },
+  {
+    "symptomName": "Tinea Capitis",
+    "_id": 1758
+  },
+  {
+    "symptomName": "Tinnitus",
+    "_id": 1759
+  },
+  {
+    "symptomName": "Tinnitus?",
+    "_id": 1760
+  },
+  {
+    "symptomName": "Tobacco",
+    "_id": 1761
+  },
+  {
+    "symptomName": "Toilet-Paper",
+    "_id": 1762
+  },
+  {
+    "symptomName": "Tongue",
+    "_id": 1763
+  },
+  {
+    "symptomName": "Tonic",
+    "_id": 1764
+  },
+  {
+    "symptomName": "Tonsillitis",
+    "_id": 1766
+  },
+  {
+    "symptomName": "Tonsillitis?",
+    "_id": 1767
+  },
+  {
+    "symptomName": "Tooth",
+    "_id": 1768
+  },
+  {
+    "symptomName": "Ache(Tooth)",
+    "_id": 1769
+  },
+  {
+    "symptomName": "Toothblack",
+    "_id": 1770
+  },
+  {
+    "symptomName": "Toothhpaste",
+    "_id": 1772
+  },
+  {
+    "symptomName": "Toothstick",
+    "_id": 1773
+  },
+  {
+    "symptomName": "Toothwhitener",
+    "_id": 1774
+  },
+  {
+    "symptomName": "Toxemia",
+    "_id": 1775
+  },
+  {
+    "symptomName": "Toxic",
+    "_id": 1776
+  },
+  {
+    "symptomName": "Trachalgia",
+    "_id": 1777
+  },
+  {
+    "symptomName": "Trachea",
+    "_id": 1778
+  },
+  {
+    "symptomName": "Trachitis",
+    "_id": 1779
+  },
+  {
+    "symptomName": "Trachoma",
+    "_id": 1780
+  },
+  {
+    "symptomName": "Tranquilizer",
+    "_id": 1781
+  },
+  {
+    "symptomName": "Trauma",
+    "_id": 1782
+  },
+  {
+    "symptomName": "Tremor",
+    "_id": 1783
+  },
+  {
+    "symptomName": "Tremors",
+    "_id": 1784
+  },
+  {
+    "symptomName": "Trichomoniasis",
+    "_id": 1785
+  },
+  {
+    "symptomName": "Trypanosomiasis",
+    "_id": 1786
+  },
+  {
+    "symptomName": "Tubercle",
+    "_id": 1787
+  },
+  {
+    "symptomName": "Tumor",
+    "_id": 1788
+  },
+  {
+    "symptomName": "Tumor(Breast)",
+    "_id": 1789
+  },
+  {
+    "symptomName": "Tumor(Abdomen)",
+    "_id": 1790
+  },
+  {
+    "symptomName": "Tumor(Anus)",
+    "_id": 1791
+  },
+  {
+    "symptomName": "Tumor(Arm)",
+    "_id": 1792
+  },
+  {
+    "symptomName": "Tumor(Armpit)",
+    "_id": 1793
+  },
+  {
+    "symptomName": "Tumor(Bladder)",
+    "_id": 1794
+  },
+  {
+    "symptomName": "Tumor(Diaphragm)",
+    "_id": 1795
+  },
+  {
+    "symptomName": "Tumor(Ear)",
+    "_id": 1796
+  },
+  {
+    "symptomName": "Tumor(Eye)",
+    "_id": 1797
+  },
+  {
+    "symptomName": "Tumor(Eyelid)",
+    "_id": 1798
+  },
+  {
+    "symptomName": "Tumor(Fauces)",
+    "_id": 1799
+  },
+  {
+    "symptomName": "Tumor(Feet)",
+    "_id": 1800
+  },
+  {
+    "symptomName": "Tumor(Finger)",
+    "_id": 1801
+  },
+  {
+    "symptomName": "Tumor(Foot)",
+    "_id": 1802
+  },
+  {
+    "symptomName": "Tumor(Ganglia)",
+    "_id": 1803
+  },
+  {
+    "symptomName": "Tumor(Genital)",
+    "_id": 1804
+  },
+  {
+    "symptomName": "Tumor(Glands)",
+    "_id": 1805
+  },
+  {
+    "symptomName": "Tumor(Groin)",
+    "_id": 1806
+  },
+  {
+    "symptomName": "Tumor(Gum)",
+    "_id": 1807
+  },
+  {
+    "symptomName": "Tumor(Heart)",
+    "_id": 1808
+  },
+  {
+    "symptomName": "Tumor(Intestine)",
+    "_id": 1809
+  },
+  {
+    "symptomName": "Tumor(Joint)",
+    "_id": 1810
+  },
+  {
+    "symptomName": "Tumor(Lachrymae)",
+    "_id": 1811
+  },
+  {
+    "symptomName": "Tumor(Larynx)",
+    "_id": 1812
+  },
+  {
+    "symptomName": "Tumor(Leg)",
+    "_id": 1813
+  },
+  {
+    "symptomName": "Tumor(Limb)",
+    "_id": 1814
+  },
+  {
+    "symptomName": "Tumor(Liver)",
+    "_id": 1815
+  },
+  {
+    "symptomName": "Tumor(Lung)",
+    "_id": 1816
+  },
+  {
+    "symptomName": "Tumor(Lymphatic)",
+    "_id": 1817
+  },
+  {
+    "symptomName": "Tumor(Neck)",
+    "_id": 1818
+  },
+  {
+    "symptomName": "Tumor(Nose)",
+    "_id": 1819
+  },
+  {
+    "symptomName": "Tumor(Parotid)",
+    "_id": 1820
+  },
+  {
+    "symptomName": "Tumor(Penis)",
+    "_id": 1821
+  },
+  {
+    "symptomName": "Tumor(Pituitary)",
+    "_id": 1822
+  },
+  {
+    "symptomName": "Tumor(Prostate)",
+    "_id": 1823
+  },
+  {
+    "symptomName": "Tumor(Rectum)",
+    "_id": 1824
+  },
+  {
+    "symptomName": "Tumor(Scrotum)",
+    "_id": 1825
+  },
+  {
+    "symptomName": "Tumor(Sinew)",
+    "_id": 1826
+  },
+  {
+    "symptomName": "Tumor(Skin)",
+    "_id": 1827
+  },
+  {
+    "symptomName": "Tumor(Spleen)",
+    "_id": 1828
+  },
+  {
+    "symptomName": "Tumor(Stomach)",
+    "_id": 1829
+  },
+  {
+    "symptomName": "Tumor(Testicle)",
+    "_id": 1830
+  },
+  {
+    "symptomName": "Tumor(Thigh)",
+    "_id": 1831
+  },
+  {
+    "symptomName": "Tumor(Throat)",
+    "_id": 1832
+  },
+  {
+    "symptomName": "Tumor(Thyroid)",
+    "_id": 1833
+  },
+  {
+    "symptomName": "Tumor(Tonsil)",
+    "_id": 1834
+  },
+  {
+    "symptomName": "Tumor(Umbilicus)",
+    "_id": 1835
+  },
+  {
+    "symptomName": "Tumor(Uterus)",
+    "_id": 1836
+  },
+  {
+    "symptomName": "Tumor(Uvula)",
+    "_id": 1837
+  },
+  {
+    "symptomName": "Tumor(Vagina)",
+    "_id": 1838
+  },
+  {
+    "symptomName": "Tumor(Viscera)",
+    "_id": 1840
+  },
+  {
+    "symptomName": "Tumor(Womb)",
+    "_id": 1841
+  },
+  {
+    "symptomName": "Twine",
+    "_id": 1842
+  },
+  {
+    "symptomName": "Tympanitis",
+    "_id": 1843
+  },
+  {
+    "symptomName": "Typhoid",
+    "_id": 1844
+  },
+  {
+    "symptomName": "Typhus",
+    "_id": 1845
+  },
+  {
+    "symptomName": "Typhus (Typhoid)",
+    "_id": 1846
+  },
+  {
+    "symptomName": "Udorific",
+    "_id": 1847
+  },
+  {
+    "symptomName": "Ugh",
+    "_id": 1848
+  },
+  {
+    "symptomName": "Ulcer",
+    "_id": 1849
+  },
+  {
+    "symptomName": "Ulcer?",
+    "_id": 1851
+  },
+  {
+    "symptomName": "Ulnerary",
+    "_id": 1852
+  },
+  {
+    "symptomName": "Umbilicus",
+    "_id": 1853
+  },
+  {
+    "symptomName": "Unconsciousness",
+    "_id": 1854
+  },
+  {
+    "symptomName": "Underweight",
+    "_id": 1855
+  },
+  {
+    "symptomName": "Uneasiness",
+    "_id": 1856
+  },
+  {
+    "symptomName": "Unguent",
+    "_id": 1857
+  },
+  {
+    "symptomName": "Uremia",
+    "_id": 1858
+  },
+  {
+    "symptomName": "Urethra",
+    "_id": 1859
+  },
+  {
+    "symptomName": "Urethritis",
+    "_id": 1860
+  },
+  {
+    "symptomName": "Urinary",
+    "_id": 1861
+  },
+  {
+    "symptomName": "Urinary-antiseptic",
+    "_id": 1862
+  },
+  {
+    "symptomName": "Urogenital",
+    "_id": 1863
+  },
+  {
+    "symptomName": "Urticaria",
+    "_id": 1864
+  },
+  {
+    "symptomName": "Urtication",
+    "_id": 1865
+  },
+  {
+    "symptomName": "Uterine",
+    "_id": 1866
+  },
+  {
+    "symptomName": "Uterine Organs",
+    "_id": 1867
+  },
+  {
+    "symptomName": "Uterotonic",
+    "_id": 1868
+  },
+  {
+    "symptomName": "Uteritis",
+    "_id": 1869
+  },
+  {
+    "symptomName": "Uteromegaly",
+    "_id": 1870
+  },
+  {
+    "symptomName": "Uterorrhagia",
+    "_id": 1871
+  },
+  {
+    "symptomName": "Uterosedative",
+    "_id": 1872
+  },
+  {
+    "symptomName": "Uterosis",
+    "_id": 1873
+  },
+  {
+    "symptomName": "Uterus",
+    "_id": 1874
+  },
+  {
+    "symptomName": "Uvulitis",
+    "_id": 1875
+  },
+  {
+    "symptomName": "Uzarin",
+    "_id": 1876
+  },
+  {
+    "symptomName": "Vagina",
+    "_id": 1877
+  },
+  {
+    "symptomName": "Vaginamegaly",
+    "_id": 1878
+  },
+  {
+    "symptomName": "Vaginismus",
+    "_id": 1879
+  },
+  {
+    "symptomName": "Vaginitis",
+    "_id": 1880
+  },
+  {
+    "symptomName": "Varices",
+    "_id": 1881
+  },
+  {
+    "symptomName": "Varicosity",
+    "_id": 1882
+  },
+  {
+    "symptomName": "Varicose Veins",
+    "_id": 1883
+  },
+  {
+    "symptomName": "Variola",
+    "_id": 1884
+  },
+  {
+    "symptomName": "Vasoconstrictor",
+    "_id": 1885
+  },
+  {
+    "symptomName": "Vasodilator",
+    "_id": 1886
+  },
+  {
+    "symptomName": "Vegetable",
+    "_id": 1887
+  },
+  {
+    "symptomName": "Vein",
+    "_id": 1888
+  },
+  {
+    "symptomName": "Venereal",
+    "_id": 1889
+  },
+  {
+    "symptomName": "Vermicide",
+    "_id": 1890
+  },
+  {
+    "symptomName": "Vermifuge",
+    "_id": 1891
+  },
+  {
+    "symptomName": "Vermifuge(Cattle)",
+    "_id": 1892
+  },
+  {
+    "symptomName": "Vermifuge?",
+    "_id": 1894
+  },
+  {
+    "symptomName": "Vermin",
+    "_id": 1895
+  },
+  {
+    "symptomName": "Vertigo",
+    "_id": 1896
+  },
+  {
+    "symptomName": "Vesicant",
+    "_id": 1897
+  },
+  {
+    "symptomName": "Vinegar",
+    "_id": 1900
+  },
+  {
+    "symptomName": "Viricide",
+    "_id": 1901
+  },
+  {
+    "symptomName": "Virility",
+    "_id": 1902
+  },
+  {
+    "symptomName": "Viristat",
+    "_id": 1903
+  },
+  {
+    "symptomName": "Viscera",
+    "_id": 1904
+  },
+  {
+    "symptomName": "Vision",
+    "_id": 1905
+  },
+  {
+    "symptomName": "Vitality",
+    "_id": 1906
+  },
+  {
+    "symptomName": "Vitiligo",
+    "_id": 1907
+  },
+  {
+    "symptomName": "Voice",
+    "_id": 1908
+  },
+  {
+    "symptomName": "Vulnerary",
+    "_id": 1909
+  },
+  {
+    "symptomName": "Vulneric",
+    "_id": 1911
+  },
+  {
+    "symptomName": "Vulvitis",
+    "_id": 1912
+  },
+  {
+    "symptomName": "Waist",
+    "_id": 1913
+  },
+  {
+    "symptomName": "Walking-Stick",
+    "_id": 1914
+  },
+  {
+    "symptomName": "Wart",
+    "_id": 1915
+  },
+  {
+    "symptomName": "Wart(Eyelid)",
+    "_id": 1916
+  },
+  {
+    "symptomName": "Wart(Uterus)",
+    "_id": 1917
+  },
+  {
+    "symptomName": "Waspsting",
+    "_id": 1918
+  },
+  {
+    "symptomName": "Water",
+    "_id": 1919
+  },
+  {
+    "symptomName": "Water vine",
+    "_id": 1920
+  },
+  {
+    "symptomName": "Watervine",
+    "_id": 1921
+  },
+  {
+    "symptomName": "Weak-Knee",
+    "_id": 1922
+  },
+  {
+    "symptomName": "Weakness",
+    "_id": 1923
+  },
+  {
+    "symptomName": "Weaning",
+    "_id": 1924
+  },
+  {
+    "symptomName": "Wen",
+    "_id": 1925
+  },
+  {
+    "symptomName": "Wet-Dream",
+    "_id": 1926
+  },
+  {
+    "symptomName": "Wheeze",
+    "_id": 1927
+  },
+  {
+    "symptomName": "Whitlow",
+    "_id": 1928
+  },
+  {
+    "symptomName": "Whooping-Cough",
+    "_id": 1929
+  },
+  {
+    "symptomName": "Wine-Nose",
+    "_id": 1930
+  },
+  {
+    "symptomName": "Witchcraft",
+    "_id": 1931
+  },
+  {
+    "symptomName": "Witchhazel",
+    "_id": 1932
+  },
+  {
+    "symptomName": "Womb",
+    "_id": 1933
+  },
+  {
+    "symptomName": "Worms",
+    "_id": 1934
+  },
+  {
+    "symptomName": "Worry",
+    "_id": 1935
+  },
+  {
+    "symptomName": "Wound",
+    "_id": 1936
+  },
+  {
+    "symptomName": "Wrist",
+    "_id": 1938
+  },
+  {
+    "symptomName": "Xlbuminuria",
+    "_id": 1939
+  },
+  {
+    "symptomName": "Yaws",
+    "_id": 1940
+  },
+  {
+    "symptomName": "Yaws (Preventive)",
+    "_id": 1941
+  },
+  {
+    "symptomName": "Yellow Fever",
+    "_id": 1942
+  },
+  {
+    "symptomName": "Iran",
+    "_id": 1944
+  },
+  {
+    "symptomName": "Ankylostomiasis",
+    "_id": 1945
+  },
+  {
+    "symptomName": "Sarcoma",
+    "_id": 1946
+  },
+  {
+    "symptomName": "Carcinoma(Mouth)",
+    "_id": 1947
+  },
+  {
+    "symptomName": "Stupor",
+    "_id": 1948
+  },
+  {
+    "symptomName": "Gastric",
+    "_id": 1949
+  },
+  {
+    "symptomName": "Fissure",
+    "_id": 1950
+  },
+  {
+    "symptomName": "Scofula",
+    "_id": 1951
+  },
+  {
+    "symptomName": "Nostril",
+    "_id": 1952
+  },
+  {
+    "symptomName": "Collynum",
+    "_id": 1953
+  },
+  {
+    "symptomName": "Cardiostimulant",
+    "_id": 1954
+  },
+  {
+    "symptomName": "Dermatitogenic",
+    "_id": 1955
+  },
+  {
+    "symptomName": "Pyogenes",
+    "_id": 1956
+  },
+  {
+    "symptomName": "Phototoxic",
+    "_id": 1957
+  },
+  {
+    "symptomName": "Fluoralbus",
+    "_id": 1959
+  },
+  {
+    "symptomName": "Tuberculosia",
+    "_id": 1960
+  },
+  {
+    "symptomName": "Astigmia",
+    "_id": 1961
+  },
+  {
+    "symptomName": "Melaena",
+    "_id": 1962
+  },
+  {
+    "symptomName": "Wood",
+    "_id": 1963
+  },
+  {
+    "symptomName": "Polypus(Nose)",
+    "_id": 1965
+  },
+  {
+    "symptomName": "Calefacient",
+    "_id": 1966
+  },
+  {
+    "symptomName": "Tourniquet",
+    "_id": 1967
+  },
+  {
+    "symptomName": "Nephrocirrhosis",
+    "_id": 1968
+  },
+  {
+    "symptomName": "Musculotropic",
+    "_id": 1969
+  },
+  {
+    "symptomName": "Faver",
+    "_id": 1970
+  },
+  {
+    "symptomName": "Orechtites",
+    "_id": 1971
+  },
+  {
+    "symptomName": "Antidote(Strychnine)",
+    "_id": 1972
+  },
+  {
+    "symptomName": "Cancer(Vagina)",
+    "_id": 1973
+  },
+  {
+    "symptomName": "Carcinoma(Breast)",
+    "_id": 1974
+  },
+  {
+    "symptomName": "Antidote(Brimstone)",
+    "_id": 1975
+  },
+  {
+    "symptomName": "Leishmanniasis",
+    "_id": 1976
+  },
+  {
+    "symptomName": "Nursing",
+    "_id": 1978
+  },
+  {
+    "symptomName": "Wart(Vagina)",
+    "_id": 1979
+  },
+  {
+    "symptomName": "Preventitive(Ptomaine)",
+    "_id": 1980
+  },
+  {
+    "symptomName": "Urethrum",
+    "_id": 1981
+  },
+  {
+    "symptomName": "Pthisis",
+    "_id": 1982
+  },
+  {
+    "symptomName": "Hypermicturition",
+    "_id": 1983
+  },
+  {
+    "symptomName": "Kidneystone?",
+    "_id": 1984
+  },
+  {
+    "symptomName": "Preventative(Gray-Hair)",
+    "_id": 1985
+  },
+  {
+    "symptomName": "Tumor(Mouth)",
+    "_id": 1986
+  },
+  {
+    "symptomName": "Exorcism",
+    "_id": 1987
+  },
+  {
+    "symptomName": "Lymphangitis",
+    "_id": 1988
+  },
+  {
+    "symptomName": "Endorrhagia",
+    "_id": 1989
+  },
+  {
+    "symptomName": "Opium-substitute",
+    "_id": 1990
+  },
+  {
+    "symptomName": "Tera",
+    "_id": 1991
+  },
+  {
+    "symptomName": "Pharynx",
+    "_id": 1992
+  },
+  {
+    "symptomName": "Polyps",
+    "_id": 1994
+  },
+  {
+    "symptomName": "Diathesis",
+    "_id": 1995
+  },
+  {
+    "symptomName": "Preventitive(Measless)",
+    "_id": 1996
+  },
+  {
+    "symptomName": "Suppository-Base",
+    "_id": 1998
+  },
+  {
+    "symptomName": "Tumor(Digestive)",
+    "_id": 2001
+  },
+  {
+    "symptomName": "Pockmark",
+    "_id": 2003
+  },
+  {
+    "symptomName": "Bee-sting",
+    "_id": 2004
+  },
+  {
+    "symptomName": "Cholengitis",
+    "_id": 2005
+  },
+  {
+    "symptomName": "Meloncholia",
+    "_id": 2010
+  },
+  {
+    "symptomName": "Preventitive(Rhus)",
+    "_id": 2011
+  },
+  {
+    "symptomName": "Antidote(Bromine)",
+    "_id": 2012
+  },
+  {
+    "symptomName": "Tumor(Hand)",
+    "_id": 2013
+  },
+  {
+    "symptomName": "Fever(Tertian)",
+    "_id": 2014
+  },
+  {
+    "symptomName": "Antidote(Copper)",
+    "_id": 2015
+  },
+  {
+    "symptomName": "Hemopoietic",
+    "_id": 2016
+  },
+  {
+    "symptomName": "Emulsion",
+    "_id": 2017
+  },
+  {
+    "symptomName": "Dental",
+    "_id": 2018
+  },
+  {
+    "symptomName": "Coronary Pectoris",
+    "_id": 2019
+  },
+  {
+    "symptomName": "Addiction (Opium)",
+    "_id": 2020
+  },
+  {
+    "symptomName": "/",
+    "_id": 2021
+  },
+  {
+    "symptomName": "Asthma (Hay)",
+    "_id": 2022
+  },
+  {
+    "symptomName": "Cold Feet",
+    "_id": 2023
+  },
+  {
+    "symptomName": "Myasthenia Gravis",
+    "_id": 2024
+  },
+  {
+    "symptomName": "Preventative (Gray Hair)",
+    "_id": 2025
+  },
+  {
+    "symptomName": "Dreams",
+    "_id": 2026
+  },
+  {
+    "symptomName": "Generative Organs",
+    "_id": 2027
+  },
+  {
+    "symptomName": "Tooth Preservative",
+    "_id": 2028
+  },
+  {
+    "symptomName": "Boiler Water",
+    "_id": 2029
+  },
+  {
+    "symptomName": "Threadworm",
+    "_id": 2030
+  },
+  {
+    "symptomName": "Onychiosis",
+    "_id": 2031
+  },
+  {
+    "symptomName": "Ache(Neck)",
+    "_id": 2032
+  },
+  {
+    "symptomName": "Alopecia(Female)",
+    "_id": 2034
+  },
+  {
+    "symptomName": "Anodyne?",
+    "_id": 2036
+  },
+  {
+    "symptomName": "Antiasthmatic",
+    "_id": 2037
+  },
+  {
+    "symptomName": "Antiblennorhagic",
+    "_id": 2038
+  },
+  {
+    "symptomName": "Anticonvulsive",
+    "_id": 2039
+  },
+  {
+    "symptomName": "Antidote(Laportea)",
+    "_id": 2040
+  },
+  {
+    "symptomName": "Antidote(Lobster)",
+    "_id": 2041
+  },
+  {
+    "symptomName": "Antidote(Metopium)",
+    "_id": 2042
+  },
+  {
+    "symptomName": "Antidote(Narcotic)",
+    "_id": 2043
+  },
+  {
+    "symptomName": "Antidote(Stonefish)",
+    "_id": 2044
+  },
+  {
+    "symptomName": "Antidote(Tarantula)",
+    "_id": 2045
+  },
+  {
+    "symptomName": "Antiscrofulous",
+    "_id": 2046
+  },
+  {
+    "symptomName": "Antisiphylitic",
+    "_id": 2047
+  },
+  {
+    "symptomName": "Antisuperofic",
+    "_id": 2048
+  },
+  {
+    "symptomName": "Aparturation",
+    "_id": 2049
+  },
+  {
+    "symptomName": "Aphrodisiac(Chinese)",
+    "_id": 2052
+  },
+  {
+    "symptomName": "Apicide",
+    "_id": 2053
+  },
+  {
+    "symptomName": "Arthrosis",
+    "_id": 2054
+  },
+  {
+    "symptomName": "Ascarifuge",
+    "_id": 2055
+  },
+  {
+    "symptomName": "Attenuant",
+    "_id": 2056
+  },
+  {
+    "symptomName": "Broken-Bones",
+    "_id": 2058
+  },
+  {
+    "symptomName": "Bronchorrhea",
+    "_id": 2059
+  },
+  {
+    "symptomName": "Camphor Ingredient",
+    "_id": 2060
+  },
+  {
+    "symptomName": "Cancer(Skin)?",
+    "_id": 2061
+  },
+  {
+    "symptomName": "Cancer(Bowel)",
+    "_id": 2062
+  },
+  {
+    "symptomName": "Cancer(Genital)",
+    "_id": 2063
+  },
+  {
+    "symptomName": "Cancer(Lymphatic)",
+    "_id": 2064
+  },
+  {
+    "symptomName": "Cancer(Spleen)",
+    "_id": 2065
+  },
+  {
+    "symptomName": "Cancer(Womb)",
+    "_id": 2066
+  },
+  {
+    "symptomName": "Cancer?",
+    "_id": 2067
+  },
+  {
+    "symptomName": "Capillary-Tonic",
+    "_id": 2068
+  },
+  {
+    "symptomName": "Cardioactive",
+    "_id": 2069
+  },
+  {
+    "symptomName": "Chancroid",
+    "_id": 2070
+  },
+  {
+    "symptomName": "Cheloid",
+    "_id": 2071
+  },
+  {
+    "symptomName": "Chickenpox?",
+    "_id": 2072
+  },
+  {
+    "symptomName": "Cleansing",
+    "_id": 2074
+  },
+  {
+    "symptomName": "Convulsion(Pediatric)",
+    "_id": 2075
+  },
+  {
+    "symptomName": "Dildoe",
+    "_id": 2077
+  },
+  {
+    "symptomName": "Dyslactea",
+    "_id": 2078
+  },
+  {
+    "symptomName": "Dysourmilk",
+    "_id": 2079
+  },
+  {
+    "symptomName": "Eel lure",
+    "_id": 2081
+  },
+  {
+    "symptomName": "Encephalomyelitis",
+    "_id": 2082
+  },
+  {
+    "symptomName": "Erection",
+    "_id": 2083
+  },
+  {
+    "symptomName": "Euthanasia",
+    "_id": 2084
+  },
+  {
+    "symptomName": "Exudation",
+    "_id": 2086
+  },
+  {
+    "symptomName": "Sore(Festered)",
+    "_id": 2087
+  },
+  {
+    "symptomName": "Fever(Preventive)",
+    "_id": 2088
+  },
+  {
+    "symptomName": "Filariasissis",
+    "_id": 2089
+  },
+  {
+    "symptomName": "Fish(Bait)",
+    "_id": 2090
+  },
+  {
+    "symptomName": "Flabbiness",
+    "_id": 2091
+  },
+  {
+    "symptomName": "Fontanelleles",
+    "_id": 2092
+  },
+  {
+    "symptomName": "Fortifcant",
+    "_id": 2093
+  },
+  {
+    "symptomName": "Framboesia",
+    "_id": 2094
+  },
+  {
+    "symptomName": "Freckles",
+    "_id": 2095
+  },
+  {
+    "symptomName": "Fumigation",
+    "_id": 2096
+  },
+  {
+    "symptomName": "Fumitory (Opium substitute)",
+    "_id": 2097
+  },
+  {
+    "symptomName": "Gastric-Irritation",
+    "_id": 2098
+  },
+  {
+    "symptomName": "Gastric-Ulcer",
+    "_id": 2099
+  },
+  {
+    "symptomName": "Genito-Urinary",
+    "_id": 2100
+  },
+  {
+    "symptomName": "Granulation",
+    "_id": 2101
+  },
+  {
+    "symptomName": "Gray hair",
+    "_id": 2102
+  },
+  {
+    "symptomName": "Hair-Growth",
+    "_id": 2103
+  },
+  {
+    "symptomName": "Heavy legs",
+    "_id": 2104
+  },
+  {
+    "symptomName": "Hematocoele",
+    "_id": 2105
+  },
+  {
+    "symptomName": "Herbistat",
+    "_id": 2106
+  },
+  {
+    "symptomName": "Hide",
+    "_id": 2107
+  },
+  {
+    "symptomName": "Home-Remedy",
+    "_id": 2108
+  },
+  {
+    "symptomName": "Hypertrophy",
+    "_id": 2109
+  },
+  {
+    "symptomName": "Hypoglycemia",
+    "_id": 2110
+  },
+  {
+    "symptomName": "Illness",
+    "_id": 2111
+  },
+  {
+    "symptomName": "Indicator",
+    "_id": 2112
+  },
+  {
+    "symptomName": "Intermittent Fever",
+    "_id": 2113
+  },
+  {
+    "symptomName": "Invalidity",
+    "_id": 2115
+  },
+  {
+    "symptomName": "Leprome",
+    "_id": 2116
+  },
+  {
+    "symptomName": "Leukopenia",
+    "_id": 2117
+  },
+  {
+    "symptomName": "Levitation",
+    "_id": 2118
+  },
+  {
+    "symptomName": "Love-Charm",
+    "_id": 2120
+  },
+  {
+    "symptomName": "Maturant",
+    "_id": 2121
+  },
+  {
+    "symptomName": "Meconium",
+    "_id": 2122
+  },
+  {
+    "symptomName": "Melanosis",
+    "_id": 2123
+  },
+  {
+    "symptomName": "Mesenteritis",
+    "_id": 2124
+  },
+  {
+    "symptomName": "Monoplegia",
+    "_id": 2125
+  },
+  {
+    "symptomName": "Mucus-Mover",
+    "_id": 2126
+  },
+  {
+    "symptomName": "Music",
+    "_id": 2127
+  },
+  {
+    "symptomName": "Nalaria",
+    "_id": 2128
+  },
+  {
+    "symptomName": "Nematode",
+    "_id": 2129
+  },
+  {
+    "symptomName": "Neurodermatitis",
+    "_id": 2130
+  },
+  {
+    "symptomName": "Nypnotic",
+    "_id": 2131
+  },
+  {
+    "symptomName": "Oilseed",
+    "_id": 2132
+  },
+  {
+    "symptomName": "Onic",
+    "_id": 2133
+  },
+  {
+    "symptomName": "Ornamental",
+    "_id": 2134
+  },
+  {
+    "symptomName": "Overindulgence",
+    "_id": 2135
+  },
+  {
+    "symptomName": "Oxyuris",
+    "_id": 2136
+  },
+  {
+    "symptomName": "Papillary-Dilatation",
+    "_id": 2137
+  },
+  {
+    "symptomName": "Pian",
+    "_id": 2138
+  },
+  {
+    "symptomName": "Pill-Coating",
+    "_id": 2139
+  },
+  {
+    "symptomName": "Pityriasis",
+    "_id": 2141
+  },
+  {
+    "symptomName": "Poison(Dog)",
+    "_id": 2143
+  },
+  {
+    "symptomName": "Poison?",
+    "_id": 2144
+  },
+  {
+    "symptomName": "Preserve",
+    "_id": 2145
+  },
+  {
+    "symptomName": "Preventitive(Mephitis)",
+    "_id": 2146
+  },
+  {
+    "symptomName": "Preventitive(Migraine)",
+    "_id": 2147
+  },
+  {
+    "symptomName": "Preventitive(Mumps)",
+    "_id": 2148
+  },
+  {
+    "symptomName": "Preventitive(Pestilence)",
+    "_id": 2149
+  },
+  {
+    "symptomName": "Preventitive(Scar)",
+    "_id": 2150
+  },
+  {
+    "symptomName": "Pulmonary-Catarrh",
+    "_id": 2151
+  },
+  {
+    "symptomName": "Purpura",
+    "_id": 2152
+  },
+  {
+    "symptomName": "Rachitis",
+    "_id": 2153
+  },
+  {
+    "symptomName": "Repellant(Crocodile)",
+    "_id": 2154
+  },
+  {
+    "symptomName": "Restoration",
+    "_id": 2155
+  },
+  {
+    "symptomName": "Rhinosinusitis",
+    "_id": 2156
+  },
+  {
+    "symptomName": "Rubella",
+    "_id": 2157
+  },
+  {
+    "symptomName": "Scleroderma",
+    "_id": 2159
+  },
+  {
+    "symptomName": "Sclerosis(Anus)",
+    "_id": 2160
+  },
+  {
+    "symptomName": "Sclerosis(Viscera)",
+    "_id": 2161
+  },
+  {
+    "symptomName": "Scrufy",
+    "_id": 2162
+  },
+  {
+    "symptomName": "Silicosis",
+    "_id": 2163
+  },
+  {
+    "symptomName": "Singultus",
+    "_id": 2164
+  },
+  {
+    "symptomName": "Slurring",
+    "_id": 2165
+  },
+  {
+    "symptomName": "Smell",
+    "_id": 2166
+  },
+  {
+    "symptomName": "Somnolency",
+    "_id": 2167
+  },
+  {
+    "symptomName": "Spermatogenic",
+    "_id": 2169
+  },
+  {
+    "symptomName": "Spermicide",
+    "_id": 2170
+  },
+  {
+    "symptomName": "Sponge",
+    "_id": 2171
+  },
+  {
+    "symptomName": "Stammering",
+    "_id": 2172
+  },
+  {
+    "symptomName": "Sterility(Male)",
+    "_id": 2173
+  },
+  {
+    "symptomName": "Swamp-Fever",
+    "_id": 2174
+  },
+  {
+    "symptomName": "Sweat-Bath",
+    "_id": 2175
+  },
+  {
+    "symptomName": "Tantrum",
+    "_id": 2176
+  },
+  {
+    "symptomName": "Termitifuge",
+    "_id": 2177
+  },
+  {
+    "symptomName": "Thrombosis(Venous)",
+    "_id": 2178
+  },
+  {
+    "symptomName": "Thunder",
+    "_id": 2179
+  },
+  {
+    "symptomName": "Tick",
+    "_id": 2180
+  },
+  {
+    "symptomName": "Toe",
+    "_id": 2181
+  },
+  {
+    "symptomName": "Tonic (for pubic girls)",
+    "_id": 2182
+  },
+  {
+    "symptomName": "Toothbrush",
+    "_id": 2183
+  },
+  {
+    "symptomName": "Tuberculosic Ulcer",
+    "_id": 2184
+  },
+  {
+    "symptomName": "Tumor(Belly)",
+    "_id": 2185
+  },
+  {
+    "symptomName": "Tumor(Face)",
+    "_id": 2186
+  },
+  {
+    "symptomName": "Tumor(Head)",
+    "_id": 2187
+  },
+  {
+    "symptomName": "Tumor(India)",
+    "_id": 2188
+  },
+  {
+    "symptomName": "Umigant",
+    "_id": 2190
+  },
+  {
+    "symptomName": "Urethrorrhagia",
+    "_id": 2191
+  },
+  {
+    "symptomName": "Urticant",
+    "_id": 2192
+  },
+  {
+    "symptomName": "Uteralgia",
+    "_id": 2193
+  },
+  {
+    "symptomName": "Uterine-Colic",
+    "_id": 2194
+  },
+  {
+    "symptomName": "Uteroconstriction",
+    "_id": 2195
+  },
+  {
+    "symptomName": "Vitus",
+    "_id": 2196
+  },
+  {
+    "symptomName": "Vomiting",
+    "_id": 2197
+  },
+  {
+    "symptomName": "Wasting",
+    "_id": 2198
+  },
+  {
+    "symptomName": "Weak-Pulse",
+    "_id": 2199
+  },
+  {
+    "symptomName": "Weariness",
+    "_id": 2200
+  },
+  {
+    "symptomName": "Myofibroma",
+    "_id": 2202
+  },
+  {
+    "symptomName": "Ache(Eye)",
+    "_id": 2203
+  },
+  {
+    "symptomName": "Scalp-Tonic",
+    "_id": 2204
+  },
+  {
+    "symptomName": "Ma",
+    "_id": 2205
+  },
+  {
+    "symptomName": "Washing",
+    "_id": 2206
+  },
+  {
+    "symptomName": "Intestinal worms",
+    "_id": 2207
+  },
+  {
+    "symptomName": "Black-Leg",
+    "_id": 2208
+  },
+  {
+    "symptomName": "Burning-feet",
+    "_id": 2209
+  },
+  {
+    "symptomName": "Posthume",
+    "_id": 2210
+  },
+  {
+    "symptomName": "Cold sore",
+    "_id": 2211
+  },
+  {
+    "symptomName": "Menthol",
+    "_id": 2212
+  },
+  {
+    "symptomName": "Ovocide",
+    "_id": 2213
+  },
+  {
+    "symptomName": "Adenocarcinoma",
+    "_id": 2214
+  },
+  {
+    "symptomName": "Preventitive(Hiccup)",
+    "_id": 2215
+  },
+  {
+    "symptomName": "Antidiuretic",
+    "_id": 2216
+  },
+  {
+    "symptomName": "Decubitus",
+    "_id": 2217
+  },
+  {
+    "symptomName": "Abortive?",
+    "_id": 2218
+  },
+  {
+    "symptomName": "Ochititis",
+    "_id": 2219
+  },
+  {
+    "symptomName": "Lymphitis",
+    "_id": 2220
+  },
+  {
+    "symptomName": "Ketonuria",
+    "_id": 2221
+  },
+  {
+    "symptomName": "Hallucinogenic",
+    "_id": 2222
+  },
+  {
+    "symptomName": "Enterostenosis",
+    "_id": 2224
+  },
+  {
+    "symptomName": "Fontanellele",
+    "_id": 2225
+  },
+  {
+    "symptomName": "Weight-Loss",
+    "_id": 2229
+  },
+  {
+    "symptomName": "Muscle(Uterus)",
+    "_id": 2230
+  },
+  {
+    "symptomName": "Asthenopia",
+    "_id": 2231
+  },
+  {
+    "symptomName": "Fishbait",
+    "_id": 2233
+  },
+  {
+    "symptomName": "Intoxicant(Bee)",
+    "_id": 2234
+  }
+]

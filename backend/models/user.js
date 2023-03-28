@@ -7,7 +7,25 @@ const UserSchema = new Schema({
         type: String,
         unique: true
     },
-    rating: Number
+    ratings: [
+        {
+            remedyId: {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Remedies'
+            },
+            ratingValue: Number,
+            reviewDescription: String,
+            reviewName: String
+        }
+    ],
+    favorites: [
+        {
+            remedyId: {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Remedies'
+            }
+        }
+    ]
 });
 UserSchema.plugin(passportLocalMongoose)
 

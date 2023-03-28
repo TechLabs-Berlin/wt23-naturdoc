@@ -1,24 +1,25 @@
-import { Box, CssBaseline } from "@mui/material";
-import Header from "./Header";
-import StickyFooter from "./Footer";
+import BarNavBottom from "./BarNavBottom";
+import { Box, CssBaseline, Container } from "@mui/material";
 
 function LayoutHOC(WrappedComponent) {
   function WrapperComponent(props) {
     return (
       <>
-        <Header />
+      <Container component="section" maxWidth="sm">
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             minHeight: "80vh",
+            marginBottom: 14,
           }}
           component="main"
         >
           <CssBaseline />
           <WrappedComponent {...props} />
         </Box>
-        <StickyFooter />
+        <BarNavBottom />
+       </Container>
       </>
     );
   }
