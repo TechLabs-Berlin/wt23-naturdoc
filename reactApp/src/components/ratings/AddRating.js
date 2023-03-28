@@ -1,13 +1,60 @@
-import { Typography } from "@mui/material";
+import RatingForm from "components/ratings/RatingForm";
+import { useState } from "react";
 
-function AddRating(ratings, notRatedByUser, notRatingsYet) {
+import { Card, Box, Button, Typography, useTheme, useMediaQuery } from "@mui/material/";
+import ChevronRight from "@mui/icons-material/ChevronRight";
+
+
+function AddRating({remedy, ratings}) {
+  
+  const noRatingsYet = remedy.totalNumberofRatings
+    ? ""
+    : "Be the first to add a review.";
+    console.log("No ratings yet?", noRatingsYet ? "true" : "false")
+
+  const notRatedByUser = ratings.userId
+    ? ""
+    : "You have not shared your opinion yet. What do you think of this remedy?";
+    console.log("Remedy not rated by User ?", notRatedByUser ? "true" : "false")
+
+  const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
-      {ratings.length} matching reviews
-      {/* Case 1a: No reviews yet */}
-      <Typography variant="remedyTitle"></Typography>
-      {/* Case 1B: No reviews from user  yet */}
-      <Typography variant="remedyTitle"></Typography>
+      <Card variant="reviewCard">
+        <Typography variant="body1" sx={{ textAlign: "center" }} paragraph>
+          {noRatingsYet}
+          {notRatedByUser}
+        </Typography>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Button
+            align="center"
+            size="large"
+            variant="outlined"
+            onClick={handleClickOpen}
+            endIcon={<ChevronRight />}
+          >
+            Write a review
+          </Button>
+        </Box>
+      </Card>
+      <RatingForm
+        key={remedy.id}
+        remedy={remedy}
+        open={open}
+        handleClose={handleClose}
+        fullScreen={fullScreen}
+      />
     </>
   );
 }
