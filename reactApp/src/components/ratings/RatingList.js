@@ -1,16 +1,16 @@
 import RatingShow from "./RatingShow";
-import { Container, Box } from "@mui/material";
+import {  Box } from "@mui/material";
 
 function RatingList({ ratings }) {
   const renderedRatings = ratings.map((rating) => {
-    return <RatingShow key={rating.id} rating={rating} />;
+    return <RatingShow key={rating._id} rating={rating} />;
   });
 
   return (
     <>
-      <Container sx={{ mt: 5 }} component="section" maxWidth="sm">
-        <Box>{renderedRatings}</Box>
-      </Container>
+      <Box sx={{ mt: 5 }} component="section" maxWidth="md">
+        {renderedRatings}
+      </Box>
     </>
   );
 }

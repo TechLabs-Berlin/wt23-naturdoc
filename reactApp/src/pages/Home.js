@@ -1,6 +1,6 @@
 // Components
 import LayoutHOC from "components/layouts/LayoutHOC";
-import SearchBar from "components/results/SearchBar";
+
 import { Box, CardActionArea, Divider } from "@mui/material";
 import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
@@ -18,6 +18,7 @@ import rosemary from "assets/remedies/rosemary.jpg";
 import stingingNettle from "assets/remedies/stinging-nettle.jpg";
 import garlic from "assets/remedies/garlic.png";
 import turmeric from "assets/remedies/turmeric.png";
+import searchButton from "assets/searchButton.png";
 
 const springRemedies = [
   {
@@ -53,7 +54,7 @@ const Home = () => {
         }}
       >
         <Container sx={{ m: "16px auto" }} component="section" maxWidth="sm">
-          <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Typography
               component="h1"
               variant="h1"
@@ -64,16 +65,11 @@ const Home = () => {
               Welcome to Naturdoc
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column", pl: 2 }}>
-              <Box sx={{ display: "flex", alignItems: "center" }}>
-                <Link to={"/"}>
-                  <img src={logo} width={86} alt={logo} />
-                </Link>
-              </Box>
-              <Box sx={{ flex: "1 0 auto" }}></Box>
+              <Link to={"/"}>
+                <img src={logo} width={86} alt={logo} />
+              </Link>
             </Box>
           </Box>
-
-          <Box sx={{ display: "flex", justifyContent: "center" }}></Box>
           <Typography
             component="h2"
             variant="h2"
@@ -83,9 +79,12 @@ const Home = () => {
           >
             Here you can find natural remedies from different medical traditions
           </Typography>
-
-          <CardActionArea component={Link} to={`/search`}>
-            <SearchBar />
+          <CardActionArea
+            component={Link}
+            to={`/search`}
+            sx={{ display: "flex" }}
+          >
+            <img src={searchButton} alt="Search for a remedy" width="315" />
           </CardActionArea>
         </Container>
       </Box>
@@ -98,13 +97,14 @@ const Home = () => {
         <Grid container spacing={3} sx={{ py: 2 }}>
           {springRemedies.map((item, index) => (
             <Grid item key={index} xs={12} sm={6} md={6}>
+               {index % 2 === 0 ? (
               <Card sx={{ display: "flex" }} variant="homeCard">
                 <CardMedia
                   component="img"
                   sx={{
                     //TODO: theme this
+                    // variant="homeRemedyImage"
                     width: "170px",
-                    // height: "142px",
                     border: "1px solid #1d7147",
                     borderRadius: "5px",
                   }}
@@ -141,7 +141,53 @@ const Home = () => {
                     </Button>
                   </CardActions>
                 </Box>
-              </Card>
+              </Card> 
+            ) : (
+              <Card sx={{ display: "flex" }} variant="homeCard">      
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    alignItems: "center",
+                    alignContent: "flex-end",
+                    pl: 1,
+                  }}
+                >
+                  <CardContent sx={{ display: "flex", p: 1 }}>
+                    <Typography
+                      gutterBottom
+                      variant="remedyTitle"
+                      component="h2"
+                    >
+                      {item.title}
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{ p: 0, justifyContent: "end" }}>
+                    <Button
+                      size="medium"
+                      variant="outlined"
+                      endIcon={<ChevronRight />}
+                      component={Link}
+                      to={`/remedies/${item.id}`}
+                    >
+                      Learn more
+                    </Button>
+                  </CardActions>
+                </Box>
+                <CardMedia
+                  component="img"
+                  sx={{
+                    //TODO: theme this
+                    // variant="homeRemedyImage"
+                    width: "170px",
+                    border: "1px solid #1d7147",
+                    borderRadius: "5px",
+                  }}
+                  image={item.src}
+                  alt={item.title}
+                />
+              </Card> 
+            )}
             </Grid>
           ))}
         </Grid>

@@ -13,7 +13,9 @@ const UserSchema = new Schema({
                 type: mongoose.Schema.Types.ObjectId,
                 ref: 'Remedies'
             },
-            ratingValue: Number
+            ratingValue: Number,
+            reviewDescription: String,
+            reviewName: String
         }
     ],
     favorites: [
