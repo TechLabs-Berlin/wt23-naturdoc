@@ -1,18 +1,66 @@
-import { Card, CardContent } from "@mui/material";
+import {
+  List,
+  ListItem,
+  Divider,
+  ListItemText,
+  ListItemAvatar,
+  Avatar,
+  Typography,
+  Rating,
+} from '@mui/material';
+import CircleIcon from '@mui/icons-material/Circle';
 
 function RatingShow({ rating }) {
   return (
     <>
-    <Card>
-      <CardContent>
-        <p>User Id is: <b>{rating.userId}</b></p>
-        <p>_id of the rating:<b> {rating._id}</b></p>
-        <p>Linked to remedy via remedyId: <b>{rating.remedyId}</b></p>
-        <p>Value of the rating: <b>{rating.ratingValue}</b></p>
-        <p>Title of the review:<b> {rating.reviewName}</b></p>
-        <p>Description of the review: <b>{rating.reviewDescription}</b></p>
-      </CardContent>
-      </Card>
+      <List>
+        <ListItem >
+          <ListItemAvatar>
+            <Avatar alt="avatar" src="/static/images/avatar/1.jpg" />
+          </ListItemAvatar>
+          <ListItemText
+            primary={
+              <>
+                <Typography variant="reviewTitle">[USER.USERNAME]</Typography>
+              </>
+            }
+            secondary={
+              <>
+                <Typography
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                  }}
+                  component={'span'}
+                  variant="reviewTimestamp"
+                >
+                  [TIMESTAMP]
+                  <Rating
+                    name="read-only"
+                    size="small"
+                    readOnly
+                    icon={<CircleIcon fontSize="inherit" />}
+                    emptyIcon={<CircleIcon fontSize="inherit" />}
+                    value={rating.ratingValue}
+                  ></Rating>
+                </Typography>
+              </>
+            }
+          />
+        </ListItem>
+        <Typography
+          sx={{ fontWeight: 500, mb: 2 }}
+          variant="reviewBody"
+        >
+          {rating.reviewName}
+        </Typography>
+
+        <Typography component="div" variant="reviewBody" sx={{  mb: 4 }}>
+          {rating.reviewDescription}
+        </Typography>
+        <Divider sx={{ width: '100%' }} component="li" />
+      </List>
     </>
   );
 }

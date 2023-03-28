@@ -9,7 +9,7 @@ function AddRating({remedy, ratings}) {
   
   const noRatingsYet = remedy.totalNumberofRatings
     ? ""
-    : "Be the first to add a review.";
+    : "No reviews yet. Be the first to add a review";
     console.log("No ratings yet?", noRatingsYet ? "true" : "false")
 
   const notRatedByUser = ratings.userId

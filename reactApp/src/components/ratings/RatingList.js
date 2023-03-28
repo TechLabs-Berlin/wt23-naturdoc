@@ -1,5 +1,5 @@
 import RatingShow from "./RatingShow";
-import { Container, Box } from "@mui/material";
+import {  Box } from "@mui/material";
 
 function RatingList({ ratings }) {
   const renderedRatings = ratings.map((rating) => {
@@ -8,9 +8,9 @@ function RatingList({ ratings }) {
 
   return (
     <>
-      <Container sx={{ mt: 5 }} component="section" maxWidth="md">
-        <Box>{renderedRatings}</Box>
-      </Container>
+      <Box sx={{ mt: 5 }} component="section" maxWidth="md">
+        {renderedRatings}
+      </Box>
     </>
   );
 }
