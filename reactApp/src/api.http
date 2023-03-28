@@ -1,46 +1,73 @@
-GET https://my-json-server.typicode.com/rjeantet/server-mock/symptoms HTTP/1.1 
+// --------------------- SYMPTOMS --------------------- //
+// Get full list of symptoms (backend)
+GET http://127.0.0.1:7000/getSymptoms HTTP/1.1
 Content-Type: application/json
-
 ###
-
-GET https://my-json-server.typicode.com/rjeantet/server-mock/ratings/ HTTP/1.1
+// backup list of symptoms (local)
+GET http://127.0.0.1:3000/db/symptoms.json HTTP/1.1
 Content-Type: application/json
-
-###
-
-// Get full list of symptoms
-GET http://127.0.0.1:7000/symptoms HTTP/1.1
-Content-Type: application/json
-
-// URL To be provided by BE team
-
-###
-
-GET http://127.0.0.1:3000/symptoms.json HTTP/1.1
-Content-Type: application/json
-
-
 ### 
-
-// Send list of selected symptoms to DS server
+// Send list of selected symptoms to DS server (DS)
 POST http://127.0.0.1:8000/remedies/query HTTP/1.1
 Content-Type: application/json
     
     {
-        "symptoms": [ "Cough", "Fever", "Ache(Head)"]
+        "symptomsUser": [ "Cough", "Fever", "Ache(Head)"]
     }
-
-// Current vs. expected ouput (23.03.2023):
-// missing totalNumberofRatings in output but OK in symptoms.json
-
 
 ###
 
-// Get list of all remedies
+// --------------------- REMEDIES --------------------- //
+// Get list of all remedies (backend)
 GET http://127.0.0.1:7000/remedies HTTP/1.1
-// Content-Type: application/json
+Content-Type: application/json
+###
+// Get all infos regarding a specific remedy (backend)
+GET http://localhost:7000/remedies/641f60b3e7523a06fc0c0a20 HTTP/1.1
+Content-Type: application/json
 
-// expected output:
+###
+
+// --------------------- RATINGS --------------------- //
+// Get all ratings for a specific remedy (backend)
+GET http://localhost:7000/remedies/641f60b3e7523a06fc0c0a20/ratings  HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:7000/remedies/641f60b3e7523a06fc0c0a20
+Content-Type: application/json
+ {
+        "data": {
+          ...formValues,
+          //TODO userID to be added.
+          userId: "[USER ID]",
+        },
+      }
+
+// NB: at the moment the user auth is not set up yet. To test 
+// you need to retrieve a user.id in MongoDb, and paste it in routes/remedies.js, 
+// const userTest="[USER_ID]" 
+
+// [TODO PRIO 2] Get ratings created by a user for a specific remedy
+GET TBD HTTP/1.1
+Content-Type: application/json
+
+
+// --------------------- USERS --------------------- //
+
+// login user
+GET http://localhost:7000/login HTTP/1.1
+Content-Type: application/json
+
+// register user
+GET http://localhost:7000/register HTTP/1.1
+Content-Type: application/json
+
+// logout user
+GET http://localhost:7000/logout HTTP/1.1
+Content-Type: application/json
+
 
 
 

@@ -4,7 +4,7 @@ const Remedies = require('./remedies');
 
 
 const RatingsSchema = new Schema({
-    _id: false,
+    ratingId: mongoose.Schema.Types.ObjectId,
     userId: {
         type: Schema.Types.ObjectId,
         ref: 'User'
@@ -15,7 +15,8 @@ const RatingsSchema = new Schema({
     },
     ratingValue: Number,
     reviewDescription: String,
-    reviewName: String
+    reviewName: String,
+    remedyName: String
 });
 
 module.exports = mongoose.model('Rating', RatingsSchema);

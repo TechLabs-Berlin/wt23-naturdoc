@@ -1,188 +1,230 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material';
 
-const primaryColor = "#1d7147";
-const primaryColorLight = "rgba(105,179,154,0.9)";
-const secondaryColor = "#deedde";
-const secondaryColorLight = "#EAE6B4";
-const primaryFont = ['"Poppins"', '"Helvetica"', "Arial", "sans-serif"].join(
-  ","
+const primaryColor = '#1d7147';
+const primaryColorLight = 'rgba(105,179,154,0.9)';
+const secondaryColor = '#deedde';
+const secondaryColorLight = '#EAE6B4';
+const primaryFont = ['"Poppins"', '"Helvetica"', 'Arial', 'sans-serif'].join(
+    ','
 );
 const secondaryFont = [
-  '"Bree Serif"',
-  '"Helvetica"',
-  "Arial",
-  "sans-serif",
-].join(",");
+    '"Bree Serif"',
+    '"Helvetica"',
+    'Arial',
+    'sans-serif',
+].join(',');
 
-const primaryTextColor = "#333333";
+const primaryTextColor = '#333333';
 
 const theme = createTheme({
-  palette: {
-    mode: "light",
-    primary: {
-      main: primaryColor,
-      light: primaryColorLight,
-    },
-    secondary: {
-      main: secondaryColor,
-      contrastText: primaryTextColor,
-      light: secondaryColorLight,
-    },
-    error: {
-      main: "#ff1744",
-    },
-    text: {
-      primary: primaryTextColor,
-      secondary: "#1D7147",
-    },
-    background: {
-      paper: "#ffffff",
-      default: "#ffffff",
-    },
-    divider: primaryTextColor,
-  },
-  components: {
-    MuiAppBar: {
-      styleOverrides: {
-        colorPrimary: {
-          backgroundColor: "transparent",
-          color: "#0000009e",
+    palette: {
+        mode: 'light',
+        primary: {
+            main: primaryColor,
+            light: primaryColorLight,
         },
-      },
-    },
-    MuiContainer: {
-      styleOverrides: {
-        root: {
-          margin: "auto",
+        secondary: {
+            main: secondaryColor,
+            contrastText: primaryTextColor,
+            light: secondaryColorLight,
         },
-      },
-    },
-    MuiSvgIcon: {
-      styleOverrides: {
-        fontSizeLarge: {
-          fontSize: "2rem",
+        error: {
+            main: '#ff1744',
         },
-      },
-    },
-    MuiRating: {
-      styleOverrides: {
-        iconEmpty: {
-          color: "#ffffff",
+        text: {
+            primary: primaryTextColor,
+            secondary: primaryColor,
         },
-        iconFilled: {
-          color: "#1d7147",
+        background: {
+            paper: '#ffffff',
+            default: '#ffffff',
         },
-      },
+        divider: primaryTextColor,
     },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          fontFamily: secondaryFont,
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: {
+                    backgroundColor: '#deedde75',
+                },
+            },
         },
-      },
-    },
-    MuiBottomNavigation: {
-      styleOverrides: {
-        root: {
-          backgroundColor: primaryColorLight,
-          height: "68px",
+        MuiAppBar: {
+            styleOverrides: {
+                colorPrimary: {
+                    backgroundColor: 'transparent',
+                    color: '#0000009e',
+                },
+            },
         },
-      },
-    },
-    MuiBottomNavigationAction: {
-      styleOverrides: {
-        root: {
-          color: primaryTextColor,
-          "&.Mui-selected": { color: "#ffffff" },
+        MuiContainer: {
+            styleOverrides: {
+                root: {
+                    margin: 'auto',
+                    padding: 8, 
+                    backgroundColor:"#ffffff"
+                },
+            },
         },
-      },
-    },
-    MuiPaper: {
-      styleOverrides: {
-        resultCard: {
-          backgroundColor: secondaryColor,
+        MuiSvgIcon: {
+            styleOverrides: {
+                fontSizeLarge: {
+                    fontSize: '2rem',
+                },
+            },
         },
-        homeCard: {
-          backgroundColor: "white",
+        MuiRating: {
+            styleOverrides: {
+                iconEmpty: {
+                    color: '#cccccc',
+                },
+                iconFilled: {
+                    color: primaryColor,
+                },
+            },
         },
-      },
-    },
-    MuiDivider: {
-      styleOverrides: {
-        root: {
-          width: "25%",
-          margin: "16px 0",
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    fontFamily: secondaryFont,
+                },
+            },
         },
-      },
-    },
-    MuiAccordionSummary: {
-      styleOverrides: {
-        root: {
-          backgroundColor: secondaryColorLight,
-          // color: "#ffffff",
-          "&.Mui-expanded": {
-            // backgroundColor: primaryColor,
-          },
+        MuiBottomNavigation: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: primaryColorLight,
+                    height: '68px',
+                },
+            },
         },
-      },
-    },
-    MuiAutocomplete: {
-      styleOverrides: {
-        option: {
-          "&:hover": {
-            //  backgroundColor: primaryColorLight,
-          },
+        MuiBottomNavigationAction: {
+            styleOverrides: {
+                root: {
+                    color: primaryTextColor,
+                    '&.Mui-selected': { color: '#ffffff' },
+                },
+            },
         },
-        tag: {
-          backgroundColor: primaryColorLight,
-          color: "#ffffff",
-          fontWeight: 700,
-          clearIndicator: {
-            color: "#ffffff",
-            backgroundColor: "#000000",
-          },
+        MuiList: {
+            styleOverrides: {
+                root: {
+                    padding: 0,
+                },
+            },
         },
-      },
-    },
-    MuiCardActionArea: {
-      styleOverrides: {
-        focusHighlight: {
-          backgroundColor: "transparent",
+        MuiListItem: {
+            styleOverrides: {
+                root: {
+                    padding: '8px 0px',
+                },
+            },
         },
-      },
-    },
-    MuiCardHeader: {
-      styleOverrides: {
-        subheader: {
-          display: "-webkit-box",
-          WebkitLineClamp: "3",
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden",
+        MuiListItemAvatar: {
+            styleOverrides: {
+                root: {
+                    minWidth: '48px',
+                },
+            },
         },
-      },
+        MuiPaper: {
+            styleOverrides: {
+                root: { marginBottom: '16px' },
+                resultCard: {
+                    backgroundColor: secondaryColor,
+                },
+                homeCard: {
+                    backgroundColor: '#ffffff',
+                },
+                reviewCard: {
+                    marginTop: 32,
+                    padding: '32px 16px',
+                    border: '1px solid',
+                    borderColor: primaryColor,
+                    borderRadius: '4px',
+                },
+            },
+        },
+        MuiDivider: {
+            styleOverrides: {
+                root: {
+                    width: '25%',
+                    margin: '16px 0',
+                },
+            },
+        },
+        MuiAccordionSummary: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: secondaryColorLight,
+                },
+            },
+        },
+        MuiAutocomplete: {
+            styleOverrides: {
+                tag: {
+                    backgroundColor: primaryColorLight,
+                    color: '#ffffff',
+                    fontWeight: 700,
+                    clearIndicator: {
+                        color: '#ffffff',
+                        backgroundColor: '#000000',
+                    },
+                },
+            },
+        },
+        MuiCardActionArea: {
+            styleOverrides: {
+                focusHighlight: {
+                    backgroundColor: 'transparent',
+                },
+            },
+        },
+        MuiCardHeader: {
+            styleOverrides: {
+                subheader: {
+                    display: '-webkit-box',
+                    WebkitLineClamp: '3',
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
+                },
+            },
+        },
     },
-  },
-  typography: {
-    h1: {
-      fontSize: "1.9rem",
-      fontWeight: 400,
-      color: primaryColor,
-      lineHeight: "2.5rem",
+    typography: {
+        h1: {
+            fontSize: '1.9rem',
+            fontWeight: 400,
+            color: primaryColor,
+            lineHeight: '2.5rem',
+        },
+        h2: { fontSize: '1.25rem', fontWeight: 300, lineHeight: '1.75rem' },
+        remedyTitle: {
+            fontFamily: secondaryFont,
+            fontWeight: 400,
+            fontSize: '1.5rem',
+        },
+        resultCount: {
+            fontFamily: primaryFont,
+            fontWeight: 300,
+            color: primaryColor,
+            textTransform: 'uppercase',
+        },
+        reviewTitle: {
+            fontFamily: secondaryFont,
+            fontWeight: 400,
+            fontSize: '0.95rem',
+        },
+        reviewTimestamp: {
+            fontSize: '0.85rem',
+            color: primaryTextColor,
+        },
+        reviewBody: {
+            fontSize: '0.95rem',
+            color: primaryTextColor,
+        },
+        fontFamily: primaryFont,
     },
-    h2: { fontSize: "1.25rem", fontWeight: 300, lineHeight: "1.75rem" },
-    remedyTitle: {
-      fontFamily: secondaryFont,
-      fontWeight: 400,
-      fontSize: "1.5rem",
-    },
-    resultCount: {
-      fontFamily: primaryFont,
-      fontWeight: 300,
-      color: primaryColor,
-      textTransform: "uppercase",
-    },
-    fontFamily: primaryFont,
-  },
 });
 
 export default theme;
