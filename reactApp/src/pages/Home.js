@@ -97,6 +97,7 @@ const Home = () => {
         <Grid container spacing={3} sx={{ py: 2 }}>
           {springRemedies.map((item, index) => (
             <Grid item key={index} xs={12} sm={6} md={6}>
+               {index % 2 === 0 ? (
               <Card sx={{ display: "flex" }} variant="homeCard">
                 <CardMedia
                   component="img"
@@ -140,7 +141,53 @@ const Home = () => {
                     </Button>
                   </CardActions>
                 </Box>
-              </Card>
+              </Card> 
+            ) : (
+              <Card sx={{ display: "flex" }} variant="homeCard">      
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    alignItems: "center",
+                    alignContent: "flex-end",
+                    pl: 1,
+                  }}
+                >
+                  <CardContent sx={{ display: "flex", p: 1 }}>
+                    <Typography
+                      gutterBottom
+                      variant="remedyTitle"
+                      component="h2"
+                    >
+                      {item.title}
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{ p: 0, justifyContent: "end" }}>
+                    <Button
+                      size="medium"
+                      variant="outlined"
+                      endIcon={<ChevronRight />}
+                      component={Link}
+                      to={`/remedies/${item.id}`}
+                    >
+                      Learn more
+                    </Button>
+                  </CardActions>
+                </Box>
+                <CardMedia
+                  component="img"
+                  sx={{
+                    //TODO: theme this
+                    // variant="homeRemedyImage"
+                    width: "170px",
+                    border: "1px solid #1d7147",
+                    borderRadius: "5px",
+                  }}
+                  image={item.src}
+                  alt={item.title}
+                />
+              </Card> 
+            )}
             </Grid>
           ))}
         </Grid>
