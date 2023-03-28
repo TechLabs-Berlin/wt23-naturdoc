@@ -18,19 +18,33 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     db = client.naturdoc
     collection = db.remedies
 
-    remedies = dict()
+    with open("../output/symptom_matches.json", 'r') as f:
+        symptom_matches = json.load(f)
+
+    activities = list()
 
     for symptom in symptoms:
-        print("Querying collection for...", symptom)
+        print(f"For symptom '{symptom}', found the following activities:")
+        try:
+            matches = symptom_matches[symptom]
+            activities.extend(matches)
+            print(*matches)
+        except:
+            print(f"Could not find matches for '{symptom}'")
+
+    remedies = dict()
+
+    for activity in activities:
+        print("Querying collection for...", activity)
         results = list()
         try:
-            curs = collection.find({ "medicinalUses": { '$regex' : symptom, '$options' : 'i' }  })
+            curs = collection.find({ "medicinalUses": { '$regex' : activity, '$options' : 'i' }  })
             for remedy in curs:
                 results.append(remedy)
         except Exception as e:
             print(e)
         if results:
-            remedies[symptom] = results
+            remedies[activity] = results
 
     client.close()
 
@@ -40,18 +54,18 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     for key, herbs in remedies.items():
         top_results = list()
         incomplete_results = list()
-        print("Symptom:", key)
+        print("Activity:", key)
         print("Number of remedies found:", len(herbs))
         for herb in herbs:
-            symptom_matches = list()
-            for symptom in symptoms:
-                if symptom in herb["medicinalUses"]:
-                    symptom_matches.append(symptom)
+            activity_matches = list()
+            for activity in activities:
+                if activity in herb["medicinalUses"]:
+                    activity_matches.append(activity)
             if herb["treatmentClinical"] or herb["treatmentTraditional"] or herb["treatmentFolk"]:
-                herb["symptom_matches"] = symptom_matches
+                herb["activity_matches"] = activity_matches
                 top_results.append(herb)
             else:
-                herb["symptom_matches"] = symptom_matches
+                herb["activity_matches"] = activity_matches
                 incomplete_results.append(herb)
         has_medical[key] = top_results
         has_no_medical[key] = incomplete_results
@@ -61,13 +75,13 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     match_one = list()
 
     for key, herbs in has_medical.items():
-        print("Top results for symptom:", key)
+        print("Top results for activity:", key)
         print("Number of remedies with instructions found:", len(herbs))
         for herb in herbs:
-            matches = herb["symptom_matches"]
-            if matches == symptoms and herb not in match_all:
+            matches = herb["activity_matches"]
+            if matches == activities and herb not in match_all:
                 match_all.append(herb)
-            elif len(matches) > 1 and len(matches) < len(symptoms) and herb not in match_partial:
+            elif len(matches) > 1 and len(matches) < len(activities) and herb not in match_partial:
                 match_partial.append(herb)
             elif len(matches) == 1 and herb not in match_one:
                 match_one.append(herb)
@@ -77,19 +91,19 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     incomplete_match_one = list()
 
     for key, herbs in has_no_medical.items():
-        print("Other results for symptom:", key)
+        print("Other results for activity:", key)
         print("Number of remedies without instructions found:", len(herbs))
         for herb in herbs:
-            matches = herb["symptom_matches"]
-            if matches == symptoms and herb not in incomplete_match_all:
+            matches = herb["activity_matches"]
+            if matches == activities and herb not in incomplete_match_all:
                 incomplete_match_all.append(herb)
-            elif len(matches) > 1 and len(matches) < len(symptoms) and herb not in incomplete_match_partial:
+            elif len(matches) > 1 and len(matches) < len(activities) and herb not in incomplete_match_partial:
                 incomplete_match_partial.append(herb)
             elif len(matches) == 1 and herb not in incomplete_match_one:
                 incomplete_match_one.append(herb)
 
-    match_partial.sort(key = lambda x: len(x['symptom_matches']), reverse=True)
-    incomplete_match_partial.sort(key = lambda x: len(x['symptom_matches']), reverse=True)
+    match_partial.sort(key = lambda x: len(x['activity_matches']), reverse=True)
+    incomplete_match_partial.sort(key = lambda x: len(x['activity_matches']), reverse=True)
 
     print("match_all:", len(match_all))
     print("match_partial:", len(match_partial))
@@ -146,7 +160,8 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
             incomplete_i_one += 1  
     
     response_with_warnings = list() 
-    severe_symptoms = ["Cancer", "Malaria", "Abortive", "Tumor", "Abortifacient", "Antidote(Black Widow)", "Antidote(Scorpion)", "Bite(Snake)"]
+    severe_symptoms = ["Tumor", "Kidney failure", "Stroke", "Bleeding", "Bone fracture", "Bone tumor", "Heart arrhythmia",\
+                       "Hepatotoxicity", "Self-harm", "Suicidal ideation"]
 
     for key, remedies in response.items():
         for remedy in remedies:
@@ -166,13 +181,21 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
             json_response["warnings"] = remedy["warnings"]
             json_response["adverseEffects"] = remedy["adverseEffects"]
             json_response["posology"] = remedy["posology"]
-            if key == "match_all":
+            json_response["symptomsMatched"] = list()  
+            for symptom in symptoms:
+                try:
+                    if bool(set(symptom_matches[symptom]) & set(remedy["activity_matches"])):
+                    # set(symptom_matches[symptom]).isdisjoint(remedy["activity_matches"]):
+                    # any(activity in symptom_matches[symptom] for activity in remedy["activity_matches"]):
+                        json_response["symptomsMatched"].extend([symptom])
+                except:
+                    pass
+            if len(symptoms) == len (json_response["symptomsMatched"]):
                 json_response["fullMatch"] = True
             else:
                 json_response["fullMatch"] = False
-            json_response["symptomsMatched"] = remedy["symptom_matches"]      
             json_response["doctorAlert"] = False
-            for symptom in remedy["symptom_matches"]:
+            for symptom in json_response["symptomsMatched"]:
                 if symptom in severe_symptoms:
                     json_response["doctorAlert"] = True
             json_response["iconReference"] = None
@@ -180,129 +203,3 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
 
     output_json = json.loads(json_util.dumps(response_with_warnings))
     return output_json
-
-# example response:
-# [
-#   {
-#     "_id": ObjectId('412fl3b0q38f9327cab7a85db'),
-#     "rating": float,
-#     "remedyName": "Scientific name",
-#     "commonNames": [ # could also just be a comma-separated string
-#         "A",
-#         "list",
-#         "of",
-#         "common",
-#         "names"
-#     ],
-#     "medicinalUses": [ # could also just be a comma-separated string
-#         "A",
-#         "list",
-#         "of",
-#         "all",
-#         "symptoms",
-#         "treated",
-#         "by",
-#         "the",
-#         "remedy",
-#         "as",
-#         "per",
-#         "the",
-#         "Duke",
-#         "dataset"
-#     ],
-#     "treatmentClinical": 
-#         "If available, a text describing clinically proven treatments",
-#     "treatmentTraditional": 
-#         "If available, a text describing treatments from traditional systems of medicine",
-#     "treatmentFolk": 
-#         "If available, a text describing folk treatments",
-#     "contraindication": 
-#         "If available, a text describing general allergies and precautions",
-#     "warnings": 
-#         "If available, a text describing warnings",
-#     "adverseEffects": 
-#         "If available, a text describing allergies etc.",
-#     "posology": 
-#         "If available, a text describing dosage and dosage types",
-#     "fullMatch": bool,
-#     "symptomsMatched": [
-#         "Headache",
-#         "Diarrhea",
-#         "Nausea"
-#     ],
-#     "doctorAlert": bool, # or different levels of severity
-#     "iconReference": "Name of icon to be used" # only if we have icons
-#   } 
-# ]
-
-# [
-#   {
-#     "remedy": {
-#         "_uid": ObjectId('412fl3b0q38f9327cab7a85db'),
-#         "rating": float,
-#         "remedyName": "Scientific name",
-#         "commonNames": [ # could also just be a comma-separated string
-#             "A",
-#             "list",
-#             "of",
-#             "common",
-#             "names"
-#         ],
-#         "medicinalUses": [ # could also just be a comma-separated string
-#             "A",
-#             "list",
-#             "of",
-#             "all",
-#             "symptoms",
-#             "treated",
-#             "by",
-#             "the",
-#             "remedy",
-#             "as",
-#             "per",
-#             "the",
-#             "Duke",
-#             "dataset"
-#         ],
-#         "treatmentClinical": 
-#             "If available, a text describing clinically proven treatments",
-#         "treatmentTraditional": 
-#             "If available, a text describing treatments from traditional systems of medicine",
-#         "treatmentFolk": 
-#             "If available, a text describing folk treatments",
-#         "contraindication": 
-#             "If available, a text describing general allergies and precautions",
-#         "warnings": 
-#             "If available, a text describing warnings",
-#         "adverseEffects": 
-#             "If available, a text describing allergies etc.",
-#         "posology": 
-#             "If available, a text describing dosage and dosage types"
-#     },
-#     "fullMatch": bool,
-#     "symptomsMatched": [
-#         "Headache",
-#         "Diarrhea",
-#         "Nausea"
-#        ],
-#     "doctorAlert": bool, # or different levels of severity
-#     "iconReference": "Name of icon to be used" # only if we have icons
-#   } 
-# ]
-
-
-# symptoms = ["Diabetes",
-#             "Cough",
-#             "Fever",
-#             "Ache(Tooth)",
-#             "Ache(Stomach)",
-#             "Ache(Head)",
-#             "Cancer"]
-
-# symptoms = ["Cough",
-#             "Diabetes",
-#             "Cold",
-#             "Ache(Stomach)",
-#             "Ache(Head)"]
-
-# get_remedy(symptoms, 10)
