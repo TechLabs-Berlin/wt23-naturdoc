@@ -1,1 +1,1 @@
-Naturedoc is an application devoted to helping you finding plant-based treatments for your ailments. Our suggestions come from different medical traditions. 
+
