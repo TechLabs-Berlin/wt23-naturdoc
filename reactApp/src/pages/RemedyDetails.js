@@ -163,7 +163,7 @@ function RemedyDetails() {
 
           {/* Review Area */}
           <Box component="div">
-            <AddRating remedy={remedy} handleClickOpen />
+            <AddRating remedy={remedy} ratings={ratings} handleClickOpen />
           </Box>
           <RatingList ratings={ratings} />
         </Box>
