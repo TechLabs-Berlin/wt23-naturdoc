@@ -8,18 +8,22 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const dotenv = require('dotenv');
 
-const Medicals = require('./models/remedies');
-const remedyRating = require('./models/ratings');
-const User = require('./models/user');
-const Ratings = require('./models/ratings');
-const Symptoms = require('./models/symptoms');
+const { symptomsModel } = require('./models');
+//const Medicals = require('./models/remedies');
+//const remedyRating = require('./models/ratings');
+//const User = require('./models/user');
+//const Ratings = require('./models/ratings');
+//const Symptoms = require('./models/symptoms');
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
 
-const remedies = require('./routes/remedies');
-const auth = require('./routes/auth');
-const user = require('./routes/user');
+const { remedies, auth, user } = require('./routes');
+//const remedies = require('./routes/remedies');
+//const auth = require('./routes/auth');
+//const user = require('./routes/user');
+
+
 
 const PORT = 7000;
 const app = express();
@@ -101,7 +105,7 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
 //list all symptoms
 app.get('/getSymptoms', catchAsynch(async (req, res) => {
     const { symptom } = req.params;
-    const symptomName = await Symptoms.find({})
+    const symptomName = await symptomsModel.find({})
     // console.log(symptomName)
     const response = symptomName.map(symptomItem => {
         return {
