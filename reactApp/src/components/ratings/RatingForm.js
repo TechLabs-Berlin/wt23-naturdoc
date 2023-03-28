@@ -1,12 +1,6 @@
-import { Box, Rating, Button } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
 import putRating from "data/putRating";
+import { Box, Rating, Button, TextField, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
 
 const labels = {
@@ -68,7 +62,7 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
       <Dialog open={open} onClose={handleClose} fullScreen={fullScreen}>
         <form>
           <DialogTitle>
-            Share your experience with using {remedy.remedyName}{" "}
+            Share your experience with using {remedy.remedyName}
           </DialogTitle>
           <DialogContent>
             <DialogContentText>
@@ -79,7 +73,6 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
               <Rating
                 max={5}
                 precision={0.5}
-                // value={value}
                 name={ratingValue}
                 getLabelText={getLabelText}
                 icon={<CircleIcon fontSize="inherit" />}

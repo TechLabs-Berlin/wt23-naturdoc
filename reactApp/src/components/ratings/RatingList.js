@@ -8,7 +8,7 @@ function RatingList({ ratings }) {
 
   return (
     <>
-      <Container sx={{ mt: 5 }} component="section" maxWidth="sm">
+      <Container sx={{ mt: 5 }} component="section" maxWidth="md">
         <Box>{renderedRatings}</Box>
       </Container>
     </>

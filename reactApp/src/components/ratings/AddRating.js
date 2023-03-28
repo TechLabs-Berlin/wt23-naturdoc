@@ -1,19 +1,21 @@
-import { Typography } from "@mui/material";
-import { Card, Box, Button } from "@mui/material/";
-import ChevronRight from "@mui/icons-material/ChevronRight";
 import RatingForm from "components/ratings/RatingForm";
 import { useState } from "react";
-import { useTheme } from "@mui/material";
-import { useMediaQuery } from "@mui/material";
 
-function AddRating(remedy, user) {
+import { Card, Box, Button, Typography, useTheme, useMediaQuery } from "@mui/material/";
+import ChevronRight from "@mui/icons-material/ChevronRight";
+
+
+function AddRating({remedy, ratings}) {
+  
   const noRatingsYet = remedy.totalNumberofRatings
     ? ""
     : "Be the first to add a review.";
+    console.log("No ratings yet?", noRatingsYet ? "true" : "false")
 
-  const notRatedByUser = user.ratings
+  const notRatedByUser = ratings.userId
     ? ""
     : "You have not shared your opinion yet. What do you think of this remedy?";
+    console.log("Remedy not rated by User ?", notRatedByUser ? "true" : "false")
 
   const [open, setOpen] = useState(false);
   const theme = useTheme();
@@ -30,11 +32,8 @@ function AddRating(remedy, user) {
   return (
     <>
       <Card variant="reviewCard">
-        {remedy.totalNumberofRatings} reviews
         <Typography variant="body1" sx={{ textAlign: "center" }} paragraph>
-          {/* Case 1: No ratings yet */}
           {noRatingsYet}
-          {/* Case 2: No ratings from user yet */}
           {notRatedByUser}
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
