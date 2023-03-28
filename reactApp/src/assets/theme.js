@@ -61,9 +61,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     margin: 'auto',
-                    paddingLeft: 0, 
-                    paddingRight: 0,
-                    paddingBottom: 8,
+                    padding: 8, 
                     backgroundColor:"#ffffff"
                 },
             },
