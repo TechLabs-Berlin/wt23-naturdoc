@@ -24,9 +24,9 @@ router.use(cors({
 
 router.use(express.json());
 
-//get all remedies
+//get a user
 router.get('/', catchAsynch(async (req, res) => {
-    const userTest = "64151b8670662285f3b36c13";
+    const userTest = "6420450b3d25951c719ec768";
     const user = await userModel.findById({ _id: userTest });
     const response = {
         username: user.username,
@@ -38,7 +38,7 @@ router.get('/', catchAsynch(async (req, res) => {
 }));
 
 router.get('/:id/favorites', catchAsynch(async (req, res) => {
-    const userTest = "64151b8670662285f3b36c13";
+    const userTest = "6420450b3d25951c719ec768";
     const user = await userModel.findById({ _id: userTest });
     console.log(user);
     const response = user.favorites.map(favoriteItem => {

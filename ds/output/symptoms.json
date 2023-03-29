@@ -1,1 +1,944 @@
-[{"symptomName":"Abcess"},{"symptomName":"Abdomen"},{"symptomName":"Abortifacient"},{"symptomName":"Abortive"},{"symptomName":"Abrasion"},{"symptomName":"Abscess"},{"symptomName":"Abscess(Breast)"},{"symptomName":"Absorbent"},{"symptomName":"Acaricide"},{"symptomName":"Ache"},{"symptomName":"Ache(Arm)"},{"symptomName":"Ache(Back)"},{"symptomName":"Ache(Body)"},{"symptomName":"Ache(Ear)"},{"symptomName":"Ache(Foot)"},{"symptomName":"Ache(Head)"},{"symptomName":"Ache(Leg)"},{"symptomName":"Ache(Limb)"},{"symptomName":"Ache(Loin)"},{"symptomName":"Ache(Rib)"},{"symptomName":"Ache(Side)"},{"symptomName":"Ache(Stomach)"},{"symptomName":"Achlorhydria"},{"symptomName":"Acne"},{"symptomName":"Acrid"},{"symptomName":"Actinomycosis"},{"symptomName":"Addison's-Disease"},{"symptomName":"Adenopathy"},{"symptomName":"Adrenocortical"},{"symptomName":"Adulterant"},{"symptomName":"Aerophagia"},{"symptomName":"Afterbirth"},{"symptomName":"Aftosa"},{"symptomName":"Agility"},{"symptomName":"Ague"},{"symptomName":"Airwick"},{"symptomName":"Alactia"},{"symptomName":"Albuminuria"},{"symptomName":"Alcoholism"},{"symptomName":"Alexipharmic"},{"symptomName":"Alexiteric"},{"symptomName":"Algicide"},{"symptomName":"Allergenic"},{"symptomName":"Allergy"},{"symptomName":"Alopecia"},{"symptomName":"Alterative"},{"symptomName":"Amaurosis"},{"symptomName":"Amblyopia"},{"symptomName":"Amebiasis"},{"symptomName":"Amenorrhea"},{"symptomName":"Amnesia"},{"symptomName":"Amygdalitis"},{"symptomName":"Amygdalosis"},{"symptomName":"Anal-Eversion"},{"symptomName":"Analeptic"},{"symptomName":"Analgesic"},{"symptomName":"Anaphrodisiac"},{"symptomName":"Anaphrodisiac (Female)"},{"symptomName":"Anasarca"},{"symptomName":"Ancylostomiasis"},{"symptomName":"Androgenic"},{"symptomName":"Anecbolic"},{"symptomName":"Anemia"},{"symptomName":"Anesthesia"},{"symptomName":"Anesthetic"},{"symptomName":"Angina"},{"symptomName":"Angina Pectoris"},{"symptomName":"Angina-Catarrhalis"},{"symptomName":"Angina?"},{"symptomName":"Anhydrosis"},{"symptomName":"Anhydrotic"},{"symptomName":"Bite(Animal)"},{"symptomName":"Ankle"},{"symptomName":"Anodyne"},{"symptomName":"Anorectic"},{"symptomName":"Anorexia"},{"symptomName":"Anorexiac"},{"symptomName":"Anorexic"},{"symptomName":"Antacid"},{"symptomName":"Antemetic"},{"symptomName":"Anthelminthic"},{"symptomName":"Anthrax"},{"symptomName":"Antiabortifacient"},{"symptomName":"Antibilious"},{"symptomName":"Antibiotic"},{"symptomName":"Anticathartic"},{"symptomName":"Anticholinergic"},{"symptomName":"Anticoagulant"},{"symptomName":"Anticonception"},{"symptomName":"Antidiarrheic"},{"symptomName":"Antidote"},{"symptomName":"Antidote(Antiaris)"},{"symptomName":"Antidote(Arrow poison)"},{"symptomName":"Antidote(Crab)"},{"symptomName":"Antidote(Datura)"},{"symptomName":"Antidote(Fish poison)"},{"symptomName":"Antidote(Fish)"},{"symptomName":"Antidote(Fish sting)"},{"symptomName":"Antidote(Ipoh)"},{"symptomName":"Antidote(Opium)"},{"symptomName":"Antidote(Pithecellobium)"},{"symptomName":"Antidote(Poison arrow)"},{"symptomName":"Antidote(Poison)"},{"symptomName":"Antidote(Aconite)"},{"symptomName":"Antidote(Alcohol)"},{"symptomName":"Antidote(Alkaloid)"},{"symptomName":"Antidote(Arrow)"},{"symptomName":"Antidote(Arsenic)"},{"symptomName":"Antidote(Atropine)"},{"symptomName":"Antidote(Bee sting)"},{"symptomName":"Antidote(Belladonna)"},{"symptomName":"Antidote(Black Widow)"},{"symptomName":"Antidote(Brassica)"},{"symptomName":"Antidote(Cantharid)"},{"symptomName":"Antidote(Capsicum)"},{"symptomName":"Antidote(Caterpillar)"},{"symptomName":"Antidote(Centipede)"},{"symptomName":"Antidote(Chameleon)"},{"symptomName":"Antidote(Cicuta)"},{"symptomName":"Antidote(Cinnabar)"},{"symptomName":"Antidote(Comocladia)"},{"symptomName":"Antidote(Crocodile)"},{"symptomName":"Antidote(Croton)"},{"symptomName":"Antidote(Cyanide)"},{"symptomName":"Antidote(Dioscorea)"},{"symptomName":"Antidote(Drowning)"},{"symptomName":"Antidote(Drug)"},{"symptomName":"Antidote(Euphorbiaceae)"},{"symptomName":"Antidote(Hanging)"},{"symptomName":"Antidote(Hemlock)"},{"symptomName":"Antidote(Hippomane)"},{"symptomName":"Antidote(Hura)"},{"symptomName":"Antidote(Insect)"},{"symptomName":"Antidote(Iodine)"},{"symptomName":"Antidote(Jatropha)"},{"symptomName":"Antidote(Latex)"},{"symptomName":"Antidote(Litchi)"},{"symptomName":"Antidote(Lizard)"},{"symptomName":"Antidote(Manihot)"},{"symptomName":"Antidote(Mercury)"},{"symptomName":"Antidote(Metal)"},{"symptomName":"Antidote(Mineral)"},{"symptomName":"Antidote(Momordica)"},{"symptomName":"Antidote(Mushroom)"},{"symptomName":"Antidote(Nettle)"},{"symptomName":"Antidote(Philodendron)"},{"symptomName":"Antidote(Plant poisons)"},{"symptomName":"Antidote(Reptile)"},{"symptomName":"Antidote(Rhus)"},{"symptomName":"Antidote(Scolopendrid)"},{"symptomName":"Antidote(Scorpion)"},{"symptomName":"Antidote(Seafood)"},{"symptomName":"Antidote(Semecarpus)"},{"symptomName":"Antidote(Shellfish)"},{"symptomName":"Antidote(Shrimp)"},{"symptomName":"Antidote(Snake)"},{"symptomName":"Antidote(Spider)"},{"symptomName":"Antidote(Stingray)"},{"symptomName":"Antidote(Strophanthus)"},{"symptomName":"Antidote(Sulfur)"},{"symptomName":"Antidote(Sumach)"},{"symptomName":"Antidote(Urtica)"},{"symptomName":"Antidote(Urticaria)"},{"symptomName":"Antidote(Varnish)"},{"symptomName":"Antidote(Vermillion)"},{"symptomName":"Antidote(Wine)"},{"symptomName":"Antidote(Wood oil)"},{"symptomName":"Antidote(Worms)"},{"symptomName":"Antidysentery"},{"symptomName":"Antiecbolic"},{"symptomName":"Antiemetic"},{"symptomName":"Antiemmenagogue"},{"symptomName":"Antifertility"},{"symptomName":"Antigalactogogue"},{"symptomName":"Antigonadotrophic"},{"symptomName":"Antigonorrheic"},{"symptomName":"Antihistamine"},{"symptomName":"Antihydriotic"},{"symptomName":"Antihydrotic"},{"symptomName":"Antilactogogue"},{"symptomName":"Antilithic"},{"symptomName":"Antimalaria"},{"symptomName":"Antiopiate"},{"symptomName":"Antiopium"},{"symptomName":"Antioxidant"},{"symptomName":"Antioxytoxic"},{"symptomName":"Antiperiodic"},{"symptomName":"Antiperspirant"},{"symptomName":"Antiphlogistic"},{"symptomName":"Antiphtalmic"},{"symptomName":"Antiprogestational"},{"symptomName":"Antipyretic"},{"symptomName":"Antirheumatic"},{"symptomName":"Antiscorbutic"},{"symptomName":"Antiscrophulosum"},{"symptomName":"Antiseptic"},{"symptomName":"Antiseptic(Urethra)"},{"symptomName":"Antismoking"},{"symptomName":"Antispasmodic"},{"symptomName":"Antisudorific"},{"symptomName":"Antitussive"},{"symptomName":"Antivenom"},{"symptomName":"Antivinous"},{"symptomName":"Repellant(Ant)"},{"symptomName":"Anuria"},{"symptomName":"Anus"},{"symptomName":"Anxiety"},{"symptomName":"Anydrotic"},{"symptomName":"Aperient"},{"symptomName":"Apertif"},{"symptomName":"Aphicide"},{"symptomName":"Aphrodisiac"},{"symptomName":"Aphrodisiac(Female)"},{"symptomName":"Aphrodisiac(Male)"},{"symptomName":"Aphtha"},{"symptomName":"Aphthae"},{"symptomName":"Aphthaee"},{"symptomName":"Aphthagenic"},{"symptomName":"Aphtosa"},{"symptomName":"Apoplexy"},{"symptomName":"Aposteme"},{"symptomName":"Appendicitis"},{"symptomName":"Appetizer"},{"symptomName":"Apprehension"},{"symptomName":"Aptha"},{"symptomName":"Apthae"},{"symptomName":"Ardor"},{"symptomName":"Aromatic"},{"symptomName":"Arrow-poison"},{"symptomName":"Arrhythmia"},{"symptomName":"Arrow"},{"symptomName":"Artemicide"},{"symptomName":"Arteriosclerosis"},{"symptomName":"Arteriosedative"},{"symptomName":"Arteritis"},{"symptomName":"Arthralgia"},{"symptomName":"Arthritis"},{"symptomName":"Arthritis?"},{"symptomName":"Arthrodynia"},{"symptomName":"Ascariasis"},{"symptomName":"Ascaricide"},{"symptomName":"Ascites"},{"symptomName":"Asthenia"},{"symptomName":"Asthma"},{"symptomName":"Astringent"},{"symptomName":"Ataxia"},{"symptomName":"Ataxia(Locomotor)"},{"symptomName":"Atheroma"},{"symptomName":"Atheromasia"},{"symptomName":"Atherosclerosis"},{"symptomName":"Athlete's-Foot"},{"symptomName":"Athrepsy"},{"symptomName":"Atony"},{"symptomName":"Atrophy"},{"symptomName":"Ausculation"},{"symptomName":"Avicide"},{"symptomName":"Back"},{"symptomName":"Bactericide"},{"symptomName":"Bacteriostat"},{"symptomName":"Baldness"},{"symptomName":"Balsamic"},{"symptomName":"Bandage"},{"symptomName":"Barrenness"},{"symptomName":"Basketry"},{"symptomName":"Bath"},{"symptomName":"Beauty"},{"symptomName":"Bechic"},{"symptomName":"Bedbug"},{"symptomName":"Bedridden"},{"symptomName":"Bedsore"},{"symptomName":"Beer"},{"symptomName":"Beri-Beri"},{"symptomName":"Beriberi"},{"symptomName":"Beverage"},{"symptomName":"Bil"},{"symptomName":"Bile"},{"symptomName":"Bilharzia"},{"symptomName":"Bilious"},{"symptomName":"Birdlime"},{"symptomName":"Bite"},{"symptomName":"Bite(Bat)"},{"symptomName":"Bite(Bear)"},{"symptomName":"Bite(Bug)"},{"symptomName":"Bite(Dog)"},{"symptomName":"Bite(Horse)"},{"symptomName":"Bite(Insect)"},{"symptomName":"Bite(Leech)"},{"symptomName":"Bite(Lizard)"},{"symptomName":"Bite(Mosquito)"},{"symptomName":"Bite(Rat)"},{"symptomName":"Bite(Scorpion)"},{"symptomName":"Bite(Snake)"},{"symptomName":"Bite(Spider)"},{"symptomName":"Bite(Tick)"},{"symptomName":"Bite(Tiger)"},{"symptomName":"Bitter-Aromatic"},{"symptomName":"Bitter-Principle"},{"symptomName":"Black-Eye"},{"symptomName":"Black-Fever"},{"symptomName":"Blackwater-Fever"},{"symptomName":"Bladder"},{"symptomName":"Bladder stone"},{"symptomName":"Bleach"},{"symptomName":"Blemish"},{"symptomName":"Blennorhea"},{"symptomName":"Blennorrhagia"},{"symptomName":"Blennorrhea"},{"symptomName":"Blenorrhagia"},{"symptomName":"Blepharitis"},{"symptomName":"Blindness"},{"symptomName":"Blister"},{"symptomName":"Bloat"},{"symptomName":"Blood"},{"symptomName":"Blood-Vessel"},{"symptomName":"Bloodshot"},{"symptomName":"Bloody stool"},{"symptomName":"Boil"},{"symptomName":"Bones"},{"symptomName":"Ache(Bones)"},{"symptomName":"Bot"},{"symptomName":"Bowel"},{"symptomName":"Brachycardia"},{"symptomName":"Brain"},{"symptomName":"Brain-Tonic"},{"symptomName":"Breast"},{"symptomName":"Breath"},{"symptomName":"Breathing"},{"symptomName":"Breathlessness"},{"symptomName":"Bright's Disease"},{"symptomName":"Broken-Limb"},{"symptomName":"Bronchial"},{"symptomName":"Bronchial-Asthma"},{"symptomName":"Bronchiectasis"},{"symptomName":"Bronchitis"},{"symptomName":"Bronchodilator"},{"symptomName":"Bronchosis"},{"symptomName":"Broom"},{"symptomName":"Bruise"},{"symptomName":"Bubo"},{"symptomName":"Buboes"},{"symptomName":"Bugbite"},{"symptomName":"Bulla"},{"symptomName":"Bunion"},{"symptomName":"Burn"},{"symptomName":"Burn(Radiation)"},{"symptomName":"Burns"},{"symptomName":"Bursitis"},{"symptomName":"Cachexia"},{"symptomName":"Cacoethes"},{"symptomName":"Breast (Caked)"},{"symptomName":"Calculus"},{"symptomName":"Caligo"},{"symptomName":"Callosity"},{"symptomName":"Callus"},{"symptomName":"Calmative"},{"symptomName":"Camphor"},{"symptomName":"Cancer"},{"symptomName":"Cancer(Abdomen)"},{"symptomName":"Cancer(Armpit)"},{"symptomName":"Cancer(Bones)"},{"symptomName":"Cancer(Brain)"},{"symptomName":"Cancer(Breast)"},{"symptomName":"Cancer(Cervix)"},{"symptomName":"Cancer(Digestive)"},{"symptomName":"Cancer(Epithelium)"},{"symptomName":"Cancer(Esophagus)"},{"symptomName":"Cancer(Eye)"},{"symptomName":"Cancer(Face)"},{"symptomName":"Cancer(Gastric)"},{"symptomName":"Cancer(Glands)"},{"symptomName":"Cancer(Gum)"},{"symptomName":"Cancer(Gynecologic)"},{"symptomName":"Cancer(Intestine)"},{"symptomName":"Cancer(Kidney)"},{"symptomName":"Cancer(Larynx)"},{"symptomName":"Cancer(Lip)"},{"symptomName":"Cancer(Liver)"},{"symptomName":"Cancer(Lung)"},{"symptomName":"Cancer(Lymph)"},{"symptomName":"Cancer(Medullary)"},{"symptomName":"Cancer(Mouth)"},{"symptomName":"Cancer(Nose)"},{"symptomName":"Cancer(Penis)"},{"symptomName":"Cancer(Pharynx)"},{"symptomName":"Cancer(Prostate)"},{"symptomName":"Cancer(Pylorus)"},{"symptomName":"Cancer(Rectum)"},{"symptomName":"Cancer(Skin)"},{"symptomName":"Cancer(Stomach)"},{"symptomName":"Cancer(Testicle)"},{"symptomName":"Cancer(Throat)"},{"symptomName":"Cancer(Thyroid)"},{"symptomName":"Cancer(Tongue)"},{"symptomName":"Cancer(Toothh)"},{"symptomName":"Cancer(Uterus)"},{"symptomName":"Cancre"},{"symptomName":"Cancrum Oris"},{"symptomName":"Candida"},{"symptomName":"Candle"},{"symptomName":"Candlenut"},{"symptomName":"Canicide"},{"symptomName":"Canker"},{"symptomName":"Carbuncle"},{"symptomName":"Carcinogenic"},{"symptomName":"Carcinoma"},{"symptomName":"Carcinoma(Gum)"},{"symptomName":"Cardiac"},{"symptomName":"Cardial-Disease"},{"symptomName":"Cardialgia"},{"symptomName":"Cardiodepressant"},{"symptomName":"Cardiodynia"},{"symptomName":"Cardiopathy"},{"symptomName":"Cardiosedative"},{"symptomName":"Cardiotonic"},{"symptomName":"Carditis"},{"symptomName":"Caries"},{"symptomName":"Carminative"},{"symptomName":"Castration"},{"symptomName":"Catamenia"},{"symptomName":"Cataplasm"},{"symptomName":"Cataract"},{"symptomName":"Catarrh"},{"symptomName":"Sting(Caterpillar)"},{"symptomName":"Cathartic"},{"symptomName":"Caustic"},{"symptomName":"Cauterizant"},{"symptomName":"Ceguera"},{"symptomName":"Celiac"},{"symptomName":"Celialgia"},{"symptomName":"Cellulitis"},{"symptomName":"Cement"},{"symptomName":"Centipede"},{"symptomName":"Bite(Centipede)"},{"symptomName":"Cephalgia"},{"symptomName":"Cephalic"},{"symptomName":"Cephalitis"},{"symptomName":"Cerebral"},{"symptomName":"Cerebrosis"},{"symptomName":"Cervix"},{"symptomName":"Chafe"},{"symptomName":"Chafing"},{"symptomName":"Chancre"},{"symptomName":"Chaplet"},{"symptomName":"Charcoal"},{"symptomName":"Charley-Horse"},{"symptomName":"Charm"},{"symptomName":"Chest"},{"symptomName":"Chest-Cold"},{"symptomName":"Ache(Chest)"},{"symptomName":"Pain(Chest)"},{"symptomName":"Chewstick"},{"symptomName":"Chickenpox"},{"symptomName":"Chilblain"},{"symptomName":"Childbirth"},{"symptomName":"Chill"},{"symptomName":"Chills"},{"symptomName":"Chirony"},{"symptomName":"Chlorosis"},{"symptomName":"Choking"},{"symptomName":"Cholagogue"},{"symptomName":"Cholagogueue"},{"symptomName":"Cholecystitis"},{"symptomName":"Cholecystosis"},{"symptomName":"Cholera"},{"symptomName":"Choleretic"},{"symptomName":"Cholinergic"},{"symptomName":"Cholorosis"},{"symptomName":"Chorea"},{"symptomName":"Chyluria"},{"symptomName":"Cicatrizant"},{"symptomName":"Ciguatera"},{"symptomName":"Ciguatero"},{"symptomName":"Circulation"},{"symptomName":"Circulation-Tonic"},{"symptomName":"Circumcision"},{"symptomName":"Circumscission"},{"symptomName":"Cirrhosis"},{"symptomName":"CNS"},{"symptomName":"CNS depressant"},{"symptomName":"CNS sedative"},{"symptomName":"CNS stimulant"},{"symptomName":"CNS tonic"},{"symptomName":"Coagulant"},{"symptomName":"Coffee"},{"symptomName":"Cold"},{"symptomName":"Colic"},{"symptomName":"Colic Diarrhea"},{"symptomName":"Colitis"},{"symptomName":"Collapse"},{"symptomName":"Collyrium"},{"symptomName":"Coloring"},{"symptomName":"Coma"},{"symptomName":"Complexion"},{"symptomName":"Conception"},{"symptomName":"Condyloma"},{"symptomName":"Condyloma(Anus)"},{"symptomName":"Condyloma(Uterus)"},{"symptomName":"Congestion"},{"symptomName":"Conjunctivitis"},{"symptomName":"Constipation"},{"symptomName":"Construction"},{"symptomName":"Tuberculosis"},{"symptomName":"Contraceptive"},{"symptomName":"Contraceptive(Male)"},{"symptomName":"Contraceptive(Post)"},{"symptomName":"Contraceptive?"},{"symptomName":"Contusion"},{"symptomName":"Convalescence"},{"symptomName":"Convulsant"},{"symptomName":"Convulsion"},{"symptomName":"Convulsion(Infant)"},{"symptomName":"Copremia"},{"symptomName":"Cut(Coral)"},{"symptomName":"Cordial"},{"symptomName":"Corn"},{"symptomName":"Cornea"},{"symptomName":"Corneosis"},{"symptomName":"Coryza"},{"symptomName":"Cosmetic"},{"symptomName":"Cosmetic (Grey hair)"},{"symptomName":"Cough"},{"symptomName":"Cough(Pediatric)"},{"symptomName":"Counterirritant"},{"symptomName":"Courbature"},{"symptomName":"Cowitch"},{"symptomName":"Cracked feet"},{"symptomName":"Cracked lips"},{"symptomName":"Cracked skin"},{"symptomName":"Cramp"},{"symptomName":"Cramps"},{"symptomName":"Craw-Craw"},{"symptomName":"Croup"},{"symptomName":"Culifuge"},{"symptomName":"Cut"},{"symptomName":"Cutamenia"},{"symptomName":"Cyanache"},{"symptomName":"Cyanidiferous"},{"symptomName":"Cyanogenetic"},{"symptomName":"Cycloplegic"},{"symptomName":"Cynanche"},{"symptomName":"Cyst"},{"symptomName":"Cystitis"},{"symptomName":"Cystitis?"},{"symptomName":"Dandruff"},{"symptomName":"Deafness"},{"symptomName":"Death"},{"symptomName":"Debility"},{"symptomName":"Decoagulant"},{"symptomName":"Decoction"},{"symptomName":"Decongestant"},{"symptomName":"Deliriant"},{"symptomName":"Delirium"},{"symptomName":"Dementia"},{"symptomName":"Demulcent"},{"symptomName":"Dengue"},{"symptomName":"Dengue?"},{"symptomName":"Dentifrice"},{"symptomName":"Dentifuge"},{"symptomName":"Dentistry"},{"symptomName":"Dentition"},{"symptomName":"Denture"},{"symptomName":"Deobstruent"},{"symptomName":"Deodorant"},{"symptomName":"Depilatory"},{"symptomName":"Depressant"},{"symptomName":"Depression"},{"symptomName":"Depurative"},{"symptomName":"Dermatitigenic"},{"symptomName":"Dermatitis"},{"symptomName":"Dermatophytosis"},{"symptomName":"Dermatosis"},{"symptomName":"Detergent"},{"symptomName":"Detersive"},{"symptomName":"Detoxicant"},{"symptomName":"Dhobi Itch"},{"symptomName":"Diabetes"},{"symptomName":"Diabetes Mellitis"},{"symptomName":"Diaper-Rash"},{"symptomName":"Diaphoretic"},{"symptomName":"Diarrhea"},{"symptomName":"Digestion"},{"symptomName":"Digestive"},{"symptomName":"Digestive disease"},{"symptomName":"Diphtheria"},{"symptomName":"Discutient"},{"symptomName":"Disinfectant"},{"symptomName":"Dislocation"},{"symptomName":"Distemper"},{"symptomName":"Diuretic"},{"symptomName":"Divination"},{"symptomName":"Dizziness"},{"symptomName":"Douche"},{"symptomName":"Drainage"},{"symptomName":"Drastic"},{"symptomName":"Drooling"},{"symptomName":"Dropsy"},{"symptomName":"Drowning"},{"symptomName":"Drug"},{"symptomName":"Drunkenness"},{"symptomName":"Dry-Lip"},{"symptomName":"Dubdubia"},{"symptomName":"Dugout"},{"symptomName":"Dullness"},{"symptomName":"Duodenum"},{"symptomName":"Dye"},{"symptomName":"Dypsnoea"},{"symptomName":"Dyschezia"},{"symptomName":"Dyscrasia"},{"symptomName":"Dysentery"},{"symptomName":"Dyslactation"},{"symptomName":"Dysmenorrhea"},{"symptomName":"Dyspareunia"},{"symptomName":"Dyspepsia"},{"symptomName":"Dysphagia"},{"symptomName":"Dyspnea"},{"symptomName":"Dysuria"},{"symptomName":"Ear"},{"symptomName":"Ear drop"},{"symptomName":"Earache"},{"symptomName":"Earring"},{"symptomName":"Earwig"},{"symptomName":"Ecbolic"},{"symptomName":"Ecchymosis"},{"symptomName":"Eccoprotic"},{"symptomName":"Eclampsia"},{"symptomName":"Ecthyma"},{"symptomName":"Ectoparasite"},{"symptomName":"Eczema"},{"symptomName":"Edema"},{"symptomName":"Egilops"},{"symptomName":"Ejaculation"},{"symptomName":"Elephantiasis"},{"symptomName":"Emaciation"},{"symptomName":"Embalming"},{"symptomName":"Embolism"},{"symptomName":"Emetic"},{"symptomName":"Emission"},{"symptomName":"Emission(Nocturnal)"},{"symptomName":"Emmenagogue"},{"symptomName":"Emmenagogue?"},{"symptomName":"Emollient"},{"symptomName":"Empacho"},{"symptomName":"Emphysema"},{"symptomName":"Empyema"},{"symptomName":"Empyreumatic"},{"symptomName":"Encephalitis"},{"symptomName":"Endocarditis"},{"symptomName":"Endometritis"},{"symptomName":"Enema"},{"symptomName":"Energy"},{"symptomName":"Enorrhagia"},{"symptomName":"Enteritis"},{"symptomName":"Enteromegaly"},{"symptomName":"Enterorrhagia"},{"symptomName":"Enterosis"},{"symptomName":"Enterrhagia"},{"symptomName":"Entropion"},{"symptomName":"Enuresis"},{"symptomName":"Epidemic"},{"symptomName":"Epididymitis"},{"symptomName":"Epilepsy"},{"symptomName":"Epiphora"},{"symptomName":"Epispastic"},{"symptomName":"Epistaxis"},{"symptomName":"Epithelioma"},{"symptomName":"Errhine"},{"symptomName":"Eruption"},{"symptomName":"Erysipelas"},{"symptomName":"Erythema"},{"symptomName":"Escharotic"},{"symptomName":"Escrescence"},{"symptomName":"Esophagus"},{"symptomName":"Est"},{"symptomName":"Estrogenic"},{"symptomName":"Evil"},{"symptomName":"Evil eye"},{"symptomName":"Excipient"},{"symptomName":"Excitant"},{"symptomName":"Excoriation"},{"symptomName":"Excrescence"},{"symptomName":"Excrescence(Anus)"},{"symptomName":"Excrescence(Womb)"},{"symptomName":"Exhaustion"},{"symptomName":"Expectorant"},{"symptomName":"Extrasystole"},{"symptomName":"Extravasation"},{"symptomName":"Extrophy"},{"symptomName":"Eye"},{"symptomName":"Eye drop"},{"symptomName":"Eyesight"},{"symptomName":"Eyeball"},{"symptomName":"Eyelid"},{"symptomName":"Face"},{"symptomName":"Fainting"},{"symptomName":"Fatal"},{"symptomName":"Fatality"},{"symptomName":"Fatigue"},{"symptomName":"Fattening"},{"symptomName":"Favus"},{"symptomName":"Fear"},{"symptomName":"Febrifuge"},{"symptomName":"Feet"},{"symptomName":"Felicide"},{"symptomName":"Felon"},{"symptomName":"Female"},{"symptomName":"Fence"},{"symptomName":"Fertility"},{"symptomName":"Fertility(Female)"},{"symptomName":"Fetus"},{"symptomName":"Fever"},{"symptomName":"Fever(Remittent)"},{"symptomName":"Fever(Malarial)"},{"symptomName":"Blister(Fever)"},{"symptomName":"Fiber"},{"symptomName":"Fibroma"},{"symptomName":"Fibroma(Cervix)"},{"symptomName":"Fibroma(Uterus)"},{"symptomName":"Fibromiomatosis"},{"symptomName":"Fibrositis"},{"symptomName":"Filariasis"},{"symptomName":"Filaricide"},{"symptomName":"Filler"},{"symptomName":"Finger"},{"symptomName":"Firewood"},{"symptomName":"Fish-Bones"},{"symptomName":"Sting(Fish)"},{"symptomName":"Fistula"},{"symptomName":"Fit"},{"symptomName":"Fits"},{"symptomName":"Flatulence"},{"symptomName":"Flavor"},{"symptomName":"Flu"},{"symptomName":"Flushing"},{"symptomName":"Flux"},{"symptomName":"Fodder"},{"symptomName":"Fomentation"},{"symptomName":"Fontanelle"},{"symptomName":"Food"},{"symptomName":"Food poisoning"},{"symptomName":"Food-Dye"},{"symptomName":"Food-Poison"},{"symptomName":"Foot"},{"symptomName":"Forgetfulness"},{"symptomName":"Formicicide"},{"symptomName":"Fracture"},{"symptomName":"Frambesia"},{"symptomName":"Freckle"},{"symptomName":"Frenzy"},{"symptomName":"Fright"},{"symptomName":"Frigidity"},{"symptomName":"Frigidity?"},{"symptomName":"Frostbite"},{"symptomName":"Fruit"},{"symptomName":"Frunculosis"},{"symptomName":"Fuel"},{"symptomName":"Fumigant"},{"symptomName":"Fumitory"},{"symptomName":"Funeral"},{"symptomName":"Funereal"},{"symptomName":"Fungicide"},{"symptomName":"Fungicide(Skin)"},{"symptomName":"Fungistatic"},{"symptomName":"Fungoid"},{"symptomName":"Fungus"},{"symptomName":"Furuncle"},{"symptomName":"Furunculosis"},{"symptomName":"Fwvwe"},{"symptomName":"Galactogogue"},{"symptomName":"Gall Bladder"},{"symptomName":"Gall"},{"symptomName":"Gall-Bladder"},{"symptomName":"Gall-Stone"},{"symptomName":"Gallbladder"},{"symptomName":"Gallstone"},{"symptomName":"Gallstones"},{"symptomName":"Gangrene"},{"symptomName":"Gargle"},{"symptomName":"Gas"},{"symptomName":"Gasatromegaly"},{"symptomName":"Gastralgia"},{"symptomName":"Gastric-Juice"},{"symptomName":"Gastritis"},{"symptomName":"Gastrodynia"},{"symptomName":"Gastrointestinal"},{"symptomName":"Gastromegaly"},{"symptomName":"Gastrorrhagia"},{"symptomName":"Gastrosis"},{"symptomName":"Gastrospasm"},{"symptomName":"Gastrotonic"},{"symptomName":"Genital"},{"symptomName":"Germicide"},{"symptomName":"Gestation"},{"symptomName":"Giddiness"},{"symptomName":"Gingirrhagia"},{"symptomName":"Gingivitis"},{"symptomName":"Gingivosis"},{"symptomName":"Glactogogue"},{"symptomName":"Glands"},{"symptomName":"Glaucoma"},{"symptomName":"Gleet"},{"symptomName":"Glossitis"},{"symptomName":"Glue"},{"symptomName":"Gluttony"},{"symptomName":"Glycosuria"},{"symptomName":"Goiter"},{"symptomName":"Gonadotrophic"},{"symptomName":"Gonorrhea"},{"symptomName":"Gout"},{"symptomName":"Grain"},{"symptomName":"Gravel"},{"symptomName":"Grayhair"},{"symptomName":"Grey Hair"},{"symptomName":"Grip"},{"symptomName":"Gripes"},{"symptomName":"Groin"},{"symptomName":"Guineaworms"},{"symptomName":"Gum"},{"symptomName":"Gunshot"},{"symptomName":"Gynecology"},{"symptomName":"Gynecopathy"},{"symptomName":"Hail"},{"symptomName":"Hair"},{"symptomName":"Hair-Dye"},{"symptomName":"Hair-Oil"},{"symptomName":"Hair-Set"},{"symptomName":"Hair-Tonic"},{"symptomName":"Hair-Wash"},{"symptomName":"Hairblack"},{"symptomName":"Hairwhite"},{"symptomName":"Halitosis"},{"symptomName":"Hallucination"},{"symptomName":"Hallucinogen"},{"symptomName":"Hand"},{"symptomName":"Hand Water"},{"symptomName":"Hangover"},{"symptomName":"Hat"},{"symptomName":"Hayfever"},{"symptomName":"Head"},{"symptomName":"Cold(Head)"},{"symptomName":"Sore(Head)"},{"symptomName":"Hearing"},{"symptomName":"Heart"},{"symptomName":"Heart attack"},{"symptomName":"Heartburn"},{"symptomName":"Heat"},{"symptomName":"Heat rash"},{"symptomName":"Heatstroke"},{"symptomName":"Hedge"},{"symptomName":"Helminthiasis"},{"symptomName":"Hemagglutinant"},{"symptomName":"Hemaptysis"},{"symptomName":"Hematachezia"},{"symptomName":"Hematafeces"},{"symptomName":"Hematemesis"},{"symptomName":"Hematinic"},{"symptomName":"Hematochezia"},{"symptomName":"Hematofeces"},{"symptomName":"Hematogenic"},{"symptomName":"Hematoma"},{"symptomName":"Hematoptysis"},{"symptomName":"Hematuria"},{"symptomName":"Hemicrania"},{"symptomName":"Hemiplegia"},{"symptomName":"Hemoglobinuria"},{"symptomName":"Hemolytic"},{"symptomName":"Hemophilia"},{"symptomName":"Hemoptysis"},{"symptomName":"Hemorisis"},{"symptomName":"Hemorrhage"},{"symptomName":"Hemorrhagia"},{"symptomName":"Hemorrhoids"},{"symptomName":"Hemostat"},{"symptomName":"Hemostatic"},{"symptomName":"Hepatic"},{"symptomName":"Hepatic-Obstruction"},{"symptomName":"Hepatitis"},{"symptomName":"Hepatogegaly"},{"symptomName":"Hepatoma"},{"symptomName":"Hepatomegaly"},{"symptomName":"Hepatosis"},{"symptomName":"Hepatotonic"},{"symptomName":"Herbicide"},{"symptomName":"Hernia"},{"symptomName":"Herpes"},{"symptomName":"Herpes zoster"},{"symptomName":"Heumatism"},{"symptomName":"Hiccup"},{"symptomName":"Hidrosis"},{"symptomName":"Hirudicide"},{"symptomName":"Hives"},{"symptomName":"Hivess"},{"symptomName":"Hoarseness"},{"symptomName":"Hodgkin's Disease"},{"symptomName":"Homeopathy"},{"symptomName":"Homicide"},{"symptomName":"Homocide"},{"symptomName":"Honey"},{"symptomName":"Hoof"},{"symptomName":"Hookworms"},{"symptomName":"Hunger"},{"symptomName":"Hydragogue"},{"symptomName":"Hydrocoele"},{"symptomName":"Hydrogogue"},{"symptomName":"Hydrophobia"},{"symptomName":"Hydropsy"},{"symptomName":"Hydrothorax"},{"symptomName":"Hymen"},{"symptomName":"Hyperacidity"},{"symptomName":"Hyperchlorhydria"},{"symptomName":"Hypercholesterolemia"},{"symptomName":"Hyperemia"},{"symptomName":"Hyperglycemia"},{"symptomName":"Hypertension"},{"symptomName":"Hypertensive"},{"symptomName":"Hyperthyreosis"},{"symptomName":"Hyperuricemia"},{"symptomName":"Hypnotic"},{"symptomName":"Hypochondria"},{"symptomName":"Hypogonadism"},{"symptomName":"Hypotension"},{"symptomName":"Hypotensive"},{"symptomName":"Hypotherbia"},{"symptomName":"Hysteria"},{"symptomName":"Ichthyosarcotoxin"},{"symptomName":"Ichthyosarcotoxism"},{"symptomName":"Icterus"},{"symptomName":"Idiocy"},{"symptomName":"Immortality"},{"symptomName":"Impetigo"},{"symptomName":"Impostume"},{"symptomName":"Impotence"},{"symptomName":"Impotency"},{"symptomName":"Inappetence"},{"symptomName":"Incense"},{"symptomName":"Incisive"},{"symptomName":"Incontinence"},{"symptomName":"Indigestion"},{"symptomName":"Inebrity"},{"symptomName":"Inertia"},{"symptomName":"Infanticide"},{"symptomName":"Infarct"},{"symptomName":"Infection"},{"symptomName":"Infertility"},{"symptomName":"Inflammation"},{"symptomName":"Influenza"},{"symptomName":"Inhalant"},{"symptomName":"Insanity"},{"symptomName":"Insecticide"},{"symptomName":"Insectifuge"},{"symptomName":"Repellant(Insect)"},{"symptomName":"Insemination"},{"symptomName":"Insomnia"},{"symptomName":"Intellect"},{"symptomName":"Internal"},{"symptomName":"Internulcer"},{"symptomName":"Intertrigo"},{"symptomName":"Intestinal"},{"symptomName":"Intestinal-Ailments"},{"symptomName":"Intestinal-Catarrh"},{"symptomName":"Intestinal tonic"},{"symptomName":"Intestinal-Troubles"},{"symptomName":"Intestine"},{"symptomName":"Intoxicant"},{"symptomName":"Intoxication"},{"symptomName":"Iodine"},{"symptomName":"Ipecac"},{"symptomName":"Irritability"},{"symptomName":"Irritant"},{"symptomName":"Ischias"},{"symptomName":"Ischury"},{"symptomName":"Itch"},{"symptomName":"Ive(Caries)"},{"symptomName":"Asthma (Ivy)"},{"symptomName":"Ivy Poisoning"},{"symptomName":"Jaundice"},{"symptomName":"Jaw"},{"symptomName":"Jealousy"},{"symptomName":"Jellyfish-sting"},{"symptomName":"Joint"},{"symptomName":"Keratitis"},{"symptomName":"Kidney"},{"symptomName":"Kidney stones"},{"symptomName":"Kindling"},{"symptomName":"Knee"},{"symptomName":"Kneecap"},{"symptomName":"Labor"},{"symptomName":"Lacrimatory"},{"symptomName":"Lacrimitis"},{"symptomName":"Lactafuge"},{"symptomName":"Lactagogue"},{"symptomName":"Lactation"},{"symptomName":"Lactifuge"},{"symptomName":"Lactogogue"},{"symptomName":"Lactorrhea"},{"symptomName":"Ladentifrice"},{"symptomName":"Lameness"},{"symptomName":"Larvicide"},{"symptomName":"Laryngalgia"},{"symptomName":"Laryngeal"},{"symptomName":"Laryngitis"},{"symptomName":"Lash"},{"symptomName":"Lassitude"},{"symptomName":"Laxative"},{"symptomName":"Leech"},{"symptomName":"Leech-Repellant"},{"symptomName":"Leech-repellant"},{"symptomName":"Leg"},{"symptomName":"Lenitive"},{"symptomName":"Leprosy"},{"symptomName":"Leptospirosis"},{"symptomName":"Lequeur"},{"symptomName":"Lethargy"},{"symptomName":"Leucoderma"},{"symptomName":"Leucoma"},{"symptomName":"Leucorrhea"},{"symptomName":"Leukemia"},{"symptomName":"Leukoma"},{"symptomName":"Leukopenic"},{"symptomName":"Leukorrhea"},{"symptomName":"Lice"},{"symptomName":"Ligament"},{"symptomName":"Ligature"},{"symptomName":"Lightning"},{"symptomName":"Limb"},{"symptomName":"Liniment"},{"symptomName":"Lip"},{"symptomName":"Liqueur"},{"symptomName":"Listlessness"},{"symptomName":"Lithiasis"},{"symptomName":"Litholytic"},{"symptomName":"Lithontriptic"},{"symptomName":"Liver"},{"symptomName":"Lizardbite"},{"symptomName":"Lochia"},{"symptomName":"Lockjaw"},{"symptomName":"Loin"},{"symptomName":"Longevity"},{"symptomName":"Loose Teeth"},{"symptomName":"Loose-Toothh"},{"symptomName":"Lotion"},{"symptomName":"Lower"},{"symptomName":"Lower Pulse"},{"symptomName":"Lubricative"},{"symptomName":"Lumbago"},{"symptomName":"Lump"},{"symptomName":"Lunacy"},{"symptomName":"Lung"},{"symptomName":"Lupus"},{"symptomName":"Lye"},{"symptomName":"Lymphadenitis"},{"symptomName":"Lymphadenopathy"},{"symptomName":"Lymphatic-Disease"},{"symptomName":"Lymphoadenitis"},{"symptomName":"Lymphoma"},{"symptomName":"Lymphoma(Neck)"},{"symptomName":"Maculitis"},{"symptomName":"Madness"},{"symptomName":"Maggot"},{"symptomName":"Magic"},{"symptomName":"Malacia"},{"symptomName":"Malaise"},{"symptomName":"Malaria"},{"symptomName":"Malignancy"},{"symptomName":"Malnutrition"},{"symptomName":"Mammary"},{"symptomName":"Manchineel"},{"symptomName":"Mange"},{"symptomName":"Mania"},{"symptomName":"Marasmus"},{"symptomName":"Marrow"},{"symptomName":"Massage"},{"symptomName":"Mastalgia"},{"symptomName":"Masticatory"},{"symptomName":"Mastitis"},{"symptomName":"Masturbation"},{"symptomName":"Mat"},{"symptomName":"Mattress"},{"symptomName":"Measles"},{"symptomName":"Medical"},{"symptomName":"Medicine"},{"symptomName":"Medicine (Vet)"},{"symptomName":"Medicinel"},{"symptomName":"Megalohepaty"},{"symptomName":"Megalospleny"},{"symptomName":"Meibomian Secretion"},{"symptomName":"Melancholy"},{"symptomName":"Melanoma"},{"symptomName":"Melena"},{"symptomName":"Memory"},{"symptomName":"Meningitis"},{"symptomName":"Menopause"},{"symptomName":"Menorrhagia"},{"symptomName":"Menoxenia"},{"symptomName":"Menses"},{"symptomName":"Menstruation"},{"symptomName":"Menstruationimia"},{"symptomName":"Mental"},{"symptomName":"Meonrrhagia"},{"symptomName":"Meteorism"},{"symptomName":"Metritis"},{"symptomName":"Metrorrhagia"},{"symptomName":"Metrorrhea"},{"symptomName":"Metroxenia"},{"symptomName":"Miasma"},{"symptomName":"Micturition"},{"symptomName":"Migraine"},{"symptomName":"Millipede"},{"symptomName":"Miotic"},{"symptomName":"Miscarriage"},{"symptomName":"Mitogen"},{"symptomName":"Mitogenic"},{"symptomName":"Mole"},{"symptomName":"Molluscicide"},{"symptomName":"Mononucleosis"},{"symptomName":"Morphea"},{"symptomName":"Morphinism"},{"symptomName":"Morphinism (Opiumism)"},{"symptomName":"Motion-Sickness"},{"symptomName":"Mountain Sickness"},{"symptomName":"Mountain-Sickness"},{"symptomName":"Mouth"},{"symptomName":"Mouthwash"},{"symptomName":"Moxa"},{"symptomName":"Mucositis"},{"symptomName":"Mucous"},{"symptomName":"Mucous Membrane"},{"symptomName":"Mucus"},{"symptomName":"Mucusitis"},{"symptomName":"Mump"},{"symptomName":"Mumps"},{"symptomName":"Muscle"},{"symptomName":"Muscle(Bladder)"},{"symptomName":"Mustard-Plaster"},{"symptomName":"Mutagenic"},{"symptomName":"Myalgia"},{"symptomName":"Mycosis"},{"symptomName":"Mydriatic"},{"symptomName":"Myocarditis"},{"symptomName":"Myoneuralgia"},{"symptomName":"Myopathy"},{"symptomName":"Myosis"},{"symptomName":"Myospasm"},{"symptomName":"Myotic"},{"symptomName":"Narcosis"},{"symptomName":"Narcotic"},{"symptomName":"Narcotic (Pollen)"},{"symptomName":"Nausea"},{"symptomName":"Navel"},{"symptomName":"Neck"},{"symptomName":"Necklace"},{"symptomName":"Necklet"},{"symptomName":"Necrosis"},{"symptomName":"Nectar"},{"symptomName":"Nematicide"},{"symptomName":"Neophasia"},{"symptomName":"Neoplasm"},{"symptomName":"Nephritis"},{"symptomName":"Nephrosis"},{"symptomName":"Nerves"},{"symptomName":"Nervine"},{"symptomName":"Nervousness"},{"symptomName":"Nettle"},{"symptomName":"Neuralgia"},{"symptomName":"Neurasthenia"},{"symptomName":"Neuritis"},{"symptomName":"Neuroblastoma"},{"symptomName":"Neuroparalysis"},{"symptomName":"Neurosis"},{"symptomName":"Newborn"},{"symptomName":"Nicotinism"},{"symptomName":"Night-Blindness"},{"symptomName":"Night-Fever"},{"symptomName":"Night-Sweat"},{"symptomName":"Nightmare"},{"symptomName":"Nightsweats"},{"symptomName":"Nipple"},{"symptomName":"Node"},{"symptomName":"Nose"},{"symptomName":"Nosebleed"},{"symptomName":"Nosedrop"},{"symptomName":"Notalgia"},{"symptomName":"Numbness"},{"symptomName":"Nutrient"},{"symptomName":"Nutritive"},{"symptomName":"Nyctalopia"},{"symptomName":"Nystagmus"},{"symptomName":"Obesity"},{"symptomName":"Obstipation"},{"symptomName":"Odontalgia"},{"symptomName":"Odontalgic"},{"symptomName":"Odontectomy"},{"symptomName":"Odontitis"},{"symptomName":"Odontorrhagia"},{"symptomName":"Odontosis"},{"symptomName":"Oil"},{"symptomName":"Ointment"},{"symptomName":"Ointment-Base"},{"symptomName":"Oligospermy"},{"symptomName":"Oliguria"},{"symptomName":"Oncolytic"},{"symptomName":"Onychosis"},{"symptomName":"Onychyosis"},{"symptomName":"Opacity"},{"symptomName":"Ophthalmia"},{"symptomName":"Opiate"},{"symptomName":"Opium Substitute"},{"symptomName":"Opium substitute"},{"symptomName":"Opium-Addiction"},{"symptomName":"Orchitis"},{"symptomName":"Ordeal"},{"symptomName":"Ordeal-Poison"},{"symptomName":"Orexigenic"},{"symptomName":"Ornament"},{"symptomName":"Osmotic"},{"symptomName":"Ostealgia"},{"symptomName":"Osteomyelitis"},{"symptomName":"Osteosis"},{"symptomName":"Otalgia"},{"symptomName":"Otitis"},{"symptomName":"Otorrhea"},{"symptomName":"Otosis"},{"symptomName":"Ovary"},{"symptomName":"Oxytoxic"},{"symptomName":"Oxyuriasic"},{"symptomName":"Oxyuriasis"},{"symptomName":"Ozaema"},{"symptomName":"Ozoena"},{"symptomName":"Pacifier"},{"symptomName":"Pain"},{"symptomName":"Palate"},{"symptomName":"Palpitation"},{"symptomName":"Palpitations"},{"symptomName":"Palsy"},{"symptomName":"Panacea"},{"symptomName":"Pancreas"},{"symptomName":"Paper"},{"symptomName":"Parageusia"},{"symptomName":"Paralysis"},{"symptomName":"Paralyzant"},{"symptomName":"Paraplegia"},{"symptomName":"Parasite"},{"symptomName":"Parasiticide"},{"symptomName":"Parasympatholytic"},{"symptomName":"Paresis"},{"symptomName":"Parkinsonianism"},{"symptomName":"Parkinsonism"},{"symptomName":"Parotiditis"},{"symptomName":"Parotitis"},{"symptomName":"Paroxysm"},{"symptomName":"Parturition"},{"symptomName":"Paste"},{"symptomName":"Pectoral"},{"symptomName":"Pediculicide"},{"symptomName":"Pediculifuge"},{"symptomName":"Pediculosis"},{"symptomName":"Pellagra"},{"symptomName":"Pelvis"},{"symptomName":"Pemphigus"},{"symptomName":"Penis"},{"symptomName":"Peptic"},{"symptomName":"Perfume"},{"symptomName":"Perfumery"},{"symptomName":"Perguessia"},{"symptomName":"Pericarditis"},{"symptomName":"Peritonitis"},{"symptomName":"Perspiration"},{"symptomName":"Perturition"},{"symptomName":"Pertussis"},{"symptomName":"Pesticide(Leech)"},{"symptomName":"Pharyngalgia"},{"symptomName":"Pharyngitis"},{"symptomName":"Philter"},{"symptomName":"Philtre"},{"symptomName":"Phlegm"},{"symptomName":"Phlegmon"},{"symptomName":"Phosphaturia"},{"symptomName":"Photophobia"},{"symptomName":"Phthiriasis"},{"symptomName":"Phthisis"},{"symptomName":"Phymata"},{"symptomName":"Physic"},{"symptomName":"Pilatory"},{"symptomName":"Piles"},{"symptomName":"Pill"},{"symptomName":"Pimple"},{"symptomName":"Pinkeye"},{"symptomName":"Pinworms"},{"symptomName":"Piscicide"},{"symptomName":"Piscifuge"},{"symptomName":"Placenta"},{"symptomName":"Plague"},{"symptomName":"Plethora"},{"symptomName":"Pleurisy"},{"symptomName":"Pleuritis"},{"symptomName":"Pneumonia"},{"symptomName":"Pocks"},{"symptomName":"Poison"},{"symptomName":"Poison (Fatality)"},{"symptomName":"Poison(Arrow)"},{"symptomName":"Poison(Chicken)"},{"symptomName":"Poison(Crab)"},{"symptomName":"Poison(Criminal)"},{"symptomName":"Poison(Snake)"},{"symptomName":"Poison-Ivy"},{"symptomName":"Pole"},{"symptomName":"Polio"},{"symptomName":"Polyneuritis"},{"symptomName":"Polyp"},{"symptomName":"Polyp(Abdomen)"},{"symptomName":"Polyp(Bladder)"},{"symptomName":"Polyp(Intestine)"},{"symptomName":"Polyp(Nose)"},{"symptomName":"Polyp(Stomach)"},{"symptomName":"Polyp(Uterus)"},{"symptomName":"Polypus"},{"symptomName":"Polyuria"},{"symptomName":"Popison"},{"symptomName":"Porridge"},{"symptomName":"Porrigo"},{"symptomName":"Post-Natal"},{"symptomName":"Post-Partum"},{"symptomName":"Potherb"},{"symptomName":"Poultice"},{"symptomName":"Pox"},{"symptomName":"Pregnancy"},{"symptomName":"Preservative"},{"symptomName":"Pressor"},{"symptomName":"Preventitive"},{"symptomName":"Preventitive(Abortifacient)"},{"symptomName":"Preventitive(Abscess)"},{"symptomName":"Preventitive(Aging)"},{"symptomName":"Preventitive(Alopecia)"},{"symptomName":"Preventitive(Bite(Snake))"},{"symptomName":"Preventitive(Boil)"},{"symptomName":"Preventitive(Cancer)"},{"symptomName":"Preventitive(Chafe)"},{"symptomName":"Preventitive(Cold)"},{"symptomName":"Preventitive(Convulsion)"},{"symptomName":"Preventitive(Death)"},{"symptomName":"Preventitive(Disease)"},{"symptomName":"Preventitive(Dyspepsia)"},{"symptomName":"Preventitive(Elephantiasis)"},{"symptomName":"Preventitive(Epidemic)"},{"symptomName":"Preventitive(Famine)"},{"symptomName":"Preventitive(Fever)"},{"symptomName":"Preventitive(Goiter)"},{"symptomName":"Preventitive(Gray-Hair)"},{"symptomName":"Preventitive(Heat-Rash)"},{"symptomName":"Preventitive(Hippomane)"},{"symptomName":"Preventitive(Hunger)"},{"symptomName":"Preventitive(Malaria)"},{"symptomName":"Preventitive(Miasm)"},{"symptomName":"Preventitive(Miscarriage)"},{"symptomName":"Preventitive(Nausea)"},{"symptomName":"Preventitive(Parotitis)"},{"symptomName":"Preventitive(Pile)"},{"symptomName":"Preventitive(Poison)"},{"symptomName":"Preventitive(Rheumatism)"},{"symptomName":"Preventitive(Sting(Bee))"},{"symptomName":"Preventitive(Sunstroke)"},{"symptomName":"Preventitive(Syphilis)"},{"symptomName":"Prickly heat"},{"symptomName":"Prickly-Heat"},{"symptomName":"Prickly-heat"},{"symptomName":"Proctitis"},{"symptomName":"Proctosis"},{"symptomName":"Prolapse"},{"symptomName":"Prolapse(Anus)"},{"symptomName":"Prolapse(Uterus)"},{"symptomName":"Prophylaxis"},{"symptomName":"Prostate"},{"symptomName":"Prostatitis"},{"symptomName":"Prostration"},{"symptomName":"Proteolytic"},{"symptomName":"Protisticide"},{"symptomName":"Prurigo"},{"symptomName":"Prurigo Senilis"},{"symptomName":"Pruritis"},{"symptomName":"Psiatica"},{"symptomName":"Psoriasis"},{"symptomName":"Psychedelic"},{"symptomName":"Psychiatry"},{"symptomName":"Psychomimetic"},{"symptomName":"Psychosis"},{"symptomName":"Psychotherapy"},{"symptomName":"Psychotropic"},{"symptomName":"Pterygium"},{"symptomName":"Ptomaine"},{"symptomName":"Ptyalism"},{"symptomName":"Puberty"},{"symptomName":"Puerperia"},{"symptomName":"Puerperium"},{"symptomName":"Pulicide"},{"symptomName":"Pulmonary"},{"symptomName":"Pulmonary-Tuberculosis"},{"symptomName":"Pulmonosis"},{"symptomName":"Pungency"},{"symptomName":"Purgative"},{"symptomName":"Purgative(Horse)"},{"symptomName":"Pustule"},{"symptomName":"Pustules"},{"symptomName":"Pyelitis"},{"symptomName":"Pyelonephritis"},{"symptomName":"Pyorrhea"},{"symptomName":"Pyrorrhea"},{"symptomName":"Pyrorrhea?"},{"symptomName":"Pyrosis"},{"symptomName":"Pyuria"},{"symptomName":"Quackery"},{"symptomName":"Quinsy"},{"symptomName":"Rabies"},{"symptomName":"Radiculagia"},{"symptomName":"Rain-Making"},{"symptomName":"Ranicide"},{"symptomName":"Ranula"},{"symptomName":"Rash"},{"symptomName":"Raticide"},{"symptomName":"Reconstructive"},{"symptomName":"Rectitis"},{"symptomName":"Rectocele"},{"symptomName":"Rectum"},{"symptomName":"Refrigerant"},{"symptomName":"Regeneration"},{"symptomName":"Regenerative"},{"symptomName":"Rejuvenation"},{"symptomName":"Relaxant"},{"symptomName":"Religion"},{"symptomName":"Renal"},{"symptomName":"Renitis"},{"symptomName":"Rennet"},{"symptomName":"Renosis"},{"symptomName":"Repellant"},{"symptomName":"Repellant(Bat)"},{"symptomName":"Repellant(Flea)"},{"symptomName":"Repellant(Leech)"},{"symptomName":"Repellant(Mole)"},{"symptomName":"Repellant(Moth)"},{"symptomName":"Repellant(Rat)"},{"symptomName":"Repellant(Shark)"},{"symptomName":"Repellant(Snake)"},{"symptomName":"Repellant(Tick)"},{"symptomName":"Repellant(Witch)"},{"symptomName":"Resolvent"},{"symptomName":"Respiration"},{"symptomName":"Respiratory"},{"symptomName":"Respiratory Depressant"},{"symptomName":"Restlessness"},{"symptomName":"Restorative"},{"symptomName":"Retinitis"},{"symptomName":"Revulsive"},{"symptomName":"Rhachitis"},{"symptomName":"Rhagades"},{"symptomName":"Rhematism"},{"symptomName":"Rheum"},{"symptomName":"Rheumatic"},{"symptomName":"Rheumatism"},{"symptomName":"Rheumatitis"},{"symptomName":"Rhinitis"},{"symptomName":"Rhinosis"},{"symptomName":"Rib"},{"symptomName":"Rickets"},{"symptomName":"Rigerant"},{"symptomName":"Rinderpest"},{"symptomName":"Ringworm"},{"symptomName":"Rodent-Ulcer"},{"symptomName":"Rodenticide"},{"symptomName":"Root"},{"symptomName":"Rootcanal"},{"symptomName":"Rope"},{"symptomName":"Roundworms"},{"symptomName":"Rubefacient"},{"symptomName":"Ruise"},{"symptomName":"Rupture"},{"symptomName":"Saccharomycose"},{"symptomName":"Saddle-Sore"},{"symptomName":"Salad"},{"symptomName":"Salivation"},{"symptomName":"Salt"},{"symptomName":"Salve"},{"symptomName":"Sapraemia"},{"symptomName":"Satyriasis"},{"symptomName":"Sauna"},{"symptomName":"Scabies"},{"symptomName":"Scald"},{"symptomName":"Scalp"},{"symptomName":"Scarlatina"},{"symptomName":"Scarlet-Fever"},{"symptomName":"Schistosomiasis"},{"symptomName":"Schizonticide"},{"symptomName":"Sciatica"},{"symptomName":"Sclerosis"},{"symptomName":"Sclerosis(Abdomen)"},{"symptomName":"Sclerosis(Belly)"},{"symptomName":"Sclerosis(Breast)"},{"symptomName":"Sclerosis(Cervix)"},{"symptomName":"Sclerosis(Cornea)"},{"symptomName":"Sclerosis(Eyelid)"},{"symptomName":"Sclerosis(Glands)"},{"symptomName":"Sclerosis(Heel)"},{"symptomName":"Sclerosis(Limb)"},{"symptomName":"Sclerosis(Liver)"},{"symptomName":"Sclerosis(Prostate)"},{"symptomName":"Sclerosis(Pylorus)"},{"symptomName":"Sclerosis(Skin)"},{"symptomName":"Sclerosis(Spleen)"},{"symptomName":"Sclerosis(Stomach)"},{"symptomName":"Sclerosis(Testicle)"},{"symptomName":"Sclerosis(Uterus)"},{"symptomName":"Scorpion"},{"symptomName":"Repellant(Scorpion)"},{"symptomName":"Sting(Scorpion)"},{"symptomName":"Scratch"},{"symptomName":"Scrofula"},{"symptomName":"Scrotosis"},{"symptomName":"Scrotum"},{"symptomName":"Scurf"},{"symptomName":"Scurfiness"},{"symptomName":"Scurvy"},{"symptomName":"Seasickness"},{"symptomName":"Seborrhea"},{"symptomName":"Sedative"},{"symptomName":"Semen"},{"symptomName":"Senescence"},{"symptomName":"Senility"},{"symptomName":"Septicemia"},{"symptomName":"Sex"},{"symptomName":"Shampoo"},{"symptomName":"Shigellosis"},{"symptomName":"Shingles"},{"symptomName":"Shock"},{"symptomName":"Shortwindedness"},{"symptomName":"Shoulder"},{"symptomName":"Sialogogue"},{"symptomName":"Side"},{"symptomName":"Sight"},{"symptomName":"Sinew"},{"symptomName":"Sinus"},{"symptomName":"Sinusitis"},{"symptomName":"Skin"},{"symptomName":"Skin(Pig)"},{"symptomName":"Skin diseases"},{"symptomName":"Skin lotion"},{"symptomName":"Skin stimulant"},{"symptomName":"Sleeping sickness"},{"symptomName":"Slow-Pulse"},{"symptomName":"Smallpox"},{"symptomName":"Smudge"},{"symptomName":"Snuff"},{"symptomName":"Soap"},{"symptomName":"Solvent"},{"symptomName":"Stomachic"},{"symptomName":"Soporific"},{"symptomName":"Sore"},{"symptomName":"Sore(Throat)"},{"symptomName":"Sore(Eye)"},{"symptomName":"Sore(Foot)"},{"symptomName":"Sore(Lip)"},{"symptomName":"Sore(Neck)"},{"symptomName":"Soreness"},{"symptomName":"Sorethroat?"},{"symptomName":"Spasm"},{"symptomName":"Spasmogenic"},{"symptomName":"Spasmolytic"},{"symptomName":"Splenomegaly"},{"symptomName":"Spermatopoietic"},{"symptomName":"Spermatorrhea"},{"symptomName":"Spice"},{"symptomName":"Spiderlick"},{"symptomName":"Spine"},{"symptomName":"Spleen"},{"symptomName":"Splenitis"},{"symptomName":"Splenosis"},{"symptomName":"Splinter"},{"symptomName":"Spot"},{"symptomName":"Sprain"},{"symptomName":"Sprue"},{"symptomName":"Stasis"},{"symptomName":"Steam-Bath"},{"symptomName":"Sterilizant"},{"symptomName":"Sterility"},{"symptomName":"Sterility(Female)"},{"symptomName":"Sterilizant(Male)"},{"symptomName":"Sternutatory"},{"symptomName":"Stiff-Neck"},{"symptomName":"Stiffness"},{"symptomName":"Stimulant"},{"symptomName":"Stimulant(Cardio)"},{"symptomName":"Stimulant(Hepatic)"},{"symptomName":"Sting"},{"symptomName":"Sting(Bee)"},{"symptomName":"Sting(Insect)"},{"symptomName":"Sting(Wasp)"},{"symptomName":"Stingray"},{"symptomName":"Stitch"},{"symptomName":"Stomach"},{"symptomName":"Stomatitis"},{"symptomName":"Stomatosis"},{"symptomName":"Stone"},{"symptomName":"Strabismus"},{"symptomName":"Strain"},{"symptomName":"Strangury"},{"symptomName":"Strength"},{"symptomName":"Stress"},{"symptomName":"Stricture"},{"symptomName":"Stroke"},{"symptomName":"Stroke(Heat)"},{"symptomName":"Struma"},{"symptomName":"Stupefacient"},{"symptomName":"Stupefaction"},{"symptomName":"Sty"},{"symptomName":"Styptic"},{"symptomName":"Sudamina"},{"symptomName":"Sudorific"},{"symptomName":"Sugar"},{"symptomName":"Suicide"},{"symptomName":"Sulfanilimide"},{"symptomName":"Sunburn"},{"symptomName":"Sunstroke"},{"symptomName":"Suppository"},{"symptomName":"Suppuration"},{"symptomName":"Suppurative"},{"symptomName":"Surgical-Dressing"},{"symptomName":"Suriculture"},{"symptomName":"Sweat"},{"symptomName":"Sweating"},{"symptomName":"Sweetener"},{"symptomName":"Swelling"},{"symptomName":"Swelling(Mammary)"},{"symptomName":"Sympathomimetic"},{"symptomName":"Syncope"},{"symptomName":"Synergist"},{"symptomName":"Synergist (Narcotic)"},{"symptomName":"Syphilis"},{"symptomName":"Syphilis(1)"},{"symptomName":"Syphilis(2)"},{"symptomName":"Syphilis(3)"},{"symptomName":"Syphilis(Secondary)"},{"symptomName":"Tabes"},{"symptomName":"Tabes-Mesenterica"},{"symptomName":"Tachycardia"},{"symptomName":"Taenicide"},{"symptomName":"Taenifuge"},{"symptomName":"Tanning"},{"symptomName":"Tapeworm"},{"symptomName":"Tattoo"},{"symptomName":"Tea"},{"symptomName":"Teat"},{"symptomName":"Teeth"},{"symptomName":"Teething"},{"symptomName":"Telangiectasia"},{"symptomName":"Tenderizer"},{"symptomName":"Tendon"},{"symptomName":"Tendonitis"},{"symptomName":"Tenesmus"},{"symptomName":"Tenifuge"},{"symptomName":"Tension"},{"symptomName":"Teredicide"},{"symptomName":"Termiticide"},{"symptomName":"Tes"},{"symptomName":"Testicle"},{"symptomName":"Tetanus"},{"symptomName":"Tetters"},{"symptomName":"Thatch"},{"symptomName":"Thigh"},{"symptomName":"Thirst"},{"symptomName":"Thorax"},{"symptomName":"Thorn"},{"symptomName":"Throat"},{"symptomName":"Thrombosis"},{"symptomName":"Thrush"},{"symptomName":"Thyroid"},{"symptomName":"Thyroiditis"},{"symptomName":"Repellant(Tiger)"},{"symptomName":"Tincture"},{"symptomName":"Tinder"},{"symptomName":"Tinea"},{"symptomName":"Tinea Capitis"},{"symptomName":"Tinnitus"},{"symptomName":"Tinnitus?"},{"symptomName":"Tobacco"},{"symptomName":"Toilet-Paper"},{"symptomName":"Tongue"},{"symptomName":"Tonic"},{"symptomName":"Tonsillitis"},{"symptomName":"Tonsillitis?"},{"symptomName":"Tooth"},{"symptomName":"Ache(Tooth)"},{"symptomName":"Toothblack"},{"symptomName":"Toothhpaste"},{"symptomName":"Toothstick"},{"symptomName":"Toothwhitener"},{"symptomName":"Toxemia"},{"symptomName":"Toxic"},{"symptomName":"Trachalgia"},{"symptomName":"Trachea"},{"symptomName":"Trachitis"},{"symptomName":"Trachoma"},{"symptomName":"Tranquilizer"},{"symptomName":"Trauma"},{"symptomName":"Tremor"},{"symptomName":"Tremors"},{"symptomName":"Trichomoniasis"},{"symptomName":"Trypanosomiasis"},{"symptomName":"Tubercle"},{"symptomName":"Tumor"},{"symptomName":"Tumor(Breast)"},{"symptomName":"Tumor(Abdomen)"},{"symptomName":"Tumor(Anus)"},{"symptomName":"Tumor(Arm)"},{"symptomName":"Tumor(Armpit)"},{"symptomName":"Tumor(Bladder)"},{"symptomName":"Tumor(Diaphragm)"},{"symptomName":"Tumor(Ear)"},{"symptomName":"Tumor(Eye)"},{"symptomName":"Tumor(Eyelid)"},{"symptomName":"Tumor(Fauces)"},{"symptomName":"Tumor(Feet)"},{"symptomName":"Tumor(Finger)"},{"symptomName":"Tumor(Foot)"},{"symptomName":"Tumor(Ganglia)"},{"symptomName":"Tumor(Genital)"},{"symptomName":"Tumor(Glands)"},{"symptomName":"Tumor(Groin)"},{"symptomName":"Tumor(Gum)"},{"symptomName":"Tumor(Heart)"},{"symptomName":"Tumor(Intestine)"},{"symptomName":"Tumor(Joint)"},{"symptomName":"Tumor(Lachrymae)"},{"symptomName":"Tumor(Larynx)"},{"symptomName":"Tumor(Leg)"},{"symptomName":"Tumor(Limb)"},{"symptomName":"Tumor(Liver)"},{"symptomName":"Tumor(Lung)"},{"symptomName":"Tumor(Lymphatic)"},{"symptomName":"Tumor(Neck)"},{"symptomName":"Tumor(Nose)"},{"symptomName":"Tumor(Parotid)"},{"symptomName":"Tumor(Penis)"},{"symptomName":"Tumor(Pituitary)"},{"symptomName":"Tumor(Prostate)"},{"symptomName":"Tumor(Rectum)"},{"symptomName":"Tumor(Scrotum)"},{"symptomName":"Tumor(Sinew)"},{"symptomName":"Tumor(Skin)"},{"symptomName":"Tumor(Spleen)"},{"symptomName":"Tumor(Stomach)"},{"symptomName":"Tumor(Testicle)"},{"symptomName":"Tumor(Thigh)"},{"symptomName":"Tumor(Throat)"},{"symptomName":"Tumor(Thyroid)"},{"symptomName":"Tumor(Tonsil)"},{"symptomName":"Tumor(Umbilicus)"},{"symptomName":"Tumor(Uterus)"},{"symptomName":"Tumor(Uvula)"},{"symptomName":"Tumor(Vagina)"},{"symptomName":"Tumor(Viscera)"},{"symptomName":"Tumor(Womb)"},{"symptomName":"Twine"},{"symptomName":"Tympanitis"},{"symptomName":"Typhoid"},{"symptomName":"Typhus"},{"symptomName":"Typhus (Typhoid)"},{"symptomName":"Udorific"},{"symptomName":"Ugh"},{"symptomName":"Ulcer"},{"symptomName":"Ulcer?"},{"symptomName":"Ulnerary"},{"symptomName":"Umbilicus"},{"symptomName":"Unconsciousness"},{"symptomName":"Underweight"},{"symptomName":"Uneasiness"},{"symptomName":"Unguent"},{"symptomName":"Uremia"},{"symptomName":"Urethra"},{"symptomName":"Urethritis"},{"symptomName":"Urinary"},{"symptomName":"Urinary-antiseptic"},{"symptomName":"Urogenital"},{"symptomName":"Urticaria"},{"symptomName":"Urtication"},{"symptomName":"Uterine"},{"symptomName":"Uterine Organs"},{"symptomName":"Uterotonic"},{"symptomName":"Uteritis"},{"symptomName":"Uteromegaly"},{"symptomName":"Uterorrhagia"},{"symptomName":"Uterosedative"},{"symptomName":"Uterosis"},{"symptomName":"Uterus"},{"symptomName":"Uvulitis"},{"symptomName":"Uzarin"},{"symptomName":"Vagina"},{"symptomName":"Vaginamegaly"},{"symptomName":"Vaginismus"},{"symptomName":"Vaginitis"},{"symptomName":"Varices"},{"symptomName":"Varicosity"},{"symptomName":"Varicose Veins"},{"symptomName":"Variola"},{"symptomName":"Vasoconstrictor"},{"symptomName":"Vasodilator"},{"symptomName":"Vegetable"},{"symptomName":"Vein"},{"symptomName":"Venereal"},{"symptomName":"Vermicide"},{"symptomName":"Vermifuge"},{"symptomName":"Vermifuge(Cattle)"},{"symptomName":"Vermifuge?"},{"symptomName":"Vermin"},{"symptomName":"Vertigo"},{"symptomName":"Vesicant"},{"symptomName":"Vinegar"},{"symptomName":"Viricide"},{"symptomName":"Virility"},{"symptomName":"Viristat"},{"symptomName":"Viscera"},{"symptomName":"Vision"},{"symptomName":"Vitality"},{"symptomName":"Vitiligo"},{"symptomName":"Voice"},{"symptomName":"Vulnerary"},{"symptomName":"Vulneric"},{"symptomName":"Vulvitis"},{"symptomName":"Waist"},{"symptomName":"Walking-Stick"},{"symptomName":"Wart"},{"symptomName":"Wart(Eyelid)"},{"symptomName":"Wart(Uterus)"},{"symptomName":"Waspsting"},{"symptomName":"Water"},{"symptomName":"Water vine"},{"symptomName":"Watervine"},{"symptomName":"Weak-Knee"},{"symptomName":"Weakness"},{"symptomName":"Weaning"},{"symptomName":"Wen"},{"symptomName":"Wet-Dream"},{"symptomName":"Wheeze"},{"symptomName":"Whitlow"},{"symptomName":"Whooping-Cough"},{"symptomName":"Wine-Nose"},{"symptomName":"Witchcraft"},{"symptomName":"Witchhazel"},{"symptomName":"Womb"},{"symptomName":"Worms"},{"symptomName":"Worry"},{"symptomName":"Wound"},{"symptomName":"Wrist"},{"symptomName":"Xlbuminuria"},{"symptomName":"Yaws"},{"symptomName":"Yaws (Preventive)"},{"symptomName":"Yellow Fever"},{"symptomName":"Iran"},{"symptomName":"Ankylostomiasis"},{"symptomName":"Sarcoma"},{"symptomName":"Carcinoma(Mouth)"},{"symptomName":"Stupor"},{"symptomName":"Gastric"},{"symptomName":"Fissure"},{"symptomName":"Scofula"},{"symptomName":"Nostril"},{"symptomName":"Collynum"},{"symptomName":"Cardiostimulant"},{"symptomName":"Dermatitogenic"},{"symptomName":"Pyogenes"},{"symptomName":"Phototoxic"},{"symptomName":"Fluoralbus"},{"symptomName":"Tuberculosia"},{"symptomName":"Astigmia"},{"symptomName":"Melaena"},{"symptomName":"Wood"},{"symptomName":"Polypus(Nose)"},{"symptomName":"Calefacient"},{"symptomName":"Tourniquet"},{"symptomName":"Nephrocirrhosis"},{"symptomName":"Musculotropic"},{"symptomName":"Faver"},{"symptomName":"Orechtites"},{"symptomName":"Antidote(Strychnine)"},{"symptomName":"Cancer(Vagina)"},{"symptomName":"Carcinoma(Breast)"},{"symptomName":"Antidote(Brimstone)"},{"symptomName":"Leishmanniasis"},{"symptomName":"Nursing"},{"symptomName":"Wart(Vagina)"},{"symptomName":"Preventitive(Ptomaine)"},{"symptomName":"Urethrum"},{"symptomName":"Pthisis"},{"symptomName":"Hypermicturition"},{"symptomName":"Kidneystone?"},{"symptomName":"Preventative(Gray-Hair)"},{"symptomName":"Tumor(Mouth)"},{"symptomName":"Exorcism"},{"symptomName":"Lymphangitis"},{"symptomName":"Endorrhagia"},{"symptomName":"Opium-substitute"},{"symptomName":"Tera"},{"symptomName":"Pharynx"},{"symptomName":"Polyps"},{"symptomName":"Diathesis"},{"symptomName":"Preventitive(Measless)"},{"symptomName":"Suppository-Base"},{"symptomName":"Tumor(Digestive)"},{"symptomName":"Pockmark"},{"symptomName":"Bee-sting"},{"symptomName":"Cholengitis"},{"symptomName":"Meloncholia"},{"symptomName":"Preventitive(Rhus)"},{"symptomName":"Antidote(Bromine)"},{"symptomName":"Tumor(Hand)"},{"symptomName":"Fever(Tertian)"},{"symptomName":"Antidote(Copper)"},{"symptomName":"Hemopoietic"},{"symptomName":"Emulsion"},{"symptomName":"Dental"},{"symptomName":"Coronary Pectoris"},{"symptomName":"Addiction (Opium)"},{"symptomName":"\/"},{"symptomName":"Asthma (Hay)"},{"symptomName":"Cold Feet"},{"symptomName":"Myasthenia Gravis"},{"symptomName":"Preventative (Gray Hair)"},{"symptomName":"Dreams"},{"symptomName":"Generative Organs"},{"symptomName":"Tooth Preservative"},{"symptomName":"Boiler Water"},{"symptomName":"Threadworm"},{"symptomName":"Onychiosis"},{"symptomName":"Ache(Neck)"},{"symptomName":"Alopecia(Female)"},{"symptomName":"Anodyne?"},{"symptomName":"Antiasthmatic"},{"symptomName":"Antiblennorhagic"},{"symptomName":"Anticonvulsive"},{"symptomName":"Antidote(Laportea)"},{"symptomName":"Antidote(Lobster)"},{"symptomName":"Antidote(Metopium)"},{"symptomName":"Antidote(Narcotic)"},{"symptomName":"Antidote(Stonefish)"},{"symptomName":"Antidote(Tarantula)"},{"symptomName":"Antiscrofulous"},{"symptomName":"Antisiphylitic"},{"symptomName":"Antisuperofic"},{"symptomName":"Aparturation"},{"symptomName":"Aphrodisiac(Chinese)"},{"symptomName":"Apicide"},{"symptomName":"Arthrosis"},{"symptomName":"Ascarifuge"},{"symptomName":"Attenuant"},{"symptomName":"Broken-Bones"},{"symptomName":"Bronchorrhea"},{"symptomName":"Camphor Ingredient"},{"symptomName":"Cancer(Skin)?"},{"symptomName":"Cancer(Bowel)"},{"symptomName":"Cancer(Genital)"},{"symptomName":"Cancer(Lymphatic)"},{"symptomName":"Cancer(Spleen)"},{"symptomName":"Cancer(Womb)"},{"symptomName":"Cancer?"},{"symptomName":"Capillary-Tonic"},{"symptomName":"Cardioactive"},{"symptomName":"Chancroid"},{"symptomName":"Cheloid"},{"symptomName":"Chickenpox?"},{"symptomName":"Cleansing"},{"symptomName":"Convulsion(Pediatric)"},{"symptomName":"Dildoe"},{"symptomName":"Dyslactea"},{"symptomName":"Dysourmilk"},{"symptomName":"Eel lure"},{"symptomName":"Encephalomyelitis"},{"symptomName":"Erection"},{"symptomName":"Euthanasia"},{"symptomName":"Exudation"},{"symptomName":"Sore(Festered)"},{"symptomName":"Fever(Preventive)"},{"symptomName":"Filariasissis"},{"symptomName":"Fish(Bait)"},{"symptomName":"Flabbiness"},{"symptomName":"Fontanelleles"},{"symptomName":"Fortifcant"},{"symptomName":"Framboesia"},{"symptomName":"Freckles"},{"symptomName":"Fumigation"},{"symptomName":"Fumitory (Opium substitute)"},{"symptomName":"Gastric-Irritation"},{"symptomName":"Gastric-Ulcer"},{"symptomName":"Genito-Urinary"},{"symptomName":"Granulation"},{"symptomName":"Gray hair"},{"symptomName":"Hair-Growth"},{"symptomName":"Heavy legs"},{"symptomName":"Hematocoele"},{"symptomName":"Herbistat"},{"symptomName":"Hide"},{"symptomName":"Home-Remedy"},{"symptomName":"Hypertrophy"},{"symptomName":"Hypoglycemia"},{"symptomName":"Illness"},{"symptomName":"Indicator"},{"symptomName":"Intermittent Fever"},{"symptomName":"Invalidity"},{"symptomName":"Leprome"},{"symptomName":"Leukopenia"},{"symptomName":"Levitation"},{"symptomName":"Love-Charm"},{"symptomName":"Maturant"},{"symptomName":"Meconium"},{"symptomName":"Melanosis"},{"symptomName":"Mesenteritis"},{"symptomName":"Monoplegia"},{"symptomName":"Mucus-Mover"},{"symptomName":"Music"},{"symptomName":"Nalaria"},{"symptomName":"Nematode"},{"symptomName":"Neurodermatitis"},{"symptomName":"Nypnotic"},{"symptomName":"Oilseed"},{"symptomName":"Onic"},{"symptomName":"Ornamental"},{"symptomName":"Overindulgence"},{"symptomName":"Oxyuris"},{"symptomName":"Papillary-Dilatation"},{"symptomName":"Pian"},{"symptomName":"Pill-Coating"},{"symptomName":"Pityriasis"},{"symptomName":"Poison(Dog)"},{"symptomName":"Poison?"},{"symptomName":"Preserve"},{"symptomName":"Preventitive(Mephitis)"},{"symptomName":"Preventitive(Migraine)"},{"symptomName":"Preventitive(Mumps)"},{"symptomName":"Preventitive(Pestilence)"},{"symptomName":"Preventitive(Scar)"},{"symptomName":"Pulmonary-Catarrh"},{"symptomName":"Purpura"},{"symptomName":"Rachitis"},{"symptomName":"Repellant(Crocodile)"},{"symptomName":"Restoration"},{"symptomName":"Rhinosinusitis"},{"symptomName":"Rubella"},{"symptomName":"Scleroderma"},{"symptomName":"Sclerosis(Anus)"},{"symptomName":"Sclerosis(Viscera)"},{"symptomName":"Scrufy"},{"symptomName":"Silicosis"},{"symptomName":"Singultus"},{"symptomName":"Slurring"},{"symptomName":"Smell"},{"symptomName":"Somnolency"},{"symptomName":"Spermatogenic"},{"symptomName":"Spermicide"},{"symptomName":"Sponge"},{"symptomName":"Stammering"},{"symptomName":"Sterility(Male)"},{"symptomName":"Swamp-Fever"},{"symptomName":"Sweat-Bath"},{"symptomName":"Tantrum"},{"symptomName":"Termitifuge"},{"symptomName":"Thrombosis(Venous)"},{"symptomName":"Thunder"},{"symptomName":"Tick"},{"symptomName":"Toe"},{"symptomName":"Tonic (for pubic girls)"},{"symptomName":"Toothbrush"},{"symptomName":"Tuberculosic Ulcer"},{"symptomName":"Tumor(Belly)"},{"symptomName":"Tumor(Face)"},{"symptomName":"Tumor(Head)"},{"symptomName":"Tumor(India)"},{"symptomName":"Umigant"},{"symptomName":"Urethrorrhagia"},{"symptomName":"Urticant"},{"symptomName":"Uteralgia"},{"symptomName":"Uterine-Colic"},{"symptomName":"Uteroconstriction"},{"symptomName":"Vitus"},{"symptomName":"Vomiting"},{"symptomName":"Wasting"},{"symptomName":"Weak-Pulse"},{"symptomName":"Weariness"},{"symptomName":"Myofibroma"},{"symptomName":"Ache(Eye)"},{"symptomName":"Scalp-Tonic"},{"symptomName":"Ma"},{"symptomName":"Washing"},{"symptomName":"Intestinal worms"},{"symptomName":"Black-Leg"},{"symptomName":"Burning-feet"},{"symptomName":"Posthume"},{"symptomName":"Cold sore"},{"symptomName":"Menthol"},{"symptomName":"Ovocide"},{"symptomName":"Adenocarcinoma"},{"symptomName":"Preventitive(Hiccup)"},{"symptomName":"Antidiuretic"},{"symptomName":"Decubitus"},{"symptomName":"Abortive?"},{"symptomName":"Ochititis"},{"symptomName":"Lymphitis"},{"symptomName":"Ketonuria"},{"symptomName":"Hallucinogenic"},{"symptomName":"Enterostenosis"},{"symptomName":"Fontanellele"},{"symptomName":"Weight-Loss"},{"symptomName":"Muscle(Uterus)"},{"symptomName":"Asthenopia"},{"symptomName":"Fishbait"},{"symptomName":"Intoxicant(Bee)"}]
+[
+    {
+        "symptomName": "Abdominal obesity"
+    },
+    {
+        "symptomName": "Abdominal pain"
+    },
+    {
+        "symptomName": "Acne"
+    },
+    {
+        "symptomName": "Actinic keratosis"
+    },
+    {
+        "symptomName": "Acute bronchitis"
+    },
+    {
+        "symptomName": "Adrenal crisis"
+    },
+    {
+        "symptomName": "Ageusia"
+    },
+    {
+        "symptomName": "Alcoholism"
+    },
+    {
+        "symptomName": "Allergic conjunctivitis"
+    },
+    {
+        "symptomName": "Allergy"
+    },
+    {
+        "symptomName": "Amblyopia"
+    },
+    {
+        "symptomName": "Amenorrhea"
+    },
+    {
+        "symptomName": "Amnesia"
+    },
+    {
+        "symptomName": "Anal fissure"
+    },
+    {
+        "symptomName": "Anaphylaxis"
+    },
+    {
+        "symptomName": "Anemia"
+    },
+    {
+        "symptomName": "Angina pectoris"
+    },
+    {
+        "symptomName": "Angioedema"
+    },
+    {
+        "symptomName": "Anosmia"
+    },
+    {
+        "symptomName": "Anxiety"
+    },
+    {
+        "symptomName": "Aphonia"
+    },
+    {
+        "symptomName": "Apnea"
+    },
+    {
+        "symptomName": "Arthralgia"
+    },
+    {
+        "symptomName": "Arthritis"
+    },
+    {
+        "symptomName": "Ascites"
+    },
+    {
+        "symptomName": "Asthma"
+    },
+    {
+        "symptomName": "Astigmatism"
+    },
+    {
+        "symptomName": "Ataxia"
+    },
+    {
+        "symptomName": "Atheroma"
+    },
+    {
+        "symptomName": "Auditory hallucination"
+    },
+    {
+        "symptomName": "Back pain"
+    },
+    {
+        "symptomName": "Bacterial vaginosis"
+    },
+    {
+        "symptomName": "Bell's palsy"
+    },
+    {
+        "symptomName": "Bleeding"
+    },
+    {
+        "symptomName": "Blepharospasm"
+    },
+    {
+        "symptomName": "Bloating"
+    },
+    {
+        "symptomName": "Blood in stool"
+    },
+    {
+        "symptomName": "Blurred vision"
+    },
+    {
+        "symptomName": "Boil"
+    },
+    {
+        "symptomName": "Bone fracture"
+    },
+    {
+        "symptomName": "Bone tumor"
+    },
+    {
+        "symptomName": "Bowel obstruction"
+    },
+    {
+        "symptomName": "Bradycardia"
+    },
+    {
+        "symptomName": "Breast pain"
+    },
+    {
+        "symptomName": "Bronchitis"
+    },
+    {
+        "symptomName": "Bruise"
+    },
+    {
+        "symptomName": "Bunion"
+    },
+    {
+        "symptomName": "Burn"
+    },
+    {
+        "symptomName": "Burning chest pain"
+    },
+    {
+        "symptomName": "Candidiasis"
+    },
+    {
+        "symptomName": "Canker sore"
+    },
+    {
+        "symptomName": "Cataplexy"
+    },
+    {
+        "symptomName": "Cataract"
+    },
+    {
+        "symptomName": "Chancre"
+    },
+    {
+        "symptomName": "Chest pain"
+    },
+    {
+        "symptomName": "Chills"
+    },
+    {
+        "symptomName": "Chorea"
+    },
+    {
+        "symptomName": "Chronic pain"
+    },
+    {
+        "symptomName": "Cirrhosis"
+    },
+    {
+        "symptomName": "Colitis"
+    },
+    {
+        "symptomName": "Coma"
+    },
+    {
+        "symptomName": "Common cold"
+    },
+    {
+        "symptomName": "Conjunctivitis"
+    },
+    {
+        "symptomName": "Constipation"
+    },
+    {
+        "symptomName": "Convulsion"
+    },
+    {
+        "symptomName": "Cough"
+    },
+    {
+        "symptomName": "Crackles"
+    },
+    {
+        "symptomName": "Cramp"
+    },
+    {
+        "symptomName": "Croup"
+    },
+    {
+        "symptomName": "Cyanosis"
+    },
+    {
+        "symptomName": "Dandruff"
+    },
+    {
+        "symptomName": "Delayed onset muscle soreness"
+    },
+    {
+        "symptomName": "Dementia"
+    },
+    {
+        "symptomName": "Depression"
+    },
+    {
+        "symptomName": "Dermatitis"
+    },
+    {
+        "symptomName": "Diabetes"
+    },
+    {
+        "symptomName": "Diabetic ketoacidosis"
+    },
+    {
+        "symptomName": "Diarrhea"
+    },
+    {
+        "symptomName": "Dizziness"
+    },
+    {
+        "symptomName": "Dysautonomia"
+    },
+    {
+        "symptomName": "Dysmenorrhea"
+    },
+    {
+        "symptomName": "Dyspareunia"
+    },
+    {
+        "symptomName": "Dysphagia"
+    },
+    {
+        "symptomName": "Dystonia"
+    },
+    {
+        "symptomName": "Dysuria"
+    },
+    {
+        "symptomName": "Ear pain"
+    },
+    {
+        "symptomName": "Eczema"
+    },
+    {
+        "symptomName": "Edema"
+    },
+    {
+        "symptomName": "Encephalitis"
+    },
+    {
+        "symptomName": "Encephalopathy"
+    },
+    {
+        "symptomName": "Epidermoid cyst"
+    },
+    {
+        "symptomName": "Epilepsy"
+    },
+    {
+        "symptomName": "Epiphora"
+    },
+    {
+        "symptomName": "Erectile dysfunction"
+    },
+    {
+        "symptomName": "Erythema"
+    },
+    {
+        "symptomName": "Erythema chronicum migrans"
+    },
+    {
+        "symptomName": "Esophagitis"
+    },
+    {
+        "symptomName": "Eye pain"
+    },
+    {
+        "symptomName": "Eye strain"
+    },
+    {
+        "symptomName": "Facial nerve paralysis"
+    },
+    {
+        "symptomName": "Facial swelling"
+    },
+    {
+        "symptomName": "Fatigue"
+    },
+    {
+        "symptomName": "Fecal incontinence"
+    },
+    {
+        "symptomName": "Fever"
+    },
+    {
+        "symptomName": "Fibromyalgia"
+    },
+    {
+        "symptomName": "Flatulence"
+    },
+    {
+        "symptomName": "Focal seizure"
+    },
+    {
+        "symptomName": "Gastroesophageal reflux disease"
+    },
+    {
+        "symptomName": "Gastroparesis"
+    },
+    {
+        "symptomName": "Generalized anxiety disorder"
+    },
+    {
+        "symptomName": "Genital wart"
+    },
+    {
+        "symptomName": "Gingival recession"
+    },
+    {
+        "symptomName": "Gingivitis"
+    },
+    {
+        "symptomName": "Goitre"
+    },
+    {
+        "symptomName": "Gout"
+    },
+    {
+        "symptomName": "Granuloma"
+    },
+    {
+        "symptomName": "Hair loss"
+    },
+    {
+        "symptomName": "Halitosis"
+    },
+    {
+        "symptomName": "Hay fever"
+    },
+    {
+        "symptomName": "Headache"
+    },
+    {
+        "symptomName": "Heart arrhythmia"
+    },
+    {
+        "symptomName": "Heart murmur"
+    },
+    {
+        "symptomName": "Heartburn"
+    },
+    {
+        "symptomName": "Hematochezia"
+    },
+    {
+        "symptomName": "Hematoma"
+    },
+    {
+        "symptomName": "Hematuria"
+    },
+    {
+        "symptomName": "Hemolysis"
+    },
+    {
+        "symptomName": "Hemoptysis"
+    },
+    {
+        "symptomName": "Hemorrhoids"
+    },
+    {
+        "symptomName": "Hepatic encephalopathy"
+    },
+    {
+        "symptomName": "Hepatitis"
+    },
+    {
+        "symptomName": "Hepatotoxicity"
+    },
+    {
+        "symptomName": "Hiccup"
+    },
+    {
+        "symptomName": "Hives"
+    },
+    {
+        "symptomName": "Hydrocephalus"
+    },
+    {
+        "symptomName": "Hypercalcaemia"
+    },
+    {
+        "symptomName": "Hypercholesterolemia"
+    },
+    {
+        "symptomName": "Hyperglycemia"
+    },
+    {
+        "symptomName": "Hyperkalemia"
+    },
+    {
+        "symptomName": "Hypermobility"
+    },
+    {
+        "symptomName": "Hypertension"
+    },
+    {
+        "symptomName": "Hyperthermia"
+    },
+    {
+        "symptomName": "Hyperthyroidism"
+    },
+    {
+        "symptomName": "Hypertriglyceridemia"
+    },
+    {
+        "symptomName": "Hypertrophy"
+    },
+    {
+        "symptomName": "Hypocalcaemia"
+    },
+    {
+        "symptomName": "Hypochondriasis"
+    },
+    {
+        "symptomName": "Hypoglycemia"
+    },
+    {
+        "symptomName": "Hypogonadism"
+    },
+    {
+        "symptomName": "Hypomania"
+    },
+    {
+        "symptomName": "Hyponatremia"
+    },
+    {
+        "symptomName": "Hypotension"
+    },
+    {
+        "symptomName": "Hypothyroidism"
+    },
+    {
+        "symptomName": "Hypoxemia"
+    },
+    {
+        "symptomName": "Hypoxia"
+    },
+    {
+        "symptomName": "Impetigo"
+    },
+    {
+        "symptomName": "Indigestion"
+    },
+    {
+        "symptomName": "Infection"
+    },
+    {
+        "symptomName": "Inflammation"
+    },
+    {
+        "symptomName": "Inflammatory bowel disease"
+    },
+    {
+        "symptomName": "Insomnia"
+    },
+    {
+        "symptomName": "Iron deficiency"
+    },
+    {
+        "symptomName": "Irregular menstruation"
+    },
+    {
+        "symptomName": "Itch"
+    },
+    {
+        "symptomName": "Jaundice"
+    },
+    {
+        "symptomName": "Kidney failure"
+    },
+    {
+        "symptomName": "Kidney stone"
+    },
+    {
+        "symptomName": "Knee pain"
+    },
+    {
+        "symptomName": "Laryngitis"
+    },
+    {
+        "symptomName": "Leg cramps"
+    },
+    {
+        "symptomName": "Leukorrhea"
+    },
+    {
+        "symptomName": "Low-grade fever"
+    },
+    {
+        "symptomName": "Lymphedema"
+    },
+    {
+        "symptomName": "Major depressive disorder"
+    },
+    {
+        "symptomName": "Malabsorption"
+    },
+    {
+        "symptomName": "Male infertility"
+    },
+    {
+        "symptomName": "Melasma"
+    },
+    {
+        "symptomName": "Melena"
+    },
+    {
+        "symptomName": "Meningitis"
+    },
+    {
+        "symptomName": "Menorrhagia"
+    },
+    {
+        "symptomName": "Migraine"
+    },
+    {
+        "symptomName": "Mood disorder"
+    },
+    {
+        "symptomName": "Morning sickness"
+    },
+    {
+        "symptomName": "Motion sickness"
+    },
+    {
+        "symptomName": "Mouth ulcer"
+    },
+    {
+        "symptomName": "Muscle atrophy"
+    },
+    {
+        "symptomName": "Muscle weakness"
+    },
+    {
+        "symptomName": "Myalgia"
+    },
+    {
+        "symptomName": "Mydriasis"
+    },
+    {
+        "symptomName": "Myocardial infarction"
+    },
+    {
+        "symptomName": "Nasal polyp"
+    },
+    {
+        "symptomName": "Nausea"
+    },
+    {
+        "symptomName": "Neck mass"
+    },
+    {
+        "symptomName": "Neck pain"
+    },
+    {
+        "symptomName": "Neonatal jaundice"
+    },
+    {
+        "symptomName": "Nerve injury"
+    },
+    {
+        "symptomName": "Neuralgia"
+    },
+    {
+        "symptomName": "Neutropenia"
+    },
+    {
+        "symptomName": "Night sweats"
+    },
+    {
+        "symptomName": "Night terror"
+    },
+    {
+        "symptomName": "Nocturnal enuresis"
+    },
+    {
+        "symptomName": "Nosebleed"
+    },
+    {
+        "symptomName": "Nystagmus"
+    },
+    {
+        "symptomName": "Obesity"
+    },
+    {
+        "symptomName": "Onychorrhexis"
+    },
+    {
+        "symptomName": "Oral candidiasis"
+    },
+    {
+        "symptomName": "Orthostatic hypotension"
+    },
+    {
+        "symptomName": "Osteopenia"
+    },
+    {
+        "symptomName": "Osteophyte"
+    },
+    {
+        "symptomName": "Osteoporosis"
+    },
+    {
+        "symptomName": "Otitis"
+    },
+    {
+        "symptomName": "Otitis externa"
+    },
+    {
+        "symptomName": "Otitis media"
+    },
+    {
+        "symptomName": "Pain"
+    },
+    {
+        "symptomName": "Palpitations"
+    },
+    {
+        "symptomName": "Pancreatitis"
+    },
+    {
+        "symptomName": "Panic attack"
+    },
+    {
+        "symptomName": "Paresthesia"
+    },
+    {
+        "symptomName": "Pericarditis"
+    },
+    {
+        "symptomName": "Perspiration"
+    },
+    {
+        "symptomName": "Phlegm"
+    },
+    {
+        "symptomName": "Photodermatitis"
+    },
+    {
+        "symptomName": "Photophobia"
+    },
+    {
+        "symptomName": "Photopsia"
+    },
+    {
+        "symptomName": "Pleural effusion"
+    },
+    {
+        "symptomName": "Pleurisy"
+    },
+    {
+        "symptomName": "Pneumonia"
+    },
+    {
+        "symptomName": "Podalgia"
+    },
+    {
+        "symptomName": "Polydipsia"
+    },
+    {
+        "symptomName": "Polyneuropathy"
+    },
+    {
+        "symptomName": "Polyuria"
+    },
+    {
+        "symptomName": "Postural orthostatic tachycardia syndrome"
+    },
+    {
+        "symptomName": "Prediabetes"
+    },
+    {
+        "symptomName": "Proteinuria"
+    },
+    {
+        "symptomName": "Pruritus ani"
+    },
+    {
+        "symptomName": "Psychosis"
+    },
+    {
+        "symptomName": "Ptosis"
+    },
+    {
+        "symptomName": "Pulmonary edema"
+    },
+    {
+        "symptomName": "Pulmonary hypertension"
+    },
+    {
+        "symptomName": "Purpura"
+    },
+    {
+        "symptomName": "Pus"
+    },
+    {
+        "symptomName": "Pyelonephritis"
+    },
+    {
+        "symptomName": "Radiculopathy"
+    },
+    {
+        "symptomName": "Rectal pain"
+    },
+    {
+        "symptomName": "Rectal prolapse"
+    },
+    {
+        "symptomName": "Red eye"
+    },
+    {
+        "symptomName": "Renal colic"
+    },
+    {
+        "symptomName": "Restless legs syndrome"
+    },
+    {
+        "symptomName": "Rheum"
+    },
+    {
+        "symptomName": "Rhinitis"
+    },
+    {
+        "symptomName": "Rhinorrhea"
+    },
+    {
+        "symptomName": "Round ligament pain"
+    },
+    {
+        "symptomName": "Scar"
+    },
+    {
+        "symptomName": "Sciatica"
+    },
+    {
+        "symptomName": "Scoliosis"
+    },
+    {
+        "symptomName": "Seborrheic dermatitis"
+    },
+    {
+        "symptomName": "Self-harm"
+    },
+    {
+        "symptomName": "Shallow breathing"
+    },
+    {
+        "symptomName": "Sharp pain"
+    },
+    {
+        "symptomName": "Shivering"
+    },
+    {
+        "symptomName": "Shortness of breath"
+    },
+    {
+        "symptomName": "Sinusitis"
+    },
+    {
+        "symptomName": "Skin condition"
+    },
+    {
+        "symptomName": "Skin rash"
+    },
+    {
+        "symptomName": "Skin tag"
+    },
+    {
+        "symptomName": "Skin ulcer"
+    },
+    {
+        "symptomName": "Sleep deprivation"
+    },
+    {
+        "symptomName": "Sleep disorder"
+    },
+    {
+        "symptomName": "Sore throat"
+    },
+    {
+        "symptomName": "Spasticity"
+    },
+    {
+        "symptomName": "Splenomegaly"
+    },
+    {
+        "symptomName": "Sputum"
+    },
+    {
+        "symptomName": "Stomach rumble"
+    },
+    {
+        "symptomName": "Strabismus"
+    },
+    {
+        "symptomName": "Stroke"
+    },
+    {
+        "symptomName": "Subdural hematoma"
+    },
+    {
+        "symptomName": "Suicidal ideation"
+    },
+    {
+        "symptomName": "Swelling"
+    },
+    {
+        "symptomName": "Swollen feet"
+    },
+    {
+        "symptomName": "Swollen lymph nodes"
+    },
+    {
+        "symptomName": "Syncope"
+    },
+    {
+        "symptomName": "Tachycardia"
+    },
+    {
+        "symptomName": "Tachypnea"
+    },
+    {
+        "symptomName": "Telangiectasia"
+    },
+    {
+        "symptomName": "Tenderness"
+    },
+    {
+        "symptomName": "Testicular pain"
+    },
+    {
+        "symptomName": "Throat irritation"
+    },
+    {
+        "symptomName": "Thrombocytopenia"
+    },
+    {
+        "symptomName": "Thyroid nodule"
+    },
+    {
+        "symptomName": "Tinnitus"
+    },
+    {
+        "symptomName": "Tonsillitis"
+    },
+    {
+        "symptomName": "Toothache"
+    },
+    {
+        "symptomName": "Tremor"
+    },
+    {
+        "symptomName": "Trichoptilosis"
+    },
+    {
+        "symptomName": "Tumor"
+    },
+    {
+        "symptomName": "Type 2 diabetes"
+    },
+    {
+        "symptomName": "Unconsciousness"
+    },
+    {
+        "symptomName": "Underweight"
+    },
+    {
+        "symptomName": "Upper respiratory tract infection"
+    },
+    {
+        "symptomName": "Urethritis"
+    },
+    {
+        "symptomName": "Urinary incontinence"
+    },
+    {
+        "symptomName": "Urinary tract infection"
+    },
+    {
+        "symptomName": "Urinary urgency"
+    },
+    {
+        "symptomName": "Uterine contraction"
+    },
+    {
+        "symptomName": "Vaginitis"
+    },
+    {
+        "symptomName": "Varicose veins"
+    },
+    {
+        "symptomName": "Vasculitis"
+    },
+    {
+        "symptomName": "Ventricular tachycardia"
+    },
+    {
+        "symptomName": "Vertigo"
+    },
+    {
+        "symptomName": "Viral pneumonia"
+    },
+    {
+        "symptomName": "Vomiting"
+    },
+    {
+        "symptomName": "Wart"
+    },
+    {
+        "symptomName": "Weakness"
+    },
+    {
+        "symptomName": "Wheeze"
+    }
+]
