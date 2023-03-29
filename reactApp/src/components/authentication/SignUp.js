@@ -1,14 +1,7 @@
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
+import {Button, TextField, FormControlLabel, Checkbox, Grid, Box, Typography, Container} from "@mui/material";
 import { Link } from "react-router-dom";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
+import LayoutHOC from "components/layouts/LayoutHOC";
+import logo from "assets/logoNaturdoc.svg";
 
 function SignUp() {
   const handleSubmit = (event) => {
@@ -33,11 +26,9 @@ function SignUp() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
+          <img src={logo} width={86} alt={logo} />
           <Typography component="h1" variant="h5">
-            Sign up
+          Create an Account
           </Typography>
           <Box
             component="form"
@@ -109,4 +100,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default LayoutHOC(SignUp);

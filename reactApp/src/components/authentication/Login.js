@@ -1,15 +1,7 @@
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import { Link } from "react-router-dom";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
+import {Button, TextField, FormControlLabel, Checkbox, Grid, Box, Typography, Container} from "@mui/material";
 import LayoutHOC from "components/layouts/LayoutHOC";
+import logo from "assets/logoNaturdoc.svg";
+import { Link } from "react-router-dom";
 
 function Login() {
   const handleSubmit = (event) => {
@@ -26,17 +18,16 @@ function Login() {
       <Container component="main" maxWidth="xs">
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 0,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
+          <img src={logo} width={120} alt={logo} />
           <Typography component="h1" variant="h5">
-            Sign in
+          Login with your 
+          Naturedoc account
           </Typography>
           <Box
             component="form"
