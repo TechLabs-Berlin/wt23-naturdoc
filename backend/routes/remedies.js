@@ -84,26 +84,58 @@ router.get('/:id', catchAsynch(async (req, res) => {
 }));
 
 
-//get all ratings for a remmedy
-//router.get('/:id/ratings', catchAsynch(async (req, res) => {
-
-//    const ratings = await remediesModel.findById(req.params.id);
-//    const response = {
-//        ratings: ratings.ratings,
-//        remedyName: ratings.remedyName,
-//        _id: ratings._id
-//    }
-//    console.log(response)
-
-//    return res.status(200).send(response);
-//}));
-
 
 //get all ratings for a remmedy
 router.get('/:id/ratings', catchAsynch(async (req, res) => {
+    const { id } = req.params;
+    const newId = new mongoose.Types.ObjectId(id)
+    // get ratings for remedy and then the usernames of the people who made those ratings with aggreate
+    const ratingsWithUsernames = await ratingsModel.aggregate([
+        {
+          $match: { remedyId: newId },
+        },
+        // find users for the userIds in each item
+        {
+          $lookup: {
+            from: 'users',
+            localField: 'userId',
+            foreignField: '_id',
+            as: 'user'
+          },
+        },
+    //    // get the usernames from the users and put them to the ratings
+        {
+          $unwind: '$user'
+        },
+    ////    // create a new object from the ratings. Each one should have all fields of the rating object and only username field from rating objects user object 
+        {
+          $project: {
+            _id: 1,
+            ratingValue: 1,
+            reviewDescription: 1,
+            reviewName: 1,
+            remedyName: 1,
+           // userId: 1,
+            remedyId: 1,
+            username: '$user.username',
+            userId: '$user._id'
+          },
+        }
+      ]);
+      console.log (ratingsWithUsernames);
+      const response = ratingsWithUsernames.map(remedyItem => {
+        return{
+            ratingId: remedyItem._id,
+            ratingValue: remedyItem.ratingValue,
+            reviewDescription: remedyItem.reviewDescription,
+            reviewName: remedyItem.reviewName,
+            remedyName: remedyItem.remedyName,
+            remedyId: remedyItem.id,
+            username: remedyItem.username,
+            userId: remedyItem.userId
+      }})
 
-    const ratings = await ratingsModel.find({ remedyId: req.params.id });
-    return res.status(200).send(ratings);
+     return res.status(200).send(response);
 }));
 
 
@@ -142,8 +174,8 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
     const { id } = req.params //req.params;
     const { ratingValue, reviewName, reviewDescription } = req.body.data;
-    const userTest = "641ed2ecf7892783bdacbeb9";
-    // const userTest = "6420450b3d25951c719ec768";
+    // const userTest = "641ed2ecf7892783bdacbeb9";
+    const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
     const product = await remediesModel.findById(id);
@@ -152,11 +184,13 @@ router.put('/:id', catchAsynch(async (req, res) => {
         { ratingValue: ratingValue, reviewName: reviewName, reviewDescription: reviewDescription, remedyName: product.remedyName },
         {
             new: true,
-            upsert: true
+            upsert: true,
+            timestamps: true
         }
     );
     console.log("RATINGID");
     console.log(newRating.id);
+    console.log(newRating.timestamp)
 
 
     //UPDATE USER MODEL:
