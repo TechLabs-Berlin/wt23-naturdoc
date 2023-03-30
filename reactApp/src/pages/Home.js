@@ -94,11 +94,11 @@ const Home = () => {
           Remedies that help with springtime Allergies
         </Typography>
         <Divider />
-        <Grid container spacing={3} sx={{ py: 2 }}>
+        <Grid container spacing={3} sx={{ py: 2, flexDirection:"column" }}>
           {springRemedies.map((item, index) => (
-            <Grid item key={index} xs={12} sm={6} md={6}>
+            <Grid item key={index} xs={12} sm={12} md={12}>
                {index % 2 === 0 ? (
-              <Card sx={{ display: "flex" }} variant="homeCard">
+              <Card sx={{ display: "flex", justifyContent:"flex-start" }} variant="homeCard">
                 <CardMedia
                   component="img"
                   sx={{
@@ -115,6 +115,8 @@ const Home = () => {
                   sx={{
                     display: "flex",
                     flexWrap: "wrap",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
                     alignItems: "center",
                     alignContent: "flex-end",
                     pl: 1,
@@ -143,11 +145,13 @@ const Home = () => {
                 </Box>
               </Card> 
             ) : (
-              <Card sx={{ display: "flex" }} variant="homeCard">      
+              <Card sx={{ display: "flex", justifyContent:"flex-end" }} variant="homeCard">      
                 <Box
                   sx={{
                     display: "flex",
                     flexWrap: "wrap",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
                     alignItems: "center",
                     alignContent: "flex-end",
                     pl: 1,

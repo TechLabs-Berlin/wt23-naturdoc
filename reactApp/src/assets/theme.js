@@ -89,6 +89,54 @@ const theme = createTheme({
                     fontFamily: secondaryFont,
                 },
             },
+            variants: [
+                {
+                    props: { variant: 'authenticationButton' },
+                    style: {
+                        backgroundColor: primaryColor,
+                        padding: '12px 16px',
+                        margin: '24px 0',
+                        color: '#ffffff',
+                        fontSize: '1.3rem',
+                        fontFamily: primaryFont,
+                        fontWeight: 100,
+                        borderRadius: '10px',
+                        '&:hover': {
+                            backgroundColor: "#104028",
+                        },
+                    }, 
+                },
+                {
+                    props: { variant: 'authenticationButtonAlt' },
+                    style: {
+                        backgroundColor: primaryColorLight,
+                        padding: '12px 16px',
+                        marginTop: '0',
+                        color: '#ffffff',
+                        fontSize: '1.3rem',
+                        fontFamily: primaryFont,
+                        fontWeight: 100,
+                        borderRadius: '10px',
+                        textDecoration: 'none',
+                        '&:hover': {
+                            backgroundColor: primaryColor,
+                        },
+                    }, 
+                },
+            ],
+        },
+        MuiFormControlLabel: {
+            styleOverrides: {
+                root: {
+                    marginRight: 0,
+                },
+                label: {
+                    fontSize: '0.85rem',
+                    fontFamily: secondaryFont,
+                    fontWeight: 100,
+                    margin: '12px 0'
+                },
+            },
         },
         MuiBottomNavigation: {
             styleOverrides: {
@@ -149,9 +197,25 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     width: '25%',
-                    margin: '16px 0',
+                    marginTop: '32px',
                 },
             },
+            variants: [
+                {
+                    props: { variant: 'authenticationDivider' },
+                    style: {
+                        width: '100%',
+                        margin: '32px 0 16px',
+                        color: primaryColor,
+                        fontFamily: primaryFont,
+                        fontSize: '0.85rem',
+                        '&::before, &::after' : {
+                            borderTop: '1px solid',
+                            borderColor: primaryColor,
+                        },
+                    },
+                },
+            ],
         },
         MuiAccordionSummary: {
             styleOverrides: {
@@ -190,6 +254,13 @@ const theme = createTheme({
                 },
             },
         },
+        MuiTextField: {
+            styleOverrides: {
+                root: {
+                    marginTop: '8px',
+                }
+            }
+        }
     },
     typography: {
         h1: {
@@ -222,6 +293,20 @@ const theme = createTheme({
         reviewBody: {
             fontSize: '0.95rem',
             color: primaryTextColor,
+        },
+        authenticationTitle: {
+            fontFamily: secondaryFont,
+            color: primaryColor,
+            fontWeight: 400,
+            fontSize: '1.2rem',
+            textTransform: 'uppercase',
+        },
+        authenticationLink: {
+            fontFamily: primaryFont,
+            color: primaryColor,
+            fontSize: '1rem',
+            fontWeight: 400,
+            textDecoration: 'none',
         },
         fontFamily: primaryFont,
     },
