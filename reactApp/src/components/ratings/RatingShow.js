@@ -9,6 +9,7 @@ import {
   Rating,
 } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
+import TimeAgo from './TimeAgo';
 
 function RatingShow({ rating }) {
   return (
@@ -35,7 +36,7 @@ function RatingShow({ rating }) {
                   component={'span'}
                   variant="reviewTimestamp"
                 >
-                  {rating.updated_at}
+                  <TimeAgo timestamp={rating.updated_at} />
                   <Rating
                     name="read-only"
                     size="small"
