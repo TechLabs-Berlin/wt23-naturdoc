@@ -21,7 +21,7 @@ function RatingShow({ rating }) {
           <ListItemText
             primary={
               <>
-                <Typography variant="reviewTitle">[USER.USERNAME]</Typography>
+                <Typography variant="reviewTitle">{rating.username}</Typography>
               </>
             }
             secondary={
@@ -35,7 +35,7 @@ function RatingShow({ rating }) {
                   component={'span'}
                   variant="reviewTimestamp"
                 >
-                  [TIMESTAMP]
+                  {rating.updated_at}
                   <Rating
                     name="read-only"
                     size="small"
