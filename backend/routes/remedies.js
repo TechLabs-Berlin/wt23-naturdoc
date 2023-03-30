@@ -117,22 +117,26 @@ router.get('/:id/ratings', catchAsynch(async (req, res) => {
             remedyName: 1,
            // userId: 1,
             remedyId: 1,
+            createdAt: 1,
+            updatedAt: 1,
             username: '$user.username',
             userId: '$user._id'
           },
         }
       ]);
       console.log (ratingsWithUsernames);
-      const response = ratingsWithUsernames.map(remedyItem => {
+      const response = ratingsWithUsernames.map(ratingItem => {
         return{
-            ratingId: remedyItem._id,
-            ratingValue: remedyItem.ratingValue,
-            reviewDescription: remedyItem.reviewDescription,
-            reviewName: remedyItem.reviewName,
-            remedyName: remedyItem.remedyName,
-            remedyId: remedyItem.id,
-            username: remedyItem.username,
-            userId: remedyItem.userId
+            ratingId: ratingItem._id,
+            ratingValue: ratingItem.ratingValue,
+            reviewDescription: ratingItem.reviewDescription,
+            reviewName: ratingItem.reviewName,
+            remedyName: ratingItem.remedyName,
+            remedyId: ratingItem.id,
+            username: ratingItem.username,
+            userId: ratingItem.userId,
+            created_at: ratingItem.createdAt,
+            updated_at: ratingItem.updatedAt
       }})
 
      return res.status(200).send(response);
