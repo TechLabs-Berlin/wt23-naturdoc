@@ -1,6 +1,5 @@
-import RatingForm from "components/ratings/RatingForm";
 import { useState } from "react";
-
+import RatingForm from "components/ratings/RatingForm";
 import { Card, Box, Button, Typography, useTheme, useMediaQuery } from "@mui/material/";
 import ChevronRight from "@mui/icons-material/ChevronRight";
 
@@ -29,12 +28,20 @@ function AddRating({remedy, ratings}) {
     setOpen(false);
   };
 
+  let AddRatingtext
+  if  ( !remedy.totalNumberofRatings) {
+     AddRatingtext = noRatingsYet  
+  } else if ( ratings.userId == null ) {
+    AddRatingtext = notRatedByUser
+  }
+
   return (
     <>
       <Card variant="reviewCard">
         <Typography variant="body1" sx={{ textAlign: "center" }} paragraph>
-          {noRatingsYet}
-          {notRatedByUser}
+         <>
+          {AddRatingtext}
+        </>
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Button

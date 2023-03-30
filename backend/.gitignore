@@ -2,3 +2,6 @@
 node-modules/
 # ignore views directory
 views/
+
+# ignore env file
+.env
