@@ -13,7 +13,7 @@ function AddRating({remedy, ratings}) {
 
   const notRatedByUser = ratings.userId
     ? ""
-    : "You have not shared your opinion yet. What do you think of this remedy?";
+    : "Did you try the remedy? Tell us what you think!";
     console.log("Remedy not rated by User ?", notRatedByUser ? "true" : "false")
 
   const [open, setOpen] = useState(false);

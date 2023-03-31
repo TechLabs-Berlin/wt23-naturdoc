@@ -14,7 +14,7 @@ const secondaryFont = [
     'sans-serif',
 ].join(',');
 
-const primaryTextColor = '#333333';
+const primaryTextColor = '#222222';
 
 const theme = createTheme({
     palette: {
@@ -61,8 +61,8 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     margin: 'auto',
-                    padding: 8, 
-                    backgroundColor:"#ffffff"
+                    padding: 8,
+                    backgroundColor: '#ffffff',
                 },
             },
         },
@@ -134,7 +134,7 @@ const theme = createTheme({
                     fontSize: '0.85rem',
                     fontFamily: secondaryFont,
                     fontWeight: 100,
-                    margin: '12px 0'
+                    margin: '12px 0',
                 },
             },
         },
@@ -185,7 +185,7 @@ const theme = createTheme({
                     backgroundColor: '#ffffff',
                 },
                 reviewCard: {
-                    marginTop: 32,
+                    marginTop: 16,
                     padding: '32px 16px',
                     border: '1px solid',
                     borderColor: primaryColor,
@@ -217,11 +217,34 @@ const theme = createTheme({
                 },
             ],
         },
+        MuiAccordion: {
+            styleOverrides: {
+                root: {
+                    boxShadow: 'none',
+                    '&::before': {
+                        backgroundColor: '#ffffff',
+                    },
+                },
+            },
+        },
         MuiAccordionSummary: {
             styleOverrides: {
                 root: {
                     backgroundColor: secondaryColorLight,
+                    borderRadius: '5px',
                 },
+                expandIconWrapper: {
+                    color: primaryColor,
+                },
+            },
+        },
+        MuiCollapse: {
+            styleOverrides: {
+                root: {
+                    background:
+                        'linear-gradient(180deg, rgba(234,230,180,1) 0%, rgba(234,230,180,0.8) 10%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%)',
+                    marginTop: '-5px',
+                    },
             },
         },
         MuiAutocomplete: {
@@ -258,9 +281,9 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     marginTop: '8px',
-                }
-            }
-        }
+                },
+            },
+        },
     },
     typography: {
         h1: {

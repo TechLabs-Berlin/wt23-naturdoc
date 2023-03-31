@@ -42,7 +42,6 @@ const RemedyRating = ({ remedy, summary }) => {
                         display: 'flex',
                         justifyContent: 'flex-start',
                         alignItems: 'center',
-                        my: 2,
                     }}
                 >
                     <Typography sx={{ fontSize: 52 }}>

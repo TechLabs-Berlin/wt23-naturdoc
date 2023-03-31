@@ -68,7 +68,7 @@ function RemedyDetails() {
           />
         </Box>
 
-        <Box component="div" sx={{ p: 2, pt: -2 }}>
+        <Box component="div" sx={{ p: 2 }}>
           <Box component="div">
             <Typography variant="remedyTitle" component="h1">
               {remedy.remedyName}
@@ -86,12 +86,14 @@ function RemedyDetails() {
               <RemedyRating remedy={remedy} />
             )}
 
+            {/* COMMENING OUT TO MATCH UX LATESTS CHANGES
             <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
               {remedy.medicinalUses ? "Recommended use for:" : " "}
-            </Typography>
+            </Typography> 
             <Typography variant="body2" sx={{ fontWeight: "600" }}>
               {formatString(remedy.medicinalUses)}
             </Typography>
+            */}
           </Box>
 
           <Box component="div" sx={{ py: 2 }}>
@@ -142,7 +144,10 @@ function RemedyDetails() {
             />
           </Box>
 
-          <Box component="div">
+          <Box component="div" sx={{mt: 2}}>
+          <Typography variant="resultCount">
+          {ratings.length} {ratings.length === 1 ? "review" : "reviews"}
+        </Typography>
             <AddRating remedy={remedy} ratings={ratings}  handleClickOpen />
           </Box>
           <RatingList ratings={ratings} />

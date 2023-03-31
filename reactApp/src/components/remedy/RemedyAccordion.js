@@ -10,7 +10,7 @@ function RemedyAccordion(remedy, accordionSummary, accordionDetails) {
       {remedy.accordionDetails === null ? (
         " "
       ) : (
-        <Accordion defaultExpanded>
+        <Accordion /* UXCHANGES defaultExpanded */>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
