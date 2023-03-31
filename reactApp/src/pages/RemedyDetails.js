@@ -144,7 +144,7 @@ function RemedyDetails() {
             />
           </Box>
 
-          <Box component="div" sx={{mt: 2}}>
+          <Box component="div" sx={{mt: 2}} id="ratings-section">
           <Typography variant="resultCount">
           {ratings.length} {ratings.length === 1 ? "review" : "reviews"}
         </Typography>
@@ -153,13 +153,13 @@ function RemedyDetails() {
           <RatingList ratings={ratings} />
         </Box>
 
-     {/*  <RatingForm
+      <RatingForm
         key={remedy.id}
         remedy={remedy}
         open={open}
         handleClose={handleClose}
         fullScreen={fullScreen}
-      /> */}
+      /> 
     </>
   );
 }
