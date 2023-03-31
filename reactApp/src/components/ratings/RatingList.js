@@ -1,5 +1,5 @@
 import RatingShow from "./RatingShow";
-import {  Box } from "@mui/material";
+import {  Box, Typography } from "@mui/material";
 
 function RatingList({ ratings }) {
 
@@ -11,11 +11,14 @@ function RatingList({ ratings }) {
   });
 
   return (
-    <>
-      <Box sx={{ mt: 5 }} component="section" maxWidth="md">
-        {renderedRatings}
-      </Box>
-    </>
+      <>
+          <Box sx={{ mt: 5 }} component="section" maxWidth="md">
+              <Typography variant="resultCount">
+                  {ratings.length} {ratings.length === 1 ? 'review' : 'reviews'}
+              </Typography>
+              {renderedRatings}
+          </Box>
+      </>
   );
 }
 

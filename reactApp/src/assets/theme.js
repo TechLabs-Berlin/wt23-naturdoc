@@ -186,7 +186,7 @@ const theme = createTheme({
                 },
                 reviewCard: {
                     marginTop: 16,
-                    padding: '32px 16px',
+                    padding: '24px 16px',
                     border: '1px solid',
                     borderColor: primaryColor,
                     borderRadius: '4px',

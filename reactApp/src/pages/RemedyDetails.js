@@ -153,9 +153,6 @@ function RemedyDetails() {
           </Box>
 
           <Box component="div" sx={{mt: 2}} id="ratings-section">
-          <Typography variant="resultCount">
-          {ratings.length} {ratings.length === 1 ? "review" : "reviews"}
-        </Typography>
             <AddRating remedy={remedy} ratings={ratings}  handleClickOpen />
           </Box>
           <RatingList ratings={ratings} />
