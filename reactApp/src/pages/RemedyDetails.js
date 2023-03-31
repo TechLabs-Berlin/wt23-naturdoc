@@ -11,7 +11,7 @@ import RatingList from "components/ratings/RatingList";
 import LayoutHOC from "components/layouts/LayoutHOC";
 import AddRating from "components/ratings/AddRating";
 // material-ui
-import { useMediaQuery, useTheme, CardMedia, Box, IconButton, Typography } from "@mui/material";
+import { useMediaQuery, useTheme, CardMedia, Box, IconButton, Typography, Alert } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
 function RemedyDetails() {
@@ -120,7 +120,15 @@ function RemedyDetails() {
             <RemedyAccordion
               remedy={remedy}
               accordionSummary={"Uses in Folk Medicine"}
-              accordionDetails={remedy.treatmentFolk}
+              accordionDetails=
+                {remedy.treatmentFolk ?
+                (<>
+                {remedy.treatmentFolk}
+                <Alert component="span" variant="outlined" severity="warning" sx={{mt:4 }}>
+                "Folk Medicine" is not supported by scientific data. Please be extra careful regarding the suggested use. If you are unsure, talk to a doctor about it
+                </Alert>
+                </>)
+                : (null)} 
             />
             <RemedyAccordion
               remedy={remedy}
