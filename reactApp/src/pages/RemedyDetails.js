@@ -153,13 +153,13 @@ function RemedyDetails() {
           <RatingList ratings={ratings} />
         </Box>
 
-      <RatingForm
+     {/*  <RatingForm
         key={remedy.id}
         remedy={remedy}
         open={open}
         handleClose={handleClose}
         fullScreen={fullScreen}
-      />
+      /> */}
     </>
   );
 }
