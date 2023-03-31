@@ -2,7 +2,11 @@ import RatingShow from "./RatingShow";
 import {  Box } from "@mui/material";
 
 function RatingList({ ratings }) {
-  const renderedRatings = ratings.map((rating) => {
+
+  const orderedRatings = ratings.updated_at ? ratings.slice().sort((a, b) => b.updated_at.localeCompare(a.updated_at))
+    : ratings;
+    
+  const renderedRatings = orderedRatings.map((rating) => {
     return <RatingShow key={rating.ratingId} rating={rating} />;
   });
 
