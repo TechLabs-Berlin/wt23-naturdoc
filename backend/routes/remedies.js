@@ -11,8 +11,6 @@ const LocalStrategy = require('passport-local')
 const { ratingsModel, remediesModel, userModel } = require('../models');
 
 const catchAsynch = require('../utilities/catchAsynch');
-const { checkLogin } = require('../middleware');
-const { connect } = require('../database/database');
 
 router.use(express.json());
 
