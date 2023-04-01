@@ -59,7 +59,6 @@ router.get('/', catchAsynch(async (req, res) => {
 //get a single remedy by id
 router.get('/:id', catchAsynch(async (req, res) => {
     const remedies = await remediesModel.findById(req.params.id);
-    //console.log(remedies);
     const response = {
         remedyName: remedies.remedyName,
         symptomsMatched: remedies.symptomsMatched,
@@ -89,7 +88,7 @@ router.get('/:id', catchAsynch(async (req, res) => {
 router.get('/:id/ratings', catchAsynch(async (req, res) => {
     const { id } = req.params;
     const newId = new mongoose.Types.ObjectId(id)
-    // get ratings for remedy and then the usernames of the people who made those ratings with aggreate
+    // get ratings for a remedy and then the usernames of the people who made those ratings
     const ratingsWithUsernames = await ratingsModel.aggregate([
         {
           $match: { remedyId: newId },
@@ -103,11 +102,11 @@ router.get('/:id/ratings', catchAsynch(async (req, res) => {
             as: 'user'
           },
         },
-    //    // get the usernames from the users and put them to the ratings
+       // get the usernames from the users and put them to the ratings
         {
           $unwind: '$user'
         },
-    ////    // create a new object from the ratings. Each one should have all fields of the rating object and only username field from rating objects user object 
+       // create a new object from the ratingss with username included
         {
           $project: {
             _id: 1,
@@ -115,7 +114,6 @@ router.get('/:id/ratings', catchAsynch(async (req, res) => {
             reviewDescription: 1,
             reviewName: 1,
             remedyName: 1,
-           // userId: 1,
             remedyId: 1,
             createdAt: 1,
             updatedAt: 1,
@@ -125,6 +123,7 @@ router.get('/:id/ratings', catchAsynch(async (req, res) => {
         }
       ]);
       console.log (ratingsWithUsernames);
+      //rename _id to ratingId
       const response = ratingsWithUsernames.map(ratingItem => {
         return{
             ratingId: ratingItem._id,
@@ -166,19 +165,15 @@ router.get('/:id/ratingsPerUser', catchAsynch(async (req, res) => {
     return res.status(200).send(response);
 }));
 
-
-
-
 //add the rating for a single remedy
 router.put('/:id', catchAsynch(async (req, res) => {
-    //const ratingId = new mongoose.Types.ObjectId;
     console.log('*******');
     console.log(req.body);
     console.log(req.user);
 
-    const { id } = req.params //req.params;
+    const { id } = req.params;
     const { ratingValue, reviewName, reviewDescription } = req.body.data;
-    // const userTest = "641ed2ecf7892783bdacbeb9";
+    //const userTest = "641ed2ecf7892783bdacbeb9";
     const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
@@ -238,24 +233,17 @@ router.put('/:id', catchAsynch(async (req, res) => {
     } catch (error) {
         throw new Error(error);
     };
-
-
-
-
     //UPDATE REMEDY MODEL:
     try {
         //find remedy by id:
         const product = await remediesModel.findById(id);
         //calculate new rating average
         const remedyRatings = product.ratings;
-
-        console.log("-------");
-        const newRatingAverage = ((remedyRatings.length === 0) ? ratingValue : (remedyRatings.reduce((total, next) => total + next.ratingValue, 0) + ratingValue) / (remedyRatings.length + 1)).toFixed(2);
+        const newRatingAverage = ((remedyRatings.length === 0) ? ratingValue : (remedyRatings.reduce((total, next) => total + next.ratingValue, 0) + ratingValue) / (remedyRatings.length + 1)).toFixed(1);
         //check if remedy is already rated by current user
         const alreadyRated = product.ratings.find(
             rating => rating.userId.toString() === userTest.toString()
         );
-
         //if user already rated the product, update the rating value
         if (alreadyRated) {
             const updateRating = await remediesModel.updateOne(
@@ -265,7 +253,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
                 {
                     $set: {
                         "ratings.$.ratingValue": ratingValue,
-                        ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2),
+                        ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(1),
                         reviewName: reviewName,
                         reviewDescription: reviewDescription,
                         ratingId: newRating.id
@@ -277,8 +265,6 @@ router.put('/:id', catchAsynch(async (req, res) => {
 
             );
             res.json(updateRating);
-
-
             //if user did not rate the product yet, add a new rating value
         } else {
             //find product and add rating
@@ -311,7 +297,7 @@ router.put('/:id', catchAsynch(async (req, res) => {
 router.delete('/:id', catchAsynch(async (req, res) => {
     const { id } = req.params;
     console.log(req.body);
-    const userId = "64151a880022f6c93207f2b9";
+    //const userId = "64151a880022f6c93207f2b9";
     const deletedRating = await ratingsModel.deleteOne(
         { remedyId: id, userId: userId });
     return res.status(200).send(deletedRating);
@@ -321,8 +307,7 @@ router.delete('/:id', catchAsynch(async (req, res) => {
 //save remedy as favorite:
 router.put('/:id/save', catchAsynch(async (req, res) => {
     const { id } = req.params;
-    //const product = await remediesModel.findById(id);
-    const userTest = "64151b8670662285f3b36c13";
+   // const userTest = "64151b8670662285f3b36c13";
     const saveFavorite = await userModel.findByIdAndUpdate(userTest, {
         $push: {
             favorites: {
@@ -337,11 +322,10 @@ router.put('/:id/save', catchAsynch(async (req, res) => {
     return res.status(200).send(saveFavorite);
 }));
 
-//save remedy as favorite:
+//delete remedy from favorites
 router.delete('/:id/save', catchAsynch(async (req, res) => {
     const { id } = req.params;
-    //const product = await remediesModel.findById(id);
-    const userTest = "64151b8670662285f3b36c13";
+    //const userTest = "64151b8670662285f3b36c13";
     const deleteFavorite = await userModel.findByIdAndUpdate(userTest, {
         $pull: {
             favorites: {
