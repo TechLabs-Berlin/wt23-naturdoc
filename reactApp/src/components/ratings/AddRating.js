@@ -1,61 +1,24 @@
-import RatingForm from "components/ratings/RatingForm";
-import { useState } from "react";
-
-import { Card, Box, Button, Typography, useTheme, useMediaQuery } from "@mui/material/";
-import ChevronRight from "@mui/icons-material/ChevronRight";
-
+import AddRatingCTA from "./AddRatingCTA";
+import getUsers from "data/getUsers";
+import { Card, Typography } from "@mui/material/";
 
 function AddRating({remedy, ratings}) {
-  
-  const noRatingsYet = remedy.totalNumberofRatings
-    ? ""
-    : "No reviews yet. Be the first to add a review";
-    console.log("No ratings yet?", noRatingsYet ? "true" : "false")
 
-  const notRatedByUser = ratings.userId
-    ? ""
-    : "You have not shared your opinion yet. What do you think of this remedy?";
-    console.log("Remedy not rated by User ?", notRatedByUser ? "true" : "false")
+const alreadyRated = ratings.find(rating => rating.userId === getUsers()); 
 
-  const [open, setOpen] = useState(false);
-  const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
+console.log(alreadyRated ? "there is a rating from user" : "no rating from user")
   return (
     <>
-      <Card variant="reviewCard">
-        <Typography variant="body1" sx={{ textAlign: "center" }} paragraph>
-          {noRatingsYet}
-          {notRatedByUser}
-        </Typography>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Button
-            align="center"
-            size="large"
-            variant="outlined"
-            onClick={handleClickOpen}
-            endIcon={<ChevronRight />}
-          >
-            Write a review
-          </Button>
-        </Box>
-      </Card>
-      <RatingForm
-        key={remedy.id}
-        remedy={remedy}
-        open={open}
-        handleClose={handleClose}
-        fullScreen={fullScreen}
-      />
-    </>
+    {alreadyRated ? 
+    <Card variant="reviewCard">
+      <Typography variant="body1" sx={{ textAlign: 'center', mb:0 }} paragraph>
+      Thanks for sharing your opinion!    
+            </Typography>
+
+        </Card>
+    
+    : <AddRatingCTA remedy={remedy} ratings={ratings}/>}
+      </>
   );
 }
 

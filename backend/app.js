@@ -3,28 +3,23 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const axios = require('axios');
 const cors = require('cors');
-const flash = require('connect-flash');
-const passport = require('passport');
 const LocalStrategy = require('passport-local');
+const dotenv = require('dotenv');
 
 const { symptomsModel } = require('./models');
-//const Medicals = require('./models/remedies');
-//const remedyRating = require('./models/ratings');
-//const User = require('./models/user');
-//const Ratings = require('./models/ratings');
-//const Symptoms = require('./models/symptoms');
+
 const catchAsynch = require('./utilities/catchAsynch');
 const { checkLogin } = require('./middleware');
 const { connect } = require('./database/database');
 
 const { remedies, auth, user } = require('./routes');
-//const remedies = require('./routes/remedies');
-//const auth = require('./routes/auth');
-//const user = require('./routes/user');
 
 
 
+const PORT = 7000;
 const app = express();
+dotenv.config();
+
 
 app.use('/remedies', remedies);
 app.use('', auth);
@@ -44,26 +39,9 @@ app.use(cors({
     optionsSuccessStatus: 200,
 }));
 
-
-//app.use(express.json());
-//app.use(session(sessionConfig));
-//app.use(flash());
-//app.use((req, res, next) => {
-//    res.locals.success = req.flash('success');
-//    res.locals.error = req.flash('error');
-//    next();
-//})
-//app.use(passport.initialize())
-//app.use(passport.session())
-//passport.use(new LocalStrategy(User.authenticate()));
-
-//passport.serializeUser(User.serializeUser());
-//passport.deserializeUser(User.deserializeUser());
-
 //get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const body = req.query.symptomsUser;
-    console.log(req.query.symptomsUser)
     const responseDS = await axios({
         method: 'POST',
         url: 'http://127.0.0.1:8000/remedies/query',
@@ -76,10 +54,6 @@ app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
         }
     }
     )
-
-
-
-
     const response = responseDS.data.map(remedyItem => {
         return {
             remedyName: remedyItem.remedyName,
@@ -115,6 +89,6 @@ app.get('/getSymptoms', catchAsynch(async (req, res) => {
 
 
 
-app.listen(7000, () => {
+app.listen(PORT, () => {
     console.log("serving on port 7000")
 })

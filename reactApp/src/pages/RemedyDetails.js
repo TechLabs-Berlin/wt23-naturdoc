@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 // data
 import getRemedy from "data/getRemedy";
-import getUserRatings from "data/getUserRatings";
+import getRatings from "data/getRatings";
 // components
 import RemedyAccordion from "components/remedy/RemedyAccordion";
 import RemedyRating from "components/remedy/RemedyRating";
@@ -11,7 +11,7 @@ import RatingList from "components/ratings/RatingList";
 import LayoutHOC from "components/layouts/LayoutHOC";
 import AddRating from "components/ratings/AddRating";
 // material-ui
-import { useMediaQuery, useTheme, CardMedia, Box, IconButton, Typography } from "@mui/material";
+import { useMediaQuery, useTheme, CardMedia, Box, IconButton, Typography, Alert } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
 function RemedyDetails() {
@@ -29,7 +29,7 @@ function RemedyDetails() {
 
   useEffect(() => {
     console.log("useEffect", id);
-    getUserRatings(id).then((response) => {
+    getRatings(id).then((response) => {
       setRatings(response);
     });
   }, [id]);
@@ -68,7 +68,7 @@ function RemedyDetails() {
           />
         </Box>
 
-        <Box component="div" sx={{ p: 2, pt: -2 }}>
+        <Box component="div" sx={{ p: 2 }}>
           <Box component="div">
             <Typography variant="remedyTitle" component="h1">
               {remedy.remedyName}
@@ -86,12 +86,14 @@ function RemedyDetails() {
               <RemedyRating remedy={remedy} />
             )}
 
+            {/* COMMENING OUT TO MATCH UX LATESTS CHANGES
             <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
               {remedy.medicinalUses ? "Recommended use for:" : " "}
-            </Typography>
+            </Typography> 
             <Typography variant="body2" sx={{ fontWeight: "600" }}>
               {formatString(remedy.medicinalUses)}
             </Typography>
+            */}
           </Box>
 
           <Box component="div" sx={{ py: 2 }}>
@@ -118,7 +120,15 @@ function RemedyDetails() {
             <RemedyAccordion
               remedy={remedy}
               accordionSummary={"Uses in Folk Medicine"}
-              accordionDetails={remedy.treatmentFolk}
+              accordionDetails=
+                {remedy.treatmentFolk ?
+                (<>
+                {remedy.treatmentFolk}
+                <Alert component="span" variant="outlined" severity="warning" sx={{mt:4 }}>
+                "Folk Medicine" is not supported by scientific data. Please be extra careful regarding the suggested use. If you are unsure, talk to a doctor about it
+                </Alert>
+                </>)
+                : (null)} 
             />
             <RemedyAccordion
               remedy={remedy}
@@ -142,7 +152,7 @@ function RemedyDetails() {
             />
           </Box>
 
-          <Box component="div">
+          <Box component="div" sx={{mt: 2}} id="ratings-section">
             <AddRating remedy={remedy} ratings={ratings}  handleClickOpen />
           </Box>
           <RatingList ratings={ratings} />
@@ -154,7 +164,7 @@ function RemedyDetails() {
         open={open}
         handleClose={handleClose}
         fullScreen={fullScreen}
-      />
+      /> 
     </>
   );
 }

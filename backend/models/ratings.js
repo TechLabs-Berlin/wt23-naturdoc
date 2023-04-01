@@ -17,7 +17,7 @@ const RatingsSchema = new Schema({
     reviewDescription: String,
     reviewName: String,
     remedyName: String
-});
+}, {timestamps: true});
 
 module.exports = mongoose.model('Rating', RatingsSchema);
 

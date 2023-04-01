@@ -19,6 +19,9 @@ const RemediesSchema = new Schema({
                 type: Schema.Types.ObjectId,
                 ref: 'Rating'
             },
+        },
+        {
+            timestamps: true
         }
     ],
     ratingAverage: Number,
