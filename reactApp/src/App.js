@@ -17,7 +17,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/search" element={<Search />}></Route>
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/signup" element={<SignUp />}></Route>
