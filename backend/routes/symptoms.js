@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
 const cors = require('cors');
-const { userController } = require('../controllers');
+
+const { symptomsController } = require('../controllers');
+
+router.use(express.json());
 
 router.use(cors({
     origin: 'http://localhost:3000',
@@ -11,13 +13,7 @@ router.use(cors({
     optionsSuccessStatus: 200,
 }));
 
-
-router.use(express.json());
-
-//get a user
-router.get('/', userController.getUser);
-
-//get a user's favorite remmedies
-router.get('/:id/favorites', userController.getFavorites);
+//get all symptoms
+router.get('/getSymptoms', symptomsController.getSymptoms);
 
 module.exports = router;
