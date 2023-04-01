@@ -42,7 +42,6 @@ app.use(cors({
 //get remedy recommendation
 app.get('/getRemedyRecommendation', catchAsynch(async (req, res) => {
     const body = req.query.symptomsUser;
-    console.log(req.query.symptomsUser)
     const responseDS = await axios({
         method: 'POST',
         url: 'http://127.0.0.1:8000/remedies/query',
