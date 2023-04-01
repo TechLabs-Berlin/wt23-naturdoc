@@ -10,7 +10,7 @@ function RemedyAccordion(remedy, accordionSummary, accordionDetails) {
       {remedy.accordionDetails === null ? (
         " "
       ) : (
-        <Accordion defaultExpanded>
+        <Accordion /* UXCHANGES defaultExpanded */>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -21,7 +21,7 @@ function RemedyAccordion(remedy, accordionSummary, accordionDetails) {
             </Typography>
           </AccordionSummary>
           <AccordionDetails sx={{ wordWrap: "break-word", pt: 2 }}>
-            <Typography>{remedy.accordionDetails}</Typography>
+            <Typography component="span">{remedy.accordionDetails}</Typography>
           </AccordionDetails>
         </Accordion>
       )}
