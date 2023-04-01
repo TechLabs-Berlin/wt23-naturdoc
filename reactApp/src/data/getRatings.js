@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getUserRatings = async (term) => {
+const getRatings = async (term) => {
   try {
     const response = await axios.get(
       `http://localhost:7000/remedies/${term}/ratings`
@@ -13,4 +13,4 @@ const getUserRatings = async (term) => {
   }
 };
 
-export default getUserRatings;
+export default getRatings;
