@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 // data
 import getRemedy from "data/getRemedy";
-import getUserRatings from "data/getUserRatings";
+import getRatings from "data/getRatings";
 // components
 import RemedyAccordion from "components/remedy/RemedyAccordion";
 import RemedyRating from "components/remedy/RemedyRating";
@@ -29,7 +29,7 @@ function RemedyDetails() {
 
   useEffect(() => {
     console.log("useEffect", id);
-    getUserRatings(id).then((response) => {
+    getRatings(id).then((response) => {
       setRatings(response);
     });
   }, [id]);
