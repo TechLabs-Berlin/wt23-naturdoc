@@ -3,8 +3,8 @@ import {  Box, Typography } from "@mui/material";
 
 function RatingList({ ratings }) {
 
-  const orderedRatings = ratings.updated_at ? ratings.slice().sort((a, b) => b.updated_at.localeCompare(a.updated_at))
-    : ratings;
+
+  const orderedRatings = ratings.slice().sort((a, b) => b.updated_at.localeCompare(a.updated_at));
     
   const renderedRatings = orderedRatings.map((rating) => {
     return <RatingShow key={rating.ratingId} rating={rating} />;
