@@ -68,7 +68,6 @@ const RemedyRating = ({ remedy, summary }) => {
                                 value={remedy.ratingAverage}
                             />
                             <Box component={'div'} sx={{ fontSize: 14 }}>
-                                {/* [BUG] Ask Soma: how to anchor link dynamic URL?] */}
                                 <Link
                                     component={Link}
                                     smooth
