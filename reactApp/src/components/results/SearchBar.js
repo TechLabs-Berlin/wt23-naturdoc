@@ -37,6 +37,7 @@ function SearchBar({ onChange }) {
           getOptionLabel={(option) => option.symptomName}
           filterSelectedOptions
           autoComplete
+          openOnFocus
           autoSelect
           autoHighlight
           // tagSizeSmall
