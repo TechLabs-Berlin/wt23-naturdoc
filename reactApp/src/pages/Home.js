@@ -77,7 +77,7 @@ const Home = () => {
             paragraph
             sx={{ mb: 7 }}
           >
-            Here you can find natural remedies from different medical traditions
+            Find natural remedies from different medical traditions
           </Typography>
           <CardActionArea
             component={Link}
