@@ -198,6 +198,7 @@ const theme = createTheme({
                 root: {
                     width: '25%',
                     marginTop: '32px',
+                    marginBottom: '32px',
                 },
             },
             variants: [
