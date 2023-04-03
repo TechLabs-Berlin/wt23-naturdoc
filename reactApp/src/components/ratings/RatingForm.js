@@ -72,12 +72,11 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
             <Dialog open={open} onClose={handleClose} fullScreen={fullScreen}>
                 <form>
                     <DialogTitle>
-                        Share your experience with using {remedy.remedyName}
+                        Share your experience about {remedy.remedyName}
                     </DialogTitle>
                     <DialogContent>
                         <DialogContentText>
-                            Your experience matters! Here comes some text about
-                            why you should review the remedy.
+                            Your experience matters! Tell us what you think!
                         </DialogContentText>
                         <Box sx={{ display: 'flex', mx: 0, my: 4 }}>
                             <Rating
@@ -120,9 +119,9 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
                             rows={3}
                         />
                     </DialogContent>
-                    <DialogActions>
-                        <Button onClick={handleClose}>Cancel</Button>
-                        <Button onClick={handleSubmit}>Submit</Button>
+                    <DialogActions sx={{py:4, px:3 }}>
+                        <Button onClick={handleClose} variant="outlined">Cancel</Button>
+                        <Button onClick={handleSubmit} variant="contained">Submit</Button>
                     </DialogActions>
                 </form>
             </Dialog>

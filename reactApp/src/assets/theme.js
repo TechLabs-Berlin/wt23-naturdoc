@@ -14,7 +14,7 @@ const secondaryFont = [
     'sans-serif',
 ].join(',');
 
-const primaryTextColor = '#333333';
+const primaryTextColor = '#222222';
 
 const theme = createTheme({
     palette: {
@@ -61,8 +61,8 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     margin: 'auto',
-                    padding: 8, 
-                    backgroundColor:"#ffffff"
+                    padding: 8,
+                    backgroundColor: '#ffffff',
                 },
             },
         },
@@ -87,6 +87,54 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     fontFamily: secondaryFont,
+                },
+            },
+            variants: [
+                {
+                    props: { variant: 'authenticationButton' },
+                    style: {
+                        backgroundColor: primaryColor,
+                        padding: '12px 16px',
+                        margin: '24px 0',
+                        color: '#ffffff',
+                        fontSize: '1.3rem',
+                        fontFamily: primaryFont,
+                        fontWeight: 100,
+                        borderRadius: '10px',
+                        '&:hover': {
+                            backgroundColor: "#104028",
+                        },
+                    }, 
+                },
+                {
+                    props: { variant: 'authenticationButtonAlt' },
+                    style: {
+                        backgroundColor: primaryColorLight,
+                        padding: '12px 16px',
+                        marginTop: '0',
+                        color: '#ffffff',
+                        fontSize: '1.3rem',
+                        fontFamily: primaryFont,
+                        fontWeight: 100,
+                        borderRadius: '10px',
+                        textDecoration: 'none',
+                        '&:hover': {
+                            backgroundColor: primaryColor,
+                        },
+                    }, 
+                },
+            ],
+        },
+        MuiFormControlLabel: {
+            styleOverrides: {
+                root: {
+                    marginRight: 0,
+                },
+                label: {
+                    fontSize: '0.85rem',
+                    fontFamily: secondaryFont,
+                    fontWeight: 100,
+                    margin: '12px 0',
                 },
             },
         },
@@ -137,8 +185,8 @@ const theme = createTheme({
                     backgroundColor: '#ffffff',
                 },
                 reviewCard: {
-                    marginTop: 32,
-                    padding: '32px 16px',
+                    marginTop: 16,
+                    padding: '24px 16px',
                     border: '1px solid',
                     borderColor: primaryColor,
                     borderRadius: '4px',
@@ -149,7 +197,33 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     width: '25%',
-                    margin: '16px 0',
+                    marginTop: '32px',
+                },
+            },
+            variants: [
+                {
+                    props: { variant: 'authenticationDivider' },
+                    style: {
+                        width: '100%',
+                        margin: '32px 0 16px',
+                        color: primaryColor,
+                        fontFamily: primaryFont,
+                        fontSize: '0.85rem',
+                        '&::before, &::after' : {
+                            borderTop: '1px solid',
+                            borderColor: primaryColor,
+                        },
+                    },
+                },
+            ],
+        },
+        MuiAccordion: {
+            styleOverrides: {
+                root: {
+                    boxShadow: 'none',
+                    '&::before': {
+                        backgroundColor: '#ffffff',
+                    },
                 },
             },
         },
@@ -157,7 +231,20 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     backgroundColor: secondaryColorLight,
+                    borderRadius: '5px',
                 },
+                expandIconWrapper: {
+                    color: primaryColor,
+                },
+            },
+        },
+        MuiCollapse: {
+            styleOverrides: {
+                root: {
+                    background:
+                        'linear-gradient(180deg, rgba(234,230,180,1) 0%, rgba(234,230,180,0.8) 10%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%)',
+                    marginTop: '-5px',
+                    },
             },
         },
         MuiAutocomplete: {
@@ -187,6 +274,13 @@ const theme = createTheme({
                     WebkitLineClamp: '3',
                     WebkitBoxOrient: 'vertical',
                     overflow: 'hidden',
+                },
+            },
+        },
+        MuiTextField: {
+            styleOverrides: {
+                root: {
+                    marginTop: '8px',
                 },
             },
         },
@@ -222,6 +316,20 @@ const theme = createTheme({
         reviewBody: {
             fontSize: '0.95rem',
             color: primaryTextColor,
+        },
+        authenticationTitle: {
+            fontFamily: secondaryFont,
+            color: primaryColor,
+            fontWeight: 400,
+            fontSize: '1.2rem',
+            textTransform: 'uppercase',
+        },
+        authenticationLink: {
+            fontFamily: primaryFont,
+            color: primaryColor,
+            fontSize: '1rem',
+            fontWeight: 400,
+            textDecoration: 'none',
         },
         fontFamily: primaryFont,
     },

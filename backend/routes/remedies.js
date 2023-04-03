@@ -1,18 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const session = require('express-session');
-const mongoose = require('mongoose');
-const axios = require('axios');
 const cors = require('cors');
-const flash = require('connect-flash');
-const passport = require('passport');
-const LocalStrategy = require('passport-local')
 
-const { ratingsModel, remediesModel, userModel } = require('../models');
-
-const catchAsynch = require('../utilities/catchAsynch');
-const { checkLogin } = require('../middleware');
-const { connect } = require('../database/database');
+const { remedyController } = require('../controllers');
 
 router.use(express.json());
 
@@ -23,299 +13,28 @@ router.use(cors({
     optionsSuccessStatus: 200,
 }));
 
-const sessionConfig = {
-    secret: 'testing',
-    resave: false,
-    saveUninitialized: true,
-    cookie: {
-        expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-        maxAge: 1000 * 60 * 60 * 24 * 7,
-        httpOnly: true
-    }
-}
-
-router.use(session(sessionConfig));
-router.use(flash());
-router.use((req, res, next) => {
-    res.locals.success = req.flash('success');
-    res.locals.error = req.flash('error');
-    next();
-});
-router.use(passport.initialize())
-router.use(passport.session())
-passport.use(new LocalStrategy(userModel.authenticate()));
-
-passport.serializeUser(userModel.serializeUser());
-passport.deserializeUser(userModel.deserializeUser());
-
-
 //get all remedies
-router.get('/', catchAsynch(async (req, res) => {
-    const remedies = await remediesModel.find({});
-    return res.status(200).send(remedies);
-}));
-
+router.get('/', remedyController.getAllRemedies);
 
 //get a single remedy by id
-router.get('/:id', catchAsynch(async (req, res) => {
-    const remedies = await remediesModel.findById(req.params.id);
-    //console.log(remedies);
-    const response = {
-        remedyName: remedies.remedyName,
-        symptomsMatched: remedies.symptomsMatched,
-        ratingAverage: remedies.ratingAverage,
-        totalNumberofRatings: remedies.totalNumberofRatings,
-        commonNames: remedies.commonNames,
-        iconReference: remedies.iconReference,
-        medicinalUses: remedies.medicinalUses,
-        treatmentClinical: remedies.treatmentClinical,
-        treatmentTraditional: remedies.treatmentTraditional,
-        treatmentFolk: remedies.treatmentFolk,
-        contraindication: remedies.contraindication,
-        warnings: remedies.warnings,
-        adverseEffects: remedies.adverseEffects,
-        posology: remedies.posology,
-        doctorAlert: remedies.doctorAlert,
-        _id: remedies._id
-    }
-    console.log(response)
-
-    return res.status(200).send(response);
-}));
-
+router.get('/:id', remedyController.getRemedyById);
 
 //get all ratings for a remmedy
-//router.get('/:id/ratings', catchAsynch(async (req, res) => {
-
-//    const ratings = await remediesModel.findById(req.params.id);
-//    const response = {
-//        ratings: ratings.ratings,
-//        remedyName: ratings.remedyName,
-//        _id: ratings._id
-//    }
-//    console.log(response)
-
-//    return res.status(200).send(response);
-//}));
-
-
-//get all ratings for a remmedy
-router.get('/:id/ratings', catchAsynch(async (req, res) => {
-
-    const ratings = await ratingsModel.find({ remedyId: req.params.id });
-    return res.status(200).send(ratings);
-}));
-
-
+router.get('/:id/ratings', remedyController.getAllRatingsPerRemedy);
 
 //get the rating of a certain user for a remedy
-router.get('/:id/ratingsPerUser', catchAsynch(async (req, res) => {
-    const userTest = "6420450b3d25951c719ec768";
-    const { id } = req.params;
-    const remedyName = await remediesModel.findById(id);
-    console.log(remedyName.remedyName);
-    const ratings = await ratingsModel.findOne({ remedyId: id, userId: userTest });
-    console.log(ratings.ratingValue);
-    const response = {
-        ratingValue: ratings.ratingValue,
-        remedyName: remedyName.remedyName,
-        _id: ratings.remedyId,
-        reviewDescription: ratings.reviewDescription,
-        reviewName: ratings.reviewName,
-        userId: ratings.userId,
-        ratingId: ratings._id
-    }
-    console.log(response)
-
-    return res.status(200).send(response);
-}));
-
-
-
+router.get('/:id/ratingsPerUser', remedyController.ratingsPerRemedyPerUser);
 
 //add the rating for a single remedy
-router.put('/:id', catchAsynch(async (req, res) => {
-    //const ratingId = new mongoose.Types.ObjectId;
-    console.log('*******');
-    console.log(req.body);
-    console.log(req.user);
-
-    const { id } = req.params //req.params;
-    const { ratingValue, reviewName, reviewDescription } = req.body.data;
-    const userTest = "641ed2ecf7892783bdacbeb9";
-    // const userTest = "6420450b3d25951c719ec768";
-
-    //UPDATE RATING MODEL: 
-    const product = await remediesModel.findById(id);
-    const newRating = await ratingsModel.findOneAndUpdate(
-        { remedyId: id, userId: userTest },
-        { ratingValue: ratingValue, reviewName: reviewName, reviewDescription: reviewDescription, remedyName: product.remedyName },
-        {
-            new: true,
-            upsert: true
-        }
-    );
-    console.log("RATINGID");
-    console.log(newRating.id);
-
-
-    //UPDATE USER MODEL:
-    try {
-        const user = await userModel.findById(userTest);
-        const alreadyRatedRemedy = user.ratings.find(
-            rating => rating.remedyId.toString() === id.toString()
-        );
-        if (alreadyRatedRemedy) {
-            const updateUser = await userModel.updateOne(
-                {
-                    ratings: { $elemMatch: alreadyRatedRemedy }
-                },
-                {
-                    $set: { "ratings.$.ratingValue": ratingValue }
-                },
-                {
-                    new: true
-                }
-
-            );
-            res.json(updateUser);
-        } else {
-            //find product and add rating
-            const rateRemedy = await userModel.findByIdAndUpdate(userTest, {
-                $push: {
-                    ratings: {
-                        ratingValue: ratingValue,
-                        userId: userTest,
-                        remedyId: id,
-                        reviewName: reviewName,
-                        reviewDescription: reviewDescription
-                    }
-                }
-            },
-                {
-                    new: true
-                }
-            );
-        }
-    } catch (error) {
-        throw new Error(error);
-    };
-
-
-
-
-    //UPDATE REMEDY MODEL:
-    try {
-        //find remedy by id:
-        const product = await remediesModel.findById(id);
-        //calculate new rating average
-        const remedyRatings = product.ratings;
-
-        console.log("-------");
-        const newRatingAverage = ((remedyRatings.length === 0) ? ratingValue : (remedyRatings.reduce((total, next) => total + next.ratingValue, 0) + ratingValue) / (remedyRatings.length + 1)).toFixed(2);
-        //check if remedy is already rated by current user
-        const alreadyRated = product.ratings.find(
-            rating => rating.userId.toString() === userTest.toString()
-        );
-
-        //if user already rated the product, update the rating value
-        if (alreadyRated) {
-            const updateRating = await remediesModel.updateOne(
-                {
-                    ratings: { $elemMatch: alreadyRated }
-                },
-                {
-                    $set: {
-                        "ratings.$.ratingValue": ratingValue,
-                        ratingAverage: ((remedyRatings.reduce((total, next) => total + next.ratingValue, 0) - alreadyRated.ratingValue + ratingValue) / remedyRatings.length).toFixed(2),
-                        reviewName: reviewName,
-                        reviewDescription: reviewDescription,
-                        ratingId: newRating.id
-                    }
-                },
-                {
-                    new: true
-                }
-
-            );
-            res.json(updateRating);
-
-
-            //if user did not rate the product yet, add a new rating value
-        } else {
-            //find product and add rating
-            const rateProduct = await remediesModel.findByIdAndUpdate(id, {
-                $push: {
-                    ratings: {
-                        ratingValue: ratingValue,
-                        userId: userTest,
-                        reviewName: reviewName,
-                        reviewDescription: reviewDescription,
-                        ratingId: newRating.id
-                    }
-                },
-                ratingAverage: newRatingAverage,
-                totalNumberofRatings: remedyRatings.length + 1
-            },
-                {
-                    new: true
-                }
-            );
-            res.json(rateProduct);
-
-        }
-    } catch (error) {
-        throw new Error(error);
-    }
-}));
+router.put('/:id', remedyController.ratingsPerRemedy);
 
 //delete a rating for a remedy
-router.delete('/:id', catchAsynch(async (req, res) => {
-    const { id } = req.params;
-    console.log(req.body);
-    const userId = "64151a880022f6c93207f2b9";
-    const deletedRating = await ratingsModel.deleteOne(
-        { remedyId: id, userId: userId });
-    return res.status(200).send(deletedRating);
-}));
-
+router.delete('/:id', remedyController.deleteRating);
 
 //save remedy as favorite:
-router.put('/:id/save', catchAsynch(async (req, res) => {
-    const { id } = req.params;
-    //const product = await remediesModel.findById(id);
-    const userTest = "64151b8670662285f3b36c13";
-    const saveFavorite = await userModel.findByIdAndUpdate(userTest, {
-        $push: {
-            favorites: {
-                remedyId: id
-            }
-        }
-    },
-        {
-            new: true
-        }
-    )
-    return res.status(200).send(saveFavorite);
-}));
+router.put('/:id/save', remedyController.saveAsFavorite);
 
-//save remedy as favorite:
-router.delete('/:id/save', catchAsynch(async (req, res) => {
-    const { id } = req.params;
-    //const product = await remediesModel.findById(id);
-    const userTest = "64151b8670662285f3b36c13";
-    const deleteFavorite = await userModel.findByIdAndUpdate(userTest, {
-        $pull: {
-            favorites: {
-                remedyId: id
-            }
-        }
-    },
-        {
-            new: true
-        }
-    )
-    return res.status(200).send(deleteFavorite);
-}));
+//delete remedy from favorites
+router.delete('/:id/save', remedyController.deleteFromFavorites);
 
 module.exports = router;

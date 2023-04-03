@@ -1,17 +1,11 @@
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
+import { Button, TextField, Box, Typography} from "@mui/material";
+import AuthHOC from "../layouts/AuthHOC";
 import { Link } from "react-router-dom";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import LayoutHOC from "components/layouts/LayoutHOC";
+
 
 function Login() {
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -22,77 +16,43 @@ function Login() {
   };
 
   return (
-    <>
-      <Container component="main" maxWidth="xs">
-        <Box
-          sx={{
-            marginTop: 8,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign in
-          </Typography>
-          <Box
-            component="form"
-            onSubmit={handleSubmit}
-            noValidate
-            sx={{ mt: 1 }}
-          >
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Your Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Your Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign In
-            </Button>
-            <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link component={Link} to={"/signup"} variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-      </Container>
-    </>
+   <>
+    <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+     <TextField
+      label="Your Email"
+      margin="normal"
+      required
+      fullWidth
+      id="email"
+      name="email"
+      autoComplete="email"
+      autoFocus
+     />
+     <TextField
+      label="Your Password"
+      margin="normal"
+      required
+      fullWidth
+      name="password"
+      type="password"
+      id="password"
+      autoComplete="current-password"
+     />
+     <Button
+      type="submit"
+      fullWidth
+      variant="authenticationButton"
+     >
+      Sign In
+     </Button>
+     <Box sx={{ textAlign: 'center' }}>
+      <Link href="#">
+       <Typography variant="authenticationLink">Get a new password</Typography>
+      </Link>
+     </Box>
+    </Box>
+   </>
   );
 }
 
-export default LayoutHOC(Login);
+export default AuthHOC(Login);

@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Box, Rating, Typography } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const RemedyRating = ({ remedy, summary }) => {
     if (summary) {
@@ -42,7 +44,6 @@ const RemedyRating = ({ remedy, summary }) => {
                         display: 'flex',
                         justifyContent: 'flex-start',
                         alignItems: 'center',
-                        my: 2,
                     }}
                 >
                     <Typography sx={{ fontSize: 52 }}>
@@ -70,7 +71,8 @@ const RemedyRating = ({ remedy, summary }) => {
                                 {/* [BUG] Ask Soma: how to anchor link dynamic URL?] */}
                                 <Link
                                     component={Link}
-                                    to="/remedy/:{remedy.id}"
+                                    smooth
+                                    to={`/remedies/${remedy._id}#ratings-section`}
                                 >
                                     {' '}
                                     {remedy.totalNumberofRatings}
