@@ -4,7 +4,7 @@ import { Card, Box, Button, Typography } from "@mui/material/";
 import ChevronRight from "@mui/icons-material/ChevronRight";
 
 
-function AddRatingCTA({remedy, ratings}) {
+const AddRatingCTA = ({remedy, ratings}) => {
 
 const [openForm, setOpenForm] = useState(false);
 const [openCTA, setOpenCTA] = useState(true);

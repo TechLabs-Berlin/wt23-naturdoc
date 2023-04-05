@@ -1,12 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-// Pages
+// Routes
 import Home from "pages/Home";
 import Search from "pages/Search";
 import Login from "components/authentication/Login";
 import SignUp from "components/authentication/SignUp";
 import RemedyDetails from "pages/RemedyDetails";
 // Styles
-import "assets/App.css";
 import theme from "assets/theme";
 import { ThemeProvider } from "@mui/material";
 

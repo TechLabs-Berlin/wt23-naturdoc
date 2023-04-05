@@ -2,7 +2,7 @@ import ResultShow from "./ResultShow";
 import { Container, Box, Typography } from "@mui/material";
 import ResultShowSkeleton from "./ResultShowSkeleton";
 
-function ResultList({ remedies, loading }) {
+const ResultList = ({ remedies, loading }) => {
   const renderedRemedies = remedies.map((remedy) => {
     return <ResultShow key={remedy._id} remedy={remedy} loading={loading} />;
   });

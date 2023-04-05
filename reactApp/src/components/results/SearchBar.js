@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
-import { Paper, Container } from "@mui/material";
-import { TextField, Autocomplete } from "@mui/material";
+// dependencies
 import parse from "autosuggest-highlight/parse";
 import match from "autosuggest-highlight/match";
-
+// data
 import getSymptoms from "data/getSymptoms";
+// Material UI
+import { Paper, Container, TextField, Autocomplete  } from "@mui/material";
 
-function SearchBar({ onChange }) {
+
+
+const  SearchBar= ({ onChange }) => {
   const [options, setOptions] = useState([]);
 
   // get the complete list of symptoms from the API
@@ -34,13 +37,13 @@ function SearchBar({ onChange }) {
         <Autocomplete
           multiple
           options={options}
+          isOptionEqualToValue={(option, value) => option.symptomName === value.symptomName}
           getOptionLabel={(option) => option.symptomName}
           filterSelectedOptions
           autoComplete
           openOnFocus
           autoSelect
           autoHighlight
-          // tagSizeSmall
           clearOnBlur
           onChange={handleChange}
           renderOption={(props, option, { inputValue, selected }) => {

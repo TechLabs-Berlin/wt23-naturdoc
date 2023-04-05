@@ -1,12 +1,10 @@
-import { Skeleton } from "@mui/material";
-import { Card, CardContent, Box } from "@mui/material";
+import { Card, Skeleton, CardContent, Box } from "@mui/material";
 
-function ResultShowSkeleton() {
+const ResultShowSkeleton = () => {
   return (
     <>
       <Card sx={{ mb: 2 }}>
         <CardContent sx={{ display: "flex", justifyContent: "flex-start" }}>
-          {/* <Skeleton variant="rectangular" width={40} height={40} /> */}
           <Box
             sx={{
               display: "flex",

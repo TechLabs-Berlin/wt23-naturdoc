@@ -29,7 +29,7 @@ function getLabelText(value) {
     return `${value} Star${value !== 1 ? 's' : ''}, ${labels[value]}`;
 }
 
-function RatingForm({ remedy, open, handleClose }) {
+const RatingForm = ({ remedy, open, handleClose }) => {
     const [hover, setHover] = useState(-1);
 
     const [formValues, setFormValues] = useState({});

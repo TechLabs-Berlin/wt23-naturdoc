@@ -1,40 +1,41 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
 // data
 import getRemedy from "data/getRemedy";
 import getRatings from "data/getRatings";
 // components
+import RemedyCardMedia from "components/remedy/RemedyCardMedia";
+import RemedyHeader from "components/remedy/RemedyHeader";
 import RemedyAccordion from "components/remedy/RemedyAccordion";
-import RemedyRating from "components/remedy/RemedyRating";
+import AddRating from "components/ratings/AddRating";
 import RatingList from "components/ratings/RatingList";
 import LayoutHOC from "components/layouts/LayoutHOC";
-import AddRating from "components/ratings/AddRating";
 // material-ui
-import { CardMedia, Box, IconButton, Typography, Alert } from "@mui/material";
+import { Box, IconButton, Alert } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
-function RemedyDetails() {
+
+const RemedyDetails = () => {
   const { id } = useParams();
   const [remedy, setRemedy] = useState({});
   const [ratings, setRatings] = useState([]);
   let navigate = useNavigate();
 
+  // API call to get remedy details
   useEffect(() => {
-    console.log("useEffect", id);
     getRemedy(id).then((response) => {
       setRemedy(response);
     });
   }, [id]);
 
+  // API call to get ratings
   useEffect(() => {
-    console.log("useEffect", id);
     getRatings(id).then((response) => {
       setRatings(response);
     });
   }, [id]);
 
-
+  // Format string to display in accordion
   function formatString(contentMatched) {
     return contentMatched ? contentMatched.toString().replace(/,/g, ", ") : null;
   }
@@ -46,49 +47,13 @@ function RemedyDetails() {
                   <ChevronLeftIcon fontSize="large" />
               </IconButton>
           </Box>
-          {/* Remedy Image */}
-          <Box component="div" sx={{ position: 'relative', height: '194px' }}>
-              <CardMedia
-                  component="img"
-                  height="194"
-                  image="https://placehold.co/600x194"
-                  alt="Remedy image"
-                  sx={{ position: 'absolute' }}
-              />
-          </Box>
+
+          <RemedyCardMedia remedy={remedy} />
 
           <Box component="div" sx={{ p: 2 }}>
-              <Box component="div">
-                  <Typography variant="remedyTitle" component="h1">
-                      {remedy.remedyName}
-                  </Typography>
-                  {!remedy.ratingAverage ? (
-                      <Box component={'div'} sx={{ my: 2 }}>
-                          <Typography>
-                              No ratings yet.{' '}
-                              <Link
-                                  component={Link}
-                                  smooth
-                                  to={`/remedies/${remedy._id}#ratings-section`}
-                              >
-                                  Be the first to add one.
-                              </Link>
-                          </Typography>
-                      </Box>
-                  ) : (
-                      <RemedyRating remedy={remedy} />
-                  )}
+              <RemedyHeader remedy={remedy} />
 
-                  {/* COMMENING OUT TO MATCH UX LATESTS CHANGES
-            <Typography variant="body" sx={{ fontSize: "0.81rem" }}>
-              {remedy.medicinalUses ? "Recommended use for:" : " "}
-            </Typography> 
-            <Typography variant="body2" sx={{ fontWeight: "600" }}>
-              {formatString(remedy.medicinalUses)}
-            </Typography>
-            */}
-              </Box>
-
+              {/* Accordions to refactor */}
               <Box component="div" sx={{ py: 2 }}>
                   <RemedyAccordion
                       remedy={remedy}
@@ -154,9 +119,7 @@ function RemedyDetails() {
                   />
               </Box>
 
-              <Box component="div" sx={{ mt: 2 }} id="ratings-section">
-                  <AddRating remedy={remedy} ratings={ratings} />
-              </Box>
+              <AddRating remedy={remedy} ratings={ratings} />
               <RatingList ratings={ratings} />
           </Box>
       </>
