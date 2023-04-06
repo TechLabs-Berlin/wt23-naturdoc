@@ -7,30 +7,30 @@ import garlic from "assets/remedies/garlic.png";
 import turmeric from "assets/remedies/turmeric.png";
 import HomeRemediesContent from "./HomeRemediesContent";
 
-
-
+// As of 2023-04-06, the Data Science API does not have a way to filter by season, nor to retrieve a unique "common name for the remedy" (e.g. "rosemary" instead of "Rosmarinus officinalis").
+// Therefore, the data below is hard-coded.
 const season = "spring";
 
 const springRemedies = [
     {
       src: rosemary, 
       title: "Rosemary",
-      id: "641f60b3e7523a06fc0c0a20",
+      id: "64283e77746bfc1f34fe56cd",
     },
     {
       src: stingingNettle,
       title: "Stinging Nettle",
-      id: "641f60b3e7523a06fc0c2382",
+      id: "64283e77746bfc1f34fe702f",
     },
     {
       src: garlic,
       title: "Garlic",
-      id: "641f60b3e7523a06fc0bf4af",
+      id: "64283e77746bfc1f34fe415c",
     },
     {
       src: turmeric,
       title: "Turmeric",
-      id: "641f60b3e7523a06fc0c0085",
+      id: "64283e77746bfc1f34fe4d35",
     },
   ];
 
@@ -52,8 +52,10 @@ const HomeRemedies = () => {
                   spacing={3}
                   sx={{ py: 2, flexDirection: 'column' }}
               >
-                  {springRemedies.map((item, index) => (
-                      <Grid item key={index} xs={12} sm={12} md={12}>
+                  {springRemedies.map((item, index) => {
+                    const id = item.id;
+                        return (
+                      <Grid item key={id} xs={12} sm={12} md={12}>
                           {index % 2 === 0 ? (
                               <Card
                                   sx={{ display: 'flex', justifyContent: 'flex-start', }}
@@ -86,7 +88,8 @@ const HomeRemedies = () => {
                               </Card>
                           )}
                       </Grid>
-                  ))}
+                    );
+                  })}
               </Grid>
           </Container>
       </>

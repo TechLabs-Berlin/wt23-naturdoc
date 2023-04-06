@@ -7,8 +7,9 @@ const RatingList = ({ ratings }) => {
   const orderedRatings = ratings.slice().sort((a, b) => b.updated_at.localeCompare(a.updated_at));
     
   /* REFACTOR: do not use array index in key */
-  const renderedRatings = orderedRatings.map((rating, ratingId) => {
-    return <RatingShow key={ratingId} rating={rating} />;
+  const renderedRatings = orderedRatings.map((rating) => {
+    const id = rating.ratingId;
+    return <RatingShow key={id} rating={rating} />;
   });
 
   return (

@@ -11,8 +11,8 @@ import AddRating from "components/ratings/AddRating";
 import RatingList from "components/ratings/RatingList";
 import LayoutHOC from "components/layouts/LayoutHOC";
 // material-ui
-import { Box, IconButton, Alert } from "@mui/material";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import { Box, IconButton} from "@mui/material";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";;
 
 
 const RemedyDetails = () => {
@@ -35,11 +35,6 @@ const RemedyDetails = () => {
     });
   }, [id]);
 
-  // Format string to display in accordion
-  function formatString(contentMatched) {
-    return contentMatched ? contentMatched.toString().replace(/,/g, ", ") : null;
-  }
-
   return (
       <>
           <Box>
@@ -52,75 +47,9 @@ const RemedyDetails = () => {
 
           <Box component="div" sx={{ p: 2 }}>
               <RemedyHeader remedy={remedy} />
-
-              {/* Accordions to refactor */}
-              <Box component="div" sx={{ py: 2 }}>
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Other common names'}
-                      accordionDetails={formatString(remedy.commonNames)}
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Activities'}
-                      accordionDetails={formatString(remedy.medicinalUses)}
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Uses in Clinical Medicine'}
-                      accordionDetails={remedy.treatmentClinical}
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Uses in Traditional Medicine'}
-                      accordionDetails={remedy.treatmentTraditional}
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Uses in Folk Medicine'}
-                      accordionDetails={
-                          remedy.treatmentFolk ? (
-                              <>
-                                  {remedy.treatmentFolk}
-                                  <Alert
-                                      component="span"
-                                      variant="outlined"
-                                      severity="warning"
-                                      sx={{ mt: 4 }}
-                                  >
-                                      "Folk Medicine" is not supported by
-                                      scientific data. Please be extra careful
-                                      regarding the suggested use. If you are
-                                      unsure, talk to a doctor about it
-                                  </Alert>
-                              </>
-                          ) : null
-                      }
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Contraindications'}
-                      accordionDetails={remedy.contraindication}
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Warnings'}
-                      accordionDetails={remedy.warnings}
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Adverse Effects'}
-                      accordionDetails={remedy.adverseEffects}
-                  />
-                  <RemedyAccordion
-                      remedy={remedy}
-                      accordionSummary={'Posology / Dosage'}
-                      accordionDetails={remedy.posology}
-                  />
-              </Box>
-
+              <RemedyAccordion remedy={remedy} />
               <AddRating remedy={remedy} ratings={ratings} />
-              <RatingList ratings={ratings} />
+              <RatingList ratings={ratings} /> 
           </Box>
       </>
   );

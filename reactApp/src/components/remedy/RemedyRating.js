@@ -1,7 +1,7 @@
-// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+// Material UI
 import { Box, Rating, Typography } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
-import { HashLink as Link } from 'react-router-hash-link';
 
 
 const RemedyRating = ({ remedy, summary }) => {

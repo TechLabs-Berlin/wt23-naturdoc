@@ -1,15 +1,19 @@
+// components
 import ResultShow from "./ResultShow";
-import { Container, Box, Typography } from "@mui/material";
 import ResultShowSkeleton from "./ResultShowSkeleton";
+// material-ui
+import { Container, Box, Typography } from "@mui/material";
 
 const ResultList = ({ remedies, loading }) => {
   const renderedRemedies = remedies.map((remedy) => {
     return <ResultShow key={remedy._id} remedy={remedy} loading={loading} />;
   });
 
-  const renderedLoading = [...Array(5)].map((e, i) => (
-    <ResultShowSkeleton key={i} />
-  ));
+  const renderedLoading = [...Array(5)].map((e, i) => {
+    const id = i;
+    return (
+    <ResultShowSkeleton key={id} /> )
+  });
 
   return (
     <>
