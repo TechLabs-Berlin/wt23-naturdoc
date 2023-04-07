@@ -39,6 +39,63 @@ Naturdoc is ...
 ## Setup
 ##### Requirements: 
 
+### Setting Up The Correct .env File:
+To ensure that our credentials are not exposed on Github, we have set up a <code>.env</code> file containing necessary data to connect to our MongoDB Atlas database.
+
+The <code>.env</code> file contains data in the following format:
+```
+#MONGO CONFIG
+MONGO_URI=mongodb+srv://<user>:<password>@<cluster>.aj9zhtw.mongodb.net/?retryWrites=true&w=majority
+```
+Therefore, to be able to connect to the database, please contact members of the team to receive the necessary credentials.
+
+### Python Install:
+First, Python 3 needs to be installed. We used Python3.8 with FastAPI, so we recommended choosing the same version.
+
+* [Download Python for Windows](https://www.python.org/downloads/windows/) and [Installation Docs for Windows](https://docs.python.org/3.8/using/windows.html)
+* [Python for Mac](https://www.python.org/downloads/macos/) and [Installation Docs for Mac](https://docs.python.org/3.8/using/mac.html)
+
+### Clone Into The Git Repository:
+To clone and run this application, execute the following commands from your command line:
+
+1. Clone git repository
+```
+git clone https://github.com/TechLabs-Berlin/wt23-naturdoc.git
+```
+2. Move to new directory
+
+cd st22-ingredient-tracker
+
+3. Navigate to app folder
+
+cd app
+
+4. Navigate to client folder
+
+cd client
+
+5. Install local development dependencies
+
+npm i
+
+6. Start local development - Front End
+
+npm start
+
+7. Navigate to server folder
+
+cd ..
+
+cd server
+
+8. Install server dependencies
+
+npm i
+
+9. Start local server - Back End
+
+npm start
+
 ### 
 
 ### 
