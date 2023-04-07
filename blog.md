@@ -1,4 +1,5 @@
 # Naturedoc 
+![Logo](https://github.com/TechLabs-Berlin/wt23-naturdoc/blob/main/UX/logoNaturdoc.png)
 
 
 # UX-Process 
