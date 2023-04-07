@@ -75,7 +75,7 @@ cd app
 ```
 3. Navigate to the frontend folder
 ```
-cd reactApp (?)
+cd frontend
 ```
 4. Install frontend dependencies
 ```
@@ -85,7 +85,7 @@ npm i
 ```
 cd ..
 
-cd backend (?)
+cd backend
 ```
 6. Install backend dependencies
 ```
@@ -111,7 +111,7 @@ If there are several Python versions installed, users might have to specify the 
 ## Running
 1. Navigate to the frontend folder
 ```
-cd reactApp (?)
+cd frontend
 ```
 2. Start frontend
 ```
@@ -121,7 +121,7 @@ npm start
 ```
 cd ..
 
-cd backend (?)
+cd backend
 ```
 4. Start local server - Back End
 ```
