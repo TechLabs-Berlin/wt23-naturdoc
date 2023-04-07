@@ -6,3 +6,4 @@ View Figma board:
 
 https://www.figma.com/file/QJMhNE6KuCFElULrfowg3S/Naturdoc?node-id=0%3A1&t=XB1JTP7TfD2Uv2pt-1
 
+![all_Naturedoedesign](/home/luzie/Dokumente/nerd/techlabs/naturedoc/wt23-naturdoc/UX/Figma/all_Naturedoedesign.png)
