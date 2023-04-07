@@ -32,7 +32,7 @@ Naturdoc is ...
 
 ## Prototype
 
-[Link to video proto hee]
+[Link to video proto here]
 
 &nbsp;
 
