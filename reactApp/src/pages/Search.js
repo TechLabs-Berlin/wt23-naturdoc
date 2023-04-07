@@ -5,7 +5,7 @@ import LayoutHOC from "components/layouts/LayoutHOC";
 import SearchBar from "components/results/SearchBar";
 import ResultList from "components/results/ResultList";
 // Data
-import getRemedyRecommendation from "data/getRemedyRecommendation";
+import { getRemedyRecommendation } from "data/api";
 
 
 const Search = () => {

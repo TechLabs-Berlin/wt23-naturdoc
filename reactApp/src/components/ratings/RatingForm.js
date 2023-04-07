@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import putRating from 'data/putRating';
+import { putRating } from 'data/api';
 import {
     Box,
     Card,

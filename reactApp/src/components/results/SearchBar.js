@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import parse from "autosuggest-highlight/parse";
 import match from "autosuggest-highlight/match";
 // data
-import getSymptoms from "data/getSymptoms";
+import { getSymptoms } from "data/api";
 // Material UI
 import { Paper, Container, TextField, Autocomplete  } from "@mui/material";
 

@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 // data
-import getRemedy from "data/getRemedy";
-import getRatings from "data/getRatings";
-// components
+import { getRemedy, getRatings } from "data/api";
+// components 
 import RemedyCardMedia from "components/remedy/RemedyCardMedia";
 import RemedyHeader from "components/remedy/RemedyHeader";
 import RemedyAccordion from "components/remedy/RemedyAccordion";

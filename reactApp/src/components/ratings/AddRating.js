@@ -1,5 +1,5 @@
 import AddRatingCTA from "./AddRatingCTA";
-import getUsers from "data/getUsers";
+import { getUsers } from "data/api";
 import { Box, Card, Typography } from "@mui/material/";
 
 const AddRating = ({remedy, ratings}) => {
