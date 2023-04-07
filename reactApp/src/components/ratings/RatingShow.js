@@ -11,7 +11,7 @@ import {
 import CircleIcon from '@mui/icons-material/Circle';
 import TimeAgo from './TimeAgo';
 
-function RatingShow({ rating }) {
+const RatingShow = ({ rating }) => {
   return (
     <>
       <List>
@@ -41,6 +41,7 @@ function RatingShow({ rating }) {
                     name="read-only"
                     size="small"
                     readOnly
+                    precision={0.5}
                     icon={<CircleIcon fontSize="inherit" />}
                     emptyIcon={<CircleIcon fontSize="inherit" />}
                     value={rating.ratingValue}

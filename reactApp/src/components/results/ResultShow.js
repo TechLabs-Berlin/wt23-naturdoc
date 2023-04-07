@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-function ResultShow({ remedy }) {
+const ResultShow = ({ remedy }) => {
     return (
         <>
             <Card sx={{ my: 2 }} variant="resultCard">

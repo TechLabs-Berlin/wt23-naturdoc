@@ -1,7 +1,7 @@
 import BarNavBottom from "./BarNavBottom";
 import { Box, CssBaseline, Container } from "@mui/material";
 
-function LayoutHOC(WrappedComponent) {
+const LayoutHOC = (WrappedComponent) => {
   function WrapperComponent(props) {
     return (
       <>

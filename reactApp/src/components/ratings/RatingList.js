@@ -1,13 +1,15 @@
 import RatingShow from "./RatingShow";
 import {  Box, Typography } from "@mui/material";
 
-function RatingList({ ratings }) {
+const RatingList = ({ ratings }) => {
 
-  const orderedRatings = ratings.updated_at ? ratings.slice().sort((a, b) => b.updated_at.localeCompare(a.updated_at))
-    : ratings;
+
+  const orderedRatings = ratings.slice().sort((a, b) => b.updated_at.localeCompare(a.updated_at));
     
+  /* REFACTOR: do not use array index in key */
   const renderedRatings = orderedRatings.map((rating) => {
-    return <RatingShow key={rating.ratingId} rating={rating} />;
+    const id = rating.ratingId;
+    return <RatingShow key={id} rating={rating} />;
   });
 
   return (
