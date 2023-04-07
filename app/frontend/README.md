@@ -9,9 +9,9 @@ UI Framework [Material UI](https://mui.com/material-ui/).
 
 ## How to run
 
-1. Navigate to reactApp:
+1. Navigate to frontend project directory (frontend), run:
 
-### `cd reactApp`
+### `cd frontend`
 
 2. Intall dependencies, run:
 
@@ -35,9 +35,9 @@ For example, if terminal indicates that material UI is missing, your can run:
 // npm
 npm install @mui/material
 ```
+If any issue, with the installation and/or running React, please contact Rose on slack.
 
 5. API Endpoints
-   API Endpoints are located in the folder /data
+   API Endpoints are located in: data/api.js
 
-6. In case of difficulties connecting to the backend, you can still render the App by using a "fake testing API".
-   To do so, go into the .js file under /data, comment the code pointing to "localhost/7000..." and uncomment the code pointing to "https://my-json-server.typicode.com/rjeantet/server-mock/..."
+6. After installing and running the client side with React, you still need to run the server side in folder backend and the python script in DS.
