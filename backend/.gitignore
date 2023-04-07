@@ -1,5 +1,5 @@
 # ignore node_modules
-node-modules/
+node_modules/
 # ignore views directory
 views/
 
