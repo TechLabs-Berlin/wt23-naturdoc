@@ -1,7 +1,7 @@
 import {Button, TextField, FormControlLabel, Checkbox, Box } from "@mui/material";
 import AuthHOC from "components/layouts/AuthHOC";
 
-function SignUp() {
+const SignUp = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);

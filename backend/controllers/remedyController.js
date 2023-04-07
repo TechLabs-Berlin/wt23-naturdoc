@@ -3,6 +3,17 @@ const { remediesModel, ratingsModel, userModel} = require('../models');
 const mongoose = require('mongoose');
 const catchAsynch = require('../utilities/catchAsynch');
 
+// at the moment, we are hardcoding the user id until login is fully implemented. Please change the id here to test with a different user
+const userTest = "64297844df5a9bc1c56deb32";
+
+//User ids for our test users: 
+//Julio: 6429467b2c80d6e105dd286d
+//Elli: 64294d580fd1c97588893d3a
+//George: 6429466a2c80d6e105dd2869
+//Anna: 642946572c80d6e105dd2865
+// Eliséo: 64297844df5a9bc1c56deb32
+
+
 //get all remedies
 const getAllRemedies = catchAsynch(async (req, res) => {
     const remedies = await remediesModel.find({});
@@ -96,7 +107,7 @@ const getAllRatingsPerRemedy = catchAsynch(async (req, res) => {
 
 //get the rating of a certain user for a remedy
 const ratingsPerRemedyPerUser = catchAsynch(async (req, res) => {
-    const userTest = "6420450b3d25951c719ec768";
+   // const userTest = "6420450b3d25951c719ec768";
     const { id } = req.params;
     const remedyName = await remediesModel.findById(id);
     console.log(remedyName.remedyName);
@@ -125,7 +136,7 @@ const ratingsPerRemedy = catchAsynch(async (req, res) => {
     const { id } = req.params;
     const { ratingValue, reviewName, reviewDescription } = req.body.data;
     //const userTest = "641ed2ecf7892783bdacbeb9";
-    const userTest = "6420450b3d25951c719ec768";
+    //const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
     const product = await remediesModel.findById(id);

@@ -1,15 +1,12 @@
 import { useState } from 'react';
-import putRating from 'data/putRating';
+import { putRating } from 'data/api';
 import {
     Box,
+    Card,
     Rating,
     Button,
     TextField,
-    Dialog,
-    DialogActions,
-    DialogContent,
-    DialogContentText,
-    DialogTitle,
+    Typography
 } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
 
@@ -32,7 +29,7 @@ function getLabelText(value) {
     return `${value} Star${value !== 1 ? 's' : ''}, ${labels[value]}`;
 }
 
-function RatingForm({ remedy, open, handleClose, fullScreen }) {
+const RatingForm = ({ remedy, open, handleClose }) => {
     const [hover, setHover] = useState(-1);
 
     const [formValues, setFormValues] = useState({});
@@ -69,16 +66,16 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
 
     return (
         <>
-            <Dialog open={open} onClose={handleClose} fullScreen={fullScreen}>
-                <form>
-                    <DialogTitle>
-                        Share your experience about {remedy.remedyName}
-                    </DialogTitle>
-                    <DialogContent>
-                        <DialogContentText>
-                            Your experience matters! Tell us what you think!
-                        </DialogContentText>
-                        <Box sx={{ display: 'flex', mx: 0, my: 4 }}>
+            <Card variant="reviewCard" open={open} onClose={handleClose}>
+                <Typography
+                    variant="body1"
+                    sx={{ textAlign: 'center' }}
+                    paragraph
+                >Write a review
+                </Typography>
+                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <form>
+                        <Box sx={{ display: 'flex', mx: 0, my:2 }}>
                             <Rating
                                 max={5}
                                 precision={0.5}
@@ -118,13 +115,17 @@ function RatingForm({ remedy, open, handleClose, fullScreen }) {
                             onChange={handleTextFieldChange}
                             rows={3}
                         />
-                    </DialogContent>
-                    <DialogActions sx={{py:4, px:3 }}>
-                        <Button onClick={handleClose} variant="outlined">Cancel</Button>
-                        <Button onClick={handleSubmit} variant="contained">Submit</Button>
-                    </DialogActions>
-                </form>
-            </Dialog>
+                        <Box sx={{ py: 2, px: 0, display:"flex", justifyContent: "flex-end" }}>
+                            <Button onClick={handleClose} variant="outlined" sx={{mr: 2}}>
+                                Cancel
+                            </Button>
+                            <Button onClick={handleSubmit} variant="contained">
+                                Submit
+                            </Button>
+                        </Box>
+                    </form>
+                </Box>
+            </Card>
         </>
     );
 }
