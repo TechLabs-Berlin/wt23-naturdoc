@@ -3,7 +3,7 @@ import logo from "assets/logoNaturdoc.svg";
 import { Container, Box, Button, Typography, Divider, IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 
-function AuthHOC(WrappedComponent) {
+const AuthHOC = (WrappedComponent) => {
 
   const authType = WrappedComponent.name;
   const title = authType === "Login" ? "Login with your Naturedoc account" : "Create an Account";

@@ -102,9 +102,9 @@ const theme = createTheme({
                         fontWeight: 100,
                         borderRadius: '10px',
                         '&:hover': {
-                            backgroundColor: "#104028",
+                            backgroundColor: '#104028',
                         },
-                    }, 
+                    },
                 },
                 {
                     props: { variant: 'authenticationButtonAlt' },
@@ -121,7 +121,7 @@ const theme = createTheme({
                         '&:hover': {
                             backgroundColor: primaryColor,
                         },
-                    }, 
+                    },
                 },
             ],
         },
@@ -175,6 +175,18 @@ const theme = createTheme({
                 },
             },
         },
+        MuiCardMedia: {
+            variants: [
+                {
+                    props: { variant: 'homeRemedyImage' },
+                    style: {
+                        width: '170px',
+                        border: '1px solid #1d7147',
+                        borderRadius: '5px',
+                    },
+                },
+            ],
+        },
         MuiPaper: {
             styleOverrides: {
                 root: { marginBottom: '16px' },
@@ -198,6 +210,7 @@ const theme = createTheme({
                 root: {
                     width: '25%',
                     marginTop: '32px',
+                    marginBottom: '32px',
                 },
             },
             variants: [
@@ -209,7 +222,7 @@ const theme = createTheme({
                         color: primaryColor,
                         fontFamily: primaryFont,
                         fontSize: '0.85rem',
-                        '&::before, &::after' : {
+                        '&::before, &::after': {
                             borderTop: '1px solid',
                             borderColor: primaryColor,
                         },
@@ -244,7 +257,7 @@ const theme = createTheme({
                     background:
                         'linear-gradient(180deg, rgba(234,230,180,1) 0%, rgba(234,230,180,0.8) 10%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%)',
                     marginTop: '-5px',
-                    },
+                },
             },
         },
         MuiAutocomplete: {

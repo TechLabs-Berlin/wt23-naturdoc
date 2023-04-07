@@ -5,9 +5,8 @@ import LayoutHOC from "components/layouts/LayoutHOC";
 import SearchBar from "components/results/SearchBar";
 import ResultList from "components/results/ResultList";
 // Data
-import getRemedyRecommendation from "data/getRemedyRecommendation";
-// Styles
-import "assets/App.css";
+import { getRemedyRecommendation } from "data/api";
+
 
 const Search = () => {
   const [remedies, setRemedies] = useState([]);
@@ -17,7 +16,7 @@ const Search = () => {
     terms.length ? setLoading(true) : setLoading(false);
     const result = await getRemedyRecommendation(terms);
     const remediesToShow = result ? result.slice(0, 10) : [];
-    console.log("Do a search with selected symptom(s)", terms);
+    console.log("Selected symptom(s)", terms);
     if (!terms.length) {
       setRemedies([]);
       console.log("no data found");
@@ -25,7 +24,7 @@ const Search = () => {
       setRemedies(remediesToShow);
       setLoading(false);
     }
-    console.log("Display remedy recommendations:", remediesToShow);
+    console.log("Matching recommendations:", remediesToShow);
   };
   return (
     <>

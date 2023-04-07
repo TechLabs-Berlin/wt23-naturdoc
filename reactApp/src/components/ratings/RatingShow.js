@@ -11,7 +11,7 @@ import {
 import CircleIcon from '@mui/icons-material/Circle';
 import TimeAgo from './TimeAgo';
 
-function RatingShow({ rating }) {
+const RatingShow = ({ rating }) => {
   return (
     <>
       <List>

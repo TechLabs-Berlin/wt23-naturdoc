@@ -3,8 +3,7 @@ import AuthHOC from "../layouts/AuthHOC";
 import { Link } from "react-router-dom";
 
 
-function Login() {
-
+const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();

@@ -1,7 +1,7 @@
-// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+// Material UI
 import { Box, Rating, Typography } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
-import { HashLink as Link } from 'react-router-hash-link';
 
 
 const RemedyRating = ({ remedy, summary }) => {
@@ -68,7 +68,6 @@ const RemedyRating = ({ remedy, summary }) => {
                                 value={remedy.ratingAverage}
                             />
                             <Box component={'div'} sx={{ fontSize: 14 }}>
-                                {/* [BUG] Ask Soma: how to anchor link dynamic URL?] */}
                                 <Link
                                     component={Link}
                                     smooth

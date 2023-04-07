@@ -1,14 +1,13 @@
-import Paper from "@mui/material/Paper";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import BottomNavigation from "@mui/material/BottomNavigation";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+// Material UI
+import { Paper, BottomNavigation, BottomNavigationAction } from "@mui/material";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import { useEffect } from "react";
 
-export default function SimpleBottomNavigation() {
+
+const SimpleBottomNavigation = () => {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
@@ -64,3 +63,5 @@ export default function SimpleBottomNavigation() {
     </>
   );
 }
+
+export default SimpleBottomNavigation;
