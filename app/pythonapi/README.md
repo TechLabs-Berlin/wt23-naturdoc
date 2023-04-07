@@ -21,7 +21,7 @@ First, Python 3 needs to be installed. We used Python3.8 with FastAPI, so we rec
 * [Python for Mac](https://www.python.org/downloads/macos/) and [Installation Docs for Mac](https://docs.python.org/3.8/using/mac.html)
 
 ### Installing Python Dependencies:
-Once Python has been installed, run <code>pip install -r requirements.txt</code> in the root <code>/ds</code> folder (where the <code>requirements.txt</code> file is stored) to install all dependencies. If there are several Python versions installed, users might have to specify the version and run <code>python3.8 -m pip install -r requirements.text</code> instead.
+Once Python has been installed, run <code>pip install -r requirements.txt</code> in the <code>/app/pythonapi</code> folder (where the <code>requirements.txt</code> file is stored) to install all dependencies. If there are several Python versions installed, users might have to specify the version and run <code>python3.8 -m pip install -r requirements.text</code> instead.
 
 ### Starting Up Uvicorn Server:
-If all indicated dependencies were properly installed, execute <code>uvicorn main:app --reload</code> in the <code>/ds/src</code> folder (where <code>main.py</code> is located) to start the server.
+If all indicated dependencies were properly installed, execute <code>uvicorn main:app --reload</code> in the <code>/app/pythonapi</code> folder (where <code>main.py</code> is located) to start the server.
