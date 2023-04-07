@@ -50,58 +50,93 @@ MONGO_URI=mongodb+srv://<user>:<password>@<cluster>.aj9zhtw.mongodb.net/?retryWr
 Therefore, to be able to connect to the database, please contact members of the team to receive the necessary credentials.
 
 ### Python Install:
-First, Python 3 needs to be installed. We used Python3.8 with FastAPI, so we recommended choosing the same version.
+To receive remedy recommendation from the Data Science API, Python 3 needs to be installed. We used Python3.8 with FastAPI, so we recommended choosing the same version.
 
 * [Download Python for Windows](https://www.python.org/downloads/windows/) and [Installation Docs for Windows](https://docs.python.org/3.8/using/windows.html)
 * [Python for Mac](https://www.python.org/downloads/macos/) and [Installation Docs for Mac](https://docs.python.org/3.8/using/mac.html)
 
 ### Clone Into The Git Repository:
-To clone and run this application, execute the following commands from your command line:
+To pull this application to your local machine, execute the following commands from your command line:
 
-1. Clone git repository
 ```
 git clone https://github.com/TechLabs-Berlin/wt23-naturdoc.git
 ```
-2. Move to new directory
 
-cd st22-ingredient-tracker
+### Installing Necessary Dependencies:
+To install required dependencies for JavaScript and Python, execute the following commands from your command line:
 
-3. Navigate to app folder
-
+1. Move to the newly cloned project directory
+```
+cd wt23-naturdoc
+```
+2. Navigate to the app folder
+```
 cd app
-
-4. Navigate to client folder
-
-cd client
-
-5. Install local development dependencies
-
+```
+3. Navigate to the frontend folder
+```
+cd reactApp (?)
+```
+4. Install frontend dependencies
+```
 npm i
-
-6. Start local development - Front End
-
-npm start
-
-7. Navigate to server folder
-
+```
+5. Navigate to the backend folder
+```
 cd ..
 
-cd server
-
-8. Install server dependencies
-
+cd backend (?)
+```
+6. Install backend dependencies
+```
 npm i
+```
+7. Navigate to the Python API folder
+```
+cd ..
 
-9. Start local server - Back End
+cd remedy_api (?)
+```
+8. Install Python dependencies
+```
+pip install -r requirements.txt
+```
 
-npm start
+If there are several Python versions installed, users might have to specify the version and run <code>python3.8 -m pip install -r requirements.text</code> instead.
 
 ### 
 
 ### 
 
 ## Running
+1. Navigate to the frontend folder
+```
+cd reactApp (?)
+```
+2. Start frontend
+```
+npm start
+```
+1. Navigate to the backend folder
+```
+cd ..
 
+cd backend (?)
+```
+4. Start local server - Back End
+```
+npm start
+```
+5. Navigate to the Python API folder
+```
+cd ..
+
+cd remedy_api (?)
+```
+6. Start local server - FastAPI
+```
+uvicorn main:app --reload
+```
 
 ## Authors
 Data Science:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Aljoscha Beiers](https://github.com/alj-b) &nbsp;
