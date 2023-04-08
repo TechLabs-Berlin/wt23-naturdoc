@@ -25,14 +25,16 @@ const RemedyDetails = () => {
     getRemedy(id).then((response) => {
       setRemedy(response);
     });
-  }, [id]);
+    getRemedy(id)
+  }, );
 
   // API call to get ratings
   useEffect(() => {
     getRatings(id).then((response) => {
       setRatings(response);
     });
-  }, [id]);
+    getRatings(id)
+  }, );
 
   return (
       <>
