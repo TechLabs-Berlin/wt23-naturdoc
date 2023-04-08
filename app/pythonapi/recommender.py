@@ -18,7 +18,7 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     db = client.naturdoc
     collection = db.remedies
 
-    with open("../output/symptom_matches.json", 'r') as f:
+    with open("./data/symptom_matches.json", 'r') as f:
         symptom_matches = json.load(f)
 
     activities = list()
