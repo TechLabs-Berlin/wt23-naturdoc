@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { remedyTransition } from "assets/animations";
 // data
 import { getRemedy, getRatings } from "data/api";
 // components 
@@ -26,7 +28,7 @@ const RemedyDetails = () => {
       setRemedy(response);
     });
     getRemedy(id)
-  }, );
+  },[id] );
 
   // API call to get ratings
   useEffect(() => {
@@ -34,10 +36,15 @@ const RemedyDetails = () => {
       setRatings(response);
     });
     getRatings(id)
-  }, );
+  },[id] );
 
   return (
-      <>
+      <motion.div
+          initial="in"
+          animate="animate"
+          exit="out"
+          variants={remedyTransition}
+      >
           <Box>
               <IconButton variant="outlined" onClick={() => navigate(-1)}>
                   <ChevronLeftIcon fontSize="large" />
@@ -52,7 +59,7 @@ const RemedyDetails = () => {
               <AddRating remedy={remedy} ratings={ratings} />
               <RatingList ratings={ratings} /> 
           </Box>
-      </>
+      </motion.div>
   );
 }
 
