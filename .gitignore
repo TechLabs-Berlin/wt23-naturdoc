@@ -25,6 +25,7 @@ yarn-error.log*
 
 # hidden files and folders in the DS folder:
 
+app/pythonapi/.* 
 ds/.* 
 ds/data/DWCA/.* 
 ds/data/WCVP/.* 

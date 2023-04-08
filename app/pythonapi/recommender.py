@@ -18,7 +18,7 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
     db = client.naturdoc
     collection = db.remedies
 
-    with open("../output/symptom_matches.json", 'r') as f:
+    with open("./data/symptom_matches.json", 'r') as f:
         symptom_matches = json.load(f)
 
     activities = list()
@@ -186,8 +186,6 @@ def get_remedy_recommendation(symptoms: list, n_herbs: int):
             for symptom in symptoms:
                 try:
                     if bool(set(symptom_matches[symptom]) & set(remedy["activity_matches"])):
-                    # set(symptom_matches[symptom]).isdisjoint(remedy["activity_matches"]):
-                    # any(activity in symptom_matches[symptom] for activity in remedy["activity_matches"]):
                         json_response["symptomsMatched"].extend([symptom])
                 except:
                     pass
