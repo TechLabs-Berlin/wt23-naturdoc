@@ -19,31 +19,94 @@ We thought about our users and their needs. Additionally, we conducted a short s
 
 # Data Science
 
-## Steps
+ Early on, we established that the Naturedoc MVP required datasets containing information on symptoms and their possible treatments with natural remedies, particularly through the use of herbs. To that end, for the Data Science aspect of Naturedoc, we generally had to take care of the following tasks:
 
-1. Researching Datasets, databases and other sources of data. Limitations.
-2. Data Scraping, Manipulation, Cleaning. WHo and Pytrends.
-3. ML approach: no labels, clustering -> by the way of embeddings.
-4. Visualisation: visualise ML clusters, talk about issues of high dimension arrays, why other solution worked out better in the end.
+1. Researching Datasets
+2. Data Scraping, Manipulation and Cleaning
+3. Machine Learning
+4. Visualisation
+5. Python API and Recommendation Script
 
-### Researching Datasets
+## Researching Datasets
 
-### Scraping
+The initial pitch had already provided a couple datasets, however upon closer inspection we realised that they were difficult for us to use. Some of them were hidden behind a pay wall, others included a dataset of images to train models based on image recognition - which did not fit the scope of what Naturedoc needed from us, and we knew that we had to look for other datasets or find possible sources of scraping.
 
-### Machine Learning
+Out of the many different datasets we explored, [Dr. Duke's Phytochemical and Ethnobotanical Databases](https://catalog.data.gov/dataset/dr-dukes-phytochemical-and-ethnobotanical-databases-cecc0) became the solid backbone of our data project. This dataset obviously required further work: on the one hand, we had to extract the essence of what we needed for Naturedoc from its complex information. On the other hand, we also needed to supplement it with more data from other sources to better fit the vision of what we wanted Naturedoc to be.
 
-#### Word Embeddings
+To that end, we explored other sources of data, such as the [Plants of the World Online](https://powo.science.kew.org/) by the _Royal Botanic Gardens, Kew_, the [WHO monographs on selected medicinal plants](https://apps.who.int/iris/handle/10665/42052) and also considered ways to include Google Trends data into the project.
+
+## Data Scraping, Manipulation and Cleaning
+
+After these initial explorations of available datasetx
+s, we proceeded with necessary steps to extract, clean and manipulate the data we found to be able to provide a custom modified dataset, which would later form the basis of our remedy database on MongoDB Atlas.
+
+This work included pivoting dataframes, e.g. to group all uses for a single herb together in a list (instead of having unique herb and use pairings), removing nan values as well as certain columns altogether, as well as providing new columns for ratings etc. containing the appropriate datatype so that backend could modify their information once uploaded to the database.
+
+Extracting information from the WHO Monographs as well as trying to use the pytrends library presented particular challenges to us.
+
+Extracting text data from a PDF is a messy process, especially due to the formatting quirks of the original files. In the end, we decided to stop this extraction process after the first two monographs (out of four): we managed to extract more detailed information on treatments for about 70 or so herbs. We consider this as a good _proof of concept_ that worked well enough for the MVP - in our honest opinion, if we do want to have complex written information on how to prepare and ingest the herbs, all their medicinal uses and more, we should not rely on data scraped from elsewhere but base it on our own custom content. Not only do we have legal and ethical concerns about scraping others' intellectual property, but there simply were no sources of data that provided that kind of detailed, written information on more than a handful of herbs at a time, anyway.
+
+## Machine Learning
+
+We had trouble finding appropriate labels for our data, so a supervised machine learning approach seemed difficult to achieve. And while we already had a Python script in place that sent remedy recommendations to the backend, Naturedoc was faced with another Data Science problem, in that the "symptoms" that we initially provided by extracting the medicinal uses from Dr. Duke's dataset were... pretty awful:
+
+* The initial dataset provided a list of so called _ACTIVITIES_, paired with a single remedy. 
+* Activities were recorded in a specific format that was not very user-friendly and not how a human would freely input a symptom (e.g. head ache as “Ache(Head)”).
+* There were many similar, if not downright identical, labels (such as "Abortifacient", "Abortive", "Abortive?").
+* The activity column would not just describe symptoms treated, but also included other uses. A single activity could refer to:
+    * an illness, such as diabetes mellitus
+    * a singular symptom, such as fever
+    * a culinary use, such as spice
+
+With some guiding words from our mentor Rafael Saraiva, we then decided on an approach using unsupervised Clustering algorithms that would allow us to solve the symptom-problem as well:
+
+Using word embeddings, we generated a distance matrix and clustered both activities and a set of more user-friendly symptoms based on their semantic proximity, using both a custom Python script as well as HDBSCAN* (somewhat disappointingly, the best results were provided by our simple Python script that simply matched data points to one another based on a certain distance threshold, while HDBSCAN clustering produced less coherent matches).
+
+
+### Word Embeddings
 
 Word embeddings are a popular technique used in natural language processing to represent words or phrases as vectors of numerical values. Word embeddings are a type of language model that map words to numerical vectors in a high-dimensional space. These vectors capture the meaning and relationships between words, allowing algorithms to better understand natural language.
+
 Importance of word embeddings for better symptom-herb matching.
 improve the accuracy of our symptom-herb matching algorithm.---->can more accurately match symptoms with appropriate herbal remedies.
 allow us to make more accurate and effective symptom-herb matches, ultimately providing our users with more personalized and effective natural remedies.
-The model we used: 'average_word_embeddings_glove.840B.300d'. We used this model to generate embeddings for our dataset of symptoms .
-Steps:
-1.converting each symptom into an embedding vector
-2. compare and match them based on their semantic similarity in the embedding space.
+The model we used: 'average_word_embeddings_glove.840B.300d'. We used this model to generate embeddings for our dataset of symptoms.
 
-### Visualisations
+Steps:
+1. Converting each symptom into an embedding vector.
+2. Compare and match them based on their semantic similarity in the embedding space.
+
+## Visualisations
+
+Although the clustering results were maybe not as satisfying as we had hoped, they allowed us to make certain observations when visualising the data
+
+high dimensional complexity 
+
+We used TSNE to reduce 
+the multidimensional 
+embeddings array.
+ 
+Here, we can see all 
+symptoms and activities
+matched to their index in the array.
+
+We want to allow smaller clusters 
+to exist, to allow for a 
+finer matching.
+
+As a general reminder, this
+visualisation is merely a
+projection and its
+distances can be
+quite misleading.
+
+Looking at them, we can see their semantic proximity 
+
+: visualise ML clusters, talk about issues of high dimension arrays, why other solution worked out better in the end.
+
+## Python API and Recommendation Script
+
+Python API, work with Web Dev, align on terms etc.
 
 ## Our Challenges
 
