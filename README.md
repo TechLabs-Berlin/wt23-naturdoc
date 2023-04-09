@@ -35,7 +35,18 @@ Naturdoc is a M.E.R.N app that lets users find the best natural remedies to thei
 
 ## Prototype
 
-[Link to video proto here]
+<details>
+
+&nbsp;
+
+
+<summary>:eyes: Watch Demo</summary>
+
+![Demo](./images/naturdoc-demo.gif)
+
+</details>
+
+
 
 &nbsp;
 
