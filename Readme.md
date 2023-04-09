@@ -40,12 +40,14 @@ Naturdoc is ...
 ##### Requirements: 
 
 ### Setting Up The Correct .env File:
-To ensure that our credentials are not exposed on Github, we have set up a <code>.env</code> file containing necessary data to connect to our MongoDB Atlas database.
+To ensure that our credentials are not exposed on Github, we have set up a <code>.env</code> file containing necessary data to connect to our MongoDB Atlas database. 
+
+There needs to be a <code>.env</code> file in both the _backend_ as well as the _pythonapi_ folder.
 
 The <code>.env</code> file contains data in the following format:
 ```
 #MONGO CONFIG
-MONGO_URI=mongodb+srv://<user>:<password>@<cluster>.aj9zhtw.mongodb.net/?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<user>:<password>@<cluster>.aj9zhtw.mongodb.net/<user>?retryWrites=true&w=majority
 ```
 Therefore, to be able to connect to the database, please contact members of the team to receive the necessary credentials.
 
