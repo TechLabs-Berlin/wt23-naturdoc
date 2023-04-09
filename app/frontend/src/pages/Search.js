@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { motion } from "framer-motion";
+import { searchTransition } from "assets/animations";
 // Components
 import LayoutHOC from "components/layouts/LayoutHOC";
 import SearchBar from "components/results/SearchBar";
@@ -27,10 +28,17 @@ const Search = () => {
     console.log("Matching recommendations:", remediesToShow);
   };
   return (
-    <>
-      <SearchBar onChange={handleChange} />
-      {remedies ? <ResultList remedies={remedies} loading={loading} /> : null}
-    </>
+      <motion.div
+          initial="in"
+          animate="animate"
+          exit="out"
+          variants={searchTransition}
+      >
+          <SearchBar onChange={handleChange} />
+          {remedies ? (
+              <ResultList remedies={remedies} loading={loading} />
+          ) : null}
+      </motion.div>
   );
 };
 
