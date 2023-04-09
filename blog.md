@@ -298,9 +298,11 @@ This became more obvious when visualising the clusters identified by HDBSCAN*. W
 
 ![A 2D projection of all data points - lines connect clusters, red dots represent outliers](./images/symptom_cluster_lines_w-out.png)
 
-## Python API and Recommendation Script
+For example, the topmost cluster seems like it groups together very distant data entries, but upon closer inspection we realise that they deal with similar medicinal uses, specifically antidotes, repellants and preventives dealing with animal bites, stings and similar issues.
 
-Python API, work with Web Dev, align on terms etc.
+## Python API And Recommendation Script
+
+We also provided an endpoint that sends remedy recommendations in response to a list of symptoms, based on a range of filtering criteria. For now we wrote a script in regular Python, using Pymongo and FastAPI, to achieve this goal, but we believe that this could very well be replaced in the future with a ML -based recsys. The matches of symptoms to activities were essential in writing this first version of the recommendation script, however.
 
 ## Our Challenges
 
@@ -324,6 +326,8 @@ All in all we are happy with the results. We managed our time well and worked we
 ------------------------------------------
 
 # Aknowledgements
+
+# To Rafael
 
 <p style="text-align: justify;">
 We would like to express our sincerest gratitude and appreciation to our mentor Rafael for his unwavering support and invaluable guidance throughout our data science journey. 
