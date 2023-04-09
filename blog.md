@@ -162,14 +162,6 @@ We feel very satisfied as a young team for having been able to produce most of t
 &nbsp;
 &nbsp;
 
-## Special thanks
-
-This project was definitely a challenging journey. Communications between us, aligning our schedules, learning while coding, parallel work between the different tracks... So many roadblocks that also of course end up being learning and growing factors.
-
-All along this journey, we have been extremely lucky Christina and me, to be mentored by [Soma](https://github.com/somahargitai), who guided us with his experience, knowledge, and kindness, always showing a perfect mix of patience and leadership. 
-He did not just help us fix bugs, he made sure we understood why we had those bugs. He did not just tell us to better our code, he explained to us how and why. 
-Not only that, but he was always available to help and support us, even minutes before jumping on a plane, and Christina and I are extremely grateful for his support :gift_heart:
-
 
 **by [Rose](https://github.com/rjeantet)**
 
@@ -327,6 +319,10 @@ Python API, work with Web Dev, align on terms etc.
 # Summary 
 All in all we are happy with the results. We managed our time well and worked well together as a team. 
 
+
+
+------------------------------------------
+
 # Aknowledgements
 
 <p style="text-align: justify;">
@@ -339,3 +335,14 @@ Thank you, Rafael, for being an outstanding mentor and for always pushing us to 
 Sincerely,
 
 Anna and Aljoscha
+
+
+# To Soma
+
+This project was definitely a challenging journey. Communications between us, aligning our schedules, learning while coding, parallel work between the different tracks... So many roadblocks that also of course end up being learning and growing factors.
+
+All along this journey, we have been extremely lucky Christina and me, to be mentored by [Soma](https://github.com/somahargitai), who guided us with his experience, knowledge, and kindness, always showing a perfect mix of patience and leadership. 
+He did not just help us fix bugs, he made sure we understood why we had those bugs. He did not just tell us to better our code, he explained to us how and why. 
+Not only that, but he was always available to help and support us, even minutes before jumping on a plane, and Christina and I are extremely grateful for your support, Soma :gift_heart:
+
+Rose and Christina
