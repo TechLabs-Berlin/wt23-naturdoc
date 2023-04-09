@@ -10,8 +10,9 @@ Find natural remedies from different medical traditions
 
 <div align="center">
 
+![GitHub milestones](https://img.shields.io/github/milestones/all/TechLabs-Berlin/wt23-naturdoc?color=F2F2F2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/TechLabs-Berlin/wt23-naturdoc?color=62B096&style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/TechLabs-Berlin/wt23-naturdoc?color=1d7147&style=for-the-badge)
- ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/TechLabs-Berlin/wt23-naturdoc?color=EAE6B4&style=for-the-badge) ![GitHub milestones](https://img.shields.io/github/milestones/all/TechLabs-Berlin/wt23-naturdoc?color=F2F2F2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/TechLabs-Berlin/wt23-naturdoc?color=62B096&style=for-the-badge)
+ ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/TechLabs-Berlin/wt23-naturdoc?color=EAE6B4&style=for-the-badge) 
 
 </div>
 
@@ -29,7 +30,7 @@ Find natural remedies from different medical traditions
 
 ## About
 
-Naturdoc is a M.E.R.N app that lets users find the best natural remedies to their common symptoms, in two clicks only, thanks to a combination of data science research and user-generated reviews.</br> </br> With the help of Naturdoc, you can learn about the range of applications for each remedy, rate the remedy and exchange your experience in the comments with other users. </br> Our inbuilt doctor-alert is symptom based and notifies you when you should seek medical help.</br> </br>  We hope you get better soon!
+Naturdoc is a M.E.R.N app that lets users find the best natural remedies to their common symptoms, in two clicks only, thanks to a combination of data science research and user-generated reviews.</br> </br> With the help of Naturdoc, you can learn about the range of applications for each remedy, rate the remedy and exchange your experience in the comments with other users. Our inbuilt doctor-alert is symptom based and notifies you when you should seek medical help.</br> </br>  We hope you get better soon!
 
 &nbsp;
 
