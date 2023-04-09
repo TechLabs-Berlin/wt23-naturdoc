@@ -32,7 +32,7 @@ const  SearchBar= ({ onChange }) => {
   };
 
   return (
-    <Container sx={{ m: "16px auto" }} component="section" maxWidth="sm">
+    <Container sx={{ m: "24px auto" }} component="section" maxWidth="sm">
       <Paper component="article" sx={{ textAlign: "center" }}>
         <Autocomplete
           multiple
