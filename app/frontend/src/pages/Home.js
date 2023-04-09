@@ -20,16 +20,16 @@ const Home = () => {
           variants={homeTransition}
       >
           <Hero
-              title="Welcome to Naturdoc"
-              pyHero={{ pt: 4, pb: 2 }}
-              mtTitle={{ mt: 2 }}
+              title="Naturdoc"
+              pyHero={{ pt: 2, pb: 2 }}
+              mtTitle={{ my: 4}}
               subtitle="Find natural remedies from different medical traditions"
               subtitleColor="text.secondary"
           />
           <CardActionArea
               component={Link}
               to={`/search`}
-              sx={{ display: 'flex', py: 4 }}
+              sx={{ display: 'flex', py: 4, pt: 6, pb: 10 }}
           >
               <img src={searchButton} alt="Pick your symptoms" width="315" />
           </CardActionArea>

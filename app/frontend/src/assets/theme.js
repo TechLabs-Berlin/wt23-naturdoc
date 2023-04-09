@@ -201,7 +201,7 @@ const theme = createTheme({
                     padding: '24px 16px',
                     border: '1px solid',
                     borderColor: primaryColor,
-                    borderRadius: '4px',
+                    borderRadius: '15px',
                 },
             },
         },
@@ -313,9 +313,12 @@ const theme = createTheme({
         },
         resultCount: {
             fontFamily: primaryFont,
-            fontWeight: 300,
+            fontWeight: 400,
             color: primaryColor,
+            fontSize: '1.2rem',
             textTransform: 'uppercase',
+            display: "block",
+            marginBottom: "24px",
         },
         reviewTitle: {
             fontFamily: secondaryFont,
