@@ -7,9 +7,15 @@
 
 Naturdoc is a M.E.R.N app that lets users find the best natural remedies to their common symptoms, in two clicks only,</br> thanks to a combination of data science research and user-generated reviews.</br> </br> With the help of Naturdoc, you can learn about the range of applications for each remedy,</br>  rate the remedy and exchange your experience in the comments with other users. </br> Our inbuilt doctor-alert is symptom based and notifies you when you should seek medical help.</br> </br>  We hope you get better soon!
 </h5>
-<p align="center">
-[Badges here eventually, see https://shields.io/]
-</p>
+
+&nbsp;
+
+<div align="center">
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/TechLabs-Berlin/wt23-naturdoc?color=1d7147&style=for-the-badge)
+ ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/TechLabs-Berlin/wt23-naturdoc?color=EAE6B4&style=for-the-badge) ![GitHub milestones](https://img.shields.io/github/milestones/all/TechLabs-Berlin/wt23-naturdoc?color=F2F2F2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/TechLabs-Berlin/wt23-naturdoc?color=62B096&style=for-the-badge)
+
+</div>
 
 
 &nbsp;
