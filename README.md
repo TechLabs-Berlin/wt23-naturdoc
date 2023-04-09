@@ -23,7 +23,8 @@ Find natural remedies from different medical traditions
   <a href="#Prototype">Prototype</a>  |
   <a href="#Setup">Setup</a>  |
   <a href="#Running">Run</a>  |
-  <a href="#Authors">Authors</a>
+  <a href="#Authors">Authors</a>  |
+  <a href="#Mentors">Mentors</a>
 </h5>
 
 
