@@ -1,1 +1,5 @@
-Naturdoc is a M.E.R.N app that lets users find the best natural remedies to their common symptoms, in two clicks only, thanks to a combination of data science research and user-generated reviews. With the help of Naturdoc, you can learn about the range of applications for each remedy, rate the remedy and exchange your experience in the comments with other users. Our inbuilt doctor-alert is symptom based and notifies you when you should seek medical help. We hope you get better soon! 
+Naturdoc is a M.E.R.N app that lets users find the best natural remedies to their common symptoms, in two clicks only, thanks to a combination of data science research and user-generated reviews. 
+<br><br>
+With the help of Naturdoc, you can learn about the range of applications for each remedy, rate the remedy and exchange your experience in the comments with other users. Our inbuilt doctor-alert is symptom based and notifies you when you should seek medical help. 
+<br><br>
+We hope you get better soon! 
