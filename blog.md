@@ -27,6 +27,7 @@ We had a couple discussions about the possible project scope in the Naturedoc te
 
 We thought about our users and their needs. Additionally, we conducted a short survey. Since we did not have a lot of time to wait for the results of the survey, the participants are mostly acquaintances of ours and therefore very similar in their live situation, place of residence and opinions. 
 
+<img src="https://raw.githubusercontent.com/TechLabs-Berlin/wt23-naturdoc/main/UX/Figma/all_Naturedoedesign.png" width=700px>
 
 ## Our Challenges 
 - Building an easy user flow 

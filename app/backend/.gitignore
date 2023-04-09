@@ -1,0 +1,7 @@
+# ignore node_modules
+node_modules/
+# ignore views directory
+views/
+
+# ignore env file
+.env
