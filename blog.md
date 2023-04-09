@@ -239,6 +239,31 @@ Extracting information from the WHO Monographs as well as trying to use the pytr
 
 Extracting text data from a PDF is a messy process, especially due to the formatting quirks of the original files. In the end, we decided to stop this extraction process after the first two monographs (out of four): we managed to extract more detailed information on treatments for about 70 or so herbs. We consider this as a good _proof of concept_ that worked well enough for the MVP - in our honest opinion, if we do want to have complex written information on how to prepare and ingest the herbs, all their medicinal uses and more, we should not rely on data scraped from elsewhere but base it on our own custom content. Not only do we have legal and ethical concerns about scraping others' intellectual property, but there simply were no sources of data that provided that kind of detailed, written information on more than a handful of herbs at a time, anyway.
 
+## Pytrends
+
+<p style="text-align: justify;">
+Pytrends is a powerful Python library that enables us to extract Google Trends data. In Naturdoc, we utilized Pytrends to collect search data on different symptoms and herbs. This data helped us to better understand what users are searching for and to rank the most popular herbs for each symptom..Using Pytrends allowed us to identify the most effective remedies for each symptom. We believe that this approach will enable us to provide users with a more personalized and effective experience, making Naturdoc  a valuable resource for anyone seeking natural alternatives to traditional medicine.
+Process with Pytrends.</p>
+
+#### Process
+
+<p style="text-align: justify;">
+Our process with Pytrends involved using it to collect and analyze search data related to herbal remedies. We first had to install the library and import it into our Python environment. We then used the build_payload function to specify the search terms and time range for our data. For example, we may have specified search terms like "ginger tea" and "chamomile" over the past 12 months. Once we built our payload, we used the Interest Over Time function to retrieve the search interest data for those terms.</p>
+
+#### Achievement
+
+<p style="text-align: justify;">
+One of our major achievements with Pytrends was being able to use the search interest data to improve the ranking of herbal remedies in our app. We were able to identify which remedies were currently trending in popularity and adjust our rankings accordingly. For example, if ginger tea had a high search interest compared to chamomile, we may have boosted ginger tea's ranking in our app.</p>
+
+<p style="text-align: justify;">
+One design challenge we faced was ensuring that the search terms we used were representative of the remedies we were interested in. For example, we may have used the search term "chamomile tea" instead of just "chamomile" to more accurately reflect the remedy we were interested in.</p>
+
+#### Delivery
+
+<p style="text-align: justify;">
+In terms of delivery, we were able to successfully use Pytrends to gather and analyze search interest data for a wide range of herbal remedies (EMA Dataset). We were able to incorporate this data into our app to provide more relevant and up-to-date information about natural remedies.
+Overall, Pytrends was a valuable tool for our project and helped us to achieve our goals more effectively.</p>
+
 ## Machine Learning
 
 We initially had trouble identifying appropriate labels for our data, so a supervised machine learning approach seemed difficult to achieve. And while we already had a Python script in place that sent remedy recommendations to the backend, Naturedoc was faced with another Data Science problem, in that the "symptoms" that we initially provided were... pretty awful:
@@ -301,3 +326,16 @@ Python API, work with Web Dev, align on terms etc.
 
 # Summary 
 All in all we are happy with the results. We managed our time well and worked well together as a team. 
+
+# Aknowledgements
+
+<p style="text-align: justify;">
+We would like to express our sincerest gratitude and appreciation to our mentor Rafael for his unwavering support and invaluable guidance throughout our data science journey. 
+Rafael's expertise and dedication have been instrumental in helping us navigate complex data challenges and develop creative solutions that have greatly enhanced the quality and effectiveness of our app.
+We are deeply grateful for his patience, wisdom, and willingness to go above and beyond to ensure our success. His unwavering commitment to our growth and development has been a constant source of inspiration and motivation for us.
+
+Thank you, Rafael, for being an outstanding mentor and for always pushing us to reach our full potential. We are proud to have had the opportunity to learn from you, and we look forward to continuing our collaboration in the future.</p>
+
+Sincerely,
+
+Anna and Aljoscha
