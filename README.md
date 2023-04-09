@@ -1,11 +1,11 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/TechLabs-Berlin/wt23-naturdoc/main/UX/logoNaturdoc.png" width="140px">
+<img src="./images/logo-naturdoc.png" width="200px">
 </p>
 
 <h5 align="center">
 
+Find natural remedies from different medical traditions
 
-Naturdoc is a M.E.R.N app that lets users find the best natural remedies to their common symptoms, in two clicks only,</br> thanks to a combination of data science research and user-generated reviews.</br> </br> With the help of Naturdoc, you can learn about the range of applications for each remedy,</br>  rate the remedy and exchange your experience in the comments with other users. </br> Our inbuilt doctor-alert is symptom based and notifies you when you should seek medical help.</br> </br>  We hope you get better soon!
 </h5>
 
 &nbsp;
@@ -32,7 +32,7 @@ Naturdoc is a M.E.R.N app that lets users find the best natural remedies to thei
 
 ## About
 
-Naturdoc is ...
+Naturdoc is a M.E.R.N app that lets users find the best natural remedies to their common symptoms, in two clicks only,</br> thanks to a combination of data science research and user-generated reviews.</br> </br> With the help of Naturdoc, you can learn about the range of applications for each remedy,</br>  rate the remedy and exchange your experience in the comments with other users. </br> Our inbuilt doctor-alert is symptom based and notifies you when you should seek medical help.</br> </br>  We hope you get better soon!
 
 &nbsp;
 
