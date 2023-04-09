@@ -2,13 +2,11 @@
 <img src="./images/logo-naturdoc.png" width="200px">
 </p>
 
-<h5 align="center">
+<div align="center">
 
 Find natural remedies from different medical traditions
 
-</h5>
-
-&nbsp;
+</div>
 
 <div align="center">
 
@@ -16,7 +14,6 @@ Find natural remedies from different medical traditions
  ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/TechLabs-Berlin/wt23-naturdoc?color=EAE6B4&style=for-the-badge) ![GitHub milestones](https://img.shields.io/github/milestones/all/TechLabs-Berlin/wt23-naturdoc?color=F2F2F2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/TechLabs-Berlin/wt23-naturdoc?color=62B096&style=for-the-badge)
 
 </div>
-
 
 &nbsp;
 
@@ -28,7 +25,7 @@ Find natural remedies from different medical traditions
   <a href="#Authors">Authors</a>
 </h5>
 
-&nbsp;
+
 
 ## About
 
@@ -144,9 +141,9 @@ uvicorn main:app --reload
 &nbsp;
 
 ## Authors
-Data Science:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Aljoscha Beiers](https://github.com/alj-b) &nbsp;
+Data Science:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Aljoscha Beiers](https://github.com/alj-b) &nbsp;
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Anna Stergianou](https://github.com/annastergianou) &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Anna Stergianou](https://github.com/annastergianou) &nbsp;
 
 WD Frontend:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Rose Jeantet](https://github.com/rjeantet) &nbsp;
 
@@ -155,3 +152,13 @@ WD Backend:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Christina Dec
 User Experience:&nbsp;&nbsp;&nbsp; [Luzie](https://github.com/hotmail030) &nbsp;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Eugenia Lezcano](https://github.com/)
+
+&nbsp;
+&nbsp;
+
+## Mentors
+Data Science:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Rafael Saraiva](https://github.com/JumpingDino) &nbsp;
+
+Web Development:&nbsp;&nbsp; [Soma Hargitai](https://github.com/somahargitai) &nbsp;
+
+
