@@ -38,13 +38,17 @@ A user can only place one rating per remedy. If the user rates the remedy a seco
 Additionally, the remedy model stores the absolute number of ratings per remedy and the average rating.
 Several references are used between these models, for example getting the username from the user model when retrieving data from the ratings model.
 
-#### Example for a remedy item: 
+#### Example for a remedy item DB entry: 
 
-![Example DB entry](https://github.com/TechLabs-Berlin/wt23-naturdoc/blob/documentation/images/db_example.png)
+![Example DB remedy entry](https://github.com/TechLabs-Berlin/wt23-naturdoc/blob/documentation/images/db_example.png)
 
 Apart from that, I developed the possibility for users to save their favorite remedies / delete remedies from the list of favorite remedies. This feature is not yet used in our app.
 
-At the moment, we have not implemented the connection for user signup, login and logout between Frontend and backend. We are therefor hardcoding the user Id in the backend code as of now. 
+At the moment, we have not implemented the connection for user signup, login and logout between Frontend and backend. We are therefore hardcoding the user Id in the backend code as of now. 
+
+#### Example for a user item DB entry:
+
+![Example DB user entry](https://github.com/TechLabs-Berlin/wt23-naturdoc/blob/documentation/images/user_db_entry.png)
 
 
 # Data Science
