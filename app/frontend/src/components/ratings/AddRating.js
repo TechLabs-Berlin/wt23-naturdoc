@@ -21,7 +21,7 @@ console.log(alreadyRated ? "User already rated" : "Not rated by user")
                       </Typography>
                   </Card>
               ) : (
-                  <AddRatingCTA remedy={remedy} ratings={ratings} />
+                  <AddRatingCTA remedy={remedy} />
               )}
           </Box>
       </>

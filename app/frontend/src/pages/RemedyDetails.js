@@ -26,7 +26,6 @@ const RemedyDetails = () => {
     getRemedy(id).then((response) => {
       setRemedy(response);
     });
-    getRemedy(id)
   },[id] );
 
   // API call to get ratings
@@ -34,7 +33,6 @@ const RemedyDetails = () => {
     getRatings(id).then((response) => {
       setRatings(response);
     });
-    getRatings(id)
   },[id] );
 
   return (
