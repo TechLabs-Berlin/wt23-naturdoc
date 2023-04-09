@@ -18,7 +18,7 @@ const Hero = ({title, pyHero, mtTitle, subtitle, subtitleColor}) => {
                   >
                       {title}
                   </Typography>
-                  <Box sx={{ display: 'flex', flexDirection: 'column', pl: 2 }}>
+                  <Box sx={{ display: 'flex', flexDirection: 'column', px: 2 }}>
                       <img src={logo} width={86} alt={logo} />
                   </Box>
               </Box>
