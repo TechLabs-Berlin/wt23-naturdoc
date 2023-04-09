@@ -39,7 +39,7 @@ Additionally, the remedy model stores the absolute number of ratings per remedy 
 Several references are used between these models, for example getting the username from the user model when retrieving data from the ratings model.
 
 Example for a remedy item: 
-![Example DB entry](https://github.com/TechLabs-Berlin/wt23-naturdoc/blob/main/UX/Pictures/db_example.png)
+![Example DB entry](https://github.com/TechLabs-Berlin/wt23-naturdoc/blob/documentation/images/db_example.png)
 
 Apart from that, I developed the possibility for users to save their favorite remedies / delete remedies from the list of favorite remedies. This feature is not yet used in our app.
 
