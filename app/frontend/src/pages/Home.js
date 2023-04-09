@@ -1,13 +1,15 @@
+import {Link} from "react-router-dom"
 import { motion } from "framer-motion";
 import { homeTransition } from "assets/animations";
 // Components
 import LayoutHOC from "components/layouts/LayoutHOC";
-import HomeHero from "components/home/HomeHero"; 
+import Hero from "components/layouts/Hero";
 import HomeRemedies from "components/home/HomeRemedies";
 // Material UI
-import { Button, Container, Typography, Box, Divider } from "@mui/material";
+import { Button, Container, Typography, Box, Divider, CardActionArea } from "@mui/material";
 import { ChevronRight } from "@mui/icons-material";
-
+//assets
+import searchButton from "assets/searchButton.png";
 
 const Home = () => {
   return (
@@ -17,7 +19,21 @@ const Home = () => {
           exit="out"
           variants={homeTransition}
       >
-          <HomeHero />
+          <Hero
+              title="Welcome to Naturdoc"
+              mtTitle={{ mt: 2 }}
+              subtitle="Find natural remedies from different medical traditions"
+              subtitleColor="text.secondary"
+          />
+          <CardActionArea
+              component={Link}
+              to={`/search`}
+              sx={{ display: 'flex', py: 4 }}
+          >
+              <img src={searchButton} alt="Pick your symptoms" width="315" />
+          </CardActionArea>
+
+
           <HomeRemedies />
 
           <Container sx={{ py: 1 }} maxWidth="md">
@@ -42,6 +58,8 @@ const Home = () => {
                           size="large"
                           variant="outlined"
                           endIcon={<ChevronRight />}
+                          to={'/see-doctor'}
+                          component={Link}
                       >
                           Read more
                       </Button>
