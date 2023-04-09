@@ -37,10 +37,9 @@ To that end, we explored other sources of data, such as the [Plants of the World
 
 ## Data Scraping, Manipulation and Cleaning
 
-After these initial explorations of available datasetx
-s, we proceeded with necessary steps to extract, clean and manipulate the data we found to be able to provide a custom modified dataset, which would later form the basis of our remedy database on MongoDB Atlas.
+After these initial explorations of available datasets, we proceeded with necessary steps to extract, clean and manipulate the data we found to be able to provide a custom, modified dataset, which would later form the basis of our remedy database on MongoDB Atlas.
 
-This work included pivoting dataframes, e.g. to group all uses for a single herb together in a list (instead of having unique herb and use pairings), removing nan values as well as certain columns altogether, as well as providing new columns for ratings etc. containing the appropriate datatype so that backend could modify their information once uploaded to the database.
+This work included pivoting dataframes, e.g. to group all uses for a single herb together in a list (instead of having unique herb and use pairings), removing nan values and certain columns altogether, as well as providing new columns for ratings etc. containing the appropriate datatype so that backend could modify their information once uploaded to the database.
 
 Extracting information from the WHO Monographs as well as trying to use the pytrends library presented particular challenges to us.
 
@@ -48,29 +47,27 @@ Extracting text data from a PDF is a messy process, especially due to the format
 
 ## Machine Learning
 
-We had trouble finding appropriate labels for our data, so a supervised machine learning approach seemed difficult to achieve. And while we already had a Python script in place that sent remedy recommendations to the backend, Naturedoc was faced with another Data Science problem, in that the "symptoms" that we initially provided by extracting the medicinal uses from Dr. Duke's dataset were... pretty awful:
+We initially had trouble identifying appropriate labels for our data, so a supervised machine learning approach seemed difficult to achieve. And while we already had a Python script in place that sent remedy recommendations to the backend, Naturedoc was faced with another Data Science problem, in that the "symptoms" that we initially provided were... pretty awful:
 
-* The initial dataset provided a list of so called _ACTIVITIES_, paired with a single remedy. 
+* The Dr. Duke's dataset provided a column of so called _ACTIVITIES_, paired with a single remedy. 
 * Activities were recorded in a specific format that was not very user-friendly and not how a human would freely input a symptom (e.g. head ache as “Ache(Head)”).
 * There were many similar, if not downright identical, labels (such as "Abortifacient", "Abortive", "Abortive?").
 * The activity column would not just describe symptoms treated, but also included other uses. A single activity could refer to:
-    * an illness, such as diabetes mellitus
-    * a singular symptom, such as fever
-    * a culinary use, such as spice
+    * an illness or symptom treated, such as _diabetes mellitus_ or _fever_
+    * a culinary use, such as _spice_
+    * a medicinal property, such as _antibiotic_
 
 With some guiding words from our mentor Rafael Saraiva, we then decided on an approach using unsupervised Clustering algorithms that would allow us to solve the symptom-problem as well:
 
-Using word embeddings, we generated a distance matrix and clustered both activities and a set of more user-friendly symptoms based on their semantic proximity, using both a custom Python script as well as HDBSCAN* (somewhat disappointingly, the best results were provided by our simple Python script that simply matched data points to one another based on a certain distance threshold, while HDBSCAN clustering produced less coherent matches).
+Using word embeddings, we generated a distance matrix and clustered both activities and a set of more user-friendly symptoms based on their semantic proximity, using both a custom Python script as well as [HDBSCAN*](https://hdbscan.readthedocs.io/en/latest/index.html). 
 
+Somewhat disappointingly, the more useable results were provided by our Python script that simply matched data points to one another based on a certain distance threshold, while HDBSCAN* clustering in general produced both more generic and therefore less sensible matches. 
 
 ### Word Embeddings
 
 Word embeddings are a popular technique used in natural language processing to represent words or phrases as vectors of numerical values. Word embeddings are a type of language model that map words to numerical vectors in a high-dimensional space. These vectors capture the meaning and relationships between words, allowing algorithms to better understand natural language.
 
-Importance of word embeddings for better symptom-herb matching.
-improve the accuracy of our symptom-herb matching algorithm.---->can more accurately match symptoms with appropriate herbal remedies.
-allow us to make more accurate and effective symptom-herb matches, ultimately providing our users with more personalized and effective natural remedies.
-The model we used: 'average_word_embeddings_glove.840B.300d'. We used this model to generate embeddings for our dataset of symptoms.
+The model we used: 'average_word_embeddings_glove.840B.300d'. While we experimented with another model as well, the results of this model generated much better results for our dataset of symptoms.
 
 Steps:
 1. Converting each symptom into an embedding vector.
@@ -78,31 +75,17 @@ Steps:
 
 ## Visualisations
 
-Although the clustering results were maybe not as satisfying as we had hoped, they allowed us to make certain observations when visualising the data
+Although the clustering results were maybe not as satisfying as we had hoped, they allowed us to make certain observations when visualising the data. There were two types of visualisations we generated: 
+1. Scatterplots of the word embeddings. We used TSNE to reduce the multidimensional embeddings array and visualised clusters created by HDBSCAN*.
+2. Linear distance graphs using data of the distance matrix for a single row. 
 
-high dimensional complexity 
+![A 2D projection of all symptoms and activities based on their Embedding Vectors](./images/symptom_scatter.png)
 
-We used TSNE to reduce 
-the multidimensional 
-embeddings array.
- 
-Here, we can see all 
-symptoms and activities
-matched to their index in the array.
+The data we worked with possesses an inherently high dimensional complexity, and therefore all visualisation in 2D space can be quite misleading. As a general reminder, they are a projection and the displayed distances only tell a part of the story.
 
-We want to allow smaller clusters 
-to exist, to allow for a 
-finer matching.
+This became more obvious when visualising the clusters identified by HDBSCAN*. We generated the maximum amount of clusters possible, and while it looks like sometimes extremely distant data points were clustered together, when we took a look at the specific terms matched, their semantic proximity would become obvious (at least for the most part). 
 
-As a general reminder, this
-visualisation is merely a
-projection and its
-distances can be
-quite misleading.
-
-Looking at them, we can see their semantic proximity 
-
-: visualise ML clusters, talk about issues of high dimension arrays, why other solution worked out better in the end.
+![A 2D projection of all data points - lines connect clusters, red dots represent outliers](./images/symptom_cluster_lines_w-out.png)
 
 ## Python API and Recommendation Script
 
