@@ -2,8 +2,6 @@ const express = require('express');
 const router = express.Router();
 const session = require('express-session');
 const mongoose = require('mongoose');
-const axios = require('axios');
-const cors = require('cors');
 const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local')
@@ -51,7 +49,7 @@ router.post('/signup', catchAsynch(async (req, res) => {
         const registeredUser = await userModel.register(user, password);
         req.login(registeredUser, err => {
             if (err) return next(err);
-            req.flash('success', 'Successfully logged in');
+            req.flash('success', 'Successfully signed up');
             res.send('Successfully signed up');
         })
 

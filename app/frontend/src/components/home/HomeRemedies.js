@@ -37,7 +37,7 @@ const springRemedies = [
 const HomeRemedies = () => {
   return (
       <>
-          <Container sx={{ pt: 2, pb: 4 }} maxWidth="md">
+          <Container sx={{ py: 4 }} maxWidth="md">
               <Typography
                   component="h2"
                   variant="h2"
