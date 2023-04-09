@@ -1,0 +1,1541 @@
+{
+    "Acne": [
+        "Acne",
+        "Pimple"
+    ],
+    "Alcoholism": [
+        "Alcoholism",
+        "Beer",
+        "Beverage",
+        "Drunkenness"
+    ],
+    "Allergy": [
+        "Allergenic",
+        "Allergy"
+    ],
+    "Amblyopia": [
+        "Amblyopia"
+    ],
+    "Amenorrhea": [
+        "Amenorrhea"
+    ],
+    "Amnesia": [
+        "Amnesia",
+        "Forgetfulness",
+        "Memory"
+    ],
+    "Anemia": [
+        "Anemia",
+        "Hyperemia",
+        "Toxemia",
+        "Uremia"
+    ],
+    "Anxiety": [
+        "Anxiety",
+        "Fear",
+        "Nervousness"
+    ],
+    "Arthralgia": [
+        "Arthralgia",
+        "Arthrodynia",
+        "Arthrosis"
+    ],
+    "Arthritis": [
+        "Arthritis",
+        "Arthritis?",
+        "Heumatism",
+        "Rheumatism",
+        "Rheumatitis"
+    ],
+    "Ascites": [
+        "Ascites"
+    ],
+    "Asthma": [
+        "Asthma",
+        "Breathing",
+        "Bronchial-Asthma",
+        "Asthma (Ivy)",
+        "Asthma (Hay)"
+    ],
+    "Ataxia": [
+        "Ataxia",
+        "Ataxia(Locomotor)"
+    ],
+    "Atheroma": [
+        "Atheroma",
+        "Atheromasia"
+    ],
+    "Boil": [
+        "Boil",
+        "Preventitive(Boil)"
+    ],
+    "Bronchitis": [
+        "Bronchial",
+        "Bronchial-Asthma",
+        "Bronchiectasis",
+        "Bronchitis",
+        "Bronchodilator",
+        "Bronchosis",
+        "Lung",
+        "Bronchorrhea"
+    ],
+    "Bruise": [
+        "Bruise"
+    ],
+    "Bunion": [
+        "Bunion"
+    ],
+    "Burn": [
+        "Burn",
+        "Burns"
+    ],
+    "Cataract": [
+        "Cataract"
+    ],
+    "Chancre": [
+        "Chancre",
+        "Chancroid"
+    ],
+    "Chills": [
+        "Chill",
+        "Chills"
+    ],
+    "Chorea": [
+        "Chorea"
+    ],
+    "Cirrhosis": [
+        "Cirrhosis",
+        "Hepatic",
+        "Liver",
+        "Nephrocirrhosis"
+    ],
+    "Colitis": [
+        "Bowel",
+        "Colic",
+        "Colic Diarrhea",
+        "Colitis",
+        "Gastritis"
+    ],
+    "Coma": [
+        "Coma"
+    ],
+    "Conjunctivitis": [
+        "Conjunctivitis"
+    ],
+    "Constipation": [
+        "Bowel",
+        "Constipation",
+        "Laxative",
+        "Obstipation"
+    ],
+    "Convulsion": [
+        "Convulsant",
+        "Convulsion",
+        "Convulsion(Infant)",
+        "Preventitive(Convulsion)",
+        "Anticonvulsive",
+        "Convulsion(Pediatric)"
+    ],
+    "Cough": [
+        "Cough"
+    ],
+    "Cramp": [
+        "Cramp",
+        "Cramps"
+    ],
+    "Croup": [
+        "Croup"
+    ],
+    "Dandruff": [
+        "Dandruff"
+    ],
+    "Dementia": [
+        "Dementia"
+    ],
+    "Depression": [
+        "Depressant",
+        "Depression",
+        "Melancholy",
+        "Suicide"
+    ],
+    "Dermatitis": [
+        "Dermatitigenic",
+        "Dermatitis",
+        "Dermatophytosis",
+        "Dermatosis",
+        "Keratitis",
+        "Skin diseases",
+        "Dermatitogenic",
+        "Neurodermatitis"
+    ],
+    "Diabetes": [
+        "Diabetes",
+        "Diabetes Mellitis",
+        "Hyperglycemia"
+    ],
+    "Diarrhea": [
+        "Bowel",
+        "Colic Diarrhea",
+        "Diarrhea",
+        "Gastrorrhagia"
+    ],
+    "Dizziness": [
+        "Dizziness",
+        "Vertigo"
+    ],
+    "Dysmenorrhea": [
+        "Dysmenorrhea",
+        "Enorrhagia",
+        "Enterorrhagia",
+        "Menorrhagia"
+    ],
+    "Dyspareunia": [
+        "Dyschezia",
+        "Dyscrasia",
+        "Dyspareunia",
+        "Dysphagia",
+        "Dyslactea",
+        "Dysourmilk"
+    ],
+    "Dysphagia": [
+        "Cephalgia",
+        "Dyscrasia",
+        "Dyspareunia",
+        "Dysphagia"
+    ],
+    "Dysuria": [
+        "Dyscrasia",
+        "Dyspepsia",
+        "Dysuria",
+        "Dyslactea",
+        "Dysourmilk"
+    ],
+    "Eczema": [
+        "Ecthyma",
+        "Eczema"
+    ],
+    "Edema": [
+        "Edema",
+        "Enema"
+    ],
+    "Encephalitis": [
+        "Cephalitis",
+        "Encephalitis",
+        "Encephalomyelitis"
+    ],
+    "Epilepsy": [
+        "Epilepsy"
+    ],
+    "Epiphora": [
+        "Epiphora"
+    ],
+    "Erythema": [
+        "Erythema"
+    ],
+    "Fatigue": [
+        "Exhaustion",
+        "Fatigue"
+    ],
+    "Fever": [
+        "Black-Fever",
+        "Blackwater-Fever",
+        "Fever",
+        "Fever(Remittent)",
+        "Fever(Malarial)",
+        "Blister(Fever)",
+        "Flu",
+        "Infection",
+        "Night-Fever",
+        "Preventitive(Fever)",
+        "Scarlet-Fever",
+        "Yellow Fever",
+        "Fever(Tertian)",
+        "Fever(Preventive)",
+        "Intermittent Fever"
+    ],
+    "Flatulence": [
+        "Flatulence"
+    ],
+    "Gingivitis": [
+        "Gingirrhagia",
+        "Gingivitis",
+        "Gingivosis"
+    ],
+    "Gout": [
+        "Gout"
+    ],
+    "Halitosis": [
+        "Halitosis"
+    ],
+    "Heartburn": [
+        "Heart attack",
+        "Heartburn",
+        "Indigestion"
+    ],
+    "Hematochezia": [
+        "Hematachezia",
+        "Hematafeces",
+        "Hematinic",
+        "Hematochezia",
+        "Hematofeces",
+        "Hematogenic",
+        "Hematoma",
+        "Hemolytic"
+    ],
+    "Hematoma": [
+        "Hemagglutinant",
+        "Hematinic",
+        "Hematochezia",
+        "Hematofeces",
+        "Hematogenic",
+        "Hematoma",
+        "Hematoptysis",
+        "Hemolytic",
+        "Hemoptysis",
+        "Hemorrhagia",
+        "Hematocoele"
+    ],
+    "Hematuria": [
+        "Hematuria",
+        "Hemoglobinuria",
+        "Uremia"
+    ],
+    "Hemoptysis": [
+        "Hemagglutinant",
+        "Hemaptysis",
+        "Hematemesis",
+        "Hematofeces",
+        "Hematogenic",
+        "Hematoma",
+        "Hemiplegia",
+        "Hemophilia",
+        "Hemoptysis",
+        "Hemorrhage",
+        "Hemorrhagia",
+        "Hemostatic",
+        "Hemopoietic"
+    ],
+    "Hemorrhoids": [
+        "Enorrhagia",
+        "Enterorrhagia",
+        "Hemorisis",
+        "Hemorrhage",
+        "Hemorrhagia",
+        "Hemorrhoids",
+        "Leucorrhea",
+        "Menorrhagia"
+    ],
+    "Hepatitis": [
+        "Hepatic",
+        "Hepatitis",
+        "Liver"
+    ],
+    "Hiccup": [
+        "Hiccup"
+    ],
+    "Hives": [
+        "Hives",
+        "Hivess"
+    ],
+    "Hypercholesterolemia": [
+        "Hypercholesterolemia"
+    ],
+    "Hyperglycemia": [
+        "Diabetes",
+        "Hyperglycemia",
+        "Hypoglycemia"
+    ],
+    "Hypertension": [
+        "Hypertension",
+        "Hypertensive"
+    ],
+    "Hypogonadism": [
+        "Gonadotrophic",
+        "Hypogonadism"
+    ],
+    "Hypotension": [
+        "Hypotension",
+        "Hypotensive"
+    ],
+    "Impetigo": [
+        "Impetigo",
+        "Intertrigo"
+    ],
+    "Indigestion": [
+        "Heartburn",
+        "Indigestion"
+    ],
+    "Infection": [
+        "Antibiotic",
+        "Fever",
+        "Flu",
+        "Infection"
+    ],
+    "Inflammation": [
+        "Inflammation"
+    ],
+    "Insomnia": [
+        "Insomnia"
+    ],
+    "Itch": [
+        "Itch"
+    ],
+    "Jaundice": [
+        "Jaundice"
+    ],
+    "Laryngitis": [
+        "Cancer(Larynx)",
+        "Hoarseness",
+        "Laryngalgia",
+        "Laryngeal",
+        "Laryngitis",
+        "Throat",
+        "Tumor(Larynx)"
+    ],
+    "Leukorrhea": [
+        "Leucorrhea",
+        "Leukoma",
+        "Leukorrhea",
+        "Leukopenia"
+    ],
+    "Melena": [
+        "Melena",
+        "Melaena"
+    ],
+    "Meningitis": [
+        "Meningitis",
+        "Mesenteritis"
+    ],
+    "Menorrhagia": [
+        "Dysmenorrhea",
+        "Enorrhagia",
+        "Enterorrhagia",
+        "Hemorrhage",
+        "Hemorrhagia",
+        "Hemorrhoids",
+        "Menorrhagia",
+        "Endorrhagia"
+    ],
+    "Migraine": [
+        "Migraine",
+        "Preventitive(Migraine)"
+    ],
+    "Myalgia": [
+        "Cardialgia",
+        "Mastalgia",
+        "Meonrrhagia",
+        "Myalgia",
+        "Myoneuralgia",
+        "Myopathy",
+        "Myosis",
+        "Neuralgia",
+        "Notalgia",
+        "Otalgia"
+    ],
+    "Nausea": [
+        "Nausea",
+        "Preventitive(Nausea)",
+        "Vomiting"
+    ],
+    "Neuralgia": [
+        "Myalgia",
+        "Neuralgia"
+    ],
+    "Nosebleed": [
+        "Nose",
+        "Nosebleed"
+    ],
+    "Nystagmus": [
+        "Nystagmus",
+        "Nypnotic"
+    ],
+    "Obesity": [
+        "Obesity",
+        "Underweight"
+    ],
+    "Otitis": [
+        "Earache",
+        "Otalgia",
+        "Otitis",
+        "Otorrhea",
+        "Otosis",
+        "Tympanitis"
+    ],
+    "Pain": [
+        "Ache",
+        "Pain",
+        "Sore"
+    ],
+    "Palpitations": [
+        "Palpitation",
+        "Palpitations"
+    ],
+    "Pericarditis": [
+        "Endocarditis",
+        "Myocarditis",
+        "Pericarditis",
+        "Peritonitis"
+    ],
+    "Perspiration": [
+        "Perspiration"
+    ],
+    "Phlegm": [
+        "Phlegm",
+        "Phlegmon"
+    ],
+    "Photophobia": [
+        "Photophobia"
+    ],
+    "Pleurisy": [
+        "Pleurisy",
+        "Pleuritis"
+    ],
+    "Pneumonia": [
+        "Pneumonia"
+    ],
+    "Polyuria": [
+        "Anuria",
+        "Polyneuritis",
+        "Polyuria"
+    ],
+    "Psychosis": [
+        "Neurosis",
+        "Psychiatry",
+        "Psychomimetic",
+        "Psychosis"
+    ],
+    "Pyelonephritis": [
+        "Pyelitis",
+        "Pyelonephritis"
+    ],
+    "Rheum": [
+        "Rheum",
+        "Rheumatic"
+    ],
+    "Rhinitis": [
+        "Rhachitis",
+        "Rhinitis"
+    ],
+    "Sciatica": [
+        "Sciatica"
+    ],
+    "Sinusitis": [
+        "Sinus",
+        "Sinusitis",
+        "Rhinosinusitis"
+    ],
+    "Splenomegaly": [
+        "Splenomegaly",
+        "Spleen",
+        "Splenitis",
+        "Splenosis"
+    ],
+    "Strabismus": [
+        "Stasis",
+        "Strabismus",
+        "Struma"
+    ],
+    "Stroke": [
+        "Cerebral",
+        "Stroke",
+        "Stroke(Heat)"
+    ],
+    "Swelling": [
+        "Swelling",
+        "Swelling(Mammary)"
+    ],
+    "Syncope": [
+        "Syncope"
+    ],
+    "Tachycardia": [
+        "Arrhythmia",
+        "Brachycardia",
+        "Tachycardia"
+    ],
+    "Telangiectasia": [
+        "Telangiectasia"
+    ],
+    "Tinnitus": [
+        "Tinnitus",
+        "Tinnitus?"
+    ],
+    "Tonsillitis": [
+        "Throat",
+        "Tonsillitis",
+        "Tonsillitis?",
+        "Tumor(Tonsil)"
+    ],
+    "Tremor": [
+        "Tremor",
+        "Tremors"
+    ],
+    "Tumor": [
+        "Cancer",
+        "Cancer(Abdomen)",
+        "Cancer(Armpit)",
+        "Cancer(Bones)",
+        "Cancer(Brain)",
+        "Cancer(Breast)",
+        "Cancer(Digestive)",
+        "Cancer(Epithelium)",
+        "Cancer(Eye)",
+        "Cancer(Face)",
+        "Cancer(Gastric)",
+        "Cancer(Glands)",
+        "Cancer(Kidney)",
+        "Cancer(Lip)",
+        "Cancer(Liver)",
+        "Cancer(Lung)",
+        "Cancer(Lymph)",
+        "Cancer(Medullary)",
+        "Cancer(Mouth)",
+        "Cancer(Nose)",
+        "Cancer(Penis)",
+        "Cancer(Pharynx)",
+        "Cancer(Prostate)",
+        "Cancer(Pylorus)",
+        "Cancer(Rectum)",
+        "Cancer(Skin)",
+        "Cancer(Stomach)",
+        "Cancer(Testicle)",
+        "Cancer(Throat)",
+        "Cancer(Thyroid)",
+        "Cancer(Tongue)",
+        "Cancer(Toothh)",
+        "Cancer(Uterus)",
+        "Carcinoma",
+        "Malignancy",
+        "Melanoma",
+        "Tumor",
+        "Tumor(Breast)",
+        "Tumor(Abdomen)",
+        "Tumor(Anus)",
+        "Tumor(Arm)",
+        "Tumor(Armpit)",
+        "Tumor(Bladder)",
+        "Tumor(Diaphragm)",
+        "Tumor(Ear)",
+        "Tumor(Eye)",
+        "Tumor(Eyelid)",
+        "Tumor(Fauces)",
+        "Tumor(Feet)",
+        "Tumor(Finger)",
+        "Tumor(Foot)",
+        "Tumor(Ganglia)",
+        "Tumor(Genital)",
+        "Tumor(Glands)",
+        "Tumor(Groin)",
+        "Tumor(Gum)",
+        "Tumor(Heart)",
+        "Tumor(Intestine)",
+        "Tumor(Joint)",
+        "Tumor(Lachrymae)",
+        "Tumor(Larynx)",
+        "Tumor(Leg)",
+        "Tumor(Limb)",
+        "Tumor(Liver)",
+        "Tumor(Lung)",
+        "Tumor(Lymphatic)",
+        "Tumor(Neck)",
+        "Tumor(Nose)",
+        "Tumor(Parotid)",
+        "Tumor(Penis)",
+        "Tumor(Pituitary)",
+        "Tumor(Prostate)",
+        "Tumor(Rectum)",
+        "Tumor(Scrotum)",
+        "Tumor(Sinew)",
+        "Tumor(Skin)",
+        "Tumor(Spleen)",
+        "Tumor(Stomach)",
+        "Tumor(Testicle)",
+        "Tumor(Thigh)",
+        "Tumor(Throat)",
+        "Tumor(Thyroid)",
+        "Tumor(Tonsil)",
+        "Tumor(Umbilicus)",
+        "Tumor(Uterus)",
+        "Tumor(Uvula)",
+        "Tumor(Vagina)",
+        "Tumor(Viscera)",
+        "Tumor(Womb)",
+        "Cancer(Vagina)",
+        "Carcinoma(Breast)",
+        "Tumor(Mouth)",
+        "Tumor(Digestive)",
+        "Tumor(Hand)",
+        "Cancer(Bowel)",
+        "Cancer(Genital)",
+        "Cancer(Womb)",
+        "Cancer?",
+        "Tumor(Belly)",
+        "Tumor(Face)",
+        "Tumor(Head)",
+        "Tumor(India)",
+        "Adenocarcinoma"
+    ],
+    "Unconsciousness": [
+        "Unconsciousness"
+    ],
+    "Underweight": [
+        "Obesity",
+        "Underweight"
+    ],
+    "Urethritis": [
+        "Antiseptic(Urethra)",
+        "Urethra",
+        "Urethritis",
+        "Urinary",
+        "Urethrum",
+        "Urethrorrhagia"
+    ],
+    "Vaginitis": [
+        "Vaginismus",
+        "Vaginitis"
+    ],
+    "Vertigo": [
+        "Dizziness",
+        "Motion-Sickness",
+        "Vertigo"
+    ],
+    "Wart": [
+        "Wart",
+        "Wart(Eyelid)",
+        "Wart(Uterus)",
+        "Wart(Vagina)"
+    ],
+    "Weakness": [
+        "Weakness"
+    ],
+    "Wheeze": [
+        "Wheeze"
+    ],
+    "Hypertrophy": [
+        "Extrophy",
+        "Hypertrophy"
+    ],
+    "Hypoglycemia": [
+        "Hyperglycemia",
+        "Hypoglycemia"
+    ],
+    "Purpura": [
+        "Puerperia",
+        "Puerperium",
+        "Pulicide",
+        "Pustule",
+        "Pustules",
+        "Purpura"
+    ],
+    "Vomiting": [
+        "Nausea",
+        "Vomiting"
+    ],
+    "Abdominal obesity": [
+        "Abdomen",
+        "Obesity"
+    ],
+    "Abdominal pain": [
+        "Abdomen",
+        "Ache(Stomach)",
+        "Cancer(Abdomen)"
+    ],
+    "Actinic keratosis": [
+        "Keratitis"
+    ],
+    "Acute bronchitis": [
+        "Bronchial",
+        "Bronchial-Asthma",
+        "Bronchitis",
+        "Bronchosis",
+        "Bronchorrhea"
+    ],
+    "Adrenal crisis": [
+        "Adrenocortical"
+    ],
+    "Ageusia": [
+        "Parageusia"
+    ],
+    "Allergic conjunctivitis": [
+        "Conjunctivitis"
+    ],
+    "Anal fissure": [
+        "Fissure"
+    ],
+    "Anaphylaxis": [
+        "Emphysema"
+    ],
+    "Angina pectoris": [
+        "Angina",
+        "Angina Pectoris",
+        "Angina-Catarrhalis",
+        "Angina?",
+        "Coronary Pectoris"
+    ],
+    "Angioedema": [
+        "Angina",
+        "Angina-Catarrhalis",
+        "Angina?"
+    ],
+    "Anosmia": [
+        "Anemia",
+        "Anhydrosis"
+    ],
+    "Aphonia": [
+        "Aphtosa"
+    ],
+    "Apnea": [
+        "Dyspnea"
+    ],
+    "Astigmatism": [
+        "Astigmia"
+    ],
+    "Auditory hallucination": [
+        "Hallucination",
+        "Hallucinogenic"
+    ],
+    "Back pain": [
+        "Ache(Back)"
+    ],
+    "Bacterial vaginosis": [
+        "Vaginismus",
+        "Vaginitis"
+    ],
+    "Bell's palsy": [
+        "Palsy"
+    ],
+    "Bleeding": [
+        "Blood",
+        "Hemorrhage"
+    ],
+    "Blepharospasm": [
+        "Blepharitis"
+    ],
+    "Bloating": [
+        "Bloat"
+    ],
+    "Blood in stool": [
+        "Bloody stool"
+    ],
+    "Blurred vision": [
+        "Blindness",
+        "Vision"
+    ],
+    "Bone fracture": [
+        "Fracture",
+        "Broken-Bones"
+    ],
+    "Bone tumor": [
+        "Cancer(Bones)",
+        "Tumor",
+        "Tumor(Arm)",
+        "Tumor(Foot)",
+        "Tumor(Joint)",
+        "Tumor(Leg)",
+        "Tumor(Limb)"
+    ],
+    "Bowel obstruction": [
+        "Bowel",
+        "Hepatic-Obstruction"
+    ],
+    "Bradycardia": [
+        "Brachycardia",
+        "Cardiodynia",
+        "Tachycardia"
+    ],
+    "Breast pain": [
+        "Breast",
+        "Cancer(Breast)",
+        "Pain(Chest)"
+    ],
+    "Burning chest pain": [
+        "Ache(Chest)",
+        "Pain(Chest)",
+        "Heartburn"
+    ],
+    "Candidiasis": [
+        "Candida"
+    ],
+    "Canker sore": [
+        "Canker",
+        "Sore",
+        "Soreness"
+    ],
+    "Cataplexy": [
+        "Cataplasm"
+    ],
+    "Chest pain": [
+        "Chest",
+        "Chest-Cold",
+        "Ache(Chest)",
+        "Pain(Chest)",
+        "Heart attack"
+    ],
+    "Chronic pain": [
+        "Pain"
+    ],
+    "Common cold": [
+        "Cold"
+    ],
+    "Crackles": [
+        "Cracked feet"
+    ],
+    "Cyanosis": [
+        "Cyanogenetic",
+        "Melanoma",
+        "Melanosis"
+    ],
+    "Delayed onset muscle soreness": [
+        "Soreness"
+    ],
+    "Diabetic ketoacidosis": [
+        "Diabetes Mellitis"
+    ],
+    "Dysautonomia": [
+        "Dypsnoea",
+        "Dyscrasia",
+        "Dyspareunia",
+        "Dyslactea",
+        "Dysourmilk"
+    ],
+    "Dystonia": [
+        "Dysmenorrhea",
+        "Dyspareunia",
+        "Dysphagia"
+    ],
+    "Ear pain": [
+        "Ache(Ear)",
+        "Ear",
+        "Ear drop",
+        "Earache",
+        "Earring",
+        "Otitis",
+        "Tumor(Ear)"
+    ],
+    "Encephalopathy": [
+        "Encephalitis",
+        "Encephalomyelitis"
+    ],
+    "Epidermoid cyst": [
+        "Cyst",
+        "Epithelioma"
+    ],
+    "Erectile dysfunction": [
+        "Erection"
+    ],
+    "Erythema chronicum migrans": [
+        "Erythema"
+    ],
+    "Esophagitis": [
+        "Escharotic",
+        "Esophagus"
+    ],
+    "Eye pain": [
+        "Eye",
+        "Eye drop",
+        "Sore(Eye)",
+        "Ache(Eye)"
+    ],
+    "Eye strain": [
+        "Eye",
+        "Eyelid",
+        "Sore(Eye)",
+        "Strain",
+        "Ache(Eye)"
+    ],
+    "Facial nerve paralysis": [
+        "Paralysis"
+    ],
+    "Facial swelling": [
+        "Swelling"
+    ],
+    "Fecal incontinence": [
+        "Incontinence"
+    ],
+    "Fibromyalgia": [
+        "Fibroma",
+        "Fibrositis",
+        "Myalgia",
+        "Neuralgia"
+    ],
+    "Focal seizure": [
+        "Epilepsy"
+    ],
+    "Gastroesophageal reflux disease": [
+        "Esophagus",
+        "Gastrorrhagia",
+        "Gastrosis"
+    ],
+    "Gastroparesis": [
+        "Gastric-Juice",
+        "Gastrodynia",
+        "Gastrointestinal",
+        "Gastrorrhagia",
+        "Gastrosis",
+        "Gastrospasm",
+        "Gastric"
+    ],
+    "Generalized anxiety disorder": [
+        "Anxiety"
+    ],
+    "Genital wart": [
+        "Genital",
+        "Wart",
+        "Wart(Eyelid)",
+        "Wart(Uterus)",
+        "Wart(Vagina)",
+        "Cancer(Genital)"
+    ],
+    "Gingival recession": [
+        "Gingivitis"
+    ],
+    "Goitre": [
+        "Goiter"
+    ],
+    "Granuloma": [
+        "Granulation"
+    ],
+    "Hair loss": [
+        "Baldness",
+        "Hair-Growth"
+    ],
+    "Hay fever": [
+        "Fever",
+        "Hayfever",
+        "Asthma (Hay)"
+    ],
+    "Headache": [
+        "Ache(Head)",
+        "Migraine"
+    ],
+    "Heart arrhythmia": [
+        "Arrhythmia",
+        "Cardiac",
+        "Tachycardia"
+    ],
+    "Heart murmur": [
+        "Cardiac"
+    ],
+    "Hemolysis": [
+        "Hemagglutinant",
+        "Hematofeces",
+        "Hematoptysis",
+        "Hemolytic",
+        "Hemostatic"
+    ],
+    "Hepatic encephalopathy": [
+        "Encephalitis"
+    ],
+    "Hepatotoxicity": [
+        "Hepatogegaly",
+        "Hepatoma",
+        "Hepatomegaly",
+        "Hepatosis",
+        "Hepatotonic"
+    ],
+    "Hydrocephalus": [
+        "Hydropsy"
+    ],
+    "Hypercalcaemia": [
+        "Hyperemia",
+        "Hyperuricemia"
+    ],
+    "Hyperkalemia": [
+        "Hyperemia",
+        "Hyperuricemia"
+    ],
+    "Hypermobility": [
+        "Hypermicturition"
+    ],
+    "Hyperthermia": [
+        "Hyperemia",
+        "Hyperuricemia"
+    ],
+    "Hyperthyroidism": [
+        "Hyperthyreosis",
+        "Thyroid",
+        "Thyroiditis"
+    ],
+    "Hypertriglyceridemia": [
+        "Hyperglycemia"
+    ],
+    "Hypocalcaemia": [
+        "Hypoglycemia"
+    ],
+    "Hypochondriasis": [
+        "Hypochondria"
+    ],
+    "Hypomania": [
+        "Hypotension",
+        "Hypotensive",
+        "Hypotherbia"
+    ],
+    "Hyponatremia": [
+        "Hypoglycemia"
+    ],
+    "Hypothyroidism": [
+        "Thyroid",
+        "Thyroiditis"
+    ],
+    "Hypoxemia": [
+        "Hyperemia",
+        "Hypoglycemia"
+    ],
+    "Hypoxia": [
+        "Hypoglycemia"
+    ],
+    "Inflammatory bowel disease": [
+        "Colitis",
+        "Inflammation"
+    ],
+    "Iron deficiency": [
+        "Anemia",
+        "Hyperemia"
+    ],
+    "Irregular menstruation": [
+        "Menstruation",
+        "Menstruationimia"
+    ],
+    "Kidney failure": [
+        "Kidney",
+        "Renal"
+    ],
+    "Kidney stone": [
+        "Bladder stone",
+        "Gallstones",
+        "Kidney",
+        "Kidney stones",
+        "Renal",
+        "Stone",
+        "Urinary",
+        "Kidneystone?"
+    ],
+    "Knee pain": [
+        "Knee",
+        "Weak-Knee"
+    ],
+    "Leg cramps": [
+        "Ache(Leg)",
+        "Cramp",
+        "Cramps"
+    ],
+    "Low-grade fever": [
+        "Fever",
+        "Fever(Preventive)",
+        "Intermittent Fever"
+    ],
+    "Lymphedema": [
+        "Cancer(Lymph)",
+        "Lymphadenitis",
+        "Lymphadenopathy",
+        "Lymphatic-Disease",
+        "Lymphoadenitis",
+        "Lymphoma",
+        "Tumor(Lymphatic)",
+        "Lymphangitis",
+        "Cancer(Lymphatic)",
+        "Lymphitis"
+    ],
+    "Major depressive disorder": [
+        "Depressant",
+        "Depression"
+    ],
+    "Malabsorption": [
+        "Malaise"
+    ],
+    "Male infertility": [
+        "Antifertility",
+        "Fertility",
+        "Fertility(Female)",
+        "Infertility"
+    ],
+    "Melasma": [
+        "Melanoma",
+        "Melena",
+        "Melaena",
+        "Meloncholia",
+        "Melanosis"
+    ],
+    "Mood disorder": [
+        "Depressant",
+        "Depression",
+        "Psychiatry"
+    ],
+    "Morning sickness": [
+        "Nausea",
+        "Sleeping sickness"
+    ],
+    "Motion sickness": [
+        "Motion-Sickness",
+        "Seasickness",
+        "Vertigo"
+    ],
+    "Mouth ulcer": [
+        "Ulcer",
+        "Ulcer?",
+        "Gastric-Ulcer"
+    ],
+    "Muscle atrophy": [
+        "Atrophy"
+    ],
+    "Muscle weakness": [
+        "Weakness"
+    ],
+    "Mydriasis": [
+        "Amebiasis",
+        "Myalgia",
+        "Mycosis",
+        "Mydriatic",
+        "Myosis"
+    ],
+    "Myocardial infarction": [
+        "Infarct"
+    ],
+    "Nasal polyp": [
+        "Polyp",
+        "Polyp(Abdomen)",
+        "Polyp(Nose)",
+        "Polyp(Stomach)",
+        "Polypus(Nose)"
+    ],
+    "Neck mass": [
+        "Neck"
+    ],
+    "Neck pain": [
+        "Lymphoma(Neck)",
+        "Neck",
+        "Necklet",
+        "Sore(Neck)",
+        "Tumor(Neck)",
+        "Ache(Neck)"
+    ],
+    "Neonatal jaundice": [
+        "Jaundice"
+    ],
+    "Nerve injury": [
+        "Nerves"
+    ],
+    "Neutropenia": [
+        "Neuritis"
+    ],
+    "Night sweats": [
+        "Night-Sweat",
+        "Sweat",
+        "Sweating"
+    ],
+    "Night terror": [
+        "Night-Fever",
+        "Nightmare"
+    ],
+    "Nocturnal enuresis": [
+        "Enuresis"
+    ],
+    "Onychorrhexis": [
+        "Onychosis",
+        "Onychyosis",
+        "Onychiosis"
+    ],
+    "Oral candidiasis": [
+        "Candida"
+    ],
+    "Orthostatic hypotension": [
+        "Hypotension",
+        "Hypotensive"
+    ],
+    "Osteopenia": [
+        "Osteosis"
+    ],
+    "Osteophyte": [
+        "Bones",
+        "Osteosis"
+    ],
+    "Osteoporosis": [
+        "Osteosis"
+    ],
+    "Otitis externa": [
+        "Otitis",
+        "Otosis"
+    ],
+    "Otitis media": [
+        "Otitis",
+        "Otosis"
+    ],
+    "Panic attack": [
+        "Anxiety"
+    ],
+    "Paresthesia": [
+        "Anesthesia",
+        "Anesthetic"
+    ],
+    "Photodermatitis": [
+        "Dermatitis",
+        "Neurodermatitis"
+    ],
+    "Photopsia": [
+        "Eclampsia"
+    ],
+    "Pleural effusion": [
+        "Pleurisy",
+        "Pleuritis"
+    ],
+    "Podalgia": [
+        "Cardialgia",
+        "Myalgia",
+        "Notalgia",
+        "Ostealgia",
+        "Otalgia"
+    ],
+    "Polydipsia": [
+        "Dyspepsia",
+        "Polyp(Uterus)",
+        "Polyuria"
+    ],
+    "Polyneuropathy": [
+        "Polyneuritis"
+    ],
+    "Postural orthostatic tachycardia syndrome": [
+        "Tachycardia"
+    ],
+    "Prediabetes": [
+        "Diabetes"
+    ],
+    "Proteinuria": [
+        "Albuminuria",
+        "Dysuria",
+        "Polyuria"
+    ],
+    "Pruritus ani": [
+        "Pruritis"
+    ],
+    "Ptosis": [
+        "Pterygium",
+        "Ptomaine",
+        "Ptyalism",
+        "Pthisis"
+    ],
+    "Pulmonary edema": [
+        "Edema",
+        "Pulmonary"
+    ],
+    "Pulmonary hypertension": [
+        "Hypertension",
+        "Pulmonary"
+    ],
+    "Pus": [
+        "Pulicide",
+        "Pustule",
+        "Pustules"
+    ],
+    "Radiculopathy": [
+        "Radiculagia"
+    ],
+    "Rectal pain": [
+        "Rectitis"
+    ],
+    "Rectal prolapse": [
+        "Prolapse",
+        "Prolapse(Anus)",
+        "Prolapse(Uterus)"
+    ],
+    "Red eye": [
+        "Black-Eye",
+        "Evil eye",
+        "Eye"
+    ],
+    "Renal colic": [
+        "Colic",
+        "Colic Diarrhea",
+        "Renal"
+    ],
+    "Restless legs syndrome": [
+        "Restlessness"
+    ],
+    "Rhinorrhea": [
+        "Rhinosis",
+        "Rhinosinusitis"
+    ],
+    "Round ligament pain": [
+        "Ligament"
+    ],
+    "Scar": [
+        "Scarlatina",
+        "Preventitive(Scar)"
+    ],
+    "Scoliosis": [
+        "Spine"
+    ],
+    "Seborrheic dermatitis": [
+        "Dermatitis",
+        "Dermatosis"
+    ],
+    "Self-harm": [
+        "Suicide"
+    ],
+    "Shallow breathing": [
+        "Breath",
+        "Breathing",
+        "Breathlessness",
+        "Respiratory"
+    ],
+    "Sharp pain": [
+        "Ache",
+        "Pain"
+    ],
+    "Shivering": [
+        "Chest-Cold",
+        "Cold"
+    ],
+    "Shortness of breath": [
+        "Breathlessness"
+    ],
+    "Skin condition": [
+        "Dermatitis",
+        "Dermatosis",
+        "Sclerosis(Skin)",
+        "Skin",
+        "Skin diseases"
+    ],
+    "Skin rash": [
+        "Dermatosis",
+        "Diaper-Rash",
+        "Heat rash",
+        "Rash",
+        "Skin diseases"
+    ],
+    "Skin tag": [
+        "Skin"
+    ],
+    "Skin ulcer": [
+        "Rodent-Ulcer",
+        "Ulcer",
+        "Ulcer?",
+        "Gastric-Ulcer",
+        "Tuberculosic Ulcer"
+    ],
+    "Sleep deprivation": [
+        "Insomnia"
+    ],
+    "Sleep disorder": [
+        "Insomnia",
+        "Sleeping sickness"
+    ],
+    "Sore throat": [
+        "Sore(Throat)",
+        "Sore(Neck)",
+        "Soreness",
+        "Throat"
+    ],
+    "Spasticity": [
+        "Spasm",
+        "Spasmogenic",
+        "Spasmolytic"
+    ],
+    "Sputum": [
+        "Sprue"
+    ],
+    "Stomach rumble": [
+        "Stomach"
+    ],
+    "Subdural hematoma": [
+        "Hematoma"
+    ],
+    "Suicidal ideation": [
+        "Suicide"
+    ],
+    "Swollen feet": [
+        "Cracked feet",
+        "Sore(Foot)",
+        "Swelling"
+    ],
+    "Swollen lymph nodes": [
+        "Lymphadenitis",
+        "Swelling",
+        "Tumor(Lymphatic)",
+        "Lymphangitis",
+        "Lymphitis"
+    ],
+    "Tachypnea": [
+        "Dyspnea",
+        "Tachycardia"
+    ],
+    "Tenderness": [
+        "Pain",
+        "Sore",
+        "Soreness"
+    ],
+    "Testicular pain": [
+        "Cancer(Testicle)",
+        "Testicle",
+        "Tumor(Testicle)"
+    ],
+    "Throat irritation": [
+        "Sore(Throat)",
+        "Throat"
+    ],
+    "Thrombocytopenia": [
+        "Thrombosis",
+        "Thrombosis(Venous)"
+    ],
+    "Thyroid nodule": [
+        "Cancer(Thyroid)",
+        "Thyroid",
+        "Thyroiditis",
+        "Tumor(Thyroid)"
+    ],
+    "Toothache": [
+        "Teeth",
+        "Teething",
+        "Tooth",
+        "Ache(Tooth)",
+        "Toothwhitener",
+        "Dental"
+    ],
+    "Trichoptilosis": [
+        "Trichomoniasis"
+    ],
+    "Type 2 diabetes": [
+        "Diabetes",
+        "Diabetes Mellitis"
+    ],
+    "Upper respiratory tract infection": [
+        "Bronchitis"
+    ],
+    "Urinary incontinence": [
+        "Bladder",
+        "Incontinence",
+        "Urinary"
+    ],
+    "Urinary tract infection": [
+        "Urethritis",
+        "Urinary",
+        "Urinary-antiseptic"
+    ],
+    "Urinary urgency": [
+        "Urinary"
+    ],
+    "Uterine contraction": [
+        "Prolapse(Uterus)",
+        "Uterine",
+        "Uterine Organs",
+        "Uterus",
+        "Uterine-Colic"
+    ],
+    "Varicose veins": [
+        "Varicose Veins",
+        "Vein"
+    ],
+    "Vasculitis": [
+        "Arteritis",
+        "Vaginismus",
+        "Vaginitis"
+    ],
+    "Ventricular tachycardia": [
+        "Brachycardia",
+        "Tachycardia"
+    ],
+    "Viral pneumonia": [
+        "Pneumonia"
+    ],
+    "Pancreatitis": [
+        "Pancreas"
+    ]
+}
