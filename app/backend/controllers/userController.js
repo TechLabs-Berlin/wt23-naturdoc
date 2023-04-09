@@ -15,7 +15,6 @@ const userTest = "6429467b2c80d6e105dd286d";
 
 //get a user
 const getUser = catchAsynch(async (req, res) => {
-   // const userTest = "6420450b3d25951c719ec768";
     const user = await userModel.findById({ _id: userTest });
     const response = {
         username: user.username,
@@ -30,7 +29,6 @@ const getUser = catchAsynch(async (req, res) => {
 const getFavorites = catchAsynch(async (req, res) => {
   //  const userTest = "6420450b3d25951c719ec768";
     const user = await userModel.findById({ _id: userTest });
-    console.log(user);
     const response = user.favorites.map(favoriteItem => {
         return {
             _id: favoriteItem.remedyId

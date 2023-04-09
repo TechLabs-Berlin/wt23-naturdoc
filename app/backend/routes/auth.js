@@ -12,7 +12,6 @@ const catchAsynch = require('../utilities/catchAsynch');
 const { checkLogin } = require('../middleware');
 const { connect } = require('../database/database');
 
-//const app = express();
 router.use(express.json());
 
 const sessionConfig = {
@@ -43,7 +42,6 @@ passport.deserializeUser(userModel.deserializeUser());
 //signup 
 router.post('/signup', catchAsynch(async (req, res) => {
     try {
-        console.log(req);
         const { email, username, password } = req.body;
         const user = new userModel({ email, username })
         const registeredUser = await userModel.register(user, password);

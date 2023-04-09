@@ -42,7 +42,6 @@ const getRemedyById = catchAsynch(async (req, res) => {
         doctorAlert: remedies.doctorAlert,
         _id: remedies._id
     }
-    console.log(response)
 
     return res.status(200).send(response);
 });
@@ -85,7 +84,6 @@ const getAllRatingsPerRemedy = catchAsynch(async (req, res) => {
           },
         }
       ]);
-      console.log (ratingsWithUsernames);
       //rename _id to ratingId
       const response = ratingsWithUsernames.map(ratingItem => {
         return{
@@ -107,12 +105,9 @@ const getAllRatingsPerRemedy = catchAsynch(async (req, res) => {
 
 //get the rating of a certain user for a remedy
 const ratingsPerRemedyPerUser = catchAsynch(async (req, res) => {
-   // const userTest = "6420450b3d25951c719ec768";
     const { id } = req.params;
     const remedyName = await remediesModel.findById(id);
-    console.log(remedyName.remedyName);
     const ratings = await ratingsModel.findOne({ remedyId: id, userId: userTest });
-    console.log(ratings.ratingValue);
     const response = {
         ratingValue: ratings.ratingValue,
         remedyName: remedyName.remedyName,
@@ -129,14 +124,9 @@ const ratingsPerRemedyPerUser = catchAsynch(async (req, res) => {
 
 //add the rating for a single remedy
 const ratingsPerRemedy = catchAsynch(async (req, res) => {
-    console.log('*******');
-    console.log(req.body);
-    console.log(req.user);
 
     const { id } = req.params;
     const { ratingValue, reviewName, reviewDescription } = req.body.data;
-    //const userTest = "641ed2ecf7892783bdacbeb9";
-    //const userTest = "6420450b3d25951c719ec768";
 
     //UPDATE RATING MODEL: 
     const product = await remediesModel.findById(id);
@@ -149,9 +139,6 @@ const ratingsPerRemedy = catchAsynch(async (req, res) => {
             timestamps: true
         }
     );
-    console.log("RATINGID");
-    console.log(newRating.id);
-    console.log(newRating.timestamp)
 
 
     //UPDATE USER MODEL:
@@ -259,8 +246,6 @@ const ratingsPerRemedy = catchAsynch(async (req, res) => {
 //delete a rating for a remedy
 const deleteRating = catchAsynch(async (req, res) => {
     const { id } = req.params;
-    console.log(req.body);
-    //const userId = "64151a880022f6c93207f2b9";
     const deletedRating = await ratingsModel.deleteOne(
         { remedyId: id, userId: userId });
     return res.status(200).send(deletedRating);
@@ -270,7 +255,6 @@ const deleteRating = catchAsynch(async (req, res) => {
 //save remedy as favorite:
 const saveAsFavorite = catchAsynch(async (req, res) => {
     const { id } = req.params;
-   // const userTest = "64151b8670662285f3b36c13";
     const saveFavorite = await userModel.findByIdAndUpdate(userTest, {
         $push: {
             favorites: {

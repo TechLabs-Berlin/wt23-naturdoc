@@ -7,7 +7,6 @@ const mongoose = require('mongoose');
 const getSymptoms =  catchAsynch(async (req, res) => {
     const { symptom } = req.params;
     const symptomName = await symptomsModel.find({})
-    // console.log(symptomName)
     const response = symptomName.map(symptomItem => {
         return {
             symptomName: symptomItem.symptomName,
