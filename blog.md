@@ -17,6 +17,32 @@ We thought about our users and their needs. Additionally, we conducted a short s
 
 # Web Dev
 
+## Backend
+
+The development process of the backend was challenging especially in the beginning before we decided on a clear MVP and stretch goals and before we decided on a data structure for our remedy recommendations. However, it was great to see the different parts connecting once we had a clealy defined path. 
+
+### Initial project phase - server setup, local DB and user auth:
+In the beginning I focussed on getting familiar with using MongoDB and express. After setting up the server, I therefore created a local database which I populated with sample remedy data to be able to work on the API endpoints for the remedy recommendation and the symptoms. When we connected this endpoint to the FE, we initially still used the data from the local database. 
+In the meantime I also started working on the user authentication endpoints, because that was going to be needed as a basis for implementing the rating system.The provided user endpoints as of now enable the user to signup, login and logout of the app. 
+
+### Setting up MongoDB Atlas and connecting FE, BE and DS:
+Once the datastructure was defined, we set up MongoDB Atlas. After DS had populated the DB, we worked on connecting the three areas to send the remedy recommendations from Python via the backend to the frontend. This was especially challenging because we had worked with sample data before and had not defined a nomenclature for our parameters yet. 
+
+### Development of the rating system 
+Once we managed to send the recommendations to the frontend, I concentrated on developing the rating system. Figuring out how to use one-to-one and one-to-many relationships in Mongo was challenging. At the end, I used 4 different Models: user, remedy, rating and symptoms model. The final logic of the rating logic is the following: 
+A user can only place one rating per remedy. If the user rates the remedy a second time, the original comment will be overwritten. Hence, 
+1. the user model stores one rating for each remedy for that specific user
+2. the remedy model stores one rating per user for that specific remedy 
+3. the rating model stores one rating per user per remedy
+
+Additionally, the remedy model stores the absolute number of ratings per remedy and the average rating.
+Several references are used between these models, for example getting the username from the user model when retrieving data from the ratings model.
+
+Apart from that, I developed the possibility for users to save their favorite remedies / delete remedies from the list of favorite remedies. This feature is not yet used in our app.
+
+At the moment, we have not implemented the connection for user signup, login and logout between Frontend and backend. We are therefor hardcoding the user Id in the backend code as of now. 
+
+
 # Data Science
 
 ## Steps
