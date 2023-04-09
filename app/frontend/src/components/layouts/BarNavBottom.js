@@ -15,7 +15,7 @@ const SimpleBottomNavigation = () => {
       setValue(0);
     } else if (window.location.pathname === "/search") {
       setValue(1);
-    } else if (window.location.pathname === "/login") {
+    } else if (window.location.pathname === "/signup") {
       setValue(2);
     }
   }, []);
@@ -36,7 +36,7 @@ const SimpleBottomNavigation = () => {
         <BottomNavigation
           showLabels={false}
           value={value}
-          onChange={(event, newValue) => {
+          onChange={( newValue) => {
             setValue(newValue);
           }}
         >
@@ -54,8 +54,8 @@ const SimpleBottomNavigation = () => {
           />
           <BottomNavigationAction
             component={Link}
-            to={"/login"}
-            label="Login"
+            to={"/signup"}
+            label="signup"
             icon={<PersonOutlineOutlinedIcon />}
           />
         </BottomNavigation>
