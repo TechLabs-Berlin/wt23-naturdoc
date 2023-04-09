@@ -21,6 +21,7 @@ const Home = () => {
       >
           <Hero
               title="Welcome to Naturdoc"
+              pyHero={{ pt: 4, pb: 2 }}
               mtTitle={{ mt: 2 }}
               subtitle="Find natural remedies from different medical traditions"
               subtitleColor="text.secondary"

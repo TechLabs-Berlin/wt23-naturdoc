@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { remedyTransition } from "assets/animations";
 // components
 import LayoutHOC from "components/layouts/LayoutHOC"
+import BackButton from "components/layouts/BackButton";
 import Hero from "components/layouts/Hero"
 // material-ui & assets
 import { Box, Card, Divider, Typography, Link } from "@mui/material";
@@ -42,8 +43,10 @@ const SeeDoctor = () => {
           exit="out"
           variants={remedyTransition}
       >
+        <BackButton />
           <Hero
               title="Naturdoc"
+              pyHero={{ py: 0}}
               mtTitle={{ mt: 6 }}
               subtitle="Here are some questions to help you figure out, if you should go see a doctor"
               subtitleColor="text.primary"

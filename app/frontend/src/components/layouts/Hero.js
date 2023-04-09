@@ -3,11 +3,11 @@ import logo from "assets/logoNaturdoc.svg"
 
 
 
-const Hero = ({title, mtTitle, subtitle, subtitleColor}) => {
+const Hero = ({title, pyHero, mtTitle, subtitle, subtitleColor}) => {
 
   return (
       <>
-          <Container sx={{ pt: 4, pb: 2 }} component="section" maxWidth="sm">
+          <Container sx={pyHero} component="section" maxWidth="sm">
               <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                   <Typography
                       component="h1"

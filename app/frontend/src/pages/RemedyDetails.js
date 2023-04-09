@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { remedyTransition } from "assets/animations";
 // data
@@ -10,17 +10,16 @@ import RemedyHeader from "components/remedy/RemedyHeader";
 import RemedyAccordion from "components/remedy/RemedyAccordion";
 import AddRating from "components/ratings/AddRating";
 import RatingList from "components/ratings/RatingList";
+import BackButton from "components/layouts/BackButton";
 import LayoutHOC from "components/layouts/LayoutHOC";
 // material-ui
-import { Box, IconButton} from "@mui/material";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";;
+import { Box } from "@mui/material";
 
 
 const RemedyDetails = () => {
   const { id } = useParams();
   const [remedy, setRemedy] = useState({});
   const [ratings, setRatings] = useState([]);
-  let navigate = useNavigate();
 
   // API call to get remedy details
   useEffect(() => {
@@ -45,11 +44,8 @@ const RemedyDetails = () => {
           exit="out"
           variants={remedyTransition}
       >
-          <Box>
-              <IconButton variant="outlined" onClick={() => navigate(-1)}>
-                  <ChevronLeftIcon fontSize="large" />
-              </IconButton>
-          </Box>
+
+          <BackButton />
 
           <RemedyCardMedia remedy={remedy} />
 
